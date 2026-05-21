@@ -1,0 +1,1938 @@
+/* ==========================================================================
+   QUICK VERDICT SECTION (AZAMARA VS SEABOURN)
+   Using "Avs-" prefix to prevent style overrides and namespace conflicts.
+   ==========================================================================  */
+.Avs-verdict-section {
+    padding: 80px 20px;
+    background: var(--bg-soft);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Avs-verdict-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Avs-verdict-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.Avs-verdict-title {
+    font-family: var(--font-display);
+    font-size: 38px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.Avs-verdict-subtitle {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+.Avs-verdict-accent {
+    width: 60px;
+    height: 3px;
+    background: var(--navy);
+    margin: 16px auto 0;
+}
+
+.Avs-verdict-table-wrap {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--navy-border);
+    overflow: hidden;
+}
+
+.Avs-verdict-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.Avs-verdict-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding: 20px 32px;
+    align-items: center;
+    border-bottom: 1px solid var(--navy-border);
+    transition: background-color var(--transition);
+}
+
+.Avs-verdict-row:last-child {
+    border-bottom: none;
+}
+
+.Avs-verdict-row:hover {
+    background-color: var(--navy-soft);
+}
+
+.Avs-verdict-row-header {
+    background: var(--navy);
+    grid-template-columns: 1.2fr 1fr;
+    font-weight: 600;
+    color: var(--bg-white);
+    padding: 18px 32px;
+}
+
+.Avs-verdict-row-header:hover {
+    background-color: var(--navy);
+}
+
+.Avs-verdict-col-name {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    font-weight: 500;
+}
+
+.Avs-verdict-row-header .Avs-verdict-col-name {
+    color: var(--bg-white);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.Avs-verdict-col-winner {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Avs-verdict-row-header .Avs-verdict-col-winner {
+    color: var(--bg-white);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.Avs-verdict-badge {
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.Avs-verdict-badge:hover {
+    transform: scale(1.05);
+}
+
+.Avs-verdict-badge-azamara {
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    border: 1px solid var(--navy-border);
+}
+
+.Avs-verdict-badge-seabourn {
+    background-color: var(--navy);
+    color: var(--bg-white);
+    border: 1px solid var(--navy);
+}
+
+@media (max-width: 600px) {
+    .Avs-verdict-row {
+        padding: 16px 20px;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .Avs-verdict-row-header {
+        display: none;
+    }
+
+    .Avs-verdict-col-name {
+        font-size: 15px;
+    }
+
+    .Avs-verdict-col-winner {
+        justify-content: flex-start;
+    }
+
+    .Avs-verdict-title {
+        font-size: 30px;
+    }
+}
+
+/* ==========================================================================
+   AZAMARA OVERVIEW SECTION (azs-)
+   ========================================================================== */
+.azs-overview-section {
+    padding: 80px 20px;
+    background: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.azs-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.azs-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.azs-image-col {
+    position: relative;
+    height: 600px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--navy-border);
+}
+
+.azs-overview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.azs-image-col:hover .azs-overview-img {
+    transform: scale(1.04);
+}
+
+.azs-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.85) 0%, rgba(15, 28, 46, 0.4) 60%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    color: var(--bg-white);
+}
+
+.azs-image-badge {
+    align-self: flex-start;
+    background: var(--navy);
+    color: var(--bg-white);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.azs-image-title {
+    font-family: var(--font-display);
+    font-size: 22px !important;
+    color: var(--bg-white);
+    margin: 0;
+    font-weight: 500 !important;
+    text-align: left;
+}
+
+.azs-content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.azs-title {
+    font-family: var(--font-display);
+    font-size: 36px;
+    color: var(--navy);
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.azs-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.azs-sub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.azs-info-card {
+    background: var(--bg-soft);
+    border-radius: var(--radius);
+    padding: 24px;
+    border: 1px solid var(--navy-border);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.azs-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.azs-recommend-card {
+    grid-column: span 2;
+    background: var(--navy-soft);
+}
+
+.azs-group-title {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.azs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.azs-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-body);
+    line-height: 1.45;
+}
+
+.azs-list-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.azs-star-icon {
+    color: var(--navy);
+}
+
+@media (max-width: 992px) {
+    .azs-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .azs-image-col {
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .azs-sub-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .azs-recommend-card {
+        grid-column: span 1;
+    }
+
+    .azs-image-col {
+        height: 300px;
+    }
+
+    .azs-image-title {
+        font-size: 24px;
+    }
+
+    .azs-title {
+        font-size: 28px;
+    }
+}
+
+/* ==========================================================================
+   SHIP EXPERIENCE COMPARISON SECTION (azs-)
+   ========================================================================== */
+.azs-experience-section {
+    padding: 80px 20px;
+    background: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.azs-section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.azs-section-title {
+    font-family: var(--font-display);
+    font-size: 38px;
+    color: var(--navy);
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+.azs-section-accent {
+    width: 60px;
+    height: 3px;
+    background: var(--navy);
+    margin: 16px auto 0;
+}
+
+.azs-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.azs-experience-card {
+    background: var(--bg-soft);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--navy-border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.azs-experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.azs-exp-image-wrap {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.azs-exp-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.azs-experience-card:hover .azs-exp-img {
+    transform: scale(1.05);
+}
+
+.azs-exp-image-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--navy);
+    color: var(--bg-white);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.azs-exp-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.azs-azamara-exp {
+    background: var(--bg-soft);
+}
+
+.azs-seabourn-exp {
+    background: var(--navy-soft);
+}
+
+.azs-exp-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--navy-border);
+    padding-bottom: 20px;
+}
+
+.azs-exp-icon {
+    color: var(--navy);
+}
+
+.azs-exp-title {
+    font-family: var(--font-display);
+    font-size: 24px !important;
+    color: var(--navy);
+    margin: 0;
+    font-weight: 500 !important;
+}
+
+.azs-exp-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+}
+
+.azs-exp-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.azs-exp-group-title {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+}
+
+.azs-exp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.azs-exp-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.45;
+}
+
+.azs-exp-list-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.azs-exp-divider {
+    height: 1px;
+    background-color: var(--navy-border);
+    width: 100%;
+}
+
+.azs-exp-highlight {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .azs-experience-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .azs-exp-content {
+        padding: 24px;
+    }
+
+    .azs-exp-image-wrap {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .azs-exp-content {
+        padding: 20px;
+    }
+
+    .azs-exp-image-wrap {
+        height: 180px;
+    }
+}
+
+/* ==========================================================================
+   DINING COMPARISON SECTION (azs-)
+   ========================================================================== */
+.azs-dining-section {
+    padding: 90px 20px;
+    background: radial-gradient(circle at top, var(--bg-soft) 0%, var(--bg-white) 70%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.azs-section-subtitle {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.azs-dining-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.azs-dining-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    padding: 50px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.04);
+}
+
+.azs-dining-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+    border-color: rgba(39, 68, 114, 0.3);
+}
+
+.azs-seabourn-dining {
+    background: linear-gradient(135deg, rgba(231, 243, 245, 0.4) 0%, rgba(39, 68, 114, 0.08) 100%);
+    border: 1px solid rgba(39, 68, 114, 0.18);
+}
+
+.azs-azamara-dining {
+    background: linear-gradient(135deg, var(--bg-white) 0%, rgba(231, 243, 245, 0.6) 100%);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+}
+
+.azs-dining-badge-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -15px;
+    z-index: 10;
+}
+
+.azs-dining-badge {
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 2px 6px rgba(39, 68, 114, 0.06);
+}
+
+.azs-seabourn-badge {
+    background: var(--navy);
+    color: var(--bg-white);
+    border: 1px solid var(--navy);
+}
+
+.azs-azamara-badge {
+    background: var(--bg-white);
+    color: var(--navy);
+    border: 1px solid rgba(39, 68, 114, 0.2);
+}
+
+.azs-dining-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.azs-dining-icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.15);
+    color: var(--navy);
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.06);
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.azs-dining-card:hover .azs-dining-icon-circle {
+    transform: scale(1.08) rotate(5deg);
+    background-color: var(--bg-soft);
+}
+
+.azs-dining-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.azs-dining-title {
+    font-family: var(--font-display);
+    font-size: 24px !important;
+    color: var(--navy);
+    margin: 0;
+    font-weight: 500 !important;
+}
+
+.azs-dining-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    line-height: 1.65;
+    margin-bottom: 28px;
+    font-weight: 500;
+    min-height: 48px;
+    /* ensures same height for intro text block */
+}
+
+.azs-dining-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.azs-dining-group-title {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+}
+
+.azs-dining-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.azs-dining-list-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.45;
+}
+
+.azs-dining-list-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    color: var(--navy);
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(39, 68, 114, 0.03);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.azs-dining-card:hover .azs-dining-list-icon-wrapper {
+    transform: scale(1.05);
+}
+
+.azs-seabourn-dining .azs-dining-list-icon-wrapper {
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+.azs-dining-list-icon {
+    color: var(--navy);
+    display: block;
+}
+
+.azs-dining-divider {
+    height: 1px;
+    background-color: transparent;
+    width: 100%;
+    margin-top: auto;
+    /* Aligns to bottom */
+    margin-bottom: 20px;
+}
+
+.azs-dining-highlight-box {
+    padding: 20px 24px;
+    border-radius: var(--radius);
+    background: var(--bg-white);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.04);
+    position: relative;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.azs-seabourn-highlight {
+    border-left: 4px solid var(--navy);
+}
+
+.azs-azamara-highlight {
+    border-left: 4px solid rgba(39, 68, 114, 0.4);
+}
+
+.azs-dining-card:hover .azs-dining-highlight-box {
+    transform: translateY(-2px);
+}
+
+.azs-dining-highlight-text {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.azs-azamara-highlight .azs-dining-highlight-text {
+    color: var(--text-body);
+}
+
+@media (max-width: 992px) {
+    .azs-dining-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .azs-dining-card {
+        padding: 40px 25px 25px;
+    }
+
+    .azs-dining-intro {
+        min-height: auto;
+    }
+}
+
+/* ==========================================================================
+   ENTERTAINMENT & ENRICHMENT SECTION (azs-)
+   ========================================================================== */
+.azs-entertainment-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark2) 100%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.azs-entertainment-section::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 50%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.45) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.azs-entertainment-section::after {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    right: -10%;
+    width: 50%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(231, 243, 245, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.azs-entertainment-section .azs-container {
+    position: relative;
+    z-index: 2;
+}
+
+.azs-entertainment-section .azs-section-title {
+    color: var(--bg-white);
+}
+
+.azs-entertainment-section .azs-section-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.azs-entertainment-section .azs-section-accent {
+    background: var(--bg-soft);
+}
+
+.azs-entertainment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.azs-entertainment-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    padding: 50px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.azs-entertainment-card:hover {
+    transform: translateY(-8px);
+}
+
+.azs-azamara-ent {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.25) 0%, rgba(15, 28, 46, 0.65) 100%);
+    border: 1px solid rgba(231, 243, 245, 0.15);
+    box-shadow: 0 8px 32px rgba(15, 28, 46, 0.4);
+}
+
+.azs-azamara-ent:hover {
+    border-color: rgba(231, 243, 245, 0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.azs-seabourn-ent {
+    background: linear-gradient(135deg, rgba(28, 47, 74, 0.35) 0%, rgba(15, 28, 46, 0.75) 100%);
+    border: 1px solid rgba(231, 243, 245, 0.2);
+    box-shadow: 0 8px 32px rgba(15, 28, 46, 0.4);
+}
+
+.azs-seabourn-ent:hover {
+    border-color: rgba(231, 243, 245, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+.azs-ent-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.azs-ent-icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--bg-soft);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.azs-entertainment-card:hover .azs-ent-icon-circle {
+    transform: scale(1.08) rotate(-5deg);
+    background-color: var(--bg-soft);
+    color: var(--bg-dark);
+    border-color: var(--bg-soft);
+}
+
+.azs-ent-icon {
+    flex-shrink: 0;
+    transition: color 0.3s ease;
+}
+
+.azs-ent-title {
+    font-family: var(--font-display);
+    font-size: 24px !important;
+    color: var(--bg-white);
+    margin: 0;
+    font-weight: 500 !important;
+}
+
+.azs-ent-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.65;
+    margin-bottom: 28px;
+    font-weight: 400;
+    min-height: 48px;
+    /* ensures same height for intro text block */
+}
+
+.azs-ent-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.azs-ent-group-title {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bg-soft);
+    margin: 0;
+}
+
+.azs-ent-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.azs-ent-list-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.45;
+}
+
+.azs-ent-list-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--bg-soft);
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.azs-entertainment-card:hover .azs-ent-list-icon-wrapper {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.azs-ent-list-icon {
+    display: block;
+}
+
+.azs-ent-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-top: auto;
+    /* Aligns to bottom */
+    margin-bottom: 20px;
+}
+
+.azs-ent-highlight-box {
+    padding: 20px 24px;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.azs-entertainment-card:hover .azs-ent-highlight-box {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.azs-azamara-ent-highlight {
+    border-left: 4px solid var(--navy-light);
+}
+
+.azs-seabourn-ent-highlight {
+    border-left: 4px solid var(--bg-soft);
+}
+
+.azs-ent-highlight-text {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-white);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .azs-entertainment-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .azs-entertainment-card {
+        padding: 40px 25px 25px;
+    }
+
+    .azs-ent-intro {
+        min-height: auto;
+    }
+}
+
+/* ==========================================================================
+   SUITES & ACCOMMODATIONS SECTION (azs-)
+   ========================================================================== */
+.azs-suites-section {
+    padding: 90px 20px;
+    background: radial-gradient(circle at top, var(--bg-soft) 0%, var(--bg-white) 70%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.azs-suites-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.azs-suites-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    box-shadow: 0 4px 20px rgba(39, 68, 114, 0.04);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
+}
+
+.azs-suites-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+    border-color: rgba(39, 68, 114, 0.3);
+}
+
+.azs-seabourn-suites {
+    background: linear-gradient(180deg, var(--bg-white) 0%, rgba(231, 243, 245, 0.2) 100%);
+}
+
+.azs-azamara-suites {
+    background: var(--bg-white);
+}
+
+.azs-suites-image-wrap {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.azs-suites-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.azs-suites-card:hover .azs-suites-img {
+    transform: scale(1.05);
+}
+
+.azs-suites-image-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--navy);
+    color: var(--bg-white);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 2;
+}
+
+.azs-suites-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.azs-suites-card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding-bottom: 20px;
+    margin-bottom: 4px;
+}
+
+.azs-suites-icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.azs-suites-card:hover .azs-suites-icon-circle {
+    transform: scale(1.08) rotate(5deg);
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.azs-suites-icon {
+    color: inherit;
+}
+
+.azs-suites-title {
+    font-family: var(--font-display);
+    font-size: 24px !important;
+    color: var(--navy);
+    margin: 0;
+    font-weight: 500 !important;
+}
+
+.azs-suites-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    line-height: 1.65;
+    margin-bottom: 8px;
+    font-weight: 500;
+    min-height: 48px;
+    /* ensures same height for intro text block */
+}
+
+.azs-suites-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.azs-suites-group-title {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+}
+
+.azs-suites-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.azs-suites-list-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.45;
+}
+
+.azs-suites-list-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.azs-suites-card:hover .azs-suites-list-icon-wrapper {
+    transform: scale(1.05);
+    background-color: rgba(39, 68, 114, 0.1);
+}
+
+.azs-suites-list-icon {
+    color: inherit;
+}
+
+.azs-suites-divider {
+    height: 1px;
+    background-color: transparent;
+    width: 100%;
+    margin-top: auto;
+    /* Aligns to bottom */
+    margin-bottom: 20px;
+}
+
+.azs-suites-highlight-box {
+    padding: 20px 24px;
+    border-radius: var(--radius);
+    background: var(--bg-white);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.04);
+    position: relative;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.azs-seabourn-suites-highlight {
+    border-left: 4px solid var(--navy);
+}
+
+.azs-azamara-suites-highlight {
+    border-left: 4px solid rgba(39, 68, 114, 0.4);
+}
+
+.azs-suites-card:hover .azs-suites-highlight-box {
+    transform: translateY(-2px);
+}
+
+.azs-suites-highlight-text {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .azs-suites-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .azs-suites-card {
+        padding: 0;
+    }
+
+    .azs-suites-content {
+        padding: 25px;
+    }
+
+    .azs-suites-intro {
+        min-height: auto;
+    }
+
+    .azs-suites-image-wrap {
+        height: 220px;
+    }
+}
+
+/* ==========================================================================
+   EXPERT SUBGRID LAYOUT (AZAMARA VS SEABOURN)
+   ========================================================================== */
+.Avr-expert-subgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 15px;
+    border-top: 1px solid var(--navy-border);
+    padding-top: 24px;
+}
+
+.Avr-expert-subgrid-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Avr-expert-subgrid-title {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--navy) !important;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.Avr-expert-subgrid-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Avr-expert-subgrid-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.Avr-expert-subgrid-item:hover {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .Avr-expert-subgrid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ==========================================================================
+   LUXURY COMPARISON VERDICT & SUITABILITY SECTIONS (azs-verdict- / azs-suitability-)
+   ========================================================================== */
+.azs-verdict-section {
+    padding: 90px 20px;
+    background: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.azs-verdict-label {
+    display: inline-block;
+    background: var(--navy-soft);
+    color: var(--navy);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    border: 1px solid var(--navy-border);
+}
+
+.azs-verdict-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.azs-verdict-highlight-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--navy-border);
+    box-shadow: var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.azs-verdict-highlight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.azs-seabourn-win {
+    background: linear-gradient(135deg, var(--bg-soft) 0%, var(--navy-soft) 100%);
+    border-left: 5px solid var(--navy);
+}
+
+.azs-azamara-win {
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-soft) 100%);
+    border-left: 5px solid var(--navy-light);
+}
+
+.azs-verdict-badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-white);
+    color: var(--navy);
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+    border: 1px solid var(--navy-border);
+}
+
+.azs-verdict-highlight-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.azs-verdict-winner-title {
+    font-family: var(--font-body);
+    font-size: 11px !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    font-weight: 600 !important;
+    margin: 0;
+    text-align: left;
+}
+
+.azs-verdict-winner-name {
+    font-family: var(--font-display);
+    font-size: 22px;
+    color: var(--navy);
+    font-weight: 500;
+    margin: 0;
+}
+
+.azs-verdict-winner-desc {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-body);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.azs-verdict-quote-box {
+    background: var(--bg-soft);
+    border-radius: var(--radius);
+    padding: 24px 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    border: 1px solid var(--navy-border);
+    width: 100%;
+}
+
+.azs-verdict-quote-text {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--navy);
+    margin: 0;
+}
+
+.azs-suitability-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+.azs-suitability-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--navy-border);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.azs-suitability-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.azs-suitability-azamara {
+    border-top: 4px solid var(--navy-light);
+}
+
+.azs-suitability-seabourn {
+    border-top: 4px solid var(--navy);
+}
+
+.azs-suitability-card-header {
+    padding: 24px 30px 16px;
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.azs-suitability-card-title {
+    font-family: var(--font-display);
+    font-size: 24px !important;
+    color: var(--navy);
+    font-weight: 500 !important;
+    margin: 0;
+}
+
+.azs-suitability-card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.azs-suitability-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.azs-suitability-group-title {
+    font-family: var(--font-body);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.azs-suitability-group-title.positive {
+    color: var(--navy);
+}
+
+.azs-suitability-group-title.negative {
+    color: var(--text-muted);
+}
+
+.azs-suitability-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.azs-suitability-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.45;
+}
+
+.azs-suitability-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.azs-suitability-icon-wrapper.check {
+    color: var(--navy);
+    background: var(--navy-soft);
+}
+
+.azs-suitability-icon-wrapper.minus {
+    color: var(--text-muted);
+    background: var(--navy-border);
+}
+
+.azs-suitability-divider {
+    height: 1px;
+    background: var(--navy-border);
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .azs-verdict-highlights {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .azs-suitability-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .azs-suitability-card-body {
+        padding: 24px;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .azs-verdict-section {
+        padding: 60px 16px;
+    }
+
+    .azs-verdict-quote-box {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .azs-verdict-quote-text {
+        font-size: 16px;
+    }
+
+    .azs-verdict-winner-name {
+        font-size: 20px;
+    }
+
+    .azs-suitability-card-title {
+        font-size: 20px !important;
+    }
+
+    .azs-suitability-list-item {
+        font-size: 14px;
+    }
+}
+
+.Asc-expert-section1 {
+    background: var(--bg-soft);
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   WHY TRAVELERS TRUST TRIPS & SHIPS (azs-trust-)
+   ========================================================================== */
+.azs-trust-section {
+    padding: 90px 20px;
+    background: var(--navy);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle radial glow behind content */
+.azs-trust-section::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 55%;
+    height: 80%;
+    background: radial-gradient(circle, var(--navy-light) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.azs-trust-inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* ── LEFT COLUMN ── */
+.azs-trust-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.azs-trust-eyebrow {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--bg-soft);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 16px;
+    border-radius: 30px;
+    align-self: flex-start;
+}
+
+.azs-trust-heading {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--bg-white);
+    margin: 0;
+    line-height: 1.25;
+}
+
+.azs-trust-divider {
+    width: 56px;
+    height: 3px;
+    background: var(--bg-soft);
+    border-radius: 2px;
+}
+
+.azs-trust-intro {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* service pills */
+.azs-trust-services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.azs-trust-service-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    padding: 11px 16px;
+    transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.azs-trust-service-pill:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.azs-trust-service-icon {
+    color: var(--bg-soft);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.azs-trust-service-label {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.3;
+}
+
+/* ── RIGHT COLUMN ── */
+.azs-trust-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.azs-trust-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 26px 28px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    transition: background-color var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.azs-trust-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.22);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+/* accent left border differentiation */
+.azs-trust-card-top  { border-left: 4px solid var(--bg-soft); }
+.azs-trust-card-mid  { border-left: 4px solid rgba(231, 243, 245, 0.55); }
+.azs-trust-card-bot  { border-left: 4px solid rgba(231, 243, 245, 0.3); }
+
+.azs-trust-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: var(--bg-soft);
+    flex-shrink: 0;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+.azs-trust-card:hover .azs-trust-card-icon {
+    background: var(--bg-soft);
+    color: var(--navy);
+    transform: scale(1.08) rotate(5deg);
+}
+
+.azs-trust-card-title {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--bg-white);
+    margin: 0 0 6px 0;
+}
+
+.azs-trust-card-desc {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 992px) {
+    .azs-trust-inner {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .azs-trust-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .azs-trust-section {
+        padding: 60px 16px;
+    }
+
+    .azs-trust-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .azs-trust-heading {
+        font-size: 26px;
+    }
+
+    .azs-trust-card {
+        padding: 20px;
+    }
+}
