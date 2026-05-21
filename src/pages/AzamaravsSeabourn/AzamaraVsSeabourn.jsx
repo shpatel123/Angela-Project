@@ -19,17 +19,17 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
-import HeroImage2 from "../../assets/Azamarashipcomparison/hero2.webp";
+import HeroImage2 from "../../assets/Azamarashipcomparison/hero2.jpg";
 import HeroImage3 from "../../assets/AzamaravsVikingOcean/hero3.webp";
 import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
 import HeroImage4 from "../../assets/Azamarashipcomparison/Regentsea.jpg";
 import AzamaraOverviewImage from "../../assets/AzamaravsVikingOcean/azamara.webp";
-import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.jpg";
+import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.webp";
 
 import AzamaraAtmosphereImage from "../../assets/Azamarashipcomparison/Azamara-Quest.webp";
 import SeabournAtmosphereImage from "../../assets/Azamarashipcomparison/Regentsea.jpg";
-import SeabournSuiteImage from "../../assets/Azamarashipcomparison/seabourn-suite.png";
-import AzamaraCabinImage from "../../assets/Azamarashipcomparison/azamara-cabin.png";
+import SeabournSuiteImage from "../../assets/Azamarashipcomparison/seabourn-suite.webp";
+import AzamaraCabinImage from "../../assets/Azamarashipcomparison/azamara-cabin.webp";
 import "./AzamaraVsSeabourn.css";
 import "../AzamaraShipComparison/Azamarashipcomparison.css";
 import { Helmet } from "react-helmet-async";

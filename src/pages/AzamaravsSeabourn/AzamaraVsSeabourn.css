@@ -17,6 +17,10 @@
     margin: 0 auto;
 }
 
+.azs-quote-text {
+    color: var(--navy);
+}
+
 .Avs-verdict-header {
     text-align: center;
     margin-bottom: 48px;
@@ -383,7 +387,7 @@
 
 .azs-section-title {
     font-family: var(--font-display);
-    font-size: 38px;
+    font-size: 48px;
     color: var(--navy);
     margin: 0 0 12px 0;
     font-weight: 500;
@@ -1780,7 +1784,7 @@
 
 .azs-trust-heading {
     font-family: var(--font-display);
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 500;
     color: var(--bg-white);
     margin: 0;
@@ -1867,9 +1871,17 @@
 }
 
 /* accent left border differentiation */
-.azs-trust-card-top  { border-left: 4px solid var(--bg-soft); }
-.azs-trust-card-mid  { border-left: 4px solid rgba(231, 243, 245, 0.55); }
-.azs-trust-card-bot  { border-left: 4px solid rgba(231, 243, 245, 0.3); }
+.azs-trust-card-top {
+    border-left: 4px solid var(--bg-soft);
+}
+
+.azs-trust-card-mid {
+    border-left: 4px solid rgba(231, 243, 245, 0.55);
+}
+
+.azs-trust-card-bot {
+    border-left: 4px solid rgba(231, 243, 245, 0.3);
+}
 
 .azs-trust-card-icon {
     display: flex;

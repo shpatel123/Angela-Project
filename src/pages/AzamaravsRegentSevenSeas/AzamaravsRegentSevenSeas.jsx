@@ -15,12 +15,11 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
-import HeroImage2 from "../../assets/Azamarashipcomparison/hero2.webp";
-import HeroImage3 from "../../assets/AzamaravsVikingOcean/hero3.webp";
-import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
+import HeroImage2 from "../../assets/Azamarashipcomparison/hero2.jpg";
+import CTAImage from "../../assets/Azamarashipcomparison/Ctaimage.jpg";
 import HeroImage4 from "../../assets/Azamarashipcomparison/Regentsea.jpg";
 import AzamaraOverviewImage from "../../assets/AzamaravsVikingOcean/azamara.webp";
-import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.jpg";
+import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.webp";
 import DiningImage from "../../assets/Azamarashipcomparison/Azamara-Dining-Experience.webp";
 import BeveragesImage from "../../assets/Azamarashipcomparison/AzamaraValue.webp";
 import "../AzamaraShipComparison/Azamarashipcomparison.css";
