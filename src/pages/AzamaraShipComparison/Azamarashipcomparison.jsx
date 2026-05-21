@@ -13,6 +13,7 @@ import {
     AlertTriangle,
 } from "lucide-react";
 import "./Azamarashipcomparison.css";
+import "../BestAfricanSafariForFamilies/Bestafricasafariforfamilies.css"
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
