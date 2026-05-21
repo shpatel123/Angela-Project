@@ -19,10 +19,10 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
-import HeroImage2 from "../../assets/Azamarashipcomparison/hero2.jpg";
+import HeroImage2 from "../../assets/Azamarashipcomparison/azamara.webp";
 import HeroImage3 from "../../assets/AzamaravsVikingOcean/hero3.webp";
 import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
-import HeroImage4 from "../../assets/Azamarashipcomparison/Regentsea.jpg";
+import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";
 import AzamaraOverviewImage from "../../assets/AzamaravsVikingOcean/azamara.webp";
 import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.webp";
 
