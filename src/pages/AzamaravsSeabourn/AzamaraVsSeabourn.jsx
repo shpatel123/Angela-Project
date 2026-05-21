@@ -25,8 +25,7 @@ import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
 import HeroImage4 from "../../assets/Azamarashipcomparison/Regentsea.jpg";
 import AzamaraOverviewImage from "../../assets/AzamaravsVikingOcean/azamara.webp";
 import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.jpg";
-import DiningImage from "../../assets/Azamarashipcomparison/Azamara-Dining-Experience.jpg";
-import BeveragesImage from "../../assets/Azamarashipcomparison/AzamaraValue.jpg";
+
 import AzamaraAtmosphereImage from "../../assets/Azamarashipcomparison/Azamara-Quest.webp";
 import SeabournAtmosphereImage from "../../assets/Azamarashipcomparison/Regentsea.jpg";
 import SeabournSuiteImage from "../../assets/Azamarashipcomparison/seabourn-suite.png";

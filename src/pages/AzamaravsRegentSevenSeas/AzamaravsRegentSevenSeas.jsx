@@ -21,8 +21,8 @@ import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
 import HeroImage4 from "../../assets/Azamarashipcomparison/Regentsea.jpg";
 import AzamaraOverviewImage from "../../assets/AzamaravsVikingOcean/azamara.webp";
 import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.jpg";
-import DiningImage from "../../assets/Azamarashipcomparison/Azamara-Dining-Experience.jpg";
-import BeveragesImage from "../../assets/Azamarashipcomparison/AzamaraValue.jpg";
+import DiningImage from "../../assets/Azamarashipcomparison/Azamara-Dining-Experience.webp";
+import BeveragesImage from "../../assets/Azamarashipcomparison/AzamaraValue.webp";
 import "../AzamaraShipComparison/Azamarashipcomparison.css";
 import { Helmet } from "react-helmet-async";
 
@@ -738,79 +738,80 @@ const AzamaravsRegentSevenSeas = () => {
             </section>
 
             {/* EXPERT INSIGHT FROM ANGELA HUGHES */}
-            <section className="Asc-expert-section" id="Asc-expert-insight">
+            <section className="Avr-expert-section" id="Asc-expert-insight">
                 <div className="Asc-container">
-                    <div className="Asc-expert-wrapper">
 
-                        {/* TOP HEADING */}
-                        <div className="Asc-expert-heading">
-                            <span className="Asc-expert-label">
-                                Expert Insight From Angela Hughes
-                            </span>
+                    {/* TOP HEADING */}
+                    <div className="Avr-expert-heading">
+                        <span className="Avr-expert-eyebrow">Expert Insight</span>
+                        <h2 className="Avr-expert-title">
+                            Azamara vs Regent: Angela Hughes' Perspective
+                        </h2>
+                        <div className="Avr-expert-divider"></div>
+                    </div>
 
-                            <h2 className="Asc-expert-title">
-                                Azamara vs Regent: Expert Perspective
-                            </h2>
+                    {/* MAIN GRID */}
+                    <div className="Avr-expert-grid">
 
-                            <div className="Asc-expert-divider"></div>
-                        </div>
-
-                        {/* MAIN GRID */}
-                        <div className="Avr-expert-grid">
-
-                            {/* LEFT SIDE: Portrait Image */}
-                            <div className="Avr-expert-image-col">
+                        {/* LEFT SIDE: Portrait + Name */}
+                        <div className="Avr-expert-image-col">
+                            <div className="Avr-expert-portrait-wrap">
                                 <img
                                     src={AboutImage}
-                                    alt="Angela Hughes"
+                                    alt="Angela Hughes – Luxury Travel Expert"
                                     className="Avr-expert-portrait"
                                 />
+                                <div className="Avr-expert-portrait-badge">
+                                    <Star size={14} />
+                                    <span>40+ Years Experience</span>
+                                </div>
+                            </div>
+                            <div className="Avr-expert-name-card">
+                                <h3 className="Avr-expert-name">Angela Hughes</h3>
+                                <p className="Avr-expert-role">CEO · Trips &amp; Ships Luxury Travel</p>
+                                <div className="Avr-expert-name-divider"></div>
+                                <p className="Avr-expert-countries">
+                                    <MapPin size={14} />
+                                    121+ Countries Visited
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* RIGHT SIDE */}
+                        <div className="Avr-expert-content-col">
+
+                            {/* Quote Block */}
+                            <div className="Avr-expert-quote-box">
+                                <div className="Avr-expert-quote-icon">
+                                    <Quote size={36} />
+                                </div>
+                                <blockquote className="Avr-expert-quote-text">
+                                    "Azamara and Regent Seven Seas attract very different luxury travelers. Azamara excels in immersive travel experiences and boutique-style cruising, while Regent delivers one of the most complete ultra-luxury cruise products at sea. Matching the traveler to the right experience is where true expertise matters."
+                                </blockquote>
                             </div>
 
-                            {/* RIGHT SIDE: Unified Content Box */}
-                            <div className="Avr-expert-content-col">
-                                <div className="Avr-expert-profile">
-                                    <div className="Avr-expert-profile-info">
-                                        <h3 className="Avr-expert-profile-name">
-                                            Angela Hughes
-                                        </h3>
-                                        <p className="Avr-expert-profile-title">
-                                            CEO of Trips & Ships Luxury Travel
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="Avr-expert-quote-box">
-                                    <div className="Avr-expert-quote-icon">
-                                        <Quote size={32} />
-                                    </div>
-                                    <blockquote className="Avr-expert-quote-text">
-                                        “Azamara and Regent Seven Seas attract very different luxury travelers. Azamara excels in immersive travel experiences and boutique-style cruising, while Regent delivers one of the most complete ultra-luxury cruise products at sea. Matching the traveler to the right experience is where true expertise matters.”
-                                    </blockquote>
-                                </div>
-
-                                <div className="Avr-expert-credentials-box">
-                                    <h4 className="Avr-expert-credentials-title">
-                                        Angela Hughes Authority Box
-                                    </h4>
-
-                                    <div className="Avr-expert-credentials-grid">
-                                        {[
-                                            { icon: <Award size={18} />, label: "CEO of Trips & Ships Luxury Travel" },
-                                            { icon: <Star size={18} />, label: "40+ years in luxury travel" },
-                                            { icon: <MapPin size={18} />, label: "Visited 121+ countries" },
-                                            { icon: <Award size={18} />, label: "Founder of Luxury Travel University" },
-                                            { icon: <Users size={18} />, label: "Travel Leaders Network Advisory Board member" },
-                                            { icon: <Users size={18} />, label: "Global luxury travel speaker and trainer" },
-                                            { icon: <Award size={18} />, label: "2024 Luxury Travel Influencer of the Year" },
-                                            { icon: <Award size={18} />, label: "Named one of the Most Influential Women in Travel in 2026" }
-                                        ].map((item, i) => (
-                                            <div className="Avr-expert-list-item" key={i}>
-                                                <span className="Avr-expert-list-icon">{item.icon}</span>
-                                                <span className="Avr-expert-list-label">{item.label}</span>
-                                            </div>
-                                        ))}
-                                    </div>
+                            {/* Credentials Grid */}
+                            <div className="Avr-expert-credentials-box">
+                                <h4 className="Avr-expert-credentials-title">
+                                    <Award size={16} />
+                                    Angela Hughes' Credentials
+                                </h4>
+                                <div className="Avr-expert-credentials-grid">
+                                    {[
+                                        { icon: <Award size={16} />, label: "CEO of Trips & Ships Luxury Travel" },
+                                        { icon: <Star size={16} />, label: "40+ Years in Luxury Travel" },
+                                        { icon: <MapPin size={16} />, label: "Visited 121+ Countries" },
+                                        { icon: <Award size={16} />, label: "Founder of Luxury Travel University" },
+                                        { icon: <Users size={16} />, label: "Travel Leaders Network Advisory Board" },
+                                        { icon: <Users size={16} />, label: "Global Luxury Travel Speaker & Trainer" },
+                                        { icon: <Award size={16} />, label: "2024 Luxury Travel Influencer of the Year" },
+                                        { icon: <Star size={16} />, label: "Most Influential Women in Travel 2026" },
+                                    ].map((item, i) => (
+                                        <div className="Avr-expert-list-item" key={i}>
+                                            <span className="Avr-expert-list-icon">{item.icon}</span>
+                                            <span className="Avr-expert-list-label">{item.label}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 
@@ -913,52 +914,56 @@ const AzamaravsRegentSevenSeas = () => {
             </section>
 
             {/* PLANNING ADVICE */}
-            <section className="Asc-section Asc-bg-soft" id="Asc-planning-advice">
+            <section className="Avr-planning-section" id="Asc-planning-advice">
                 <div className="Asc-container">
-                    <div className="Asc-section-header margin-large">
-                        <h2 className="Asc-h2">Planning Advice From Trips & Ships Luxury Travel</h2>
-                        <div className="Asc-accent-line"></div>
+
+                    {/* HEADING */}
+                    <div className="Avr-planning-heading">
+                        <span className="Avr-planning-eyebrow">Expert Planning Advice</span>
+                        <h2 className="Avr-planning-title">Planning Advice From Trips &amp; Ships Luxury Travel</h2>
+                        <div className="Avr-planning-divider"></div>
                     </div>
 
-                    <div className="Asc-why-trust-grid">
-                        {/* LEFT COLUMN: INTRO & WARNING BOX */}
-                        <div>
-                            <h3 className="Asc-planning-intro-title" style={{ textAlign: "left" }}>
-                                Booking Luxury Cruises Correctly Matters
-                            </h3>
-                            <p className="Asc-planning-intro-text">
+                    {/* TWO-PANEL GRID */}
+                    <div className="Avr-planning-grid">
+
+                        {/* LEFT PANEL — dark navy */}
+                        <div className="Avr-planning-left">
+                            <div className="Avr-planning-left-deco">&ldquo;</div>
+                            <h3 className="Avr-planning-left-title">Booking Luxury Cruises Correctly Matters</h3>
+                            <p className="Avr-planning-left-body">
                                 The luxury cruise market is highly specialized. Unlike mass-market travel, securing the right combination of suite category, dining preferences, and onboard amenities requires foresight and direct supplier relationships.
                             </p>
-
-                            <div className="Asc-overview-highlight-box Asc-planning-alert-box">
-
-                                <p className="Asc-planning-alert-text">
+                            <div className="Avr-planning-alert">
+                                <AlertTriangle size={18} className="Avr-planning-alert-icon" />
+                                <p className="Avr-planning-alert-text">
                                     The best suites, promotions, and exclusive amenities often disappear months in advance. Early booking is critical for securing prime inventory.
                                 </p>
                             </div>
                         </div>
 
-                        {/* RIGHT COLUMN: BENEFITS CARD */}
-                        <div className="Asc-who-card Asc-who-yes Asc-planning-card">
-                            <h4 className="Asc-planning-card-title">
-                                Working with Angela Hughes and the expert advisors at Trips & Ships Luxury Travel provides:
-                            </h4>
-                            <ul className="Asc-who-list planning-list">
+                        {/* RIGHT PANEL — white with benefit cards */}
+                        <div className="Avr-planning-right">
+                            <p className="Avr-planning-right-intro">
+                                Working with Angela Hughes and the expert advisors at Trips &amp; Ships Luxury Travel provides:
+                            </p>
+                            <div className="Avr-planning-benefits-grid">
                                 {[
-                                    "Exclusive luxury perks",
-                                    "Personalized cruise matching",
-                                    "Suite selection guidance",
-                                    "VIP planning support",
-                                    "Destination expertise",
-                                    "Pre- and post-cruise luxury planning"
+                                    { icon: <Award size={18} />, label: "Exclusive luxury perks" },
+                                    { icon: <Star size={18} />, label: "Personalized cruise matching" },
+                                    { icon: <Ship size={18} />, label: "Suite selection guidance" },
+                                    { icon: <Users size={18} />, label: "VIP planning support" },
+                                    { icon: <MapPin size={18} />, label: "Destination expertise" },
+                                    { icon: <ArrowRight size={18} />, label: "Pre- and post-cruise luxury planning" },
                                 ].map((item, i) => (
-                                    <li key={i} className="Asc-who-list-item">
-                                        <Check size={16} className="Asc-icon-green Asc-who-list-icon" />
-                                        <span>{item}</span>
-                                    </li>
+                                    <div key={i} className="Avr-planning-benefit-card">
+                                        <span className="Avr-planning-benefit-icon">{item.icon}</span>
+                                        <span className="Avr-planning-benefit-label">{item.label}</span>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
