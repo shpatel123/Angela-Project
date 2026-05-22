@@ -506,89 +506,98 @@ const AzamaraNorwayFjordsCruises = () => {
       </section>
 
       {/* WHAT MAKES NORWAY FJORDS CRUISES SO EXTRAORDINARY */}
-<section className="wnf-section wnf-bg-white" id="wnf-extraordinary-fjords">
-    <div className="wnf-container">
-        <div className="wnf-section-header">
-            <h2 className="wnf-h2">What Makes Norway Fjords Cruises So Extraordinary</h2>
+      <section
+        className="wnf-section wnf-bg-white"
+        id="wnf-extraordinary-fjords"
+      >
+        <div className="wnf-container">
+          <div className="wnf-section-header">
+            <h2 className="wnf-h2">
+              What Makes Norway Fjords Cruises So Extraordinary
+            </h2>
             <div className="wnf-accent-line"></div>
-        </div>
+          </div>
 
-        <div className="wnf-split">
+          <div className="wnf-split">
             {/* Left Column: Premium Dual Image Stack */}
             <div className="wnf-image-column">
-                <div className="wnf-image-stack">
-                    <div className="wnf-img-frame wnf-frame-primary">
-                        <img 
-                            src={HeroImage3} 
-                            alt="Norway Fjord Dramatic Natural Scenery" 
-                            className="wnf-photo" 
-                        />
-                    </div>
-                    <div className="wnf-img-frame wnf-frame-secondary">
-                        <img 
-                            src={HeroImage5} 
-                            alt="Luxury cruise ship sailing through historic coastal villages" 
-                            className="wnf-photo" 
-                        />
-                    </div>
+              <div className="wnf-image-stack">
+                <div className="wnf-img-frame wnf-frame-primary">
+                  <img
+                    src={HeroImage3}
+                    alt="Norway Fjord Dramatic Natural Scenery"
+                    className="wnf-photo"
+                  />
                 </div>
+                <div className="wnf-img-frame wnf-frame-secondary">
+                  <img
+                    src={HeroImage5}
+                    alt="Luxury cruise ship sailing through historic coastal villages"
+                    className="wnf-photo"
+                  />
+                </div>
+              </div>
             </div>
 
             {/* Right Column: Structured Content Blocks */}
             <div className="wnf-content-column">
-                <div className="wnf-block">
-                    <p className="wnf-lead-text">
-                        Norway fjords cruising combines:
-                    </p>
-                    <ul className="wnf-feature-list">
-                        {[
-                            "Dramatic natural scenery",
-                            "Scandinavian culture",
-                            "Historic coastal villages",
-                            "Luxury scenic sailing",
-                            "Outdoor adventure",
-                            "Wildlife encounters",
-                            "Photography opportunities",
-                            "Relaxed luxury exploration"
-                        ].map((feature, i) => (
-                            <li key={i} className="wnf-feature-item">
-                                <div className="wnf-icon-wrapper">
-                                    <Check size={14} />
-                                </div>
-                                <span className="wnf-feature-text">{feature}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+              <div className="wnf-block">
+                <p className="wnf-lead-text">
+                  Norway fjords cruising combines:
+                </p>
+                <ul className="wnf-feature-list">
+                  {[
+                    "Dramatic natural scenery",
+                    "Scandinavian culture",
+                    "Historic coastal villages",
+                    "Luxury scenic sailing",
+                    "Outdoor adventure",
+                    "Wildlife encounters",
+                    "Photography opportunities",
+                    "Relaxed luxury exploration",
+                  ].map((feature, i) => (
+                    <li key={i} className="wnf-feature-item">
+                      <div className="wnf-icon-wrapper">
+                        <Check size={14} />
+                      </div>
+                      <span className="wnf-feature-text">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-                <div className="wnf-block wnf-block-destinations">
-                    <p className="wnf-meta-title">Popular fjords and destinations often include:</p>
-                    <div className="wnf-tags-container">
-                        {[
-                            "Geirangerfjord",
-                            "Sognefjord",
-                            "Flam",
-                            "Bergen",
-                            "Alesund",
-                            "Stavanger",
-                            "Tromso",
-                            "Lofoten Islands"
-                        ].map((destination, i) => (
-                            <span key={i} className="wnf-tag-pill">{destination}</span>
-                        ))}
-                    </div>
+              <div className="wnf-block wnf-block-destinations">
+                <p className="wnf-meta-title">
+                  Popular fjords and destinations often include:
+                </p>
+                <div className="wnf-tags-container">
+                  {[
+                    "Geirangerfjord",
+                    "Sognefjord",
+                    "Flam",
+                    "Bergen",
+                    "Alesund",
+                    "Stavanger",
+                    "Tromso",
+                    "Lofoten Islands",
+                  ].map((destination, i) => (
+                    <span key={i} className="wnf-tag-pill">
+                      {destination}
+                    </span>
+                  ))}
                 </div>
+              </div>
 
-                <div className="wnf-footer-note">
-                    <p className="wnf-highlight-text">
-                        The scenery is genuinely among the most spectacular in the world.
-                    </p>
-                </div>
+              <div className="wnf-footer-note">
+                <p className="wnf-highlight-text">
+                  The scenery is genuinely among the most spectacular in the
+                  world.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
+      </section>
 
       {/* ════════════════════════════════════════
 WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
@@ -1013,6 +1022,10 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
                 title: "Ignoring Port Timing",
                 desc: "Long daylight hours affect excursion planning.",
               },
+              {
+                title: "Not Booking Excursions Early",
+                desc: "Popular Norway fjord excursions and scenic experiences often sell out in advance.",
+              },
             ].map((item, i) => (
               <div key={i} className="Lfsg-mistake-card">
                 <div className="Lfsg-mistake-number">
@@ -1032,14 +1045,14 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">Best For / Not Best For</h2>
+            <h2 className="Asc-h2">Is An Azamara Norway Fjords Cruise Right For You?</h2>
 
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-section-intro">
               Azamara Norway Fjords cruises appeal most to travelers seeking
-              immersive luxury <br/>  experiences, scenic exploration, and smaller-ship
-              sophistication.
+              immersive luxury <br /> experiences, scenic exploration, and
+              smaller-ship sophistication.
             </p>
           </div>
 
