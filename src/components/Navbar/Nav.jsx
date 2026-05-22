@@ -55,6 +55,13 @@ const Nav = () => {
                                 Azamara vs Seabourn</NavLink>
 
 
+                            <NavLink
+                                to="/azamara-dining-guide"
+                                className="nav-dropdown-single"
+                                onClick={toggleMenu}
+                            >
+                                Azamara Dining Guide</NavLink>
+
                         </div>
                     </div>
                 </div>
@@ -112,7 +119,12 @@ const Nav = () => {
                         >
                             Azamara vs Seabourn</NavLink>
 
-
+                        <NavLink
+                            to="/azamara-dining-guide"
+                            className="nav-dropdown-single"
+                            onClick={toggleMenu}
+                        >
+                            Azamara Dining Guide</NavLink>
 
 
 

@@ -32,7 +32,7 @@ const schemaData = {
             "@type": "Organization",
             name: "Trips & Ships Luxury Travel",
             url: "https://www.tripsandships.com",
-            logo: "https://www.tripsandships.com/PNG%20image.png",
+            logo: "https://www.tripsandships.com/logo.png",
             sameAs: [
                 "https://www.facebook.com/tripsandships/",
                 "https://www.instagram.com/tripsandshipsluxurytravel",
@@ -50,7 +50,7 @@ const schemaData = {
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
-                "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "Luxury travel expert with over 40 years of experience and travel to more than 121 countries.",
             worksFor: {
                 "@type": "Organization",
                 name: "Trips & Ships Luxury Travel",
@@ -58,9 +58,10 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            name: "Azamara Ship Comparison",
-            url: "https://www.tripsandships.com/azamara-ship-comparison",
-            description: "Expert Azamara ship comparison guide for luxury travelers.",
+            name: "Azamara vs Regent Seven Seas",
+            url: "https://www.tripsandships.com/azamara-vs-regent-seven-seas",
+            description:
+                "Expert comparison of Azamara and Regent Seven Seas including luxury level, suites, dining, inclusions, pricing, and destination experiences for luxury travelers.",
         },
         {
             "@type": "BreadcrumbList",
@@ -80,8 +81,8 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 3,
-                    name: "Azamara Ship Comparison",
-                    item: "https://www.tripsandships.com/azamara-ship-comparison",
+                    name: "Azamara vs Regent Seven Seas",
+                    item: "https://www.tripsandships.com/azamara-vs-regent-seven-seas",
                 },
             ],
         },
@@ -90,10 +91,66 @@ const schemaData = {
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Which Azamara ship is newest?",
+                    name: "Is Regent Seven Seas more luxurious than Azamara?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Azamara Onward is the newest addition to the Azamara fleet.",
+                        text: "Yes. Regent Seven Seas is considered ultra-luxury, while Azamara is positioned as premium luxury.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Is Regent Seven Seas truly all-inclusive?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Regent includes excursions, beverages, dining, gratuities, Wi-Fi, and often airfare.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Is Azamara good for destination immersion?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes. Azamara is highly regarded for longer port stays and immersive itineraries.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line has better food?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Regent Seven Seas generally delivers a more elevated fine dining experience.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line is better for couples?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Both are excellent, but Regent is often preferred for milestone celebrations and luxury romance travel.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Is Azamara less expensive than Regent?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes. Azamara typically has a lower upfront cost.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Does Regent include excursions?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes. Unlimited shore excursions are included on most voyages.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line has larger suites?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Regent Seven Seas generally offers larger and more luxurious suite accommodations.",
                     },
                 },
                 {
@@ -101,14 +158,53 @@ const schemaData = {
                     name: "Is Azamara considered luxury?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Azamara is considered an upper-premium boutique cruise line with many luxury-level features.",
+                        text: "Yes. Azamara is a luxury cruise line focused on boutique destination experiences.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which line is better for first-time luxury cruisers?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Azamara can be an excellent introduction to luxury cruising due to its pricing and relaxed atmosphere.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line is better for food and wine lovers?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Regent Seven Seas is often preferred by culinary-focused luxury travelers.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Should I use a luxury travel advisor for cruises?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Absolutely. Luxury cruise pricing, suite selection, and perks vary significantly.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "What does a luxury cruise advisor help with?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "An advisor helps with cruise matching, suite selection, VIP amenities, and customized travel planning.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Does Trips & Ships Luxury Travel offer exclusive perks?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes. Exclusive amenities and luxury travel benefits may be available depending on the sailing and supplier partnerships.",
                     },
                 },
             ],
         },
     ],
 };
-
 function FAQ() {
     const [open, setOpen] = useState(null);
 
@@ -907,6 +1003,30 @@ const AzamaravsRegentSevenSeas = () => {
                                     </li>
                                 ))}
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* VIDEO SECTION */}
+            <section className="Asc-video-section" id="Asc-video">
+                <div className="Asc-container">
+                    <div className="Asc-section-header">
+                        <h2 className="Asc-h2">Watch: Regent Seven Seas Cruise</h2>
+                        <div className="Asc-accent-line"></div>
+                        <p className="Asc-video-intro">
+                            Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Regent Seven Seas.
+                        </p>
+                    </div>
+                    <div className="Asc-video-wrapper">
+                        <div className="Asc-video-frame">
+                            <iframe
+                                src="https://www.youtube.com/embed/yoKE5YG3CYI"
+                                title="Azamara vs Regent Seven Seas – Angela Hughes"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                     </div>
                 </div>

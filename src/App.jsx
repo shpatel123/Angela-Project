@@ -6,6 +6,7 @@ import { HelmetProvider } from "react-helmet-async";
 import AzamaraShipComparison from "./pages/AzamaraShipComparison/Azamarashipcomparison";
 import AzamaravsRegentSevenSeas from "./pages/AzamaravsRegentSevenSeas/AzamaravsRegentSevenSeas";
 import AzamaraVsSeabourn from "./pages/AzamaravsSeabourn/AzamaraVsSeabourn";
+import AzamaraDiningGuide from "./pages/AzamaraDiningGuide/AzamaraDiningGuide";
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
           <Route
             path="/azamara-vs-seabourn"
             element={<AzamaraVsSeabourn />}
+          />
+
+          <Route
+            path="/azamara-dining-guide"
+            element={<AzamaraDiningGuide />}
           />
         </Routes>
       </BrowserRouter>

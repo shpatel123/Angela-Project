@@ -18,16 +18,14 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
-import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
-import HeroImage2 from "../../assets/Azamarashipcomparison/azamara.webp";
-import HeroImage3 from "../../assets/AzamaravsVikingOcean/hero3.webp";
-import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
+import HeroImage1 from "../../assets/Azamarashipcomparison/Seabournhero.webp";
+import HeroImage2 from "../../assets/Azamarashipcomparison/Seabournhero2.webp";
 import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";
 import AzamaraOverviewImage from "../../assets/AzamaravsVikingOcean/azamara.webp";
-import RegentOverviewImage from "../../assets/Azamarashipcomparison/Regent-Seven-Seas.webp";
+import SeabournExperience from "../../assets/Azamarashipcomparison/SeabournExperience.webp";
 
 import AzamaraAtmosphereImage from "../../assets/Azamarashipcomparison/Azamara-Quest.webp";
-import SeabournAtmosphereImage from "../../assets/Azamarashipcomparison/Regentsea.jpg";
+import SeabournAtmosphereImage from "../../assets/Azamarashipcomparison/Seabourn-Atmosphere.webp";
 import SeabournSuiteImage from "../../assets/Azamarashipcomparison/seabourn-suite.webp";
 import AzamaraCabinImage from "../../assets/Azamarashipcomparison/azamara-cabin.webp";
 import "./AzamaraVsSeabourn.css";
@@ -41,7 +39,7 @@ const schemaData = {
             "@type": "Organization",
             name: "Trips & Ships Luxury Travel",
             url: "https://www.tripsandships.com",
-            logo: "https://www.tripsandships.com/PNG%20image.png",
+            logo: "https://www.tripsandships.com/logo.png",
             sameAs: [
                 "https://www.facebook.com/tripsandships/",
                 "https://www.instagram.com/tripsandshipsluxurytravel",
@@ -59,7 +57,7 @@ const schemaData = {
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
-                "Luxury travel expert with more than 40 years in the travel industry and visits to over 121 countries.",
+                "Luxury travel expert with more than 40 years in the travel industry and travel experience across 121+ countries.",
             worksFor: {
                 "@type": "Organization",
                 name: "Trips & Ships Luxury Travel",
@@ -67,9 +65,10 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            name: "Azamara Ship Comparison",
-            url: "https://www.tripsandships.com/azamara-ship-comparison",
-            description: "Expert Azamara ship comparison guide for luxury travelers.",
+            name: "Azamara vs Seabourn",
+            url: "https://www.tripsandships.com/azamara-vs-seabourn",
+            description:
+                "Expert comparison of Azamara and Seabourn including luxury level, suites, dining, pricing, onboard atmosphere, destination immersion, and overall cruise experience.",
         },
         {
             "@type": "BreadcrumbList",
@@ -89,8 +88,8 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 3,
-                    name: "Azamara Ship Comparison",
-                    item: "https://www.tripsandships.com/azamara-ship-comparison",
+                    name: "Azamara vs Seabourn",
+                    item: "https://www.tripsandships.com/azamara-vs-seabourn",
                 },
             ],
         },
@@ -99,18 +98,122 @@ const schemaData = {
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Which Azamara ship is newest?",
+                    name: "Which is more luxurious, Azamara or Seabourn?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Azamara Onward is the newest addition to the Azamara fleet.",
+                        text: "Seabourn is generally considered more luxurious due to its all-suite ships, higher staff-to-guest ratio, and ultra-premium inclusions.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Azamara considered luxury?",
+                    name: "Is Azamara considered a luxury cruise line?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Azamara is considered an upper-premium boutique cruise line with many luxury-level features.",
+                        text: "Yes. Azamara is considered a boutique luxury cruise line focused heavily on destination immersion and longer stays.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Is Seabourn worth the higher price?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "For travelers prioritizing elevated service, spacious suites, gourmet dining, and ultra-luxury ambiance, many find Seabourn well worth the premium.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line is better for couples?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Seabourn is often preferred for romantic luxury experiences, while Azamara appeals to couples who prioritize exploration and social interaction.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line has better food?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Seabourn is widely regarded as having superior culinary experiences and more refined dining overall.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Does Azamara include alcohol?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Azamara includes select standard beverages, but Seabourn offers more premium inclusive beverage programs.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line has larger cabins?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Seabourn offers significantly larger suite accommodations.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Is Azamara more social than Seabourn?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes. Azamara tends to have a more social and interactive onboard culture.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which luxury cruise line is best for destination immersion?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Azamara is particularly known for destination immersion, overnight stays, and longer port visits.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Does Seabourn include gratuities?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes. Gratuities are included with Seabourn cruises.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line is better for first-time luxury cruisers?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Azamara is often easier for first-time luxury cruisers due to its approachable atmosphere and pricing.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line is quieter onboard?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Seabourn generally offers a quieter, more refined ambiance.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Is Seabourn formal?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Seabourn maintains elegant standards but is less rigidly formal than traditional luxury cruising.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which cruise line is better for solo luxury travelers?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Azamara often appeals more to solo travelers due to its social atmosphere and destination focus.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Should I use a luxury cruise advisor?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes. Luxury cruise advisors can secure better value, perks, suite selection guidance, and personalized recommendations.",
                     },
                 },
             ],
@@ -488,7 +591,7 @@ const AzamaraVsSeabourn = () => {
 
                         {/* Left Side: Image */}
                         <div className="azs-image-col">
-                            <img src={AzamaraOverviewImage} alt="Seabourn ultra luxury cruise ship overview" className="azs-overview-img" />
+                            <img src={SeabournExperience} alt="Seabourn ultra luxury cruise ship overview" className="azs-overview-img" />
                             <div className="azs-image-overlay">
                                 <span className="azs-image-badge">Ultra-Luxury Cruising</span>
                                 <h3 className="azs-image-title">Yacht-Style Elegance</h3>
@@ -1123,6 +1226,29 @@ const AzamaraVsSeabourn = () => {
                 </div>
             </section>
 
+            {/* VIDEO SECTION */}
+            <section className="azs-video-section" id="azs-video">
+                <div className="azs-container">
+                    <div className="azs-section-header">
+                        <h2 className="azs-section-title">Watch: Seabourn Luxury Cruise</h2>
+                        <div className="azs-section-accent"></div>
+                        <p className="azs-video-intro">
+                            Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Seabourn.
+                        </p>
+                    </div>
+                    <div className="azs-video-wrapper">
+                        <div className="azs-video-frame">
+                            <iframe
+                                src="https://drive.google.com/file/d/1zQXUruU1aN2m7y81ffD_6Ghw_5bel4Dd/preview"
+                                title="Azamara vs Seabourn – Angela Hughes"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* EXPERT INSIGHT FROM ANGELA HUGHES */}
             <section className="Asc-expert-section1" id="Asc-expert-insight">

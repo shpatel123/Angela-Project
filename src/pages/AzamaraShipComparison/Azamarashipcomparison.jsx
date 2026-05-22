@@ -17,8 +17,8 @@ import "../BestAfricanSafariForFamilies/Bestafricasafariforfamilies.css"
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
-import HeroImage2 from "../../assets/AzamaravsVikingOcean/hero2.webp";
-import HeroImage3 from "../../assets/AzamaravsVikingOcean/hero3.webp";
+import HeroImage2 from "../../assets/Azamarashipcomparison/Azamaraship2.webp";
+import HeroImage3 from "../../assets/Azamarashipcomparison/Azamaraship.webp";
 import CTAImage from "../../assets/AzamaravsVikingOcean/cta.webp";
 import ImageGallery1 from "../../assets/Azamarashipcomparison/Onboard.webp";
 import ImageGallery2 from "../../assets/Azamarashipcomparison/shipexperience.webp";
@@ -245,7 +245,7 @@ const AzamaraShipComparison = () => {
                 <div className="Asc-hero-content">
                     <span className="Asc-hero-eyebrow">Expert Luxury Cruise Guide · 2026</span>
                     <h1 className="Asc-hero-h1">
-                        Azamara Ship Comparison: Which Azamara Ship Is Right for You?
+                        Azamara Ship Comparison: <br /> Which Azamara Ship Is Right for You?
                     </h1>
                     <p className="Asc-hero-sub">
                         Discover the Best Azamara Ship for Your Luxury Travel Style
