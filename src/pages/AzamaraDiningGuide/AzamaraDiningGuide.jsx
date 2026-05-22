@@ -14,7 +14,8 @@ import {
     Utensils,
     Compass,
     Wine,
-    Heart, UtensilsCrossed, User, Leaf, Coffee, Sunset, Flame
+    Heart, UtensilsCrossed, User, Leaf, Coffee, Sunset, Flame,
+    ShieldCheck
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
@@ -991,7 +992,7 @@ const AzamaraDiningGuide = () => {
 
                             <div className="Avr-planning-alert">
 
-                                <AlertTriangle
+                                <ShieldCheck
                                     size={18}
                                     className="Avr-planning-alert-icon"
                                 />

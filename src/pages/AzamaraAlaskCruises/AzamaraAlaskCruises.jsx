@@ -10,24 +10,19 @@ import {
     ArrowRight,
     Star,
     Quote,
-    AlertTriangle,
+
     Utensils,
     Compass,
     Wine,
-    Heart,
-    UtensilsCrossed,
-    User,
-    Leaf,
-    Coffee,
-    Sunset,
-    Flame,
+ 
     Shield,
     Eye,
     Timer,
     Sparkles,
     Mountain,
     Train,
-    TreePine
+    TreePine,
+    ShieldCheck
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
@@ -562,7 +557,7 @@ const AzamaraAlaskCruises = () => {
     return (
         <div className="Asc-page-wrapper">
             <Helmet>
-                <title></title>Azamara Alaska Cruises | Luxury Alaska Small Ship Cruises With Expert Guidance
+                <title>Azamara Alaska Cruises | Luxury Alaska Small Ship Cruises With Expert Guidance</title>
                 <meta
                     name="title"
                     content="Azamara Alaska Cruises 2026 | Luxury Alaska Cruise Experts | Trips & Ships Luxury Travel"
@@ -1410,7 +1405,7 @@ const AzamaraAlaskCruises = () => {
 
                             <div className="Avr-planning-alert">
 
-                                <AlertTriangle
+                                <ShieldCheck
                                     size={18}
                                     className="Avr-planning-alert-icon"
                                 />

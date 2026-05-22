@@ -1,0 +1,585 @@
+/* ── BEST CABINS FOR NORWAY FJORDS CRUISES (afc-) ── */
+.afc-section {
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.afc-bg-white {
+    background: var(--bg-white);
+}
+
+.afc-container {
+    max-width: var(--section-max);
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.afc-section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.afc-h2 {
+    font-size: 48px;
+    font-weight: 500 !important;
+    color: var(--navy) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+}
+
+.afc-accent-line {
+    width: 60px;
+    height: 3px;
+    background: var(--navy);
+    margin: 0 auto;
+}
+
+/* Split Layout System */
+.afc-split-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+}
+
+/* Left Content Styles */
+.afc-content-side {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.afc-insight-card {
+    background: var(--bg-soft);
+    padding: 36px;
+    border-radius: 20px;
+    border-left: 4px solid var(--navy);
+}
+
+.afc-lead-text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--navy);
+    margin: 0 0 20px 0;
+    font-weight: 300;
+}
+
+.afc-why-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.afc-why-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.afc-why-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444444;
+    margin: 0;
+    font-weight: 300;
+}
+
+.afc-recommendations-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.afc-sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy);
+    margin: 0;
+}
+
+.afc-rec-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.afc-rec-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--bg-white);
+    padding: 18px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.afc-rec-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.04);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+.afc-rec-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--bg-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.afc-rec-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+}
+
+/* Right Media Block Styles */
+.afc-media-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.afc-image-wrapper {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+}
+
+.afc-showcase-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.afc-image-wrapper:hover .afc-showcase-image {
+    transform: scale(1.03);
+}
+
+.afc-strategy-box {
+    background: var(--bg-soft);
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.afc-strategy-lead {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444444;
+    margin: 0 0 16px 0;
+    font-weight: 400;
+}
+
+.afc-strategy-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.afc-tag {
+    background: var(--bg-white);
+    color: var(--navy);
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(39, 68, 114, 0.04);
+}
+
+/* Responsive Viewports */
+@media (max-width: 992px) {
+    .afc-split-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .afc-image-wrapper {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 768px) {
+    .afc-section {
+        padding: 48px 16px;
+    }
+    
+    .afc-h2 {
+        font-size: 26px;
+    }
+    
+    .afc-insight-card {
+        padding: 24px;
+    }
+    
+    .afc-lead-text {
+        font-size: 18px;
+    }
+}
+
+
+
+/* ── BEST TIME FOR NORWAY FJORDS CRUISES (Asc-) ── */
+.Asc-seasons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.Asc-season-card {
+    background: var(--bg-white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Asc-season-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+.Asc-season-header-block {
+    background: var(--bg-white);
+    padding: 24px 24px 12px 24px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.Asc-season-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+}
+
+.Asc-season-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.Asc-season-meta {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+    display: block;
+}
+
+.Asc-season-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.Asc-season-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.Asc-season-icon {
+    width: 22px;
+    height: 22px;
+    background: var(--bg-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.Asc-season-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444444;
+    font-weight: 400;
+}
+
+/* Responsive Viewports styling updates */
+@media (max-width: 992px) {
+    .Asc-seasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Asc-seasons-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .Asc-season-header-block {
+        padding: 20px 20px 10px 20px;
+    }
+    
+    .Asc-season-body {
+        padding: 20px;
+    }
+}
+
+
+
+
+/* ── WHAT MAKES NORWAY FJORDS CRUISES (wnf-) ── */
+.wnf-section {
+    padding: 80px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wnf-bg-white {
+    background: var(--bg-white);
+}
+
+.wnf-container {
+    max-width: var(--section-max);
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.wnf-section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wnf-h2 {
+    font-size: 48px;
+    font-weight: 500 !important;
+    color: var(--navy) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+}
+
+.wnf-accent-line {
+    width: 60px;
+    height: 3px;
+    background: var(--navy);
+    margin: 0 auto;
+}
+
+/* Structural Split Grid */
+.wnf-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left Side: Modern Asymmetrical Image Stack */
+.wnf-image-column {
+    position: relative;
+    width: 100%;
+}
+
+.wnf-image-stack {
+    position: relative;
+    display: height;
+    height: 480px;
+    width: 100%;
+}
+
+.wnf-img-frame {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.1);
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.wnf-frame-primary {
+    width: 75%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.wnf-frame-secondary {
+    width: 70%;
+    height: 65%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.wnf-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.wnf-img-frame:hover .wnf-photo {
+    transform: scale(1.04);
+}
+
+.wnf-img-frame:hover {
+    z-index: 3;
+    transform: translateY(-4px);
+}
+
+/* Right Side: Editorial Content Layout */
+.wnf-content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.wnf-lead-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy);
+    margin: 0 0 18px 0;
+}
+
+.wnf-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 20px;
+}
+
+.wnf-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wnf-icon-wrapper {
+    width: 22px;
+    height: 22px;
+    background: var(--bg-soft);
+    color: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.wnf-feature-text {
+    font-size: 15px;
+    color: #444444;
+    font-weight: 400;
+}
+
+/* Destination Tags Box */
+.wnf-block-destinations {
+    background: var(--bg-soft);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.wnf-meta-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0 0 16px 0;
+}
+
+.wnf-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.wnf-tag-pill {
+    background: var(--bg-white);
+    color: #333333;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    transition: all 0.3s ease;
+}
+
+.wnf-tag-pill:hover {
+    background: var(--navy);
+    color: var(--bg-white);
+    border-color: var(--navy);
+    transform: translateY(-1px);
+}
+
+/* Footer Bottom Callout */
+.wnf-footer-note {
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    padding-top: 20px;
+}
+
+.wnf-highlight-text {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--navy);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Responsive Viewports Media Queries */
+@media (max-width: 992px) {
+    .wnf-section {
+        padding: 60px 16px;
+    }
+
+    .wnf-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .wnf-image-stack {
+        height: 380px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wnf-h2 {
+        font-size: 26px;
+    }
+
+    .wnf-feature-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .wnf-image-stack {
+        height: 280px;
+    }
+}
