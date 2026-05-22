@@ -209,8 +209,8 @@ const schemaData = {
             url: "https://www.tripsandships.com",
             logo: "https://www.tripsandships.com/logo.png",
             sameAs: [
-                "https://www.facebook.com/tripsandships/",
-                "https://www.instagram.com/tripsandshipsluxurytravel",
+                "https://www.facebook.com/",
+                "https://www.instagram.com/",
             ],
         },
         {
@@ -218,25 +218,18 @@ const schemaData = {
             name: "Trips & Ships Luxury Travel",
             url: "https://www.tripsandships.com",
             description:
-                "Luxury travel agency specializing in cruises, expeditions, safaris, and premium travel experiences.",
+                "Luxury travel agency specializing in luxury cruises, expeditions, safaris, and premium travel experiences.",
         },
         {
             "@type": "Person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
-                "Luxury travel expert with over 40 years of experience and travel to more than 121 countries.",
+                "Luxury travel expert, global speaker, and founder of Luxury Travel University.",
             worksFor: {
                 "@type": "Organization",
                 name: "Trips & Ships Luxury Travel",
             },
-        },
-        {
-            "@type": "WebPage",
-            name: "Azamara vs Regent Seven Seas",
-            url: "https://www.tripsandships.com/azamara-vs-regent-seven-seas",
-            description:
-                "Expert comparison of Azamara and Regent Seven Seas including luxury level, suites, dining, inclusions, pricing, and destination experiences for luxury travelers.",
         },
         {
             "@type": "BreadcrumbList",
@@ -256,124 +249,131 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 3,
-                    name: "Azamara vs Regent Seven Seas",
-                    item: "https://www.tripsandships.com/azamara-vs-regent-seven-seas",
+                    name: "Azamara Dining Guide",
+                    item: "https://www.tripsandships.com/azamara-dining-guide",
                 },
             ],
+        },
+        {
+            "@type": "WebPage",
+            name: "Azamara Dining Guide",
+            url: "https://www.tripsandships.com/azamara-dining-guide",
+            description:
+                "Expert luxury cruise dining guide for Azamara Cruises.",
         },
         {
             "@type": "FAQPage",
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Is Regent Seven Seas more luxurious than Azamara?",
+                    name: "Is food included on Azamara cruises?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Regent Seven Seas is considered ultra-luxury, while Azamara is positioned as premium luxury.",
+                        text: "Yes. Most dining venues onboard Azamara are complimentary and included in your cruise fare.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Regent Seven Seas truly all-inclusive?",
+                    name: "Does Azamara have specialty restaurants?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Regent includes excursions, beverages, dining, gratuities, Wi-Fi, and often airfare.",
+                        text: "Yes. Prime C and Aqualina are Azamara’s signature specialty dining venues.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Azamara good for destination immersion?",
+                    name: "Is Azamara dining good?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Azamara is highly regarded for longer port stays and immersive itineraries.",
+                        text: "Azamara is widely praised for its high-quality cuisine, destination-inspired menus, and personalized service.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which cruise line has better food?",
+                    name: "Is specialty dining worth it on Azamara?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Regent Seven Seas generally delivers a more elevated fine dining experience.",
+                        text: "For many luxury travelers, yes — especially for romantic evenings and elevated culinary experiences.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which cruise line is better for couples?",
+                    name: "What is the dress code for Azamara dining?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are excellent, but Regent is often preferred for milestone celebrations and luxury romance travel.",
+                        text: "Azamara follows a resort casual dress code with no overly formal requirements.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Azamara less expensive than Regent?",
+                    name: "Does Azamara accommodate dietary restrictions?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Azamara typically has a lower upfront cost.",
+                        text: "Yes. Azamara accommodates many dietary preferences and allergies with advance notice.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Does Regent include excursions?",
+                    name: "Which Azamara ship has the best dining?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Unlimited shore excursions are included on most voyages.",
+                        text: "Dining experiences are relatively consistent across the fleet due to ship similarity.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which cruise line has larger suites?",
+                    name: "Are drinks included on Azamara?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Regent Seven Seas generally offers larger and more luxurious suite accommodations.",
+                        text: "Select standard beverages, wine, beer, and spirits are included.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Azamara considered luxury?",
+                    name: "Can I make dining reservations before sailing?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Azamara is a luxury cruise line focused on boutique destination experiences.",
+                        text: "Yes. Specialty dining reservations can often be made before embarkation.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which line is better for first-time luxury cruisers?",
+                    name: "Does Azamara offer room service?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Azamara can be an excellent introduction to luxury cruising due to its pricing and relaxed atmosphere.",
+                        text: "Yes. Complimentary room service is available.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which cruise line is better for food and wine lovers?",
+                    name: "Is Azamara better than Oceania for dining?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Regent Seven Seas is often preferred by culinary-focused luxury travelers.",
+                        text: "Oceania is often considered slightly more culinary-focused, while Azamara emphasizes destination immersion and relaxed luxury.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Should I use a luxury travel advisor for cruises?",
+                    name: "What cuisine does Azamara specialize in?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Absolutely. Luxury cruise pricing, suite selection, and perks vary significantly.",
+                        text: "Azamara emphasizes international and destination-inspired cuisine.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "What does a luxury cruise advisor help with?",
+                    name: "Are there vegetarian options on Azamara?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "An advisor helps with cruise matching, suite selection, VIP amenities, and customized travel planning.",
+                        text: "Yes. Vegetarian and plant-based options are available throughout the fleet.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Does Trips & Ships Luxury Travel offer exclusive perks?",
+                    name: "Does Azamara offer wine-focused experiences?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Exclusive amenities and luxury travel benefits may be available depending on the sailing and supplier partnerships.",
+                        text: "Yes. Wine pairings and curated wine selections are part of the onboard culinary experience.",
                     },
                 },
             ],
@@ -472,7 +472,7 @@ function FAQ() {
 const AzamaraDiningGuide = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [readMore, setReadMore] = useState(false);
-    const images = [HeroImage4, HeroImage1, HeroImage2];
+    const images = [HeroImage1, HeroImage4, HeroImage2];
 
     useEffect(() => {
         const timer = setInterval(() => {

@@ -6,7 +6,7 @@
 
 /* ── SECTION WRAPPER ── */
 .Adg-expert-section {
-    padding: 90px 20px;
+    padding: 60px 20px;
     background:
         radial-gradient(circle at top right, rgba(39, 68, 114, 0.06) 0%, transparent 55%),
         linear-gradient(180deg, var(--bg-white) 0%, var(--bg-soft) 100%);
@@ -61,7 +61,7 @@
 }
 
 .Adg-expert-title {
-    font-size: clamp(32px, 4vw, 52px) !important;
+    font-size: 48px !important;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.1 !important;
@@ -647,7 +647,7 @@
 
 /* ── SECTION WRAPPER ── */
 .adg-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: var(--bg-soft);
     width: 100%;
     box-sizing: border-box;
@@ -949,7 +949,7 @@
 
 /* ── SECTIONS ── */
 .adg-c-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -1025,11 +1025,14 @@
 /* ════════════════════════════════════════════
    1. WHY DINING MATTERS — dark hero split
    ════════════════════════════════════════════ */
+/* ════════════════════════════════════════════
+   1. WHY LUXURY TRAVELERS CHOOSE AZAMARA FOR ALASKA
+   ════════════════════════════════════════════ */
 .adg-c-why-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center;
+    align-items: start;
 }
 
 /* LEFT */
@@ -1041,83 +1044,156 @@
 
 .adg-c-lead {
     font-family: var(--font-display);
-    font-size: 22px !important;
+    font-size: 20px !important;
     font-weight: 400 !important;
     font-style: italic;
     color: var(--navy) !important;
-    line-height: 1.55 !important;
-    margin: 24px 0 16px !important;
+    line-height: 1.6 !important;
+    margin: 24px 0 28px !important;
 }
 
 .adg-c-lead-light {
-    color: rgba(255, 255, 255, 0.88) !important;
+    color: rgba(255, 255, 255, 0.82) !important;
 }
 
-.adg-c-body {
-    font-family: var(--font-body);
-    font-size: 16px !important;
-    font-weight: 300 !important;
-    color: var(--navy) !important;
-    line-height: 1.75 !important;
-    margin: 0 !important;
+/* FEATURE ROWS */
+.adg-c-why-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.adg-c-body-light {
-    color: rgba(255, 255, 255, 0.72) !important;
+.adg-c-why-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: var(--transition);
 }
 
-/* RIGHT — floating card */
-.adg-c-why-right {
+.adg-c-why-feature:hover {
+    padding-left: 6px;
+}
+
+.adg-c-why-feature-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.75);
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: var(--transition);
+}
+
+.adg-c-why-feature:hover .adg-c-why-feature-icon {
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+}
+
+.adg-c-why-feature-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.adg-c-why-feature-title {
+    font-family: var(--font-body);
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+}
+
+.adg-c-why-feature-desc {
+    font-family: var(--font-body);
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    color: rgba(255, 255, 255, 0.58) !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+}
+
+/* RIGHT — stacked pill cards */
+.adg-c-why-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .adg-c-why-card {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.11);
     border-radius: var(--radius-lg);
-    padding: 36px 32px;
+    padding: 30px 28px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     width: 100%;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+.adg-c-why-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.adg-c-why-card-alt {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
 }
 
 .adg-c-why-card-label {
     display: block;
     font-family: var(--font-body);
-    font-size: 11px !important;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 10px !important;
+    font-weight: 700;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5) !important;
-    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.45) !important;
+    margin-bottom: 10px;
+}
+
+.adg-c-why-card-desc {
+    font-family: var(--font-body);
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    color: rgba(255, 255, 255, 0.62) !important;
+    line-height: 1.6 !important;
+    margin: 0 0 18px !important;
 }
 
 .adg-c-pill-grid {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .adg-c-pill {
     display: flex;
     align-items: center;
     gap: 12px;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 100px;
-    padding: 10px 18px;
+    padding: 9px 16px;
     font-family: var(--font-body);
     font-size: 14px !important;
     font-weight: 400 !important;
-    color: rgba(255, 255, 255, 0.88) !important;
+    color: rgba(255, 255, 255, 0.85) !important;
     transition: var(--transition);
 }
 
 .adg-c-pill:hover {
-    background: rgba(255, 255, 255, 0.13);
-    border-color: rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
     transform: translateX(4px);
 }
 
@@ -1125,13 +1201,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.13);
     color: #fff;
     flex-shrink: 0;
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .adg-c-why-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
 
 /* ════════════════════════════════════════════
    2. DINING OVERVIEW — soft bg
@@ -1781,5 +1867,183 @@
 
     .adg-c-specialty-list {
         padding: 24px;
+    }
+}
+
+
+
+/* ================= HERO ================= */
+.Scenic_hero_section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 60px;
+    overflow: hidden;
+    /* Prevent Ken Burns effect from causing horizontal scroll */
+}
+
+/* BG */
+.Scenic_hero_bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 8s linear;
+    z-index: 0;
+    will-change: opacity, transform;
+    transform: scale(1.1);
+}
+
+.Scenic_hero_bg.active {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+/* OVERLAY */
+.Scenic_hero_overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.Scenic_hero_content {
+    position: relative;
+    z-index: 3;
+    max-width: 850px;
+    /* ✅ FIXED */
+    text-align: center;
+    color: white;
+}
+
+/* H1 */
+.Scenic_hero_content h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* P */
+.Scenic_hero_content p {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+
+/* ================= READ MORE ================= */
+.Scenic_readmore_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Scenic_readmore_btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Scenic_page_wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* underline hover */
+.Scenic_readmore_btn::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.Scenic_readmore_btn:hover::after {
+    width: 100%;
+}
+
+/* BUTTONS */
+.Scenic_hero_buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.Scenic_primary_btn {
+    padding: 15px 30px;
+    background: #fff;
+    color: #1a1a1a;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.Scenic_primary_btn:hover {
+    background: #274472;
+    color: #fff;
+}
+
+.Scenic_secondary_btn {
+    padding: 14px 26px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+
+@media (max-width: 1024px) {
+    .Scenic_hero_content h1 {
+        font-size: 60px;
+    }
+
+    .Scenic_hero_content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Scenic_hero_section {
+        padding: 110px 15px 50px;
+    }
+
+    .Scenic_hero_content h1 {
+        font-size: 32px;
+    }
+
+    .Scenic_hero_content p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Scenic_hero_content h1 {
+        font-size: 26px;
+    }
+
+    .Scenic_hero_content p {
+        font-size: 16px;
+    }
+
+    .Scenic_primary_btn,
+    .Scenic_secondary_btn {
+        width: 100%;
     }
 }

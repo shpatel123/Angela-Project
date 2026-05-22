@@ -357,7 +357,7 @@ const AzamaraVsSeabourn = () => {
                 <div className="Scenic_hero_overlay"></div>
 
                 <div className="Scenic_hero_content">
-                    <h1>Azamara vs Seabourn: Which Luxury Cruise Line Fits Your Travel Style?</h1>
+                    <h1>Azamara vs Seabourn: <br /> Which Luxury Cruise Line Fits Your Travel Style?</h1>
 
                     <p>Luxury cruising has evolved dramatically over the last decade. Today’s affluent travelers are no longer simply looking for beautiful ships — they want immersive experiences, elevated service, meaningful destinations, and exceptional value.</p>
 
@@ -737,8 +737,9 @@ const AzamaraVsSeabourn = () => {
                 <div className="azs-container">
                     <div className="azs-section-header">
                         <h2 className="azs-section-title">Dining Comparison</h2>
-                        <p className="azs-section-subtitle">Gastronomy at Sea: Ultra-Luxury Fine Dining vs. Destination-Inspired Casual Elegance</p>
                         <div className="azs-section-accent"></div>
+                        <p className="azs-section-subtitle">Gastronomy at Sea: Ultra-Luxury Fine Dining vs. Destination-Inspired Casual Elegance</p>
+
                     </div>
 
                     <div className="azs-dining-grid">
@@ -827,8 +828,9 @@ const AzamaraVsSeabourn = () => {
                 <div className="azs-container">
                     <div className="azs-section-header">
                         <h2 className="azs-section-title">Entertainment & Enrichment</h2>
-                        <p className="azs-section-subtitle">Onboard Vibrancy: From Immersive Cultural Evenings to Sophisticated Performances</p>
                         <div className="azs-section-accent"></div>
+                        <p className="azs-section-subtitle">Onboard Vibrancy: From Immersive Cultural Evenings to Sophisticated Performances</p>
+
                     </div>
 
                     <div className="azs-entertainment-grid">
@@ -914,8 +916,9 @@ const AzamaraVsSeabourn = () => {
                 <div className="azs-container">
                     <div className="azs-section-header">
                         <h2 className="azs-section-title">Suites & Accommodations</h2>
-                        <p className="azs-section-subtitle">Floating Sanctuaries: Spacious All-Suite Retreats vs. Upscale Boutique Cabins</p>
                         <div className="azs-section-accent"></div>
+                        <p className="azs-section-subtitle">Floating Sanctuaries: Spacious All-Suite Retreats vs. Upscale Boutique Cabins</p>
+
                     </div>
 
                     <div className="azs-suites-grid">
@@ -1615,7 +1618,7 @@ const AzamaraVsSeabourn = () => {
                         </div>
                     </div>
 
-                    <div className="Asc-verdict-footer-box">
+                    <div className="Asc-verdict-footer-box" style={{ backgroundColor: "var(--bg-soft)" }}>
                         <p className="Asc-verdict-footer-text">
                             For many luxury travelers, the ideal answer comes down to:
 
