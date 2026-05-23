@@ -1029,8 +1029,21 @@
     max-width: 980px;
     text-align: center;
     color: #fff;
+
+    animation: aacHeroFadeUp 1.3s ease forwards;
 }
 
+@keyframes aacHeroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* EYEBROW */
 
 .aac_hero_eyebrow {
@@ -1072,7 +1085,7 @@
     font-size: 20px;
     line-height: 1.4;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     color: rgba(255, 255, 255, 0.92);
 }
 

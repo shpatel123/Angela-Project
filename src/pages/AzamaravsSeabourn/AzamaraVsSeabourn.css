@@ -3,7 +3,7 @@
    Using "Avs-" prefix to prevent style overrides and namespace conflicts.
    ==========================================================================  */
 .Avs-verdict-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: var(--bg-soft);
     display: flex;
     justify-content: center;
@@ -145,11 +145,14 @@
     border: 1px solid var(--navy);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .Avs-verdict-row {
         padding: 16px 20px;
         grid-template-columns: 1fr;
         gap: 8px;
+    }
+    .azs-exp-title,.azs-dining-title,.azs-ent-title{
+        font-size: 20px !important; 
     }
 
     .Avs-verdict-row-header {
@@ -165,7 +168,7 @@
     }
 
     .Avs-verdict-title {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
@@ -173,7 +176,15 @@
    AZAMARA OVERVIEW SECTION (azs-)
    ========================================================================== */
 .azs-overview-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
+    background: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.azs-overview-section1 {
+    padding:  0 20px 60px 20px;
     background: var(--bg-white);
     display: flex;
     justify-content: center;
@@ -346,7 +357,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .azs-sub-grid {
         grid-template-columns: 1fr;
     }
@@ -364,7 +375,7 @@
     }
 
     .azs-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
@@ -372,7 +383,7 @@
    SHIP EXPERIENCE COMPARISON SECTION (azs-)
    ========================================================================== */
 .azs-experience-section {
-    padding: 80px 20px;
+    padding:  0 20px 60px 20px;
     background: var(--bg-white);
     display: flex;
     justify-content: center;
@@ -486,7 +497,7 @@
 
 .azs-exp-title {
     font-family: var(--font-display);
-    font-size: 24px !important;
+    font-size: 24px;
     color: var(--navy);
     margin: 0;
     font-weight: 500 !important;
@@ -582,7 +593,7 @@
    DINING COMPARISON SECTION (azs-)
    ========================================================================== */
 .azs-dining-section {
-    padding: 90px 20px;
+    padding: 60px 20px;
     background: radial-gradient(circle at top, var(--bg-soft) 0%, var(--bg-white) 70%);
     display: flex;
     justify-content: center;
@@ -702,10 +713,10 @@
 
 .azs-dining-title {
     font-family: var(--font-display);
-    font-size: 24px !important;
+    font-size: 24px;
     color: var(--navy);
     margin: 0;
-    font-weight: 500 !important;
+    font-weight: 500;
 }
 
 .azs-dining-intro {
@@ -843,7 +854,7 @@
    ENTERTAINMENT & ENRICHMENT SECTION (azs-)
    ========================================================================== */
 .azs-entertainment-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark2) 100%);
     display: flex;
     justify-content: center;
@@ -980,7 +991,7 @@
 
 .azs-ent-title {
     font-family: var(--font-display);
-    font-size: 24px !important;
+    font-size: 24px;
     color: var(--bg-white);
     margin: 0;
     font-weight: 500 !important;
@@ -1115,7 +1126,7 @@
    SUITES & ACCOMMODATIONS SECTION (azs-)
    ========================================================================== */
 .azs-suites-section {
-    padding: 90px 20px;
+    padding: 60px 20px;
     background: radial-gradient(circle at top, var(--bg-soft) 0%, var(--bg-white) 70%);
     display: flex;
     justify-content: center;
@@ -1236,7 +1247,7 @@
 
 .azs-suites-title {
     font-family: var(--font-display);
-    font-size: 24px !important;
+    font-size: 24px;
     color: var(--navy);
     margin: 0;
     font-weight: 500 !important;
@@ -2042,14 +2053,23 @@
     .azs-video-frame iframe {
         border-radius: 12px;
     }
+    .azs-title,.azs-section-title{
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 480px) {
     .azs-video-section {
         padding: 48px 12px;
     }
+    .azs-section-title{
+        font-size: 24px;
+    }
 
     .azs-video-intro {
         font-size: 15px;
+    }
+    .azs-trust-section::before{
+        background: none;
     }
 }

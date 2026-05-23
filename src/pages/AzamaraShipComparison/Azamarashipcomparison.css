@@ -298,6 +298,9 @@
     .Asc-intro-split {
         flex-direction: column;
     }
+    .Asc-intro-split{
+        gap: 0px;
+    }
 
     .Asc-intro-content,
     .Asc-intro-content .Asc-section-header,
@@ -316,8 +319,30 @@
     .Asc-intro-images {
         margin-top: 40px;
     }
+    .Asc-intro-images {
+        width: 100%;
+        height: auto;
+        min-height: 320px; /* ensures visibility */
+        margin-top: 40px;
+    }
+
+    .Asc-intro-img-main,
+    .Asc-intro-img-accent {  
+        width: 100%;
+        height: 220px;
+        right: auto;
+        display: block;
+    }
+
+    .Asc-intro-img-accent {
+        margin-top: -40px; /* keeps overlap effect */
+        opacity: 0.9;
+    }
 }
 
+
+
+/* APPEALS */
 .Asc-appeal-grid {
     display: flex;
     flex-wrap: wrap;
@@ -882,7 +907,7 @@
 }
 
 .Asc-who-title {
-    font-size: 20px !important;
+    font-size: 20px;
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -1509,7 +1534,7 @@
    ======================================== */
 
 .Avr-planning-section {
-    padding: 60px 20px;
+    padding:  60px 20px;
     background: var(--bg-soft);
     position: relative;
     overflow: hidden;
@@ -1536,13 +1561,13 @@
 }
 
 .Avr-planning-title {
-    font-size: clamp(28px, 3.5vw, 46px) !important;
+    font-size: 48px;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.15 !important;
     margin: 0 auto 16px !important;
     max-width: 760px;
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-display);
 }
 
 .Avr-planning-divider {
@@ -1591,7 +1616,7 @@
 }
 
 .Avr-planning-left-title {
-    font-size: 26px !important;
+    font-size: 26px;
     font-weight: 600 !important;
     color: #ffffff !important;
     line-height: 1.35 !important;
@@ -1650,7 +1675,7 @@
 }
 
 .Avr-planning-right-intro {
-    font-size: 17px !important;
+    font-size: 17px;
     font-weight: 600 !important;
     color: var(--navy) !important;
     line-height: 1.55 !important;
@@ -1725,9 +1750,7 @@
 }
 
 @media (max-width: 576px) {
-    .Avr-planning-section {
-        padding: 60px 16px;
-    }
+
 
     .Avr-planning-benefits-grid {
         grid-template-columns: 1fr;
@@ -1945,7 +1968,7 @@
 }
 
 .Asc-help-h2 {
-    font-size: clamp(26px, 3vw, 40px) !important;
+    font-size: 48px;
     font-weight: 500 !important;
     color: #fff !important;
     margin: 0 !important;
@@ -2223,7 +2246,7 @@
     .Asc-expert-title,
     .Asc-authority-title,
     .Asc-overview-h2,
-    .Avr-expert-title {
+    .Avr-expert-title, .Avr-planning-title,.Asc-help-h2 {
         font-size: 24px !important;
     }
 
@@ -2232,13 +2255,19 @@
     .Asc-intro-text,
     .Scenic_hero_content p,
     .Avr-expert-quote-text,
-    .Asc-verdict-footer-text {
+    .Asc-verdict-footer-text, .Avr-planning-right-intro,.Asc-why-trust-intro,.Asc-verdict-footer-text,.Asc-verdict-intro {
         font-size: 16px !important;
     }
-
-    .Asc-vs-title {
+    .Asc-who-title {
+        font-size: 18px;
+    }
+    .Asc-planning-intro-title,.Avr-planning-left-title{
         font-size: 20px !important;
     }
+
+   .Asc-vs-title {
+    font-size: 22px !important;
+}
 
     .Asc-mistakes-grid {
         grid-template-columns: 1fr;
@@ -2544,7 +2573,7 @@
 }
 
 .Asc-overview-h2 {
-    font-size: 38px !important;
+    font-size: 38px;
     font-weight: 500 !important;
     color: var(--navy) !important;
     line-height: 1.2 !important;
@@ -2552,8 +2581,7 @@
 }
 
 .Asc-overview-known-title {
-    font-size: 18px !important;
-    /* Increased from 16px */
+    font-size: 18px;
     font-weight: 600 !important;
     color: var(--navy) !important;
     margin: 0 0 16px 0 !important;
@@ -2834,9 +2862,9 @@
 }
 
 .Asc-planning-intro-title {
-    font-size: 24px !important;
-    color: var(--navy) !important;
-    font-weight: 600 !important;
+    font-size: 24px;
+    color: var(--navy);
+    font-weight: 600;
     margin: 0 0 16px 0 !important;
     line-height: 1.3 !important;
 }
@@ -2886,7 +2914,7 @@
 }
 
 .Asc-why-trust-intro {
-    font-size: 17px !important;
+    font-size: 17px;
     line-height: 1.65 !important;
     color: var(--navy) !important;
     margin: 0 0 24px 0 !important;
@@ -2961,13 +2989,13 @@
 
 /* Final Verdict Section */
 .Asc-verdict-intro {
-    font-size: 18px !important;
+    font-size: 18px;
     line-height: 1.6 !important;
-    color: var(--navy) !important;
+    color: var(--navy);
     max-width: 800px;
-    margin: 16px auto 0 !important;
+    margin: 16px auto 0;
     text-align: center;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 .Asc-verdict-grid {
@@ -3039,7 +3067,7 @@
 
 .Asc-verdict-footer-text {
     margin: 0 !important;
-    font-size: 18px !important;
+    font-size: 18px;
     line-height: 1.6 !important;
     font-weight: 600 !important;
     color: var(--navy) !important;
@@ -3159,7 +3187,7 @@
 
 .Asc-vs-title {
     font-family: var(--font-display);
-    font-size: 32px !important;
+    font-size: 32px;
     font-weight: 500 !important;
     line-height: 1.25 !important;
     margin: 0 !important;
@@ -3308,6 +3336,26 @@
     color: var(--bg-white) !important;
 }
 
+@media (max-width: 768px) {
+    .Asc-vs-features-grid {
+        flex-direction: column;
+        align-items: stretch; /* IMPORTANT */
+        gap: 12px;
+    }
+
+    .Asc-vs-feature-pill {
+        width: 100%;
+        justify-content: flex-start;
+        border-radius: 14px; /* optional better mobile UX */
+        padding: 14px 16px;
+    }
+
+    .Asc-vs-feature-text {
+        text-align: left;
+        width: 100%;
+    }
+}
+
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 991px) {
     .Asc-vs-cards-container {
@@ -3334,6 +3382,9 @@
         display: none;
     }
 }
+
+
+
 
 /* ── READ MORE BUTTON ── */
 .Scenic_readmore_wrapper {
@@ -3394,6 +3445,8 @@
     margin-top: 10px;
 }
 
+
+
 /* ==========================================================================
    EXPERT INSIGHT SECTION (ANGELA HUGHES)
    ========================================================================== */
@@ -3422,7 +3475,7 @@
     color: var(--navy) !important;
     font-weight: 600;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 22px;
 }
 
 
@@ -3890,6 +3943,9 @@
         flex: none;
         width: 100%;
         height: 480px;
+    }
+    .Asc-overview-known-title{
+        font-size: 15px;
     }
 
     .Avr-expert-content-col {

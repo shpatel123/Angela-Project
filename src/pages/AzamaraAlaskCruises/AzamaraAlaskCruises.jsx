@@ -740,8 +740,6 @@ const AzamaraAlaskCruises = () => {
 
           <h1>Azamara Alaska Cruises</h1>
 
-          <div className="aac_hero_line"></div>
-
           <p className="aac_hero_subtitle">
             Experience Alaska Through The Lens Of Luxury Discovery
           </p>
@@ -1454,7 +1452,7 @@ const AzamaraAlaskCruises = () => {
 
                 <p
                   style={{
-                    fontSize: "15px",
+                    fontSize: "18px",
                     lineHeight: "1.9",
                     color: "var(--text-body)",
                     margin: 0,

@@ -218,8 +218,8 @@
         padding: 48px 16px;
     }
     
-    .afc-h2 {
-        font-size: 26px;
+    .afc-h2,.wnf-h2 {
+        font-size: 26px !important;
     }
     
     .afc-insight-card {
