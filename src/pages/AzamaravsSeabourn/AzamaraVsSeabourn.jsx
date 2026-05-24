@@ -1088,6 +1088,8 @@ const AzamaraVsSeabourn = () => {
                       "Lower pricing",
                       "More destination value",
                       "Less suite-focused luxury",
+                      "Intimate small-ship atmosphere",
+                      "Longer destination immersion",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-suites-list-item">
                         <div className="azs-suites-list-icon-wrapper">
