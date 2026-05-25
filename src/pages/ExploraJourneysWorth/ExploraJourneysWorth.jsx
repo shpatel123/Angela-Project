@@ -27,9 +27,9 @@ import "./ExploraJourneysWorth.css";
 import AboutImage from "../../assets/image.webp";
 import CTAImage from "../../assets/ExploraJourneysWorth/AlaskaCruise.webp";
 
-import HeroImage1 from "../../assets/ExploraJourneysWorth/Explora-Journeys.webp";
-import HeroImage2 from "../../assets/ExploraJourneysWorth/Explora-Journeys2.webp";
-import HeroImage4 from "../../assets/ExploraJourneysWorth/Explora-Journeys3.webp";
+import HeroImage1 from "../../assets/ExploraJourneysCruises/ExploraCruise.webp";
+import HeroImage2 from "../../assets/ExploraJourneysCruises/ExploraCruise2.webp";
+import HeroImage4 from "../../assets/ExploraJourneysCruises/ExploraCruise3.webp";
 import ExpolarSuite from "../../assets/ExploraJourneysWorth/Explora-Suite.webp";
 import ExploraDining from "../../assets/ExploraJourneysWorth/Explora-Dining.webp";
 import ExploraAtmosphere from "../../assets/ExploraJourneysWorth/Modern-Experience.webp";
@@ -1366,7 +1366,7 @@ const ExploraJourneysWorth = () => {
           <div className="Adg-expert-heading">
             <span className="Adg-expert-eyebrow">Luxury Travel Expertise</span>
 
-            <h2 className="Adg-expert-title">Angela Hughes Authority Box</h2>
+            <h2 className="Adg-expert-title">Angela Hughes Luxury Authority</h2>
 
             <div className="Adg-expert-divider"></div>
           </div>
