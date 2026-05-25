@@ -10,7 +10,6 @@ import {
     ArrowRight,
     Star,
     Quote,
-    AlertTriangle,
     Utensils,
     Compass,
     Wine,
@@ -737,6 +736,32 @@ const AzamaraDiningGuide = () => {
                     </div>
                 </div>
             </section>
+
+            {/* VIDEO SECTION */}
+<section className="Asc-video-section" id="Asc-video">
+    <div className="Asc-container">
+        <div className="Asc-section-header">
+            <h2 className="Asc-h2">Closer to the World with Azamara</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+                Experience how Azamara’s smaller ships, longer stays, and immersive journeys create more meaningful connections with the world. Discover destinations in a more personal, authentic, and unhurried way — where every horizon feels closer.
+            </p>
+        </div>
+
+        <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/GQj8QXkJeik"
+                    title="Closer to the World with Azamara"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
 
             {/* ════════════════════════════════════════
           5. IS IT WORTH IT

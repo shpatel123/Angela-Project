@@ -647,6 +647,32 @@ const AzamaraShipComparison = () => {
                 </div>
             </section>
 
+{/* VIDEO SECTION */}
+<section className="Asc-video-section" id="Asc-video">
+    <div className="Asc-container">
+        <div className="Asc-section-header">
+            <h2 className="Asc-h2">Azamara World Cruise</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+                Discover what makes the Azamara World Cruise a truly immersive luxury experience as Angela Hughes shares expert insights, destination highlights, and what travelers can expect onboard.
+            </p>
+        </div>
+
+        <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/Y0dt7AYocos"
+                    title="Azamara World Cruise – Angela Hughes"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
             {/* WHICH SHIP IS BEST */}
             <section className="Asc-section Asc-bg-soft" id="Asc-best">
                 <div className="Asc-container">
@@ -832,6 +858,32 @@ const AzamaraShipComparison = () => {
                     </div>
                 </div>
             </section>
+
+            {/* VIDEO SECTION */}
+<section className="Asc-video-section" id="Asc-video">
+    <div className="Asc-container">
+        <div className="Asc-section-header">
+            <h2 className="Asc-h2">Azamara Ashore Programs</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+                Explore how Azamara Ashore land programs help travelers extend their journey with immersive pre- and post-cruise experiences in destinations around the world.
+            </p>
+        </div>
+
+        <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/2tt6_dNWXUk"
+                    title="Azamara Ashore Programs"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
 
 
             {/* WHY TRIPS & SHIPS */}

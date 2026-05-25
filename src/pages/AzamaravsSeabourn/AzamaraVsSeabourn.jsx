@@ -1360,7 +1360,7 @@ const AzamaraVsSeabourn = () => {
       <section className="azs-video-section" id="azs-video">
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-section-title">Watch: Seabourn Luxury Cruise</h2>
+            <h2 className="azs-section-title">Seabourn Luxury Cruise</h2>
             <div className="azs-section-accent"></div>
             <p className="azs-video-intro">
               Hear directly from luxury cruise expert Angela Hughes as she
@@ -1665,6 +1665,32 @@ const AzamaraVsSeabourn = () => {
           </div>
         </div>
       </section>
+
+      {/* VIDEO SECTION */}
+<section className="Asc-video-section" id="Asc-video" style={{backgroundColor: "var(--bg-white)"}}>
+    <div className="Asc-container">
+        <div className="Asc-section-header">
+            <h2 className="Asc-h2">Azamara Forward</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+                Explore Azamara Forward and discover how the cruise line is entering a new era with refreshed ships, enhanced experiences, and immersive destination-focused luxury travel.
+            </p>
+        </div>
+
+        <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/6lwQ6EiHI_g"
+                    title="Azamara Forward | A New Era for the Fleet"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
 
       {/* PLANNING ADVICE */}
       <section className="Asc-section Asc-bg-soft" id="Asc-planning-advice">

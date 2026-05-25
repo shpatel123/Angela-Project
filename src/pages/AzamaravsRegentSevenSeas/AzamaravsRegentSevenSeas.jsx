@@ -1012,7 +1012,7 @@ const AzamaravsRegentSevenSeas = () => {
             <section className="Asc-video-section" id="Asc-video">
                 <div className="Asc-container">
                     <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Watch: Regent Seven Seas Cruise</h2>
+                        <h2 className="Asc-h2">Regent Seven Seas Cruise</h2>
                         <div className="Asc-accent-line"></div>
                         <p className="Asc-video-intro">
                             Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Regent Seven Seas.
@@ -1198,9 +1198,35 @@ const AzamaravsRegentSevenSeas = () => {
                 </div>
             </section>
 
+            {/* VIDEO SECTION */}
+<section className="Asc-video-section" id="Asc-video" style={{backgroundColor: "var(--bg-white)"}}>
+    <div className="Asc-container">
+        <div className="Asc-section-header">
+            <h2 className="Asc-h2">Discover Europe with Azamara</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+                Discover how Azamara Cruises brings travelers closer to Europe with immersive itineraries, longer stays, and destination-focused luxury experiences.
+            </p>
+        </div>
+
+        <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/LIkutVSgTGI"
+                    title="Discover Europe with Azamara Cruises"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
 
             {/* FAQ */}
-            <section className="Asc-section Asc-bg-white" id="Asc-faq">
+            <section className="Asc-section Asc-bg-soft" id="Asc-faq">
                 <div className="Asc-container">
                     <div className="Asc-section-header">
                         <h2 className="Asc-h2">Frequently Asked Questions</h2>

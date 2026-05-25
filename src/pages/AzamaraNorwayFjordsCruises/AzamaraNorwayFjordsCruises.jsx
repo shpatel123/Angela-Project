@@ -17,10 +17,10 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway.webp";
-import HeroImage2 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway2.webp";
+import HeroImage2 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway2.jpg";
 import HeroImage3 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway4.png";
 import HeroImage5 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway6.webp";
-import HeroImage6 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway5.webp";
+import HeroImage6 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway5.jpg";
 import CTAImage from "../../assets/AzamaraNorwayFjordsCruises/Azamaracta.webp";
 import HeroImage4 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway3.webp";
 
@@ -790,29 +790,6 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
         </div>
       </section>
 
-      {/* VIDEO SECTION */}
-      {/* <section className="Asc-video-section" id="Asc-video">
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Watch: Regent Seven Seas Cruise</h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Asc-video-intro">
-                            Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Regent Seven Seas.
-                        </p>
-                    </div>
-                    <div className="Asc-video-wrapper">
-                        <div className="Asc-video-frame">
-                            <iframe
-                                src="https://www.youtube.com/embed/yoKE5YG3CYI"
-                                title="Azamara vs Regent Seven Seas – Angela Hughes"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
 
       {/* BEST TIME FOR AZAMARA NORWAY FJORDS CRUISES */}
       <section className="Asc-section Asc-bg-soft" id="Asc-norway-best-time">
@@ -903,8 +880,36 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+<section className="Asc-video-section" id="Asc-video" style={{backgroundColor: "var(--bg-white)"}}  >
+    <div className="Asc-container">
+        <div className="Asc-section-header">
+            <h2 className="Asc-h2">Small Ship Cruising with Azamara</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+                Discover the charm of small ship cruising with Azamara, where intimate ships, immersive destinations, and personalized experiences bring travelers closer to the world.
+            </p>
+        </div>
+
+        <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/MbtzeUXewyQ"
+                    title="Experience Small Ship Cruising with Azamara"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
       {/* EXPERT INSIGHT */}
       <AacExpertSection />
+
+      
 
       {/* BEST CABINS FOR NORWAY FJORDS CRUISES */}
       <section className="afc-section afc-bg-white" id="afc-norway-cabins">
@@ -1220,7 +1225,7 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
       </section>
 
       {/* PLANNING ADVICE */}
-      <section className="Avr-planning-section" id="Asc-planning-advice">
+      <section className="Avr-planning-section" id="Asc-planning-advice" style={{backgroundColor: "var(--bg-white)"}}>
         <div className="Asc-container">
           {/* HEADING */}
           <div className="Avr-planning-heading">
@@ -1311,7 +1316,7 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
       </section>
 
       {/* FAQ */}
-      <section className="Asc-section Asc-bg-white" id="Asc-faq">
+      <section className="Asc-section Asc-bg-soft" id="Asc-faq">
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">Frequently Asked Questions</h2>
