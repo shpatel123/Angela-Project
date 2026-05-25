@@ -9,6 +9,7 @@ import AzamaraVsSeabourn from "./pages/AzamaravsSeabourn/AzamaraVsSeabourn";
 import AzamaraDiningGuide from "./pages/AzamaraDiningGuide/AzamaraDiningGuide";
 import AzamaraAlaskCruises from "./pages/AzamaraAlaskCruises/AzamaraAlaskCruises";
 import AzamaraNorwayFjordsCruises from "./pages/AzamaraNorwayFjordsCruises/AzamaraNorwayFjordsCruises";
+import LuxuryExploraJourneysGuide from "./pages/LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide";
 
 function App() {
   return (
@@ -50,6 +51,11 @@ function App() {
           <Route
             path="/azamara-norway-fjords-cruises"
             element={<AzamaraNorwayFjordsCruises />}
+          />
+
+           <Route
+            path="/luxury-explora-journeys-guide"
+            element={<LuxuryExploraJourneysGuide />}
           />
         </Routes>
       </BrowserRouter>

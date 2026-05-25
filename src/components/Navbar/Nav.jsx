@@ -76,6 +76,13 @@ const Nav = () => {
                             >
                                 Azamara Norway Fjords Cruises</NavLink>
 
+                                 <NavLink
+                                to="/luxury-explora-journeys-guide"
+                                className="nav-dropdown-single"
+                                onClick={toggleMenu}
+                            >
+                                Luxury Explora Journeys Guide</NavLink>
+
                         </div>
                     </div>
                 </div>
@@ -155,6 +162,13 @@ const Nav = () => {
                             onClick={toggleMenu}
                         >
                             Azamara Norway Fjords Cruises</NavLink>
+
+                              <NavLink
+                                to="/luxury-explora-journeys-guide"
+                                className="nav-dropdown-single"
+                                onClick={toggleMenu}
+                            >
+                                Luxury Explora Journeys Guide</NavLink>
 
 
 

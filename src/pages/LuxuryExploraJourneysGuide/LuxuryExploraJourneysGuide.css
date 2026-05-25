@@ -1,0 +1,500 @@
+/* ── EXPLORA JOURNEYS DIFFERENTIATORS (Leg-) ── */
+/* All colors use only the project :root variables */
+
+/* ── Section ── */
+.Leg-section {
+  background: var(--bg-white);
+  padding: 60px 20px;
+  font-family: var(--font-body);
+}
+
+.Leg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Header ── */
+.Leg-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.Leg-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.65;
+  margin-bottom: 14px;
+}
+
+.Leg-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 16px;
+  line-height: 1.25;
+}
+
+.Leg-subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--navy);
+  max-width: 520px;
+  margin: 0 auto 24px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.Leg-accent-line {
+  width: 48px;
+  height: 2px;
+  background: var(--navy);
+  margin: 0 auto;
+  opacity: 0.35;
+  border-radius: 2px;
+}
+
+/* ── Grid ── */
+.Leg-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* ── Card ── */
+.Leg-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--navy-border);
+  padding: 28px 26px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  cursor: default;
+}
+
+.Leg-card--hovered {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--navy-light);
+}
+
+/* ── Top accent bar ── */
+.Leg-card-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--navy);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* ── Icon wrap ── */
+.Leg-card-icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  background: var(--navy-soft);
+  color: var(--navy);
+  flex-shrink: 0;
+  transition: background var(--transition), color var(--transition);
+}
+
+.Leg-card--hovered .Leg-card-icon-wrap {
+  background: var(--navy);
+  color: var(--bg-white);
+}
+
+/* ── Card text ── */
+.Leg-card-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+
+.Leg-card-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Divider ── */
+.Leg-divider {
+  height: 1px;
+  background: var(--navy-border);
+  margin: 18px 0 14px;
+}
+
+/* ── Pills ── */
+.Leg-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.Leg-pill {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 4px 10px;
+  border-radius: 99px;
+  background: var(--navy-soft);
+  color: var(--navy);
+  border: 1px solid var(--navy-border);
+}
+
+/* ── Highlight row ── */
+.Leg-highlight {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  background: var(--navy-soft);
+  color: var(--navy);
+  border: 1px solid var(--navy-border);
+}
+
+.Leg-check-icon {
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 992px) {
+  .Leg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .Leg-section {
+    padding: 56px 0 64px;
+  }
+
+  .Leg-title {
+    font-size: 28px;
+  }
+
+  .Leg-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .Leg-container {
+    padding: 0 20px;
+  }
+}
+
+
+
+
+/* ── EXPLORA COMPARISON SECTION (Cmp-) ── */
+/* All colors use only project :root variables */
+
+.Cmp-section {
+  background: var(--bg-white);
+  padding: 60px 20px;
+  font-family: var(--font-body);
+}
+
+.Cmp-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Header ── */
+.Cmp-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.Cmp-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.65;
+  margin-bottom: 14px;
+}
+
+.Cmp-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 20px;
+  line-height: 1.25;
+}
+
+
+
+/* ── Tabs ── */
+.Cmp-tabs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.Cmp-tab {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 99px;
+  border: 1px solid var(--navy-border);
+  background: var(--bg-white);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.01em;
+}
+
+.Cmp-tab:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+  background: var(--navy-soft);
+}
+
+.Cmp-tab--active {
+  background: var(--navy);
+  color: var(--bg-white);
+  border-color: var(--navy);
+}
+
+/* ── Panel ── */
+.Cmp-panel {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--navy-border);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* ── Image ── */
+.Cmp-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.Cmp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.72);
+}
+
+.Cmp-image-label {
+  position: absolute;
+  bottom: 20px;
+  left: 28px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bg-white);
+  letter-spacing: 0.01em;
+}
+
+/* ── Competitor note ── */
+.Cmp-note {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.65;
+  margin: 0;
+  padding: 20px 28px 0;
+}
+
+/* ── Two-column compare grid ── */
+.Cmp-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0;
+  padding: 28px;
+  align-items: start;
+}
+
+/* ── Column ── */
+.Cmp-col-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.Cmp-col-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 4px 12px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.Cmp-col-badge--explora {
+  background: var(--navy);
+  color: var(--bg-white);
+}
+
+.Cmp-col-badge--competitor {
+  background: var(--navy-soft);
+  color: var(--navy);
+  border: 1px solid var(--navy-border);
+}
+
+.Cmp-col-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ── List ── */
+.Cmp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Cmp-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-body);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--navy-border);
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.Cmp-list-item--explora {
+  background: var(--navy-soft);
+}
+
+.Cmp-list-item--explora:hover {
+  background: var(--bg-soft);
+  border-color: var(--navy-light);
+}
+
+.Cmp-list-item--competitor {
+  background: var(--bg-soft);
+}
+
+.Cmp-list-item--competitor:hover {
+  border-color: var(--navy-border);
+}
+
+.Cmp-list-icon {
+  color: var(--navy);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── VS divider ── */
+.Cmp-vs-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 44px;
+  gap: 8px;
+  width: 40px;
+}
+
+.Cmp-vs-line {
+  width: 1px;
+  height: 40px;
+  background: var(--navy-border);
+}
+
+.Cmp-vs-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.45;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .Cmp-title {
+    font-size: 26px;
+  }
+
+  .Cmp-compare-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .Cmp-vs-divider {
+    flex-direction: row;
+    padding-top: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .Cmp-vs-line {
+    width: 60px;
+    height: 1px;
+  }
+
+  .Cmp-image-wrap {
+    height: 180px;
+  }
+
+  .Cmp-tabs {
+    gap: 6px;
+  }
+
+  .Cmp-tab {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Cmp-container {
+    padding: 0 16px;
+  }
+
+  .Cmp-section {
+    padding: 56px 0 64px;
+  }
+}

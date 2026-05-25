@@ -1993,7 +1993,7 @@
     font-weight: 300 !important;
     color: rgba(255, 255, 255, 0.82) !important;
     line-height: 1.7;
-    margin: 0 0 30px !important;
+    margin: 0 0 30px;
 }
 
 .Asc-help-btn-container {
