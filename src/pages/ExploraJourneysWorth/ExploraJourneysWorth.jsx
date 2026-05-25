@@ -1405,7 +1405,9 @@ const ExploraJourneysWorth = () => {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="Adg-expert-content-col">
+            <div
+              className="Adg-expert-content-col"
+            >
               <div className="Adg-expert-credentials-box">
                 <h4 className="Adg-expert-credentials-title">
                   <Award size={16} />
@@ -1482,7 +1484,7 @@ const ExploraJourneysWorth = () => {
           <div className="Ejv-verdict-header">
             <span className="Ejv-verdict-eyebrow">Final Verdict</span>
             <h2 className="Ejv-verdict-title">Is Explora Journeys Worth It?</h2>
-     <div className="Asc-accent-line"></div>
+            <div className="Asc-accent-line"></div>
           </div>
 
           {/* Main card */}
