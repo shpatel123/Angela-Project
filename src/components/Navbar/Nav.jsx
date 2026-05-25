@@ -3,203 +3,229 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Nav = () => {
-    const navigate = useNavigate();
-    const [menuOpen, setMenuOpen] = useState(false);
-    const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
+  const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-    const toggleHomeDropdown = (e) => {
-        e.preventDefault();
-        setHomeDropdownOpen(!homeDropdownOpen);
-    };
+  const toggleHomeDropdown = (e) => {
+    e.preventDefault();
+    setHomeDropdownOpen(!homeDropdownOpen);
+  };
 
-    return (
-        <nav className="navbar">
-            <div
-                className="logo"
-                onClick={() => navigate("/")}
-                style={{ cursor: "pointer" }}
+  return (
+    <nav className="navbar">
+      <div
+        className="logo"
+        onClick={() => navigate("/")}
+        style={{ cursor: "pointer" }}
+      >
+        TRIPS & SHIPS
+      </div>
+
+      <div className="nav-links">
+        <div className="nav-dropdown-wrapper">
+          <Link to="/" className="nav-dropdown-trigger">
+            HOME <i className="fas fa-angle-down"></i>
+          </Link>
+          <div className="nav-dropdown-menu">
+            <div className="nav-dropdown-group">
+              <NavLink
+                to="/azamara-ship-comparison"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Ship Comparison
+              </NavLink>
+
+              <NavLink
+                to="/azamara-vs-regent-seven-seas"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara vs Regent Seven Seas
+              </NavLink>
+
+              <NavLink
+                to="/azamara-vs-seabourn"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara vs Seabourn
+              </NavLink>
+
+              <NavLink
+                to="/azamara-dining-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Dining Guide
+              </NavLink>
+
+              <NavLink
+                to="/azamara-alaska-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Alaska Cruises
+              </NavLink>
+
+              <NavLink
+                to="/azamara-norway-fjords-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara Norway Fjords Cruises
+              </NavLink>
+
+              <NavLink
+                to="/luxury-explora-journeys-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Explora Journeys Guide
+              </NavLink>
+
+              <NavLink
+                to="/is-explora-journeys-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Explora Journeys Worth It?
+              </NavLink>
+
+              <NavLink
+                to="/explora-journeys-cruise-inclusions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Journeys Cruise Inclusions
+              </NavLink>
+            </div>
+          </div>
+        </div>
+        <a href="#">EXPERIENCES</a>
+        <a href="#">MEETINGS & INCENTIVES</a>
+        <a href="#">ALUMNI TRAVEL</a>
+        <a href="#">VIP HOTELS</a>
+        <a href="#">ABOUT & RESOURCES</a>
+        <a href="#">BLOG</a>
+      </div>
+
+      <div className="nav-right">
+        <button className="nav-btn">CONTACT</button>
+      </div>
+
+      <div className="hamburger" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
+        <div className="close-btn" onClick={toggleMenu}>
+          ×
+        </div>
+
+        <div className="mobile-dropdown-wrapper">
+          <div className="mobile-dropdown-trigger" onClick={toggleHomeDropdown}>
+            HOME{" "}
+            <i
+              className={`fas fa-angle-${homeDropdownOpen ? "up" : "down"}`}
+            ></i>
+          </div>
+          <div
+            className={`mobile-dropdown-menu ${homeDropdownOpen ? "active" : ""}`}
+          >
+            <NavLink
+              to="/azamara-ship-comparison"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
             >
-                TRIPS & SHIPS
-            </div>
+              Azamara Ship Comparison
+            </NavLink>
 
-            <div className="nav-links">
-                <div className="nav-dropdown-wrapper">
-                    <Link to="/" className="nav-dropdown-trigger">
-                        HOME <i className="fas fa-angle-down"></i>
-                    </Link>
-                    <div className="nav-dropdown-menu">
-                        <div className="nav-dropdown-group">
-                            <NavLink
-                                to="/azamara-ship-comparison"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Azamara Ship Comparison</NavLink>
+            <NavLink
+              to="/azamara-vs-regent-seven-seas"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara vs Regent Seven Seas
+            </NavLink>
 
-                            <NavLink
-                                to="/azamara-vs-regent-seven-seas"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Azamara vs Regent Seven Seas</NavLink>
+            <NavLink
+              to="/azamara-vs-seabourn"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara vs Seabourn
+            </NavLink>
 
-                            <NavLink
-                                to="/azamara-vs-seabourn"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Azamara vs Seabourn</NavLink>
+            <NavLink
+              to="/azamara-dining-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Dining Guide
+            </NavLink>
 
+            <NavLink
+              to="/azamara-alaska-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Alaska Cruises
+            </NavLink>
 
-                            <NavLink
-                                to="/azamara-dining-guide"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Azamara Dining Guide</NavLink>
+            <NavLink
+              to="/azamara-norway-fjords-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara Norway Fjords Cruises
+            </NavLink>
 
-                            <NavLink
-                                to="/azamara-alaska-cruises"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Azamara Alaska Cruises</NavLink>
+            <NavLink
+              to="/luxury-explora-journeys-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Luxury Explora Journeys Guide
+            </NavLink>
 
-                            <NavLink
-                                to="/azamara-norway-fjords-cruises"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Azamara Norway Fjords Cruises</NavLink>
+            <NavLink
+              to="/is-explora-journeys-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Explora Journeys Worth It?
+            </NavLink>
 
-                                 <NavLink
-                                to="/luxury-explora-journeys-guide"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Luxury Explora Journeys Guide</NavLink>
+             <NavLink
+                to="/explora-journeys-cruise-inclusions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Journeys Cruise Inclusions
+              </NavLink>
 
-                                <NavLink
-                                to="/is-explora-journeys-worth-it"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Is Explora Journeys Worth It?</NavLink>
+            <span className="mobile-dropdown-divider"></span>
+          </div>
+        </div>
 
-                        </div>
-                    </div>
-                </div>
-                <a href="#">EXPERIENCES</a>
-                <a href="#">MEETINGS & INCENTIVES</a>
-                <a href="#">ALUMNI TRAVEL</a>
-                <a href="#">VIP HOTELS</a>
-                <a href="#">ABOUT & RESOURCES</a>
-                <a href="#">BLOG</a>
-            </div>
-
-            <div className="nav-right">
-                <button className="nav-btn">CONTACT</button>
-            </div>
-
-            <div className="hamburger" onClick={toggleMenu}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div className={`offcanvas-menu ${menuOpen ? "active" : ""}`}>
-                <div className="close-btn" onClick={toggleMenu}>
-                    ×
-                </div>
-
-                <div className="mobile-dropdown-wrapper">
-                    <div className="mobile-dropdown-trigger" onClick={toggleHomeDropdown}>
-                        HOME{" "}
-                        <i
-                            className={`fas fa-angle-${homeDropdownOpen ? "up" : "down"}`}
-                        ></i>
-                    </div>
-                    <div
-                        className={`mobile-dropdown-menu ${homeDropdownOpen ? "active" : ""}`}
-                    >
-                        <NavLink
-                            to="/azamara-ship-comparison"
-                            className="nav-dropdown-single"
-                            onClick={toggleMenu}
-                        >
-                            Azamara Ship Comparison</NavLink>
-
-                        <NavLink
-                            to="/azamara-vs-regent-seven-seas"
-                            className="nav-dropdown-single"
-                            onClick={toggleMenu}
-                        >
-                            Azamara vs Regent Seven Seas</NavLink>
-
-                        <NavLink
-                            to="/azamara-vs-seabourn"
-                            className="nav-dropdown-single"
-                            onClick={toggleMenu}
-                        >
-                            Azamara vs Seabourn</NavLink>
-
-                        <NavLink
-                            to="/azamara-dining-guide"
-                            className="nav-dropdown-single"
-                            onClick={toggleMenu}
-                        >
-                            Azamara Dining Guide</NavLink>
-
-
-                        <NavLink
-                            to="/azamara-alaska-cruises"
-                            className="nav-dropdown-single"
-                            onClick={toggleMenu}
-                        >
-                            Azamara Alaska Cruises</NavLink>
-
-
-                        <NavLink
-                            to="/azamara-norway-fjords-cruises"
-                            className="nav-dropdown-single"
-                            onClick={toggleMenu}
-                        >
-                            Azamara Norway Fjords Cruises</NavLink>
-
-                              <NavLink
-                                to="/luxury-explora-journeys-guide"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Luxury Explora Journeys Guide</NavLink>
-
-                                     <NavLink
-                                to="/is-explora-journeys-worth-it"
-                                className="nav-dropdown-single"
-                                onClick={toggleMenu}
-                            >
-                                Is Explora Journeys Worth It?</NavLink>
-
-
-
-                        <span className="mobile-dropdown-divider"></span>
-                    </div>
-                </div>
-
-                <a href="#">EXPERIENCES</a>
-                <a href="#">MEETINGS & INCENTIVES</a>
-                <a href="#">ALUMNI TRAVEL</a>
-                <a href="#">VIP HOTELS</a>
-                <a href="#">ABOUT & RESOURCES</a>
-                <a href="#">BLOG</a>
-                <button className="nav-btn">CONTACT</button>
-            </div>
-        </nav>
-    );
+        <a href="#">EXPERIENCES</a>
+        <a href="#">MEETINGS & INCENTIVES</a>
+        <a href="#">ALUMNI TRAVEL</a>
+        <a href="#">VIP HOTELS</a>
+        <a href="#">ABOUT & RESOURCES</a>
+        <a href="#">BLOG</a>
+        <button className="nav-btn">CONTACT</button>
+      </div>
+    </nav>
+  );
 };
 
 export default Nav;

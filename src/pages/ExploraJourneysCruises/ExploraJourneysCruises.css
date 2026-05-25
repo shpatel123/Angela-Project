@@ -1,0 +1,517 @@
+/* ── EXPLORA INCLUSIONS SECTION (Ejc-) ── */
+/* All colors use only project :root variables */
+
+.Ejc-section {
+  background: var(--bg-white);
+  padding: 60px 20px;
+  font-family: var(--font-body);
+}
+
+.Ejc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Header ── */
+.Ejc-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.Ejc-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.Ejc-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+
+.Ejc-subtitle {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin: 0 auto 22px;
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.Ejc-accent-line {
+  width: 48px;
+  height: 2px;
+  background: var(--navy);
+  opacity: 0.35;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ── Layout ── */
+.Ejc-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ── Sidebar Nav ── */
+.Ejc-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: sticky;
+  top: 24px;
+}
+
+.Ejc-nav-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition);
+  overflow: hidden;
+}
+
+.Ejc-nav-btn:hover {
+  border-color: var(--navy-light);
+  background: var(--navy-soft);
+}
+
+.Ejc-nav-btn--active {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.Ejc-nav-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--navy-soft);
+  color: var(--navy);
+  transition: background var(--transition), color var(--transition);
+}
+
+.Ejc-nav-btn--active .Ejc-nav-icon-wrap {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--bg-white);
+}
+
+.Ejc-nav-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-body);
+  line-height: 1.35;
+  transition: color var(--transition);
+}
+
+.Ejc-nav-btn--active .Ejc-nav-label {
+  color: var(--bg-white);
+  font-weight: 600;
+}
+
+.Ejc-nav-pip {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 40%;
+  background: var(--bg-white);
+  opacity: 0.5;
+  border-radius: 3px 0 0 3px;
+}
+
+/* ── Detail Panel ── */
+.Ejc-panel {
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* ── Image ── */
+.Ejc-img-wrap {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.Ejc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
+  transition: transform 0.6s ease;
+}
+
+.Ejc-img-wrap:hover .Ejc-img {
+  transform: scale(1.03);
+}
+
+.Ejc-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px 28px 22px;
+  background: linear-gradient(to top, rgba(15, 28, 46, 0.85) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.Ejc-img-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--bg-white);
+  flex-shrink: 0;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Ejc-img-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--bg-white);
+  line-height: 1.3;
+}
+
+/* ── Items Grid ── */
+.Ejc-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 24px 24px 16px;
+}
+
+.Ejc-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--navy-soft);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius);
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.Ejc-item:hover {
+  background: var(--bg-soft);
+  border-color: var(--navy-light);
+}
+
+.Ejc-item-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--navy);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.Ejc-item-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-body);
+  line-height: 1.4;
+}
+
+/* ── Note ── */
+.Ejc-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 0 24px 24px;
+  padding: 14px 18px;
+  background: var(--bg-soft);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius);
+}
+
+.Ejc-note-bar {
+  width: 3px;
+  min-height: 100%;
+  align-self: stretch;
+  background: var(--navy);
+  opacity: 0.3;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.Ejc-note-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--navy);
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .Ejc-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .Ejc-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+    gap: 8px;
+  }
+
+  .Ejc-nav-btn {
+    flex: 1 1 auto;
+    min-width: 140px;
+    padding: 10px 14px;
+  }
+
+  .Ejc-nav-pip {
+    display: none;
+  }
+
+  .Ejc-nav-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .Ejc-title {
+    font-size: 26px;
+  }
+
+  .Ejc-img-wrap {
+    height: 200px;
+  }
+
+  .Ejc-items-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 16px 16px 12px;
+  }
+
+  .Ejc-note {
+    margin: 0 16px 16px;
+  }
+
+  .Ejc-section {
+    padding: 56px 0 64px;
+  }
+}
+
+@media (max-width: 420px) {
+  .Ejc-container {
+    padding: 0 16px;
+  }
+
+  .Ejc-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* ─────────────────────────────────────────
+   EJC — Planning Advice Section
+───────────────────────────────────────── */
+
+.Ejc-section {
+  padding: 60px 20px;
+  background: var(--bg-soft);
+}
+
+.Ejc-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.Ejc-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.Ejc-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.Ejc-title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.Ejc-accent-line {
+  width: 90px;
+  height: 3px;
+  background: var(--gold);
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.Ejc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.Ejc-card {
+  background: var(--bg-white);
+  border-radius: 28px;
+  padding: 42px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.Ejc-card-title {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 18px;
+}
+
+.Ejc-card-intro {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.Ejc-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Ejc-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: var(--bg-soft);
+  transition: all 0.3s ease;
+}
+
+.Ejc-feature-item:hover {
+  transform: translateY(-3px);
+}
+
+.Ejc-feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.Ejc-feature-text {
+  font-size: 16px;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.Ejc-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.Ejc-benefit-card {
+  background: var(--bg-soft);
+  border-radius: 22px;
+  padding: 24px 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.Ejc-benefit-card:hover {
+  transform: translateY(-4px);
+}
+
+.Ejc-benefit-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+
+.Ejc-benefit-label {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .Ejc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .Ejc-section {
+    padding: 70px 0;
+  }
+
+  .Ejc-card {
+    padding: 30px;
+  }
+
+  .Ejc-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ejc-title {
+    font-size: 38px;
+  }
+
+  .Ejc-card-title {
+    font-size: 24px;
+  }
+}

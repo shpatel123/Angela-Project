@@ -11,6 +11,7 @@ import AzamaraAlaskCruises from "./pages/AzamaraAlaskCruises/AzamaraAlaskCruises
 import AzamaraNorwayFjordsCruises from "./pages/AzamaraNorwayFjordsCruises/AzamaraNorwayFjordsCruises";
 import LuxuryExploraJourneysGuide from "./pages/LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide";
 import ExploraJourneysWorth from "./pages/ExploraJourneysWorth/ExploraJourneysWorth";
+import ExploraJourneysCruises from "./pages/ExploraJourneysCruises/ExploraJourneysCruises";
 
 function App() {
   return (
@@ -62,6 +63,11 @@ function App() {
            <Route
             path="/is-explora-journeys-worth-it"
             element={<ExploraJourneysWorth />}
+          />
+
+          <Route
+            path="/explora-journeys-cruise-inclusions"
+            element={<ExploraJourneysCruises />}
           />
         </Routes>
       </BrowserRouter>
