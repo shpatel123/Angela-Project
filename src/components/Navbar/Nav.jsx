@@ -83,6 +83,13 @@ const Nav = () => {
                             >
                                 Luxury Explora Journeys Guide</NavLink>
 
+                                <NavLink
+                                to="/is-explora-journeys-worth-it"
+                                className="nav-dropdown-single"
+                                onClick={toggleMenu}
+                            >
+                                Is Explora Journeys Worth It?</NavLink>
+
                         </div>
                     </div>
                 </div>
@@ -169,6 +176,13 @@ const Nav = () => {
                                 onClick={toggleMenu}
                             >
                                 Luxury Explora Journeys Guide</NavLink>
+
+                                     <NavLink
+                                to="/is-explora-journeys-worth-it"
+                                className="nav-dropdown-single"
+                                onClick={toggleMenu}
+                            >
+                                Is Explora Journeys Worth It?</NavLink>
 
 
 

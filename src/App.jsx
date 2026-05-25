@@ -10,6 +10,7 @@ import AzamaraDiningGuide from "./pages/AzamaraDiningGuide/AzamaraDiningGuide";
 import AzamaraAlaskCruises from "./pages/AzamaraAlaskCruises/AzamaraAlaskCruises";
 import AzamaraNorwayFjordsCruises from "./pages/AzamaraNorwayFjordsCruises/AzamaraNorwayFjordsCruises";
 import LuxuryExploraJourneysGuide from "./pages/LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide";
+import ExploraJourneysWorth from "./pages/ExploraJourneysWorth/ExploraJourneysWorth";
 
 function App() {
   return (
@@ -56,6 +57,11 @@ function App() {
            <Route
             path="/luxury-explora-journeys-guide"
             element={<LuxuryExploraJourneysGuide />}
+          />
+
+           <Route
+            path="/is-explora-journeys-worth-it"
+            element={<ExploraJourneysWorth />}
           />
         </Routes>
       </BrowserRouter>
