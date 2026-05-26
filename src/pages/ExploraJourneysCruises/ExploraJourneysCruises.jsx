@@ -32,9 +32,9 @@ import "./ExploraJourneysCruises.css";
 import AboutImage from "../../assets/image.webp";
 import CTAImage from "../../assets/ExploraJourneysCruises/Meridian-Lounge.webp";
 
-import HeroImage1 from "../../assets/ExploraJourneysWorth/Explora-Journeys.webp";
-import HeroImage2 from "../../assets/ExploraJourneysWorth/Explora-Journeys2.webp";
-import HeroImage4 from "../../assets/ExploraJourneysWorth/Explora-Journeys3.webp";
+import HeroImage1 from "../../assets/ExploraJourneysCruises/ExploraCruise.webp";
+import HeroImage2 from "../../assets/ExploraJourneysCruises/ExploraCruise2.webp";
+import HeroImage4 from "../../assets/ExploraJourneysCruises/ExploraCruise3.webp";
 import AzamaraDietaryImage from "../../assets/ExploraJourneysCruises/Regent-Seven-Seas-Cruises.webp";
 import ExploraPool from "../../assets/ExploraJourneysCruises/Explora-Journeys.webp";
 

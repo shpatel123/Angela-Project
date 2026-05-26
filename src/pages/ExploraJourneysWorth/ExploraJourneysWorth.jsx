@@ -27,9 +27,9 @@ import "./ExploraJourneysWorth.css";
 import AboutImage from "../../assets/image.webp";
 import CTAImage from "../../assets/ExploraJourneysWorth/AlaskaCruise.webp";
 
-import HeroImage1 from "../../assets/ExploraJourneysCruises/ExploraCruise.webp";
-import HeroImage2 from "../../assets/ExploraJourneysCruises/ExploraCruise2.webp";
-import HeroImage4 from "../../assets/ExploraJourneysCruises/ExploraCruise3.webp";
+import HeroImage1 from "../../assets/ExploraJourneysWorth/Explora-Journeys.webp";
+import HeroImage2 from "../../assets/ExploraJourneysWorth/Explora-Journeys2.webp";
+import HeroImage4 from "../../assets/ExploraJourneysWorth/Explora-Journeys3.webp";
 import ExpolarSuite from "../../assets/ExploraJourneysWorth/Explora-Suite.webp";
 import ExploraDining from "../../assets/ExploraJourneysWorth/Explora-Dining.webp";
 import ExploraAtmosphere from "../../assets/ExploraJourneysWorth/Modern-Experience.webp";
@@ -853,30 +853,6 @@ const ExploraJourneysWorth = () => {
 
       <AacExpertSection />
 
-      {/* VIDEO SECTION */}
-      {/* <section className="Asc-video-section" id="Asc-video">
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Watch: Regent Seven Seas Cruise</h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Asc-video-intro">
-                            Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Regent Seven Seas.
-                        </p>
-                    </div>
-                    <div className="Asc-video-wrapper">
-                        <div className="Asc-video-frame">
-                            <iframe
-                                src="https://www.youtube.com/embed/yoKE5YG3CYI"
-                                title="Azamara vs Regent Seven Seas – Angela Hughes"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
       {/* IS EXPLORA JOURNEYS TRULY ALL INCLUSIVE? */}
       <section className="adg-section" id="adg-food-itineraries">
         <div className="adg-container">
@@ -1121,6 +1097,38 @@ const ExploraJourneysWorth = () => {
             This is one of the most important distinctions travelers should
             understand before booking.
           </p>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explora Journeys Cruise</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Explora Journeys has rapidly become one of the most talked-about
+              luxury cruise brands in the world — but it is not the right fit
+              for every traveler.
+            </p>
+          </div>
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://drive.google.com/file/d/17GNBgyXBsqL-dbDurk8HvFMatGs9KU9B/preview"
+                title="Azamara vs Regent Seven Seas – Angela Hughes"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1405,9 +1413,7 @@ const ExploraJourneysWorth = () => {
             </div>
 
             {/* RIGHT SIDE */}
-            <div
-              className="Adg-expert-content-col"
-            >
+            <div className="Adg-expert-content-col">
               <div className="Adg-expert-credentials-box">
                 <h4 className="Adg-expert-credentials-title">
                   <Award size={16} />
