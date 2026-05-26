@@ -87,13 +87,13 @@ const hiddenCosts = [
     desc: "Certain spa services — massages, facials, and specialty therapies — remain an additional expense beyond the included wellness access.",
     image: SpaTreatments,
   },
-//   {
-//     icon: PlaneTakeoff,
-//     title: "Airfare",
-//     desc: "International business-class flights are often a major part of the total vacation cost and are not typically included in the cruise fare.",
-//     image:
-//       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
-//   },
+  //   {
+  //     icon: PlaneTakeoff,
+  //     title: "Airfare",
+  //     desc: "International business-class flights are often a major part of the total vacation cost and are not typically included in the cruise fare.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+  //   },
   {
     icon: Hotel,
     title: "Pre & Post Cruise Hotels",
@@ -445,125 +445,117 @@ const ExploraCruiseCost = () => {
       <Nav />
 
       {/* HERO */}
- <section className="aac_hero_section">
- 
-      {/* ── Background slideshow ── */}
-      {images.map((img, index) => (
-        <div
-          key={index}
-          className={`aac_hero_bg ${index === currentSlide ? "active" : ""}`}
-          style={{ backgroundImage: `url(${img})` }}
-        />
-      ))}
- 
-      {/* ── Layered overlays ── */}
-      <div className="aac_hero_overlay" />
-      <div className="aac_hero_overlay_gradient" />
-      <div className="aac_hero_noise" />
- 
-      {/* ── Slide indicators ── */}
-      <div className="aac_hero_dots">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            className={`aac_hero_dot ${i === currentSlide ? "active" : ""}`}
-            onClick={() => setCurrentSlide(i)}
-            aria-label={`Slide ${i + 1}`}
+      <section className="aac_hero_section">
+        {/* ── Background slideshow ── */}
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`aac_hero_bg ${index === currentSlide ? "active" : ""}`}
+            style={{ backgroundImage: `url(${img})` }}
           />
         ))}
-      </div>
- 
-      {/* ── Main content ── */}
-      <div className="aac_hero_content">
- 
 
- 
-        {/* Heading */}
-        <h1>
-          How Much Does an{" "}
-          <em>Explora</em> Cruise Cost
-          <br className="aac_br_desktop" />
-          {" "}in 2026 and 2027?
-        </h1>
- 
-        <p className="aac_hero_subtitle">
-          Understanding true luxury value beyond the fare
-        </p>
- 
-        <p className="aac_hero_text">
-          Luxury travelers considering Explora Journeys often ask the same
-          question first:{" "}
-          <strong>"Is Explora Journeys worth the price?"</strong>
-        </p>
- 
-        <p className="aac_hero_text">
-          The answer depends on what kind of luxury experience you expect. If
-          you are comparing Explora strictly by price alone, you may miss why
-          this cruise line has quickly become one of the most talked-about
-          names in ultra-luxury cruising.
-        </p>
- 
-        {/* ── Expandable content ── */}
-        <div className={`aac_expandable ${readMore ? "open" : ""}`}>
-          <p className="aac_list_intro">
-            Explora Journeys was designed for travelers who want:
+        {/* ── Layered overlays ── */}
+        <div className="aac_hero_overlay" />
+        <div className="aac_hero_overlay_gradient" />
+        <div className="aac_hero_noise" />
+
+        {/* ── Slide indicators ── */}
+        <div className="aac_hero_dots">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              className={`aac_hero_dot ${i === currentSlide ? "active" : ""}`}
+              onClick={() => setCurrentSlide(i)}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* ── Main content ── */}
+        <div className="aac_hero_content">
+          {/* Heading */}
+          <h1>
+            How Much Does an <em>Explora</em> Cruise Cost
+            <br className="aac_br_desktop" /> in 2026 and 2027?
+          </h1>
+
+          <p className="aac_hero_subtitle">
+            Understanding true luxury value beyond the fare
           </p>
- 
-          <ul className="aac_hero_list">
-            {[
-              "Spacious oceanfront suites",
-              "Elegant European luxury",
-              "Exceptional dining experiences",
-              "Fewer crowds and relaxed atmosphere",
-              "Longer port stays for deeper exploration",
-              "Wellness-focused onboard lifestyle",
-              "Inclusive luxury without hidden surprises",
-            ].map((item) => (
-              <li key={item}>
-                <span className="aac_list_dot" />
-                {item}
-              </li>
-            ))}
-          </ul>
- 
+
           <p className="aac_hero_text">
-            According to <strong>Angela Hughes</strong> — CEO of Trips &amp;
-            Ships Luxury Travel, founder of Luxury Travel University, global
-            luxury travel speaker, and one of the most influential women in
-            travel — understanding luxury cruise value matters far more than
-            simply comparing fares.
+            Luxury travelers considering Explora Journeys often ask the same
+            question first:{" "}
+            <strong>"Is Explora Journeys worth the price?"</strong>
           </p>
- 
-          <div className="aac_bio_card">
-            <div className="aac_bio_avatar">A</div>
-            <div className="aac_bio_body">
-              <p className="aac_hero_text">
-                After more than 40 years in the travel industry and visiting
-                over 121 countries, Angela has helped luxury travelers evaluate
-                what truly creates a premium cruise experience.
-              </p>
-              <p className="aac_hero_text">
-                And Explora Journeys is positioned very differently from
-                mainstream cruise brands.
-              </p>
+
+          <p className="aac_hero_text">
+            The answer depends on what kind of luxury experience you expect. If
+            you are comparing Explora strictly by price alone, you may miss why
+            this cruise line has quickly become one of the most talked-about
+            names in ultra-luxury cruising.
+          </p>
+
+          {/* ── Expandable content ── */}
+          <div className={`aac_expandable ${readMore ? "open" : ""}`}>
+            <p className="aac_list_intro">
+              Explora Journeys was designed for travelers who want:
+            </p>
+
+            <ul className="aac_hero_list">
+              {[
+                "Spacious oceanfront suites",
+                "Elegant European luxury",
+                "Exceptional dining experiences",
+                "Fewer crowds and relaxed atmosphere",
+                "Longer port stays for deeper exploration",
+                "Wellness-focused onboard lifestyle",
+                "Inclusive luxury without hidden surprises",
+              ].map((item) => (
+                <li key={item}>
+                  <span className="aac_list_dot" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <p className="aac_hero_text">
+              According to <strong>Angela Hughes</strong> — CEO of Trips &amp;
+              Ships Luxury Travel, founder of Luxury Travel University, global
+              luxury travel speaker, and one of the most influential women in
+              travel — understanding luxury cruise value matters far more than
+              simply comparing fares.
+            </p>
+
+            <div className="aac_bio_card">
+              <div className="aac_bio_avatar">A</div>
+              <div className="aac_bio_body">
+                <p className="aac_hero_text">
+                  After more than 40 years in the travel industry and visiting
+                  over 121 countries, Angela has helped luxury travelers
+                  evaluate what truly creates a premium cruise experience.
+                </p>
+                <p className="aac_hero_text">
+                  And Explora Journeys is positioned very differently from
+                  mainstream cruise brands.
+                </p>
+              </div>
             </div>
           </div>
+
+          {/* Read more toggle */}
+          <div className="aac_readmore_wrapper">
+            <button
+              className={`aac_readmore_btn ${readMore ? "open" : ""}`}
+              onClick={() => setReadMore(!readMore)}
+            >
+              <span>{readMore ? "Read Less" : "Read More"}</span>
+              <span className="aac_btn_arrow">{readMore ? "↑" : "↓"}</span>
+            </button>
+          </div>
         </div>
- 
-        {/* Read more toggle */}
-        <div className="aac_readmore_wrapper">
-          <button
-            className={`aac_readmore_btn ${readMore ? "open" : ""}`}
-            onClick={() => setReadMore(!readMore)}
-          >
-            <span>{readMore ? "Read Less" : "Read More"}</span>
-            <span className="aac_btn_arrow">{readMore ? "↑" : "↓"}</span>
-          </button>
-        </div>
- 
-      </div>
- 
-    </section>
+      </section>
 
       {/* FLEET OVERVIEW TABLE */}
       <section

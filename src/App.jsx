@@ -13,6 +13,7 @@ import LuxuryExploraJourneysGuide from "./pages/LuxuryExploraJourneysGuide/Luxur
 import ExploraJourneysWorth from "./pages/ExploraJourneysWorth/ExploraJourneysWorth";
 import ExploraJourneysCruises from "./pages/ExploraJourneysCruises/ExploraJourneysCruises";
 import ExploraCruiseCost from "./pages/ExploraCruiseCost/ExploraCruiseCost";
+import ExploraJourneysvsSeabourn from "./pages/ExploraJourneysvsSeabourn/ExploraJourneysvsSeabourn";
 
 function App() {
   return (
@@ -75,6 +76,11 @@ function App() {
           <Route
             path="/how-much-does-an-explora-cruise-cost-2026-2027"
             element={<ExploraCruiseCost />}
+          />
+
+           <Route
+            path="/explora-journeys-vs-seabourn"
+            element={<ExploraJourneysvsSeabourn />}
           />
         </Routes>
       </BrowserRouter>

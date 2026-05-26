@@ -112,6 +112,14 @@ const Nav = () => {
               >
                 How Much Does an Explora Cruise Cost?
               </NavLink>
+
+              <NavLink
+                to="/explora-journeys-vs-seabourn"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Journeys vs Seabourn
+              </NavLink>
             </div>
           </div>
         </div>
@@ -226,6 +234,15 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 How Much Does an Explora Cruise Cost?
+              </NavLink>
+
+              
+              <NavLink
+                to="/explora-journeys-vs-seabourn"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora Journeys vs Seabourn
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
