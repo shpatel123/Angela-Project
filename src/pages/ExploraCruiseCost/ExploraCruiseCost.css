@@ -1,0 +1,852 @@
+/* ── EXPLORA PRICING SECTIONS (Ecc-) ── */
+/* All colors use only project :root variables */
+
+/* ── Shared section base ── */
+.Ecc-section {
+  padding: 60px 20px;
+  font-family: var(--font-body);
+}
+
+.Ecc-section--soft  { background: var(--bg-soft); }
+.Ecc-section--white { background: var(--bg-white); }
+
+.Ecc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Shared header ── */
+.Ecc-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.Ecc-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.Ecc-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+
+.Ecc-subtitle {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin: 0 auto 22px;
+  line-height: 1.7;
+}
+
+.Ecc-accent-line {
+  width: 48px;
+  height: 2px;
+  background: var(--navy);
+  opacity: 0.35;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ════════════════════════════════
+   SECTION 1 — Inclusions
+════════════════════════════════ */
+
+.Ecc-inclusions-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ── Inclusion list ── */
+.Ecc-inc-list-wrap {
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.Ecc-inc-list-label {
+  padding: 14px 22px;
+  background: var(--navy);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bg-white);
+  opacity: 1;
+}
+
+.Ecc-inc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 12px 12px;
+}
+
+.Ecc-inc-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+  cursor: default;
+}
+
+.Ecc-inc-item:hover {
+  background: var(--navy-soft);
+}
+
+.Ecc-inc-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-soft);
+  color: var(--navy);
+  border: 1px solid var(--navy-border);
+  flex-shrink: 0;
+}
+
+.Ecc-inc-text {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-body);
+  line-height: 1.3;
+}
+
+/* ── Right col ── */
+.Ecc-inc-value-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Ecc-value-card {
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  padding: 28px 26px;
+}
+
+.Ecc-value-card-top {
+  margin-bottom: 16px;
+}
+
+.Ecc-value-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--bg-white);
+  opacity: 0.5;
+}
+
+.Ecc-value-headline {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bg-white);
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.Ecc-value-body {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--bg-white);
+  opacity: 0.75;
+  margin: 0;
+}
+
+.Ecc-value-divider {
+  height: 1px;
+  background: var(--bg-white);
+  opacity: 0.12;
+  margin: 18px 0;
+}
+
+.Ecc-value-callout {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--bg-white);
+  opacity: 0.85;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.Ecc-comp-card {
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+}
+
+.Ecc-comp-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+  margin: 0 0 14px;
+}
+
+.Ecc-comp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Ecc-comp-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-body);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--navy-soft);
+  border: 1px solid var(--navy-border);
+  transition: background var(--transition);
+}
+
+.Ecc-comp-item:hover {
+  background: var(--bg-soft);
+}
+
+.Ecc-comp-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--navy);
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+
+/* ════════════════════════════════
+   SECTION 2 — Why It Costs More
+════════════════════════════════ */
+
+.Ecc-drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.Ecc-driver-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--bg-soft);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px 24px 22px;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.Ecc-driver-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--navy-light);
+}
+
+.Ecc-driver-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--bg-white);
+  flex-shrink: 0;
+  transition: background var(--transition);
+}
+
+.Ecc-driver-card:hover .Ecc-driver-icon-wrap {
+  background: var(--navy-light);
+}
+
+.Ecc-driver-content {
+  flex: 1;
+}
+
+.Ecc-driver-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.Ecc-driver-desc {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.Ecc-driver-number {
+  position: absolute;
+  bottom: 12px;
+  right: 18px;
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--navy);
+  opacity: 0.06;
+  line-height: 1;
+  user-select: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .Ecc-inclusions-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-drivers-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .Ecc-title {
+    font-size: 26px;
+  }
+
+  .Ecc-inc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-drivers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-section {
+    padding: 56px 0 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Ecc-container {
+    padding: 0 16px;
+  }
+}
+
+
+
+/* ── EXPLORA HIDDEN COSTS & BEST TIME TO BOOK (Ecc-hc- / Ecc-bt-) ── */
+/* All colors use only project :root variables */
+
+/* ══════════════════════════════════════
+   SECTION 1 — Hidden Costs
+══════════════════════════════════════ */
+
+.Ecc-hc-section {
+  background: var(--bg-white);
+  padding: 60px 20px;
+  font-family: var(--font-body);
+}
+
+.Ecc-hc-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Header ── */
+.Ecc-hc-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.Ecc-hc-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.Ecc-hc-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+
+.Ecc-hc-subtitle {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto 22px;
+  line-height: 1.7;
+}
+
+.Ecc-hc-accent-line {
+  width: 48px;
+  height: 2px;
+  background: var(--navy);
+  opacity: 0.35;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ── Cards grid ── */
+.Ecc-hc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.Ecc-hc-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.Ecc-hc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--navy-light);
+}
+
+.Ecc-hc-img-wrap {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+
+.Ecc-hc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.65);
+  transition: transform 0.55s ease;
+}
+
+.Ecc-hc-card:hover .Ecc-hc-img {
+  transform: scale(1.06);
+}
+
+.Ecc-hc-img-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+}
+
+.Ecc-hc-img-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-white);
+}
+
+.Ecc-hc-body {
+  padding: 16px 16px 20px;
+}
+
+.Ecc-hc-card-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.Ecc-hc-card-desc {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   SECTION 2 — Best Time To Book
+══════════════════════════════════════ */
+
+.Ecc-bt-section {
+  background: var(--bg-soft);
+  padding: 80px 0 90px;
+  font-family: var(--font-body);
+}
+
+.Ecc-bt-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Header ── */
+.Ecc-bt-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.Ecc-bt-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.Ecc-bt-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+
+.Ecc-bt-subtitle {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto 22px;
+  line-height: 1.7;
+}
+
+.Ecc-bt-accent-line {
+  width: 48px;
+  height: 2px;
+  background: var(--navy);
+  opacity: 0.35;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ── Layout ── */
+.Ecc-bt-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ── Left col ── */
+.Ecc-bt-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Ecc-bt-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 280px;
+}
+
+.Ecc-bt-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
+  transition: transform 0.55s ease;
+}
+
+.Ecc-bt-img-wrap:hover .Ecc-bt-img {
+  transform: scale(1.04);
+}
+
+.Ecc-bt-img-label {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 99px;
+  padding: 7px 16px;
+  color: var(--bg-white);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.Ecc-bt-img-label-icon {
+  opacity: 0.8;
+}
+
+.Ecc-bt-timing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.Ecc-bt-timing-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  transition: background var(--transition), border-color var(--transition);
+  cursor: default;
+}
+
+.Ecc-bt-timing-item:hover {
+  border-color: var(--navy-light);
+}
+
+.Ecc-bt-timing-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-soft);
+  color: var(--navy);
+  flex-shrink: 0;
+  border: 1px solid var(--navy-border);
+}
+
+.Ecc-bt-timing-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-body);
+  line-height: 1.35;
+}
+
+/* ── Right col — advisor card ── */
+.Ecc-bt-advisor-card {
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.Ecc-bt-advisor-top {
+  background: var(--navy);
+  padding: 28px 28px 24px;
+}
+
+.Ecc-bt-advisor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 99px;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bg-white);
+  margin-bottom: 14px;
+}
+
+.Ecc-bt-advisor-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bg-white);
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+
+.Ecc-bt-advisor-intro {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--bg-white);
+  opacity: 0.75;
+  margin: 0;
+}
+
+.Ecc-bt-advisor-divider {
+  height: 1px;
+  background: var(--navy-border);
+}
+
+.Ecc-bt-helps-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+  margin: 0 0 12px;
+  padding: 20px 24px 0;
+}
+
+.Ecc-bt-helps-list {
+  list-style: none;
+  padding: 0 24px;
+  margin: 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Ecc-bt-helps-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-body);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--navy-soft);
+  border: 1px solid var(--navy-border);
+  transition: background var(--transition);
+}
+
+.Ecc-bt-helps-item:hover {
+  background: var(--bg-soft);
+}
+
+.Ecc-bt-helps-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--navy);
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+
+.Ecc-bt-advisor-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 24px 24px;
+  margin-top: 16px;
+  border-top: 1px solid var(--navy-border);
+}
+
+.Ecc-bt-cta-text {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-muted);
+  font-family: var(--font-display);
+}
+
+.Ecc-bt-cta-btn {
+  padding: 10px 22px;
+  background: var(--navy);
+  color: var(--bg-white);
+  border: none;
+  border-radius: 99px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: opacity var(--transition);
+  white-space: nowrap;
+}
+
+.Ecc-bt-cta-btn:hover {
+  opacity: 0.85;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .Ecc-hc-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .Ecc-bt-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-bt-img-wrap {
+    height: 220px;
+  }
+}
+
+@media (max-width: 720px) {
+  .Ecc-hc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .Ecc-hc-title,
+  .Ecc-bt-title {
+    font-size: 26px;
+  }
+
+  .Ecc-hc-section,
+  .Ecc-bt-section {
+    padding: 56px 0 64px;
+  }
+
+  .Ecc-bt-timing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .Ecc-hc-container,
+  .Ecc-bt-container {
+    padding: 0 16px;
+  }
+
+  .Ecc-hc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-bt-advisor-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -104,6 +104,14 @@ const Nav = () => {
               >
                 Explora Journeys Cruise Inclusions
               </NavLink>
+
+              <NavLink
+                to="/how-much-does-an-explora-cruise-cost-2026-2027"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                How Much Does an Explora Cruise Cost?
+              </NavLink>
             </div>
           </div>
         </div>
@@ -210,6 +218,14 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Explora Journeys Cruise Inclusions
+              </NavLink>
+
+              <NavLink
+                to="/how-much-does-an-explora-cruise-cost-2026-2027"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                How Much Does an Explora Cruise Cost?
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

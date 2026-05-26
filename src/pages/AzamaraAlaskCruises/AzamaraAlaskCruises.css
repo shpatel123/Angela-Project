@@ -979,227 +979,422 @@
 
 
 
-/* =========================================================
-   HERO SECTION
-========================================================= */
-
-/* ================= HERO ================= */
-
+/* ============================================================
+   SECTION
+   ============================================================ */
 .aac_hero_section {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 20px 80px;
-    overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+  font-family: var(--font-body);
 }
 
-/* BACKGROUND */
 
+/* ============================================================
+   BACKGROUND SLIDESHOW
+   ============================================================ */
 .aac_hero_bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1.8s ease-in-out, transform 8s linear;
-    transform: scale(1.08);
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out, transform 8s linear;
+  transform: scale(1.08);
+  will-change: opacity, transform;
 }
 
 .aac_hero_bg.active {
-    opacity: 1;
-    transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
 
-/* OVERLAY */
 
+/* ============================================================
+   OVERLAYS
+   ============================================================ */
+
+/* Primary dark overlay using bg-dark */
 .aac_hero_overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  background: #0009;  
+  z-index: 1;
 }
 
-/* CONTENT */
 
+
+@keyframes aacShimmerLine {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1;   }
+}
+
+
+/* ============================================================
+   SLIDE DOTS
+   ============================================================ */
+.aac_hero_dots {
+  position: absolute;
+  bottom: 80px;
+  right: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.aac_hero_dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--transition), transform var(--transition);
+}
+
+
+/* ============================================================
+   CONTENT WRAPPER
+   ============================================================ */
 .aac_hero_content {
-    position: relative;
-    z-index: 2;
-    max-width: 980px;
-    text-align: center;
-    color: #fff;
-
-    animation: aacHeroFadeUp 1.3s ease forwards;
+  position: relative;
+  z-index: 5;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  animation: aacHeroFadeUp 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes aacHeroFadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(45px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* EYEBROW */
-
-.aac_hero_eyebrow {
-    display: inline-block;
-    margin-bottom: 24px;
-    padding: 10px 24px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 100px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(8px);
+  from { opacity: 0; transform: translateY(50px); }
+  to   { opacity: 1; transform: translateY(0);    }
 }
 
-/* H1 */
 
+
+/* ============================================================
+   HEADING
+   ============================================================ */
 .aac_hero_content h1 {
-    font-size: 60px;
-    line-height: 1;
-    font-weight: 400;
-    margin-bottom: 22px;
-    color: #fff;
+  font-family: var(--font-display);
+  font-size: 58px;
+  line-height: 1.07;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: -0.01em;
 }
 
-/* LINE */
-
-.aac_hero_line {
-    width: 120px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 0 auto 30px;
+.aac_hero_content h1 em {
+  font-style: italic;
+  color: var(--gold);
 }
 
-/* SUBTITLE */
+.aac_br_desktop { display: block; }
 
+
+/* ============================================================
+   GOLD ORNAMENT DIVIDER
+   ============================================================ */
+.aac_divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 16px auto 22px;
+}
+
+.aac_divider_line {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 92, 0.55));
+}
+
+.aac_divider_line:last-child {
+  background: linear-gradient(90deg, rgba(201, 168, 92, 0.55), transparent);
+}
+
+.aac_divider_diamond {
+  width: 7px;
+  height: 7px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+
+/* ============================================================
+   SUBTITLE
+   ============================================================ */
 .aac_hero_subtitle {
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 300;
-    margin-bottom: 12px;
-    color: rgba(255, 255, 255, 0.92);
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.4;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 0.01em;
 }
 
-/* BODY TEXT */
 
+/* ============================================================
+   BODY TEXT
+   ============================================================ */
 .aac_hero_text {
-    max-width: 900px;
-    margin: 0 auto 22px;
-    font-size: 18px;
-    line-height: 1.9;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.88);
+  max-width: 780px;
+  margin: 0 auto 18px;
+  font-size: 18px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
 }
 
-/* LIST */
+.aac_hero_text strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+}
 
+
+/* ============================================================
+   EXPANDABLE SECTION
+   ============================================================ */
+.aac_expandable {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 0.72s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity    0.5s  ease;
+}
+
+.aac_expandable.open {
+  max-height: 1400px;
+  opacity: 1;
+}
+
+.aac_list_intro {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin: 22px 0 18px;
+  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+}
+
+
+/* ============================================================
+   FEATURE LIST
+   ============================================================ */
 .aac_hero_list {
-    list-style: none;
-    padding: 0;
-    margin: 30px 0;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 28px;
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
 }
 
 .aac_hero_list li {
-    margin-bottom: 12px;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  background: rgba(39, 68, 114, 0.2);        /* navy-soft elevated */
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.82);
+  text-align: left;
+  transition: background var(--transition), border-color var(--transition);
 }
 
-/* READ MORE */
+.aac_hero_list li:hover {
+  background: rgba(39, 68, 114, 0.38);
+  border-color: var(--gold-border);
+}
 
+.aac_list_dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+
+/* ============================================================
+   BIO CARD
+   ============================================================ */
+.aac_bio_card {
+  max-width: 700px;
+  margin: 24px auto 28px;
+  padding: 24px 28px;
+  background: rgba(28, 47, 74, 0.45);        /* bg-dark2 at 45% */
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+}
+
+.aac_bio_avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(39, 68, 114, 0.7);        /* navy at 70% */
+  border: 2px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.aac_bio_body {
+  flex: 1;
+}
+
+.aac_bio_body .aac_hero_text {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.aac_bio_body .aac_hero_text:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================================
+   READ MORE BUTTON
+   ============================================================ */
 .aac_readmore_wrapper {
-    margin-top: 35px;
+  margin-top: 32px;
 }
 
 .aac_readmore_btn {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    cursor: pointer;
-    position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid var(--gold-border);
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 13px 32px;
+  border-radius: 100px;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+  position: relative;
+  overflow: hidden;
 }
 
-.aac_readmore_btn::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 1px;
-    background: #fff;
+.aac_readmore_btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gold-soft);
+  opacity: 0;
+  transition: opacity var(--transition);
 }
 
-/* ================= RESPONSIVE ================= */
+.aac_readmore_btn:hover::before    { opacity: 1; }
+.aac_readmore_btn:hover            { border-color: rgba(201, 168, 92, 0.7); }
+.aac_readmore_btn:active           { transform: scale(0.98); }
 
+.aac_btn_arrow {
+  display: inline-block;
+  transition: transform var(--transition);
+  line-height: 1;
+}
+
+.aac_readmore_btn.open .aac_btn_arrow {
+  transform: rotate(180deg);
+}
+
+
+/* ============================================================
+   SCROLL HINT
+   ============================================================ */
+.aac_scroll_hint {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.aac_scroll_bar {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: aacScrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes aacScrollPulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(0.8); }
+  50%       { opacity: 1;   transform: scaleY(1);   }
+}
+
+.aac_scroll_label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 1024px) {
-
-    .aac_hero_content h1 {
-        font-size: 58px;
-    }
-
-    .aac_hero_subtitle {
-        font-size: 24px;
-    }
-
-    .aac_hero_text {
-        font-size: 18px;
-    }
+  .aac_hero_content h1  { font-size: 50px; }
+  .aac_hero_subtitle    { font-size: 19px; }
+  .aac_hero_text        { font-size: 16px; }
 }
 
 @media (max-width: 768px) {
-
-    .aac_hero_section {
-        padding: 110px 20px 70px;
-    }
-
-    .aac_hero_content h1 {
-        font-size: 42px;
-        line-height: 1.1;
-    }
-
-    .aac_hero_subtitle {
-        font-size: 20px;
-    }
-
-    .aac_hero_text {
-        font-size: 16px;
-        line-height: 1.8;
-    }
-
-    .aac_hero_list li {
-        font-size: 15px;
-    }
+  .aac_hero_section     { padding: 110px 20px 90px; }
+  .aac_hero_content h1  { font-size: 38px; line-height: 1.12; }
+  .aac_hero_subtitle    { font-size: 17px; }
+  .aac_hero_text        { font-size: 15px; line-height: 1.8; }
+  .aac_br_desktop       { display: none; }
+  .aac_hero_list        { grid-template-columns: 1fr; }
+  .aac_bio_card         { flex-direction: column; align-items: center; text-align: center; }
+  .aac_bio_body .aac_hero_text { text-align: center; }
+  .aac_hero_dots        { bottom: 90px; right: 16px; }
 }
 
 @media (max-width: 480px) {
-
-    .aac_hero_content h1 {
-        font-size: 34px;
-    }
-
-    .aac_hero_subtitle {
-        font-size: 18px;
-    }
-
-    .aac_hero_text {
-        font-size: 15px;
-    }
-
-    .aac_hero_eyebrow {
-        font-size: 10px;
-        padding: 8px 18px;
-    }
+  .aac_hero_content h1  { font-size: 30px; }
+  .aac_hero_subtitle    { font-size: 16px; }
+  .aac_hero_text        { font-size: 14px; }
+  .aac_hero_eyebrow     { font-size: 9px;  padding: 8px 16px; }
+  .aac_readmore_btn     { font-size: 10px; padding: 11px 26px; }
 }

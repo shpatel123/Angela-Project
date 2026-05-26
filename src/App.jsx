@@ -12,6 +12,7 @@ import AzamaraNorwayFjordsCruises from "./pages/AzamaraNorwayFjordsCruises/Azama
 import LuxuryExploraJourneysGuide from "./pages/LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide";
 import ExploraJourneysWorth from "./pages/ExploraJourneysWorth/ExploraJourneysWorth";
 import ExploraJourneysCruises from "./pages/ExploraJourneysCruises/ExploraJourneysCruises";
+import ExploraCruiseCost from "./pages/ExploraCruiseCost/ExploraCruiseCost";
 
 function App() {
   return (
@@ -68,6 +69,12 @@ function App() {
           <Route
             path="/explora-journeys-cruise-inclusions"
             element={<ExploraJourneysCruises />}
+          />
+
+          
+          <Route
+            path="/how-much-does-an-explora-cruise-cost-2026-2027"
+            element={<ExploraCruiseCost />}
           />
         </Routes>
       </BrowserRouter>
