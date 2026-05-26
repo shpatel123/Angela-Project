@@ -359,17 +359,7 @@ const ExploraJourneysvsSeabourn = () => {
         <div className="aac_hero_overlay_gradient" />
         <div className="aac_hero_noise" />
 
-        {/* ── Slide indicators ── */}
-        <div className="aac_hero_dots">
-          {images.map((_, i) => (
-            <button
-              key={i}
-              className={`aac_hero_dot ${i === currentSlide ? "active" : ""}`}
-              onClick={() => setCurrentSlide(i)}
-              aria-label={`Slide ${i + 1}`}
-            />
-          ))}
-        </div>
+      
 
         {/* ── Main content ── */}
         <div className="aac_hero_content">

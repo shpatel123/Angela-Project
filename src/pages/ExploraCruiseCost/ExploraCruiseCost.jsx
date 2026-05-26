@@ -460,24 +460,14 @@ const ExploraCruiseCost = () => {
         <div className="aac_hero_overlay_gradient" />
         <div className="aac_hero_noise" />
 
-        {/* ── Slide indicators ── */}
-        <div className="aac_hero_dots">
-          {images.map((_, i) => (
-            <button
-              key={i}
-              className={`aac_hero_dot ${i === currentSlide ? "active" : ""}`}
-              onClick={() => setCurrentSlide(i)}
-              aria-label={`Slide ${i + 1}`}
-            />
-          ))}
-        </div>
+      
 
         {/* ── Main content ── */}
         <div className="aac_hero_content">
           {/* Heading */}
           <h1>
-            How Much Does an <em>Explora</em> Cruise Cost
-            <br className="aac_br_desktop" /> in 2026 and 2027?
+            How Much Does an Explora Cruise Cost
+             in 2026 and 2027?
           </h1>
 
           <p className="aac_hero_subtitle">
