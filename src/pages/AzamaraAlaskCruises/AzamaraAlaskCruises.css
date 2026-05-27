@@ -1023,7 +1023,7 @@
 .aac_hero_overlay {
   position: absolute;
   inset: 0;
-  background: #0009;  
+    background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 

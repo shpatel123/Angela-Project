@@ -1038,8 +1038,42 @@ const ExploraJourneysWorth = () => {
         </div>
       </section>
 
+            {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Discover Explora Journeys</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Experience the traditional EXPLORA II Coin Ceremony as Explora
+              Journeys celebrates another milestone in the creation of its next
+              ultra-luxury cruise ship, blending maritime heritage with modern
+              elegance and sophisticated ocean travel.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/0hqotlatISs"
+                title="EXPLORA II - Coin Ceremony | Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHO SHOULD CHOOSE */}
-      <section className="Asc-section Asc-bg-soft" id="Asc-who">
+      <section className="Asc-section Asc-bg-white" id="Asc-who">
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">Who Explora Journeys Is Best For</h2>
@@ -1100,39 +1134,7 @@ const ExploraJourneysWorth = () => {
         </div>
       </section>
 
-      {/* VIDEO SECTION */}
-      <section
-        className="Asc-video-section"
-        id="Asc-video"
-        style={{ backgroundColor: "var(--bg-white)" }}
-      >
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Discover Explora Journeys</h2>
 
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-              Experience the traditional EXPLORA II Coin Ceremony as Explora
-              Journeys celebrates another milestone in the creation of its next
-              ultra-luxury cruise ship, blending maritime heritage with modern
-              elegance and sophisticated ocean travel.
-            </p>
-          </div>
-
-          <div className="Asc-video-wrapper">
-            <div className="Asc-video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/0hqotlatISs"
-                title="EXPLORA II - Coin Ceremony | Explora Journeys"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── COMMON MISTAKES ───────────────────────────────────────── */}
       <section className="Lfsg-section Lfsg-bg-dark" id="Lfsg-mistakes">
@@ -1256,11 +1258,46 @@ const ExploraJourneysWorth = () => {
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+<section
+  className="Asc-video-section"
+  id="Asc-video"
+  style={{ backgroundColor: "var(--bg-white)" }}
+>
+  <div className="Asc-container">
+    <div className="Asc-section-header">
+      <h2 className="Asc-h2">
+        A Taste Of Exploration
+      </h2>
+
+      <div className="Asc-accent-line"></div>
+
+      <p className="Asc-video-intro">
+        Discover the culinary artistry of Explora Journeys as world-class
+        dining, refined flavors, and immersive gastronomic experiences come
+        together to redefine luxury dining at sea.
+      </p>
+    </div>
+
+    <div className="Asc-video-wrapper">
+      <div className="Asc-video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/dOntytWI4sw"
+          title="EXPLORA I - A Taste Of Exploration I Explora Journeys"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* PLANNING ADVICE */}
       <section
         className="Avr-planning-section"
         id="Asc-planning-advice"
-        style={{ backgroundColor: "var(--bg-white)" }}
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Asc-container">
           {/* HEADING */}
