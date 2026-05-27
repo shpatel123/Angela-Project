@@ -28,7 +28,7 @@
 
 .Avs-verdict-title {
     font-family: var(--font-display);
-    font-size: 38px;
+    font-size: 48px;
     color: var(--navy);
     margin-bottom: 12px;
     font-weight: 500;
@@ -176,16 +176,8 @@
    AZAMARA OVERVIEW SECTION (azs-)
    ========================================================================== */
 .azs-overview-section {
-    padding: 60px 20px;
-    background: var(--bg-white);
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-}
-.azs-overview-section1 {
-    padding:  0 20px 60px 20px;
-    background: var(--bg-white);
+    padding: 80px 20px;
+    background: radial-gradient(circle at 10% 20%, rgba(231, 243, 245, 0.4) 0%, var(--bg-white) 90%);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -202,7 +194,6 @@
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 60px;
-    align-items: flex-start;
 }
 
 .azs-image-col {
@@ -210,25 +201,31 @@
     height: 600px;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--navy-border);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .azs-overview-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform var(--transition);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.azs-image-col:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(39, 68, 114, 0.16), 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .azs-image-col:hover .azs-overview-img {
-    transform: scale(1.04);
+    transform: scale(1.05);
 }
 
 .azs-image-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(15, 28, 46, 0.85) 0%, rgba(15, 28, 46, 0.4) 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.85) 0%, rgba(15, 28, 46, 0.3) 50%, transparent 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -238,49 +235,73 @@
 
 .azs-image-badge {
     align-self: flex-start;
-    background: var(--navy);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     color: var(--bg-white);
     padding: 6px 14px;
     border-radius: 30px;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     margin-bottom: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .azs-image-title {
     font-family: var(--font-display);
-    font-size: 22px !important;
+    font-size: 24px !important;
     color: var(--bg-white);
     margin: 0;
     font-weight: 500 !important;
     text-align: left;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 10px rgba(15, 28, 46, 0.5);
 }
 
 .azs-content-col {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
 }
 
 .azs-title {
     font-family: var(--font-display);
-    font-size: 36px;
+    font-size: 40px;
     color: var(--navy);
     margin: 0;
     font-weight: 500;
     line-height: 1.25;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--bg-dark2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 6px;
+}
+
+.azs-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--navy);
+    border-radius: 2px;
 }
 
 .azs-intro {
     font-family: var(--font-body);
-    font-size: 16px;
-    color: var(--text-body);
+    font-size: 18px;
+    color: var(--text-muted);
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 .azs-sub-grid {
@@ -291,30 +312,44 @@
 }
 
 .azs-info-card {
-    background: var(--bg-soft);
-    border-radius: var(--radius);
-    padding: 24px;
-    border: 1px solid var(--navy-border);
-    transition: transform var(--transition), box-shadow var(--transition);
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
 }
 
 .azs-info-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.2);
 }
 
 .azs-recommend-card {
     grid-column: span 2;
-    background: var(--navy-soft);
+    background: linear-gradient(135deg, rgba(231, 243, 245, 0.5) 0%, rgba(39, 68, 114, 0.05) 100%);
+    border-left: 4px solid var(--navy);
+    border-top: 1px solid rgba(39, 68, 114, 0.12);
+    border-right: 1px solid rgba(39, 68, 114, 0.12);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.12);
+}
+
+.azs-recommend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.1);
+    border-color: rgba(39, 68, 114, 0.25);
+    border-left-color: var(--navy);
 }
 
 .azs-group-title {
     font-family: var(--font-body);
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
     color: var(--navy);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     line-height: 1.4;
+    letter-spacing: 0.2px;
 }
 
 .azs-list {
@@ -323,41 +358,64 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .azs-list-item {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 12px;
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 14.5px;
     color: var(--text-body);
-    line-height: 1.45;
+    line-height: 1.5;
+    font-weight: 500;
+    transition: transform 0.2s ease;
 }
 
 .azs-list-icon {
     color: var(--navy);
     flex-shrink: 0;
     margin-top: 2px;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect on list items to feel interactive */
+.azs-list-item:hover .azs-list-icon {
+    transform: scale(1.15) translateX(2px);
 }
 
 .azs-star-icon {
-    color: var(--navy);
+    color: var(--navy); /* Beautiful warm luxury gold color */
 }
 
 @media (max-width: 992px) {
     .azs-overview-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+        align-items: stretch;
     }
 
     .azs-image-col {
-        height: 400px;
+        height: 450px;
+    }
+
+    .azs-title {
+        text-align: center;
+        padding-bottom: 14px;
+    }
+
+    .azs-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .azs-intro {
+        text-align: center;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .azs-sub-grid {
         grid-template-columns: 1fr;
     }
@@ -365,17 +423,31 @@
     .azs-recommend-card {
         grid-column: span 1;
     }
+}
+
+@media (max-width: 480px) {
+    .azs-overview-section {
+        padding: 50px 16px;
+    }
+
+    .azs-overview-section1 {
+        padding: 0 16px 50px 16px;
+    }
 
     .azs-image-col {
-        height: 300px;
+        height: 350px;
     }
 
     .azs-image-title {
-        font-size: 24px;
+        font-size: 20px !important;
     }
 
     .azs-title {
-        font-size: 24px;
+        font-size: 28px;
+    }
+
+    .azs-info-card {
+        padding: 20px;
     }
 }
 
@@ -1399,6 +1471,11 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.Avr-expert-bio-intro-box p{
+    font-size: 18px;
+    color: var(--navy);
 }
 
 .Avr-expert-subgrid-title {

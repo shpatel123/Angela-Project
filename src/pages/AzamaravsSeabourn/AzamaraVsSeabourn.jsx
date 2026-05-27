@@ -482,6 +482,12 @@ const AzamaraVsSeabourn = () => {
       {/* AZAMARA OVERVIEW */}
       <section className="azs-overview-section" id="azs-azamara-overview">
         <div className="azs-container">
+          <div className="Avs-verdict-header">
+            <h2 className="Avs-verdict-title">
+              Azamara: Destination-Focused Boutique Cruising
+            </h2>
+            <div className="Avs-verdict-accent"></div>
+          </div>
           <div className="azs-overview-grid">
             {/* Left Side: Image */}
             <div className="azs-image-col">
@@ -498,9 +504,6 @@ const AzamaraVsSeabourn = () => {
 
             {/* Right Side: Content */}
             <div className="azs-content-col">
-              <h2 className="azs-title">
-                Azamara: Destination-Focused Boutique Cruising
-              </h2>
               <p className="azs-intro">
                 Azamara specializes in immersive destination experiences.
               </p>
@@ -577,14 +580,21 @@ const AzamaraVsSeabourn = () => {
       </section>
 
       {/* Seabourn*/}
-      <section className="azs-overview-section1" id="azs-seabourn-overview">
+      <section
+        className="azs-overview-section"
+        id="azs-seabourn-overview"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
         <div className="azs-container">
+          <div className="Avs-verdict-header">
+            <h2 className="Avs-verdict-title">
+              Seabourn: Ultra-Luxury Yacht-Style Cruising
+            </h2>
+            <div className="Avs-verdict-accent"></div>
+          </div>
           <div className="azs-overview-grid">
             {/* Right Side: Content */}
             <div className="azs-content-col">
-              <h2 className="azs-title">
-                Seabourn: Ultra-Luxury Yacht-Style Cruising
-              </h2>
               <p className="azs-intro">
                 Seabourn delivers a far more elevated ultra-luxury atmosphere.
               </p>
@@ -649,7 +659,7 @@ const AzamaraVsSeabourn = () => {
             </div>
 
             {/* Left Side: Image */}
-            <div className="azs-image-col">
+            <div className="azs-image-col" style={{ height: "100%" }}>
               <img
                 src={SeabournExperience}
                 alt="Seabourn ultra luxury cruise ship overview"
@@ -1455,14 +1465,7 @@ const AzamaraVsSeabourn = () => {
                   className="Avr-expert-bio-intro-box"
                   style={{ padding: "0 10px" }}
                 >
-                  <p
-                    style={{
-                      fontSize: "15px",
-                      lineHeight: "1.65",
-                      color: "var(--text-body)",
-                      margin: "0",
-                    }}
-                  >
+                  <p>
                     As a globally recognized luxury travel advisor, travel
                     industry speaker, columnist, and 2024 Luxury Travel
                     Influencer of the Year by Travel Leaders Network, Angela
@@ -1667,30 +1670,36 @@ const AzamaraVsSeabourn = () => {
       </section>
 
       {/* VIDEO SECTION */}
-<section className="Asc-video-section" id="Asc-video" style={{backgroundColor: "var(--bg-white)"}}>
-    <div className="Asc-container">
-        <div className="Asc-section-header">
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
             <h2 className="Asc-h2">Azamara Forward</h2>
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-video-intro">
-                Explore Azamara Forward and discover how the cruise line is entering a new era with refreshed ships, enhanced experiences, and immersive destination-focused luxury travel.
+              Explore Azamara Forward and discover how the cruise line is
+              entering a new era with refreshed ships, enhanced experiences, and
+              immersive destination-focused luxury travel.
             </p>
-        </div>
+          </div>
 
-        <div className="Asc-video-wrapper">
+          <div className="Asc-video-wrapper">
             <div className="Asc-video-frame">
-                <iframe
-                    src="https://www.youtube.com/embed/6lwQ6EiHI_g"
-                    title="Azamara Forward | A New Era for the Fleet"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/6lwQ6EiHI_g"
+                title="Azamara Forward | A New Era for the Fleet"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       {/* PLANNING ADVICE */}
       <section className="Asc-section Asc-bg-soft" id="Asc-planning-advice">
@@ -1716,6 +1725,13 @@ const AzamaraVsSeabourn = () => {
               <p className="Asc-planning-intro-text">
                 Choosing the right luxury cruise line can dramatically shape
                 your travel experience.
+              </p>
+
+              <p className="Asc-planning-intro-text">
+                Every luxury cruise brand offers a different atmosphere, onboard
+                experience, destination focus, and level of personalization.
+                Finding the perfect match ensures your vacation feels
+                effortless, immersive, and truly memorable.
               </p>
 
               <div className="Asc-overview-highlight-box Asc-planning-alert-box">

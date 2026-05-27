@@ -715,8 +715,6 @@ const ExploraJourneysCruises = () => {
         </div>
       </section>
 
-     
-
       {/* ════════════════════════════════════════
 WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
 ════════════════════════════════════════ */}
@@ -971,38 +969,39 @@ WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
 
       <AacExpertSection />
 
-{/* VIDEO SECTION */}
-<section
-  className="Asc-video-section"
-  id="Asc-video"
-  style={{ backgroundColor: "var(--bg-white)" }}
->
-  <div className="Asc-container">
-    <div className="Asc-section-header">
-      <h2 className="Asc-h2">Explora Journeys Video Experience</h2>
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explora Journeys Video Experience</h2>
 
-      <div className="Asc-accent-line"></div>
+            <div className="Asc-accent-line"></div>
 
-      <p className="Asc-video-intro">
-        Experience the elegance and celebration of the EXPLORA II Naming
-        Ceremony by Explora Journeys — showcasing the brand’s modern luxury,
-        sophisticated design, and immersive ocean travel experience.
-      </p>
-    </div>
+            <p className="Asc-video-intro">
+              Experience the elegance and celebration of the EXPLORA II Naming
+              Ceremony by Explora Journeys — showcasing the brand’s modern
+              luxury, sophisticated design, and immersive ocean travel
+              experience.
+            </p>
+          </div>
 
-    <div className="Asc-video-wrapper">
-      <div className="Asc-video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/-MoZN-XQPLY"
-          title="EXPLORA II Naming Ceremony I Explora Journeys"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/-MoZN-XQPLY"
+                title="EXPLORA II Naming Ceremony I Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* WHO SHOULD CHOOSE */}
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
@@ -1457,11 +1456,45 @@ WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explore the Explora Journeys Experience</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Journey through the beauty of the Caribbean with Explora Journeys
+              as this cinematic experience captures crystal-clear waters,
+              vibrant island culture, and the refined elegance of luxury ocean
+              travel.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/XrrbICIeWhQ"
+                title="Chapter Two: Tales of the Caribbean Sea I Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* final verdict */}
 
       <section
         className="Ejv-verdict-section"
-        style={{ backgroundColor: "var(--bg-white)" }}
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Ejv-verdict-container">
           {/* Header */}
@@ -1559,7 +1592,7 @@ WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
       </section>
 
       {/* FAQ */}
-      <section className="Asc-section Asc-bg-soft" id="Asc-faq">
+      <section className="Asc-section Asc-bg-white" id="Asc-faq">
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">Frequently Asked Questions</h2>

@@ -1472,12 +1472,7 @@
     color: #ffffff;
 }
 
-.Avr-expert-list-label {
-    font-size: 13.5px !important;
-    font-weight: 500 !important;
-    color: var(--text-body) !important;
-    line-height: 1.4 !important;
-}
+
 
 .Avr-expert-list-item:hover .Avr-expert-list-label {
     color: #ffffff !important;
@@ -2826,7 +2821,6 @@
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 48px;
-    align-items: center;
 }
 
 @media (max-width: 991px) {
@@ -2838,10 +2832,10 @@
 
 /* Clean styles to remove inline CSS */
 .Asc-who-card-intro {
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    color: var(--navy) !important;
-    margin: 0 0 16px 0 !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0 0 16px 0;
 }
 
 .Asc-who-list-item {
@@ -2862,29 +2856,43 @@
 }
 
 .Asc-planning-intro-title {
-    font-size: 24px;
+    font-family: var(--font-display);
+    font-size: 32px;
     color: var(--navy);
-    font-weight: 600;
-    margin: 0 0 16px 0 !important;
-    line-height: 1.3 !important;
+    font-weight: 500;
+    margin: 0 0 20px 0 !important;
+    line-height: 1.35 !important;
+    letter-spacing: -0.02em !important;
 }
 
 .Asc-planning-intro-text {
-    font-size: 16px !important;
-    line-height: 1.65 !important;
-    color: var(--navy) !important;
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--navy);
+    font-weight: 400;
     margin: 0 0 24px 0 !important;
 }
 
 .Asc-planning-alert-box {
     width: 100%;
-    padding: 24px;
-    background: #fff;
+    padding: 24px 28px;
+    background: var(--bg-white);
     border-left: 4px solid var(--navy);
-    border-radius: 0 12px 12px 0;
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    border-right: 1px solid rgba(39, 68, 114, 0.06);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: 4px 20px 20px 4px;
     display: flex;
     gap: 16px;
-    align-items: flex-start;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(39, 68, 114, 0.03);
+    transition: var(--transition);
+}
+
+.Asc-planning-alert-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(39, 68, 114, 0.08);
 }
 
 .Asc-planning-alert-icon {
@@ -2897,28 +2905,81 @@
     margin: 0 !important;
     font-size: 15px !important;
     line-height: 1.6 !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     color: var(--navy) !important;
+    font-style: italic !important;
 }
 
 .Asc-planning-card-title {
-    font-size: 17px !important;
+    font-family: var(--font-body) !important;
+    font-size: 18px !important;
     font-weight: 600 !important;
     color: var(--navy) !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 24px 0 !important;
     line-height: 1.4 !important;
+    letter-spacing: 0.01em !important;
 }
 
 .Asc-who-list.planning-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+    margin: 0 0 28px 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+@media (max-width: 480px) {
+    .Asc-who-list.planning-list {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.Asc-who-list.planning-list .Asc-who-list-item {
+    display: flex !important;
+    align-items: center !important;
     gap: 12px !important;
+    background: rgba(39, 68, 114, 0.02) !important;
+    padding: 12px 18px !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(39, 68, 114, 0.04) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: var(--text-body) !important;
+    transition: var(--transition) !important;
+}
+
+.Asc-who-list.planning-list .Asc-who-list-item:hover {
+    background: rgba(39, 68, 114, 0.06) !important;
+    border-color: rgba(39, 68, 114, 0.12) !important;
+    transform: translateX(3px);
+}
+
+.Asc-who-list.planning-list .Asc-who-list-icon {
+    color: #2e7d52 !important;
+    margin: 0 !important;
+}
+
+.Asc-planning-footer {
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    padding-top: 24px !important;
+    margin-top: 4px !important;
+}
+
+.Asc-planning-footer .Asc-planning-intro-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 500;
 }
 
 .Asc-why-trust-intro {
-    font-size: 17px;
-    line-height: 1.65 !important;
-    color: var(--navy) !important;
-    margin: 0 0 24px 0 !important;
-    font-weight: 400 !important;
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--navy);
+    margin: 0 0 24px 0;
+    font-weight: 400;
 }
 
 .Asc-why-trust-quote-box {
@@ -2984,7 +3045,18 @@
 }
 
 .Asc-planning-card {
-    border-top: 4px solid var(--navy) !important;
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 40px !important;
+    border: 1px solid rgba(39, 68, 114, 0.06) !important;
+    border-top: 5px solid var(--navy) !important;
+    box-shadow: 0 15px 45px rgba(39, 68, 114, 0.06) !important;
+    transition: var(--transition) !important;
+}
+
+.Asc-planning-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 55px rgba(39, 68, 114, 0.12) !important;
 }
 
 /* Final Verdict Section */
@@ -3924,7 +3996,7 @@
 
 .Avr-expert-list-label {
     font-family: var(--font-body);
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-body) !important;
     line-height: 1.45;
     font-weight: 500;

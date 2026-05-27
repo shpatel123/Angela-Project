@@ -136,6 +136,8 @@
   transition: right 0.3s ease;
   z-index: 1050;
   box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .offcanvas-menu a {
