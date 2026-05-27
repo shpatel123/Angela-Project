@@ -43,7 +43,7 @@ import FineDining from "../../assets/ExploraJourneysCruises/Fine-Dining.webp";
 import PremiumBeverages from "../../assets/ExploraJourneysCruises/Premium-Beverages.webp";
 import ExperienceImage from "../../assets/ExploraJourneysCruises/Experience.webp";
 import OnboardExperience from "../../assets/ExploraJourneysCruises/onboard-experience.webp";
-import FitnessAccess from "../../assets/ExploraJourneysCruises/Fitness -Access.webp";
+import FitnessAccess from "../../assets/ExploraJourneysCruises/explora-journeys-luxury-fitness-center-gym.webp";
 import SuiteServices from "../../assets/ExploraJourneysCruises/Suite-Services.webp";
 
 import { Helmet } from "react-helmet-async";
