@@ -715,29 +715,7 @@ const ExploraJourneysCruises = () => {
         </div>
       </section>
 
-      {/* VIDEO SECTION */}
-      {/* <section className="Asc-video-section" id="Asc-video">
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Watch: Regent Seven Seas Cruise</h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Asc-video-intro">
-                            Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Regent Seven Seas.
-                        </p>
-                    </div>
-                    <div className="Asc-video-wrapper">
-                        <div className="Asc-video-frame">
-                            <iframe
-                                src="https://www.youtube.com/embed/yoKE5YG3CYI"
-                                title="Azamara vs Regent Seven Seas – Angela Hughes"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+     
 
       {/* ════════════════════════════════════════
 WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
@@ -992,6 +970,39 @@ WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
       </section>
 
       <AacExpertSection />
+
+{/* VIDEO SECTION */}
+<section
+  className="Asc-video-section"
+  id="Asc-video"
+  style={{ backgroundColor: "var(--bg-white)" }}
+>
+  <div className="Asc-container">
+    <div className="Asc-section-header">
+      <h2 className="Asc-h2">Explora Journeys Video Experience</h2>
+
+      <div className="Asc-accent-line"></div>
+
+      <p className="Asc-video-intro">
+        Experience the elegance and celebration of the EXPLORA II Naming
+        Ceremony by Explora Journeys — showcasing the brand’s modern luxury,
+        sophisticated design, and immersive ocean travel experience.
+      </p>
+    </div>
+
+    <div className="Asc-video-wrapper">
+      <div className="Asc-video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/-MoZN-XQPLY"
+          title="EXPLORA II Naming Ceremony I Explora Journeys"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* WHO SHOULD CHOOSE */}
       <section className="Asc-section Asc-bg-soft" id="Asc-who">

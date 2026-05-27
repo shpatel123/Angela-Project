@@ -1611,7 +1611,7 @@ const AzamaraAlaskCruises = () => {
                   Luxury Alaska Cruise Planning
                 </span>
 
-                <h2 className="Asc-help-h2">Conversion-Focused Closing</h2>
+                <h2 className="Asc-help-h2">Plan Your Perfect Azamara Alaska Cruise</h2>
 
                 <div className="Asc-help-accent"></div>
               </div>

@@ -1108,21 +1108,23 @@ const ExploraJourneysWorth = () => {
       >
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">Explora Journeys Cruise</h2>
+            <h2 className="Asc-h2">Discover Explora Journeys</h2>
 
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-video-intro">
-              Explora Journeys has rapidly become one of the most talked-about
-              luxury cruise brands in the world — but it is not the right fit
-              for every traveler.
+              Experience the traditional EXPLORA II Coin Ceremony as Explora
+              Journeys celebrates another milestone in the creation of its next
+              ultra-luxury cruise ship, blending maritime heritage with modern
+              elegance and sophisticated ocean travel.
             </p>
           </div>
+
           <div className="Asc-video-wrapper">
             <div className="Asc-video-frame">
               <iframe
-                src="https://drive.google.com/file/d/17GNBgyXBsqL-dbDurk8HvFMatGs9KU9B/preview"
-                title="Azamara vs Regent Seven Seas – Angela Hughes"
+                src="https://www.youtube.com/embed/0hqotlatISs"
+                title="EXPLORA II - Coin Ceremony | Explora Journeys"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

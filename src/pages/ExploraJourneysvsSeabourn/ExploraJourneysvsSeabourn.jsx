@@ -37,9 +37,6 @@ import SeabournDetination from "../../assets/ExploraJourneysvsSeabourn/SeabourPl
 import ExploraPool from "../../assets/ExploraJourneysvsSeabourn/explora-I-infinity-pool.webp";
 import ExploraDinig from "../../assets/ExploraJourneysvsSeabourn/Conservatory-Pool-Bar.webp";
 
-
-
-
 import { Helmet } from "react-helmet-async";
 
 const schemaData = {
@@ -218,8 +215,6 @@ const schemaData = {
   ],
 };
 
-
-
 function FAQ() {
   const [open, setOpen] = useState(null);
 
@@ -358,8 +353,6 @@ const ExploraJourneysvsSeabourn = () => {
         <div className="aac_hero_overlay" />
         <div className="aac_hero_overlay_gradient" />
         <div className="aac_hero_noise" />
-
-      
 
         {/* ── Main content ── */}
         <div className="aac_hero_content">
@@ -794,6 +787,40 @@ const ExploraJourneysvsSeabourn = () => {
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explora Luxury Cruise Naming Ceremony</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Watch the spectacular EXPLORA I Naming Ceremony in New York City
+              as Explora Journeys officially introduces its first luxury ship
+              with a celebration of refined elegance, immersive ocean travel,
+              and modern European luxury cruising.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/6jg3MVXjjuo"
+                title="EXPLORA I Naming Ceremony in New York City | Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SUITES & ACCOMMODATIONS */}
       <section className="azs-suites-section" id="azs-suites">
         <div className="azs-container">
@@ -1115,15 +1142,17 @@ const ExploraJourneysvsSeabourn = () => {
         </div>
       </section>
 
-      
       {/* ENTERTAINMENT & NIGHTLIFE */}
       <section className="Ejsc-ent-section" id="Ejsc-entertainment">
         <div className="Ejsc-container">
           <div className="Ejsc-section-header">
-            <h2 className="Ejsc-section-title">Entertainment &amp; Nightlife</h2>
+            <h2 className="Ejsc-section-title">
+              Entertainment &amp; Nightlife
+            </h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejsc-section-subtitle">
-              Comparing Explora’s understated sophistication with Seabourn’s engaging social atmosphere
+              Comparing Explora’s understated sophistication with Seabourn’s
+              engaging social atmosphere
             </p>
           </div>
 
@@ -1137,7 +1166,8 @@ const ExploraJourneysvsSeabourn = () => {
                 <h3 className="Ejsc-card-title">Explora Journeys</h3>
               </div>
               <p className="Ejsc-card-intro">
-                Entertainment feels understated and sophisticated, designed to complement your evening without dominating it.
+                Entertainment feels understated and sophisticated, designed to
+                complement your evening without dominating it.
               </p>
               <ul className="Ejsc-feature-list">
                 {[
@@ -1156,7 +1186,8 @@ const ExploraJourneysvsSeabourn = () => {
               </ul>
               <div className="Ejsc-card-highlight">
                 <p>
-                  Perfect for guests who prefer sophisticated, low-key evenings and intimate conversation.
+                  Perfect for guests who prefer sophisticated, low-key evenings
+                  and intimate conversation.
                 </p>
               </div>
             </div>
@@ -1170,7 +1201,8 @@ const ExploraJourneysvsSeabourn = () => {
                 <h3 className="Ejsc-card-title">Seabourn</h3>
               </div>
               <p className="Ejsc-card-intro">
-                Seabourn offers a more social, classic luxury environment where guests naturally mingle and celebrate.
+                Seabourn offers a more social, classic luxury environment where
+                guests naturally mingle and celebrate.
               </p>
               <ul className="Ejsc-feature-list">
                 {[
@@ -1189,7 +1221,8 @@ const ExploraJourneysvsSeabourn = () => {
               </ul>
               <div className="Ejsc-card-highlight">
                 <p>
-                  Ideal for those who enjoy a highly interactive onboard community and traditional evening entertainment.
+                  Ideal for those who enjoy a highly interactive onboard
+                  community and traditional evening entertainment.
                 </p>
               </div>
             </div>
@@ -1197,15 +1230,17 @@ const ExploraJourneysvsSeabourn = () => {
         </div>
       </section>
 
-      
       {/* DESTINATIONS & ITINERARIES */}
       <section className="Ejsc-dest-section" id="Ejsc-destinations">
         <div className="Ejsc-container">
           <div className="Ejsc-section-header">
-            <h2 className="Ejsc-section-title">Destinations &amp; Itineraries</h2>
+            <h2 className="Ejsc-section-title">
+              Destinations &amp; Itineraries
+            </h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejsc-section-subtitle">
-              Slower lifestyle-focused port pacing vs. a comprehensive global footprint
+              Slower lifestyle-focused port pacing vs. a comprehensive global
+              footprint
             </p>
           </div>
 
@@ -1213,10 +1248,10 @@ const ExploraJourneysvsSeabourn = () => {
             {/* Seabourn Strengths Card */}
             <div className="Ejsc-dest-card Ejsc-seabourn-dest-card">
               <div className="Ejsc-dest-img-wrap">
-                <img 
+                <img
                   src={SeabournDetination}
-                  alt="Seabourn polar and remote destinations" 
-                  className="Ejsc-dest-img" 
+                  alt="Seabourn polar and remote destinations"
+                  className="Ejsc-dest-img"
                 />
               </div>
               <div className="Ejsc-card-header">
@@ -1226,7 +1261,8 @@ const ExploraJourneysvsSeabourn = () => {
                 <h3 className="Ejsc-card-title">Seabourn Strengths</h3>
               </div>
               <p className="Ejsc-card-intro">
-                Seabourn has a broader global itinerary portfolio that reaches all seven continents with specialized expedition travel.
+                Seabourn has a broader global itinerary portfolio that reaches
+                all seven continents with specialized expedition travel.
               </p>
               <ul className="Ejsc-feature-list">
                 {[
@@ -1248,10 +1284,10 @@ const ExploraJourneysvsSeabourn = () => {
             {/* Explora Strengths Card */}
             <div className="Ejsc-dest-card Ejsc-explora-dest-card">
               <div className="Ejsc-dest-img-wrap">
-                <img 
+                <img
                   src={ExploraDetination}
-                  alt="Explora Mediterranean luxury cruising" 
-                  className="Ejsc-dest-img" 
+                  alt="Explora Mediterranean luxury cruising"
+                  className="Ejsc-dest-img"
                 />
               </div>
               <div className="Ejsc-card-header">
@@ -1261,7 +1297,8 @@ const ExploraJourneysvsSeabourn = () => {
                 <h3 className="Ejsc-card-title">Explora Strengths</h3>
               </div>
               <p className="Ejsc-card-intro">
-                Explora Journeys focuses heavily on iconic, lifestyle-centered regions with extended port stays and a relaxed rhythm.
+                Explora Journeys focuses heavily on iconic, lifestyle-centered
+                regions with extended port stays and a relaxed rhythm.
               </p>
               <ul className="Ejsc-feature-list">
                 {[
@@ -1283,8 +1320,6 @@ const ExploraJourneysvsSeabourn = () => {
         </div>
       </section>
 
-
-      
       {/* SERVICE STYLE COMPARISON */}
       <section className="Ejsc-service-section" id="Ejsc-service">
         <div className="Ejsc-container">
@@ -1292,7 +1327,8 @@ const ExploraJourneysvsSeabourn = () => {
             <h2 className="Ejsc-section-title">Service Style Comparison</h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejsc-section-subtitle">
-              Modern hospitality-focused warmth vs. timeless, highly polished ultra-luxury refinement
+              Modern hospitality-focused warmth vs. timeless, highly polished
+              ultra-luxury refinement
             </p>
           </div>
 
@@ -1306,11 +1342,19 @@ const ExploraJourneysvsSeabourn = () => {
                 <h3 className="Ejsc-card-title">Explora Service Style</h3>
               </div>
               <p className="Ejsc-card-intro">
-                Contemporary and warm hospitality designed to feel like an upscale, relaxed European boutique hotel.
+                Contemporary and warm hospitality designed to feel like an
+                upscale, relaxed European boutique hotel.
               </p>
               <div className="Ejsc-service-tags">
-                {["Warm", "Contemporary", "Less Formal", "Lifestyle-Focused"].map((tag, i) => (
-                  <span key={i} className="Ejsc-service-tag">{tag}</span>
+                {[
+                  "Warm",
+                  "Contemporary",
+                  "Less Formal",
+                  "Lifestyle-Focused",
+                ].map((tag, i) => (
+                  <span key={i} className="Ejsc-service-tag">
+                    {tag}
+                  </span>
                 ))}
               </div>
             </div>
@@ -1324,11 +1368,19 @@ const ExploraJourneysvsSeabourn = () => {
                 <h3 className="Ejsc-card-title">Seabourn Service Style</h3>
               </div>
               <p className="Ejsc-card-intro">
-                Timeless ultra-luxury service, highly personalized and meticulously trained to anticipate every whim.
+                Timeless ultra-luxury service, highly personalized and
+                meticulously trained to anticipate every whim.
               </p>
               <div className="Ejsc-service-tags">
-                {["Highly Polished", "Traditional Ultra-Luxury", "Formal Refinement", "Exceptionally Personalized"].map((tag, i) => (
-                  <span key={i} className="Ejsc-service-tag Ejsc-tag-highlight">{tag}</span>
+                {[
+                  "Highly Polished",
+                  "Traditional Ultra-Luxury",
+                  "Formal Refinement",
+                  "Exceptionally Personalized",
+                ].map((tag, i) => (
+                  <span key={i} className="Ejsc-service-tag Ejsc-tag-highlight">
+                    {tag}
+                  </span>
                 ))}
               </div>
             </div>
@@ -1336,7 +1388,10 @@ const ExploraJourneysvsSeabourn = () => {
         </div>
       </section>
 
-      <section className="Ejvs-section" style={{ backgroundColor: "var(--bg-soft)" }}>
+      <section
+        className="Ejvs-section"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
         <div className="Ejvs-container">
           {/* ── Page Header ── */}
           <div className="Ejvs-header">
@@ -1350,11 +1405,7 @@ const ExploraJourneysvsSeabourn = () => {
           {/* ══ BLOCK 5: Luxury — Dark full-width with image ══ */}
           <div className="Ejvs-luxury-block">
             <div className="Ejvs-luxury-img-wrap">
-              <img
-                src={ExploraPool}
-                alt="Luxury"
-                className="Ejvs-luxury-img"
-              />
+              <img src={ExploraPool} alt="Luxury" className="Ejvs-luxury-img" />
             </div>
             <div className="Ejvs-luxury-content">
               <p className="Ejvs-luxury-note">
@@ -1404,141 +1455,114 @@ const ExploraJourneysvsSeabourn = () => {
       </section>
 
       {/* PRICING & VALUE */}
-<section className="Ejvs-pricing-section" id="Ejvs-pricing">
-  <div className="Ejvs-container">
-    {/* Section Header */}
-    <div className="Ejvs-section-header">
-      <h2 className="Ejvs-section-title">Pricing &amp; Value</h2>
-       <div className="Asc-accent-line"></div>
+      <section className="Ejvs-pricing-section" id="Ejvs-pricing">
+        <div className="Ejvs-container">
+          {/* Section Header */}
+          <div className="Ejvs-section-header">
+            <h2 className="Ejvs-section-title">Pricing &amp; Value</h2>
+            <div className="Asc-accent-line"></div>
 
-
-      <p className="Ejvs-section-subtitle">
-        Understanding the difference between lifestyle luxury and
-        destination-focused value
-      </p>
-    </div>
-
-    {/* Main Grid */}
-    <div className="Ejvs-pricing-grid">
-      {/* Explora Card */}
-      <div className="Ejvs-pricing-card Ejvs-explora-card">
-        <div className="Ejvs-card-header">
-          <div className="Ejvs-card-icon-wrap">
-            <Sparkles size={24} className="Ejvs-card-icon" />
+            <p className="Ejvs-section-subtitle">
+              Understanding the difference between lifestyle luxury and
+              destination-focused value
+            </p>
           </div>
 
-          <h3 className="Ejvs-card-title">Explora Journeys Value</h3>
-        </div>
-
-        <p className="Ejvs-card-intro">
-          Explora appeals strongly to travelers who prioritize the onboard
-          luxury lifestyle experience.
-        </p>
-
-        <ul className="Ejvs-feature-list">
-          {[
-            "Lifestyle-oriented inclusions",
-            "Modern luxury atmosphere",
-            "Wellness-focused experiences",
-            "Large residential-style suites",
-            "Relaxed luxury ambiance",
-          ].map((item, i) => (
-            <li key={i} className="Ejvs-feature-item">
-              <div className="Ejvs-feature-icon">
-                <Check size={14} />
-              </div>
-
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-
-        <div className="Ejvs-card-highlight">
-          <p>
-            Ideal for travelers seeking a highly contemporary luxury
-            experience at sea.
-          </p>
-        </div>
-      </div>
-
-      {/* Seabourn Card */}
-      <div className="Ejvs-pricing-card Ejvs-seabourn-card">
-        <div className="Ejvs-card-header">
-          <div className="Ejvs-card-icon-wrap">
-            <Award size={24} className="Ejvs-card-icon" />
-          </div>
-
-          <h3 className="Ejvs-card-title">Seabourn Value</h3>
-        </div>
-
-        <p className="Ejvs-card-intro">
-          Seabourn often delivers exceptional value for travelers focused on
-          service and destination depth.
-        </p>
-
-        <ul className="Ejvs-feature-list">
-          {[
-            "Refined personalized service",
-            "Destination-intensive itineraries",
-            "Traditional ultra-luxury atmosphere",
-            "Elegant culinary experiences",
-            "Strong itinerary reputation",
-          ].map((item, i) => (
-            <li key={i} className="Ejvs-feature-item">
-              <div className="Ejvs-feature-icon">
-                <Star size={14} />
-              </div>
-
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-
-        <div className="Ejvs-card-highlight">
-          <p>
-            Best suited for travelers who value classic luxury cruising and
-            immersive destinations.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    {/* Bottom Summary */}
-    <div className="Ejvs-summary-box">
-      <p className="Ejvs-summary-text">
-        Both cruise lines occupy the ultra-luxury category, but the right
-        value depends entirely on whether travelers prioritize onboard
-        lifestyle luxury or destination-focused sophistication.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-
-      {/* VIDEO SECTION */}
-      {/* <section className="Asc-video-section" id="Asc-video">
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Watch: Regent Seven Seas Cruise</h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Asc-video-intro">
-                            Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Regent Seven Seas.
-                        </p>
-                    </div>
-                    <div className="Asc-video-wrapper">
-                        <div className="Asc-video-frame">
-                            <iframe
-                                src="https://www.youtube.com/embed/yoKE5YG3CYI"
-                                title="Azamara vs Regent Seven Seas – Angela Hughes"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
+          {/* Main Grid */}
+          <div className="Ejvs-pricing-grid">
+            {/* Explora Card */}
+            <div className="Ejvs-pricing-card Ejvs-explora-card">
+              <div className="Ejvs-card-header">
+                <div className="Ejvs-card-icon-wrap">
+                  <Sparkles size={24} className="Ejvs-card-icon" />
                 </div>
-            </section> */}
+
+                <h3 className="Ejvs-card-title">Explora Journeys Value</h3>
+              </div>
+
+              <p className="Ejvs-card-intro">
+                Explora appeals strongly to travelers who prioritize the onboard
+                luxury lifestyle experience.
+              </p>
+
+              <ul className="Ejvs-feature-list">
+                {[
+                  "Lifestyle-oriented inclusions",
+                  "Modern luxury atmosphere",
+                  "Wellness-focused experiences",
+                  "Large residential-style suites",
+                  "Relaxed luxury ambiance",
+                ].map((item, i) => (
+                  <li key={i} className="Ejvs-feature-item">
+                    <div className="Ejvs-feature-icon">
+                      <Check size={14} />
+                    </div>
+
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="Ejvs-card-highlight">
+                <p>
+                  Ideal for travelers seeking a highly contemporary luxury
+                  experience at sea.
+                </p>
+              </div>
+            </div>
+
+            {/* Seabourn Card */}
+            <div className="Ejvs-pricing-card Ejvs-seabourn-card">
+              <div className="Ejvs-card-header">
+                <div className="Ejvs-card-icon-wrap">
+                  <Award size={24} className="Ejvs-card-icon" />
+                </div>
+
+                <h3 className="Ejvs-card-title">Seabourn Value</h3>
+              </div>
+
+              <p className="Ejvs-card-intro">
+                Seabourn often delivers exceptional value for travelers focused
+                on service and destination depth.
+              </p>
+
+              <ul className="Ejvs-feature-list">
+                {[
+                  "Refined personalized service",
+                  "Destination-intensive itineraries",
+                  "Traditional ultra-luxury atmosphere",
+                  "Elegant culinary experiences",
+                  "Strong itinerary reputation",
+                ].map((item, i) => (
+                  <li key={i} className="Ejvs-feature-item">
+                    <div className="Ejvs-feature-icon">
+                      <Star size={14} />
+                    </div>
+
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="Ejvs-card-highlight">
+                <p>
+                  Best suited for travelers who value classic luxury cruising
+                  and immersive destinations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Summary */}
+          <div className="Ejvs-summary-box">
+            <p className="Ejvs-summary-text">
+              Both cruise lines occupy the ultra-luxury category, but the right
+              value depends entirely on whether travelers prioritize onboard
+              lifestyle luxury or destination-focused sophistication.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* ── COMMON MISTAKES ───────────────────────────────────────── */}
       <section className="Lfsg-section Lfsg-bg-dark" id="Lfsg-mistakes">
@@ -1581,6 +1605,39 @@ const ExploraJourneysvsSeabourn = () => {
                 <p className="Lfsg-mistake-desc">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explore Seabourn Luxury Cruises</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Discover the elegance, ultra-luxury suites, fine dining, and
+              immersive voyage experiences that make Seabourn one of the world’s
+              most prestigious luxury cruise lines.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://drive.google.com/file/d/1CwCMcEQjb9iHzopy_nIbtP3S-m84bbap/preview"
+                title="Explore Seabourn Luxury Cruises"
+                frameBorder="0"
+                allow="autoplay"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>

@@ -1115,6 +1115,41 @@ const ExploraCruiseCost = () => {
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+<section
+  className="Asc-video-section"
+  id="Asc-video"
+  style={{ backgroundColor: "var(--bg-white)" }}
+>
+  <div className="Asc-container">
+    <div className="Asc-section-header">
+      <h2 className="Asc-h2">
+        Explore the Explora Journeys Experience
+      </h2>
+
+      <div className="Asc-accent-line"></div>
+
+      <p className="Asc-video-intro">
+        Discover the inspiration, craftsmanship, and sophisticated design behind
+        Explora Journeys through this cinematic film showcasing the creation of
+        one of the world’s most elegant luxury cruise ships.
+      </p>
+    </div>
+
+    <div className="Asc-video-wrapper">
+      <div className="Asc-video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/qx_9Nt6kYpI"
+          title="The Making Of A Beautiful Ship: A Film About Design I Explora Journeys"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* WHO SHOULD CHOOSE */}
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
         <div className="Asc-container">

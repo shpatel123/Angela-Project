@@ -1009,7 +1009,7 @@ const AzamaravsRegentSevenSeas = () => {
             </section>
 
             {/* VIDEO SECTION */}
-            <section className="Asc-video-section" id="Asc-video">
+            <section className="Asc-video-section" id="Asc-video"  style={{backgroundColor: "var(--navy-soft)"}}>
                 <div className="Asc-container">
                     <div className="Asc-section-header">
                         <h2 className="Asc-h2">Regent Seven Seas Cruise</h2>

@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
-import CTAImage from "../../assets/Azamarashipcomparison/Ctaimage.jpg";
+import CTAImage from "../../assets/LuxuryExploraJourneysGuide/Explora-Mediterranean3.webp";
 
 import Mediterranean from "../../assets/LuxuryExploraJourneysGuide/Mediterranean-Cruises.webp";
 import Caribbean from "../../assets/LuxuryExploraJourneysGuide/Caribbean-Sailings.webp";
@@ -38,6 +38,7 @@ import HeroImage2 from "../../assets/LuxuryExploraJourneysGuide/Luxury-Explora-J
 import HeroImage4 from "../../assets/LuxuryExploraJourneysGuide/Luxury-Explora-Journeys3.webp";
 import RegentSea from "../../assets/LuxuryExploraJourneysGuide/Regent-Seven-Seas-Explorer.webp";
 import Seabourn from "../../assets/LuxuryExploraJourneysGuide/Seabourn-Ventura.webp";
+import RitzCarton from "../../assets/LuxuryExploraJourneysGuide/RitzCarton.webp";
 import OverviewImage from "../../assets/LuxuryExploraJourneysGuide/Onboard_Dining.webp";
 import AzamaraDietaryImage from "../../assets/LuxuryExploraJourneysGuide/Explore-Journeys.webp";
 
@@ -148,8 +149,6 @@ const complimentaryVenues = [
   },
 ];
 
-
-
 const diningData = [
   {
     key: "mediterranean",
@@ -231,33 +230,29 @@ const comparisons = [
     id: "seabourn",
     competitor: "Seabourn",
     image: Seabourn,
-    competitorNote: "Seabourn Cruise Line still excels in intimate luxury service and expedition offerings.",
+    competitorNote:
+      "Seabourn Cruise Line still excels in intimate luxury service and expedition offerings.",
     exploraStrengths: [
       "Larger accommodations",
       "Contemporary aesthetics",
       "Relaxed atmosphere",
       "Residential luxury feel",
     ],
-    competitorStrengths: [
-      "Intimate luxury service",
-      "Expedition offerings",
-    ],
+    competitorStrengths: ["Intimate luxury service", "Expedition offerings"],
   },
   {
     id: "ritz",
     competitor: "Ritz-Carlton Yacht Collection",
-    image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800&q=80",
-    competitorNote: "The Ritz-Carlton Yacht Collection leans more toward boutique yacht-style experiences.",
+    image: RitzCarton,
+    competitorNote:
+      "The Ritz-Carlton Yacht Collection leans more toward boutique yacht-style experiences.",
     exploraStrengths: [
       "More onboard space",
       "More dining variety",
       "Larger-scale luxury amenities",
       "Broader itinerary options",
     ],
-    competitorStrengths: [
-      "Boutique yacht-style feel",
-      "Iconic brand prestige",
-    ],
+    competitorStrengths: ["Boutique yacht-style feel", "Iconic brand prestige"],
   },
 ];
 
@@ -279,7 +274,12 @@ const cards = [
     title: "Sophisticated European Design",
     description:
       "Understated elegance over flashy luxury. Residential-style interiors built for quiet, refined living — neutral palettes, designer furnishings, and spa-inspired bathrooms.",
-    pills: ["Neutral palettes", "Designer furnishings", "Spa bathrooms", "Residential layouts"],
+    pills: [
+      "Neutral palettes",
+      "Designer furnishings",
+      "Spa bathrooms",
+      "Residential layouts",
+    ],
     highlight: "Quiet luxury — no excessive formality",
   },
   {
@@ -289,7 +289,12 @@ const cards = [
     title: "Flexible Dining Philosophy",
     description:
       "No rigid dining schedules. Multiple venues, open seating, and diverse culinary styles with premium ingredients — eat when and how you want.",
-    pills: ["Open dining", "Multiple venues", "Premium ingredients", "Diverse cuisines"],
+    pills: [
+      "Open dining",
+      "Multiple venues",
+      "Premium ingredients",
+      "Diverse cuisines",
+    ],
     highlight: "Appeals to younger affluent travelers",
   },
   {
@@ -299,7 +304,12 @@ const cards = [
     title: "Wellness-Centered Luxury",
     description:
       "Unusually strong wellness focus sets Explora apart. Thermal areas, fitness experiences, and wellness cuisine — wellbeing is woven into every aspect of the voyage.",
-    pills: ["Large spa", "Thermal areas", "Fitness experiences", "Wellness cuisine"],
+    pills: [
+      "Large spa",
+      "Thermal areas",
+      "Fitness experiences",
+      "Wellness cuisine",
+    ],
     highlight: "A key differentiator vs competitors",
   },
 ];
@@ -576,9 +586,9 @@ function FAQ() {
 const LuxuryExploraJourneysGuide = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-    const [active, setActive] = useState("regent");
+  const [active, setActive] = useState("regent");
   const current = comparisons.find((c) => c.id === active);
-  
+
   const [hovered, setHovered] = useState(null);
   const images = [HeroImage1, HeroImage4, HeroImage2];
 
@@ -683,13 +693,12 @@ const LuxuryExploraJourneysGuide = () => {
         </div>
       </section>
 
-            {/* ════════════════════════════════════════
+      {/* ════════════════════════════════════════
     2. EXPLORA OVERVIEW
 ════════════════════════════════════════ */}
       <section className="adg-c-section adg-c-bg-soft" id="adg-overview">
         <div className="adg-c-container">
           <div className="adg-c-section-header">
-
             <h2 className="adg-c-h2">What Is Explora Journeys?</h2>
 
             <div className="adg-c-accent-line"></div>
@@ -796,81 +805,101 @@ const LuxuryExploraJourneysGuide = () => {
         </div>
       </section>
 
-        <section className="Leg-section">
-      <div className="Leg-container">
- 
-        {/* Header */}
-        <div className="Leg-header">
-          <h2 className="Leg-title">What Makes Explora Journeys Different?</h2>
-               <div className="adg-c-accent-line"></div>
-          <p className="Leg-subtitle">
-            A new generation of luxury ocean travel — designed around space, style, choice, and wellbeing.
-          </p>
-        </div>
- 
-        {/* Cards Grid */}
-        <div className="Leg-grid">
-          {cards.map((card) => {
-            const Icon = card.icon;
-            const isHovered = hovered === card.id;
-            return (
-              <div
-                key={card.id}
-                className={`Leg-card Leg-card--${card.accent} ${isHovered ? "Leg-card--hovered" : ""}`}
-                onMouseEnter={() => setHovered(card.id)}
-                onMouseLeave={() => setHovered(null)}
-              >
-                <div className={`Leg-card-top-bar Leg-bar--${card.accent}`}></div>
- 
-                <div className={`Leg-card-icon-wrap Leg-icon--${card.accent}`}>
-                  <Icon size={22} strokeWidth={1.6} />
-                </div>
- 
-                <h3 className="Leg-card-title">{card.title}</h3>
-                <p className="Leg-card-desc">{card.description}</p>
- 
-                <div className="Leg-divider"></div>
- 
-                <div className="Leg-pill-list">
-                  {card.pills.map((pill) => (
-                    <span key={pill} className={`Leg-pill Leg-pill--${card.accent}`}>
-                      {pill}
-                    </span>
-                  ))}
-                </div>
- 
-                <div className={`Leg-highlight Leg-highlight--${card.accent}`}>
-                  <Check size={13} strokeWidth={2.5} className="Leg-check-icon" />
-                  <span>{card.highlight}</span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-
-
-      {/* VIDEO SECTION */}
-      {/* <section className="Asc-video-section" id="Asc-video">
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Closer to the World with Azamara</h2>
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-              Experience how Azamara’s smaller ships, longer stays, and
-              immersive journeys create more meaningful connections with the
-              world. Discover destinations in a more personal, authentic, and
-              unhurried way — where every horizon feels closer.
+      <section
+        className="Leg-section"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Leg-container">
+          {/* Header */}
+          <div className="Leg-header">
+            <h2 className="Leg-title">
+              What Makes Explora Journeys Different?
+            </h2>
+            <div className="adg-c-accent-line"></div>
+            <p className="Leg-subtitle">
+              A new generation of luxury ocean travel — designed around space,
+              style, choice, and wellbeing.
             </p>
           </div>
 
+          {/* Cards Grid */}
+          <div className="Leg-grid">
+            {cards.map((card) => {
+              const Icon = card.icon;
+              const isHovered = hovered === card.id;
+              return (
+                <div
+                  key={card.id}
+                  className={`Leg-card Leg-card--${card.accent} ${isHovered ? "Leg-card--hovered" : ""}`}
+                  onMouseEnter={() => setHovered(card.id)}
+                  onMouseLeave={() => setHovered(null)}
+                >
+                  <div
+                    className={`Leg-card-top-bar Leg-bar--${card.accent}`}
+                  ></div>
+
+                  <div
+                    className={`Leg-card-icon-wrap Leg-icon--${card.accent}`}
+                  >
+                    <Icon size={22} strokeWidth={1.6} />
+                  </div>
+
+                  <h3 className="Leg-card-title">{card.title}</h3>
+                  <p className="Leg-card-desc">{card.description}</p>
+
+                  <div className="Leg-divider"></div>
+
+                  <div className="Leg-pill-list">
+                    {card.pills.map((pill) => (
+                      <span
+                        key={pill}
+                        className={`Leg-pill Leg-pill--${card.accent}`}
+                      >
+                        {pill}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div
+                    className={`Leg-highlight Leg-highlight--${card.accent}`}
+                  >
+                    <Check
+                      size={13}
+                      strokeWidth={2.5}
+                      className="Leg-check-icon"
+                    />
+                    <span>{card.highlight}</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explora Journeys Cruise</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Explora Journeys has rapidly become one of the most talked-about
+              luxury cruise brands in the world — but it is not the right fit
+              for every traveler.
+            </p>
+          </div>
           <div className="Asc-video-wrapper">
             <div className="Asc-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/GQj8QXkJeik"
-                title="Closer to the World with Azamara"
+                src="https://www.youtube.com/embed/2nuohDzg2Oo"
+                title="Explora Journeys Cruise"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -878,166 +907,182 @@ const LuxuryExploraJourneysGuide = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-
-
-   {/* ════════════════════════════════════════
+      {/* ════════════════════════════════════════
     5. IS IT TRULY LUXURY
 ════════════════════════════════════════ */}
-<section className="adg-c-section adg-c-bg-soft" id="adg-worth-it">
-  <div className="adg-c-container">
-    <div className="adg-c-section-header">
+      <section className="adg-c-section adg-c-bg-soft" id="adg-worth-it">
+        <div className="adg-c-container">
+          <div className="adg-c-section-header">
+            <h2 className="adg-c-h2">Is Explora Journeys Truly Luxury?</h2>
 
-      <h2 className="adg-c-h2">
-        Is Explora Journeys Truly Luxury?
-      </h2>
+            <div className="adg-c-accent-line"></div>
+          </div>
 
-      <div className="adg-c-accent-line"></div>
-    </div>
+          <div className="adg-c-worth-layout">
+            {/* VERDICT BANNER */}
+            <div className="adg-c-verdict-banner">
+              <div className="adg-c-verdict-badge">
+                Yes — but it delivers luxury differently.
+              </div>
 
-    <div className="adg-c-worth-layout">
-      {/* VERDICT BANNER */}
-      <div className="adg-c-verdict-banner">
-        <div className="adg-c-verdict-badge">
-          Yes — but it delivers luxury differently.
+              <p className="adg-c-verdict-sub">
+                Explora focuses on contemporary luxury, relaxed sophistication,
+                and spacious modern experiences rather than traditional cruise
+                formality.
+              </p>
+            </div>
+
+            {/* SPLIT */}
+            <div className="adg-c-worth-split">
+              <div
+                className="adg-c-worth-left"
+                style={{ backgroundColor: "var(--bg-white)" }}
+              >
+                <h4 className="adg-c-worth-col-title">
+                  Travelers Who May Prefer Traditional Luxury Brands
+                </h4>
+
+                <ul className="adg-c-worth-list">
+                  {worthItPoint.map((pt, i) => (
+                    <li key={i}>
+                      <span className="adg-c-worth-num">{i + 1}</span>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="adg-c-worth-right">
+                <div className="adg-c-worth-note">
+                  <div className="adg-c-worth-note-bar"></div>
+
+                  <div className="adg-c-worth-note-content">
+                    <p className="adg-c-worth-note-text">
+                      Travelers seeking contemporary luxury, wellness-focused
+                      travel, spacious suites, and elevated but less formal
+                      experiences often find Explora exceptionally appealing.
+                    </p>
+
+                    <p className="adg-c-worth-note-emphasis">
+                      That modern approach is exactly why many affluent
+                      travelers are paying attention to Explora Journeys.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <p className="adg-c-verdict-sub">
-          Explora focuses on contemporary luxury, relaxed sophistication, and
-          spacious modern experiences rather than traditional cruise formality.
-        </p>
-      </div>
+      <section className="Cmp-section">
+        <div className="Cmp-container">
+          {/* Header */}
+          <div className="Cmp-header">
+            <h2 className="Cmp-title">
+              Explora Journeys vs Other <br /> Luxury Cruise Lines
+            </h2>
+            <div className="Asc-accent-line"></div>
+          </div>
 
-      {/* SPLIT */}
-      <div className="adg-c-worth-split">
-        <div className="adg-c-worth-left" style={{backgroundColor: "var(--bg-white)"}}>
-          <h4 className="adg-c-worth-col-title">
-            Travelers Who May Prefer Traditional Luxury Brands
-          </h4>
-
-          <ul className="adg-c-worth-list">
-            {worthItPoint.map((pt, i) => (
-              <li key={i}>
-                <span className="adg-c-worth-num">{i + 1}</span>
-                <span>{pt}</span>
-              </li>
+          {/* Tab Bar */}
+          <div className="Cmp-tabs" role="tablist">
+            {comparisons.map((c) => (
+              <button
+                key={c.id}
+                role="tab"
+                aria-selected={active === c.id}
+                className={`Cmp-tab ${active === c.id ? "Cmp-tab--active" : ""}`}
+                onClick={() => setActive(c.id)}
+              >
+                {c.competitor}
+              </button>
             ))}
-          </ul>
-        </div>
-
-        <div className="adg-c-worth-right">
-          <div className="adg-c-worth-note">
-            <div className="adg-c-worth-note-bar"></div>
-
-            <div className="adg-c-worth-note-content">
-              <p className="adg-c-worth-note-text">
-                Travelers seeking contemporary luxury, wellness-focused travel,
-                spacious suites, and elevated but less formal experiences often
-                find Explora exceptionally appealing.
-              </p>
-
-              <p className="adg-c-worth-note-emphasis">
-                That modern approach is exactly why many affluent travelers are
-                paying attention to Explora Journeys.
-              </p>
-            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-   <section className="Cmp-section">
-      <div className="Cmp-container">
- 
-        {/* Header */}
-        <div className="Cmp-header">
-          <h2 className="Cmp-title">Explora Journeys vs Other <br /> Luxury Cruise Lines</h2>
-        <div className="Asc-accent-line"></div>
-        </div>
- 
-        {/* Tab Bar */}
-        <div className="Cmp-tabs" role="tablist">
-          {comparisons.map((c) => (
-            <button
-              key={c.id}
-              role="tab"
-              aria-selected={active === c.id}
-              className={`Cmp-tab ${active === c.id ? "Cmp-tab--active" : ""}`}
-              onClick={() => setActive(c.id)}
-            >
-              {c.competitor}
-            </button>
-          ))}
-        </div>
- 
-        {/* Content Panel */}
-        <div className="Cmp-panel" key={active}>
- 
-          {/* Image Banner */}
-          <div className="Cmp-image-wrap">
-            <img src={current.image} alt={current.competitor} className="Cmp-image" />
-            <div className="Cmp-image-label">
-              <span>vs {current.competitor}</span>
-            </div>
-          </div>
- 
-          {/* Competitor note if present */}
-          {current.competitorNote && (
-            <p className="Cmp-note">{current.competitorNote}</p>
-          )}
- 
-          {/* Two-column strengths */}
-          <div className="Cmp-compare-grid">
- 
-            {/* Explora column */}
-            <div className="Cmp-col Cmp-col--explora">
-              <div className="Cmp-col-header">
-                <span className="Cmp-col-badge Cmp-col-badge--explora">Explora Journeys</span>
-                <span className="Cmp-col-label">Strengths</span>
+          {/* Content Panel */}
+          <div className="Cmp-panel" key={active}>
+            {/* Image Banner */}
+            <div className="Cmp-image-wrap">
+              <img
+                src={current.image}
+                alt={current.competitor}
+                className="Cmp-image"
+              />
+              <div className="Cmp-image-label">
+                <span>vs {current.competitor}</span>
               </div>
-              <ul className="Cmp-list">
-                {current.exploraStrengths.map((item) => (
-                  <li key={item} className="Cmp-list-item Cmp-list-item--explora">
-                    <CheckCircle2 size={15} strokeWidth={2} className="Cmp-list-icon" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
- 
-            {/* Divider */}
-            <div className="Cmp-vs-divider">
-              <div className="Cmp-vs-line"></div>
-              <span className="Cmp-vs-label">vs</span>
-              <div className="Cmp-vs-line"></div>
-            </div>
- 
-            {/* Competitor column */}
-            <div className="Cmp-col Cmp-col--competitor">
-              <div className="Cmp-col-header">
-                <span className="Cmp-col-badge Cmp-col-badge--competitor">{current.competitor}</span>
-                <span className="Cmp-col-label">Strengths</span>
+
+            {/* Competitor note if present */}
+            {current.competitorNote && (
+              <p className="Cmp-note">{current.competitorNote}</p>
+            )}
+
+            {/* Two-column strengths */}
+            <div className="Cmp-compare-grid">
+              {/* Explora column */}
+              <div className="Cmp-col Cmp-col--explora">
+                <div className="Cmp-col-header">
+                  <span className="Cmp-col-badge Cmp-col-badge--explora">
+                    Explora Journeys
+                  </span>
+                  <span className="Cmp-col-label">Strengths</span>
+                </div>
+                <ul className="Cmp-list">
+                  {current.exploraStrengths.map((item) => (
+                    <li
+                      key={item}
+                      className="Cmp-list-item Cmp-list-item--explora"
+                    >
+                      <CheckCircle2
+                        size={15}
+                        strokeWidth={2}
+                        className="Cmp-list-icon"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="Cmp-list">
-                {current.competitorStrengths.map((item) => (
-                  <li key={item} className="Cmp-list-item Cmp-list-item--competitor">
-                    <Shield size={15} strokeWidth={2} className="Cmp-list-icon" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+
+              {/* Divider */}
+              <div className="Cmp-vs-divider">
+                <div className="Cmp-vs-line"></div>
+                <span className="Cmp-vs-label">vs</span>
+                <div className="Cmp-vs-line"></div>
+              </div>
+
+              {/* Competitor column */}
+              <div className="Cmp-col Cmp-col--competitor">
+                <div className="Cmp-col-header">
+                  <span className="Cmp-col-badge Cmp-col-badge--competitor">
+                    {current.competitor}
+                  </span>
+                  <span className="Cmp-col-label">Strengths</span>
+                </div>
+                <ul className="Cmp-list">
+                  {current.competitorStrengths.map((item) => (
+                    <li
+                      key={item}
+                      className="Cmp-list-item Cmp-list-item--competitor"
+                    >
+                      <Shield
+                        size={15}
+                        strokeWidth={2}
+                        className="Cmp-list-icon"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
- 
           </div>
         </div>
- 
-      </div>
-    </section>
-
-
+      </section>
 
       {/* VIDEO SECTION */}
       {/* <section className="Asc-video-section" id="Asc-video">
@@ -1062,8 +1107,6 @@ const LuxuryExploraJourneysGuide = () => {
                     </div>
                 </div>
             </section> */}
-
-
 
       {/* WHAT IS INCLUDED ON EXPLORA JOURNEYS */}
       <section className="adg-section adg-bg-soft" id="adg-food-itineraries">
@@ -1337,7 +1380,7 @@ const LuxuryExploraJourneysGuide = () => {
         <div className="Lfsg-container">
           <div className="Lfsg-section-header">
             <h2 className="Lfsg-h2-white">
-              Common Mistakes Travelers Make with Explora Journeys
+              Common Mistakes Travelers Make <br /> with Explora Journeys
             </h2>
 
             <div className="Lfsg-accent-line-white" />
@@ -1389,6 +1432,40 @@ const LuxuryExploraJourneysGuide = () => {
             Working with an experienced luxury advisor often significantly
             improves the overall cruise experience.
           </p>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Experience Modern Luxury at Sea</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Step inside the world of Explora Journeys and discover a new
+              standard of ocean travel defined by refined elegance, spacious
+              luxury, world-class dining, and immersive experiences designed for
+              modern luxury travelers.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/ZOEMyGj0g_c"
+                title="Explora Journeys Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
 
