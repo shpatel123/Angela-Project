@@ -535,13 +535,12 @@ const ExploraCruiseCost = () => {
           </div>
 
           {/* Read more toggle */}
-          <div className="aac_readmore_wrapper">
+          <div className="Scenic_readmore_wrapper">
             <button
-              className={`aac_readmore_btn ${readMore ? "open" : ""}`}
+              className="Scenic_readmore_btn"
               onClick={() => setReadMore(!readMore)}
             >
-              <span>{readMore ? "Read Less" : "Read More"}</span>
-              <span className="aac_btn_arrow">{readMore ? "↑" : "↓"}</span>
+              {readMore ? "Read Less" : "Read More"}
             </button>
           </div>
         </div>
@@ -618,7 +617,7 @@ const ExploraCruiseCost = () => {
           </div>
 
           <div style={{ marginTop: "25px" }}>
-            <p className="Asc-card-subtext">
+            <p className="Asc-card-subtext" style={{color: "var(--navy)" , textAlign: "center"}}>
               Luxury holiday sailings, Grand Journeys, and limited itineraries
               can exceed these ranges significantly.
             </p>

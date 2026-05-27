@@ -305,6 +305,7 @@ const AzamaraShipComparison = () => {
 
                 <div className="Scenic_readmore_wrapper">
                   <button
+                  style={{color: "var(--navy)"}}
                     className="Scenic_readmore_btn"
                     onClick={() => setReadMore(!readMore)}
                   >

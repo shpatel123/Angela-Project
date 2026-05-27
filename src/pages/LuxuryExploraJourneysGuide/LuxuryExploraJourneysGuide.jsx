@@ -1270,8 +1270,7 @@ const LuxuryExploraJourneysGuide = () => {
 
           {/* CARDS GRID */}
           <div
-            className="adg-grid"
-            style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
+            className="adgs-grid"
           >
             {diningData.map((item) => (
               <div key={item.key} className={`adg-card ${item.accent}`}>

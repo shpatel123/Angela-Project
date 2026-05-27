@@ -274,65 +274,8 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 860px) {
-  .Ejc-layout {
-    grid-template-columns: 1fr;
-  }
 
-  .Ejc-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: static;
-    gap: 8px;
-  }
 
-  .Ejc-nav-btn {
-    flex: 1 1 auto;
-    min-width: 140px;
-    padding: 10px 14px;
-  }
-
-  .Ejc-nav-pip {
-    display: none;
-  }
-
-  .Ejc-nav-label {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 640px) {
-  .Ejc-title {
-    font-size: 26px;
-  }
-
-  .Ejc-img-wrap {
-    height: 200px;
-  }
-
-  .Ejc-items-grid {
-    grid-template-columns: 1fr 1fr;
-    padding: 16px 16px 12px;
-  }
-
-  .Ejc-note {
-    margin: 0 16px 16px;
-  }
-
-  .Ejc-section {
-    padding: 56px 0 64px;
-  }
-}
-
-@media (max-width: 420px) {
-  .Ejc-container {
-    padding: 0 16px;
-  }
-
-  .Ejc-items-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 
 
@@ -363,14 +306,6 @@
   color: var(--navy);
   font-weight: 700;
   margin-bottom: 14px;
-}
-
-.Ejc-title {
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 500;
-  color: var(--navy);
-  margin-bottom: 20px;
 }
 
 .Ejc-accent-line {
@@ -487,13 +422,50 @@
 
 /* RESPONSIVE */
 
-@media (max-width: 992px) {
-  .Ejc-grid {
+/* ========================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+  .Ejc-layout {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 768px) {
+  .Ejc-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+    gap: 8px;
+  }
+
+  .Ejc-nav-btn {
+    flex: 1 1 auto;
+    min-width: 140px;
+    padding: 10px 14px;
+  }
+
+  .Ejc-nav-pip {
+    display: none;
+  }
+
+  .Ejc-nav-label {
+    font-size: 12px;
+  }
+  .Ejc-img-wrap {
+    height: 200px;
+  }
+
+  .Ejc-items-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 16px 16px 12px;
+  }
+
+  .Ejc-note {
+    margin: 0 16px 16px;
+  }
+
+  .Ejc-section {
+    padding: 56px 0 64px;
+  }
   .Ejc-section {
     padding: 70px 0;
   }
@@ -507,10 +479,29 @@
   }
 
   .Ejc-title {
-    font-size: 38px;
+    font-size: 26px;
   }
 
   .Ejc-card-title {
     font-size: 24px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE (max-width: 480px)
+   ======================================== */
+@media (max-width: 480px) {
+  .Ejc-container {
+    padding: 0 16px;
+  }
+
+  .Ejc-items-grid {
+    grid-template-columns: 1fr;
+  }
+  .Ejc-grid {
+    grid-template-columns: 1fr;
+  }
+  .Ejc-title{
+    font-size: 24px !important;
   }
 }

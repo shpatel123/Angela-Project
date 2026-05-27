@@ -324,39 +324,8 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 900px) {
-  .Ecc-inclusions-layout {
-    grid-template-columns: 1fr;
-  }
 
-  .Ecc-drivers-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
-@media (max-width: 640px) {
-  .Ecc-title {
-    font-size: 26px;
-  }
-
-  .Ecc-inc-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .Ecc-drivers-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .Ecc-section {
-    padding: 56px 0 64px;
-  }
-}
-
-@media (max-width: 480px) {
-  .Ecc-container {
-    padding: 0 16px;
-  }
-}
 
 
 
@@ -797,13 +766,36 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 1024px) {
+
+/* ========================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+  .Ecc-inclusions-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-drivers-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .Ecc-title {
+    font-size: 26px;
+  }
+
+  .Ecc-inc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-drivers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ecc-section {
+    padding: 56px 0 64px;
+  }
   .Ecc-hc-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-@media (max-width: 860px) {
   .Ecc-bt-layout {
     grid-template-columns: 1fr;
   }
@@ -811,18 +803,15 @@
   .Ecc-bt-img-wrap {
     height: 220px;
   }
-}
-
-@media (max-width: 720px) {
   .Ecc-hc-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-@media (max-width: 640px) {
   .Ecc-hc-title,
-  .Ecc-bt-title {
+  .Ecc-bt-title, .Ecc-title {
     font-size: 26px;
+  }
+  .Ecc-hc-grid{
+    grid-template-columns: 1fr 1fr;
   }
 
   .Ecc-hc-section,
@@ -835,10 +824,22 @@
   }
 }
 
+/* ========================================
+   RESPONSIVE — MOBILE (max-width: 480px)
+   ======================================== */
 @media (max-width: 480px) {
+  .Ecc-container {
+    padding: 0 16px;
+  }
   .Ecc-hc-container,
   .Ecc-bt-container {
     padding: 0 16px;
+  }
+  .Ecc-title, .Ecc-hc-title, .Ecc-bt-title {
+    font-size: 24px;
+  }
+  .Ecc-subtitle, .Ecc-hc-subtitle, .Ecc-bt-subtitle {
+    font-size: 16px;
   }
 
   .Ecc-hc-grid {

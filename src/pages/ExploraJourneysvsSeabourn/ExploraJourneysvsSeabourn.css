@@ -590,33 +590,8 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 860px) {
-  .Ejvs-wellness-block,
-  .Ejvs-luxury-block     { grid-template-columns: 1fr; }
 
-  .Ejvs-wellness-img-side { height: 240px; }
-  .Ejvs-luxury-img-wrap   { height: 220px; }
-  .Ejvs-luxury-split      { flex-direction: column; }
-  .Ejvs-luxury-vline      { display: none; }
-}
 
-@media (max-width: 680px) {
-  .Ejvs-ent-cols  { grid-template-columns: 1fr; }
-  .Ejvs-ent-divider { display: none; }
-  .Ejvs-dest-grid { grid-template-columns: 1fr; gap: 20px; }
-  .Ejvs-service-table { grid-template-columns: 1fr; }
-  .Ejvs-service-col-head--seabourn,
-  .Ejvs-service-cell--seabourn { border-left: none; border-top: 1px solid var(--navy-border); }
-  .Ejvs-pricing-row { flex-direction: column; align-items: flex-start; gap: 10px; }
-}
-
-@media (max-width: 580px) {
-  .Ejvs-title { font-size: 28px; }
-  .Ejvs-section { padding: 56px 0 70px; }
-  .Ejvs-container { gap: 36px; padding: 0 16px; }
-  .Ejvs-dest-overlay { padding: 24px 20px 28px; }
-  .Ejvs-luxury-content { padding: 28px 24px; }
-}
 
 
 /* ================================
@@ -847,69 +822,8 @@
    RESPONSIVE
 ================================ */
 
-@media (max-width: 992px) {
-  .Ejvs-pricing-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .Ejvs-pricing-card {
-    padding: 32px;
-  }
-}
 
-@media (max-width: 768px) {
-  .Ejvs-pricing-section {
-    padding: 80px 0;
-  }
-
-  .Ejvs-section-header {
-    margin-bottom: 50px;
-  }
-
-  .Ejvs-card-title {
-    font-size: 1.3rem;
-  }
-
-  .Ejvs-card-intro,
-  .Ejvs-feature-item,
-  .Ejvs-summary-text,
-  .Ejvs-card-highlight p {
-    font-size: 0.95rem;
-  }
-
-  .Ejvs-summary-box {
-    padding: 28px 22px;
-  }
-}
-
-@media (max-width: 576px) {
-  .Ejvs-pricing-card {
-    padding: 26px 22px;
-    border-radius: var(--radius);
-  }
-
-  .Ejvs-card-header {
-    align-items: flex-start;
-  }
-
-  .Ejvs-card-icon-wrap {
-    width: 52px;
-    height: 52px;
-  }
-
-  .Ejvs-feature-item {
-    gap: 12px;
-  }
-
-  .Ejvs-feature-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .Ejvs-section-subtitle {
-    font-size: 0.95rem;
-  }
-}
 
 /* ==========================================================================
    NEW Ejsc CLASSES FOR ADDED SECTIONS (ENTERTAINMENT, DESTINATIONS, SERVICE)
@@ -1159,7 +1073,111 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 992px) {
+
+
+
+/* Destination Card Image Styles */
+.Ejsc-dest-img-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.Ejsc-dest-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.Ejsc-dest-card:hover .Ejsc-dest-img {
+  transform: scale(1.05);
+}
+
+/* ========================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+  .Ejvs-wellness-block,
+  .Ejvs-luxury-block     { grid-template-columns: 1fr; }
+
+  .Ejvs-wellness-img-side { height: 240px; }
+  .Ejvs-luxury-img-wrap   { height: 220px; }
+  .Ejvs-luxury-split      { flex-direction: column; }
+  .Ejvs-luxury-vline      { display: none; }
+  .Ejvs-ent-cols  { grid-template-columns: 1fr; }
+  .Ejvs-ent-divider { display: none; }
+  .Ejvs-dest-grid { grid-template-columns: 1fr; gap: 20px; }
+  .Ejvs-service-table { grid-template-columns: 1fr; }
+  .Ejvs-service-col-head--seabourn,
+  .Ejvs-service-cell--seabourn { border-left: none; border-top: 1px solid var(--navy-border); }
+  .Ejvs-pricing-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .Ejvs-title { font-size: 28px; }
+  .Ejvs-section { padding: 56px 0 70px; }
+  .Ejvs-container { gap: 36px; padding: 0 16px; }
+  .Ejvs-dest-overlay { padding: 24px 20px 28px; }
+  .Ejvs-luxury-content { padding: 28px 24px; }
+  .Ejvs-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ejvs-pricing-card {
+    padding: 32px;
+  }
+  .Ejvs-pricing-section {
+    padding: 80px 0;
+  }
+
+  .Ejvs-section-header {
+    margin-bottom: 50px;
+  }
+
+  .Ejvs-card-title {
+    font-size: 1.3rem;
+  }
+
+  .Ejvs-card-intro,
+  .Ejvs-feature-item,
+  .Ejvs-summary-text,
+  .Ejvs-card-highlight p {
+    font-size: 0.95rem;
+  }
+
+  .Ejvs-summary-box {
+    padding: 28px 22px;
+  }
+  .Ejvs-pricing-card {
+    padding: 26px 22px;
+    border-radius: var(--radius);
+  }
+
+  .Ejvs-card-header {
+    align-items: flex-start;
+  }
+
+  .Ejvs-card-icon-wrap {
+    width: 52px;
+    height: 52px;
+  }
+
+  .Ejvs-feature-item {
+    gap: 12px;
+  }
+
+  .Ejvs-feature-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .Ejvs-section-subtitle {
+    font-size: 0.95rem;
+  }
   .Ejsc-ent-grid,
   .Ejsc-dest-grid,
   .Ejsc-service-grid {
@@ -1171,9 +1189,6 @@
   .Ejsc-service-card {
     padding: 32px;
   }
-}
-
-@media (max-width: 768px) {
   .Ejsc-ent-section,
   .Ejsc-dest-section,
   .Ejsc-service-section {
@@ -1184,8 +1199,8 @@
     margin-bottom: 40px;
   }
 
-  .Ejsc-section-title {
-    font-size: 32px;
+  .Ejsc-section-title, .Ejvs-title, .Ejvs-section-title {
+    font-size: 26px;
   }
 
   .Ejsc-card-title {
@@ -1200,12 +1215,18 @@
   }
 }
 
-@media (max-width: 576px) {
+/* ========================================
+   RESPONSIVE — MOBILE (max-width: 480px)
+   ======================================== */
+@media (max-width: 480px) {
   .Ejsc-container {
     padding: 0 16px;
   }
-  .Ejvs-section-title{
+  .Ejvs-section-title, .Ejvs-title, .Ejsc-section-title{
     font-size: 24px;
+  }
+  .azs-suites-title{
+    font-size: 20px;
   }
 
   .Ejsc-ent-card,
@@ -1237,28 +1258,3 @@
     font-size: 0.95rem;
   }
 }
-
-/* Destination Card Image Styles */
-.Ejsc-dest-img-wrap {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-  border-radius: var(--radius);
-  margin-bottom: 24px;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.Ejsc-dest-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.Ejsc-dest-card:hover .Ejsc-dest-img {
-  transform: scale(1.05);
-}
-

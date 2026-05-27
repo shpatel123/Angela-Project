@@ -448,7 +448,7 @@ const AzamaraNorwayFjordsCruises = () => {
         <div className="aac_hero_overlay"></div>
 
         <div className="aac_hero_content">
-          <span className="aac_hero_eyebrow">Luxury Norway Fjords Cruises</span>
+
 
           <h1>Azamara Norway Fjords Cruises</h1>
 

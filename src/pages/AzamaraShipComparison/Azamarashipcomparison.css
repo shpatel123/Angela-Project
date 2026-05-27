@@ -1562,9 +1562,9 @@
 
 .Avr-planning-title {
     font-size: 48px;
-    font-weight: 500 !important;
-    color: var(--navy) !important;
-    line-height: 1.15 !important;
+    font-weight: 500 ;
+    color: var(--navy) ;
+    line-height: 1.15 ;
     margin: 0 auto 16px !important;
     max-width: 760px;
     font-family: var(--font-display);
@@ -3409,9 +3409,7 @@
     transition: color 0.3s ease;
 }
 
-.Scenic_readmore_btn:hover {
-    color: #c5a059;
-}
+
 
 .Scenic_readmore_btn::after {
     content: "";

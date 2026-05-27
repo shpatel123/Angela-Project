@@ -782,9 +782,9 @@ const AzamaraAlaskCruises = () => {
             </>
           )}
 
-          <div className="aac_readmore_wrapper">
+          <div className="Scenic_readmore_wrapper">
             <button
-              className="aac_readmore_btn"
+              className="Scenic_readmore_btn"
               onClick={() => setReadMore(!readMore)}
             >
               {readMore ? "Read Less" : "Read More"}

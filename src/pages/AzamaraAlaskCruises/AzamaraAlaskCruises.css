@@ -980,7 +980,7 @@
 
 
 /* ============================================================
-   SECTION
+   HERO SECTION 
    ============================================================ */
 .aac_hero_section {
   position: relative;
@@ -1085,7 +1085,7 @@
    ============================================================ */
 .aac_hero_content h1 {
   font-family: var(--font-display);
-  font-size: 58px;
+  font-size: 60px;
   line-height: 1.07;
   font-weight: 400;
   margin-bottom: 20px;
@@ -1210,18 +1210,19 @@
   align-items: center;
   gap: 12px;
   padding: 13px 18px;
-  background: rgba(39, 68, 114, 0.2);        /* navy-soft elevated */
+ background: #96929269;
+ opacity: 0.9;
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: var(--radius);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.82);
   text-align: left;
+  opacity: 0.9;
   transition: background var(--transition), border-color var(--transition);
 }
 
 .aac_hero_list li:hover {
-  background: rgba(39, 68, 114, 0.38);
   border-color: var(--gold-border);
 }
 
@@ -1241,7 +1242,8 @@
   max-width: 700px;
   margin: 24px auto 28px;
   padding: 24px 28px;
-  background: rgba(28, 47, 74, 0.45);        /* bg-dark2 at 45% */
+  background: #938c8c69;
+  opacity: 0.9;       
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(12px);
@@ -1256,7 +1258,7 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: rgba(39, 68, 114, 0.7);        /* navy at 70% */
+  background: var(--navy);       /* navy at 70% */
   border: 2px solid var(--gold-border);
   display: flex;
   align-items: center;
@@ -1275,7 +1277,7 @@
 .aac_bio_body .aac_hero_text {
   text-align: left;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .aac_bio_body .aac_hero_text:last-child {
@@ -1286,9 +1288,6 @@
 /* ============================================================
    READ MORE BUTTON
    ============================================================ */
-.aac_readmore_wrapper {
-  margin-top: 32px;
-}
 
 .aac_readmore_btn {
   display: inline-flex;
@@ -1376,12 +1375,12 @@
 @media (max-width: 1024px) {
   .aac_hero_content h1  { font-size: 50px; }
   .aac_hero_subtitle    { font-size: 19px; }
-  .aac_hero_text        { font-size: 16px; }
+  .aac_hero_text        { font-size: 18px; }
 }
 
 @media (max-width: 768px) {
   .aac_hero_section     { padding: 110px 20px 90px; }
-  .aac_hero_content h1  { font-size: 38px; line-height: 1.12; }
+  .aac_hero_content h1  { font-size: 32px; line-height: 1.12; }
   .aac_hero_subtitle    { font-size: 17px; }
   .aac_hero_text        { font-size: 15px; line-height: 1.8; }
   .aac_br_desktop       { display: none; }
@@ -1392,7 +1391,7 @@
 }
 
 @media (max-width: 480px) {
-  .aac_hero_content h1  { font-size: 30px; }
+  .aac_hero_content h1  { font-size: 24px; }
   .aac_hero_subtitle    { font-size: 16px; }
   .aac_hero_text        { font-size: 14px; }
   .aac_hero_eyebrow     { font-size: 9px;  padding: 8px 16px; }

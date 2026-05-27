@@ -352,7 +352,7 @@
 
 /* ── WHAT MAKES NORWAY FJORDS CRUISES (wnf-) ── */
 .wnf-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -574,9 +574,6 @@
 
 /* Responsive Viewports Media Queries */
 @media (max-width: 992px) {
-    .wnf-section {
-        padding: 60px 16px;
-    }
 
     .wnf-split {
         grid-template-columns: 1fr;

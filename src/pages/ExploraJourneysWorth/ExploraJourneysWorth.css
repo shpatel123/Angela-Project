@@ -329,47 +329,8 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 992px) {
-  .Ejv-panel {
-    grid-template-columns: 1fr;
-    min-height: unset;
-    max-height: unset;
-  }
 
-  .Ejv-panel-right {
-    max-height: 400px;
-  }
 
-  .Ejv-img-wrap {
-    min-height: 220px;
-    flex: unset;
-  }
-}
-
-@media (max-width: 768px) {
-  .Ejv-step-nav {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .Ejv-step-btn {
-    padding: 14px 16px;
-  }
-
-  .Ejv-title {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 480px) {
-  .Ejv-container {
-    padding: 0 16px;
-  }
-
-  .Ejv-section {
-    padding: 56px 0 64px;
-  }
-}
 
 
 /* ── EXPLORA FINAL VERDICT (Ejv-verdict-) ── */
@@ -584,7 +545,37 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 860px) {
+
+/* ========================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+  .Ejv-panel {
+    grid-template-columns: 1fr;
+    min-height: unset;
+    max-height: unset;
+  }
+
+  .Ejv-panel-right {
+    max-height: 200vh;
+  }
+
+  .Ejv-img-wrap {
+    min-height: 220px;
+    flex: unset;
+  }
+  .Ejv-step-nav {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .Ejv-step-btn {
+    padding: 14px 16px;
+  }
+
+  .Ejv-title {
+    font-size: 26px;
+  }
   .Ejv-verdict-card {
     grid-template-columns: 1fr;
   }
@@ -593,9 +584,6 @@
     min-height: 260px;
     max-height: 300px;
   }
-}
-
-@media (max-width: 640px) {
   .Ejv-verdict-title {
     font-size: 26px;
   }
@@ -613,8 +601,21 @@
   }
 }
 
+/* ========================================
+   RESPONSIVE — MOBILE (max-width: 480px)
+   ======================================== */
 @media (max-width: 480px) {
+  .Ejv-container {
+    padding: 0 16px;
+  }
+
+  .Ejv-section {
+    padding: 56px 0 64px;
+  }
   .Ejv-verdict-container {
     padding: 0 16px;
+  }
+  .Ejv-verdict-title{
+    font-size: 24px;
   }
 }

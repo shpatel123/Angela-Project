@@ -727,6 +727,12 @@
   gap: 24px;
   align-items: stretch;
 }
+.adgs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
 
 /* ── CARD ── */
 .adg-card {
@@ -936,6 +942,10 @@
   }
 
   .adg-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .adgs-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -1817,11 +1827,11 @@
 
 .adg-c-worth-note-emphasis {
   font-family: var(--font-display);
-  font-size: 20px !important;
-  font-weight: 500 !important;
+  font-size: 20px;
+  font-weight: 500;
   font-style: italic;
-  color: var(--navy) !important;
-  margin: 0 !important;
+  color: var(--navy) ;
+  margin: 0;
 }
 
 /* ════════════════════════════════════════════
@@ -2081,7 +2091,7 @@
   .Adg-expert-title {
     font-size: 24px !important;
   }
-  .adg-c-lead {
+  .adg-c-lead, .adg-c-worth-note-emphasis {
     font-size: 18px !important;
   }
   .adg-c-body,
