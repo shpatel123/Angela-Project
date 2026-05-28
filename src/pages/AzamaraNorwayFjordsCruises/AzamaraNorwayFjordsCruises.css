@@ -23,9 +23,9 @@
 
 .afc-h2 {
     font-size: 48px;
-    font-weight: 500 !important;
-    color: var(--navy) !important;
-    line-height: 1.2 !important;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.2;
     letter-spacing: -0.01em;
     margin-bottom: 12px;
 }
@@ -375,9 +375,9 @@
 
 .wnf-h2 {
     font-size: 48px;
-    font-weight: 500 !important;
-    color: var(--navy) !important;
-    line-height: 1.25 !important;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.25;
     letter-spacing: -0.01em;
     margin-bottom: 12px;
 }
@@ -597,5 +597,93 @@
 
     .wnf-image-stack {
         height: 280px;
+    }
+}
+
+
+/* ===== EXPERIENCE ===== */
+.experience {
+    padding: 60px 20px;
+    background: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section-inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.exp-highlights-title {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.exp-slider {
+    margin-top: 50px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.exp-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollSlider 30s linear infinite;
+    width: max-content;
+}
+
+.exp-slide {
+    min-width: 260px;
+    height: 320px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: default;
+}
+
+.exp-slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 60%);
+}
+
+.exp-slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.exp-slide span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 2;
+    line-height: 1.4;
+}
+
+@keyframes scrollSlider {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
     }
 }

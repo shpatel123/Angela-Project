@@ -736,8 +736,6 @@ const AzamaraAlaskCruises = () => {
         <div className="aac_hero_overlay"></div>
 
         <div className="aac_hero_content">
-          <span className="aac_hero_eyebrow">Luxury Alaska Cruises</span>
-
           <h1>Azamara Alaska Cruises</h1>
 
           <p className="aac_hero_subtitle">
@@ -967,30 +965,32 @@ const AzamaraAlaskCruises = () => {
       <AacFeelSection />
 
       {/* VIDEO SECTION */}
-<section className="Asc-video-section" id="Asc-video">
-    <div className="Asc-container">
-        <div className="Asc-section-header">
+      <section className="Asc-video-section" id="Asc-video">
+        <div className="Asc-container">
+          <div className="Asc-section-header">
             <h2 className="Asc-h2">Discover Alaska with Azamara</h2>
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-video-intro">
-                Explore Alaska through Azamara’s immersive cruises, featuring breathtaking landscapes, scenic coastal experiences, and destination-focused journeys designed for deeper discovery.
+              Explore Alaska through Azamara’s immersive cruises, featuring
+              breathtaking landscapes, scenic coastal experiences, and
+              destination-focused journeys designed for deeper discovery.
             </p>
-        </div>
+          </div>
 
-        <div className="Asc-video-wrapper">
+          <div className="Asc-video-wrapper">
             <div className="Asc-video-frame">
-                <iframe
-                    src="https://www.youtube.com/embed/mgYJzZTbZfQ"
-                    title="Discover Alaska with Azamara Cruises"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/mgYJzZTbZfQ"
+                title="Discover Alaska with Azamara Cruises"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       {/* EXPERT INSIGHT */}
       <AacExpertSection />
@@ -1090,31 +1090,33 @@ const AzamaraAlaskCruises = () => {
         </div>
       </section>
 
-    {/* VIDEO SECTION */}
-<section className="Asc-video-section" id="Asc-video">
-    <div className="Asc-container">
-        <div className="Asc-section-header">
+      {/* VIDEO SECTION */}
+      <section className="Asc-video-section" id="Asc-video">
+        <div className="Asc-container">
+          <div className="Asc-section-header">
             <h2 className="Asc-h2">Discover Alaska’s Beauty</h2>
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-video-intro">
-                Experience the stunning beauty of Alaska with Azamara Cruises, from majestic glaciers and wildlife encounters to immersive coastal destinations and unforgettable scenic journeys.
+              Experience the stunning beauty of Alaska with Azamara Cruises,
+              from majestic glaciers and wildlife encounters to immersive
+              coastal destinations and unforgettable scenic journeys.
             </p>
-        </div>
+          </div>
 
-        <div className="Asc-video-wrapper">
+          <div className="Asc-video-wrapper">
             <div className="Asc-video-frame">
-                <iframe
-                    src="https://www.youtube.com/embed/ifDqpc93M-Q"
-                    title="Discover the Beauty of Alaska with Azamara"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/ifDqpc93M-Q"
+                title="Discover the Beauty of Alaska with Azamara"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       {/* ── COMMON MISTAKES ───────────────────────────────────────── */}
       <section className="Lfsg-section Lfsg-bg-dark" id="Lfsg-mistakes">
@@ -1497,7 +1499,11 @@ const AzamaraAlaskCruises = () => {
       </section>
 
       {/* PLANNING ADVICE */}
-      <section className="Avr-planning-section" id="Asc-planning-advice" style={{backgroundColor: "var(--bg-white)"}}>
+      <section
+        className="Avr-planning-section"
+        id="Asc-planning-advice"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
         <div className="Asc-container">
           {/* HEADING */}
           <div className="Avr-planning-heading">
@@ -1611,7 +1617,9 @@ const AzamaraAlaskCruises = () => {
                   Luxury Alaska Cruise Planning
                 </span>
 
-                <h2 className="Asc-help-h2">Plan Your Perfect Azamara Alaska Cruise</h2>
+                <h2 className="Asc-help-h2">
+                  Plan Your Perfect Azamara Alaska Cruise
+                </h2>
 
                 <div className="Asc-help-accent"></div>
               </div>

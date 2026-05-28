@@ -24,9 +24,48 @@ import HeroImage6 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway5.j
 import CTAImage from "../../assets/AzamaraNorwayFjordsCruises/Azamaracta.webp";
 import HeroImage4 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway3.webp";
 
+import Experience from "../../assets/AzamaraNorwayFjordsCruises/best-lofoten-islands-waterfront-cabins-norway-vacation.jpg";
+import Experience1 from "../../assets/AzamaraNorwayFjordsCruises/geirangerfjord-norway-scenic-cruise-fjord-mountain-view.jpg";
+import Experience2 from "../../assets/AzamaraNorwayFjordsCruises/norway-fjord-cruise-waterfall-national-flag-scenic-travel.jpg";
+import Experience3 from "../../assets/AzamaraNorwayFjordsCruises/norway-fjord-village-overlook-scenic-cruise-destination.jpg";
+import Experience4 from "../../assets/AzamaraNorwayFjordsCruises/norway-trolltunga-hiking-view-fjord-mountain-adventure.jpg";
+import Experience5 from "../../assets/AzamaraNorwayFjordsCruises/norway-fjord-waterfall-scenic-cruise-landscape.jpg";
+import Experience6 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway3.webp";
+
 import "./AzamaraNorwayFjordsCruises.css";
 
 import { Helmet } from "react-helmet-async";
+
+const experienceSlides = [
+  {
+    img: Experience,
+    text: "Lofoten Islands Waterfront Cabins & Scenic Norway Views",
+  },
+  {
+    img: Experience1,
+    text: "Geirangerfjord Scenic Fjord & Mountain Cruise Experience",
+  },
+  {
+    img: Experience2,
+    text: "Norway Fjord Waterfalls & National Flag Coastal Journey",
+  },
+  {
+    img: Experience3,
+    text: "Charming Norway Fjord Village Overlook Destination",
+  },
+  {
+    img: Experience4,
+    text: "Trolltunga Hiking Adventure & Fjord Mountain Landscapes",
+  },
+  {
+    img: Experience5,
+    text: "Norway Fjord Waterfall Scenic Cruise Landscapes",
+  },
+  {
+    img: Experience6,
+    text: "Azamara Norway Fjords Luxury Cruise Experience",
+  },
+];
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -904,6 +943,28 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
                   ))}
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            {/* ===== EXPERIENCE ===== */}
+      <section className="experience">
+        <div className="section-inner wide">
+          <h2 className="afc-h2" style={{ textAlign: 'center' }}>
+            The Experience Onboard
+          </h2>
+          <div className="exp-slider">
+            <div className="exp-track">
+              {[...experienceSlides, ...experienceSlides].map((slide, i) => (
+                <div
+                  key={i}
+                  className="exp-slide"
+                  style={{ backgroundImage: `url('${slide.img}')` }}
+                >
+                  <span>{slide.text}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -34,7 +34,6 @@
 }
 
 .Ecc-title {
-  font-family: var(--font-display);
   font-size: 48px;
   font-weight: 500;
   color: var(--navy);
@@ -323,14 +322,6 @@
   user-select: none;
 }
 
-/* ── Responsive ── */
-
-
-
-
-
-/* ── EXPLORA HIDDEN COSTS & BEST TIME TO BOOK (Ecc-hc- / Ecc-bt-) ── */
-/* All colors use only project :root variables */
 
 /* ══════════════════════════════════════
    SECTION 1 — Hidden Costs
@@ -343,7 +334,7 @@
 }
 
 .Ecc-hc-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -366,7 +357,6 @@
 }
 
 .Ecc-hc-title {
-  font-family: var(--font-display);
   font-size: 48px;
   font-weight: 500;
   color: var(--navy);
@@ -483,7 +473,7 @@
 }
 
 .Ecc-bt-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -506,7 +496,6 @@
 }
 
 .Ecc-bt-title {
-  font-family: var(--font-display);
   font-size: 48px;
   font-weight: 500;
   color: var(--navy);

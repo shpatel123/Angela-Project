@@ -42,9 +42,9 @@
 }
 
 .Asc-h2 {
-    font-weight: 500 !important;
-    color: var(--navy) !important;
-    line-height: 1.2 !important;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.2;
     letter-spacing: -0.01em;
     margin-bottom: 0;
 }
@@ -57,9 +57,9 @@
 }
 
 .Asc-body-text {
-    font-weight: 300 !important;
-    color: var(--navy) !important;
-    line-height: 1.75 !important;
+    font-weight: 300;
+    color: var(--navy);
+    line-height: 1.75;
     max-width: 780px;
     margin: 0 auto;
     text-align: center;
@@ -76,7 +76,7 @@
 }
 
 .Asc-icon-muted {
-    color: #888 !important;
+    color: #888;
     flex-shrink: 0;
 }
 
@@ -156,20 +156,20 @@
 }
 
 .Asc-hero-h1 {
-    font-size: 54px !important;
-    font-weight: 500 !important;
-    color: #fff !important;
-    line-height: 1.15 !important;
-    margin: 0 !important;
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.15;
+    margin: 0;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
     animation: Asc-fade-up 1s ease-out 0.3s both;
 }
 
 .Asc-hero-sub {
-    font-size: 20px !important;
-    font-weight: 300 !important;
-    color: rgba(255, 255, 255, 0.82) !important;
-    margin: 0 !important;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0;
 }
 
 .Asc-hero-slide-dots {
@@ -202,16 +202,16 @@
 }
 
 .Asc-intro-text {
-    font-size: 18px !important;
-    font-weight: 300 !important;
-    color: var(--navy) !important;
-    line-height: 1.65 !important;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--navy);
+    line-height: 1.65;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .Asc-intro-spacing {
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
 }
 
 .Asc-intro-split {
@@ -431,11 +431,11 @@
 }
 
 .Asc-appeals-feature-label {
-    font-size: 15px !important;
-    font-weight: 600 !important;
-    color: var(--navy) !important;
-    margin: 0 !important;
-    line-height: 1.4 !important;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.4;
 }
 
 @media (max-width: 992px) {
@@ -475,19 +475,19 @@
 
 .Asc-fleet-table th {
     padding: 20px 24px;
-    font-size: 11px !important;
-    font-weight: 600 !important;
+    font-size: 11px;
+    font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #fff !important;
+    color: #fff;
     text-align: left;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .Asc-fleet-table td {
     padding: 18px 24px;
-    font-weight: 400 !important;
-    color: var(--navy) !important;
+    font-weight: 400;
+    color: var(--navy);
     line-height: 1.5;
     border-bottom: 1px solid rgba(39, 68, 114, 0.07);
     border-right: 1px solid rgba(39, 68, 114, 0.05);
@@ -616,10 +616,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 16px !important;
-    color: var(--navy) !important;
-    font-weight: 400 !important;
-    line-height: 1.4 !important;
+    font-size: 16px;
+    color: var(--navy);
+    font-weight: 400;
+    line-height: 1.4;
 }
 
 .Asc-ship-bestfor-list li svg,
