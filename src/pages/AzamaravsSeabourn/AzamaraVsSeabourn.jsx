@@ -16,7 +16,7 @@ import {
   Music,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela2.jpeg";
 import HeroImage1 from "../../assets/Azamarashipcomparison/Seabournhero.webp";
 import HeroImage2 from "../../assets/Azamarashipcomparison/Seabournhero2.webp";
 import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";

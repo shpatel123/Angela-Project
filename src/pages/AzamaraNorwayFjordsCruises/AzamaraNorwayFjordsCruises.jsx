@@ -15,11 +15,10 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 import HeroImage1 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway.webp";
 import HeroImage2 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway2.jpg";
-import HeroImage3 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway4.png";
-import HeroImage5 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway6.webp";
+import HeroImage3 from "../../assets/AzamaraNorwayFjordsCruises/traditional-lofoten-islands-red-rorbuer-cabins-norway.jpg";
 import HeroImage6 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway5.jpg";
 import CTAImage from "../../assets/AzamaraNorwayFjordsCruises/Azamaracta.webp";
 import HeroImage4 from "../../assets/AzamaraNorwayFjordsCruises/AzamaraNorway3.webp";
@@ -568,7 +567,7 @@ const AzamaraNorwayFjordsCruises = () => {
                 </div>
                 <div className="wnf-img-frame wnf-frame-secondary">
                   <img
-                    src={HeroImage5}
+                    src={Experience}
                     alt="Luxury cruise ship sailing through historic coastal villages"
                     className="wnf-photo"
                   />
@@ -733,6 +732,28 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== EXPERIENCE ===== */}
+      <section className="experience">
+        <div className="section-inner wide">
+          <h2 className="afc-h2" style={{ textAlign: "center" }}>
+            The Experience Onboard
+          </h2>
+          <div className="exp-slider">
+            <div className="exp-track">
+              {[...experienceSlides, ...experienceSlides].map((slide, i) => (
+                <div
+                  key={i}
+                  className="exp-slide"
+                  style={{ backgroundImage: `url('${slide.img}')` }}
+                >
+                  <span>{slide.text}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -943,28 +964,6 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
                   ))}
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-            {/* ===== EXPERIENCE ===== */}
-      <section className="experience">
-        <div className="section-inner wide">
-          <h2 className="afc-h2" style={{ textAlign: 'center' }}>
-            The Experience Onboard
-          </h2>
-          <div className="exp-slider">
-            <div className="exp-track">
-              {[...experienceSlides, ...experienceSlides].map((slide, i) => (
-                <div
-                  key={i}
-                  className="exp-slide"
-                  style={{ backgroundImage: `url('${slide.img}')` }}
-                >
-                  <span>{slide.text}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ import {
   AlertTriangle,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 import HeroImage1 from "../../assets/Azamarashipcomparison/hero1.webp";
 import HeroImage2 from "../../assets/Azamarashipcomparison/hero2.jpg";
 import CTAImage from "../../assets/Azamarashipcomparison/Ctaimage.jpg";

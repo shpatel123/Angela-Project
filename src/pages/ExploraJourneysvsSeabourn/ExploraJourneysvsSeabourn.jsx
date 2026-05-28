@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import "./ExploraJourneysvsSeabourn.css";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 import CTAImage from "../../assets/ExploraJourneysvsSeabourn/EXPLORA-Mediterranean.webp";
 
 import HeroImage1 from "../../assets/ExploraJourneysvsSeabourn/ExploraCruise.webp";

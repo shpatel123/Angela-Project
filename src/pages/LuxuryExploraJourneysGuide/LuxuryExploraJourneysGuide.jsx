@@ -26,7 +26,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela2.jpeg";
 import CTAImage from "../../assets/LuxuryExploraJourneysGuide/Explora-Mediterranean3.webp";
 
 import Mediterranean from "../../assets/LuxuryExploraJourneysGuide/Mediterranean-Cruises.webp";

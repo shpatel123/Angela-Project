@@ -23,7 +23,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 import HeroImage1 from "../../assets/AzamaraDiningGuide/AzamaraHero.webp";
 import HeroImage2 from "../../assets/AzamaraDiningGuide/Azamara-night.webp";
 import CTAImage from "../../assets/AzamaraDiningGuide/PlanAzamara.webp";

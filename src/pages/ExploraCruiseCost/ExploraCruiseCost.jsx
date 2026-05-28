@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import "./ExploraCruiseCost.css";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela2.jpeg";
 import CTAImage from "../../assets/ExploraCruiseCost/Asia-Ship-a-Long-Bay-Vietnam.webp";
 
 import HeroImage1 from "../../assets/ExploraCruiseCost/ExploraCruiseCost.webp";

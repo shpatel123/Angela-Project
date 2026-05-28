@@ -29,7 +29,7 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import "./ExploraJourneysCruises.css";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 import CTAImage from "../../assets/ExploraJourneysCruises/Meridian-Lounge.webp";
 
 import HeroImage1 from "../../assets/ExploraJourneysCruises/ExploraCruise.webp";

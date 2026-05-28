@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import "./ExploraJourneysWorth.css";
-import AboutImage from "../../assets/image.webp";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 import CTAImage from "../../assets/ExploraJourneysWorth/AlaskaCruise.webp";
 
 import HeroImage1 from "../../assets/ExploraJourneysWorth/Explora-Journeys.webp";
