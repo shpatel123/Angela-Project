@@ -1140,6 +1140,40 @@ const AzamaraDiningGuide = () => {
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Lens of a Local: Pasta Making in Italy</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Experience Azamara’s immersive destination-focused travel through
+              this authentic pasta-making journey in Civitavecchia, Italy, where
+              local culture, culinary traditions, and meaningful travel
+              experiences come together beyond the typical cruise itinerary.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/VUWKldvItdU"
+                title="Azamara's Lens of a Local: Pasta Making in Civitavecchia, Italy"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* AZAMARA DIETARY ACCOMMODATIONS */}
       <section
         className="adg-section"

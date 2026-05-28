@@ -749,7 +749,7 @@ const ExploraCruiseCost = () => {
             <h2 className="Asc-h2">
               An Ocean of New – 2027 Journeys Collection
             </h2>
-
+  
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-video-intro">

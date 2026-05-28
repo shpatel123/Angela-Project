@@ -448,8 +448,6 @@ const AzamaraNorwayFjordsCruises = () => {
         <div className="aac_hero_overlay"></div>
 
         <div className="aac_hero_content">
-
-
           <h1>Azamara Norway Fjords Cruises</h1>
 
           <p className="aac_hero_subtitle">
@@ -702,7 +700,7 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
       </section>
 
       {/* FLEET OVERVIEW TABLE */}
-      <section className="Asc-section Asc-bg-white" id="Asc-fleet">
+      <section className="Asc-section Asc-bg-soft" id="Asc-fleet">
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">Azamara vs Other Norway Cruise Lines</h2>
@@ -790,6 +788,37 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Small Ship Cruising with Azamara</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Discover the charm of small ship cruising with Azamara, where
+              intimate ships, immersive destinations, and personalized
+              experiences bring travelers closer to the world.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/MbtzeUXewyQ"
+                title="Experience Small Ship Cruising with Azamara"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* BEST TIME FOR AZAMARA NORWAY FJORDS CRUISES */}
       <section className="Asc-section Asc-bg-soft" id="Asc-norway-best-time">
@@ -880,36 +909,8 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
         </div>
       </section>
 
-      {/* VIDEO SECTION */}
-<section className="Asc-video-section" id="Asc-video" style={{backgroundColor: "var(--bg-white)"}}  >
-    <div className="Asc-container">
-        <div className="Asc-section-header">
-            <h2 className="Asc-h2">Small Ship Cruising with Azamara</h2>
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-                Discover the charm of small ship cruising with Azamara, where intimate ships, immersive destinations, and personalized experiences bring travelers closer to the world.
-            </p>
-        </div>
-
-        <div className="Asc-video-wrapper">
-            <div className="Asc-video-frame">
-                <iframe
-                    src="https://www.youtube.com/embed/MbtzeUXewyQ"
-                    title="Experience Small Ship Cruising with Azamara"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
       {/* EXPERT INSIGHT */}
       <AacExpertSection />
-
-      
 
       {/* BEST CABINS FOR NORWAY FJORDS CRUISES */}
       <section className="afc-section afc-bg-white" id="afc-norway-cabins">
@@ -1050,7 +1051,9 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">Is An Azamara Norway Fjords Cruise Right For You?</h2>
+            <h2 className="Asc-h2">
+              Is An Azamara Norway Fjords Cruise Right For You?
+            </h2>
 
             <div className="Asc-accent-line"></div>
 
@@ -1102,6 +1105,40 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Azamara 2026 World Cruise</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Explore Azamara’s extraordinary 2026 World Cruise journey
+              featuring immersive destinations, extended stays, cultural
+              discovery, and the boutique luxury cruising experience that makes
+              Azamara ideal for travelers seeking deeper global exploration.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/gF5XBSByguQ"
+                title="Azamara 2026 World Cruise"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -1225,7 +1262,11 @@ WHY AZAMARA IS EXCEPTIONAL FOR NORWAY FJORDS CRUISES
       </section>
 
       {/* PLANNING ADVICE */}
-      <section className="Avr-planning-section" id="Asc-planning-advice" style={{backgroundColor: "var(--bg-white)"}}>
+      <section
+        className="Avr-planning-section"
+        id="Asc-planning-advice"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
         <div className="Asc-container">
           {/* HEADING */}
           <div className="Avr-planning-heading">
