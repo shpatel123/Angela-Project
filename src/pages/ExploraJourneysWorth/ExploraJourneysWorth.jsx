@@ -1038,7 +1038,7 @@ const ExploraJourneysWorth = () => {
         </div>
       </section>
 
-            {/* VIDEO SECTION */}
+      {/* VIDEO SECTION */}
       <section
         className="Asc-video-section"
         id="Asc-video"
@@ -1133,8 +1133,6 @@ const ExploraJourneysWorth = () => {
           </p>
         </div>
       </section>
-
-
 
       {/* ── COMMON MISTAKES ───────────────────────────────────────── */}
       <section className="Lfsg-section Lfsg-bg-dark" id="Lfsg-mistakes">
@@ -1259,39 +1257,37 @@ const ExploraJourneysWorth = () => {
       </section>
 
       {/* VIDEO SECTION */}
-<section
-  className="Asc-video-section"
-  id="Asc-video"
-  style={{ backgroundColor: "var(--bg-white)" }}
->
-  <div className="Asc-container">
-    <div className="Asc-section-header">
-      <h2 className="Asc-h2">
-        A Taste Of Exploration
-      </h2>
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">A Taste Of Exploration</h2>
 
-      <div className="Asc-accent-line"></div>
+            <div className="Asc-accent-line"></div>
 
-      <p className="Asc-video-intro">
-        Discover the culinary artistry of Explora Journeys as world-class
-        dining, refined flavors, and immersive gastronomic experiences come
-        together to redefine luxury dining at sea.
-      </p>
-    </div>
+            <p className="Asc-video-intro">
+              Discover the culinary artistry of Explora Journeys as world-class
+              dining, refined flavors, and immersive gastronomic experiences
+              come together to redefine luxury dining at sea.
+            </p>
+          </div>
 
-    <div className="Asc-video-wrapper">
-      <div className="Asc-video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/dOntytWI4sw"
-          title="EXPLORA I - A Taste Of Exploration I Explora Journeys"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/dOntytWI4sw"
+                title="EXPLORA I - A Taste Of Exploration I Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* PLANNING ADVICE */}
       <section

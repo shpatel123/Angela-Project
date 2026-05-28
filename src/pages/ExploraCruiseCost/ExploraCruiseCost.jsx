@@ -460,15 +460,10 @@ const ExploraCruiseCost = () => {
         <div className="aac_hero_overlay_gradient" />
         <div className="aac_hero_noise" />
 
-      
-
         {/* ── Main content ── */}
         <div className="aac_hero_content">
           {/* Heading */}
-          <h1>
-            How Much Does an Explora Cruise Cost
-             in 2026 and 2027?
-          </h1>
+          <h1>How Much Does an Explora Cruise Cost in 2026 and 2027?</h1>
 
           <p className="aac_hero_subtitle">
             Understanding true luxury value beyond the fare
@@ -550,7 +545,7 @@ const ExploraCruiseCost = () => {
       <section
         className="Asc-section Asc-bg-white"
         id="Asc-fleet"
-        style={{ backgroundColor: "var(--bg-white)" }}
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Asc-container">
           <div className="Asc-section-header">
@@ -617,7 +612,10 @@ const ExploraCruiseCost = () => {
           </div>
 
           <div style={{ marginTop: "25px" }}>
-            <p className="Asc-card-subtext" style={{color: "var(--navy)" , textAlign: "center"}}>
+            <p
+              className="Asc-card-subtext"
+              style={{ color: "var(--navy)", textAlign: "center" }}
+            >
               Luxury holiday sailings, Grand Journeys, and limited itineraries
               can exceed these ranges significantly.
             </p>
@@ -629,7 +627,7 @@ const ExploraCruiseCost = () => {
       <section
         className="wnf-section wnf-bg-white"
         id="wnf-extraordinary-fjords"
-        style={{ backgroundColor: "var(--bg-soft)" }}
+
       >
         <div className="wnf-container">
           <div className="wnf-section-header">
@@ -706,7 +704,7 @@ const ExploraCruiseCost = () => {
       </section>
 
       {/* ── SECTION 2: Why It Costs More ── */}
-      <section className="Ecc-section Ecc-section--white">
+      <section className="Ecc-section Ecc-section--soft">
         <div className="Ecc-container">
           <div className="Ecc-header">
             <h2 className="Ecc-title">
@@ -739,29 +737,42 @@ const ExploraCruiseCost = () => {
         </div>
       </section>
 
+
       {/* VIDEO SECTION */}
-      {/* <section className="Asc-video-section" id="Asc-video">
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Watch: Regent Seven Seas Cruise</h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Asc-video-intro">
-                            Hear directly from luxury cruise expert Angela Hughes as she shares her firsthand insights on choosing between Azamara and Regent Seven Seas.
-                        </p>
-                    </div>
-                    <div className="Asc-video-wrapper">
-                        <div className="Asc-video-frame">
-                            <iframe
-                                src="https://www.youtube.com/embed/yoKE5YG3CYI"
-                                title="Azamara vs Regent Seven Seas – Angela Hughes"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              An Ocean of New – 2027 Journeys Collection
+            </h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Explore the future of luxury ocean travel with Explora Journeys’
+              2027 collection, featuring extraordinary destinations, immersive
+              cultural experiences, elegant suites, and thoughtfully curated
+              voyages designed for modern luxury travelers.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/OwYwL7N1Qfg"
+                title="An Ocean of New - Our 2027 Journeys Collection"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* IS EXPLORA JOURNEYS WORTH THE COST? */}
       <section className="adg-section" id="adg-food-itineraries">
@@ -1115,39 +1126,37 @@ const ExploraCruiseCost = () => {
       </section>
 
       {/* VIDEO SECTION */}
-<section
-  className="Asc-video-section"
-  id="Asc-video"
-  style={{ backgroundColor: "var(--bg-white)" }}
->
-  <div className="Asc-container">
-    <div className="Asc-section-header">
-      <h2 className="Asc-h2">
-        Explore the Explora Journeys Experience
-      </h2>
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explore the Explora Journeys Experience</h2>
 
-      <div className="Asc-accent-line"></div>
+            <div className="Asc-accent-line"></div>
 
-      <p className="Asc-video-intro">
-        Discover the inspiration, craftsmanship, and sophisticated design behind
-        Explora Journeys through this cinematic film showcasing the creation of
-        one of the world’s most elegant luxury cruise ships.
-      </p>
-    </div>
+            <p className="Asc-video-intro">
+              Discover the inspiration, craftsmanship, and sophisticated design
+              behind Explora Journeys through this cinematic film showcasing the
+              creation of one of the world’s most elegant luxury cruise ships.
+            </p>
+          </div>
 
-    <div className="Asc-video-wrapper">
-      <div className="Asc-video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/qx_9Nt6kYpI"
-          title="The Making Of A Beautiful Ship: A Film About Design I Explora Journeys"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/qx_9Nt6kYpI"
+                title="The Making Of A Beautiful Ship: A Film About Design I Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* WHO SHOULD CHOOSE */}
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
