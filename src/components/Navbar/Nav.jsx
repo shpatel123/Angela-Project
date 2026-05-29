@@ -128,6 +128,14 @@ const Nav = () => {
               >
                 Faculty-Led Travel Programs
               </NavLink>
+
+                 <NavLink
+                to="/educational-travel-programs"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Educational Travel Programs
+              </NavLink>
             </div>
           </div>
         </div>
@@ -260,6 +268,14 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Faculty-Led Travel Programs
+              </NavLink>
+
+              <NavLink
+                to="/educational-travel-programs"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Educational Travel Programs
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
