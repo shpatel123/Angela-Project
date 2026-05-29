@@ -696,7 +696,7 @@
 .azs-dining-card {
     position: relative;
     border-radius: var(--radius-lg);
-    padding: 50px 40px 40px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
@@ -720,10 +720,36 @@
     border: 1px solid rgba(39, 68, 114, 0.12);
 }
 
-.azs-dining-badge-wrapper {
+.azs-dining-image-wrap {
+    position: relative;
+    height: 290px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.azs-dining-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.azs-dining-card:hover .azs-dining-img {
+    transform: scale(1.05);
+}
+
+.azs-dining-content {
+    padding: 40px;
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: -15px;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.azs-dining-badge-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     z-index: 10;
 }
 
@@ -914,7 +940,15 @@
     }
 
     .azs-dining-card {
-        padding: 40px 25px 25px;
+        padding: 0;
+    }
+
+    .azs-dining-content {
+        padding: 30px 20px 20px;
+    }
+
+    .azs-dining-image-wrap {
+        height: 200px;
     }
 
     .azs-dining-intro {
@@ -1519,8 +1553,8 @@
    LUXURY COMPARISON VERDICT & SUITABILITY SECTIONS (azs-verdict- / azs-suitability-)
    ========================================================================== */
 .azs-verdict-section {
-    padding: 90px 20px;
-    background: var(--bg-white);
+    padding: 60px 20px;
+    background: var(--bg-soft);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1623,7 +1657,7 @@
 }
 
 .azs-verdict-quote-box {
-    background: var(--bg-soft);
+    background: var(--bg-white);
     border-radius: var(--radius);
     padding: 24px 30px;
     text-align: center;

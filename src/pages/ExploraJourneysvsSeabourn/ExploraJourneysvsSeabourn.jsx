@@ -24,20 +24,61 @@ import AboutImage from "../../assets/AboutAngela3.jpeg";
 import CTAImage from "../../assets/ExploraJourneysvsSeabourn/EXPLORA-Mediterranean.webp";
 
 import HeroImage1 from "../../assets/ExploraJourneysvsSeabourn/ExploraCruise.webp";
-import HeroImage2 from "../../assets/ExploraJourneysvsSeabourn/Auckland-skyline-in-New-Zealand.webp";
+import HeroImage2 from "../../assets/ExploraJourneysvsSeabourn/Auckland-skyline-in-New-Zealand.jpg";
 import HeroImage4 from "../../assets/ExploraJourneysvsSeabourn/Asia-Ship-a-Long-Bay-Vietnam.webp";
 
 import ExploraOverview from "../../assets/ExploraJourneysvsSeabourn/Explora-Overview.webp";
-import SeabournOverview from "../../assets/ExploraJourneysvsSeabourn/Seabourn-Overview.webp";
+import SeabournOverview from "../../assets/ExploraJourneysvsSeabourn/Seabourn-Overview.jpg";
 import ExploraSuite from "../../assets/ExploraJourneysvsSeabourn/Suite-Services.webp";
-import SeabournSuite from "../../assets/ExploraJourneysvsSeabourn/Seabourn-Suite.webp";
+import SeabournSuite from "../../assets/ExploraJourneysvsSeabourn/Seabourn-Suite.jpg";
 import SpaExperience from "../../assets/ExploraJourneysvsSeabourn/explora-journeys-sunrise-pool-deck-luxury-yacht.webp";
 import ExploraDetination from "../../assets/ExploraJourneysvsSeabourn/ExploraDestination.webp";
-import SeabournDetination from "../../assets/ExploraJourneysvsSeabourn/SeabourPlace.webp";
+import SeabournDetination from "../../assets/ExploraJourneysvsSeabourn/SeabourPlace.jpg";
 import ExploraPool from "../../assets/ExploraJourneysvsSeabourn/explora-I-infinity-pool.webp";
-import ExploraDinig from "../../assets/ExploraJourneysvsSeabourn/Conservatory-Pool-Bar.webp";
+import ExploraDinig from "../../assets/ExploraJourneysvsSeabourn/Conservatory-Pool-Bar.jpg";
+import ExploraJournryDinig from "../../assets/ExploraJourneysvsSeabourn/ExploraDining.jpeg";
+import SeabourDinig from "../../assets/ExploraJourneysvsSeabourn/SeabournDining.jpg";
+
+import Experience from "../../assets/ExploraJourneysvsSeabourn/Ilulissat_Greenland_Jakobshavn_Glacier.jpg";
+import Experience1 from "../../assets/ExploraJourneysvsSeabourn/OnBoard_AfternoonTea.jpg";
+import Experience2 from "../../assets/ExploraJourneysvsSeabourn/Seabourn_Encore.jpg";
+import Experience3 from "../../assets/ExploraJourneysvsSeabourn/Seabourn_Encor.jpg";
+import Experience4 from "../../assets/ExploraJourneysvsSeabourn/Seabourn_Encores.jpg";
+import Experience5 from "../../assets/ExploraJourneysvsSeabourn/Seabourn_Encore_PoolDeck.jpg";
+import Experience6 from "../../assets/ExploraJourneysvsSeabourn/SBN_Kusadasi_Turkey_Encore_ENC_Sunrise_Sail_In_Location_Drone.jpg";
 
 import { Helmet } from "react-helmet-async";
+
+const experienceSlides = [
+  {
+    img: Experience,
+    text: "Ilulissat Greenland & Jakobshavn Glacier Expedition Views",
+  },
+  {
+    img: Experience1,
+    text: "Luxury Afternoon Tea Experience Onboard Seabourn",
+  },
+  {
+    img: Experience2,
+    text: "Seabourn Encore Ultra-Luxury Cruise Ship Experience",
+  },
+  {
+    img: Experience3,
+    text: "Elegant Seabourn Encore Ocean Voyage Experience",
+  },
+  {
+    img: Experience4,
+    text: "Seabourn Encore Luxury Suite & Onboard Lifestyle",
+  },
+  {
+    img: Experience5,
+    text: "Seabourn Encore Pool Deck Luxury Relaxation",
+  },
+  {
+    img: Experience6,
+    text: "Seabourn Encore Sunrise Arrival in Kusadasi, Turkey",
+  },
+];
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -975,9 +1016,7 @@ const ExploraJourneysvsSeabourn = () => {
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-section-title">Dining Comparison</h2>
-
             <div className="azs-section-accent"></div>
-
             <p className="azs-section-subtitle">
               Contemporary Wellness-Focused Cuisine vs Legendary Fine Dining
             </p>
@@ -986,95 +1025,127 @@ const ExploraJourneysvsSeabourn = () => {
           <div className="azs-dining-grid">
             {/* Explora Journeys Card */}
             <div className="azs-dining-card azs-seabourn-dining">
-              <div className="azs-dining-header">
-                <div className="azs-dining-icon-circle">
-                  <ChefHat size={24} className="azs-dining-icon" />
+              <div className="azs-dining-image-wrap">
+                <img
+                  src={
+                    ExploraJournryDinig
+                  } /* Swap this out with your Explora Dining image variable if available */
+                  alt="Explora Journeys Culinary Experience"
+                  className="azs-dining-img"
+                />
+                <div className="azs-dining-badge-wrapper">
+                  <span className="azs-dining-badge azs-seabourn-badge">
+                    Contemporary Luxury
+                  </span>
                 </div>
-
-                <h3 className="azs-dining-title">Explora Journeys Dining</h3>
               </div>
 
-              <p className="azs-dining-intro">
-                Explora emphasizes elevated contemporary dining with a strong
-                lifestyle and wellness focus.
-              </p>
+              <div className="azs-dining-content">
+                <div className="azs-dining-header">
+                  <div className="azs-dining-icon-circle">
+                    <ChefHat size={24} className="azs-dining-icon" />
+                  </div>
+                  <h3 className="azs-dining-title">Explora Journeys Dining</h3>
+                </div>
 
-              <div className="azs-dining-body">
-                <h4 className="azs-dining-group-title">Explora emphasizes:</h4>
+                <p className="azs-dining-intro">
+                  Explora emphasizes elevated contemporary dining with a strong
+                  lifestyle and wellness focus.
+                </p>
 
-                <ul className="azs-dining-list">
-                  {[
-                    "Wellness-conscious cuisine",
-                    "Mediterranean influences",
-                    "Elevated casual luxury",
-                    "Flexible dining",
-                    "Contemporary culinary presentation",
-                  ].map((item, idx) => (
-                    <li key={idx} className="azs-dining-list-item">
-                      <div className="azs-dining-list-icon-wrapper">
-                        <Check size={14} className="azs-dining-list-icon" />
-                      </div>
+                <div className="azs-dining-body">
+                  <h4 className="azs-dining-group-title">
+                    Explora emphasizes:
+                  </h4>
 
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="azs-dining-list">
+                    {[
+                      "Wellness-conscious cuisine",
+                      "Mediterranean influences",
+                      "Elevated casual luxury",
+                      "Flexible dining",
+                      "Contemporary culinary presentation",
+                    ].map((item, idx) => (
+                      <li key={idx} className="azs-dining-list-item">
+                        <div className="azs-dining-list-icon-wrapper">
+                          <Check size={14} className="azs-dining-list-icon" />
+                        </div>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                <div className="azs-dining-divider"></div>
+                  <div className="azs-dining-divider"></div>
 
-                <div className="azs-dining-highlight-box azs-seabourn-highlight">
-                  <p className="azs-dining-highlight-text">
-                    Dining feels relaxed yet sophisticated.
-                  </p>
+                  <div className="azs-dining-highlight-box azs-seabourn-highlight">
+                    <p className="azs-dining-highlight-text">
+                      Dining feels relaxed yet sophisticated.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Seabourn Card */}
             <div className="azs-dining-card azs-azamara-dining">
-              <div className="azs-dining-header">
-                <div className="azs-dining-icon-circle">
-                  <Utensils size={24} className="azs-dining-icon" />
+              <div className="azs-dining-image-wrap">
+                <img
+                  src={
+                    SeabourDinig
+                  } /* Swap this out with your Seabourn Dining image variable if available */
+                  alt="Seabourn Fine Dining"
+                  className="azs-dining-img"
+                />
+                <div className="azs-dining-badge-wrapper">
+                  <span className="azs-dining-badge azs-azamara-badge">
+                    Ultra-Luxury Dining
+                  </span>
                 </div>
-
-                <h3 className="azs-dining-title">Seabourn Dining</h3>
               </div>
 
-              <p className="azs-dining-intro">
-                Seabourn remains one of the most respected culinary experiences
-                in ultra-luxury cruising.
-              </p>
+              <div className="azs-dining-content">
+                <div className="azs-dining-header">
+                  <div className="azs-dining-icon-circle">
+                    <Utensils size={24} className="azs-dining-icon" />
+                  </div>
+                  <h3 className="azs-dining-title">Seabourn Dining</h3>
+                </div>
 
-              <div className="azs-dining-body">
-                <h4 className="azs-dining-group-title">
-                  Seabourn remains legendary for:
-                </h4>
+                <p className="azs-dining-intro">
+                  Seabourn remains one of the most respected culinary
+                  experiences in ultra-luxury cruising.
+                </p>
 
-                <ul className="azs-dining-list">
-                  {[
-                    "Fine dining standards",
-                    "Formal culinary excellence",
-                    "Wine programming",
-                    "Thomas Keller collaborations",
-                    "Destination-inspired menus",
-                  ].map((item, idx) => (
-                    <li key={idx} className="azs-dining-list-item">
-                      <div className="azs-dining-list-icon-wrapper">
-                        <Star size={14} className="azs-dining-list-icon" />
-                      </div>
+                <div className="azs-dining-body">
+                  <h4 className="azs-dining-group-title">
+                    Seabourn remains legendary for:
+                  </h4>
 
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="azs-dining-list">
+                    {[
+                      "Fine dining standards",
+                      "Formal culinary excellence",
+                      "Wine programming",
+                      "Thomas Keller collaborations",
+                      "Destination-inspired menus",
+                    ].map((item, idx) => (
+                      <li key={idx} className="azs-dining-list-item">
+                        <div className="azs-dining-list-icon-wrapper">
+                          <Star size={14} className="azs-dining-list-icon" />
+                        </div>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                <div className="azs-dining-divider"></div>
+                  <div className="azs-dining-divider"></div>
 
-                <div className="azs-dining-highlight-box azs-azamara-highlight">
-                  <p className="azs-dining-highlight-text">
-                    Food-focused travelers often rank Seabourn among the best
-                    luxury cruise lines globally.
-                  </p>
+                  <div className="azs-dining-highlight-box azs-azamara-highlight">
+                    <p className="azs-dining-highlight-text">
+                      Food-focused travelers often rank Seabourn among the best
+                      luxury cruise lines globally.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1559,6 +1630,28 @@ const ExploraJourneysvsSeabourn = () => {
               value depends entirely on whether travelers prioritize onboard
               lifestyle luxury or destination-focused sophistication.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== EXPERIENCE ===== */}
+      <section className="experience" style={{ backgroundColor: "var(--bg-soft)" }}>
+        <div className="section-inner wide">
+          <h2 className="afc-h2" style={{ textAlign: "center" }}>
+            The Experience Onboard
+          </h2>
+          <div className="exp-slider">
+            <div className="exp-track">
+              {[...experienceSlides, ...experienceSlides].map((slide, i) => (
+                <div
+                  key={i}
+                  className="exp-slide"
+                  style={{ backgroundImage: `url('${slide.img}')` }}
+                >
+                  <span>{slide.text}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

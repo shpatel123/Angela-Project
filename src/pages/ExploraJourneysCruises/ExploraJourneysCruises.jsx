@@ -38,6 +38,11 @@ import HeroImage4 from "../../assets/ExploraJourneysCruises/ExploraCruise3.webp"
 import AzamaraDietaryImage from "../../assets/ExploraJourneysCruises/Regent-Seven-Seas-Cruises.webp";
 import ExploraPool from "../../assets/ExploraJourneysCruises/Explora-Journeys.webp";
 
+import ExploraDetination from "../../assets/ExploraJourneysCruises/amalfi-coast-italy-mediterranean-hero-summer-2025.webp";
+import ExploraDetination2 from "../../assets/ExploraJourneysCruises/explora-journeys-red-sea-luxury-cruise-oman.webp";
+import ExploraDetination3 from "../../assets/ExploraJourneysCruises/allinn-estonia-old-town-summer-travel-aerial.webp";
+import ExploraDetination4 from "../../assets/ExploraJourneysCruises/explora-journeys-canada-new-england-fall-cruise.webp";
+
 import LuxuryOceanfrontSuites from "../../assets/ExploraJourneysCruises/Luxury-Oceanfront-Suites.webp";
 import FineDining from "../../assets/ExploraJourneysCruises/Fine-Dining.webp";
 import PremiumBeverages from "../../assets/ExploraJourneysCruises/Premium-Beverages.webp";
@@ -967,6 +972,95 @@ WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
         </div>
       </section>
 
+      {/* ===== MODERN BENTO GRID GALLERY SHOWCASE ===== */}
+      <section className="senianta-gallery-section" style={{ backgroundColor: "var(--bg-soft)" }}>
+        <div className="senianta-gallery-inner">
+          <div className="senianta-gallery-header">
+            <h2 className="senianta-gallery-h2">Global Explorations</h2>
+            <div className="senianta-gallery-divider"></div>
+            <p className="senianta-gallery-p">
+              From sun-drenched Mediterranean coastlines to the historic charm
+              of Northern Europe, experience the world's most breathtaking
+              destinations in absolute luxury.
+            </p>
+          </div>
+
+          <div className="senianta-gallery-bento-grid">
+            {/* 01: Large Featured Item - Amalfi Coast */}
+            <div className="senianta-gallery-item senianta-gallery-feature">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ExploraDetination}
+                  alt="Amalfi Coast Italy Mediterranean Summer"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Mediterranean Summer
+                  </span>
+                  <h3 className="senianta-gallery-h3">The Amalfi Coast</h3>
+                  <p className="senianta-gallery-item-p">
+                    Sail past dramatic cliffs and sun-bleached Italian villages
+                    where timeless coastal luxury meets the azure horizon.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 02: Vertical Item - Red Sea & Oman */}
+            <div className="senianta-gallery-item senianta-gallery-tall">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ExploraDetination2}
+                  alt="Explora Journeys Red Sea Luxury Cruise Oman"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">Arabian Luxury</span>
+                  <h3 className="senianta-gallery-h3">Red Sea & Oman</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 03: Standard Item - Tallinn, Estonia */}
+            <div className="senianta-gallery-item">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ExploraDetination3}
+                  alt="Tallinn Estonia Old Town Summer Travel Aerial"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Northern Europe
+                  </span>
+                  <h3 className="senianta-gallery-h3">
+                    Historic Tallinn Old Town
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 04: Standard Item - Canada & New England */}
+            <div className="senianta-gallery-item">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={ExploraDetination4}
+                  alt="Explora Journeys Canada New England Fall Cruise"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Autumn Journeys
+                  </span>
+                  <h3 className="senianta-gallery-h3">Canada & New England</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <AacExpertSection />
 
       {/* VIDEO SECTION */}
@@ -1351,11 +1445,46 @@ WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
         </div>
       </section>
 
+            {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explore the Explora Journeys Experience</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Journey through the beauty of the Caribbean with Explora Journeys
+              as this cinematic experience captures crystal-clear waters,
+              vibrant island culture, and the refined elegance of luxury ocean
+              travel.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/XrrbICIeWhQ"
+                title="Chapter Two: Tales of the Caribbean Sea I Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* PLANNING ADVICE */}
       <section
         className="Avr-planning-section"
         id="Asc-planning-advice"
-        style={{ backgroundColor: "var(--bg-soft)" }}
+        style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="Asc-container">
           {/* HEADING */}
@@ -1456,39 +1585,6 @@ WHAT IS NOT INCLUDED ON EXPLORA JOURNEYS?
         </div>
       </section>
 
-      {/* VIDEO SECTION */}
-      <section
-        className="Asc-video-section"
-        id="Asc-video"
-        style={{ backgroundColor: "var(--bg-white)" }}
-      >
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Explore the Explora Journeys Experience</h2>
-
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-              Journey through the beauty of the Caribbean with Explora Journeys
-              as this cinematic experience captures crystal-clear waters,
-              vibrant island culture, and the refined elegance of luxury ocean
-              travel.
-            </p>
-          </div>
-
-          <div className="Asc-video-wrapper">
-            <div className="Asc-video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/XrrbICIeWhQ"
-                title="Chapter Two: Tales of the Caribbean Sea I Explora Journeys"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* final verdict */}
 

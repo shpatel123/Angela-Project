@@ -17,19 +17,61 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
-import HeroImage1 from "../../assets/Azamarashipcomparison/Seabournhero.webp";
+import HeroImage1 from "../../assets/Azamarashipcomparison/Seabournhero.jpg";
 import HeroImage2 from "../../assets/Azamarashipcomparison/Seabournhero2.webp";
 import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";
 import AzamaraOverviewImage from "../../assets/AzamaravsVikingOcean/azamara.webp";
-import SeabournExperience from "../../assets/Azamarashipcomparison/SeabournExperience.webp";
+import SeabournExperience from "../../assets/Azamarashipcomparison/SeabournExperience.jpg";
 
 import AzamaraAtmosphereImage from "../../assets/Azamarashipcomparison/Azamara-Quest.webp";
-import SeabournAtmosphereImage from "../../assets/Azamarashipcomparison/Seabourn-Atmosphere.webp";
-import SeabournSuiteImage from "../../assets/Azamarashipcomparison/seabourn-suite.webp";
+import SeabournAtmosphereImage from "../../assets/Azamarashipcomparison/Seabourn-Atmosphere.jpg";
+import SeabournSuiteImage from "../../assets/Azamarashipcomparison/seabourn-suite.jpg";
 import AzamaraCabinImage from "../../assets/Azamarashipcomparison/azamara-cabin.webp";
+
+import AzamaraDining from "../../assets/Azamarashipcomparison/Azamara_Dining.jpeg";
+import SeabournDining from "../../assets/Azamarashipcomparison/Seabourn_Dining.jpg";
+
+import Experience from "../../assets/Azamarashipcomparison/Seabourn_Ship_Experience.jpg";
+import Experience1 from "../../assets/Azamarashipcomparison/Seabourn Cruise Line_Pool_Experience.jpg";
+import Experience2 from "../../assets/Azamarashipcomparison/Seabourn Cruise Line_Dining_Experience.jpg";
+import Experience3 from "../../assets/Azamarashipcomparison/Observation_Bar.jpg";
+import Experience4 from "../../assets/Azamarashipcomparison/Seabourn Cruise Line_michutravel_OnBoard_Patio.jpg";
+import Experience5 from "../../assets/Azamarashipcomparison/Seabourn Cruise Line_michutravel_OnBoard_Breakfast.jpg";
+import Experience6 from "../../assets/Azamarashipcomparison/Seabourn Cruise Line_michutravel_OnBoard_Pool.jpg";
+
 import "./AzamaraVsSeabourn.css";
-import "../AzamaraShipComparison/Azamarashipcomparison.css";
 import { Helmet } from "react-helmet-async";
+
+const experienceSlides = [
+  {
+    img: Experience,
+    text: "Seabourn Luxury Ship Experience at Sea",
+  },
+  {
+    img: Experience1,
+    text: "Seabourn Pool Deck & Relaxation Experience",
+  },
+  {
+    img: Experience2,
+    text: "Fine Dining Experience Onboard Seabourn",
+  },
+  {
+    img: Experience3,
+    text: "Observation Bar Ocean Views & Luxury Lounge",
+  },
+  {
+    img: Experience4,
+    text: "Seabourn Patio Dining & Outdoor Oceanfront Experience",
+  },
+  {
+    img: Experience5,
+    text: "Luxury Breakfast Experience Onboard Seabourn",
+  },
+  {
+    img: Experience6,
+    text: "Seabourn Poolside Luxury & Ocean Escape",
+  },
+];
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -831,80 +873,110 @@ const AzamaraVsSeabourn = () => {
           <div className="azs-dining-grid">
             {/* Seabourn Card */}
             <div className="azs-dining-card azs-seabourn-dining">
-              <div className="azs-dining-header">
-                <div className="azs-dining-icon-circle">
-                  <ChefHat size={24} className="azs-dining-icon" />
+              <div className="azs-dining-image-wrap">
+                <img
+                  src={SeabournDining}
+                  alt="Seabourn Culinary Excellence"
+                  className="azs-dining-img"
+                />
+                <div className="azs-dining-badge-wrapper">
+                  <span className="azs-dining-badge azs-seabourn-badge">
+                    Ultra-Luxury Dining
+                  </span>
                 </div>
-                <h3 className="azs-dining-title">
-                  Seabourn Culinary Excellence
-                </h3>
               </div>
-              <p className="azs-dining-intro">
-                Dining aboard Seabourn is widely considered among the best in
-                luxury cruising.
-              </p>
-              <div className="azs-dining-body">
-                <h4 className="azs-dining-group-title">Highlights include:</h4>
-                <ul className="azs-dining-list">
-                  {[
-                    "Fine dining caliber cuisine",
-                    "Caviar service",
-                    "Michelin-level partnerships",
-                    "Elegant presentation",
-                    "Premium wine selections",
-                  ].map((item, idx) => (
-                    <li key={idx} className="azs-dining-list-item">
-                      <div className="azs-dining-list-icon-wrapper">
-                        <Star size={14} className="azs-dining-list-icon" />
-                      </div>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="azs-dining-divider"></div>
-                <div className="azs-dining-highlight-box azs-seabourn-highlight">
-                  <p className="azs-dining-highlight-text">
-                    Luxury travelers focused on gastronomy usually prefer
-                    Seabourn.
-                  </p>
+              <div className="azs-dining-content">
+                <div className="azs-dining-header">
+                  <div className="azs-dining-icon-circle">
+                    <ChefHat size={24} className="azs-dining-icon" />
+                  </div>
+                  <h3 className="azs-dining-title">
+                    Seabourn Culinary Excellence
+                  </h3>
+                </div>
+                <p className="azs-dining-intro">
+                  Dining aboard Seabourn is widely considered among the best in
+                  luxury cruising.
+                </p>
+                <div className="azs-dining-body">
+                  <h4 className="azs-dining-group-title">
+                    Highlights include:
+                  </h4>
+                  <ul className="azs-dining-list">
+                    {[
+                      "Fine dining caliber cuisine",
+                      "Caviar service",
+                      "Michelin-level partnerships",
+                      "Elegant presentation",
+                      "Premium wine selections",
+                    ].map((item, idx) => (
+                      <li key={idx} className="azs-dining-list-item">
+                        <div className="azs-dining-list-icon-wrapper">
+                          <Star size={14} className="azs-dining-list-icon" />
+                        </div>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="azs-dining-divider"></div>
+                  <div className="azs-dining-highlight-box azs-seabourn-highlight">
+                    <p className="azs-dining-highlight-text">
+                      Luxury travelers focused on gastronomy usually prefer
+                      Seabourn.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Azamara Card */}
             <div className="azs-dining-card azs-azamara-dining">
-              <div className="azs-dining-header">
-                <div className="azs-dining-icon-circle">
-                  <Utensils size={24} className="azs-dining-icon" />
+              <div className="azs-dining-image-wrap">
+                <img
+                  src={AzamaraDining}
+                  alt="Azamara Dining Strengths"
+                  className="azs-dining-img"
+                />
+                <div className="azs-dining-badge-wrapper">
+                  <span className="azs-dining-badge azs-azamara-badge">
+                    Boutique Dining
+                  </span>
                 </div>
-                <h3 className="azs-dining-title">Azamara Dining Strengths</h3>
               </div>
-              <p className="azs-dining-intro">
-                While excellent, it is generally considered a step below
-                Seabourn in ultra-luxury culinary execution.
-              </p>
-              <div className="azs-dining-body">
-                <h4 className="azs-dining-group-title">Azamara offers:</h4>
-                <ul className="azs-dining-list">
-                  {[
-                    "Strong international cuisine",
-                    "Destination-inspired menus",
-                    "Relaxed dining environments",
-                    "Excellent specialty restaurants",
-                  ].map((item, idx) => (
-                    <li key={idx} className="azs-dining-list-item">
-                      <div className="azs-dining-list-icon-wrapper">
-                        <Check size={14} className="azs-dining-list-icon" />
-                      </div>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="azs-dining-divider"></div>
-                <div className="azs-dining-highlight-box azs-azamara-highlight">
-                  <p className="azs-dining-highlight-text">
-                    Approachable, high-quality dining without formal pressure.
-                  </p>
+              <div className="azs-dining-content">
+                <div className="azs-dining-header">
+                  <div className="azs-dining-icon-circle">
+                    <Utensils size={24} className="azs-dining-icon" />
+                  </div>
+                  <h3 className="azs-dining-title">Azamara Dining Strengths</h3>
+                </div>
+                <p className="azs-dining-intro">
+                  While excellent, it is generally considered a step below
+                  Seabourn in ultra-luxury culinary execution.
+                </p>
+                <div className="azs-dining-body">
+                  <h4 className="azs-dining-group-title">Azamara offers:</h4>
+                  <ul className="azs-dining-list">
+                    {[
+                      "Strong international cuisine",
+                      "Destination-inspired menus",
+                      "Relaxed dining environments",
+                      "Excellent specialty restaurants",
+                    ].map((item, idx) => (
+                      <li key={idx} className="azs-dining-list-item">
+                        <div className="azs-dining-list-icon-wrapper">
+                          <Check size={14} className="azs-dining-list-icon" />
+                        </div>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="azs-dining-divider"></div>
+                  <div className="azs-dining-highlight-box azs-azamara-highlight">
+                    <p className="azs-dining-highlight-text">
+                      Approachable, high-quality dining without formal pressure.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1202,6 +1274,36 @@ const AzamaraVsSeabourn = () => {
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="azs-video-section"
+        id="azs-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="azs-container">
+          <div className="azs-section-header">
+            <h2 className="azs-section-title">Seabourn Luxury Cruise</h2>
+            <div className="azs-section-accent"></div>
+            <p className="azs-video-intro">
+              Hear directly from luxury cruise expert Angela Hughes as she
+              shares her firsthand insights on choosing between Azamara and
+              Seabourn.
+            </p>
+          </div>
+          <div className="azs-video-wrapper">
+            <div className="azs-video-frame">
+              <iframe
+                src="https://drive.google.com/file/d/1zQXUruU1aN2m7y81ffD_6Ghw_5bel4Dd/preview"
+                title="Azamara vs Seabourn – Angela Hughes"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* LUXURY COMPARISON VERDICT */}
       <section className="azs-verdict-section" id="azs-comparison-verdict">
         <div className="azs-container">
@@ -1361,32 +1463,6 @@ const AzamaraVsSeabourn = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VIDEO SECTION */}
-      <section className="azs-video-section" id="azs-video">
-        <div className="azs-container">
-          <div className="azs-section-header">
-            <h2 className="azs-section-title">Seabourn Luxury Cruise</h2>
-            <div className="azs-section-accent"></div>
-            <p className="azs-video-intro">
-              Hear directly from luxury cruise expert Angela Hughes as she
-              shares her firsthand insights on choosing between Azamara and
-              Seabourn.
-            </p>
-          </div>
-          <div className="azs-video-wrapper">
-            <div className="azs-video-frame">
-              <iframe
-                src="https://drive.google.com/file/d/1zQXUruU1aN2m7y81ffD_6Ghw_5bel4Dd/preview"
-                title="Azamara vs Seabourn – Angela Hughes"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
             </div>
           </div>
         </div>
@@ -1779,8 +1855,34 @@ const AzamaraVsSeabourn = () => {
         </div>
       </section>
 
+      {/* ===== EXPERIENCE ===== */}
+      <section className="experience">
+        <div className="section-inner wide">
+          <h2 className="afc-h2" style={{ textAlign: "center" }}>
+            The Experience Onboard
+          </h2>
+          <div className="exp-slider">
+            <div className="exp-track">
+              {[...experienceSlides, ...experienceSlides].map((slide, i) => (
+                <div
+                  key={i}
+                  className="exp-slide"
+                  style={{ backgroundImage: `url('${slide.img}')` }}
+                >
+                  <span>{slide.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL VERDICT */}
-      <section className="Asc-section Asc-bg-white" id="Asc-verdict">
+      <section
+        className="Asc-section Asc-bg-white"
+        id="Asc-verdict"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
         <div className="Asc-container">
           <div className="Asc-section-header margin-large">
             <h2 className="Asc-h2">Final Verdict: Azamara vs Seabourn</h2>
@@ -1839,10 +1941,7 @@ const AzamaraVsSeabourn = () => {
             </div>
           </div>
 
-          <div
-            className="Asc-verdict-footer-box"
-            style={{ backgroundColor: "var(--bg-soft)" }}
-          >
+          <div className="Asc-verdict-footer-box">
             <p className="Asc-verdict-footer-text">
               For many luxury travelers, the ideal answer comes down to: “What
               type of luxury experience do you want to remember most?”
@@ -1852,7 +1951,7 @@ const AzamaraVsSeabourn = () => {
       </section>
 
       {/* FAQ */}
-      <section className="Asc-section Asc-bg-soft" id="Asc-faq">
+      <section className="Asc-section Asc-bg-white" id="Asc-faq">
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">Frequently Asked Questions</h2>

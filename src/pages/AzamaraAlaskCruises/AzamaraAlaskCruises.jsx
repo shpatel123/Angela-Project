@@ -26,15 +26,50 @@ import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/image.webp";
 import HeroImage1 from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage.webp";
 import HeroImage2 from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage2.webp";
-import CTAImage from "../../assets/AzamaraAlaskaCruisesGuide/AlaskaGuide.jpeg";
+import CTAImage from "../../assets/AzamaraAlaskaCruisesGuide/alaska-glacier-mountain-lake-scenic-wilderness-vacation.webp";
 import HeroImage4 from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage3.webp";
 import AzamaraDietaryImage from "../../assets/AzamaraAlaskaCruisesGuide/AlaskaCabins.webp";
 import AlaskaShore from "../../assets/AzamaraAlaskaCruisesGuide/AlaskaShore.webp";
+
+import Experience from "../../assets/AzamaraAlaskaCruisesGuide/alaska-iceberg-scenic-cruise-vacation.webp";
+import Experience1 from "../../assets/AzamaraAlaskaCruisesGuide/multigenerational-family-fly-fishing-vacation-alaska-mountain-river.jpeg";
+import Experience2 from "../../assets/AzamaraAlaskaCruisesGuide/alaska-glacier-mountain-lake-scenic-wilderness-vacation.webp";
+import Experience3 from "../../assets/AzamaraAlaskaCruisesGuide/alaska-family-glacier-view-hiking-vacation.jpeg";
+import Experience4 from "../../assets/AzamaraAlaskaCruisesGuide/alaska-dog-sledding-adventure-vacation-snowy-mountains.jpeg";
+import Experience5 from "../../assets/AzamaraAlaskaCruisesGuide/alaska-mountain-reflection-lake-wilderness-nature-travel.webp";
+
 
 import "../AzamaraShipComparison/Azamarashipcomparison.css";
 import "../AzamaraDiningGuide/AzamaraDiningGuide.css";
 import "./AzamaraAlaskCruises.css";
 import { Helmet } from "react-helmet-async";
+
+const experienceSlides = [
+  {
+    img: Experience,
+    text: "Alaska Iceberg Scenic Cruise Adventure",
+  },
+  {
+    img: Experience1,
+    text: "Multi-Generational Fly Fishing Experience in Alaska",
+  },
+  {
+    img: Experience2,
+    text: "Alaska Glacier Mountain Lake Wilderness Views",
+  },
+  {
+    img: Experience3,
+    text: "Family Glacier Hiking Adventure in Alaska",
+  },
+  {
+    img: Experience4,
+    text: "Alaska Dog Sledding Adventure in Snowy Mountains",
+  },
+  {
+    img: Experience5,
+    text: "Alaska Mountain Reflection Lake & Wilderness Escape",
+  },
+];
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -956,6 +991,28 @@ const AzamaraAlaskCruises = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            {/* ===== EXPERIENCE ===== */}
+      <section className="experience">
+        <div className="section-inner wide">
+          <h2 className="afc-h2" style={{ textAlign: "center" }}>
+            The Experience Onboard
+          </h2>
+          <div className="exp-slider">
+            <div className="exp-track">
+              {[...experienceSlides, ...experienceSlides].map((slide, i) => (
+                <div
+                  key={i}
+                  className="exp-slide"
+                  style={{ backgroundImage: `url('${slide.img}')` }}
+                >
+                  <span>{slide.text}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
