@@ -727,6 +727,14 @@
   gap: 24px;
   align-items: stretch;
 }
+
+.adg-grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
 .adgs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -120,6 +120,14 @@ const Nav = () => {
               >
                 Explora Journeys vs Seabourn
               </NavLink>
+
+               <NavLink
+                to="/faculty-led-travel-programs"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Faculty-Led Travel Programs
+              </NavLink>
             </div>
           </div>
         </div>
@@ -243,6 +251,15 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Explora Journeys vs Seabourn
+              </NavLink>
+
+              
+               <NavLink
+                to="/faculty-led-travel-programs"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Faculty-Led Travel Programs
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

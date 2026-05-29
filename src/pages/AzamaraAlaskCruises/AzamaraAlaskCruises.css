@@ -478,6 +478,13 @@
     gap: 18px;
 }
 
+.aac-months-full-grids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
 .aac-month-tabs.aac-animate-in,
 .aac-months-full-grid.aac-animate-in .aac-month-card {
     animation: aac-fadeUp 0.55s ease-out both;
