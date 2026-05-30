@@ -15,14 +15,14 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
-import HeroImage1 from "../../assets/FacultyLedTravelPrograms/FacultyLedTravel4.jpg";
-import HeroImage2 from "../../assets/FacultyLedTravelPrograms/FacultyLedTravel2.jpg";
-import HeroImage3 from "../../assets/FacultyLedTravelPrograms/FacultyLedTravel3.jpg";
+import HeroImage1 from "../../assets/EducationalTravelPrograms/Educational_Travelimage.jpg";
+import HeroImage2 from "../../assets/EducationalTravelPrograms/Educational_Travelimage2.jpeg";
+import HeroImage3 from "../../assets/EducationalTravelPrograms/Educational_Travelimage3.jpeg";
 import CTAImage from "../../assets/FacultyLedTravelPrograms/StartPlan.jpg";
 
-import Europe from "../../assets/FacultyLedTravelPrograms/Europe.jpg";
-import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpg";
-import Africa from "../../assets/FacultyLedTravelPrograms/Africa.jpg";
+import Europe from "../../assets/EducationalTravelPrograms/Europe.jpeg";
+import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpeg";
+import Africa from "../../assets/EducationalTravelPrograms/Educational_Travel.jpg";
 import SouthAmerica from "../../assets/FacultyLedTravelPrograms/South_America.jpg";
 
 import Experience from "../../assets/EducationalTravelPrograms/Educational_Travel.jpg";

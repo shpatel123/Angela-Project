@@ -27,7 +27,7 @@ import AlumniBenifits from "../../assets/FacultyLedTravelPrograms/Alumni_Travel_
 import InstitutionalBenifits from "../../assets/FacultyLedTravelPrograms/Institutional_Benefits.jpg";
 
 import Europe from "../../assets/FacultyLedTravelPrograms/Europe.jpg";
-import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpg";
+import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpeg";
 import Africa from "../../assets/FacultyLedTravelPrograms/Africa.jpg";
 import SouthAmerica from "../../assets/FacultyLedTravelPrograms/South_America.jpg";
 

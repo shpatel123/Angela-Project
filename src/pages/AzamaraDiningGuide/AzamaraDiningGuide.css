@@ -500,7 +500,7 @@
   .Avs-verdict-title,
   .adg-c-h2,
   .Adg-expert-title {
-    font-size: 26px;
+    font-size: 26px !important;
   }
 
   .adg-h2 {
@@ -2087,6 +2087,14 @@
   .adg-card-lead {
     font-size: 16px;
   }
+     .Asc-h2,
+    .Asc-expert-title,
+    .Asc-authority-title,
+    .Asc-overview-h2,
+    .Avr-expert-title, .Avr-planning-title,.Asc-help-h2 {
+        font-size: 24px !important;
+    }
+
 
   .Scenic_primary_btn,
   .Scenic_secondary_btn {
