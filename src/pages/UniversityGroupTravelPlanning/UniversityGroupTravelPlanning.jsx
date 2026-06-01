@@ -18,10 +18,10 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import "./UniversityGroupTravelPlanning.css";
 import AboutImage from "../../assets/image.webp";
-import HeroImage1 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni.jpeg";
+import HeroImage1 from "../../assets/UniversityGroupTravelPlanning/GroupTravel.jpeg";
 import HeroImage2 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
 import HeroImage3 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni3.jpeg";
-import CTAImage from "../../assets/LuxuryAlumniTravel/StartPlan.jpeg";
+import CTAImage from "../../assets/UniversityGroupTravelPlanning/StartPlan.jpeg";
 
 import Europe from "../../assets/LuxuryAlumniTravel/Europe.jpeg";
 
