@@ -14,11 +14,11 @@ import {
   Globe,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela.jpeg";
-import HeroImage1 from "../../assets/EducationalTravelPrograms/Educational_Travelimage.jpg";
-import HeroImage2 from "../../assets/EducationalTravelPrograms/Educational_Travelimage2.jpeg";
-import HeroImage3 from "../../assets/EducationalTravelPrograms/Educational_Travelimage3.jpeg";
-import CTAImage from "../../assets/FacultyLedTravelPrograms/StartPlan.jpg";
+import AboutImage from "../../assets/AboutAngela2.jpeg";
+import HeroImage1 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni.jpeg";
+import HeroImage2 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
+import HeroImage3 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni3.jpeg";
+import CTAImage from "../../assets/LuxuryAlumniTravel/StartPlan.jpeg";
 
 import Europe from "../../assets/EducationalTravelPrograms/Europe.jpeg";
 import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpeg";
@@ -66,60 +66,6 @@ const experienceSlides = [
   },
 ];
 
-const complimentaryVenues = [
-  {
-    id: 1,
-    eyebrow: "Ocean Voyages",
-    name: "Educational Ocean Cruises",
-    highlight:
-      "Educational cruises have become one of the most popular forms of educational travel.",
-
-    items: [
-      "Mediterranean",
-      "Northern Europe",
-      "Alaska",
-      "South Pacific",
-      "Caribbean",
-    ],
-
-    callout:
-      "Educational programming may include guest lecturers, faculty presentations, cultural discussions, and destination briefings.",
-  },
-
-  {
-    id: 2,
-    eyebrow: "River Cruising",
-    name: "Educational River Cruises",
-    highlight:
-      "River cruises offer some of the richest educational experiences available.",
-
-    items: ["Rhine", "Danube", "Seine", "Douro", "Mekong"],
-
-    callout:
-      "River cruising allows travelers to engage deeply with local culture, history, architecture, and traditions.",
-  },
-
-  {
-    id: 3,
-    eyebrow: "Expedition Travel",
-    name: "Educational Expedition Cruises",
-    highlight:
-      "Expedition travel is increasingly popular among educational travelers.",
-
-    items: [
-      "Antarctica",
-      "Arctic",
-      "Galapagos Islands",
-      "Iceland",
-      "Greenland",
-      "Alaska",
-    ],
-
-    callout:
-      "These voyages provide extraordinary opportunities to learn about wildlife, conservation, geology, climate science, and exploration.",
-  },
-];
-
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -130,7 +76,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in educational travel programs, alumni travel, educational cruises, expedition cruises, river cruises, and premium travel experiences.",
+        "Luxury travel agency specializing in luxury alumni travel, alumni cruises, educational travel programs, expedition cruises, river cruises, and premium travel experiences.",
     },
 
     {
@@ -139,7 +85,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Educational travel and luxury travel experts helping universities, alumni associations, affinity groups, and lifelong learners explore the world.",
+        "Luxury travel experts helping universities, alumni associations, affinity groups, and lifelong learners create exceptional travel experiences.",
     },
 
     {
@@ -151,22 +97,21 @@ const schemaData = {
         "@id": "https://www.tripsandships.com/#organization",
       },
       description:
-        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board Member, global luxury travel speaker and trainer, weekly industry columnist, and travel expert with over 40 years of experience and travel to more than 121 countries.",
+        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker and trainer, weekly industry columnist, and travel expert with over 40 years of experience and travel to more than 121 countries.",
     },
 
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/educational-travel-programs",
-      url: "https://www.tripsandships.com/educational-travel-programs",
-      name: "Educational Travel Programs",
+      "@id": "https://www.tripsandships.com/luxury-alumni-travel",
+      url: "https://www.tripsandships.com/luxury-alumni-travel",
+      name: "Luxury Alumni Travel",
       description:
-        "Educational travel programs, educational cruises, cultural immersion experiences, educational expedition travel, and luxury educational travel planning.",
+        "Luxury alumni travel experiences including alumni cruises, alumni river cruises, expedition voyages, educational travel, and premium university travel programs.",
     },
 
     {
       "@type": "BreadcrumbList",
-      "@id":
-        "https://www.tripsandships.com/educational-travel-programs#breadcrumb",
+      "@id": "https://www.tripsandships.com/luxury-alumni-travel#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -174,152 +119,157 @@ const schemaData = {
           name: "Home",
           item: "https://www.tripsandships.com",
         },
-
         {
           "@type": "ListItem",
           position: 2,
-          name: "Educational Travel Programs",
-          item: "https://www.tripsandships.com/educational-travel-programs",
+          name: "Alumni Travel",
+          item: "https://www.tripsandships.com/alumni-travel",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Luxury Alumni Travel",
+          item: "https://www.tripsandships.com/luxury-alumni-travel",
         },
       ],
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/educational-travel-programs#faq",
+      "@id": "https://www.tripsandships.com/luxury-alumni-travel#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is educational travel?",
+          name: "What is luxury alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Educational travel is travel designed to provide learning experiences through cultural immersion, historical exploration, expert-led discussions, and destination-focused activities.",
+            text: "Luxury alumni travel combines premium travel experiences with alumni engagement, lifelong learning, and meaningful connections to university communities.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are the benefits of educational travel?",
+          name: "Why are universities offering alumni travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Educational travel helps develop cultural awareness, global perspectives, intellectual curiosity, and deeper understanding through firsthand experiences.",
+            text: "Universities use alumni travel programs to strengthen alumni engagement, encourage lifelong learning, support donor participation, and build stronger communities.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What companies specialize in educational travel?",
+          name: "What are the best destinations for alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel specializes in educational travel programs, educational cruises, alumni travel, expedition travel, and luxury educational experiences.",
+            text: "Popular destinations include Italy, France, Greece, Alaska, Antarctica, South Africa, Japan, and European river cruise itineraries.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are the best educational travel destinations?",
+          name: "Why are cruises popular for alumni groups?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Popular destinations include Italy, France, Greece, Japan, Kenya, South Africa, Peru, Antarctica, Alaska, and the Galapagos Islands.",
+            text: "Cruises provide convenience, educational opportunities, social interaction, and the ability to visit multiple destinations in a comfortable environment.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are educational cruises worth it?",
+          name: "What travel company specializes in alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Educational cruises combine expert lectures, immersive shore excursions, cultural enrichment, and destination-focused learning experiences.",
+            text: "Trips & Ships Luxury Travel specializes in luxury alumni travel, educational travel, alumni cruises, and university travel planning.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Who participates in educational travel programs?",
+          name: "What makes luxury alumni travel different?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities, alumni associations, lifelong learners, affinity groups, donor groups, and professional organizations frequently participate in educational travel.",
+            text: "Luxury alumni travel focuses on premium accommodations, personalized service, educational enrichment, and exclusive experiences.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What is the difference between educational travel and tourism?",
+          name: "Are luxury alumni cruises worth it?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Educational travel focuses on learning and enrichment, while tourism primarily emphasizes leisure and recreation.",
+            text: "Luxury alumni cruises combine exceptional service, destination immersion, educational programming, and meaningful alumni engagement.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are educational travel programs only for students?",
+          name: "What are alumni river cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Many educational travel programs are designed for adults, alumni, retirees, and lifelong learners.",
+            text: "Alumni river cruises are educational and cultural travel experiences designed for university alumni, often sailing Europe's most iconic rivers.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are educational cruises becoming more popular?",
+          name: "What are alumni expedition cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Educational cruises provide structured learning opportunities while allowing travelers to explore multiple destinations.",
+            text: "Alumni expedition cruises explore destinations such as Antarctica, the Arctic, Greenland, Alaska, and the Galapagos Islands.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are educational expedition cruises?",
+          name: "Why are small ship cruises popular for alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Educational expedition cruises combine exploration and learning, often focusing on wildlife, conservation, climate science, and history.",
+            text: "Small ship cruises offer personalized service, greater destination access, and deeper cultural immersion.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are river cruises popular for educational travel?",
+          name: "Can alumni travel strengthen university engagement?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "River cruises provide immersive access to historic cities, cultural landmarks, and local communities.",
+            text: "Yes. Alumni travel creates opportunities for graduates to reconnect with fellow alumni, faculty, and university leadership.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What should travelers look for in an educational travel company?",
+          name: "What should universities look for in an alumni travel partner?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Travelers should seek destination expertise, educational programming, travel planning experience, and strong supplier relationships.",
+            text: "Universities should seek expertise in luxury travel, educational travel, supplier relationships, and alumni engagement.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Can educational travel strengthen alumni engagement?",
+          name: "Are faculty-hosted alumni travel programs beneficial?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Educational travel helps alumni reconnect with faculty, fellow graduates, and their institution through lifelong learning experiences.",
+            text: "Yes. Faculty-hosted travel programs provide educational enrichment and unique learning opportunities for alumni.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why choose Trips & Ships Luxury Travel for educational travel?",
+          name: "Can luxury alumni travel support donor development?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel combines educational travel expertise, luxury travel planning, and personalized service to create transformative travel experiences.",
+            text: "Many institutions use luxury alumni travel and donor travel programs to deepen relationships with supporters.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why work with Angela Hughes?",
+          name: "Why choose Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Angela Hughes brings over 40 years of travel industry expertise, experience in more than 121 countries, and recognized leadership in luxury and educational travel.",
+            text: "Trips & Ships Luxury Travel combines luxury travel expertise, educational travel experience, alumni travel planning, and personalized service.",
           },
         },
       ],
@@ -332,78 +282,78 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is educational travel?",
-      a: "Educational travel is travel designed to provide learning experiences through cultural immersion, historical exploration, expert-led discussions, and destination-focused activities that expand knowledge and understanding.",
+      q: "What is luxury alumni travel?",
+      a: "Luxury alumni travel combines premium travel experiences with alumni engagement, lifelong learning, cultural immersion, and meaningful connections with fellow graduates and university communities.",
     },
 
     {
-      q: "What are the benefits of educational travel?",
-      a: "Educational travel helps travelers develop cultural awareness, global perspectives, intellectual curiosity, critical thinking skills, and a deeper understanding of the world through firsthand experiences.",
+      q: "Why are universities offering alumni travel programs?",
+      a: "Universities use alumni travel programs to strengthen alumni engagement, support lifelong learning, encourage donor participation, and create deeper connections between graduates and their institution.",
     },
 
     {
-      q: "What companies specialize in educational travel?",
-      a: "Trips & Ships Luxury Travel specializes in educational travel programs, educational cruises, alumni travel, faculty-hosted journeys, expedition travel, and luxury educational experiences worldwide.",
+      q: "What are the best destinations for alumni travel?",
+      a: "Popular alumni travel destinations include Italy, France, Greece, Alaska, Antarctica, South Africa, Japan, the Galapagos Islands, and European river cruise itineraries.",
     },
 
     {
-      q: "What are the best educational travel destinations?",
-      a: "Popular educational travel destinations include Italy, France, Greece, Japan, Kenya, South Africa, Peru, Antarctica, Alaska, and the Galapagos Islands.",
+      q: "Why are cruises so popular for alumni groups?",
+      a: "Cruises provide convenience, educational opportunities, social interaction, multiple destinations, and a comfortable environment for alumni networking and enrichment.",
     },
 
     {
-      q: "Are educational cruises worth it?",
-      a: "Yes. Educational cruises combine expert lectures, immersive shore excursions, cultural enrichment, and destination-focused learning, making them one of the most rewarding travel experiences available.",
+      q: "What travel company specializes in alumni travel?",
+      a: "Trips & Ships Luxury Travel specializes in luxury alumni travel, alumni cruises, educational travel programs, faculty-hosted travel, and university travel planning.",
     },
 
     {
-      q: "Who participates in educational travel programs?",
-      a: "Educational travel programs are popular with universities, alumni associations, lifelong learners, affinity groups, donor groups, professional organizations, and intellectually curious travelers.",
+      q: "What makes luxury alumni travel different?",
+      a: "Luxury alumni travel focuses on premium accommodations, exclusive experiences, personalized service, educational enrichment, and curated itineraries that go beyond traditional group travel.",
     },
 
     {
-      q: "What is the difference between educational travel and tourism?",
-      a: "Educational travel prioritizes learning, cultural immersion, and intellectual enrichment, while traditional tourism focuses primarily on leisure and recreation.",
+      q: "Are luxury alumni cruises worth it?",
+      a: "Yes. Luxury alumni cruises combine world-class service, destination immersion, educational programming, and meaningful alumni engagement in one seamless experience.",
     },
 
     {
-      q: "Are educational travel programs only for students?",
-      a: "No. Many educational travel programs are designed specifically for adults, alumni, retirees, lifelong learners, and affinity groups seeking enriching travel experiences.",
+      q: "What are alumni river cruises?",
+      a: "Alumni river cruises are educational and cultural travel experiences designed for university alumni, typically sailing through destinations such as the Rhine, Danube, Seine, or Douro rivers.",
     },
 
     {
-      q: "Why are educational cruises becoming more popular?",
-      a: "Educational cruises provide structured learning opportunities while allowing travelers to explore multiple destinations in comfort and convenience.",
+      q: "What are alumni expedition cruises?",
+      a: "Alumni expedition cruises explore destinations such as Antarctica, the Arctic, Greenland, Alaska, and the Galapagos while offering expert-led educational experiences.",
     },
 
     {
-      q: "What are educational expedition cruises?",
-      a: "Educational expedition cruises combine exploration with learning and often focus on wildlife, conservation, climate science, history, and remote destinations such as Antarctica and the Arctic.",
+      q: "Why are small ship cruises popular for alumni travel?",
+      a: "Small ship cruises provide greater destination access, fewer crowds, personalized service, and deeper cultural immersion than larger cruise ships.",
     },
 
     {
-      q: "Why are river cruises popular for educational travel?",
-      a: "River cruises provide direct access to historic cities, cultural landmarks, and local communities while offering a more immersive and educational travel experience.",
+      q: "Can alumni travel strengthen university engagement?",
+      a: "Absolutely. Alumni travel creates meaningful opportunities for graduates to reconnect with faculty, classmates, and university leadership while participating in lifelong learning experiences.",
     },
 
     {
-      q: "What should travelers look for in an educational travel company?",
-      a: "Travelers should seek destination expertise, educational programming, strong supplier relationships, travel planning experience, and a proven record of successful educational journeys.",
+      q: "What should universities look for in an alumni travel partner?",
+      a: "Universities should seek expertise in luxury travel, educational travel, group travel management, supplier relationships, risk management, and alumni engagement.",
     },
 
     {
-      q: "Can educational travel strengthen alumni engagement?",
-      a: "Yes. Educational travel creates meaningful opportunities for alumni to reconnect with faculty, fellow graduates, and their institution while participating in lifelong learning experiences.",
+      q: "Are faculty-hosted alumni travel programs beneficial?",
+      a: "Yes. Faculty-hosted programs provide educational enrichment, intellectual engagement, and unique opportunities for alumni to learn from respected academic experts.",
     },
 
     {
-      q: "Why choose Trips & Ships Luxury Travel for educational travel?",
-      a: "Trips & Ships Luxury Travel combines luxury travel planning expertise, educational travel experience, global destination knowledge, and personalized service to create transformative travel experiences.",
+      q: "Can luxury alumni travel support donor development?",
+      a: "Many institutions use luxury alumni travel and donor travel programs to deepen relationships with supporters through meaningful shared experiences.",
     },
 
     {
-      q: "Why work with Angela Hughes?",
-      a: "Angela Hughes brings more than 40 years of travel industry expertise, firsthand experience in over 121 countries, global recognition as a luxury travel authority, and extensive knowledge of educational, expedition, river cruise, safari, and premium travel experiences.",
+      q: "Why choose Trips & Ships Luxury Travel?",
+      a: "Trips & Ships Luxury Travel combines luxury travel expertise, educational travel experience, alumni travel planning, and personalized service to create exceptional travel experiences worldwide.",
     },
   ];
 
@@ -435,7 +385,7 @@ function FAQ() {
     </div>
   );
 }
-const EducationalTravelPrograms = () => {
+const LuxuryAlumniTravel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage3, HeroImage2];
@@ -451,20 +401,19 @@ const EducationalTravelPrograms = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Educational Travel Programs | Luxury Educational Travel Experts
+          Luxury Alumni Travel | Premium Alumni Cruises & Educational Travel
         </title>
         <meta
           name="title"
-          content="Educational Travel Programs | Educational Travel Planning | Trips & Ships Luxury Travel"
+          content="Luxury Alumni Travel | Alumni Cruises & Exclusive Travel Experiences | Trips & Ships Luxury Travel"
         />
         <meta
           name="description"
-          content="Explore educational travel programs designed for universities, alumni associations, lifelong learners, and affinity groups. Discover educational cruises, cultural immersion experiences, and luxury educational travel worldwide."
+          content="Discover luxury alumni travel experiences including alumni cruises, river cruises, expedition voyages, and educational journeys designed for universities, alumni associations, and lifelong learners."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
       <Nav />
-
       {/* HERO */}
       <section className="Scenic_hero_section">
         {images.map((img, index) => (
@@ -480,45 +429,42 @@ const EducationalTravelPrograms = () => {
         <div className="Scenic_hero_overlay"></div>
 
         <div className="Scenic_hero_content">
-          <h1>Educational Travel Programs</h1>
-
-          <p>Travel That Educates, Inspires, and Transforms</p>
+          <h1>LUXURY ALUMNI TRAVEL</h1>
 
           <p>
-            The best educational experiences rarely happen inside four walls.
+            Reconnect, Explore, and Experience the World in Extraordinary Ways
+          </p>
+
+          <p>
+            Travel has always been one of the most powerful ways to build
+            relationships, expand perspectives, and create lifelong memories.
           </p>
 
           {/* READ MORE CONTENT */}
           {readMore && (
             <>
               <p>
-                Educational travel programs allow travelers to engage directly
-                with history, culture, science, conservation, art, architecture,
-                business, and global communities in ways that textbooks and
-                lectures alone cannot provide.
-              </p>
-
-              <p>
-                Whether exploring ancient ruins in Greece, cruising the Rhine
-                River through Europe’s cultural heartland, visiting wildlife
-                reserves in Africa, or sailing to Antarctica aboard an
-                expedition vessel, educational travel transforms information
-                into lived experience.
+                Luxury alumni travel takes that experience even further by
+                combining meaningful connections with world-class travel
+                experiences. These journeys allow graduates to reconnect with
+                their university, engage with fellow alumni, participate in
+                lifelong learning opportunities, and explore extraordinary
+                destinations while enjoying premium accommodations, exceptional
+                service, and carefully curated experiences.
               </p>
 
               <p>
                 At Trips &amp; Ships Luxury Travel, we help universities, alumni
-                associations, affinity groups, lifelong learning organizations,
-                and curious travelers design meaningful educational journeys
-                that combine intellectual enrichment with exceptional travel
-                experiences.
+                associations, affinity groups, and educational institutions
+                create luxury alumni travel programs that inspire, educate, and
+                strengthen community connections.
               </p>
 
               <p>
                 Led by Angela Hughes, CEO of Trips &amp; Ships Luxury Travel,
-                our team brings more than four decades of travel industry
-                expertise and firsthand destination knowledge from over 121
-                countries worldwide.
+                our team brings more than 40 years of travel industry expertise
+                and firsthand experience in over 121 countries, helping alumni
+                travelers discover the world through exceptional journeys.
               </p>
             </>
           )}
@@ -534,9 +480,8 @@ const EducationalTravelPrograms = () => {
           </div>
         </div>
       </section>
-
       {/* ════════════════════════════════════════
-    WHAT IS EDUCATIONAL TRAVEL?
+    WHAT IS LUXURY ALUMNI TRAVEL?
 ════════════════════════════════════════ */}
       <section className="adg-c-section adg-c-bg-dark" id="adg-why-dining">
         <div className="adg-c-container">
@@ -544,52 +489,75 @@ const EducationalTravelPrograms = () => {
             {/* LEFT — text */}
             <div className="adg-c-why-left">
               <span className="adg-c-eyebrow adg-c-eyebrow-light">
-                Educational Travel Experiences
+                Luxury Alumni Travel Experiences
               </span>
 
               <h2 className="adg-c-h2 adg-c-h2-light">
-                What Is Educational Travel?
+                What Is Luxury Alumni Travel?
               </h2>
               <div class="aac-accent-line aac-accent-white"></div>
 
               <p className="adg-c-lead adg-c-lead-light">
-                Educational travel is travel designed with learning as a primary
-                objective.
+                Luxury alumni travel combines the benefits of alumni engagement
+                with premium travel experiences.
               </p>
 
               <p className="adg-c-body adg-c-body-light">
-                Unlike traditional tourism, educational travel focuses on
-                meaningful engagement with destinations, cultures, experts, and
-                experiences that provide personal growth and intellectual
-                enrichment.
+                Unlike traditional group travel, luxury alumni travel focuses on
+                exceptional accommodations, curated cultural experiences,
+                educational enrichment, and meaningful opportunities to
+                reconnect with fellow graduates and university communities.
               </p>
 
               <br />
 
               <p className="adg-c-body adg-c-body-light">
-                Participants return home not only with memories but with a
-                deeper understanding of the world around them.
+                Many programs are developed specifically for alumni
+                associations, university travel programs, and educational
+                institutions seeking meaningful ways to engage graduates beyond
+                campus.
               </p>
+
+              <br />
+              {readMore && (
+                <>
+                  <p className="adg-c-body adg-c-body-light">
+                    Whether travelers choose a luxury river cruise through
+                    Europe, a safari in Africa, or an expedition voyage to
+                    Antarctica, luxury alumni travel delivers experiences that
+                    go far beyond traditional tourism.
+                  </p>
+                </>
+              )}
+
+              <div className="Scenic_readmore_wrapper">
+                <button
+                  style={{ color: "var(--bg-white)" }}
+                  className="Scenic_readmore_btn"
+                  onClick={() => setReadMore(!readMore)}
+                >
+                  {readMore ? "Read Less" : "Read More"}
+                </button>
+              </div>
             </div>
 
             {/* RIGHT — pill grid */}
             <div className="adg-c-why-right">
               <div className="adg-c-why-card">
                 <span className="adg-c-why-card-label">
-                  Educational travel programs may include:
+                  Luxury alumni travel focuses on:
                 </span>
 
                 <div className="adg-c-pill-grid">
                   {[
-                    "Cultural immersion experiences",
-                    "Educational cruises",
-                    "Faculty hosted journeys",
-                    "Historical tours",
-                    "Wildlife and conservation expeditions",
-                    "Archaeological exploration",
-                    "Lifelong learning programs",
-                    "Alumni travel experiences",
-                    "University educational travel programs",
+                    "Exceptional accommodations",
+                    "Curated cultural experiences",
+                    "Educational enrichment",
+                    "VIP access opportunities",
+                    "Personalized service",
+                    "Faculty hosted experiences",
+                    "Lifelong learning opportunities",
+                    "Exclusive itineraries",
                   ].map((item, i) => (
                     <div key={i} className="adg-c-pill">
                       <span className="adg-c-pill-check">
@@ -616,11 +584,11 @@ const EducationalTravelPrograms = () => {
           {/* HEADING */}
           <div className="Avr-planning-heading">
             <span className="Avr-planning-eyebrow">
-              Lifelong Learning Travel
+              Alumni Engagement Through Travel
             </span>
 
             <h2 className="Avr-planning-title">
-              Educational Travel for Alumni and Lifelong Learners
+              Why Universities Are Offering Alumni Travel Programs
             </h2>
 
             <div className="Avr-planning-divider"></div>
@@ -633,21 +601,21 @@ const EducationalTravelPrograms = () => {
               <div className="Avr-planning-left-deco">&ldquo;</div>
 
               <h3 className="Avr-planning-left-title">
-                Educational Travel Is No Longer Limited to Students
+                Alumni Travel Is Becoming a Strategic Engagement Tool
               </h3>
 
               <p className="Avr-planning-left-body">
-                Many of the most successful educational travel programs today
-                are designed specifically for alumni and lifelong learners.
+                Universities increasingly recognize the value of alumni travel
+                programs as part of their broader engagement strategy.
               </p>
 
               <div className="Avr-planning-alert">
                 <ShieldCheck size={18} className="Avr-planning-alert-icon" />
 
                 <p className="Avr-planning-alert-text">
-                  These travelers are often motivated by curiosity, intellectual
-                  engagement, and personal enrichment rather than traditional
-                  sightseeing.
+                  These programs allow alumni to remain connected to their
+                  institution while exploring the world alongside fellow
+                  graduates and faculty experts.
                 </p>
               </div>
             </div>
@@ -655,44 +623,34 @@ const EducationalTravelPrograms = () => {
             {/* RIGHT PANEL */}
             <div className="Avr-planning-right">
               <p className="Avr-planning-right-intro">
-                Popular educational travel experiences include:
+                Luxury alumni travel helps institutions:
               </p>
 
               <div className="Avr-planning-benefits-grid">
                 {[
                   {
-                    icon: <Ship size={18} />,
-                    label: "Alumni cruises",
-                  },
-
-                  {
-                    icon: <MapPin size={18} />,
-                    label: "Educational river cruises",
-                  },
-
-                  {
-                    icon: <Star size={18} />,
-                    label: "Educational expedition cruises",
-                  },
-
-                  {
                     icon: <Users size={18} />,
-                    label: "Faculty hosted travel programs",
+                    label: "Strengthen alumni relationships",
                   },
-
                   {
                     icon: <Award size={18} />,
-                    label: "Cultural immersion journeys",
+                    label: "Encourage lifelong learning",
                   },
-
                   {
                     icon: <ShieldCheck size={18} />,
-                    label: "Historical explorations",
+                    label: "Support donor engagement",
                   },
-
                   {
                     icon: <Globe size={18} />,
-                    label: "Multi-generational educational travel",
+                    label: "Foster community connections",
+                  },
+                  {
+                    icon: <Star size={18} />,
+                    label: "Enhance alumni participation",
+                  },
+                  {
+                    icon: <MapPin size={18} />,
+                    label: "Create memorable university experiences",
                   },
                 ].map((item, i) => (
                   <div key={i} className="Avr-planning-benefit-card">
@@ -711,8 +669,9 @@ const EducationalTravelPrograms = () => {
                 className="Avr-planning-right-intro"
                 style={{ marginTop: "28px" }}
               >
-                These experiences help alumni remain connected to their
-                institutions while continuing their educational journey.
+                As alumni expectations evolve, luxury travel experiences have
+                become increasingly important in delivering exceptional value
+                and engagement.
               </p>
             </div>
           </div>
@@ -740,7 +699,6 @@ const EducationalTravelPrograms = () => {
           </div>
         </div>
       </section>
-
       {/* VIDEO SECTION */}
       {/* <section
         className="Asc-video-section"
@@ -808,7 +766,7 @@ const EducationalTravelPrograms = () => {
       </section> */}
 
       {/* ════════════════════════════════════════
-      WHY EDUCATIONAL TRAVEL MATTERS MORE THAN EVER
+      WHY LUXURY ALUMNI TRAVEL MATTERS
 ════════════════════════════════════════ */}
       <section
         className="adg-c-section adg-c-bg-dark"
@@ -819,28 +777,27 @@ const EducationalTravelPrograms = () => {
             {/* LEFT — text */}
             <div className="adg-c-why-left">
               <span className="adg-c-eyebrow adg-c-eyebrow-light">
-                Purpose-Driven Travel
+                Purpose-Driven Alumni Travel
               </span>
 
               <h2 className="adg-c-h2 adg-c-h2-light">
-                Why Educational Travel Matters More Than Ever
+                Why Luxury Alumni Travel Matters
               </h2>
-
-              <div className="adg-c-accent-line adg-c-accent-light"></div>
+              <div class="aac-accent-line aac-accent-white"></div>
 
               <p className="adg-c-lead adg-c-lead-light">
-                Today's travelers increasingly seek purpose-driven experiences.
+                Many alumni travelers are seeking more than a vacation.
               </p>
 
               <p className="adg-c-body adg-c-body-light">
-                Educational travel fulfills these goals while creating memorable
-                experiences that remain valuable long after the journey ends.
+                Luxury alumni travel provides these experiences while creating
+                opportunities to reconnect with friends, classmates, faculty
+                members, and university leadership.
               </p>
 
               <p className="adg-c-body adg-c-body-light">
-                For universities and organizations, educational travel also
-                strengthens community engagement, alumni participation, donor
-                relationships, and lifelong learning initiatives.
+                For universities, these programs strengthen alumni communities
+                and support long-term engagement goals.
               </p>
             </div>
 
@@ -848,18 +805,18 @@ const EducationalTravelPrograms = () => {
             <div className="adg-c-why-right">
               <div className="adg-c-why-card">
                 <span className="adg-c-why-card-label">
-                  Today's travelers want to:
+                  Alumni travelers want:
                 </span>
 
                 <div className="adg-c-pill-grid">
                   {[
-                    "Learn while traveling",
-                    "Connect with local cultures",
-                    "Explore meaningful destinations",
-                    "Understand global issues",
-                    "Expand personal knowledge",
-                    "Engage with experts",
-                    "Experience authentic cultural immersion",
+                    "Meaningful experiences",
+                    "Cultural immersion",
+                    "Educational enrichment",
+                    "Intellectual engagement",
+                    "Personalized service",
+                    "Unique destinations",
+                    "Exclusive access",
                   ].map((item, i) => (
                     <div key={i} className="adg-c-pill">
                       <span className="adg-c-pill-check">
@@ -877,26 +834,91 @@ const EducationalTravelPrograms = () => {
       </section>
 
       {/* ════════════════════════════════════════
-      EDUCATIONAL CRUISES: LEARNING AT SEA
+      LUXURY ALUMNI CRUISES
 ════════════════════════════════════════ */}
       <section className="adg-c-section adg-c-bg-soft" id="adg-complimentary">
         <div className="adg-c-container">
           <div className="adg-c-section-header">
-            <h2 className="adg-c-h2">Educational Cruises: Learning at Sea</h2>
+            <h2 className="adg-c-h2">Luxury Alumni Cruises</h2>
+
             <div className="adg-c-accent-line"></div>
+
             <p className="Asc-section-intro">
-              Educational cruises have become one of the most popular forms of
-              educational travel.
-            </p>
-            <p className="Asc-section-intro">
-              Cruises provide a unique environment where travelers can combine
-              expert lectures, <br /> destination-focused learning, and
-              immersive shore experiences.
+              Cruising remains one of the most popular formats for alumni
+              travel.
             </p>
           </div>
 
-          <div className="adg-c-venues-grid">
-            {complimentaryVenues.map((venue, i) => (
+          <div className="adg-c-venues-grid1">
+            {[
+              {
+                id: 1,
+                eyebrow: "Luxury Ocean Cruises",
+                name: "Ocean Cruises",
+                highlight:
+                  "Luxury ocean cruises allow alumni to explore multiple destinations while enjoying premium accommodations and onboard enrichment programs.",
+                items: [
+                  "Mediterranean",
+                  "Alaska",
+                  "Northern Europe",
+                  "South Pacific",
+                  "Caribbean",
+                ],
+                callout:
+                  "Many programs include guest lecturers, faculty presentations, and destination-focused discussions.",
+              },
+
+              {
+                id: 2,
+                eyebrow: "Alumni River Cruises",
+                name: "River Cruises",
+                highlight:
+                  "River cruises offer a more intimate travel experience and are especially popular among alumni travelers.",
+                items: [
+                  "Rhine River",
+                  "Danube River",
+                  "Seine River",
+                  "Douro River",
+                ],
+                callout:
+                  "River cruises combine cultural immersion with comfort, making them ideal for educational and alumni travel experiences.",
+              },
+
+              {
+                id: 3,
+                eyebrow: "Alumni Expedition Cruises",
+                name: "Expedition Cruises",
+                highlight:
+                  "Expedition travel is one of the fastest-growing segments of alumni travel.",
+                items: [
+                  "Antarctica",
+                  "Arctic",
+                  "Greenland",
+                  "Iceland",
+                  "Galapagos Islands",
+                  "Alaska",
+                ],
+                callout:
+                  "These voyages provide opportunities to learn about wildlife, conservation, exploration, and environmental science while visiting some of the world's most remote destinations.",
+              },
+
+              {
+                id: 4,
+                eyebrow: "Small Ship Alumni Cruises",
+                name: "Small Ship Cruises",
+                highlight:
+                  "Small ship cruises offer a more personalized and immersive travel experience.",
+                items: [
+                  "Personalized service",
+                  "Greater destination access",
+                  "Fewer crowds",
+                  "Enhanced educational opportunities",
+                  "Deeper cultural immersion",
+                ],
+                callout:
+                  "These advantages make small ship cruising particularly attractive for alumni groups seeking meaningful travel experiences.",
+              },
+            ].map((venue, i) => (
               <div
                 key={venue.id}
                 className={`adg-c-venue-card adg-c-venue-${i + 1}`}
@@ -929,12 +951,12 @@ const EducationalTravelPrograms = () => {
         </div>
       </section>
 
-      {/* BEST EDUCATIONAL TRAVEL DESTINATIONS */}
+      {/* BEST DESTINATIONS FOR LUXURY ALUMNI TRAVEL */}
       <section className="azs-experience-section" id="azs-experience">
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-section-title">
-              Best Educational Travel Destinations
+              Best Destinations for Luxury Alumni Travel
             </h2>
 
             <div className="azs-section-accent"></div>
@@ -946,7 +968,7 @@ const EducationalTravelPrograms = () => {
               <div className="azs-exp-image-wrap" style={{ height: "330px" }}>
                 <img
                   src={Europe}
-                  alt="Europe educational travel destinations"
+                  alt="Europe luxury alumni travel destinations"
                   className="azs-exp-img"
                 />
 
@@ -962,137 +984,46 @@ const EducationalTravelPrograms = () => {
 
                 <div className="azs-exp-body">
                   <p className="azs-exp-highlight">
-                    Europe remains one of the most popular educational travel
-                    destinations.
+                    Europe remains one of the most popular destinations for
+                    luxury alumni travel.
                   </p>
 
                   <div className="azs-exp-divider"></div>
 
                   <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">
-                      Top destinations include:
-                    </h4>
+                    <h4 className="azs-exp-group-title">Top destinations:</h4>
 
                     <ul className="azs-exp-list">
-                      {[
-                        "Italy",
-                        "France",
-                        "Greece",
-                        "Spain",
-                        "United Kingdom",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <ArrowRight size={16} className="azs-exp-list-icon" />
-
-                          <span>{item}</span>
-                        </li>
-                      ))}
+                      {["Italy", "France", "Greece", "Spain", "Portugal"].map(
+                        (item, idx) => (
+                          <li key={idx} className="azs-exp-list-item">
+                            <ArrowRight
+                              size={16}
+                              className="azs-exp-list-icon"
+                            />
+                            <span>{item}</span>
+                          </li>
+                        ),
+                      )}
                     </ul>
                   </div>
 
                   <div className="azs-exp-divider"></div>
 
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">Ideal for:</h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Art history",
-                        "Architecture",
-                        "Political science",
-                        "International relations",
-                        "Cultural studies",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* ASIA CARD */}
-            <div className="azs-experience-card azs-seabourn-exp">
-              <div className="azs-exp-image-wrap" style={{ height: "330px" }}>
-                <img
-                  src={Asia}
-                  alt="Asia educational travel destinations"
-                  className="azs-exp-img"
-                />
-
-                <div className="azs-exp-image-badge">Asia</div>
-              </div>
-
-              <div className="azs-exp-content">
-                <div className="azs-exp-header">
-                  <Ship size={24} className="azs-exp-icon" />
-
-                  <h3 className="azs-exp-title">Asia</h3>
-                </div>
-
-                <div className="azs-exp-body">
                   <p className="azs-exp-highlight">
-                    Asia offers exceptional educational opportunities.
+                    Ideal for history, art, culture, food, and educational
+                    enrichment.
                   </p>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">
-                      Popular destinations include:
-                    </h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Japan",
-                        "Singapore",
-                        "Vietnam",
-                        "India",
-                        "Thailand",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <ArrowRight size={16} className="azs-exp-list-icon" />
-
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">Ideal for:</h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Technology",
-                        "Sustainability",
-                        "Business",
-                        "Cultural immersion",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>
 
             {/* AFRICA CARD */}
-            <div className="azs-experience-card azs-azamara-exp">
+            <div className="azs-experience-card azs-seabourn-exp">
               <div className="azs-exp-image-wrap" style={{ height: "330px" }}>
                 <img
                   src={Africa}
-                  alt="Africa educational travel destinations"
+                  alt="Africa luxury alumni travel destinations"
                   className="azs-exp-img"
                 />
 
@@ -1108,26 +1039,22 @@ const EducationalTravelPrograms = () => {
 
                 <div className="azs-exp-body">
                   <p className="azs-exp-highlight">
-                    Africa provides meaningful experiential learning
-                    opportunities.
+                    Africa offers unforgettable alumni travel experiences.
                   </p>
 
                   <div className="azs-exp-divider"></div>
 
                   <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">
-                      Popular destinations include:
-                    </h4>
+                    <h4 className="azs-exp-group-title">Top destinations:</h4>
 
                     <ul className="azs-exp-list">
-                      {["Kenya", "Tanzania", "South Africa", "Egypt"].map(
+                      {["South Africa", "Kenya", "Tanzania"].map(
                         (item, idx) => (
                           <li key={idx} className="azs-exp-list-item">
                             <ArrowRight
                               size={16}
                               className="azs-exp-list-icon"
                             />
-
                             <span>{item}</span>
                           </li>
                         ),
@@ -1137,34 +1064,75 @@ const EducationalTravelPrograms = () => {
 
                   <div className="azs-exp-divider"></div>
 
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">Ideal for:</h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Conservation",
-                        "Anthropology",
-                        "Wildlife studies",
-                        "Sustainable development",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <p className="azs-exp-highlight">
+                    Ideal for safari experiences, conservation education, and
+                    cultural immersion.
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* SOUTH AMERICA & POLAR CARD */}
+            {/* ASIA CARD */}
+            <div className="azs-experience-card azs-azamara-exp">
+              <div className="azs-exp-image-wrap" style={{ height: "330px" }}>
+                <img
+                  src={Asia}
+                  alt="Asia luxury alumni travel destinations"
+                  className="azs-exp-img"
+                />
+
+                <div className="azs-exp-image-badge">Asia</div>
+              </div>
+
+              <div className="azs-exp-content">
+                <div className="azs-exp-header">
+                  <Ship size={24} className="azs-exp-icon" />
+
+                  <h3 className="azs-exp-title">Asia</h3>
+                </div>
+
+                <div className="azs-exp-body">
+                  <p className="azs-exp-highlight">
+                    Asia offers rich cultural and educational travel
+                    opportunities.
+                  </p>
+
+                  <div className="azs-exp-divider"></div>
+
+                  <div className="azs-exp-group">
+                    <h4 className="azs-exp-group-title">Top destinations:</h4>
+
+                    <ul className="azs-exp-list">
+                      {["Japan", "Vietnam", "Thailand", "India"].map(
+                        (item, idx) => (
+                          <li key={idx} className="azs-exp-list-item">
+                            <ArrowRight
+                              size={16}
+                              className="azs-exp-list-icon"
+                            />
+                            <span>{item}</span>
+                          </li>
+                        ),
+                      )}
+                    </ul>
+                  </div>
+
+                  <div className="azs-exp-divider"></div>
+
+                  <p className="azs-exp-highlight">
+                    Ideal for culture, history, sustainability, and
+                    business-focused travel.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* SOUTH AMERICA & POLAR REGIONS */}
             <div className="azs-experience-card azs-seabourn-exp">
               <div className="azs-exp-image-wrap" style={{ height: "330px" }}>
                 <img
                   src={SouthAmerica}
-                  alt="South America and Polar educational travel"
+                  alt="South America and Polar Regions luxury alumni travel"
                   className="azs-exp-img"
                 />
 
@@ -1185,34 +1153,13 @@ const EducationalTravelPrograms = () => {
                 <div className="azs-exp-body">
                   <div className="azs-exp-group">
                     <h4 className="azs-exp-group-title">
-                      Popular destinations include:
+                      South America destinations:
                     </h4>
 
                     <ul className="azs-exp-list">
                       {["Peru", "Ecuador", "Argentina"].map((item, idx) => (
                         <li key={idx} className="azs-exp-list-item">
                           <ArrowRight size={16} className="azs-exp-list-icon" />
-
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">Ideal for:</h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Archaeology",
-                        "Environmental science",
-                        "Cultural immersion",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-
                           <span>{item}</span>
                         </li>
                       ))}
@@ -1222,8 +1169,15 @@ const EducationalTravelPrograms = () => {
                   <div className="azs-exp-divider"></div>
 
                   <p className="azs-exp-highlight">
-                    Antarctica and the Arctic provide unique opportunities to
-                    study climate science, wildlife, and exploration.
+                    Ideal for archaeology, environmental exploration, and
+                    cultural discovery.
+                  </p>
+
+                  <div className="azs-exp-divider"></div>
+
+                  <p className="azs-exp-highlight">
+                    Antarctica and the Arctic offer extraordinary expedition
+                    experiences for adventurous alumni travelers.
                   </p>
                 </div>
               </div>
@@ -1232,7 +1186,7 @@ const EducationalTravelPrograms = () => {
         </div>
       </section>
 
-      {/* EDUCATIONAL TRAVEL VS TRADITIONAL TOURISM */}
+      {/* LUXURY ALUMNI TRAVEL VS TRADITIONAL ALUMNI TRAVEL */}
       <section
         className="Asc-section Asc-bg-white"
         id="Asc-fleet"
@@ -1241,14 +1195,14 @@ const EducationalTravelPrograms = () => {
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">
-              Educational Travel vs Traditional Tourism
+              Luxury Alumni Travel vs Traditional Alumni Travel
             </h2>
 
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-section-intro">
-              Educational travel creates deeper, more meaningful connections
-              with destinations and cultures.
+              Luxury alumni travel provides a more immersive, personalized, and
+              memorable experience.
             </p>
           </div>
 
@@ -1256,48 +1210,51 @@ const EducationalTravelPrograms = () => {
             <table className="Asc-fleet-table">
               <thead>
                 <tr>
-                  <th>Educational Travel</th>
-                  <th>Traditional Tourism</th>
+                  <th>Luxury Alumni Travel</th>
+                  <th>Traditional Alumni Travel</th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr>
-                  <td>Learning Focus</td>
-                  <td>Leisure Focus</td>
+                  <td>Premium Accommodations</td>
+                  <td>Standard Accommodations</td>
                 </tr>
 
                 <tr>
-                  <td>Expert-Led Experiences</td>
-                  <td>General Sightseeing</td>
+                  <td>Exclusive Experiences</td>
+                  <td>Standard Excursions</td>
                 </tr>
 
                 <tr>
-                  <td>Cultural Immersion</td>
-                  <td>Tourist Attractions</td>
+                  <td>Personalized Service</td>
+                  <td>Group-Based Service</td>
                 </tr>
 
                 <tr>
-                  <td>Intellectual Engagement</td>
-                  <td>Entertainment</td>
+                  <td>Educational Enrichment</td>
+                  <td>Basic Sightseeing</td>
                 </tr>
 
                 <tr>
-                  <td>Educational Outcomes</td>
-                  <td>Vacation Experiences</td>
+                  <td>Small Group Travel</td>
+                  <td>Larger Group Travel</td>
+                </tr>
+
+                <tr>
+                  <td>Curated Itineraries</td>
+                  <td>Fixed Programs</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
       </section>
-      {/* ── COMMON EDUCATIONAL TRAVEL MISTAKES ───────────────────────────────────────── */}
+      {/* ── COMMON ALUMNI TRAVEL MISTAKES ───────────────────────────────────────── */}
       <section className="Lfsg-section Lfsg-bg-dark" id="Lfsg-challenges">
         <div className="Lfsg-container">
           <div className="Lfsg-section-header">
-            <h2 className="Lfsg-h2-white">
-              Common Educational Travel Mistakes
-            </h2>
+            <h2 className="Lfsg-h2-white">Common Alumni Travel Mistakes</h2>
 
             <div className="Lfsg-accent-line-white" />
           </div>
@@ -1305,23 +1262,23 @@ const EducationalTravelPrograms = () => {
           <div className="Lfsg-mistakes-grid">
             {[
               {
-                title: "Focusing Only on Sightseeing",
-                desc: "True educational travel goes beyond visiting attractions. It requires meaningful engagement and context.",
+                title: "Choosing Price Over Value",
+                desc: "The lowest-cost program is rarely the most rewarding experience.",
               },
 
               {
-                title: "Choosing the Wrong Destination",
-                desc: "The best destination should support the educational goals of the group.",
+                title: "Ignoring Educational Components",
+                desc: "The best alumni travel programs combine exploration with meaningful learning opportunities.",
               },
 
               {
-                title: "Ignoring Expert Guidance",
-                desc: "Experienced guides, lecturers, and travel advisors significantly enhance the learning experience.",
+                title: "Waiting Too Long to Book",
+                desc: "Luxury cruises and premium travel experiences often sell out well in advance.",
               },
 
               {
-                title: "Waiting Too Long to Plan",
-                desc: "Educational travel programs often require 12 to 18 months of planning.",
+                title: "Choosing the Wrong Travel Partner",
+                desc: "Experience matters. Alumni travel programs require expertise in group travel, luxury travel, educational travel, and alumni engagement.",
               },
             ].map((item, i) => (
               <div key={i} className="Lfsg-mistake-card">
@@ -1341,7 +1298,7 @@ const EducationalTravelPrograms = () => {
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">Who Is Educational Travel Best For?</h2>
+            <h2 className="Asc-h2">Who Is Luxury Alumni Travel Best For?</h2>
             <div className="Asc-accent-line"></div>
           </div>
 
@@ -1351,14 +1308,12 @@ const EducationalTravelPrograms = () => {
 
               <ul className="Asc-who-list">
                 {[
-                  "Universities",
-                  "Alumni associations",
+                  "University alumni associations",
                   "Lifelong learners",
-                  "Professional organizations",
-                  "Affinity groups",
-                  "Faculty leaders",
                   "Donor groups",
-                  "Multi-generational families",
+                  "Affinity organizations",
+                  "Faculty hosted travel programs",
+                  "Multi-generational alumni families",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -1373,9 +1328,7 @@ const EducationalTravelPrograms = () => {
 
               <ul className="Asc-who-list">
                 {[
-                  "Travelers seeking purely recreational vacations",
-                  "Guests with little interest in learning experiences",
-                  "Travelers preferring traditional leisure tourism",
+                  "Travelers seeking budget-focused vacations may prefer traditional group travel programs rather than luxury experiences.",
                 ].map((item, i) => (
                   <li key={i}>
                     <Minus size={16} className="Asc-icon-muted" />
@@ -1393,7 +1346,7 @@ const EducationalTravelPrograms = () => {
           {/* TOP HEADING */}
           <div className="Adg-expert-heading">
             <span className="Adg-expert-eyebrow">
-              Educational Travel Specialists
+              Luxury Alumni Travel Specialists
             </span>
 
             <h2 className="Adg-expert-title">
@@ -1405,12 +1358,12 @@ const EducationalTravelPrograms = () => {
 
           {/* MAIN GRID */}
           <div className="Adg-expert-grid">
-            {/* LEFT SIDE: Portrait + Name */}
+            {/* LEFT SIDE */}
             <div className="Adg-expert-image-col">
               <div className="Adg-expert-portrait-wrap">
                 <img
                   src={AboutImage}
-                  alt="Angela Hughes – Educational Travel Expert"
+                  alt="Angela Hughes – Luxury Alumni Travel Expert"
                   className="Adg-expert-portrait"
                 />
 
@@ -1445,8 +1398,9 @@ const EducationalTravelPrograms = () => {
                 </div>
 
                 <blockquote className="Adg-expert-quote-text">
-                  "Trips &amp; Ships Luxury Travel combines educational
-                  expertise with luxury travel planning experience."
+                  "Trips &amp; Ships Luxury Travel combines luxury travel
+                  expertise with educational and alumni travel planning
+                  experience."
                 </blockquote>
               </div>
 
@@ -1454,19 +1408,19 @@ const EducationalTravelPrograms = () => {
               <div className="Adg-expert-credentials-box">
                 <h4 className="Adg-expert-credentials-title">
                   <Award size={16} />
-                  We Help Clients Create
+                  We Help Organizations Create
                 </h4>
 
                 <div className="Adg-expert-credentials-grid">
                   {[
+                    "Luxury alumni travel programs",
+                    "Alumni cruises",
+                    "Alumni river cruises",
+                    "Alumni expedition cruises",
+                    "Faculty hosted alumni travel",
                     "Educational travel programs",
-                    "Educational cruises",
-                    "Educational river cruises",
-                    "Educational expedition cruises",
-                    "Alumni travel experiences",
-                    "Faculty hosted journeys",
-                    "Small ship educational travel",
-                    "Luxury educational travel programs",
+                    "Donor travel programs",
+                    "Small ship alumni journeys",
                   ].map((item, i) => (
                     <div className="Adg-expert-list-item" key={i}>
                       <span className="Adg-expert-list-icon">
@@ -1489,6 +1443,17 @@ const EducationalTravelPrograms = () => {
                   Angela Hughes Authority Box
                 </h4>
 
+                <p
+                  style={{
+                    marginTop: "12px",
+                    marginBottom: "20px",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  Angela Hughes is one of the travel industry's most respected
+                  experts.
+                </p>
+
                 <div className="Adg-expert-credentials-grid">
                   {[
                     "CEO of Trips & Ships Luxury Travel",
@@ -1496,7 +1461,7 @@ const EducationalTravelPrograms = () => {
                     "Over 40 years in the travel industry",
                     "Traveled to more than 121 countries",
                     "Global luxury travel speaker and trainer",
-                    "Weekly travel industry columnist",
+                    "Weekly industry columnist",
                     "Travel Leaders Network Advisory Board member",
                     "2024 Luxury Travel Influencer of the Year",
                     "Named one of the Most Influential Women in Travel in 2026",
@@ -1520,9 +1485,8 @@ const EducationalTravelPrograms = () => {
                 style={{ marginTop: "24px" }}
               >
                 <blockquote className="Adg-expert-quote-text">
-                  Her firsthand destination expertise helps educational
-                  travelers experience the world in meaningful and
-                  transformative ways.
+                  Her firsthand destination expertise helps alumni travelers
+                  experience the world in meaningful and unforgettable ways.
                 </blockquote>
               </div>
             </div>
@@ -1547,7 +1511,7 @@ const EducationalTravelPrograms = () => {
         <div className="Asc-help-bg-wrap">
           <img
             src={CTAImage}
-            alt="Educational travel program background"
+            alt="Luxury alumni travel experience background"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -1558,11 +1522,11 @@ const EducationalTravelPrograms = () => {
             <div className="Asc-help-content">
               <div className="Asc-help-header">
                 <span className="Asc-help-eyebrow">
-                  Educational Travel Planning
+                  Luxury Alumni Travel Planning
                 </span>
 
                 <h2 className="Asc-help-h2">
-                  Start Planning Your <br /> Educational Travel Program
+                  Start Planning Your <br /> Luxury Alumni Travel Experience
                 </h2>
 
                 <div className="Asc-help-accent"></div>
@@ -1571,21 +1535,21 @@ const EducationalTravelPrograms = () => {
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    Educational travel has the power to inspire curiosity,
-                    strengthen communities, and create lifelong memories.
+                    Luxury alumni travel creates opportunities to reconnect,
+                    learn, and explore the world alongside fellow graduates and
+                    trusted travel experts.
                   </p>
 
                   <p className="Asc-help-intro">
-                    Whether you are planning a university travel program, alumni
-                    journey, educational cruise, expedition voyage, or lifelong
-                    learning experience, Trips &amp; Ships Luxury Travel can
-                    help you create an unforgettable journey that combines
-                    discovery, enrichment, and exceptional travel experiences.
+                    Whether your organization is planning a luxury cruise, river
+                    cruise, expedition voyage, safari, or educational travel
+                    experience, Trips &amp; Ships Luxury Travel can help create
+                    a program that exceeds expectations.
                   </p>
 
                   <div className="Asc-help-btn-container">
                     <button className="Asc-help-cta-btn">
-                      Start Planning Your Program
+                      Start Planning Your Experience
                       <ArrowRight size={18} />
                     </button>
                   </div>
@@ -1593,16 +1557,16 @@ const EducationalTravelPrograms = () => {
 
                 <div className="Asc-help-list-box">
                   <h3 className="Asc-help-list-title">
-                    Educational Travel Experiences:
+                    Luxury Alumni Travel Experiences:
                   </h3>
 
                   <ul className="Asc-help-bullets">
                     {[
-                      "University travel programs",
-                      "Alumni travel journeys",
-                      "Educational cruises",
+                      "Luxury alumni cruises",
+                      "Alumni river cruises",
                       "Expedition voyages",
-                      "Lifelong learning experiences",
+                      "Luxury safaris",
+                      "Educational travel experiences",
                     ].map((item, i) => (
                       <li key={i}>
                         <div className="Asc-bullet-icon">
@@ -1616,7 +1580,7 @@ const EducationalTravelPrograms = () => {
 
                   <p className="Asc-help-intro" style={{ marginTop: "20px" }}>
                     Contact Trips &amp; Ships Luxury Travel today to begin
-                    planning your next educational travel program.
+                    planning your next luxury alumni travel experience.
                   </p>
                 </div>
               </div>
@@ -1628,4 +1592,4 @@ const EducationalTravelPrograms = () => {
   );
 };
 
-export default EducationalTravelPrograms;
+export default LuxuryAlumniTravel;

@@ -16,6 +16,7 @@ import ExploraCruiseCost from "./pages/ExploraCruiseCost/ExploraCruiseCost";
 import ExploraJourneysvsSeabourn from "./pages/ExploraJourneysvsSeabourn/ExploraJourneysvsSeabourn";
 import FacultyLedTravelPrograms from "./pages/FacultyLedTravelPrograms/FacultyLedTravelPrograms";
 import EducationalTravelPrograms from "./pages/EducationalTravelPrograms/EducationalTravelPrograms";
+import LuxuryAlumniTravel from "./pages/LuxuryAlumniTravel/LuxuryAlumniTravel";
 
 function App() {
   return (
@@ -94,6 +95,11 @@ function App() {
             <Route
             path="/educational-travel-programs"
             element={<EducationalTravelPrograms />}
+          />
+
+           <Route
+            path="/luxury-alumni-travel"
+            element={<LuxuryAlumniTravel />}
           />
         </Routes>
       </BrowserRouter>

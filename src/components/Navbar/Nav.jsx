@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
@@ -121,7 +121,7 @@ const Nav = () => {
                 Explora Journeys vs Seabourn
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/faculty-led-travel-programs"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -129,12 +129,20 @@ const Nav = () => {
                 Faculty-Led Travel Programs
               </NavLink>
 
-                 <NavLink
+              <NavLink
                 to="/educational-travel-programs"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Educational Travel Programs
+              </NavLink>
+
+              <NavLink
+                to="/luxury-alumni-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Luxury Alumni Travel
               </NavLink>
             </div>
           </div>
@@ -236,47 +244,53 @@ const Nav = () => {
               Is Explora Journeys Worth It?
             </NavLink>
 
-             <NavLink
-                to="/explora-journeys-cruise-inclusions"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora Journeys Cruise Inclusions
-              </NavLink>
+            <NavLink
+              to="/explora-journeys-cruise-inclusions"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Journeys Cruise Inclusions
+            </NavLink>
 
-              <NavLink
-                to="/how-much-does-an-explora-cruise-cost-2026-2027"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                How Much Does an Explora Cruise Cost?
-              </NavLink>
+            <NavLink
+              to="/how-much-does-an-explora-cruise-cost-2026-2027"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              How Much Does an Explora Cruise Cost?
+            </NavLink>
 
-              
-              <NavLink
-                to="/explora-journeys-vs-seabourn"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Explora Journeys vs Seabourn
-              </NavLink>
+            <NavLink
+              to="/explora-journeys-vs-seabourn"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora Journeys vs Seabourn
+            </NavLink>
 
-              
-               <NavLink
-                to="/faculty-led-travel-programs"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Faculty-Led Travel Programs
-              </NavLink>
+            <NavLink
+              to="/faculty-led-travel-programs"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Faculty-Led Travel Programs
+            </NavLink>
 
-              <NavLink
-                to="/educational-travel-programs"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Educational Travel Programs
-              </NavLink>
+            <NavLink
+              to="/educational-travel-programs"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Educational Travel Programs
+            </NavLink>
+
+            <NavLink
+              to="/luxury-alumni-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Luxury Alumni Travel
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

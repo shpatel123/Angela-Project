@@ -1432,6 +1432,12 @@
   gap: 28px;
 }
 
+.adg-c-venues-grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
 .adg-c-venue-card {
   background: var(--bg-white);
   border-radius: var(--radius-lg);
@@ -2093,6 +2099,9 @@
     .Asc-overview-h2,
     .Avr-expert-title, .Avr-planning-title,.Asc-help-h2 {
         font-size: 24px !important;
+    }
+    .adg-c-venues-grid1{
+    grid-template-columns: 1fr;
     }
 
 
