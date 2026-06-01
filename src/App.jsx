@@ -17,6 +17,8 @@ import ExploraJourneysvsSeabourn from "./pages/ExploraJourneysvsSeabourn/Explora
 import FacultyLedTravelPrograms from "./pages/FacultyLedTravelPrograms/FacultyLedTravelPrograms";
 import EducationalTravelPrograms from "./pages/EducationalTravelPrograms/EducationalTravelPrograms";
 import LuxuryAlumniTravel from "./pages/LuxuryAlumniTravel/LuxuryAlumniTravel";
+import AlumniCruises from "./pages/AlumniCruises/AlumniCruises";
+import UniversityGroupTravelPlanning from "./pages/UniversityGroupTravelPlanning/UniversityGroupTravelPlanning";
 
 function App() {
   return (
@@ -100,6 +102,17 @@ function App() {
            <Route
             path="/luxury-alumni-travel"
             element={<LuxuryAlumniTravel />}
+          />
+
+          <Route
+            path="/alumni-cruises"
+            element={<AlumniCruises />}
+          />
+
+          
+          <Route
+            path="/university-group-travel-planning"
+            element={<UniversityGroupTravelPlanning />}
           />
         </Routes>
       </BrowserRouter>

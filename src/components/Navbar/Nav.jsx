@@ -144,6 +144,22 @@ const Nav = () => {
               >
                 Luxury Alumni Travel
               </NavLink>
+
+              <NavLink
+                to="/alumni-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Alumni Cruises
+              </NavLink>
+
+              <NavLink
+                to="/university-group-travel-planning"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                University Group Travel Planning
+              </NavLink>
             </div>
           </div>
         </div>
@@ -290,6 +306,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Luxury Alumni Travel
+            </NavLink>
+
+            <NavLink
+              to="/alumni-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Alumni Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
