@@ -25,9 +25,9 @@ import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpeg";
 import Africa from "../../assets/EducationalTravelPrograms/Educational_Travel.jpg";
 import SouthAmerica from "../../assets/FacultyLedTravelPrograms/South_America.jpg";
 
-import Experience from "../../assets/EducationalTravelPrograms/Educational_Travel.jpg";
-import Experience1 from "../../assets/EducationalTravelPrograms/Educational_Travel2.jpg";
-import Experience2 from "../../assets/EducationalTravelPrograms/Educational_Travel3.jpg";
+import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
+import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
+import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
 import Experience3 from "../../assets/EducationalTravelPrograms/Educational_Travel4.jpg";
 import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
 import Experience5 from "../../assets/EducationalTravelPrograms/Educational_Travel6.jpg";
@@ -510,35 +510,51 @@ const LuxuryAlumniTravel = () => {
               </p>
 
               <br />
-
               <p className="adg-c-body adg-c-body-light">
                 Many programs are developed specifically for alumni
                 associations, university travel programs, and educational
                 institutions seeking meaningful ways to engage graduates beyond
                 campus.
-              </p>
+                {!readMore && (
+                  <button
+                    onClick={() => setReadMore(true)}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "var(--bg-white)",
+                      cursor: "pointer",
+                      marginLeft: "8px",
+                      fontWeight: "600",
+                      padding: 0,
+                    }}
+                  >
+                    Read More
+                  </button>
+                )}
+              </p> <br/>
 
-              <br />
               {readMore && (
-                <>
-                  <p className="adg-c-body adg-c-body-light">
-                    Whether travelers choose a luxury river cruise through
-                    Europe, a safari in Africa, or an expedition voyage to
-                    Antarctica, luxury alumni travel delivers experiences that
-                    go far beyond traditional tourism.
-                  </p>
-                </>
+                <p className="adg-c-body adg-c-body-light">
+                  Whether travelers choose a luxury river cruise through Europe,
+                  a safari in Africa, or an expedition voyage to Antarctica,
+                  luxury alumni travel delivers experiences that go far beyond
+                  traditional tourism.
+                  <button
+                    onClick={() => setReadMore(false)}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "var(--bg-white)",
+                      cursor: "pointer",
+                      marginLeft: "8px",
+                      fontWeight: "600",
+                      padding: 0,
+                    }}
+                  >
+                    Read Less
+                  </button>
+                </p>
               )}
-
-              <div className="Scenic_readmore_wrapper">
-                <button
-                  style={{ color: "var(--bg-white)" }}
-                  className="Scenic_readmore_btn"
-                  onClick={() => setReadMore(!readMore)}
-                >
-                  {readMore ? "Read Less" : "Read More"}
-                </button>
-              </div>
             </div>
 
             {/* RIGHT — pill grid */}
@@ -682,7 +698,7 @@ const LuxuryAlumniTravel = () => {
       <section className="experience">
         <div className="section-inner wide">
           <h2 className="afc-h2" style={{ textAlign: "center" }}>
-            Educational travel experiences
+            Luxury Alumni Travel Experiences
           </h2>
           <div className="exp-slider">
             <div className="exp-track">
