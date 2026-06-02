@@ -19,6 +19,7 @@ import EducationalTravelPrograms from "./pages/EducationalTravelPrograms/Educati
 import LuxuryAlumniTravel from "./pages/LuxuryAlumniTravel/LuxuryAlumniTravel";
 import AlumniCruises from "./pages/AlumniCruises/AlumniCruises";
 import UniversityGroupTravelPlanning from "./pages/UniversityGroupTravelPlanning/UniversityGroupTravelPlanning";
+import WhyUniversitiesPartner from "./pages/WhyUniversitiesPartner/WhyUniversitiesPartner";
 
 function App() {
   return (
@@ -113,6 +114,12 @@ function App() {
           <Route
             path="/university-group-travel-planning"
             element={<UniversityGroupTravelPlanning />}
+          />
+
+          
+          <Route
+            path="/why-universities-partner-with-travel-companies"
+            element={<WhyUniversitiesPartner />}
           />
         </Routes>
       </BrowserRouter>
