@@ -12,35 +12,179 @@ import {
   Network,
   HeartHandshake,
   BookOpen,
-  Mic,
   Map,
+  GraduationCap,
+  Binoculars,
   Compass,
   Anchor,
   Ship,
   Waves,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
-import HeroImage1 from "../../assets/WhyUniversitiesPartner/Educational_Travelimage.jpg";
-import HeroImage2 from "../../assets/WhyUniversitiesPartner/FacultyLedTravel2.jpg";
-import HeroImage3 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni3.jpeg";
-import CTAImage from "../../assets/UniversityGroupTravelPlanning/StartPlan.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
+import HeroImage1 from "../../assets/LuxuryAlumniExpeditionCruises/LuxuryAlumni.jpg";
+import HeroImage2 from "../../assets/LuxuryAlumniExpeditionCruises/LuxuryAlumni2.jpeg";
+import HeroImage3 from "../../assets/LuxuryAlumniExpeditionCruises/Educational_Travelimage3.jpeg";
+import CTAImage from "../../assets/LuxuryAlumniExpeditionCruises/StartPlan.jpeg";
 
-import TravelExperience from "../../assets/WhyUniversitiesPartner/Traveler_Experiences.jpeg";
+import TravelExperience from "../../assets/LuxuryAlumniExpeditionCruises/Asia.jpeg";
 import TravelExperience2 from "../../assets/WhyUniversitiesPartner/Alumni_Travel_Benefits.jpg";
 
-import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
+import Experience from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
 import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
-import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
+import Experience2 from "../../assets/LuxuryAlumniExpeditionCruises/LuxuryAlumni3.jpeg";
 import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
-
 
 import RhineImg from "../../assets/LuxuryAlumniTravel/Europe.jpeg";
 import DouroImg from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
 
 import { Helmet } from "react-helmet-async";
+const expeditionDestinations = [
+  {
+    id: "antarctica",
+    title: "Antarctica Expedition Cruises",
+    badge: "Antarctica",
+    icon: Compass,
+    image: TravelExperience2,
+    desc: "Antarctica remains one of the world's most coveted travel experiences.",
+    columns: [
+      {
+        label: "Educational opportunities:",
+        items: [
+          "Climate science",
+          "Environmental studies",
+          "Marine biology",
+          "Geology",
+          "Conservation",
+        ],
+      },
+      {
+        label: "Travelers may experience:",
+        items: [
+          "Massive glaciers",
+          "Penguin colonies",
+          "Whales",
+          "Icebergs",
+          "Scientific research stations",
+        ],
+      },
+    ],
+    themeLabel: "Why Antarctica?",
+    themeText:
+      "An Antarctica expedition often becomes a once-in-a-lifetime journey that participants never forget.",
+  },
 
+  {
+    id: "arctic",
+    title: "Arctic Expedition Cruises",
+    badge: "Arctic",
+    icon: Anchor,
+    image: Experience1,
+    desc: "The Arctic provides a fascinating combination of natural beauty and scientific relevance.",
+    columns: [
+      {
+        label: "Highlights include:",
+        items: [
+          "Polar bears",
+          "Glaciers",
+          "Remote communities",
+          "Indigenous cultures",
+          "Climate research",
+        ],
+      },
+      {
+        label: "Popular regions:",
+        items: ["Greenland", "Svalbard", "Norwegian Arctic", "Canadian Arctic"],
+      },
+    ],
+    themeLabel: "Ideal For:",
+    themeText:
+      "These voyages are ideal for institutions focused on environmental sciences and global studies.",
+  },
 
+  {
+    id: "galapagos",
+    title: "Galápagos Islands Expeditions",
+    badge: "Galápagos",
+    icon: Ship,
+    image: Experience4,
+    desc: "The Galápagos Islands offer one of the world's most important destinations for educational travel.",
+    columns: [
+      {
+        label: "Educational themes:",
+        items: ["Evolution", "Biodiversity", "Conservation", "Ecology"],
+      },
+      {
+        label: "Wildlife encounters:",
+        items: [
+          "Giant tortoises",
+          "Blue-footed boobies",
+          "Marine iguanas",
+          "Sea lions",
+        ],
+      },
+    ],
+    themeLabel: "Educational Value:",
+    themeText:
+      "The Galápagos provides an unparalleled outdoor classroom experience.",
+  },
+
+  {
+    id: "iceland",
+    title: "Iceland Expedition Cruises",
+    badge: "Iceland",
+    icon: Waves,
+    image: RhineImg,
+    desc: "Iceland combines adventure with accessibility.",
+    columns: [
+      {
+        label: "Travelers experience:",
+        items: [
+          "Volcanoes",
+          "Glaciers",
+          "Waterfalls",
+          "Geothermal landscapes",
+          "Viking history",
+        ],
+      },
+      {
+        label: "Educational themes:",
+        items: [
+          "Geology",
+          "Renewable energy",
+          "Climate science",
+          "Nordic culture",
+        ],
+      },
+    ],
+    themeLabel: "Why Iceland?",
+    themeText:
+      "A perfect combination of adventure, education, and accessibility for alumni travelers.",
+  },
+
+  {
+    id: "alaska",
+    title: "Alaska Expedition Cruises",
+    badge: "Alaska",
+    icon: MapPin,
+    image: DouroImg,
+    desc: "Unlike traditional Alaska cruises, expedition voyages focus on immersive exploration.",
+    columns: [
+      {
+        label: "Activities may include:",
+        items: [
+          "Zodiac excursions",
+          "Wildlife observation",
+          "Glacier exploration",
+          "Naturalist-guided adventures",
+        ],
+      },
+    ],
+    themeLabel: "Ideal For:",
+    themeText:
+      "An outstanding option for universities introducing alumni to expedition travel.",
+  },
+];
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -257,73 +401,73 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is an alumni river cruise?",
-      a: "An alumni river cruise is a university-sponsored travel experience that combines luxury river cruising with educational programming, alumni engagement, and cultural exploration.",
+      q: "What is an alumni expedition cruise?",
+      a: "An alumni expedition cruise is an educational travel experience that combines exploration, learning, and luxury travel in remote destinations.",
     },
 
     {
-      q: "Why are river cruises popular among alumni?",
-      a: "River cruises provide intimate experiences, cultural immersion, educational opportunities, and convenient travel.",
+      q: "What destinations are most popular?",
+      a: "Antarctica, the Arctic, Galápagos Islands, Iceland, and Alaska are among the most requested expedition cruise destinations.",
     },
 
     {
-      q: "Which rivers are most popular?",
-      a: "The Rhine, Danube, Seine, and Douro are among the most requested alumni cruise itineraries.",
+      q: "Are expedition cruises physically demanding?",
+      a: "Most offer varying activity levels, allowing travelers to choose experiences that match their comfort and mobility.",
     },
 
     {
-      q: "Are river cruises suitable for donors?",
-      a: "Yes. The intimate environment makes river cruises ideal for donor cultivation and relationship building.",
-    },
-
-    {
-      q: "How many travelers typically participate?",
-      a: "Most alumni river cruise groups range from 20 to 100 participants.",
+      q: "Are expedition cruises luxurious?",
+      a: "Yes. Modern expedition ships provide exceptional accommodations, dining, and service.",
     },
 
     {
       q: "Can faculty participate?",
-      a: "Absolutely. Faculty lectures often become a highlight of the experience.",
+      a: "Absolutely. Faculty involvement enhances educational value and traveler engagement.",
     },
 
     {
-      q: "Are excursions included?",
-      a: "Most luxury river cruises include guided excursions throughout the itinerary.",
+      q: "Are expedition cruises suitable for donor programs?",
+      a: "Yes. They create memorable experiences that strengthen relationships and institutional affinity.",
     },
 
     {
-      q: "How far in advance should programs be planned?",
-      a: "Ideally 12–24 months before departure.",
+      q: "How many travelers typically participate?",
+      a: "Most university expedition groups range from 20 to 80 participants.",
     },
 
     {
-      q: "What age groups participate?",
-      a: "Most participants are alumni, donors, spouses, and lifelong learners, though many programs welcome family members.",
+      q: "How far in advance should planning begin?",
+      a: "Ideally 18–24 months before departure due to limited availability.",
     },
 
     {
-      q: "Are river cruises luxurious?",
-      a: "Yes. Modern river ships offer exceptional accommodations, dining, and service.",
+      q: "Are educational lectures included?",
+      a: "Most expedition voyages feature expert presentations and destination-focused learning opportunities.",
     },
 
     {
-      q: "What educational opportunities are available?",
-      a: "Faculty lectures, destination experts, historical tours, and cultural experiences are commonly incorporated.",
+      q: "What wildlife might travelers see?",
+      a: "Depending on the destination, travelers may encounter whales, penguins, polar bears, sea lions, seabirds, and other remarkable species.",
     },
 
     {
-      q: "Can cruises be customized?",
-      a: "Yes. Universities can add private events, receptions, lectures, and branded experiences.",
+      q: "Why are expedition cruises growing in popularity?",
+      a: "Travelers increasingly seek authentic, educational, and transformational experiences.",
+    },
+
+    {
+      q: "Can programs be customized?",
+      a: "Yes. Universities can incorporate private receptions, faculty lectures, donor events, and branded experiences.",
     },
 
     {
       q: "Why choose Trips & Ships Luxury Travel?",
-      a: "We combine luxury cruise expertise, educational travel experience, and university-focused planning services.",
+      a: "We combine luxury travel expertise, expedition planning knowledge, and university travel experience.",
     },
 
     {
-      q: "How can universities start a river cruise program?",
-      a: "A consultation with Trips & Ships Luxury Travel helps identify goals, audiences, destinations, and timelines.",
+      q: "How do universities begin planning an expedition cruise?",
+      a: "A consultation helps determine goals, destinations, timelines, and traveler interests.",
     },
   ];
 
@@ -355,124 +499,16 @@ function FAQ() {
     </div>
   );
 }
-
-const riverDestinations = [
-  {
-    id: "rhine",
-    title: "Rhine River Cruises",
-    badge: "Rhine River",
-    icon: Compass,
-    image: RhineImg,
-    desc: "The Rhine remains one of the most requested alumni cruise itineraries.",
-    columns: [
-      {
-        label: "Highlights include:",
-        items: ["Germany", "France", "Switzerland", "Netherlands"],
-      },
-      {
-        label: "Travelers enjoy:",
-        items: [
-          "Medieval castles",
-          "Wine regions",
-          "Historic towns",
-          "Scenic landscapes",
-        ],
-      },
-    ],
-    themeLabel: "Educational themes:",
-    themeText: "European history, politics, architecture, and culture",
-  },
-  {
-    id: "danube",
-    title: "Danube River Cruises",
-    badge: "Danube River",
-    icon: Anchor,
-    image: TravelExperience2,
-    desc: "The Danube connects several of Europe's most fascinating cities.",
-    columns: [
-      {
-        label: "Popular destinations:",
-        items: ["Vienna", "Budapest", "Bratislava", "Passau"],
-      },
-      {
-        label: "Ideal programs:",
-        items: ["European history", "Music", "Art", "Political science"],
-      },
-    ],
-    themeLabel: "Educational themes:",
-    themeText: "European history, music, art, political science & cultural studies",
-  },
-  {
-    id: "seine",
-    title: "Seine River Cruises",
-    badge: "Seine River",
-    icon: Ship,
-    image: Experience1,
-    desc: "Perfect for institutions with interests in art, culture, and culinary experiences.",
-    columns: [
-      {
-        label: "Perfect for:",
-        items: [
-          "Art history",
-          "French culture",
-          "Literature",
-          "Culinary experiences",
-        ],
-      },
-      {
-        label: "Major highlights:",
-        items: ["Paris", "Normandy"],
-      },
-    ],
-    themeLabel: "Educational themes:",
-    themeText: "Art history, French culture, literature & culinary exploration",
-  },
-  {
-    id: "douro",
-    title: "Douro River Cruises",
-    badge: "Douro River",
-    icon: Waves,
-    image: DouroImg,
-    desc: "Portugal's Douro Valley offers increasingly popular luxury experiences.",
-    columns: [
-      {
-        label: "Douro Valley offers:",
-        items: [
-          "Vineyards",
-          "Historic villages",
-          "Scenic river landscapes",
-          "Culinary exploration",
-        ],
-      },
-    ],
-    themeLabel: "Educational themes:",
-    themeText: "Unique experiences increasingly popular among luxury travelers seeking authentic culture",
-  },
-  {
-    id: "dutch",
-    title: "Dutch and Belgian Waterways",
-    badge: "Dutch & Belgian",
-    icon: MapPin,
-    image: Experience4,
-    desc: "Springtime tulip cruises provide exceptional opportunities for enrichment.",
-    columns: [
-      {
-        label: "Exceptional for:",
-        items: ["Garden enthusiasts", "Art lovers", "Cultural travelers"],
-      },
-    ],
-    themeLabel: "Educational themes:",
-    themeText: "Beauty with educational enrichment, combining art and cultural exploration",
-  },
-];
-
-const LuxuryAlumniRiverCruises = () => {
+const LuxuryAlumniExpeditionCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const [activeDest, setActiveDest] = useState("rhine");
-  const currentDest = riverDestinations.find((d) => d.id === activeDest);
-  const ActiveIcon = currentDest.icon;
   const images = [HeroImage1, HeroImage3, HeroImage2];
+  const [activeDest, setActiveDest] = useState("antarctica");
+  const currentDest =
+    expeditionDestinations.find((d) => d.id === activeDest) ||
+    expeditionDestinations[0];
+
+  const ActiveIcon = currentDest.icon;
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -485,21 +521,20 @@ const LuxuryAlumniRiverCruises = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Luxury Alumni River Cruises | University River Cruise Programs | Trips
-          & Ships Luxury Travel
+          Luxury Alumni Expedition Cruises | Antarctica, Arctic & Galápagos
+          Alumni Travel
         </title>
         <meta
           name="title"
-          content="Alumni River Cruises for Universities & Alumni Associations"
+          content="Alumni Expedition Cruises for Universities & Alumni Associations"
         />
         <meta
           name="description"
-          content="Discover luxury alumni river cruises designed for universities, alumni associations, donors, and lifelong learning travelers. Explore Europe’s most iconic rivers with expert planning from Trips & Ships Luxury Travel."
+          content="Discover luxury alumni expedition cruises to Antarctica, the Arctic, Galápagos, Iceland, and beyond. Create extraordinary educational travel experiences for alumni, donors, faculty, and lifelong learners."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
       <Nav />
-
       {/* HERO */}
       <section className="Scenic_hero_section">
         {images.map((img, index) => (
@@ -516,38 +551,43 @@ const LuxuryAlumniRiverCruises = () => {
 
         <div className="Scenic_hero_content">
           <h1>
-            Alumni River Cruises: The Perfect Blend of Luxury, Learning, and
-            Lifelong Connections
+            Alumni Expedition Cruises: Transforming Travel Into Extraordinary
+            Educational Adventures
           </h1>
 
           <p>
-            For universities seeking a travel experience that combines
-            educational enrichment, cultural immersion, luxury accommodations,
-            and meaningful alumni engagement, few options rival the appeal of a
-            river cruise.
+            For alumni travelers seeking more than traditional sightseeing,
+            expedition cruising offers something truly remarkable.
           </p>
 
           {/* READ MORE CONTENT */}
           {readMore && (
             <>
               <p>
-                Unlike large ocean ships carrying thousands of passengers, river
-                cruises offer an intimate experience where travelers can connect
-                more deeply with fellow alumni, faculty members, university
-                leadership, and the destinations they visit.
-              </p>
-              <p>
-                At Trips &amp; Ships Luxury Travel, we help universities design
-                extraordinary alumni river cruise programs that strengthen
-                relationships, enhance donor engagement, and create
-                unforgettable travel experiences.
+                These immersive voyages combine exploration, education,
+                scientific discovery, and luxury travel into unforgettable
+                experiences that inspire lifelong learning and deeper
+                connections with the world.
               </p>
 
               <p>
-                Led by renowned travel expert Angela Hughes, our team brings
-                decades of experience planning sophisticated educational and
-                luxury travel programs for discerning travelers around the
-                world.
+                From Antarctica&apos;s towering icebergs to the wildlife-rich
+                Galápagos Islands and the remote landscapes of the Arctic,
+                expedition cruises allow universities to offer alumni travel
+                experiences unlike anything else available.
+              </p>
+
+              <p>
+                At Trips &amp; Ships Luxury Travel, we help universities create
+                extraordinary expedition programs that engage alumni, strengthen
+                donor relationships, and showcase the educational values that
+                define their institution.
+              </p>
+
+              <p>
+                Led by luxury travel expert Angela Hughes, our team designs
+                expedition travel experiences that balance adventure, comfort,
+                and meaningful learning opportunities.
               </p>
             </>
           )}
@@ -563,9 +603,8 @@ const LuxuryAlumniRiverCruises = () => {
           </div>
         </div>
       </section>
-
       {/* ════════════════════════════════════════
-WHY RIVER CRUISES ARE IDEAL FOR ALUMNI TRAVEL PROGRAMS
+WHY EXPEDITION CRUISES ARE GROWING IN POPULARITY
 ═════════════════════════════════════════ */}
       <section className="adg-c-section adg-c-bg-dark" id="adg-why-dining">
         <div className="adg-c-container">
@@ -573,24 +612,25 @@ WHY RIVER CRUISES ARE IDEAL FOR ALUMNI TRAVEL PROGRAMS
             {/* LEFT — text */}
             <div className="adg-c-why-left">
               <span className="adg-c-eyebrow adg-c-eyebrow-light">
-                Alumni River Cruise Benefits
+                Alumni Expedition Cruise Benefits
               </span>
 
               <h2 className="adg-c-h2 adg-c-h2-light">
-                Why River Cruises Are Ideal for Alumni Travel Programs
+                Why Expedition Cruises Are Growing in Popularity
               </h2>
 
               <div className="aac-accent-line aac-accent-white"></div>
 
               <p className="adg-c-lead adg-c-lead-light">
-                River cruises have become one of the fastest-growing segments of
-                educational travel.
+                Today's alumni travelers increasingly seek transformational
+                experiences.
               </p>
 
               <p className="adg-c-body adg-c-body-light">
-                Universities increasingly choose river cruising because it
-                perfectly aligns with the interests and expectations of alumni
-                travelers.
+                Many have already visited major tourist destinations and are now
+                searching for journeys that provide discovery, exploration,
+                education, personal growth, authentic experiences, and
+                meaningful connections.
                 {!readMore && (
                   <button
                     onClick={() => setReadMore(true)}
@@ -613,10 +653,12 @@ WHY RIVER CRUISES ARE IDEAL FOR ALUMNI TRAVEL PROGRAMS
 
               {readMore && (
                 <p className="adg-c-body adg-c-body-light">
-                  Travelers unpack once while experiencing multiple destinations
-                  throughout their journey. This convenience makes river
-                  cruising particularly attractive for alumni and donor
-                  audiences.
+                  Expedition cruising delivers all of these benefits while
+                  maintaining the luxury service levels expected by
+                  sophisticated travelers. Unlike traditional cruises,
+                  expedition voyages focus on the destination itself rather than
+                  onboard entertainment. Every day becomes an opportunity to
+                  learn, explore, and engage with the natural world.
                   <button
                     onClick={() => setReadMore(false)}
                     style={{
@@ -639,17 +681,17 @@ WHY RIVER CRUISES ARE IDEAL FOR ALUMNI TRAVEL PROGRAMS
             <div className="adg-c-why-right">
               <div className="adg-c-why-card">
                 <span className="adg-c-why-card-label">
-                  River cruises combine:
+                  Alumni travelers seek:
                 </span>
 
                 <div className="adg-c-pill-grid">
                   {[
-                    "Cultural immersion",
-                    "Lifelong learning",
-                    "Historical exploration",
-                    "Fine dining",
-                    "Comfortable travel",
-                    "Meaningful social interaction",
+                    "Discovery",
+                    "Exploration",
+                    "Education",
+                    "Personal Growth",
+                    "Authentic Experiences",
+                    "Meaningful Connections",
                   ].map((item, i) => (
                     <div key={i} className="adg-c-pill">
                       <span className="adg-c-pill-check">
@@ -665,88 +707,93 @@ WHY RIVER CRUISES ARE IDEAL FOR ALUMNI TRAVEL PROGRAMS
           </div>
         </div>
       </section>
-
-      {/* ════════════════════════════════════════
-THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
-════════════════════════════════════════ */}
-      <section className="adg-c-section adg-c-bg-white" id="adg-overview">
-        <div className="adg-c-container">
-          <div className="adg-c-section-header">
-            <span className="adg-c-eyebrow">Alumni River Cruise Benefits</span>
-
-            <h2 className="adg-c-h2">
-              The Unique Advantages of Alumni River Cruises
+      {/* ── WHY EXPEDITION CRUISES APPEAL TO ALUMNI ASSOCIATIONS ───── */}
+      <section
+        className="ugt-components-section"
+        id="ugt-components"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="ugt-components-container">
+          <div className="ugt-components-header">
+            <h2 className="ugt-components-title">
+              Why Expedition Cruises Appeal to Alumni Associations
             </h2>
-
             <div className="adg-c-accent-line"></div>
           </div>
 
-          <div className="adg-c-overview-layout">
-            {/* LEFT — list */}
-            <div className="adg-c-overview-icons">
-              {[
-                "Alumni networking",
-                "Faculty interaction",
-                "Meaningful conversations",
-                "Stronger community connections",
-                "Luxury accommodations",
-                "Cultural immersion",
-              ].map((label, i) => (
-                <div key={i} className="adg-c-overview-item">
-                  <span className="adg-c-overview-icon">
-                    <Check size={16} strokeWidth={2.5} />
-                  </span>
-                  <span className="adg-c-overview-label">{label}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* RIGHT — callout card + image */}
-            <div className="adg-c-overview-right">
-              <div className="adg-c-overview-callout">
-                <div className="adg-c-overview-callout-inner">
-                  <Star size={28} className="adg-c-callout-star" />
-
-                  <p className="adg-c-callout-text">
-                    Most luxury river ships accommodate between 100 and 200
-                    guests, creating an intimate atmosphere that encourages
-                    deeper connections among alumni, faculty, and university
-                    leadership.
-                  </p>
+          <div className="ugt-components-list">
+            <div className="ugt-component-row">
+              <div className="ugt-component-image-wrapper">
+                <div className="ugt-component-image-container">
+                  <img
+                    src={Experience2}
+                    alt="Alumni Expedition Cruise Experience"
+                    className="ugt-component-image"
+                  />
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
-                <img
-                  src={HeroImage2}
-                  alt="Alumni river cruise experience"
-                  className="adg-c-overview-img"
-                />
+              <div className="ugt-component-content">
+                <h3 className="ugt-component-subtitle">
+                  Engaged Travelers Who Value Learning and Exploration
+                </h3>
 
-                <div className="adg-c-overview-img-overlay">
-                  <span className="adg-c-overview-img-label">
-                    Intimate River Cruising
+                <p className="ugt-component-text">
+                  Expedition travel attracts highly engaged travelers who value
+                  learning, discovery, and meaningful exploration.
+                </p>
+
+                <div className="ugt-questions-box">
+                  <span className="ugt-questions-title">
+                    These travelers often:
                   </span>
+
+                  <ul className="ugt-questions-list">
+                    {[
+                      "Participate actively in university programs",
+                      "Support lifelong learning initiatives",
+                      "Value educational experiences",
+                      "Seek meaningful travel opportunities",
+                    ].map((item, idx) => (
+                      <li key={idx} className="ugt-question-item">
+                        <Check size={16} className="ugt-question-icon" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
+                <p
+                  className="ugt-component-footer"
+                  style={{
+                    backgroundColor: "var(--bg-white)",
+                    padding: "12px",
+                    borderRadius: "6px",
+                  }}
+                >
+                  As a result, expedition cruises frequently attract alumni who
+                  become strong ambassadors for future travel programs.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* ── EDUCATIONAL OPPORTUNITIES ─────────────────────── */}
+      {/* ── WHAT MAKES EXPEDITION CRUISES DIFFERENT? ─────────────────────── */}
       <section className="ugt-diff-section" id="ugt-different">
         <div className="ugt-diff-container">
           {/* Header */}
           <div className="ugt-diff-header">
-            <h2 className="ugt-diff-title">Educational Opportunities</h2>
+            <h2 className="ugt-diff-title">
+              What Makes Expedition Cruises Different?
+            </h2>
 
             <div className="adg-c-accent-line"></div>
 
             <p className="ugt-diff-intro">
-              River cruise itineraries naturally support educational
-              programming, creating meaningful learning experiences throughout
-              the journey.
+              Expedition cruising is designed for travelers who want deeper
+              experiences. Instead of visiting crowded tourist destinations,
+              expedition ships access remote regions that few people ever see.
             </p>
           </div>
 
@@ -756,20 +803,32 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
               {
                 icon: <BookOpen size={28} strokeWidth={1.5} />,
                 number: "01",
-                title: "Faculty Lectures",
-                body: "Professors share expertise related to destinations and themes.",
+                title: "Expert-Led Exploration",
+                body: "Scientists, naturalists, historians, geologists, and researchers provide educational insights throughout the voyage.",
               },
               {
-                icon: <Mic size={28} strokeWidth={1.5} />,
+                icon: <Users size={28} strokeWidth={1.5} />,
                 number: "02",
-                title: "Guest Speakers",
-                body: "Historians, authors, cultural experts, and regional specialists enhance the experience.",
+                title: "Small Group Experiences",
+                body: "Smaller ships allow greater flexibility and more personalized experiences.",
+              },
+              {
+                icon: <Binoculars size={28} strokeWidth={1.5} />,
+                number: "03",
+                title: "Wildlife Encounters",
+                body: "Observe wildlife in their natural habitats with expert interpretation.",
+              },
+              {
+                icon: <GraduationCap size={28} strokeWidth={1.5} />,
+                number: "04",
+                title: "Hands-On Learning",
+                body: "Travelers gain a deeper understanding of ecosystems, cultures, history, and conservation efforts.",
               },
               {
                 icon: <Map size={28} strokeWidth={1.5} />,
-                number: "03",
-                title: "Destination-Based Learning",
-                body: "Every stop becomes an opportunity for deeper understanding and exploration.",
+                number: "05",
+                title: "Extraordinary Access",
+                body: "Expedition vessels can reach destinations inaccessible to larger ships.",
               },
             ].map((card, i) => (
               <div key={i} className="ugt-diff-card">
@@ -787,80 +846,21 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
         </div>
       </section>
 
-      {/* ── CONVENIENT TRAVEL EXPERIENCE ───── */}
-      <section className="ugt-components-section" id="ugt-components" style={{backgroundColor: "var(--bg-soft)"}}>
-        <div className="ugt-components-container">
-          <div className="ugt-components-header">
-            <h2 className="ugt-components-title">
-              Convenient Travel Experience
-            </h2>
-            <div className="adg-c-accent-line"></div>
-          </div>
-
-          <div className="ugt-components-list">
-            <div className="ugt-component-row">
-              <div className="ugt-component-image-wrapper">
-                <div className="ugt-component-image-container">
-                  <img
-                    src={Experience2}
-                    alt="Convenient River Cruise Travel"
-                    className="ugt-component-image"
-                  />
-                </div>
-              </div>
-
-              <div className="ugt-component-content">
-                <h3 className="ugt-component-subtitle">
-                  Stress-Free and Accessible Travel
-                </h3>
-
-                <p className="ugt-component-text">
-                  Unlike ocean cruising, river cruising eliminates many common
-                  travel frustrations, making the experience more enjoyable and
-                  convenient for alumni travelers.
-                </p>
-
-                <div className="ugt-questions-box">
-                  <span className="ugt-questions-title">Benefits include:</span>
-
-                  <ul className="ugt-questions-list">
-                    {[
-                      "Central docking locations",
-                      "Easy embarkation and disembarkation",
-                      "Smaller crowds",
-                      "Less walking",
-                      "Streamlined logistics",
-                    ].map((item, idx) => (
-                      <li key={idx} className="ugt-question-item">
-                        <Check size={16} className="ugt-question-icon" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <p className="ugt-component-footer" style={{backgroundColor: "var(--bg-white)", padding: "12px", borderRadius: "6px"}}>
-                  This accessibility appeals to a wide range of alumni travelers
-                  and contributes to a smoother overall travel experience.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── MOST POPULAR ALUMNI RIVER CRUISE DESTINATIONS ───── */}
+      {/* ── MOST POPULAR ALUMNI EXPEDITION CRUISE DESTINATIONS ───── */}
       <section className="luc-destinations-section" id="luc-destinations">
         <div className="luc-destinations-container">
           <div className="luc-destinations-header">
             <h2 className="luc-destinations-title">
-              Most Popular Alumni River Cruise Destinations
+              Most Popular Alumni Expedition Cruise Destinations
             </h2>
+
             <div className="adg-c-accent-line"></div>
+
             <p className="luc-destinations-intro">
-              From the legendary Rhine to Portugal's scenic Douro, these
-              European waterways offer unparalleled alumni travel experiences
-              filled with history, culture, and lifelong learning.
+              From Antarctica's frozen wilderness to the wildlife-rich Galápagos
+              Islands, these extraordinary expedition destinations provide
+              unparalleled educational, scientific, and exploration
+              opportunities for alumni travelers.
             </p>
           </div>
 
@@ -868,19 +868,24 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
           <div className="luc-dest-layout">
             {/* Sidebar nav */}
             <nav className="luc-dest-nav">
-              {riverDestinations.map((item) => {
+              {expeditionDestinations.map((item) => {
                 const NavIcon = item.icon;
                 const isActive = activeDest === item.id;
+
                 return (
                   <button
                     key={item.id}
-                    className={`luc-dest-nav-btn ${isActive ? "luc-dest-nav-btn--active" : ""}`}
+                    className={`luc-dest-nav-btn ${
+                      isActive ? "luc-dest-nav-btn--active" : ""
+                    }`}
                     onClick={() => setActiveDest(item.id)}
                   >
                     <div className="luc-dest-nav-icon-wrap">
                       <NavIcon size={16} strokeWidth={1.8} />
                     </div>
+
                     <span className="luc-dest-nav-label">{item.badge}</span>
+
                     {isActive && <div className="luc-dest-nav-pip"></div>}
                   </button>
                 );
@@ -896,22 +901,27 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
                   alt={currentDest.title}
                   className="luc-dest-img"
                 />
+
                 <div className="luc-dest-img-overlay">
                   <div className="luc-dest-img-icon">
                     <ActiveIcon size={22} strokeWidth={1.6} />
                   </div>
-                  <span className="luc-dest-img-title">{currentDest.title}</span>
+
+                  <span className="luc-dest-img-title">
+                    {currentDest.title}
+                  </span>
                 </div>
               </div>
 
               {/* Description */}
               <p className="luc-dest-panel-desc">{currentDest.desc}</p>
 
-              {/* Columns container */}
+              {/* Columns */}
               <div className="luc-dest-columns">
                 {currentDest.columns.map((col, cIdx) => (
                   <div key={cIdx} className="luc-dest-info-col">
                     <span className="luc-dest-info-label">{col.label}</span>
+
                     <div className="luc-dest-items-grid">
                       {col.items.map((item) => (
                         <div key={item} className="luc-dest-item">
@@ -924,12 +934,18 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
                 ))}
               </div>
 
-              {/* Educational themes note */}
+              {/* Educational Theme / Highlight */}
               <div className="luc-dest-theme-box-note">
                 <div className="luc-dest-theme-note-bar"></div>
+
                 <div className="luc-dest-theme-note-content">
-                  <span className="luc-dest-theme-note-label">{currentDest.themeLabel}</span>
-                  <p className="luc-dest-theme-note-text">{currentDest.themeText}</p>
+                  <span className="luc-dest-theme-note-label">
+                    {currentDest.themeLabel}
+                  </span>
+
+                  <p className="luc-dest-theme-note-text">
+                    {currentDest.themeText}
+                  </p>
                 </div>
               </div>
             </div>
@@ -937,31 +953,30 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
         </div>
       </section>
 
-       {/* ── WHY ALUMNI TRAVELERS LOVE RIVER CRUISES ───── */}
+      {/* ── EDUCATIONAL BENEFITS OF ALUMNI EXPEDITION CRUISES ───── */}
       <section className="luc-why-section" id="luc-why">
         <div className="luc-why-container">
-
           {/* LEFT — stacked images */}
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
                 src={TravelExperience}
-                alt="Alumni river cruise experience"
+                alt="Alumni expedition cruise experience"
                 className="luc-why-img-main"
               />
               <div className="luc-why-img-overlay"></div>
             </div>
+
             <div className="luc-why-img-accent-wrap">
               <img
                 src={Experience}
-                alt="Luxury river cruise comfort"
+                alt="Educational expedition travel"
                 className="luc-why-img-accent"
               />
+
               <div className="luc-why-img-badge">
-                <span className="luc-why-badge-num">4</span>
-                <span className="luc-why-badge-text">
-                  Reasons to Love River Cruises
-                </span>
+                <span className="luc-why-badge-num">5</span>
+                <span className="luc-why-badge-text">Educational Benefits</span>
               </div>
             </div>
           </div>
@@ -969,78 +984,94 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
           {/* RIGHT — content */}
           <div className="luc-why-content">
             <h2 className="luc-why-title">
-              Why Alumni Travelers Love River Cruises
+              Educational Benefits of Alumni Expedition Cruises
             </h2>
+
             <div className="aac-accent-line aac-accent-white"></div>
+
             <p className="luc-why-intro">
-              Today’s alumni travelers are seeking experiences rather than
-              simply destinations. River cruising offers the perfect balance of
-              luxury, learning, and authentic connection.
+              Universities are uniquely positioned to enhance expedition
+              experiences through education.
             </p>
-            <p className="luc-why-subintro">River cruising offers:</p>
+
+            <p className="luc-why-subintro">Programs may include:</p>
 
             <div className="luc-why-features">
-
               <div className="luc-why-feature">
                 <div className="luc-why-feature-num">01</div>
+
                 <div className="luc-why-feature-body">
                   <h3 className="luc-why-feature-title">
-                    Authentic Cultural Connections
+                    Faculty Presentations
                   </h3>
+
                   <p className="luc-why-feature-desc">
-                    Travelers interact more closely with local communities.
+                    Professors provide context before and during the journey.
                   </p>
                 </div>
               </div>
 
               <div className="luc-why-feature">
                 <div className="luc-why-feature-num">02</div>
+
                 <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Comfortable Luxury</h3>
+                  <h3 className="luc-why-feature-title">
+                    Destination-Specific Learning
+                  </h3>
+
                   <p className="luc-why-feature-desc">
-                    Modern river ships provide:
+                    Educational content tailored to the region being explored.
                   </p>
-                  <ul className="luc-why-feature-list">
-                    {[
-                      "Elegant accommodations",
-                      "Fine dining",
-                      "Personalized service",
-                      "Scenic lounges",
-                    ].map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
                 </div>
               </div>
 
               <div className="luc-why-feature">
                 <div className="luc-why-feature-num">03</div>
+
                 <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Ease of Travel</h3>
+                  <h3 className="luc-why-feature-title">
+                    Scientific Exploration
+                  </h3>
+
                   <p className="luc-why-feature-desc">
-                    Daily excursions and transportation are often included.
+                    Participants gain firsthand exposure to environmental and
+                    scientific concepts.
                   </p>
                 </div>
               </div>
 
               <div className="luc-why-feature">
                 <div className="luc-why-feature-num">04</div>
+
                 <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Lifelong Learning</h3>
+                  <h3 className="luc-why-feature-title">
+                    Cultural Understanding
+                  </h3>
+
                   <p className="luc-why-feature-desc">
-                    Every destination presents opportunities for education and
-                    discovery.
+                    Travelers engage with local communities and traditions.
                   </p>
                 </div>
               </div>
 
+              <div className="luc-why-feature">
+                <div className="luc-why-feature-num">05</div>
+
+                <div className="luc-why-feature-body">
+                  <h3 className="luc-why-feature-title">
+                    Lifelong Learning Opportunities
+                  </h3>
+
+                  <p className="luc-why-feature-desc">
+                    Expedition travel encourages curiosity, critical thinking,
+                    and discovery.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </section>
-
-    
       {/* VIDEO SECTION */}
       {/* <section
         className="Asc-video-section"
@@ -1107,7 +1138,7 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
         </div>
       </section> */}
 
-      {/* ── HOW RIVER CRUISES SUPPORT UNIVERSITY ADVANCEMENT GOALS ───────────────────────────── */}
+      {/* ── EXPEDITION CRUISES AND DONOR ENGAGEMENT ───────────────────────────── */}
       <section className="ugt-advantage-section" id="ugt-advantage">
         <div className="ugt-advantage-container">
           <div className="ugt-advantage-header">
@@ -1116,18 +1147,19 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
             </span>
 
             <h2 className="ugt-advantage-title">
-              How River Cruises Support University Advancement Goals
+              Expedition Cruises and Donor Engagement
             </h2>
 
             <div className="Asc-accent-line"></div>
 
             <p className="ugt-advantage-intro">
-              River cruises are particularly effective for advancement and
-              alumni relations departments.
+              Advancement teams increasingly recognize the value of expedition
+              travel.
             </p>
 
             <h3 className="ugt-approach-title">
-              The intimate setting creates opportunities for:
+              Extended time together in extraordinary settings creates
+              opportunities for:
             </h3>
           </div>
 
@@ -1138,9 +1170,9 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
               </div>
 
               <h4 className="ugt-card-title">Relationship Building</h4>
+
               <p className="ugt-card-desc">
-                University leaders can spend meaningful time with alumni and
-                donors.
+                Meaningful conversations occur naturally throughout the journey.
               </p>
             </div>
 
@@ -1149,9 +1181,10 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
                 <HeartHandshake size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Donor Engagement</h4>
+              <h4 className="ugt-card-title">Shared Experiences</h4>
+
               <p className="ugt-card-desc">
-                Shared travel experiences strengthen personal connections.
+                Transformational experiences strengthen emotional connections.
               </p>
             </div>
 
@@ -1160,9 +1193,11 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
                 <Network size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Alumni Networking</h4>
+              <h4 className="ugt-card-title">Institutional Affinity</h4>
+
               <p className="ugt-card-desc">
-                Graduates build new relationships with fellow alumni.
+                Travelers often deepen their connection to the university
+                through educational exploration.
               </p>
             </div>
 
@@ -1171,25 +1206,17 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
                 <Award size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Institutional Loyalty</h4>
+              <h4 className="ugt-card-title">Long-Term Engagement</h4>
+
               <p className="ugt-card-desc">
-                Travel often deepens participants&apos; connection to the
-                university.
+                Many participants become repeat travelers and active supporters.
               </p>
             </div>
           </div>
-
-          <p
-            className="ugt-advantage-intro"
-            style={{ marginTop: "30px", textAlign: "center" }}
-          >
-            Many institutions report increased alumni involvement following
-            travel experiences.
-          </p>
         </div>
       </section>
 
-      {/* RIVER CRUISES VS OCEAN CRUISES FOR ALUMNI GROUPS */}
+      {/* RIVER CRUISES VS EXPEDITION CRUISES */}
       <section
         className="Asc-section Asc-bg-white"
         id="Asc-fleet"
@@ -1197,9 +1224,7 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
       >
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">
-              River Cruises vs Ocean Cruises for Alumni Groups
-            </h2>
+            <h2 className="Asc-h2">River Cruises vs Expedition Cruises</h2>
 
             <div className="Asc-accent-line"></div>
           </div>
@@ -1209,39 +1234,39 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
               <thead>
                 <tr>
                   <th>River Cruises</th>
-                  <th>Ocean Cruises</th>
+                  <th>Expedition Cruises</th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr>
-                  <td>Smaller ships</td>
-                  <td>Larger ships</td>
+                  <td>Cultural focus</td>
+                  <td>Exploration focus</td>
                 </tr>
 
                 <tr>
-                  <td>Intimate atmosphere</td>
-                  <td>More passengers</td>
+                  <td>Historic cities</td>
+                  <td>Remote destinations</td>
                 </tr>
 
                 <tr>
-                  <td>Educational focus</td>
-                  <td>Broader entertainment</td>
+                  <td>Relaxed pace</td>
+                  <td>Active discovery</td>
                 </tr>
 
                 <tr>
-                  <td>Central city docking</td>
-                  <td>Larger ports</td>
+                  <td>Luxury immersion</td>
+                  <td>Adventure learning</td>
                 </tr>
 
                 <tr>
-                  <td>Personalized experience</td>
-                  <td>More activity options</td>
+                  <td>European itineraries</td>
+                  <td>Global expedition regions</td>
                 </tr>
 
                 <tr>
-                  <td>Strong group interaction</td>
-                  <td>Less group cohesion</td>
+                  <td>Ideal for first-time travelers</td>
+                  <td>Ideal for explorers</td>
                 </tr>
               </tbody>
             </table>
@@ -1252,20 +1277,19 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
             style={{ marginTop: "30px" }}
           >
             <p className="Asc-overview-highlight-text">
-              For universities prioritizing education, engagement, and
-              relationship building, river cruises often provide the strongest
-              fit.
+              Both options can be highly successful depending on alumni
+              interests and institutional objectives.
             </p>
           </div>
         </div>
       </section>
-
-      {/* ── COMMON ALUMNI RIVER CRUISE PLANNING MISTAKES ───────────────────────── */}
+      {/* ── COMMON ALUMNI EXPEDITION CRUISE PLANNING MISTAKES ───────────────────────── */}
       <section className="Lfsg-section Lfsg-bg-dark" id="Lfsg-challenges">
         <div className="Lfsg-container">
           <div className="Lfsg-section-header">
             <h2 className="Lfsg-h2-white">
-              Common Mistakes Universities Make When Planning River Cruises
+              Common Mistakes Universities Make When Planning Expedition
+              Programs
             </h2>
 
             <div className="Lfsg-accent-line-white" />
@@ -1274,28 +1298,28 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
           <div className="Lfsg-mistakes-grid">
             {[
               {
-                title: "Waiting Too Long to Reserve Space",
-                desc: "River ships have limited capacity and often sell out well in advance. Planning should begin 12–24 months before departure.",
-              },
-
-              {
-                title: "Selecting the Wrong Itinerary",
-                desc: "The most successful programs align destinations with alumni interests and university goals.",
-              },
-
-              {
                 title: "Underestimating Demand",
-                desc: "Popular itineraries often exceed expectations when marketed effectively.",
+                desc: "Expedition travel continues to grow rapidly among affluent travelers.",
               },
 
               {
-                title: "Lacking Educational Content",
-                desc: "Faculty involvement significantly enhances traveler satisfaction.",
+                title: "Waiting Too Long to Secure Space",
+                desc: "Many expedition vessels accommodate fewer than 200 passengers. Availability often fills years in advance.",
               },
 
               {
-                title: "Choosing a General Travel Agency",
-                desc: "Universities benefit most from travel partners experienced in educational and alumni travel programs.",
+                title: "Choosing the Wrong Partner",
+                desc: "Expedition travel requires specialized expertise.",
+              },
+
+              {
+                title: "Lack of Educational Integration",
+                desc: "Universities can significantly enhance traveler experiences through faculty participation.",
+              },
+
+              {
+                title: "Focusing Only on Adventure",
+                desc: "The best expedition programs balance exploration, comfort, and learning.",
               },
             ].map((item, i) => (
               <div key={i} className="Lfsg-mistake-card">
@@ -1316,7 +1340,7 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">
-              Who Is University Travel Planning Best For?
+              Who Is Alumni Expedition Travel Best For?
             </h2>
             <div className="Asc-accent-line"></div>
           </div>
@@ -1327,13 +1351,13 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
 
               <ul className="Asc-who-list">
                 {[
-                  "Universities developing alumni travel programs",
-                  "Advancement departments",
                   "Alumni associations",
+                  "Lifelong learning programs",
+                  "Environmental science departments",
+                  "Advancement offices",
                   "Donor engagement initiatives",
-                  "Educational travel programs",
-                  "Continuing education organizations",
-                  "Lifelong learning communities",
+                  "Adventure-minded alumni travelers",
+                  "Educational travel organizations",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -1348,9 +1372,9 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
 
               <ul className="Asc-who-list">
                 {[
-                  "Organizations seeking unmanaged travel arrangements",
-                  "Budget-focused mass-market travel experiences",
-                  "Programs without engagement or educational objectives",
+                  "Travelers seeking traditional resort-style vacations",
+                  "Large-group entertainment-focused travel",
+                  "Budget-oriented travel programs",
                 ].map((item, i) => (
                   <li key={i}>
                     <Minus size={16} className="Asc-icon-muted" />
@@ -1362,7 +1386,6 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
           </div>
         </div>
       </section>
-
       {/* ════════════════════════════════════════
 WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 ════════════════════════════════════════ */}
@@ -1375,7 +1398,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
             {/* LEFT — text */}
             <div className="adg-c-why-left">
               <span className="adg-c-eyebrow adg-c-eyebrow-light">
-                Alumni River Cruise Specialists
+                Alumni Expedition Cruise Specialists
               </span>
 
               <h2 className="adg-c-h2 adg-c-h2-light">
@@ -1385,14 +1408,15 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
               <div className="aac-accent-line aac-accent-white"></div>
 
               <p className="adg-c-lead adg-c-lead-light">
-                Trips &amp; Ships Luxury Travel specializes in designing river
-                cruise experiences that align with university objectives.
+                Trips &amp; Ships Luxury Travel helps institutions create
+                expedition programs that align with engagement and educational
+                goals.
               </p>
 
               <p className="adg-c-body adg-c-body-light">
-                Our team helps institutions create meaningful alumni travel
-                experiences that strengthen engagement, support advancement
-                goals, and deliver exceptional educational value.
+                Our expertise combines luxury travel planning, educational
+                programming, alumni engagement, and donor-focused experiences to
+                deliver meaningful expedition journeys.
               </p>
             </div>
 
@@ -1400,15 +1424,15 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
             <div className="adg-c-why-right">
               <div className="adg-c-why-card">
                 <span className="adg-c-why-card-label">
-                  Our services include:
+                  Our Expertise Includes:
                 </span>
 
                 <div className="adg-c-pill-grid">
                   {[
-                    "Strategic Program Planning",
-                    "Luxury River Cruise Expertise",
-                    "Educational Programming Support",
-                    "Marketing Assistance",
+                    "Expedition Cruise Planning",
+                    "Educational Programming Development",
+                    "Alumni Engagement Strategy",
+                    "Donor Travel Programs",
                     "White-Glove Service",
                   ].map((item, i) => (
                     <div key={i} className="adg-c-pill">
@@ -1425,18 +1449,17 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
           </div>
         </div>
       </section>
-
       {/* WHY TRIPS & SHIPS LUXURY TRAVEL */}
       <section className="Adg-expert-section" id="Asc-expert-insight">
         <div className="Asc-container">
           {/* TOP HEADING */}
           <div className="Adg-expert-heading">
             <span className="Adg-expert-eyebrow">
-              University Travel Program Leadership
+              Luxury & Expedition Travel Leadership
             </span>
 
             <h2 className="Adg-expert-title">
-              Angela Hughes: A Trusted Authority for University Travel Programs
+              Angela Hughes: A Trusted Leader in Luxury and Expedition Travel
             </h2>
 
             <div className="Adg-expert-divider"></div>
@@ -1449,7 +1472,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
               <div className="Adg-expert-portrait-wrap">
                 <img
                   src={AboutImage}
-                  alt="Angela Hughes - University Travel Program Expert"
+                  alt="Angela Hughes - Luxury and Expedition Travel Expert"
                   className="Adg-expert-portrait"
                 />
 
@@ -1484,8 +1507,8 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
                 </div>
 
                 <blockquote className="Adg-expert-quote-text">
-                  Universities benefit from the leadership and experience of
-                  Angela Hughes.
+                  Universities benefit from Angela Hughes' extensive experience
+                  in global travel.
                 </blockquote>
               </div>
 
@@ -1498,14 +1521,13 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
                 <div className="Adg-expert-credentials-grid">
                   {[
-                    "More than 40 years in travel",
+                    "More than 40 years in the travel industry",
                     "Travel to over 121 countries",
                     "Founder of Luxury Travel University",
+                    "Global luxury travel educator",
                     "Travel Leaders Network Advisory Board Member",
-                    "Global travel educator and speaker",
-                    "Weekly travel columnist",
-                    "2024 Luxury Travel Influencer of the Year",
-                    "Named among the Most Influential Women in Travel",
+                    "Industry award recipient",
+                    "International speaker and columnist",
                   ].map((item, i) => (
                     <div className="Adg-expert-list-item" key={i}>
                       <span className="Adg-expert-list-icon">
@@ -1524,15 +1546,14 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
                 style={{ marginTop: "24px" }}
               >
                 <blockquote className="Adg-expert-quote-text">
-                  This level of expertise provides confidence for institutions
-                  seeking a trusted travel partner.
+                  Her expertise helps institutions confidently offer world-class
+                  expedition experiences.
                 </blockquote>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* FAQ */}
       <section className="Asc-section Asc-bg-white" id="Asc-faq">
         <div className="Asc-container">
@@ -1546,13 +1567,12 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
           <FAQ />
         </div>
       </section>
-
       {/* CTA */}
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
             src={CTAImage}
-            alt="Alumni river cruise experience"
+            alt="Alumni expedition cruise experience"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -1563,12 +1583,11 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
             <div className="Asc-help-content">
               <div className="Asc-help-header">
                 <span className="Asc-help-eyebrow">
-                  Alumni River Cruise Programs
+                  Alumni Expedition Cruise Programs
                 </span>
 
                 <h2 className="Asc-help-h2">
-                  Create an Alumni Travel Experience That Inspires Lifelong
-                  Connections
+                  Inspire Discovery Through Alumni Expedition Travel
                 </h2>
 
                 <div className="Asc-help-accent"></div>
@@ -1577,16 +1596,16 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    River cruising offers a unique combination of luxury,
-                    education, convenience, and relationship building that
-                    perfectly aligns with university engagement goals.
+                    Expedition cruises offer universities a unique opportunity
+                    to combine education, exploration, and engagement in some of
+                    the world's most extraordinary destinations.
                   </p>
+
                   <p className="Asc-help-intro">
-                    Whether your institution is looking to strengthen alumni
-                    loyalty, cultivate donors, expand lifelong learning
-                    opportunities, or create unforgettable travel experiences, a
-                    professionally planned river cruise can deliver exceptional
-                    results.
+                    Whether exploring Antarctica's frozen wilderness, studying
+                    wildlife in the Galápagos, or discovering Arctic landscapes,
+                    alumni travelers gain experiences that inspire curiosity and
+                    lifelong learning.
                     {!readMore && (
                       <button
                         onClick={() => setReadMore(true)}
@@ -1603,14 +1622,17 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
                         Read More
                       </button>
                     )}
-                  </p>{" "}
+                  </p>
+
                   <br />
+
                   {readMore && (
                     <p className="Asc-help-intro">
-                      With Angela Hughes' global expertise and Trips &amp; Ships
-                      Luxury Travel's proven planning process, your university
-                      can offer a river cruise program that alumni will remember
-                      for years to come.
+                      With Angela Hughes' expertise and Trips &amp; Ships Luxury
+                      Travel's proven planning process, your institution can
+                      create an expedition travel program that delivers
+                      exceptional value, deeper engagement, and unforgettable
+                      memories.
                       <button
                         onClick={() => setReadMore(false)}
                         style={{
@@ -1627,9 +1649,10 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
                       </button>
                     </p>
                   )}
+
                   <div className="Asc-help-btn-container">
                     <button className="Asc-help-cta-btn">
-                      Start Planning Your River Cruise
+                      Start Planning Your Expedition Cruise
                       <ArrowRight size={18} />
                     </button>
                   </div>
@@ -1637,16 +1660,16 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
                 <div className="Asc-help-list-box">
                   <h3 className="Asc-help-list-title">
-                    Benefits of Alumni River Cruises:
+                    Benefits of Alumni Expedition Cruises:
                   </h3>
 
                   <ul className="Asc-help-bullets">
                     {[
-                      "Luxury travel experiences",
+                      "Educational exploration opportunities",
+                      "Unique wildlife and nature encounters",
                       "Meaningful alumni engagement",
                       "Donor relationship building",
-                      "Lifelong learning opportunities",
-                      "Cultural immersion and exploration",
+                      "Transformational travel experiences",
                     ].map((item, i) => (
                       <li key={i}>
                         <div className="Asc-bullet-icon">
@@ -1660,7 +1683,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
                   <p className="Asc-help-intro" style={{ marginTop: "20px" }}>
                     Contact Trips &amp; Ships Luxury Travel today to begin
-                    planning your custom alumni river cruise experience.
+                    planning your custom alumni expedition cruise experience.
                   </p>
                 </div>
               </div>
@@ -1672,4 +1695,4 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
   );
 };
 
-export default LuxuryAlumniRiverCruises;
+export default LuxuryAlumniExpeditionCruises;

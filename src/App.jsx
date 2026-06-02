@@ -21,6 +21,7 @@ import AlumniCruises from "./pages/AlumniCruises/AlumniCruises";
 import UniversityGroupTravelPlanning from "./pages/UniversityGroupTravelPlanning/UniversityGroupTravelPlanning";
 import WhyUniversitiesPartner from "./pages/WhyUniversitiesPartner/WhyUniversitiesPartner";
 import LuxuryAlumniRiverCruises from "./pages/LuxuryAlumniRiverCruises/LuxuryAlumniRiverCruises";
+import LuxuryAlumniExpeditionCruises from "./pages/LuxuryAlumniExpeditionCruises/LuxuryAlumniExpeditionCruises";
 
 function App() {
   return (
@@ -126,6 +127,12 @@ function App() {
            <Route
             path="/alumni-river-cruises"
             element={<LuxuryAlumniRiverCruises />}
+          />
+
+          
+           <Route
+            path="/alumni-expedition-cruises"
+            element={<LuxuryAlumniExpeditionCruises />}
           />
         </Routes>
       </BrowserRouter>
