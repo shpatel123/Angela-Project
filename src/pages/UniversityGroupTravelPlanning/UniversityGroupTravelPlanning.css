@@ -724,7 +724,7 @@
   }
 
   .ugt-diff-title {
-    font-size: 32px;
+    font-size: 28px !important;
   }
 
   .ugt-diff-intro {
@@ -1020,7 +1020,7 @@
    ========================================================================== */
 
 .luc-destinations-section {
-  padding: 80px 20px;
+  padding: 60px 20px;
   background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-soft) 50%, var(--bg-white) 100%);
   position: relative;
   overflow: hidden;
@@ -1064,7 +1064,7 @@
 
 .luc-destinations-title {
   font-family: var(--font-display);
-  font-size: 44px;
+  font-size: 48px;
   color: var(--navy);
   font-weight: 500;
   line-height: 1.2;
@@ -1340,11 +1340,11 @@
     grid-column: auto;
   }
   .luc-destinations-title {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .luc-destinations-section {
     padding: 60px 16px;
   }
@@ -1360,7 +1360,7 @@
     grid-column: auto;
   }
   .luc-destinations-title {
-    font-size: 28px;
+    font-size: 24px !important;
   }
   .luc-destinations-intro {
     font-size: 15px;
@@ -1661,11 +1661,14 @@
   }
 
   .luc-why-title {
-    font-size: 34px;
+    font-size: 28px;
+  }
+  .ugt-approach-title{
+    font-size: 24px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .luc-why-section {
     padding: 60px 16px;
   }
@@ -1673,9 +1676,12 @@
   .luc-why-images {
     height: 290px;
   }
+  .ugt-approach-title{
+    font-size: 20px;
+  }
 
-  .luc-why-title {
-    font-size: 27px;
+  .luc-why-title, .ugt-component-subtitle {
+    font-size: 24px;
   }
 
   .luc-why-intro {
@@ -2020,6 +2026,9 @@
 @media (max-width: 480px) {
   .luc-dest-items-grid {
     grid-template-columns: 1fr;
+  }
+  .luc-dest-img-title{
+    font-size: 20px;
   }
 }
 
