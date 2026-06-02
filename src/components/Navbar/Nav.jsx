@@ -168,6 +168,14 @@ const Nav = () => {
               >
                 Why Universities Partner With Travel Companies
               </NavLink>
+
+              <NavLink
+                to="/alumni-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Alumni River Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -338,6 +346,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Why Universities Partner With Travel Companies
+            </NavLink>
+
+            <NavLink
+              to="/alumni-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Alumni River Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

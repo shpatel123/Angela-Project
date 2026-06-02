@@ -80,7 +80,7 @@ const sections = [
           "Destination management organizations",
         ],
       },
-       {
+      {
         type: "list",
         label: "These partnerships often provide:",
         variant: "negative",
@@ -750,7 +750,10 @@ WHY INTERNAL TRAVEL PLANNING OFTEN BECOMES CHALLENGING
       {/* ════════════════════════════════════════
 THE TOP REASONS UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL COMPANIES
 ════════════════════════════════════════ */}
-      <section className="Ejv-section" style={{ backgroundColor: "var(--bg-soft)" }}>
+      <section
+        className="Ejv-section"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
         <div className="Ejv-container">
           {/* Header */}
           <div className="Ejv-header">
@@ -1060,7 +1063,7 @@ BETTER TRAVELER EXPERIENCES
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  src={TravelExperience }
+                  src={TravelExperience}
                   alt="Better alumni travel experiences"
                   className="adg-c-overview-img"
                 />
@@ -1335,9 +1338,7 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">
-              Who Is University Travel Planning Best For?
-            </h2>
+            <h2 className="Asc-h2">Who Are Alumni River Cruises Best For?</h2>
             <div className="Asc-accent-line"></div>
           </div>
 
@@ -1347,13 +1348,12 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
 
               <ul className="Asc-who-list">
                 {[
-                  "Universities developing alumni travel programs",
-                  "Advancement departments",
                   "Alumni associations",
-                  "Donor engagement initiatives",
-                  "Educational travel programs",
-                  "Continuing education organizations",
-                  "Lifelong learning communities",
+                  "Advancement departments",
+                  "Donor engagement programs",
+                  "Lifelong learning organizations",
+                  "Faculty-led educational travel",
+                  "Luxury-minded alumni travelers",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -1368,9 +1368,9 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
 
               <ul className="Asc-who-list">
                 {[
-                  "Organizations seeking unmanaged travel arrangements",
-                  "Budget-focused mass-market travel experiences",
-                  "Programs without engagement or educational objectives",
+                  "Travelers seeking large-ship entertainment",
+                  "Budget-focused group travel",
+                  "Programs without educational objectives",
                 ].map((item, i) => (
                   <li key={i}>
                     <Minus size={16} className="Asc-icon-muted" />
@@ -1389,11 +1389,11 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
           {/* TOP HEADING */}
           <div className="Adg-expert-heading">
             <span className="Adg-expert-eyebrow">
-              University Travel Program Leadership
+              Luxury Cruise Travel Leadership
             </span>
 
             <h2 className="Adg-expert-title">
-              Angela Hughes: A Trusted Authority for University Travel Programs
+              Angela Hughes: A Global Expert in Luxury Cruise Travel
             </h2>
 
             <div className="Adg-expert-divider"></div>
@@ -1406,7 +1406,7 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
               <div className="Adg-expert-portrait-wrap">
                 <img
                   src={AboutImage}
-                  alt="Angela Hughes - University Travel Program Expert"
+                  alt="Angela Hughes - Luxury Cruise Travel Expert"
                   className="Adg-expert-portrait"
                 />
 
@@ -1441,8 +1441,9 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
                 </div>
 
                 <blockquote className="Adg-expert-quote-text">
-                  Universities benefit from the leadership and experience of
-                  Angela Hughes.
+                  When universities partner with Trips &amp; Ships Luxury
+                  Travel, they benefit from Angela Hughes&apos; extensive travel
+                  expertise.
                 </blockquote>
               </div>
 
@@ -1455,14 +1456,14 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
 
                 <div className="Adg-expert-credentials-grid">
                   {[
-                    "More than 40 years in travel",
-                    "Travel to over 121 countries",
+                    "40+ years in the travel industry",
+                    "Travel to more than 121 countries",
                     "Founder of Luxury Travel University",
                     "Travel Leaders Network Advisory Board Member",
-                    "Global travel educator and speaker",
+                    "International luxury travel speaker",
                     "Weekly travel columnist",
                     "2024 Luxury Travel Influencer of the Year",
-                    "Named among the Most Influential Women in Travel",
+                    "Recognized among the travel industry's most influential leaders",
                   ].map((item, i) => (
                     <div className="Adg-expert-list-item" key={i}>
                       <span className="Adg-expert-list-icon">
@@ -1481,8 +1482,8 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
                 style={{ marginTop: "24px" }}
               >
                 <blockquote className="Adg-expert-quote-text">
-                  This level of expertise provides confidence for institutions
-                  seeking a trusted travel partner.
+                  Her knowledge helps universities create travel programs that
+                  exceed expectations while supporting engagement goals.
                 </blockquote>
               </div>
             </div>
@@ -1537,25 +1538,54 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
                     University travel programs require more than booking
                     expertise.
                   </p>
-
                   <p className="Asc-help-intro">
                     They require strategic planning, educational vision, risk
                     management, supplier relationships, and a deep understanding
                     of alumni and donor engagement.
                   </p>
-
                   <p className="Asc-help-intro">
                     Trips &amp; Ships Luxury Travel helps institutions create
                     travel experiences that strengthen relationships, enhance
                     reputation, and support long-term institutional goals.
-                  </p>
-
-                  <p className="Asc-help-intro">
-                    With Angela Hughes' decades of expertise and global travel
-                    experience, universities gain a trusted partner committed to
-                    delivering exceptional outcomes.
-                  </p>
-
+                    {!readMore && (
+                      <button
+                        onClick={() => setReadMore(true)}
+                        style={{
+                          background: "none",
+                          border: "none",
+                          color: "var(--bg-white)",
+                          cursor: "pointer",
+                          marginLeft: "8px",
+                          fontWeight: "600",
+                          padding: 0,
+                        }}
+                      >
+                        Read More
+                      </button>
+                    )}
+                  </p>{" "}
+                  <br />
+                  {readMore && (
+                    <p className="Asc-help-intro">
+                      With Angela Hughes' decades of expertise and global travel
+                      experience, universities gain a trusted partner committed
+                      to delivering exceptional outcomes.
+                      <button
+                        onClick={() => setReadMore(false)}
+                        style={{
+                          background: "none",
+                          border: "none",
+                          color: "var(--bg-white)",
+                          cursor: "pointer",
+                          marginLeft: "8px",
+                          fontWeight: "600",
+                          padding: 0,
+                        }}
+                      >
+                        Read Less
+                      </button>
+                    </p>
+                  )}
                   <div className="Asc-help-btn-container">
                     <button className="Asc-help-cta-btn">
                       Contact Us Today
