@@ -184,6 +184,14 @@ const Nav = () => {
               >
                 Alumni Expedition Cruises
               </NavLink>
+
+              <NavLink
+                to="/small-ship-alumni-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Small Ship Alumni Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -370,6 +378,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Alumni Expedition Cruises
+            </NavLink>
+
+            <NavLink
+              to="/small-ship-alumni-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Small Ship Alumni Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
