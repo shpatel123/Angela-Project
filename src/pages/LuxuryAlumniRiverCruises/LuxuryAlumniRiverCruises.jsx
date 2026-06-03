@@ -21,22 +21,23 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
-import HeroImage1 from "../../assets/WhyUniversitiesPartner/Educational_Travelimage.jpg";
-import HeroImage2 from "../../assets/WhyUniversitiesPartner/FacultyLedTravel2.jpg";
-import HeroImage3 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni3.jpeg";
+import HeroImage1 from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise3.jpg";
+import HeroImage2 from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise.jpg";
+import HeroImage3 from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise2.jpg";
 import CTAImage from "../../assets/UniversityGroupTravelPlanning/StartPlan.jpeg";
 
 import TravelExperience from "../../assets/WhyUniversitiesPartner/Traveler_Experiences.jpeg";
-import TravelExperience2 from "../../assets/WhyUniversitiesPartner/Alumni_Travel_Benefits.jpg";
 
-import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
-import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
-import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
-import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
+import Experience from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise4.jpg";
+import Experience2 from "../../assets/LuxuryAlumniRiverCruises/River_Experience.webp";
 
 
-import RhineImg from "../../assets/LuxuryAlumniTravel/Europe.jpeg";
-import DouroImg from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
+import RiverCruise from "../../assets/LuxuryAlumniRiverCruises/FR_Avignon_AmaCello.webp";
+import Rhine from "../../assets/LuxuryAlumniRiverCruises/Rhine.jpg";
+import Danube from "../../assets/LuxuryAlumniRiverCruises/Danube.jpg";
+import Douro from "../../assets/LuxuryAlumniRiverCruises/AmaDouro__ships.jpg";
+import Seine from "../../assets/LuxuryAlumniRiverCruises/AmaDolce_Exterior.jpg";
+import Duch from "../../assets/LuxuryAlumniRiverCruises/Duch.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -362,7 +363,7 @@ const riverDestinations = [
     title: "Rhine River Cruises",
     badge: "Rhine River",
     icon: Compass,
-    image: RhineImg,
+    image: Rhine,
     desc: "The Rhine remains one of the most requested alumni cruise itineraries.",
     columns: [
       {
@@ -387,7 +388,7 @@ const riverDestinations = [
     title: "Danube River Cruises",
     badge: "Danube River",
     icon: Anchor,
-    image: TravelExperience2,
+    image: Danube,
     desc: "The Danube connects several of Europe's most fascinating cities.",
     columns: [
       {
@@ -407,7 +408,7 @@ const riverDestinations = [
     title: "Seine River Cruises",
     badge: "Seine River",
     icon: Ship,
-    image: Experience1,
+    image: Seine,
     desc: "Perfect for institutions with interests in art, culture, and culinary experiences.",
     columns: [
       {
@@ -432,7 +433,7 @@ const riverDestinations = [
     title: "Douro River Cruises",
     badge: "Douro River",
     icon: Waves,
-    image: DouroImg,
+    image: Douro,
     desc: "Portugal's Douro Valley offers increasingly popular luxury experiences.",
     columns: [
       {
@@ -453,7 +454,7 @@ const riverDestinations = [
     title: "Dutch and Belgian Waterways",
     badge: "Dutch & Belgian",
     icon: MapPin,
-    image: Experience4,
+    image: Duch,
     desc: "Springtime tulip cruises provide exceptional opportunities for enrichment.",
     columns: [
       {
@@ -718,7 +719,7 @@ THE UNIQUE ADVANTAGES OF ALUMNI RIVER CRUISES
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  src={HeroImage2}
+                  src={RiverCruise}
                   alt="Alumni river cruise experience"
                   className="adg-c-overview-img"
                 />

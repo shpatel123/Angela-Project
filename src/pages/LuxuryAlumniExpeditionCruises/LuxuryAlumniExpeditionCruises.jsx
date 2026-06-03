@@ -27,16 +27,17 @@ import HeroImage2 from "../../assets/LuxuryAlumniExpeditionCruises/LuxuryAlumni2
 import HeroImage3 from "../../assets/LuxuryAlumniExpeditionCruises/Educational_Travelimage3.jpeg";
 import CTAImage from "../../assets/LuxuryAlumniExpeditionCruises/StartPlan.jpeg";
 
+import Antarctica from "../../assets/LuxuryAlumniExpeditionCruises/Antarctica.webp";
+import Arctic from "../../assets/LuxuryAlumniExpeditionCruises/Arctic.webp";
+import Alaska from "../../assets/LuxuryAlumniExpeditionCruises/Alaska.webp";
+import Iceland from "../../assets/LuxuryAlumniExpeditionCruises/Iceland.webp";
+import Galapagos from "../../assets/LuxuryAlumniExpeditionCruises/Gal_pagos_Islands.jpg";
+
 import TravelExperience from "../../assets/LuxuryAlumniExpeditionCruises/Asia.jpeg";
-import TravelExperience2 from "../../assets/WhyUniversitiesPartner/Alumni_Travel_Benefits.jpg";
 
 import Experience from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
-import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
 import Experience2 from "../../assets/LuxuryAlumniExpeditionCruises/LuxuryAlumni3.jpeg";
-import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
 
-import RhineImg from "../../assets/LuxuryAlumniTravel/Europe.jpeg";
-import DouroImg from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
 
 import { Helmet } from "react-helmet-async";
 const expeditionDestinations = [
@@ -45,7 +46,7 @@ const expeditionDestinations = [
     title: "Antarctica Expedition Cruises",
     badge: "Antarctica",
     icon: Compass,
-    image: TravelExperience2,
+    image: Antarctica,
     desc: "Antarctica remains one of the world's most coveted travel experiences.",
     columns: [
       {
@@ -79,7 +80,7 @@ const expeditionDestinations = [
     title: "Arctic Expedition Cruises",
     badge: "Arctic",
     icon: Anchor,
-    image: Experience1,
+    image: Arctic,
     desc: "The Arctic provides a fascinating combination of natural beauty and scientific relevance.",
     columns: [
       {
@@ -107,7 +108,7 @@ const expeditionDestinations = [
     title: "Galápagos Islands Expeditions",
     badge: "Galápagos",
     icon: Ship,
-    image: Experience4,
+    image: Galapagos,
     desc: "The Galápagos Islands offer one of the world's most important destinations for educational travel.",
     columns: [
       {
@@ -134,7 +135,7 @@ const expeditionDestinations = [
     title: "Iceland Expedition Cruises",
     badge: "Iceland",
     icon: Waves,
-    image: RhineImg,
+    image: Iceland,
     desc: "Iceland combines adventure with accessibility.",
     columns: [
       {
@@ -167,7 +168,7 @@ const expeditionDestinations = [
     title: "Alaska Expedition Cruises",
     badge: "Alaska",
     icon: MapPin,
-    image: DouroImg,
+    image: Alaska,
     desc: "Unlike traditional Alaska cruises, expedition voyages focus on immersive exploration.",
     columns: [
       {

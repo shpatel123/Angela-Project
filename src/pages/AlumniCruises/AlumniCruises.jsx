@@ -22,9 +22,9 @@ import HeroImage2 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni2.jpeg";
 import HeroImage3 from "../../assets/LuxuryAlumniTravel/LuxuryAlumni3.jpeg";
 import CTAImage from "../../assets/LuxuryAlumniTravel/StartPlan.jpeg";
 
-import Europe from "../../assets/LuxuryAlumniTravel/Europe.jpeg";
-import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpeg";
-import Africa from "../../assets/EducationalTravelPrograms/Educational_Travel.jpg";
+import Europe from "../../assets/LuxuryAlumniTravel/EuropeCruise.jpg";
+import Mediterranean from "../../assets/LuxuryAlumniTravel/Mediterranean.jpg";
+import Alaska from "../../assets/LuxuryAlumniTravel/explora-journeys-alaska-luxury-expedition-cruise.webp";
 import SouthAmerica from "../../assets/FacultyLedTravelPrograms/South_America.jpg";
 
 import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
@@ -681,7 +681,7 @@ WHAT MAKES A SUCCESSFUL ALUMNI CRUISE PROGRAM?
       <section className="experience">
         <div className="section-inner wide">
           <h2 className="afc-h2" style={{ textAlign: "center" }}>
-            Alumni Cruises Travel Experiences
+            Alumni Travel Experiences
           </h2>
           <div className="exp-slider">
             <div className="exp-track">
@@ -856,7 +856,7 @@ WHY UNIVERSITIES PARTNER WITH TRIPS & SHIPS LUXURY TRAVEL
             <div className="azs-experience-card azs-azamara-exp">
               <div className="azs-exp-image-wrap" style={{ height: "330px" }}>
                 <img
-                  src={Asia}
+                  src={Mediterranean}
                   alt="Mediterranean Alumni Cruises"
                   className="azs-exp-img"
                 />
@@ -970,7 +970,7 @@ WHY UNIVERSITIES PARTNER WITH TRIPS & SHIPS LUXURY TRAVEL
             <div className="azs-experience-card azs-azamara-exp">
               <div className="azs-exp-image-wrap" style={{ height: "330px" }}>
                 <img
-                  src={Africa}
+                  src={Alaska}
                   alt="Alaska Alumni Cruises"
                   className="azs-exp-img"
                 />
@@ -1157,7 +1157,7 @@ BENEFITS FOR UNIVERSITY ADVANCEMENT DEPARTMENTS
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  src={Europe}
+                  src={HeroImage2}
                   alt="University advancement and alumni engagement programs"
                   className="adg-c-overview-img"
                 />
