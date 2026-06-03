@@ -23,6 +23,7 @@ import WhyUniversitiesPartner from "./pages/WhyUniversitiesPartner/WhyUniversiti
 import LuxuryAlumniRiverCruises from "./pages/LuxuryAlumniRiverCruises/LuxuryAlumniRiverCruises";
 import LuxuryAlumniExpeditionCruises from "./pages/LuxuryAlumniExpeditionCruises/LuxuryAlumniExpeditionCruises";
 import SmallShipAlumniCruises from "./pages/SmallShipAlumniCruises/SmallShipAlumniCruises";
+import DonorTravelPrograms from "./pages/DonorTravelPrograms/DonorTravelPrograms";
 
 function App() {
   return (
@@ -139,6 +140,11 @@ function App() {
            <Route
             path="/small-ship-alumni-cruises"
             element={<SmallShipAlumniCruises />}
+          />
+
+           <Route
+            path="/donor-travel-programs"
+            element={<DonorTravelPrograms />}
           />
         </Routes>
       </BrowserRouter>
