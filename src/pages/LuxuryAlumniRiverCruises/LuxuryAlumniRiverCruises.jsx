@@ -42,6 +42,7 @@ import Duch from "../../assets/LuxuryAlumniRiverCruises/Duch.jpg";
 import { Helmet } from "react-helmet-async";
 
 
+
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -52,7 +53,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in luxury alumni travel, alumni cruises, educational travel programs, expedition cruises, river cruises, and premium travel experiences.",
+        "Luxury travel agency specializing in alumni river cruises, university travel programs, educational travel experiences, luxury cruises, and donor travel programs.",
     },
 
     {
@@ -61,7 +62,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Luxury travel experts helping universities, alumni associations, affinity groups, and lifelong learners create exceptional travel experiences.",
+        "Luxury travel experts helping universities, alumni associations, advancement departments, and lifelong learning organizations create exceptional river cruise experiences.",
     },
 
     {
@@ -73,21 +74,28 @@ const schemaData = {
         "@id": "https://www.tripsandships.com/#organization",
       },
       description:
-        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker and trainer, weekly industry columnist, and travel expert with over 40 years of experience and travel to more than 121 countries.",
+        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board Member, luxury travel educator, speaker, and travel expert with more than 40 years of experience and travel to over 121 countries.",
     },
 
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel",
-      url: "https://www.tripsandships.com/luxury-alumni-travel",
-      name: "Luxury Alumni Travel",
+      "@id": "https://www.tripsandships.com/alumni-river-cruises",
+      url: "https://www.tripsandships.com/alumni-river-cruises",
+      name: "Alumni River Cruises",
       description:
-        "Luxury alumni travel experiences including alumni cruises, alumni river cruises, expedition voyages, educational travel, and premium university travel programs.",
+        "Luxury alumni river cruises for universities, alumni associations, donors, and lifelong learning travelers. Explore the Rhine, Danube, Seine, and Douro Rivers through expertly planned educational travel experiences.",
+      isPartOf: {
+        "@id": "https://www.tripsandships.com/#website",
+      },
+      about: {
+        "@id": "https://www.tripsandships.com/#travelagency",
+      },
     },
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#breadcrumb",
+      "@id":
+        "https://www.tripsandships.com/alumni-river-cruises#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -98,145 +106,128 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Alumni Travel",
-          item: "https://www.tripsandships.com/alumni-travel",
+          name: "Alumni Cruises",
+          item: "https://www.tripsandships.com/alumni-cruises",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Luxury Alumni Travel",
-          item: "https://www.tripsandships.com/luxury-alumni-travel",
+          name: "Alumni River Cruises",
+          item: "https://www.tripsandships.com/alumni-river-cruises",
         },
       ],
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#faq",
+      "@id":
+        "https://www.tripsandships.com/alumni-river-cruises#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is luxury alumni travel?",
+          name: "What is an alumni river cruise?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel combines premium travel experiences with alumni engagement, lifelong learning, and meaningful connections to university communities.",
+            text: "An alumni river cruise is a university-sponsored travel experience that combines luxury river cruising with educational programming, alumni engagement, and cultural exploration.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are universities offering alumni travel programs?",
+          name: "Why are river cruises popular among alumni?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities use alumni travel programs to strengthen alumni engagement, encourage lifelong learning, support donor participation, and build stronger communities.",
+            text: "River cruises provide intimate experiences, cultural immersion, educational opportunities, luxury accommodations, and convenient travel throughout Europe and other destinations.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are the best destinations for alumni travel?",
+          name: "Which rivers are most popular for alumni cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Popular destinations include Italy, France, Greece, Alaska, Antarctica, South Africa, Japan, and European river cruise itineraries.",
+            text: "The Rhine, Danube, Seine, and Douro Rivers are among the most requested alumni river cruise itineraries.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are cruises popular for alumni groups?",
+          name: "Are river cruises suitable for donors?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Cruises provide convenience, educational opportunities, social interaction, and the ability to visit multiple destinations in a comfortable environment.",
+            text: "Yes. The intimate atmosphere and personalized experience make river cruises ideal for donor cultivation and relationship building.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What travel company specializes in alumni travel?",
+          name: "How many travelers typically participate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel specializes in luxury alumni travel, educational travel, alumni cruises, and university travel planning.",
+            text: "Most alumni river cruise groups range from 20 to 100 participants depending on the institution and itinerary.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What makes luxury alumni travel different?",
+          name: "Can faculty participate in alumni river cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel focuses on premium accommodations, personalized service, educational enrichment, and exclusive experiences.",
+            text: "Absolutely. Faculty lectures, destination insights, and educational programming often become highlights of the travel experience.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are luxury alumni cruises worth it?",
+          name: "Are excursions included on river cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni cruises combine exceptional service, destination immersion, educational programming, and meaningful alumni engagement.",
+            text: "Most luxury river cruises include guided excursions, cultural experiences, and destination-focused activities throughout the itinerary.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni river cruises?",
+          name: "How far in advance should alumni river cruises be planned?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni river cruises are educational and cultural travel experiences designed for university alumni, often sailing Europe's most iconic rivers.",
+            text: "Universities should ideally begin planning alumni river cruise programs 12 to 24 months before departure to secure preferred dates and accommodations.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni expedition cruises?",
+          name: "What age groups participate in alumni river cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni expedition cruises explore destinations such as Antarctica, the Arctic, Greenland, Alaska, and the Galapagos Islands.",
+            text: "Most participants are alumni, donors, spouses, and lifelong learners, although many programs also welcome family members.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are small ship cruises popular for alumni travel?",
+          name: "Are river cruises luxurious?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Small ship cruises offer personalized service, greater destination access, and deeper cultural immersion.",
+            text: "Yes. Modern river ships offer elegant accommodations, fine dining, personalized service, and exceptional comfort throughout the journey.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Can alumni travel strengthen university engagement?",
+          name: "What educational opportunities are available?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Alumni travel creates opportunities for graduates to reconnect with fellow alumni, faculty, and university leadership.",
+            text: "Universities often incorporate faculty lectures, destination experts, historical tours, cultural experiences, and lifelong learning opportunities into river cruise programs.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What should universities look for in an alumni travel partner?",
+          name: "Can alumni river cruises be customized?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities should seek expertise in luxury travel, educational travel, supplier relationships, and alumni engagement.",
-          },
-        },
-
-        {
-          "@type": "Question",
-          name: "Are faculty-hosted alumni travel programs beneficial?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Faculty-hosted travel programs provide educational enrichment and unique learning opportunities for alumni.",
-          },
-        },
-
-        {
-          "@type": "Question",
-          name: "Can luxury alumni travel support donor development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Many institutions use luxury alumni travel and donor travel programs to deepen relationships with supporters.",
+            text: "Yes. Universities can include private receptions, faculty presentations, alumni networking events, donor experiences, and branded programming.",
           },
         },
 
@@ -245,9 +236,18 @@ const schemaData = {
           name: "Why choose Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel combines luxury travel expertise, educational travel experience, alumni travel planning, and personalized service.",
+            text: "Trips & Ships Luxury Travel combines luxury cruise expertise, university travel experience, educational programming support, and personalized service to create exceptional alumni river cruise experiences.",
           },
         },
+
+        {
+          "@type": "Question",
+          name: "How can universities start an alumni river cruise program?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A consultation with Trips & Ships Luxury Travel helps identify travel objectives, audiences, destinations, educational goals, and planning timelines.",
+          },
+        }
       ],
     },
   ],

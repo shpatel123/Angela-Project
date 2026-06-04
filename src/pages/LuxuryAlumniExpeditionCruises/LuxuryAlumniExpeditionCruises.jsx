@@ -186,6 +186,8 @@ const expeditionDestinations = [
       "An outstanding option for universities introducing alumni to expedition travel.",
   },
 ];
+
+
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -196,7 +198,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in luxury alumni travel, alumni cruises, educational travel programs, expedition cruises, river cruises, and premium travel experiences.",
+        "Luxury travel agency specializing in alumni expedition cruises, educational travel programs, university travel experiences, donor travel programs, and luxury adventure travel.",
     },
 
     {
@@ -205,7 +207,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Luxury travel experts helping universities, alumni associations, affinity groups, and lifelong learners create exceptional travel experiences.",
+        "Luxury travel experts helping universities, alumni associations, advancement departments, and lifelong learning organizations create exceptional expedition cruise experiences.",
     },
 
     {
@@ -217,21 +219,28 @@ const schemaData = {
         "@id": "https://www.tripsandships.com/#organization",
       },
       description:
-        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker and trainer, weekly industry columnist, and travel expert with over 40 years of experience and travel to more than 121 countries.",
+        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board Member, luxury travel educator, speaker, and travel expert with more than 40 years of experience and travel to over 121 countries.",
     },
 
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel",
-      url: "https://www.tripsandships.com/luxury-alumni-travel",
-      name: "Luxury Alumni Travel",
+      "@id": "https://www.tripsandships.com/alumni-expedition-cruises",
+      url: "https://www.tripsandships.com/alumni-expedition-cruises",
+      name: "Alumni Expedition Cruises",
       description:
-        "Luxury alumni travel experiences including alumni cruises, alumni river cruises, expedition voyages, educational travel, and premium university travel programs.",
+        "Luxury alumni expedition cruises to Antarctica, the Arctic, Galápagos Islands, Iceland, Alaska, and other extraordinary destinations designed for universities, alumni associations, donors, and lifelong learners.",
+      isPartOf: {
+        "@id": "https://www.tripsandships.com/#website",
+      },
+      about: {
+        "@id": "https://www.tripsandships.com/#travelagency",
+      },
     },
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#breadcrumb",
+      "@id":
+        "https://www.tripsandships.com/alumni-expedition-cruises#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -242,145 +251,129 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Alumni Travel",
-          item: "https://www.tripsandships.com/alumni-travel",
+          name: "Alumni Cruises",
+          item: "https://www.tripsandships.com/alumni-cruises",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Luxury Alumni Travel",
-          item: "https://www.tripsandships.com/luxury-alumni-travel",
+          name: "Alumni Expedition Cruises",
+          item:
+            "https://www.tripsandships.com/alumni-expedition-cruises",
         },
       ],
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#faq",
+      "@id":
+        "https://www.tripsandships.com/alumni-expedition-cruises#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is luxury alumni travel?",
+          name: "What is an alumni expedition cruise?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel combines premium travel experiences with alumni engagement, lifelong learning, and meaningful connections to university communities.",
+            text: "An alumni expedition cruise is an educational travel experience that combines exploration, learning, and luxury travel in remote destinations around the world.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are universities offering alumni travel programs?",
+          name: "What destinations are most popular for alumni expedition cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities use alumni travel programs to strengthen alumni engagement, encourage lifelong learning, support donor participation, and build stronger communities.",
+            text: "Antarctica, the Arctic, Galápagos Islands, Iceland, and Alaska are among the most requested expedition cruise destinations.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are the best destinations for alumni travel?",
+          name: "Are expedition cruises physically demanding?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Popular destinations include Italy, France, Greece, Alaska, Antarctica, South Africa, Japan, and European river cruise itineraries.",
+            text: "Most expedition cruises offer varying activity levels, allowing travelers to choose experiences that match their comfort, interests, and mobility.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are cruises popular for alumni groups?",
+          name: "Are expedition cruises luxurious?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Cruises provide convenience, educational opportunities, social interaction, and the ability to visit multiple destinations in a comfortable environment.",
+            text: "Yes. Modern expedition ships provide exceptional accommodations, fine dining, personalized service, and luxury amenities while exploring remote destinations.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What travel company specializes in alumni travel?",
+          name: "Can faculty participate in expedition cruise programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel specializes in luxury alumni travel, educational travel, alumni cruises, and university travel planning.",
+            text: "Absolutely. Faculty participation enhances educational value through lectures, destination insights, discussions, and specialized expertise.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What makes luxury alumni travel different?",
+          name: "Are expedition cruises suitable for donor travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel focuses on premium accommodations, personalized service, educational enrichment, and exclusive experiences.",
+            text: "Yes. Expedition cruises create memorable experiences that strengthen donor relationships, encourage meaningful engagement, and support institutional affinity.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are luxury alumni cruises worth it?",
+          name: "How many travelers typically participate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni cruises combine exceptional service, destination immersion, educational programming, and meaningful alumni engagement.",
+            text: "Most university expedition cruise groups range from 20 to 80 participants depending on the destination, vessel, and institutional objectives.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni river cruises?",
+          name: "How far in advance should expedition cruises be planned?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni river cruises are educational and cultural travel experiences designed for university alumni, often sailing Europe's most iconic rivers.",
+            text: "Universities should ideally begin planning expedition cruise programs 18 to 24 months before departure because availability is often limited.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni expedition cruises?",
+          name: "Are educational lectures included on expedition cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni expedition cruises explore destinations such as Antarctica, the Arctic, Greenland, Alaska, and the Galapagos Islands.",
+            text: "Most expedition voyages feature expert presentations, destination-focused learning opportunities, scientific insights, and educational programming.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are small ship cruises popular for alumni travel?",
+          name: "What wildlife might travelers see on expedition cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Small ship cruises offer personalized service, greater destination access, and deeper cultural immersion.",
+            text: "Depending on the destination, travelers may encounter whales, penguins, polar bears, sea lions, seabirds, giant tortoises, and other remarkable wildlife species.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Can alumni travel strengthen university engagement?",
+          name: "Why are expedition cruises growing in popularity?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Alumni travel creates opportunities for graduates to reconnect with fellow alumni, faculty, and university leadership.",
+            text: "Travelers increasingly seek authentic, educational, transformational, and immersive experiences that combine exploration with lifelong learning.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What should universities look for in an alumni travel partner?",
+          name: "Can alumni expedition cruises be customized?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities should seek expertise in luxury travel, educational travel, supplier relationships, and alumni engagement.",
-          },
-        },
-
-        {
-          "@type": "Question",
-          name: "Are faculty-hosted alumni travel programs beneficial?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Faculty-hosted travel programs provide educational enrichment and unique learning opportunities for alumni.",
-          },
-        },
-
-        {
-          "@type": "Question",
-          name: "Can luxury alumni travel support donor development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Many institutions use luxury alumni travel and donor travel programs to deepen relationships with supporters.",
+            text: "Yes. Universities can incorporate faculty lectures, private receptions, donor events, educational themes, and institution-branded experiences.",
           },
         },
 
@@ -389,9 +382,18 @@ const schemaData = {
           name: "Why choose Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel combines luxury travel expertise, educational travel experience, alumni travel planning, and personalized service.",
+            text: "Trips & Ships Luxury Travel combines luxury travel expertise, expedition planning knowledge, educational travel experience, and university-focused program development.",
           },
         },
+
+        {
+          "@type": "Question",
+          name: "How do universities begin planning an expedition cruise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A consultation with Trips & Ships Luxury Travel helps determine institutional goals, traveler interests, destinations, educational objectives, and planning timelines.",
+          },
+        }
       ],
     },
   ],

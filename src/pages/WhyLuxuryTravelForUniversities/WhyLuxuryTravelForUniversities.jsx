@@ -40,7 +40,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in luxury alumni travel, alumni cruises, educational travel programs, expedition cruises, river cruises, and premium travel experiences.",
+        "Luxury travel agency specializing in university travel programs, alumni cruises, donor travel programs, educational travel, and luxury group travel experiences.",
     },
 
     {
@@ -49,7 +49,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Luxury travel experts helping universities, alumni associations, affinity groups, and lifelong learners create exceptional travel experiences.",
+        "Trusted university travel partner providing alumni travel programs, donor travel experiences, educational travel planning, luxury cruises, and customized group travel solutions.",
     },
 
     {
@@ -61,21 +61,30 @@ const schemaData = {
         "@id": "https://www.tripsandships.com/#organization",
       },
       description:
-        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker and trainer, weekly industry columnist, and travel expert with over 40 years of experience and travel to more than 121 countries.",
+        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board Member, luxury travel educator, international speaker, columnist, and travel expert with more than 40 years of experience and travel to over 121 countries.",
     },
 
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel",
-      url: "https://www.tripsandships.com/luxury-alumni-travel",
-      name: "Luxury Alumni Travel",
+      "@id":
+        "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities",
+      url:
+        "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities",
+      name: "Why Trips & Ships Luxury Travel for Universities",
       description:
-        "Luxury alumni travel experiences including alumni cruises, alumni river cruises, expedition voyages, educational travel, and premium university travel programs.",
+        "Discover why universities, alumni associations, advancement offices, and lifelong learning organizations choose Trips & Ships Luxury Travel for alumni cruises, donor travel programs, educational travel, and luxury group experiences.",
+      isPartOf: {
+        "@id": "https://www.tripsandships.com/#website",
+      },
+      about: {
+        "@id": "https://www.tripsandships.com/#travelagency",
+      },
     },
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#breadcrumb",
+      "@id":
+        "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -86,160 +95,149 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Alumni Travel",
-          item: "https://www.tripsandships.com/alumni-travel",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Luxury Alumni Travel",
-          item: "https://www.tripsandships.com/luxury-alumni-travel",
+          name: "Why Trips & Ships Luxury Travel for Universities",
+          item:
+            "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities",
         },
       ],
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#faq",
+      "@id":
+        "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is luxury alumni travel?",
+          name: "Why do universities choose Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel combines premium travel experiences with alumni engagement, lifelong learning, and meaningful connections to university communities.",
+            text: "Universities choose Trips & Ships Luxury Travel because we understand alumni engagement, donor relations, educational travel, luxury travel planning, and the unique objectives of higher education institutions.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are universities offering alumni travel programs?",
+          name: "What types of travel programs do you manage?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities use alumni travel programs to strengthen alumni engagement, encourage lifelong learning, support donor participation, and build stronger communities.",
+            text: "We manage alumni cruises, donor travel programs, educational tours, river cruises, expedition cruises, small ship cruises, faculty-led travel programs, and custom university travel experiences.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are the best destinations for alumni travel?",
+          name: "How is Trips & Ships Luxury Travel different from a traditional travel agency?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Popular destinations include Italy, France, Greece, Alaska, Antarctica, South Africa, Japan, and European river cruise itineraries.",
+            text: "Unlike traditional travel agencies, we focus on strategic travel experiences that support university engagement, alumni relations, donor stewardship, lifelong learning, and advancement objectives.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are cruises popular for alumni groups?",
+          name: "Can university travel programs be customized?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Cruises provide convenience, educational opportunities, social interaction, and the ability to visit multiple destinations in a comfortable environment.",
+            text: "Absolutely. Every travel program is customized based on institutional goals, audience demographics, educational objectives, travel preferences, and engagement priorities.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What travel company specializes in alumni travel?",
+          name: "Do you help with donor travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel specializes in luxury alumni travel, educational travel, alumni cruises, and university travel planning.",
+            text: "Yes. Donor engagement and stewardship travel programs are among our specialties, helping institutions strengthen relationships and support advancement initiatives.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What makes luxury alumni travel different?",
+          name: "Can faculty participate in university travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel focuses on premium accommodations, personalized service, educational enrichment, and exclusive experiences.",
+            text: "Faculty participation is highly encouraged and often enhances the educational value of travel experiences through lectures, discussions, and destination-specific expertise.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are luxury alumni cruises worth it?",
+          name: "What destinations are most popular for university travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni cruises combine exceptional service, destination immersion, educational programming, and meaningful alumni engagement.",
+            text: "Europe, Alaska, Antarctica, the Mediterranean, river cruise regions, the Galápagos Islands, and culturally rich destinations consistently perform well for university travel programs.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni river cruises?",
+          name: "How far in advance should university travel planning begin?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni river cruises are educational and cultural travel experiences designed for university alumni, often sailing Europe's most iconic rivers.",
+            text: "Most successful university travel programs begin planning 12 to 24 months before departure to secure preferred itineraries, accommodations, and group space.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni expedition cruises?",
+          name: "Do you provide traveler support?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni expedition cruises explore destinations such as Antarctica, the Arctic, Greenland, Alaska, and the Galapagos Islands.",
+            text: "Yes. We provide comprehensive traveler support before, during, and after travel, ensuring a seamless and enjoyable experience for participants.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are small ship cruises popular for alumni travel?",
+          name: "Can travel programs support fundraising goals?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Small ship cruises offer personalized service, greater destination access, and deeper cultural immersion.",
+            text: "Yes. Travel experiences often strengthen alumni and donor relationships, creating opportunities that contribute to long-term advancement and fundraising success.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Can alumni travel strengthen university engagement?",
+          name: "Why is Angela Hughes involved in university travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Alumni travel creates opportunities for graduates to reconnect with fellow alumni, faculty, and university leadership.",
+            text: "Angela Hughes brings more than 40 years of travel industry experience, expertise gained from visiting over 121 countries, and a deep commitment to educational travel and exceptional service.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What should universities look for in an alumni travel partner?",
+          name: "What is the first step to working with Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities should seek expertise in luxury travel, educational travel, supplier relationships, and alumni engagement.",
+            text: "The first step is a consultation to understand your institution's goals, audience, travel objectives, and opportunities for creating a successful travel program.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are faculty-hosted alumni travel programs beneficial?",
+          name: "What makes Trips & Ships Luxury Travel a trusted university travel partner?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Faculty-hosted travel programs provide educational enrichment and unique learning opportunities for alumni.",
+            text: "Our university-focused expertise, luxury travel specialization, educational travel experience, donor engagement knowledge, strong supplier relationships, and personalized service make us a trusted partner for higher education institutions.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Can luxury alumni travel support donor development?",
+          name: "What benefits do universities gain from partnering with Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Many institutions use luxury alumni travel and donor travel programs to deepen relationships with supporters.",
+            text: "Universities gain expert planning, enhanced alumni engagement, stronger donor relationships, educational enrichment, reduced administrative burden, and access to world-class travel experiences.",
           },
-        },
-
-        {
-          "@type": "Question",
-          name: "Why choose Trips & Ships Luxury Travel?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Trips & Ships Luxury Travel combines luxury travel expertise, educational travel experience, alumni travel planning, and personalized service.",
-          },
-        },
+        }
       ],
     },
   ],
 };
+
+
 
 function FAQ() {
   const [open, setOpen] = useState(null);

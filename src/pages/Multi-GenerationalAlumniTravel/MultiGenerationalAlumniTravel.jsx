@@ -171,7 +171,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in luxury alumni travel, alumni cruises, educational travel programs, expedition cruises, river cruises, and premium travel experiences.",
+        "Luxury travel agency specializing in multi-generational alumni travel, family alumni cruises, educational travel programs, donor travel experiences, and university travel planning.",
     },
 
     {
@@ -180,7 +180,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Luxury travel experts helping universities, alumni associations, affinity groups, and lifelong learners create exceptional travel experiences.",
+        "University travel specialists helping institutions create family-focused alumni travel programs, educational journeys, luxury cruises, and multi-generational travel experiences.",
     },
 
     {
@@ -192,21 +192,30 @@ const schemaData = {
         "@id": "https://www.tripsandships.com/#organization",
       },
       description:
-        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker and trainer, weekly industry columnist, and travel expert with over 40 years of experience and travel to more than 121 countries.",
+        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board Member, luxury travel educator, international speaker, and travel expert with more than 40 years of experience and travel to over 121 countries.",
     },
 
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel",
-      url: "https://www.tripsandships.com/luxury-alumni-travel",
-      name: "Luxury Alumni Travel",
+      "@id":
+        "https://www.tripsandships.com/multi-generational-alumni-travel",
+      url:
+        "https://www.tripsandships.com/multi-generational-alumni-travel",
+      name: "Multi-Generational Alumni Travel",
       description:
-        "Luxury alumni travel experiences including alumni cruises, alumni river cruises, expedition voyages, educational travel, and premium university travel programs.",
+        "Discover multi-generational alumni travel programs designed for alumni, children, grandchildren, and families. Strengthen university connections across generations through meaningful travel experiences.",
+      isPartOf: {
+        "@id": "https://www.tripsandships.com/#website",
+      },
+      about: {
+        "@id": "https://www.tripsandships.com/#travelagency",
+      },
     },
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#breadcrumb",
+      "@id":
+        "https://www.tripsandships.com/multi-generational-alumni-travel#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -217,156 +226,143 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Alumni Travel",
-          item: "https://www.tripsandships.com/alumni-travel",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Luxury Alumni Travel",
-          item: "https://www.tripsandships.com/luxury-alumni-travel",
+          name: "Multi-Generational Alumni Travel",
+          item:
+            "https://www.tripsandships.com/multi-generational-alumni-travel",
         },
       ],
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/luxury-alumni-travel#faq",
+      "@id":
+        "https://www.tripsandships.com/multi-generational-alumni-travel#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is luxury alumni travel?",
+          name: "What is multi-generational alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel combines premium travel experiences with alumni engagement, lifelong learning, and meaningful connections to university communities.",
+            text: "Multi-generational alumni travel is a university-sponsored travel experience designed for alumni and their family members across multiple generations, including spouses, children, grandchildren, and extended family.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are universities offering alumni travel programs?",
+          name: "Who can participate in multi-generational alumni travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities use alumni travel programs to strengthen alumni engagement, encourage lifelong learning, support donor participation, and build stronger communities.",
+            text: "Most programs welcome alumni, spouses, children, grandchildren, parents, extended family members, and invited family guests.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are the best destinations for alumni travel?",
+          name: "Why are multi-generational alumni travel programs becoming popular?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Popular destinations include Italy, France, Greece, Alaska, Antarctica, South Africa, Japan, and European river cruise itineraries.",
+            text: "Families increasingly value shared experiences, educational travel opportunities, lifelong learning, and meaningful ways to spend time together while exploring new destinations.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are cruises popular for alumni groups?",
+          name: "What destinations work best for multi-generational alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Cruises provide convenience, educational opportunities, social interaction, and the ability to visit multiple destinations in a comfortable environment.",
+            text: "Popular destinations include Alaska, the Mediterranean, Europe, the British Isles, the Galápagos Islands, and family-friendly cruise itineraries around the world.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What travel company specializes in alumni travel?",
+          name: "Are cruises a good option for multi-generational alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Trips & Ships Luxury Travel specializes in luxury alumni travel, educational travel, alumni cruises, and university travel planning.",
+            text: "Yes. Cruises provide convenient travel logistics, activities for different age groups, comfortable accommodations, educational opportunities, and shared family experiences.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What makes luxury alumni travel different?",
+          name: "Can younger family members participate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni travel focuses on premium accommodations, personalized service, educational enrichment, and exclusive experiences.",
+            text: "Absolutely. Many programs are specifically designed to accommodate children and grandchildren through family-friendly activities and educational experiences.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are luxury alumni cruises worth it?",
+          name: "Are educational opportunities included in family alumni travel programs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury alumni cruises combine exceptional service, destination immersion, educational programming, and meaningful alumni engagement.",
+            text: "Most university travel programs incorporate educational enrichment through faculty presentations, destination experts, cultural experiences, and interactive learning opportunities.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni river cruises?",
+          name: "How do multi-generational travel programs support alumni engagement?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni river cruises are educational and cultural travel experiences designed for university alumni, often sailing Europe's most iconic rivers.",
+            text: "These programs strengthen alumni relationships while introducing younger generations to the university community, traditions, values, and lifelong learning opportunities.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What are alumni expedition cruises?",
+          name: "Can family travel programs support university advancement goals?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Alumni expedition cruises explore destinations such as Antarctica, the Arctic, Greenland, Alaska, and the Galapagos Islands.",
+            text: "Yes. Family travel programs often contribute to stronger alumni engagement, donor stewardship, family philanthropy discussions, and long-term institutional loyalty.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Why are small ship cruises popular for alumni travel?",
+          name: "How far in advance should multi-generational travel programs be planned?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Small ship cruises offer personalized service, greater destination access, and deeper cultural immersion.",
+            text: "Most successful programs begin planning 12 to 24 months before departure to secure preferred accommodations, itineraries, and group space.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Can alumni travel strengthen university engagement?",
+          name: "Can universities customize family travel experiences?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Alumni travel creates opportunities for graduates to reconnect with fellow alumni, faculty, and university leadership.",
+            text: "Absolutely. Programs can be tailored to institutional goals, family demographics, educational objectives, destinations, and engagement priorities.",
           },
         },
 
         {
           "@type": "Question",
-          name: "What should universities look for in an alumni travel partner?",
+          name: "Why choose Trips & Ships Luxury Travel for multi-generational alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities should seek expertise in luxury travel, educational travel, supplier relationships, and alumni engagement.",
+            text: "Trips & Ships Luxury Travel combines luxury travel expertise, educational travel experience, family travel planning, alumni engagement strategy, and university-focused program development.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Are faculty-hosted alumni travel programs beneficial?",
+          name: "How can universities get started with a multi-generational alumni travel program?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Faculty-hosted travel programs provide educational enrichment and unique learning opportunities for alumni.",
+            text: "A consultation with Trips & Ships Luxury Travel helps identify institutional goals, family audiences, destinations, educational opportunities, and travel program strategies.",
           },
         },
 
         {
           "@type": "Question",
-          name: "Can luxury alumni travel support donor development?",
+          name: "What are the benefits of multi-generational alumni travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Many institutions use luxury alumni travel and donor travel programs to deepen relationships with supporters.",
+            text: "Benefits include stronger family connections, lifelong learning opportunities, enhanced university affinity, alumni engagement, donor relationship building, and lasting shared memories.",
           },
-        },
-
-        {
-          "@type": "Question",
-          name: "Why choose Trips & Ships Luxury Travel?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Trips & Ships Luxury Travel combines luxury travel expertise, educational travel experience, alumni travel planning, and personalized service.",
-          },
-        },
+        }
       ],
     },
   ],
