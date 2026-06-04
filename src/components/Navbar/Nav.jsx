@@ -208,6 +208,14 @@ const Nav = () => {
               >
                 Multi-Generational Alumni Travel
               </NavLink>
+
+              <NavLink
+                to="/why-trips-and-ships-luxury-travel-for-universities"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Why Trips and Ships Luxury Travel for Universities
+              </NavLink>
             </div>
           </div>
         </div>
@@ -418,6 +426,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Multi-Generational Alumni Travel
+            </NavLink>
+
+            <NavLink
+              to="/why-trips-and-ships-luxury-travel-for-universities"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Why Trips and Ships Luxury Travel for Universities
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

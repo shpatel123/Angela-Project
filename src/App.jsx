@@ -25,6 +25,7 @@ import LuxuryAlumniExpeditionCruises from "./pages/LuxuryAlumniExpeditionCruises
 import SmallShipAlumniCruises from "./pages/SmallShipAlumniCruises/SmallShipAlumniCruises";
 import DonorTravelPrograms from "./pages/DonorTravelPrograms/DonorTravelPrograms";
 import MultiGenerationalAlumniTravel from "./pages/Multi-GenerationalAlumniTravel/MultiGenerationalAlumniTravel";
+import WhyLuxuryTravelForUniversities from "./pages/WhyLuxuryTravelForUniversities/WhyLuxuryTravelForUniversities";
 
 function App() {
   return (
@@ -151,6 +152,12 @@ function App() {
           <Route
             path="/multi-generational-alumni-travel"
             element={<MultiGenerationalAlumniTravel />}
+          />
+
+          
+          <Route
+            path="/why-trips-and-ships-luxury-travel-for-universities"
+            element={<WhyLuxuryTravelForUniversities />}
           />
         </Routes>
       </BrowserRouter>

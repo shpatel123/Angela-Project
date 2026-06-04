@@ -474,6 +474,7 @@ const MultiGenerationalAlumniTravel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage3, HeroImage2];
+  const [readMoreList, setReadMoreList] = useState(false);
   const [activeDest, setActiveDest] = useState("antarctica");
   const currentDest =
     donorTravelDestinations.find((d) => d.id === activeDest) ||
@@ -853,7 +854,7 @@ const MultiGenerationalAlumniTravel = () => {
         </div>
       </section>
 
-      {/* ── THE BENEFITS OF MULTI-GENERATIONAL ALUMNI TRAVEL ─────────────────────── */}
+{/* ── THE BENEFITS OF MULTI-GENERATIONAL ALUMNI TRAVEL ─────────────────────── */}
       <section className="ugt-diff-section" id="ugt-different">
         <div className="ugt-diff-container">
           {/* Header */}
@@ -916,27 +917,65 @@ const MultiGenerationalAlumniTravel = () => {
                 {card.body && <p className="ugt-diff-card-body">{card.body}</p>}
 
                 {card.listItems && (
-                  <>
-                    <p
-                      className="ugt-diff-card-body"
-                      style={{
-                        marginTop: "12px",
-                        marginBottom: "8px",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Exposing younger generations to:
-                    </p>
+                  <div style={{ marginTop: "12px" }}>
+                    {!readMoreList ? (
+                      <button
+                        onClick={() => setReadMoreList(true)}
+                        style={{
+                          background: "none",
+                          border: "none",
+                          color: "var(--text-primary, #0070f3)", // Use your theme's link color variable
+                          cursor: "pointer",
+                          fontWeight: "600",
+                          fontSize: "0.9rem",
+                          padding: 0,
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "4px"
+                        }}
+                      >
+                        Read More - View Pillars
+                      </button>
+                    ) : (
+                      <>
+                        <p
+                          className="ugt-diff-card-body"
+                          style={{
+                            marginTop: "0px",
+                            marginBottom: "8px",
+                            fontWeight: "600",
+                          }}
+                        >
+                          Exposing younger generations to:
+                        </p>
 
-                    <ul className="ugt-diff-risk-list">
-                      {card.listItems.map((item, index) => (
-                        <li key={index} className="ugt-diff-risk-item">
-                          <Check size={14} className="ugt-diff-risk-icon" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
+                        <ul className="ugt-diff-risk-list">
+                          {card.listItems.map((item, index) => (
+                            <li key={index} className="ugt-diff-risk-item">
+                              <Check size={14} className="ugt-diff-risk-icon" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+
+                        <button
+                          onClick={() => setReadMoreList(false)}
+                          style={{
+                            background: "none",
+                            border: "none",
+                            color: "var(--text-primary, #0070f3)",
+                            cursor: "pointer",
+                            fontWeight: "600",
+                            fontSize: "0.9rem",
+                            padding: 0,
+                            marginTop: "10px"
+                          }}
+                        >
+                          Show Less
+                        </button>
+                      </>
+                    )}
+                  </div>
                 )}
               </div>
             ))}
@@ -954,11 +993,12 @@ const MultiGenerationalAlumniTravel = () => {
               <h2 className="mga-card-title">
                 The Educational Value of Multi-Generational Travel
               </h2>
+                        <div className="mga-card-accent-line"></div>
               <p className="mga-card-subtitle">
                 Universities possess a unique advantage when designing family
                 travel programs.
               </p>
-              <div className="mga-card-accent-line"></div>
+    
 
               <div className="mga-card-lead">
                 <span className="mga-lead-badge">Core Advantage</span>

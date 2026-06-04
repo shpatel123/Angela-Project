@@ -445,7 +445,7 @@
 
 .ugt-component-text {
   font-family: var(--font-body);
-  font-size: 15.5px;
+  font-size: 18px;
   color: var(--text-body);
   line-height: 1.8;
   margin-bottom: 24px;
@@ -508,7 +508,7 @@
 
 .ugt-component-footer {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 18px;
   font-style: italic;
   color: var(--text-muted);
   border-left: 2px solid var(--navy-border);
@@ -2222,6 +2222,723 @@
     gap: 16px;
   }
 }
+
+/* ==========================================================================
+   PERSONALIZED SERVICE SECTION (wlt-personalized-*)
+   ========================================================================== */
+
+.wlt-personalized-section {
+  padding: 80px 20px;
+  background: var(--bg-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.wlt-personalized-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.wlt-personalized-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* --- Left Column: Image Wrapper & Overlays --- */
+.wlt-personalized-image-col {
+  position: relative;
+}
+
+.wlt-personalized-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: visible;
+  box-shadow: var(--shadow-lg);
+}
+
+.wlt-personalized-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  display: block;
+  transition: transform var(--transition);
+}
+
+.wlt-personalized-image-wrapper:hover .wlt-personalized-image {
+  transform: scale(1.02);
+}
+
+/* Elegant floating card on top of image */
+.wlt-personalized-image-card {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background: var(--bg-dark2);
+  color: var(--bg-white);
+  padding: 24px 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 220px;
+  z-index: 10;
+  animation: wlt-float 6s ease-in-out infinite;
+}
+
+@keyframes wlt-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.wlt-personalized-card-number {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--bg-soft);
+  margin-bottom: 4px;
+}
+
+.wlt-personalized-card-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Right Column: Content Column --- */
+.wlt-personalized-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wlt-personalized-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  background: var(--navy-soft);
+  padding: 6px 16px;
+  border-radius: 50px;
+}
+
+.wlt-personalized-title {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--navy);
+  margin: 0 0 16px 0;
+}
+
+.wlt-personalized-accent-line {
+  width: 60px;
+  height: 3px;
+  background: var(--navy);
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+/* Intro hook statements */
+.wlt-personalized-intro-statements {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.wlt-personalized-intro-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 18px;
+  background: var(--navy-soft);
+  border-left: 4px solid var(--navy);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.wlt-personalized-intro-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+}
+
+/* Custom boxed layout for lists */
+.wlt-personalized-custom-box {
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  width: 100%;
+  border: 1px solid var(--navy-border);
+}
+
+.wlt-personalized-custom-title {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-body);
+  margin-bottom: 16px;
+  letter-spacing: 0.2px;
+}
+
+.wlt-personalized-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wlt-personalized-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wlt-personalized-check-icon {
+  background: var(--bg-white);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(39, 68, 114, 0.1);
+  flex-shrink: 0;
+}
+
+.wlt-personalized-list-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-body);
+  font-weight: 500;
+}
+
+/* Footer note text */
+.wlt-personalized-footer-text {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--navy-light);
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 991px) {
+  .wlt-personalized-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .wlt-personalized-image {
+    height: 380px;
+  }
+  
+  .wlt-personalized-image-card {
+    bottom: -15px;
+    right: 15px;
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wlt-personalized-section {
+    padding: 50px 15px;
+  }
+  
+  .wlt-personalized-title {
+    font-size: 32px;
+  }
+  
+  .wlt-personalized-image-card {
+    display: none;
+  }
+  
+  .wlt-personalized-custom-box {
+    padding: 20px;
+  }
+}
+
+/* ==========================================================================
+   PROVEN PLANNING PROCESS SECTION (wlt-planning-*)
+   ========================================================================== */
+
+.wlt-planning-section {
+  padding: 60px 20px;
+  background: var(--bg-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.wlt-planning-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.wlt-planning-header {
+  text-align: center;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wlt-planning-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  background: var(--bg-white);
+  padding: 6px 16px;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(39, 68, 114, 0.05);
+}
+
+.wlt-planning-title {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--navy);
+  margin: 0 0 16px 0;
+}
+
+.wlt-planning-accent-line {
+  width: 60px;
+  height: 3px;
+  background: var(--navy);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.wlt-planning-subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 700px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --- Cards Grid --- */
+.wlt-planning-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.wlt-planning-card {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--navy-border);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.wlt-planning-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(39, 68, 114, 0.25);
+}
+
+/* Card Header (Number + Step Title) */
+.wlt-planning-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.wlt-planning-step-num {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--navy);
+  background: var(--navy-soft);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.wlt-planning-step-name {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bg-dark);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Bullets and list inside steps */
+.wlt-planning-card-intro {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-body);
+  margin: 0 0 12px 0;
+}
+
+.wlt-planning-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wlt-planning-card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wlt-planning-card-list-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: var(--navy);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.wlt-planning-card-list-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Descriptions for Steps 4, 5, 6 */
+.wlt-planning-card-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* --- Responsive planning process grid --- */
+@media (max-width: 991px) {
+  .wlt-planning-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .wlt-planning-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 650px) {
+  .wlt-planning-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .wlt-planning-section {
+    padding: 60px 15px;
+  }
+  
+  .wlt-planning-title {
+    font-size: 30px;
+  }
+}
+
+/* ==========================================================================
+   STRONG SUPPLIER RELATIONSHIPS SECTION (wlt-relationships-*)
+   ========================================================================== */
+
+.wlt-relationships-section {
+  padding: 60px 20px;
+  background: var(--bg-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.wlt-relationships-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.wlt-relationships-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* --- Left Column: Content --- */
+.wlt-relationships-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wlt-relationships-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  background: var(--navy-soft);
+  padding: 6px 16px;
+  border-radius: 50px;
+}
+
+.wlt-relationships-title {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--navy);
+  margin: 0 0 16px 0;
+}
+
+.wlt-relationships-accent-line {
+  width: 60px;
+  height: 3px;
+  background: var(--navy);
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
+.wlt-relationships-lead {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-body);
+  margin-bottom: 28px;
+}
+
+/* Partners Box & Pills */
+.wlt-relationships-partners-box {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.wlt-relationships-partners-title {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text-body);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wlt-relationships-partners-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wlt-relationships-partner-pill {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--navy);
+  background: var(--navy-soft);
+  border: 1px solid var(--navy-border);
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.wlt-relationships-partner-pill:hover {
+  transform: translateY(-2px);
+  background: var(--navy);
+  color: var(--bg-white);
+}
+
+/* Benefits Grid & Cards */
+.wlt-relationships-benefits-wrapper {
+  width: 100%;
+}
+
+.wlt-relationships-benefits-title {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-body);
+  margin-bottom: 18px;
+}
+
+.wlt-relationships-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.wlt-relationships-benefit-card {
+  display: flex;
+  gap: 12px;
+  background: var(--bg-soft);
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--navy-border);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.wlt-relationships-benefit-card:hover {
+  border-color: rgba(39, 68, 114, 0.3);
+  box-shadow: var(--shadow);
+}
+
+.wlt-relationships-benefit-icon {
+  background: var(--navy);
+  color: var(--bg-white);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(39, 68, 114, 0.2);
+}
+
+.wlt-relationships-benefit-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wlt-relationships-benefit-name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--bg-dark);
+  margin: 0;
+}
+
+.wlt-relationships-benefit-desc {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* --- Right Column: Image Wrapper --- */
+.wlt-relationships-image-col {
+  position: relative;
+}
+
+.wlt-relationships-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.wlt-relationships-image {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition);
+}
+
+.wlt-relationships-image-wrapper:hover .wlt-relationships-image {
+  transform: scale(1.03);
+}
+
+/* Floating overlay tag */
+.wlt-relationships-image-tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(15, 28, 46, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.wlt-relationships-tag-text {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--bg-white);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* --- Responsive layout --- */
+@media (max-width: 991px) {
+  .wlt-relationships-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .wlt-relationships-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wlt-relationships-title {
+    font-size: 32px;
+  }
+  
+  .wlt-relationships-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .wlt-relationships-section {
+    padding: 60px 15px;
+  }
+}
+
+
+
 
 
 
