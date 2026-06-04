@@ -24,14 +24,14 @@ import CTAImage from "../../assets/LuxuryAlumniTravel/StartPlan.jpeg";
 
 import Europe from "../../assets/LuxuryAlumniTravel/EuropeCruise.jpg";
 import Mediterranean from "../../assets/LuxuryAlumniTravel/Mediterranean.jpg";
-import Alaska from "../../assets/LuxuryAlumniTravel/explora-journeys-alaska-luxury-expedition-cruise.webp";
+import Alaska from "../../assets/LuxuryAlumniTravel/Alaska.jpg";
 import SouthAmerica from "../../assets/FacultyLedTravelPrograms/South_America.jpg";
 
 import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
-import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
+import Experience1 from "../../assets/LuxuryAlumniTravel/Alumni-Travel-Experiences.jpeg";
 import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
-import Experience3 from "../../assets/EducationalTravelPrograms/Educational_Travel4.jpg";
-import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
+import Experience3 from "../../assets/LuxuryAlumniTravel/Alumni-Travel-Experiences2.jpeg";
+import Experience4 from "../../assets/LuxuryAlumniTravel/Alumni-Travel-Experiences3.jpeg";
 import Experience5 from "../../assets/EducationalTravelPrograms/Educational_Travel6.jpg";
 import Experience6 from "../../assets/EducationalTravelPrograms/Educational_Travel7.jpg";
 
