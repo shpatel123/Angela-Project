@@ -200,6 +200,14 @@ const Nav = () => {
               >
                 Donor Travel Programs
               </NavLink>
+
+              <NavLink
+                to="/multi-generational-alumni-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Multi-Generational Alumni Travel
+              </NavLink>
             </div>
           </div>
         </div>
@@ -402,6 +410,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Donor Travel Programs
+            </NavLink>
+
+            <NavLink
+              to="/multi-generational-alumni-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Multi-Generational Alumni Travel
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

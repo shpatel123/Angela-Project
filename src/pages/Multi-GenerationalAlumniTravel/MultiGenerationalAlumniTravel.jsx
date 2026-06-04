@@ -16,30 +16,78 @@ import {
   Waves,
   Repeat,
   TrendingUp,
-  Handshake,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
-import HeroImage1 from "../../assets/DonorTravelPrograms/DonorProgram.jpg";
-import HeroImage2 from "../../assets/DonorTravelPrograms/DonorProgram2.jpg";
-import HeroImage3 from "../../assets/DonorTravelPrograms/DonorProgram3.jpg";
-import CTAImage from "../../assets/DonorTravelPrograms/Start_Planning.jpg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
+import HeroImage1 from "../../assets/MultiGenerationalAlumniTravel/iceland-horseback-riding-kirkjufell-mountain-lupine-fields-adventure.jpg";
+import HeroImage2 from "../../assets/MultiGenerationalAlumniTravel/small-group-hiking-vacation-nature-trail-exploration-journey.jpg";
+import HeroImage3 from "../../assets/MultiGenerationalAlumniTravel/alumni-university-campus-community-aerial-view.jpg";
+import CTAImage from "../../assets/MultiGenerationalAlumniTravel/Plan-Alumni-Travel.jpeg";
+import AlumniTravel from "../../assets/MultiGenerationalAlumniTravel/machu-picchu-group-tour-peru-luxury-cultural-travel-experience.jpg";
+import AlumniTravel2 from "../../assets/MultiGenerationalAlumniTravel/luxury-travelers-exploring-european-village-cultural-vacation.jpg";
+import LoveAlumni from "../../assets/MultiGenerationalAlumniTravel/Love_Alumni_Travel.jpeg";
+import LoveAlumni2 from "../../assets/MultiGenerationalAlumniTravel/Love_Alumni_Travel2.jpeg";
 
-import Mediterian from "../../assets/DonorTravelPrograms/Mediterian.jpg";
-import Danube from "../../assets/DonorTravelPrograms/Danube.jpg";
-import Britislen from "../../assets/DonorTravelPrograms/BritishIsles.jpg";
-import France from "../../assets/DonorTravelPrograms/France.jpg";
-import Antarctica from "../../assets/DonorTravelPrograms/Antarctica.jpg";
-import DonorTravel from "../../assets/DonorTravelPrograms/FacultyLedTravel.jpg";
-
-import DonorExperience from "../../assets/DonorTravelPrograms/DonorTravel.jpeg";
-import DonorExperience2 from "../../assets/DonorTravelPrograms/DonorExperience.jpg";
-import DonorExperience3 from "../../assets/DonorTravelPrograms/Colombia_Maralyn.jpg";
-
+// import Mediterian from "../../assets/DonorTravelPrograms/Mediterian.jpg";
+import Danube from "../../assets/MultiGenerationalAlumniTravel/EuropeRiver.jpg";
+import Britislen from "../../assets/MultiGenerationalAlumniTravel/Britishlens.jpg";
+import Alaska from "../../assets/MultiGenerationalAlumniTravel/Alaska.jpg";
+import Galapagos from "../../assets/MultiGenerationalAlumniTravel/Galapagos.jpg";
 
 import { Helmet } from "react-helmet-async";
 
 const donorTravelDestinations = [
+  {
+    id: "alaska",
+    title: "Alaska Expedition Cruises",
+    badge: "Family Favorite",
+    icon: Compass, // Fits exploration and nature themes
+    image: Alaska, // Make sure to import this image asset at the top
+
+    desc: "An absolute favorite destination for family groups, offering an accessible yet thrilling frontier context perfect for multi-generational adventure and learning.",
+
+    columns: [
+      {
+        label: "Highlights include:",
+        items: [
+          "Wildlife Viewing",
+          "Glacier Exploration",
+          "Natural Beauty",
+          "Educational Opportunities",
+        ],
+      },
+    ],
+
+    themeLabel: "Why Alaska?",
+    themeText:
+      "Alaska combines immersive outdoor discovery with casual, high-impact environments that make it natural and effortless for families and university supporters to bond.",
+  },
+
+  {
+    id: "mediterranean",
+    title: "Mediterranean Family Cruises",
+    badge: "Mediterranean",
+    icon: Ship,
+    // image: Mediterian,
+
+    desc: "Mediterranean itineraries offer timeless, cross-generational appeal by seamlessly blending foundational history, deep culture, great food, and inherently family-friendly experiences.",
+
+    columns: [
+      {
+        label: "Popular countries:",
+        items: ["Italy", "Greece", "Croatia", "Spain"],
+      },
+      {
+        label: "Combines:",
+        items: ["History", "Culture", "Food", "Family-friendly experiences"],
+      },
+    ],
+
+    themeLabel: "Why the Mediterranean?",
+    themeText:
+      "A classic configuration that accommodates varying energy and interest levels across generations—from world-class ruins to relaxed coastal lifestyle exploration.",
+  },
+
   {
     id: "river-cruises",
     title: "European River Cruises",
@@ -47,102 +95,69 @@ const donorTravelDestinations = [
     icon: Waves,
     image: Danube,
 
-    desc: "European river cruises remain among the most successful and popular donor travel formats, combining luxury, culture, education, and convenience in a highly engaging travel experience.",
+    desc: "Increasingly popular among modern family groups looking for immersive educational travel without the logistical friction of changing hotels constantly.",
 
     columns: [
       {
-        label: "Popular itineraries:",
-        items: ["Rhine River", "Danube River", "Seine River", "Douro River"],
+        label: "Travelers enjoy:",
+        items: ["Historic Cities", "Scenic Landscapes", "Cultural Immersion"],
       },
     ],
 
-    themeLabel: "Why River Cruises?",
+    themeLabel: "Family River Cruising",
     themeText:
-      "These journeys combine luxury, culture, and educational opportunities while creating ideal environments for donor engagement and relationship building.",
-  },
-
-  {
-    id: "mediterranean",
-    title: "Mediterranean Cruises",
-    badge: "Mediterranean",
-    icon: Ship,
-    image: Mediterian,
-
-    desc: "Mediterranean cruises offer timeless appeal for donors interested in history, culture, art, and world-class culinary experiences.",
-
-    columns: [
-      {
-        label: "Popular interests:",
-        items: ["History", "Art", "Cuisine", "Ancient Civilizations"],
-      },
-    ],
-
-    themeLabel: "Why the Mediterranean?",
-    themeText:
-      "A perfect blend of educational enrichment, cultural discovery, and luxury travel experiences.",
-  },
-
-  {
-    id: "antarctica",
-    title: "Antarctica & Expedition Travel",
-    badge: "Expeditions",
-    icon: Compass,
-    image: Antarctica,
-
-    desc: "Expedition travel appeals to adventurous donors seeking transformational experiences and extraordinary access to some of the world's most remote destinations.",
-
-    columns: [
-      {
-        label: "Educational themes:",
-        items: ["Climate Science", "Conservation", "Wildlife", "Exploration"],
-      },
-    ],
-
-    themeLabel: "Transformational Travel",
-    themeText:
-      "Expedition journeys often create unforgettable shared experiences that strengthen donor relationships and institutional affinity.",
+      "The slow pace, historical proximity, and boutique scale of river cruisers create highly stable, intimate environments for family bonding and shared institutional affinity.",
   },
 
   {
     id: "british-isles",
-    title: "British Isles & Northern Europe",
+    title: "British Isles Exploration",
     badge: "Northern Europe",
     icon: Anchor,
     image: Britislen,
 
-    desc: "These itineraries appeal strongly to travelers interested in history, heritage, culture, and educational exploration.",
+    desc: "These itineraries appeal deeply to history enthusiasts, genealogy-focused families digging into personal heritages, and groups pursuing deep cultural exploration.",
 
     columns: [
       {
-        label: "Popular regions:",
-        items: ["England", "Scotland", "Ireland", "Scandinavia"],
+        label: "Ideal for:",
+        items: [
+          "History Enthusiasts",
+          "Genealogy Journeys",
+          "Cultural Exploration",
+        ],
       },
     ],
 
     themeLabel: "History & Heritage",
     themeText:
-      "Ideal for donor audiences who appreciate intellectual enrichment and culturally significant destinations.",
+      "Perfect for families seeking intellectual enrichment and meaningful deep dives into shared regional narratives alongside university experts.",
   },
 
   {
-    id: "cultural-journeys",
-    title: "Cultural Land Journeys",
-    badge: "Land Tours",
-    icon: MapPin,
-    image: France,
+    id: "galapagos",
+    title: "Galápagos Islands Expeditions",
+    badge: "Galapagos",
+    icon: MapPin, // Or use a custom animal/island icon if available
+    image: Galapagos, // Make sure to import this image asset at the top
 
-    desc: "Immersive cultural land programs provide meaningful educational experiences while allowing donors to explore some of the world's most fascinating destinations.",
+    desc: "An exceptional and transformational destination for families looking to witness iconic ecosystems, dynamic biology, and wild habitats up close.",
 
     columns: [
       {
-        label: "Popular destinations:",
-        items: ["Italy", "France", "Spain", "Egypt", "Japan"],
+        label: "Core interests:",
+        items: [
+          "Active Wildlife",
+          "Field Science",
+          "Conservation Eco-systems",
+          "Pure Exploration",
+        ],
       },
     ],
 
-    themeLabel: "Educational Value",
+    themeLabel: "Scientific Legacy",
     themeText:
-      "These experiences provide rich educational opportunities while fostering meaningful interaction among donors, faculty, and university leadership.",
+      "Fosters unique spaces where children, parents, and alumni can stand side-by-side with faculty specialists to engage with climate science and wildlife conservation first-hand.",
   },
 ];
 
@@ -362,63 +377,68 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is a donor travel program?",
-      a: "A donor travel program is a curated travel experience designed to engage, steward, and build relationships with university supporters and donors.",
+      q: "What is multi-generational alumni travel?",
+      a: "It is a university-sponsored travel experience designed for alumni and their family members across multiple generations.",
     },
 
     {
-      q: "Why do universities offer donor travel programs?",
-      a: "Travel creates opportunities for meaningful interaction, donor stewardship, and long-term relationship building.",
+      q: "Who can participate in multi-generational alumni travel programs?",
+      a: "Most programs welcome alumni, spouses, children, grandchildren, and family guests.",
     },
 
     {
-      q: "Are donor travel programs fundraising events?",
-      a: "No. While they can support advancement goals, the primary focus is relationship development and engagement.",
+      q: "Why are multi-generational alumni travel programs becoming popular?",
+      a: "Families increasingly value shared experiences and educational travel opportunities.",
     },
 
     {
-      q: "What types of travel work best for donors?",
-      a: "Luxury cruises, river cruises, educational tours, cultural journeys, and expedition travel are all popular options.",
+      q: "What destinations work best for multi-generational alumni travel?",
+      a: "Alaska, the Mediterranean, Europe, the British Isles, and the Galápagos Islands are among the most popular choices.",
     },
 
     {
-      q: "Do donors travel with university leadership?",
-      a: "Often, yes. Participation by presidents, advancement leaders, and faculty members enhances engagement.",
+      q: "Are cruises a good option for multi-generational alumni travel?",
+      a: "Yes. Cruises provide activities, accommodations, and experiences suitable for multiple generations.",
     },
 
     {
-      q: "How do travel programs support fundraising?",
-      a: "Stronger relationships often lead to increased institutional affinity and long-term philanthropic support.",
+      q: "Can younger family members participate in these travel programs?",
+      a: "Absolutely. Many programs are specifically designed to accommodate children and grandchildren.",
     },
 
     {
-      q: "Are educational experiences included?",
-      a: "Most university donor travel programs incorporate lectures, faculty presentations, and destination-focused learning opportunities.",
+      q: "Are educational opportunities included in the programs?",
+      a: "Most university travel programs incorporate learning experiences through faculty presentations and destination experts.",
     },
 
     {
-      q: "What destinations are most popular?",
-      a: "Europe, Alaska, Antarctica, the Mediterranean, and culturally significant destinations consistently perform well.",
+      q: "How do these programs support alumni engagement?",
+      a: "They strengthen relationships while introducing younger generations to the university community.",
     },
 
     {
-      q: "How far in advance should programs be planned?",
-      a: "Most donor travel programs should begin planning 12–24 months before departure.",
+      q: "Can travel programs support advancement goals?",
+      a: "Yes. They often contribute to stronger family engagement and long-term institutional loyalty.",
     },
 
     {
-      q: "Can travel experiences be customized?",
-      a: "Absolutely. Universities can incorporate private events, receptions, educational sessions, and branded experiences.",
+      q: "How far in advance should multi-generational travel programs be planned?",
+      a: "Most successful programs begin planning 12–24 months before departure.",
+    },
+
+    {
+      q: "Can universities customize family travel experiences?",
+      a: "Absolutely. Programs can be tailored to institutional goals, destinations, and participant demographics.",
     },
 
     {
       q: "Why choose Trips & Ships Luxury Travel?",
-      a: "We combine luxury travel expertise, educational travel experience, and a deep understanding of university advancement goals.",
+      a: "We combine luxury travel expertise, educational travel experience, and university-focused program development.",
     },
 
     {
-      q: "How can institutions get started?",
-      a: "A consultation helps identify objectives, audiences, destinations, and program opportunities.",
+      q: "How can universities get started?",
+      a: "A consultation helps identify goals, audiences, destinations, and travel opportunities.",
     },
   ];
 
@@ -450,7 +470,7 @@ function FAQ() {
     </div>
   );
 }
-const DonorTravelPrograms = () => {
+const MultiGenerationalAlumniTravel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage3, HeroImage2];
@@ -458,8 +478,6 @@ const DonorTravelPrograms = () => {
   const currentDest =
     donorTravelDestinations.find((d) => d.id === activeDest) ||
     donorTravelDestinations[0];
-
-  const ActiveIcon = currentDest.icon;
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -472,20 +490,20 @@ const DonorTravelPrograms = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Donor Travel Programs for Universities | Luxury Advancement Travel
-          Experiences
+          Multi-Generational Alumni Travel | Family Alumni Travel Programs
         </title>
         <meta
           name="title"
-          content="University Donor Travel Programs | Alumni & Advancement Travel"
+          content="Multi-Generational Alumni Travel for Universities & Alumni Associations"
         />
         <meta
           name="description"
-          content="Strengthen donor relationships through luxury donor travel programs. Discover how universities use curated travel experiences to engage supporters, cultivate major gifts, and build lasting connections."
+          content="Discover multi-generational alumni travel programs designed for alumni, children, grandchildren, and families. Strengthen university connections across generations through meaningful travel experiences."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
       <Nav />
+
       {/* HERO */}
       <section className="Scenic_hero_section">
         {images.map((img, index) => (
@@ -502,48 +520,47 @@ const DonorTravelPrograms = () => {
 
         <div className="Scenic_hero_content">
           <h1>
-            Donor Travel Programs: Building Stronger Relationships Through
-            Meaningful Travel Experiences
+            Multi-Generational Alumni Travel: Strengthening University
+            Connections Across Generations
           </h1>
 
           <p>
-            In today's increasingly competitive fundraising environment,
-            universities are continually seeking innovative ways to strengthen
-            relationships with donors, alumni, and supporters.
+            The relationship between a university and its alumni often extends
+            far beyond graduation.
+          </p>
+
+          <p>
+            For many families, that connection becomes part of their legacy.
           </p>
 
           {/* READ MORE CONTENT */}
           {readMore && (
             <>
               <p>
-                While traditional stewardship events and fundraising campaigns
-                remain important, experiential engagement has emerged as one of
-                the most powerful tools available to advancement professionals.
+                Parents share stories of campus life with their children.
+                Grandparents pass down traditions to grandchildren. Families
+                celebrate educational achievements across multiple generations.
               </p>
 
               <p>
-                Travel provides something few other engagement strategies can
-                offer: meaningful time together.
-              </p>
-
-              <p>
-                Donor travel programs allow university leaders, advancement
-                teams, faculty members, and supporters to connect in ways that
-                foster trust, deepen relationships, and strengthen institutional
-                loyalty.
+                Multi-generational alumni travel programs provide universities
+                with a unique opportunity to strengthen these family connections
+                while creating memorable travel experiences that inspire
+                lifelong engagement.
               </p>
 
               <p>
                 At Trips &amp; Ships Luxury Travel, we help universities design
-                exceptional donor travel experiences that align with advancement
-                objectives while delivering unforgettable journeys.
+                exceptional family-focused travel experiences that bring alumni,
+                spouses, children, grandchildren, and friends together through
+                meaningful exploration and educational discovery.
               </p>
 
               <p>
-                Led by <strong>Angela Hughes</strong>, one of the travel
-                industry's most respected luxury travel experts, our team
-                specializes in creating travel programs that inspire engagement
-                and support long-term fundraising success.
+                Led by <strong>Angela Hughes</strong>, a globally recognized
+                luxury travel expert, our team specializes in creating journeys
+                that connect generations while supporting university engagement
+                goals.
               </p>
             </>
           )}
@@ -560,28 +577,33 @@ const DonorTravelPrograms = () => {
         </div>
       </section>
       {/* ════════════════════════════════════════
-    WHAT ARE DONOR TRAVEL PROGRAMS?
+    WHAT IS MULTI-GENERATIONAL ALUMNI TRAVEL?
 ════════════════════════════════════════ */}
       <section className="adg-c-section adg-c-bg-white" id="adg-overview">
         <div className="adg-c-container">
           <div className="adg-c-section-header">
-            <span className="adg-c-eyebrow">Donor Travel Program Overview</span>
+            <span className="adg-c-eyebrow">
+              Alumni Travel Program Overview
+            </span>
 
-            <h2 className="adg-c-h2">What Are Donor Travel Programs?</h2>
+            <h2 className="adg-c-h2">
+              What Is Multi-Generational Alumni Travel?
+            </h2>
 
             <div className="adg-c-accent-line"></div>
           </div>
 
           <div className="adg-c-overview-layout">
-            {/* LEFT — list */}
+            {/* LEFT — list of participants */}
             <div className="adg-c-overview-icons">
               {[
-                "Luxury Travel",
-                "Educational Enrichment",
-                "Relationship Building",
-                "Institutional Engagement",
-                "Cultural Exploration",
-                "Exclusive Access",
+                "Alumni",
+                "Spouses",
+                "Children",
+                "Grandchildren",
+                "Parents",
+                "Extended Family Members",
+                "Family Friends",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -600,23 +622,26 @@ const DonorTravelPrograms = () => {
                   <Star size={28} className="adg-c-callout-star" />
 
                   <p className="adg-c-callout-text">
-                    Donor travel programs are curated travel experiences
-                    designed specifically for university supporters, alumni
-                    donors, trustees, and advancement prospects.
+                    Multi-generational alumni travel refers to
+                    university-sponsored travel experiences designed to include
+                    multiple generations of a family. These programs allow
+                    alumni to share meaningful experiences while introducing
+                    younger generations to the university community and its
+                    values.
                   </p>
                 </div>
               </div>
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  src={DonorExperience3}
-                  alt="University donor travel program"
+                  src={AlumniTravel}
+                  alt="Multi-generational alumni travel program"
                   className="adg-c-overview-img"
                 />
 
                 <div className="adg-c-overview-img-overlay">
                   <span className="adg-c-overview-img-label">
-                    Meaningful Donor Engagement
+                    Family-Wide Institutional Connections
                   </span>
                 </div>
               </div>
@@ -624,13 +649,24 @@ const DonorTravelPrograms = () => {
               <div
                 className="adg-c-overview-callout"
                 style={{ marginTop: "20px" }}
-              ></div>
+              >
+                <div className="adg-c-overview-callout-inner">
+                  <p
+                    className="adg-c-callout-text"
+                    style={{ fontSize: "0.95rem", opacity: 0.9 }}
+                  >
+                    Rather than focusing solely on individual alumni engagement,
+                    multi-generational travel helps create deep, lasting
+                    family-wide connections to the institution.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       {/* ════════════════════════════════════════
-    WHY UNIVERSITIES CHOOSE SMALL SHIP CRUISES
+    WHY UNIVERSITIES OFFER FAMILY-FOCUSED TRAVEL
 ═════════════════════════════════════════ */}
       <section className="adg-c-section adg-c-bg-dark" id="adg-why-dining">
         <div className="adg-c-container">
@@ -638,24 +674,27 @@ const DonorTravelPrograms = () => {
             {/* LEFT — text */}
             <div className="adg-c-why-left">
               <span className="adg-c-eyebrow adg-c-eyebrow-light">
-                Donor Travel Program Benefits
+                Family-Focused Travel Benefits
               </span>
 
               <h2 className="adg-c-h2 adg-c-h2-light">
-                Why Universities Are Investing in Donor Travel Programs
+                Why Universities Are Offering Family-Focused Travel Programs
               </h2>
 
               <div className="aac-accent-line aac-accent-white"></div>
 
               <p className="adg-c-lead adg-c-lead-light">
-                Universities increasingly recognize that fundraising is
-                fundamentally about relationships.
+                Universities increasingly view travel as a strategic engagement
+                tool, shifting toward shared family experiences to cultivate
+                institutional loyalty.
               </p>
 
               <p className="adg-c-body adg-c-body-light">
-                Major gifts are often the result of trust built over time.
-                Travel accelerates this relationship-building process by
-                creating shared experiences that foster genuine connections.
+                Multi-generational travel transforms standard outreach by
+                inviting the entire family ecosystem into the university
+                community. By creating unique opportunities for shared
+                discovery, institutions build deeper bonds that resonate across
+                age groups.
                 {!readMore && (
                   <button
                     onClick={() => setReadMore(true)}
@@ -678,13 +717,12 @@ const DonorTravelPrograms = () => {
 
               {readMore && (
                 <p className="adg-c-body adg-c-body-light">
-                  Donor travel programs provide meaningful opportunities for
-                  university leaders, advancement teams, faculty members, and
-                  supporters to spend quality time together in inspiring
-                  environments. These experiences strengthen institutional
-                  affinity, encourage long-term engagement, and support
-                  stewardship efforts that extend well beyond the journey
-                  itself.
+                  These thoughtfully designed experiences weave educational
+                  exploration with collective storytelling. By offering
+                  intentional programming for travelers of all ages,
+                  universities seamlessly foster cross-generational community
+                  building, celebrate shared values, and spark the long-term
+                  legacy development that ensures future institutional vitality.
                   <button
                     onClick={() => setReadMore(false)}
                     style={{
@@ -707,16 +745,16 @@ const DonorTravelPrograms = () => {
             <div className="adg-c-why-right">
               <div className="adg-c-why-card">
                 <span className="adg-c-why-card-label">
-                  Key Benefits Include:
+                  Multi-Generational Travel Supports:
                 </span>
 
                 <div className="adg-c-pill-grid">
                   {[
-                    "Increased Donor Engagement",
-                    "Stronger Relationships",
-                    "Enhanced Stewardship",
-                    "Greater Institutional Affinity",
-                    "Improved Donor Retention",
+                    "Alumni Engagement",
+                    "Donor Stewardship",
+                    "Community Building",
+                    "Lifelong Learning",
+                    "Legacy Development",
                   ].map((item, i) => (
                     <div key={i} className="adg-c-pill">
                       <span className="adg-c-pill-check">
@@ -732,55 +770,60 @@ const DonorTravelPrograms = () => {
           </div>
         </div>
       </section>
-      {/* ── THE EDUCATIONAL ADVANTAGE OF UNIVERSITY DONOR TRAVEL ───── */}
+      {/* ── WHY MULTI-GENERATIONAL TRAVEL IS GROWING ───── */}
       <section
         className="ugt-components-section"
         id="ugt-components"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
-        <div className="ugt-components-container">
+        <div className="Asc-container">
+          {/* HEADER */}
           <div className="ugt-components-header">
-            <h2 className="ugt-components-title">
-              The Educational Advantage of University Donor Travel
+            <h2 className="adg-c-h2">
+              Why Multi-Generational Travel Is Growing
             </h2>
 
             <div className="adg-c-accent-line"></div>
           </div>
 
+          {/* MAIN CONTENT */}
           <div className="ugt-components-list">
             <div className="ugt-component-row">
+              {/* LEFT IMAGE */}
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    src={DonorTravel}
-                    alt="University Donor Travel Educational Experience"
+                    src={AlumniTravel2}
+                    alt="Multi-generational alumni travel experience"
                     className="ugt-component-image"
                   />
                 </div>
               </div>
 
+              {/* RIGHT CONTENT */}
               <div className="ugt-component-content">
-                <h3 className="ugt-component-subtitle">
-                  Faculty Expertise Creates Meaningful Experiences
-                </h3>
+                <p className="ugt-component-text">
+                  Family travel has become one of the fastest-growing segments
+                  of the travel industry.
+                </p>
 
                 <p className="ugt-component-text">
-                  Universities possess a unique advantage that traditional
-                  travel providers cannot easily replicate: faculty expertise.
+                  Today's travelers increasingly prioritize experiences over
+                  material possessions.
                 </p>
 
                 <div className="ugt-questions-box">
                   <span className="ugt-questions-title">
-                    By incorporating professors and subject matter experts,
-                    travel programs become:
+                    Many alumni view travel as an opportunity to:
                   </span>
 
                   <ul className="ugt-questions-list">
                     {[
-                      "More engaging",
-                      "More educational",
-                      "More memorable",
-                      "More aligned with institutional values",
+                      "Spend quality time together",
+                      "Create family memories",
+                      "Learn together",
+                      "Celebrate milestones",
+                      "Explore the world",
                     ].map((item, idx) => (
                       <li key={idx} className="ugt-question-item">
                         <Check size={16} className="ugt-question-icon" />
@@ -798,32 +841,33 @@ const DonorTravelPrograms = () => {
                     borderRadius: "6px",
                   }}
                 >
-                  Faculty involvement often becomes one of the most appreciated
-                  aspects of donor travel programs, creating deeper learning
-                  opportunities and strengthening participants' connection to
-                  the university.
+                  Universities are recognizing that these experiences can also
+                  strengthen long-term institutional loyalty. When younger
+                  family members participate in university travel programs, they
+                  often develop a stronger appreciation for the institution and
+                  its community.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* ── HOW DONOR TRAVEL SUPPORTS UNIVERSITY ADVANCEMENT GOALS ─────────────────────── */}
+
+      {/* ── THE BENEFITS OF MULTI-GENERATIONAL ALUMNI TRAVEL ─────────────────────── */}
       <section className="ugt-diff-section" id="ugt-different">
         <div className="ugt-diff-container">
           {/* Header */}
           <div className="ugt-diff-header">
             <h2 className="ugt-diff-title">
-              How Donor Travel Supports University Advancement Goals
+              The Benefits of Multi-Generational Alumni Travel
             </h2>
 
             <div className="adg-c-accent-line"></div>
 
             <p className="ugt-diff-intro">
-              Travel programs can play a significant role in an institution's
-              advancement strategy by creating opportunities for meaningful
-              engagement, relationship building, and long-term philanthropic
-              support.
+              Multi-generational travel transforms standard university
+              programming into deeply impactful family milestones, cementing
+              institutional loyalty across multiple age groups simultaneously.
             </p>
           </div>
 
@@ -833,38 +877,32 @@ const DonorTravelPrograms = () => {
               {
                 icon: <HeartHandshake size={28} strokeWidth={1.5} />,
                 number: "01",
-                title: "Donor Cultivation",
-                body: "Travel provides opportunities to engage prospective donors in relaxed and meaningful settings. Instead of formal fundraising meetings, conversations occur naturally throughout the journey.",
-              },
-              {
-                icon: <Award size={28} strokeWidth={1.5} />,
-                number: "02",
-                title: "Donor Stewardship",
-                body: "Many universities use travel experiences to thank loyal supporters and recognize their contributions. Exclusive travel opportunities can serve as powerful stewardship tools.",
+                title: "Strengthening Family Connections",
+                body: "Modern families often live in different cities, states, or countries. Travel provides an invaluable opportunity to reconnect and spend uninterrupted, meaningful time together, creating shared experiences that frequently become treasured family memories.",
               },
               {
                 icon: <Users size={28} strokeWidth={1.5} />,
-                number: "03",
-                title: "Leadership Access",
-                body: null,
-                risks: [
-                  "University presidents",
-                  "Advancement leaders",
-                  "Trustees",
-                  "Faculty experts",
+                number: "02",
+                title: "Building University Affinity",
+                body: "Universities invest significant effort in maintaining alumni engagement. Multi-generational travel expands that engagement beyond the graduate, introducing children and grandchildren directly to the university's distinct culture and community.",
+                listItems: [
+                  "University traditions",
+                  "Academic values",
+                  "Lifelong learning opportunities",
+                  "Alumni communities",
                 ],
               },
               {
-                icon: <Handshake size={28} strokeWidth={1.5} />,
-                number: "04",
-                title: "Relationship Building",
-                body: "Direct access to university leadership and subject matter experts helps strengthen relationships, build trust, and deepen institutional connections.",
+                icon: <Award size={28} strokeWidth={1.5} />,
+                number: "03",
+                title: "Creating Lifelong Memories",
+                body: "Unlike traditional alumni events that last only a few hours, immersive travel programs provide days or weeks of shared experiences. These deep, emotional memories often become a structural part of a family's history for years to come.",
               },
               {
                 icon: <TrendingUp size={28} strokeWidth={1.5} />,
-                number: "05",
-                title: "Major Gift Development",
-                body: "Meaningful travel experiences frequently create opportunities for conversations about institutional priorities, philanthropic impact, and future giving opportunities.",
+                number: "04",
+                title: "Encouraging Future Participation",
+                body: "By serving as a warm, experiential introduction to the broader alumni ecosystem, travel programs inspire younger participants to eventually become active future supporters of university programs, events, and philanthropic initiatives.",
               },
             ].map((card, i) => (
               <div key={i} className="ugt-diff-card">
@@ -877,17 +915,24 @@ const DonorTravelPrograms = () => {
 
                 {card.body && <p className="ugt-diff-card-body">{card.body}</p>}
 
-                {card.risks && (
+                {card.listItems && (
                   <>
-                    <p className="ugt-diff-card-body">
-                      Travel programs often include participation from:
+                    <p
+                      className="ugt-diff-card-body"
+                      style={{
+                        marginTop: "12px",
+                        marginBottom: "8px",
+                        fontWeight: "600",
+                      }}
+                    >
+                      Exposing younger generations to:
                     </p>
 
                     <ul className="ugt-diff-risk-list">
-                      {card.risks.map((r, ri) => (
-                        <li key={ri} className="ugt-diff-risk-item">
+                      {card.listItems.map((item, index) => (
+                        <li key={index} className="ugt-diff-risk-item">
                           <Check size={14} className="ugt-diff-risk-icon" />
-                          <span>{r}</span>
+                          <span>{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -899,20 +944,80 @@ const DonorTravelPrograms = () => {
         </div>
       </section>
 
-      {/* TYPES OF DONOR TRAVEL PROGRAMS */}
+      {/* ── EDUCATIONAL VALUE SECTION ───── */}
+      <section className="mga-edu-section">
+        <div className="mga-edu-container">
+          {/* Card 1: Educational Value */}
+          <div className="mga-edu-card">
+            <div className="mga-card-content">
+              <span className="mga-card-eyebrow">Academic Enrichment</span>
+              <h2 className="mga-card-title">
+                The Educational Value of Multi-Generational Travel
+              </h2>
+              <p className="mga-card-subtitle">
+                Universities possess a unique advantage when designing family
+                travel programs.
+              </p>
+              <div className="mga-card-accent-line"></div>
+
+              <div className="mga-card-lead">
+                <span className="mga-lead-badge">Core Advantage</span>
+                <span className="mga-lead-text">Educational enrichment.</span>
+              </div>
+
+              <p className="mga-features-intro">Programs may include:</p>
+
+              <div className="mga-features-grid">
+                {[
+                  {
+                    title: "Faculty Presentations",
+                    desc: "Professors share expertise related to destinations and themes.",
+                  },
+                  {
+                    title: "Interactive Learning",
+                    desc: "Activities designed to engage both adults and younger travelers.",
+                  },
+                  {
+                    title: "Cultural Understanding",
+                    desc: "Families gain deeper appreciation for global cultures and perspectives.",
+                  },
+                  {
+                    title: "Lifelong Learning Opportunities",
+                    desc: "Travel reinforces the value of curiosity and education at every age.",
+                  },
+                ].map((feat, idx) => (
+                  <div key={idx} className="mga-feature-item">
+                    <div className="mga-feature-header">
+                      <span className="mga-feature-num">0{idx + 1}</span>
+                      <h4 className="mga-feature-title">{feat.title}</h4>
+                    </div>
+                    <p className="mga-feature-desc">{feat.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TYPES OF MULTI-GENERATIONAL ALUMNI TRAVEL */}
       <section className="adg-c-section adg-c-bg-soft" id="adg-donor-programs">
         <div className="adg-c-container">
           <div className="adg-c-section-header">
-            <span className="adg-c-eyebrow">Donor Travel Experiences</span>
+            <span className="adg-c-eyebrow">
+              Multi-Generational Travel Experiences
+            </span>
 
-            <h2 className="adg-c-h2">Types of Donor Travel Programs</h2>
+            <h2 className="adg-c-h2">
+              Best Types of Multi-Generational Alumni Travel
+            </h2>
 
             <div className="adg-c-accent-line"></div>
 
             <p className="Asc-section-intro">
-              Every institution has unique fundraising objectives. Successful
-              travel programs are designed with specific audiences and
-              engagement goals in mind.
+              Universities are increasingly designing travel experiences that
+              bring multiple generations of alumni families together for shared
+              learning, exploration, and connection.
             </p>
           </div>
 
@@ -920,67 +1025,67 @@ const DonorTravelPrograms = () => {
             {[
               {
                 id: 1,
-                eyebrow: "Luxury Donor Cruises",
-                name: "Luxury Cruises",
+                eyebrow: "Family-Friendly Cruises",
+                name: "Cruise Experiences",
                 highlight:
-                  "One of the most popular formats for donor engagement, luxury cruises combine exceptional service, educational programming, and meaningful networking opportunities.",
+                  "Cruises remain one of the most popular travel formats for multi-generational groups, offering convenience, comfort, and activities for all ages.",
                 items: [
-                  "Ocean Cruises",
-                  "River Cruises",
-                  "Small Ship Cruises",
-                  "Expedition Cruises",
+                  "Activities for all ages",
+                  "Convenient travel logistics",
+                  "Comfortable accommodations",
+                  "Educational opportunities",
+                  "Group experiences",
                 ],
                 callout:
-                  "Cruise-based donor programs provide relaxed environments where meaningful conversations and long-term relationships naturally develop.",
+                  "Popular options include ocean cruises, river cruises, and small ship cruises designed for immersive family engagement.",
               },
 
               {
                 id: 2,
-                eyebrow: "Cultural Travel Experiences",
+                eyebrow: "Cultural Exploration Programs",
                 name: "Cultural Journeys",
                 highlight:
-                  "Immersive land-based programs designed for intellectually curious travelers seeking deeper cultural and educational experiences.",
+                  "These experiences combine education and travel through immersive cultural discovery.",
                 items: [
-                  "History",
-                  "Art",
-                  "Architecture",
-                  "Heritage",
-                  "Culinary Exploration",
+                  "Historical sites",
+                  "Museums",
+                  "Local communities",
+                  "Cultural immersion",
                 ],
                 callout:
-                  "These journeys offer rich cultural immersion while creating memorable shared experiences among donors and university leaders.",
+                  "Families learn together while exploring new destinations and experiencing global cultures firsthand.",
               },
 
               {
                 id: 3,
-                eyebrow: "Faculty-Led Experiences",
-                name: "Educational Travel",
+                eyebrow: "Educational Travel Experiences",
+                name: "Learning-Focused Journeys",
                 highlight:
-                  "Universities often integrate learning opportunities that distinguish donor travel programs from traditional luxury tourism.",
+                  "Universities can enhance travel programs with structured educational engagement opportunities.",
                 items: [
-                  "Faculty Lectures",
-                  "Seminars",
-                  "Destination Discussions",
-                  "Expert Presentations",
+                  "Faculty lectures",
+                  "Destination experts",
+                  "Interactive workshops",
+                  "Multi-age learning experiences",
                 ],
                 callout:
-                  "The educational component adds intellectual value and strengthens connections between participants and the institution.",
+                  "These programs create meaningful intellectual engagement for participants of all generations.",
               },
 
               {
                 id: 4,
-                eyebrow: "Exclusive Access Programs",
-                name: "Private Experiences",
+                eyebrow: "Nature & Adventure Programs",
+                name: "Adventure Travel",
                 highlight:
-                  "Premium donor travel programs frequently incorporate unique experiences unavailable to the general public.",
+                  "Outdoor-focused itineraries appeal to families seeking active and meaningful shared experiences.",
                 items: [
-                  "Private Receptions",
-                  "Behind-the-Scenes Access",
-                  "VIP Cultural Experiences",
-                  "Exclusive Excursions",
+                  "Alaska exploration",
+                  "National Parks journeys",
+                  "Wildlife expeditions",
+                  "Small ship adventures",
                 ],
                 callout:
-                  "These personalized opportunities create memorable moments that donors value highly and remember long after the journey ends.",
+                  "Adventure travel fosters bonding through shared exploration and unforgettable natural experiences.",
               },
             ].map((venue, i) => (
               <div
@@ -1015,21 +1120,25 @@ const DonorTravelPrograms = () => {
         </div>
       </section>
 
-      {/* ── BEST DESTINATIONS FOR DONOR TRAVEL PROGRAMS ───── */}
-      <section className="luc-destinations-section" id="luc-destinations">
-        <div className="luc-destinations-container">
-          <div className="luc-destinations-header">
-            <h2 className="luc-destinations-title">
-              Best Destinations for Donor Travel Programs
+      {/* ── DESTINATIONS THAT WORK WELL FOR MULTI-GENERATIONAL ALUMNI TRAVEL ───── */}
+      <section className="adg-c-section" id="adg-donor-programs">
+        <div className="adg-c-container">
+          {/* HEADER */}
+          <div className="adg-c-section-header">
+            <span className="adg-c-eyebrow">
+              Multi-Generational Travel Destinations
+            </span>
+
+            <h2 className="adg-c-h2">
+              Destinations That Work Well for Multi-Generational Alumni Travel
             </h2>
 
             <div className="adg-c-accent-line"></div>
 
             <p className="luc-destinations-intro">
-              From luxury European river cruises to transformational expedition
-              voyages and immersive cultural journeys, these destinations
-              provide exceptional opportunities for donor engagement,
-              educational enrichment, and meaningful relationship building.
+              These destinations are especially well-suited for
+              multi-generational alumni travel, offering a balance of education,
+              exploration, and shared family experiences.
             </p>
           </div>
 
@@ -1072,10 +1181,6 @@ const DonorTravelPrograms = () => {
                 />
 
                 <div className="luc-dest-img-overlay">
-                  <div className="luc-dest-img-icon">
-                    <ActiveIcon size={22} strokeWidth={1.6} />
-                  </div>
-
                   <span className="luc-dest-img-title">
                     {currentDest.title}
                   </span>
@@ -1085,7 +1190,7 @@ const DonorTravelPrograms = () => {
               {/* Description */}
               <p className="luc-dest-panel-desc">{currentDest.desc}</p>
 
-              {/* Columns */}
+              {/* Dynamic content columns */}
               <div className="luc-dest-columns">
                 {currentDest.columns.map((col, cIdx) => (
                   <div key={cIdx} className="luc-dest-info-col">
@@ -1095,7 +1200,6 @@ const DonorTravelPrograms = () => {
                       {col.items.map((item) => (
                         <div key={item} className="luc-dest-item">
                           <div className="luc-dest-item-dot"></div>
-
                           <span className="luc-dest-item-text">{item}</span>
                         </div>
                       ))}
@@ -1104,7 +1208,7 @@ const DonorTravelPrograms = () => {
                 ))}
               </div>
 
-              {/* Educational Theme / Highlight */}
+              {/* Theme Note */}
               <div className="luc-dest-theme-box-note">
                 <div className="luc-dest-theme-note-bar"></div>
 
@@ -1123,15 +1227,15 @@ const DonorTravelPrograms = () => {
         </div>
       </section>
 
-      {/* ── WHY LUXURY MATTERS IN DONOR TRAVEL ───── */}
+      {/* ── WHY FAMILIES LOVE ALUMNI TRAVEL PROGRAMS ───── */}
       <section className="luc-why-section" id="luc-why">
         <div className="luc-why-container">
           {/* LEFT — stacked images */}
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
-                src={DonorExperience}
-                alt="Luxury donor travel experience"
+                src={LoveAlumni}
+                alt="Alumni family travel experience"
                 className="luc-why-img-main"
               />
               <div className="luc-why-img-overlay"></div>
@@ -1139,14 +1243,14 @@ const DonorTravelPrograms = () => {
 
             <div className="luc-why-img-accent-wrap">
               <img
-                src={DonorExperience2}
-                alt="Premium luxury travel experience"
+                src={LoveAlumni2}
+                alt="Family alumni travel experience"
                 className="luc-why-img-accent"
               />
 
               <div className="luc-why-img-badge">
-                <span className="luc-why-badge-num">4</span>
-                <span className="luc-why-badge-text">Luxury Benefits</span>
+                <span className="luc-why-badge-num">5</span>
+                <span className="luc-why-badge-text">Key Benefits</span>
               </div>
             </div>
           </div>
@@ -1154,29 +1258,21 @@ const DonorTravelPrograms = () => {
           {/* RIGHT — content */}
           <div className="luc-why-content">
             <h2 className="luc-why-title">
-              Why Luxury Matters in Donor Travel
+              Why Families Love Alumni Travel Programs
             </h2>
 
             <div className="aac-accent-line aac-accent-white"></div>
 
-            <p className="luc-why-intro">
-              Today's major donors often have significant travel experience.
-            </p>
-
-            <p className="luc-why-subintro">
-              As a result, expectations are high. Luxury travel provides:
-            </p>
+            <p className="luc-why-intro">Participants consistently value:</p>
 
             <div className="luc-why-features">
               <div className="luc-why-feature">
                 <div className="luc-why-feature-num">01</div>
 
                 <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Exceptional Service</h3>
-
+                  <h3 className="luc-why-feature-title">Shared Experiences</h3>
                   <p className="luc-why-feature-desc">
-                    Personalized attention enhances the overall experience and
-                    helps create memorable moments throughout the journey.
+                    Meaningful moments with loved ones across generations.
                   </p>
                 </div>
               </div>
@@ -1186,12 +1282,10 @@ const DonorTravelPrograms = () => {
 
                 <div className="luc-why-feature-body">
                   <h3 className="luc-why-feature-title">
-                    Comfort and Convenience
+                    Educational Enrichment
                   </h3>
-
                   <p className="luc-why-feature-desc">
-                    Premium accommodations, fine dining, and seamless logistics
-                    improve traveler satisfaction and enjoyment.
+                    Learning opportunities not found in traditional vacations.
                   </p>
                 </div>
               </div>
@@ -1200,12 +1294,12 @@ const DonorTravelPrograms = () => {
                 <div className="luc-why-feature-num">03</div>
 
                 <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Unique Experiences</h3>
-
+                  <h3 className="luc-why-feature-title">
+                    Community Connections
+                  </h3>
                   <p className="luc-why-feature-desc">
-                    Luxury suppliers often provide exclusive access and
-                    opportunities unavailable through mainstream travel
-                    programs.
+                    Meeting fellow alumni families and building lifelong
+                    relationships.
                   </p>
                 </div>
               </div>
@@ -1214,14 +1308,21 @@ const DonorTravelPrograms = () => {
                 <div className="luc-why-feature-num">04</div>
 
                 <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Institutional Brand Alignment
-                  </h3>
-
+                  <h3 className="luc-why-feature-title">Exclusive Access</h3>
                   <p className="luc-why-feature-desc">
-                    High-quality travel experiences reflect positively on the
-                    university's reputation and reinforce a commitment to
-                    excellence.
+                    Unique experiences organized through university
+                    partnerships.
+                  </p>
+                </div>
+              </div>
+
+              <div className="luc-why-feature">
+                <div className="luc-why-feature-num">05</div>
+
+                <div className="luc-why-feature-body">
+                  <h3 className="luc-why-feature-title">Stress-Free Travel</h3>
+                  <p className="luc-why-feature-desc">
+                    Professional planning and support throughout the journey.
                   </p>
                 </div>
               </div>
@@ -1294,7 +1395,7 @@ const DonorTravelPrograms = () => {
           </div>
         </div>
       </section> */}
-      {/* ── MEASURING THE SUCCESS OF DONOR TRAVEL PROGRAMS ───────────────────────────── */}
+      {/* ── MULTI-GENERATIONAL TRAVEL AND UNIVERSITY ADVANCEMENT ───────────────────────────── */}
       <section className="ugt-advantage-section" id="ugt-advantage">
         <div className="ugt-advantage-container">
           <div className="ugt-advantage-header">
@@ -1303,71 +1404,28 @@ const DonorTravelPrograms = () => {
             </span>
 
             <h2 className="ugt-advantage-title">
-              Measuring the Success of Donor Travel Programs
+              Multi-Generational Travel and University Advancement
             </h2>
 
             <div className="Asc-accent-line"></div>
 
             <p className="ugt-advantage-intro">
-              Success should not be measured solely by immediate fundraising
-              results.
+              Family travel programs can also support advancement objectives.
             </p>
 
-            <h3 className="ugt-approach-title">
-              Key indicators of success include:
-            </h3>
+            <h3 className="ugt-approach-title">Benefits include:</h3>
           </div>
 
           <div className="ugt-advantage-grid">
             <div className="ugt-advantage-card">
               <div className="ugt-icon-box">
-                <TrendingUp size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Increased Engagement</h4>
-
-              <p className="ugt-card-desc">
-                Greater participation in future university initiatives, events,
-                and advancement activities following the travel experience.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
                 <Users size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Stronger Relationships</h4>
+              <h4 className="ugt-card-title">Strongest Alumni Relationships</h4>
 
               <p className="ugt-card-desc">
-                Improved interaction and deeper connections between donors,
-                university leadership, faculty, and advancement teams.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Repeat size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Repeat Participation</h4>
-
-              <p className="ugt-card-desc">
-                High return rates and continued involvement often indicate a
-                successful and meaningful donor travel program.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Award size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Institutional Loyalty</h4>
-
-              <p className="ugt-card-desc">
-                Increased affinity toward the university and stronger emotional
-                connections to its mission and community.
+                Meaningful travel experiences deepen engagement.
               </p>
             </div>
 
@@ -1377,12 +1435,38 @@ const DonorTravelPrograms = () => {
               </div>
 
               <h4 className="ugt-card-title">
-                Long-Term Philanthropic Support
+                Family Philanthropy Opportunities
               </h4>
 
               <p className="ugt-card-desc">
-                Many of the most valuable outcomes emerge over time through
-                continued engagement, stewardship, and future giving.
+                Travel often encourages discussions about family values and
+                institutional support.
+              </p>
+            </div>
+
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Award size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Legacy Building</h4>
+
+              <p className="ugt-card-desc">
+                Families develop stronger emotional connections to the
+                university.
+              </p>
+            </div>
+
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Repeat size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Long-Term Engagement</h4>
+
+              <p className="ugt-card-desc">
+                Younger generations become familiar with the university
+                community.
               </p>
             </div>
           </div>
@@ -1393,8 +1477,8 @@ const DonorTravelPrograms = () => {
         <div className="Lfsg-container">
           <div className="Lfsg-section-header">
             <h2 className="Lfsg-h2-white">
-              Common Mistakes Universities Make <br /> With Donor Travel
-              Programs
+              Common Mistakes Universities Make With Multi-Generational Alumni
+              Travel
             </h2>
 
             <div className="Lfsg-accent-line-white" />
@@ -1403,29 +1487,28 @@ const DonorTravelPrograms = () => {
           <div className="Lfsg-mistakes-grid">
             {[
               {
-                title: "Treating Travel Like a Fundraising Event",
-                desc: "The primary objective should be relationship building, meaningful engagement, and donor stewardship rather than direct solicitation.",
+                title: "Focusing Only on Alumni",
+                desc: "Successful programs create value for every generation.",
               },
 
               {
-                title:
-                  "Choosing Destinations Without Understanding Donor Interests",
-                desc: "Successful programs align travel experiences with audience preferences, educational interests, and desired travel styles.",
+                title: "Choosing Destinations Without Family Appeal",
+                desc: "Programs should balance educational enrichment with family-friendly experiences.",
               },
 
               {
-                title: "Underestimating Planning Requirements",
-                desc: "Luxury donor travel programs require extensive coordination, logistical expertise, and attention to detail to ensure a seamless experience.",
+                title: "Ignoring Different Age Groups",
+                desc: "Activities should accommodate a variety of interests and abilities.",
               },
 
               {
-                title: "Neglecting Educational Content",
-                desc: "Travel without intellectual enrichment often fails to maximize engagement potential. Faculty participation and destination-focused learning add significant value.",
+                title: "Underestimating Planning Complexity",
+                desc: "Family travel programs require careful logistical coordination.",
               },
 
               {
-                title: "Selecting the Wrong Travel Partner",
-                desc: "Universities need partners who understand both luxury travel and advancement objectives to create meaningful donor experiences.",
+                title: "Lack of Educational Programming",
+                desc: "Universities have a unique opportunity to enhance travel through learning experiences.",
               },
             ].map((item, i) => (
               <div key={i} className="Lfsg-mistake-card">
@@ -1445,7 +1528,10 @@ const DonorTravelPrograms = () => {
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">Who Are Donor Travel Programs Best For?</h2>
+            <h2 className="Asc-h2">
+              {" "}
+              Who Are Multi-Generational <br /> Alumni Travel Programs Best For?
+            </h2>
 
             <div className="Asc-accent-line"></div>
           </div>
@@ -1456,13 +1542,13 @@ const DonorTravelPrograms = () => {
 
               <ul className="Asc-who-list">
                 {[
-                  "Advancement offices",
-                  "Development teams",
                   "Alumni associations",
-                  "Major donor stewardship programs",
-                  "University foundations",
-                  "Presidential engagement initiatives",
+                  "Advancement departments",
+                  "Family alumni programs",
+                  "Donor stewardship initiatives",
                   "Lifelong learning organizations",
+                  "Legacy and family engagement programs",
+                  "Multi-generational travelers",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -1477,9 +1563,9 @@ const DonorTravelPrograms = () => {
 
               <ul className="Asc-who-list">
                 {[
-                  "Institutions seeking transactional fundraising activities",
-                  "Budget-focused travel experiences",
-                  "Programs without relationship-building objectives",
+                  "Travelers seeking independent travel experiences",
+                  "Budget-focused programs",
+                  "Institutions without family engagement objectives",
                 ].map((item, i) => (
                   <li key={i}>
                     <Minus size={16} className="Asc-icon-muted" />
@@ -1505,7 +1591,6 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
               <span className="adg-c-eyebrow adg-c-eyebrow-light">
                 University Advancement Travel Specialists
               </span>
-
               <h2 className="adg-c-h2 adg-c-h2-light">
                 Why Universities Choose Trips &amp; Ships Luxury Travel
               </h2>
@@ -1513,29 +1598,33 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
               <div className="aac-accent-line aac-accent-white"></div>
 
               <p className="adg-c-lead adg-c-lead-light">
-                Trips &amp; Ships Luxury Travel understands the unique role
-                travel plays in advancement and donor engagement.
+                Trips &amp; Ships Luxury Travel helps universities create family
+                travel experiences that strengthen relationships across
+                generations.
               </p>
 
               <p className="adg-c-body adg-c-body-light">
-                We help universities create meaningful travel experiences that
-                strengthen donor relationships, support alumni engagement,
-                encourage lifelong learning, and advance institutional goals
-                through thoughtfully designed programs.
+                We provide multigenerational educational travel programs that
+                align with your institutional goals and connect participants
+                with top-tier global suppliers. Every journey offers meaningful
+                learning opportunities for all ages, backed by comprehensive
+                support before, during, and after your trip.
               </p>
             </div>
 
             {/* RIGHT — pill grid */}
             <div className="adg-c-why-right">
               <div className="adg-c-why-card">
-                <span className="adg-c-why-card-label">We Provide:</span>
+                <span className="adg-c-why-card-label">
+                  Our expertise includes:
+                </span>
 
                 <div className="adg-c-pill-grid">
                   {[
-                    "Strategic Program Design",
-                    "Luxury Travel Expertise",
-                    "Donor-Focused Experiences",
+                    "Family Travel Planning",
+                    "Luxury Cruise and Tour Expertise",
                     "Educational Integration",
+                    "Alumni Engagement Strategy",
                     "White-Glove Service",
                   ].map((item, i) => (
                     <div key={i} className="adg-c-pill">
@@ -1562,7 +1651,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
             </span>
 
             <h2 className="Adg-expert-title">
-              Angela Hughes: A Trusted Advisor for University Travel Programs
+              Angela Hughes: A Global Expert in Luxury and Family Travel
             </h2>
 
             <div className="Adg-expert-divider"></div>
@@ -1575,7 +1664,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
               <div className="Adg-expert-portrait-wrap">
                 <img
                   src={AboutImage}
-                  alt="Angela Hughes - University Travel Program Expert"
+                  alt="Angela Hughes - Luxury and Family Travel Expert"
                   className="Adg-expert-portrait"
                 />
 
@@ -1603,15 +1692,15 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
             {/* RIGHT SIDE */}
             <div className="Adg-expert-content-col">
-              {/* INTRO QUOTE */}
+              {/* INTRO */}
               <div className="Adg-expert-quote-box">
                 <div className="Adg-expert-quote-icon">
                   <Quote size={36} />
                 </div>
 
                 <blockquote className="Adg-expert-quote-text">
-                  Universities benefit from Angela Hughes' decades of global
-                  travel expertise.
+                  Universities benefit from Angela Hughes' extensive travel
+                  industry experience.
                 </blockquote>
               </div>
 
@@ -1628,10 +1717,10 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
                     "Travel to over 121 countries",
                     "Founder of Luxury Travel University",
                     "Travel Leaders Network Advisory Board Member",
-                    "Luxury Travel Influencer of the Year",
                     "International travel educator and speaker",
+                    "Luxury Travel Influencer of the Year",
                     "Weekly travel columnist",
-                    "Recognized among the travel industry's most influential professionals",
+                    "Recognized among the industry's most influential leaders",
                   ].map((item, i) => (
                     <div className="Adg-expert-list-item" key={i}>
                       <span className="Adg-expert-list-icon">
@@ -1650,9 +1739,8 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
                 style={{ marginTop: "24px" }}
               >
                 <blockquote className="Adg-expert-quote-text">
-                  Her leadership helps institutions confidently develop donor
-                  travel programs that reflect excellence, professionalism, and
-                  long-term advancement goals.
+                  Her expertise helps institutions confidently create
+                  exceptional travel experiences for alumni families.
                 </blockquote>
               </div>
             </div>
@@ -1672,12 +1760,13 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
           <FAQ />
         </div>
       </section>
+
       {/* CTA */}
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
             src={CTAImage}
-            alt="University Donor Travel Experience"
+            alt="Multi-Generational Alumni Travel Experience"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -1688,12 +1777,12 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
             <div className="Asc-help-content">
               <div className="Asc-help-header">
                 <span className="Asc-help-eyebrow">
-                  University Donor Travel Programs
+                  Multi-Generational Alumni Travel Programs
                 </span>
 
                 <h2 className="Asc-help-h2">
-                  Strengthen Donor Relationships Through Extraordinary Travel
-                  Experiences
+                  Create Family Travel Experiences That Inspire Lifelong
+                  Connections
                 </h2>
 
                 <div className="Asc-help-accent"></div>
@@ -1702,14 +1791,16 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    The most successful donor relationships are built on trust,
-                    shared experiences, and meaningful engagement.
+                    Multi-generational alumni travel allows universities to
+                    expand engagement beyond individual graduates and create
+                    meaningful connections that span entire families.
                   </p>
 
                   <p className="Asc-help-intro">
-                    Travel provides a unique platform for universities to
-                    cultivate these relationships while delivering exceptional
-                    educational and cultural experiences.
+                    By combining travel, education, and shared experiences,
+                    institutions can strengthen alumni relationships, build
+                    future engagement opportunities, and create memories that
+                    last for generations.
                     {!readMore && (
                       <button
                         onClick={() => setReadMore(true)}
@@ -1732,18 +1823,10 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
                   {readMore && (
                     <p className="Asc-help-intro">
-                      Whether your institution is focused on donor stewardship,
-                      major gift development, alumni engagement, or lifelong
-                      learning, a thoughtfully designed donor travel program can
-                      create lasting value for both participants and the
-                      university.
-                      <br />
-                      <br />
-                      With Angela Hughes' global expertise and Trips &amp; Ships
-                      Luxury Travel's proven planning process, your institution
-                      can create donor travel experiences that inspire loyalty,
-                      strengthen relationships, and support long-term
-                      advancement goals.
+                      With Angela Hughes' expertise and Trips &amp; Ships Luxury
+                      Travel's proven planning process, your university can
+                      develop family travel programs that deliver lasting value
+                      for both travelers and the institution.
                       <button
                         onClick={() => setReadMore(false)}
                         style={{
@@ -1763,7 +1846,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
                   <div className="Asc-help-btn-container">
                     <button className="Asc-help-cta-btn">
-                      Start Planning Your Donor Travel Program
+                      Start Planning Your Family Travel Program
                       <ArrowRight size={18} />
                     </button>
                   </div>
@@ -1771,16 +1854,16 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
                 <div className="Asc-help-list-box">
                   <h3 className="Asc-help-list-title">
-                    Benefits of Donor Travel Programs:
+                    Benefits of Multi-Generational Alumni Travel:
                   </h3>
 
                   <ul className="Asc-help-bullets">
                     {[
-                      "Meaningful donor stewardship opportunities",
-                      "Stronger relationships with university supporters",
-                      "Enhanced alumni and advancement engagement",
-                      "Educational and cultural enrichment",
-                      "Long-term institutional loyalty and affinity",
+                      "Shared experiences across generations",
+                      "Stronger alumni and family engagement",
+                      "Enhanced institutional loyalty and affinity",
+                      "Educational enrichment for all age groups",
+                      "Long-term relationship building with future donors",
                     ].map((item, i) => (
                       <li key={i}>
                         <div className="Asc-bullet-icon">
@@ -1794,7 +1877,8 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
 
                   <p className="Asc-help-intro" style={{ marginTop: "20px" }}>
                     Contact Trips &amp; Ships Luxury Travel today to begin
-                    designing your custom donor travel program.
+                    designing your custom multi-generational alumni travel
+                    program.
                   </p>
                 </div>
               </div>
@@ -1806,4 +1890,4 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
   );
 };
 
-export default DonorTravelPrograms;
+export default MultiGenerationalAlumniTravel;
