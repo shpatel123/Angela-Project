@@ -12,6 +12,7 @@ import {
   HeartHandshake,
   Repeat,
   TrendingUp,
+  Compass,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
@@ -919,101 +920,99 @@ const WhyLuxuryTravelForUniversities = () => {
    STRONG SUPPLIER RELATIONSHIPS
 ════════════════════════════════════════ */}
       <section className="wlt-relationships-section">
+
+        {/* ── Section Header ── */}
+        <div className="wlt-relationships-header-wrap">
+          <div className="wlt-relationships-header-inner">
+            <span className="wlt-relationships-eyebrow">Industry Connections</span>
+            <h2 className="wlt-relationships-title">
+              Strong Supplier Relationships<br />Create Better Experiences
+            </h2>
+            <div className="wlt-relationships-accent-line"></div>
+            <p className="wlt-relationships-lead">
+              Relationships matter in travel. We partner with the world's finest operators
+              to unlock access and experiences unavailable anywhere else.
+            </p>
+          </div>
+        </div>
+
+        {/* ── Main Content Grid ── */}
         <div className="wlt-relationships-container">
-          <div className="wlt-relationships-grid">
-            {/* Left Column: Content */}
-            <div className="wlt-relationships-content-col">
-              <span className="wlt-relationships-eyebrow">
-                Industry Connections
-              </span>
-              <h2 className="wlt-relationships-title">
-                Strong Supplier Relationships Create Better Experiences
-              </h2>
-              <div className="wlt-relationships-accent-line"></div>
+          <div className="wlt-relationships-main-grid">
 
-              <p className="wlt-relationships-lead">
-                Relationships matter in travel.
+            {/* Left Panel — Partners dark card */}
+            <div className="wlt-rel-panel wlt-rel-panel--dark">
+              <p className="wlt-rel-panel-label">We work with leading:</p>
+              <ul className="wlt-rel-partner-list">
+                {[
+                  { num: "01", name: "Luxury cruise lines" },
+                  { num: "02", name: "River cruise companies" },
+                  { num: "03", name: "Expedition operators" },
+                  { num: "04", name: "Premium hotels" },
+                  { num: "05", name: "Tour providers" },
+                  { num: "06", name: "Destination specialists" },
+                ].map((p, i) => (
+                  <li key={i} className="wlt-rel-partner-item">
+                    <span className="wlt-rel-partner-num">{p.num}</span>
+                    <span className="wlt-rel-partner-name">{p.name}</span>
+                    <span className="wlt-rel-partner-arrow">→</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Centre Panel — Full-bleed image */}
+            <div className="wlt-rel-panel wlt-rel-panel--image">
+              <img
+                src={LoveAlumni}
+                alt="Supplier relationships and premium travel experiences"
+                className="wlt-rel-img"
+              />
+              <div className="wlt-rel-img-badge">
+                <span className="wlt-rel-badge-num">6+</span>
+                <span className="wlt-rel-badge-text">Global Partner<br />Categories</span>
+              </div>
+            </div>
+
+            {/* Right Panel — Benefits light card */}
+            <div className="wlt-rel-panel wlt-rel-panel--light">
+              <p className="wlt-rel-panel-label wlt-rel-panel-label--dark">
+                These relationships help universities access:
               </p>
-
-              {/* Partners we work with */}
-              <div className="wlt-relationships-partners-box">
-                <p className="wlt-relationships-partners-title">
-                  Trips &amp; Ships Luxury Travel works with leading:
-                </p>
-                <div className="wlt-relationships-partners-pills">
-                  {[
-                    "Luxury cruise lines",
-                    "River cruise companies",
-                    "Expedition operators",
-                    "Premium hotels",
-                    "Tour providers",
-                    "Destination specialists",
-                  ].map((partner, idx) => (
-                    <span key={idx} className="wlt-relationships-partner-pill">
-                      {partner}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Benefits layout */}
-              <div className="wlt-relationships-benefits-wrapper">
-                <p className="wlt-relationships-benefits-title">
-                  These relationships help universities access:
-                </p>
-
-                <div className="wlt-relationships-benefits-grid">
-                  {[
-                    {
-                      title: "Preferred Availability",
-                      desc: "Especially important for high-demand departures.",
-                    },
-                    {
-                      title: "Exceptional Service",
-                      desc: "Trusted partners consistently deliver quality experiences.",
-                    },
-                    {
-                      title: "Exclusive Opportunities",
-                      desc: "Unique experiences not available through standard travel channels.",
-                    },
-                    {
-                      title: "Better Value",
-                      desc: "Enhanced experiences without sacrificing quality.",
-                    },
-                  ].map((benefit, idx) => (
-                    <div key={idx} className="wlt-relationships-benefit-card">
-                      <span className="wlt-relationships-benefit-icon">
-                        <Star size={16} strokeWidth={2.5} />
-                      </span>
-                      <div className="wlt-relationships-benefit-text">
-                        <h4 className="wlt-relationships-benefit-name">
-                          {benefit.title}
-                        </h4>
-                        <p className="wlt-relationships-benefit-desc">
-                          {benefit.desc}
-                        </p>
-                      </div>
+              <div className="wlt-rel-benefits-stack">
+                {[
+                  {
+                    icon: <Star size={18} strokeWidth={2} />,
+                    title: "Preferred Availability",
+                    desc: "Especially important for high-demand departures.",
+                  },
+                  {
+                    icon: <Award size={18} strokeWidth={2} />,
+                    title: "Exceptional Service",
+                    desc: "Trusted partners consistently deliver quality experiences.",
+                  },
+                  {
+                    icon: <Compass size={18} strokeWidth={2} />,
+                    title: "Exclusive Opportunities",
+                    desc: "Unique experiences not available through standard channels.",
+                  },
+                  {
+                    icon: <TrendingUp size={18} strokeWidth={2} />,
+                    title: "Better Value",
+                    desc: "Enhanced experiences without sacrificing quality.",
+                  },
+                ].map((b, i) => (
+                  <div key={i} className="wlt-rel-benefit-row">
+                    <span className="wlt-rel-benefit-icon">{b.icon}</span>
+                    <div className="wlt-rel-benefit-copy">
+                      <h4 className="wlt-rel-benefit-title">{b.title}</h4>
+                      <p className="wlt-rel-benefit-desc">{b.desc}</p>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Right Column: Image with stylized frame */}
-            <div className="wlt-relationships-image-col">
-              <div className="wlt-relationships-image-wrapper">
-                <img
-                  src={LoveAlumni}
-                  alt="Supplier relationships and premium travel experiences"
-                  className="wlt-relationships-image"
-                />
-                <div className="wlt-relationships-image-tag">
-                  <span className="wlt-relationships-tag-text">
-                    Global Network
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

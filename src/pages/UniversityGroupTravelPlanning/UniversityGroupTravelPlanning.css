@@ -2685,35 +2685,24 @@
 }
 
 /* ==========================================================================
-   STRONG SUPPLIER RELATIONSHIPS SECTION (wlt-relationships-*)
+   STRONG SUPPLIER RELATIONSHIPS — REDESIGNED (wlt-relationships-* / wlt-rel-*)
    ========================================================================== */
 
+/* ── Outer Section ── */
 .wlt-relationships-section {
-  padding: 60px 20px;
   background: var(--bg-white);
-  position: relative;
   overflow: hidden;
 }
 
-.wlt-relationships-container {
-  max-width: 1200px;
+/* ── Centred Header ── */
+.wlt-relationships-header-wrap {
+  padding: 60px 20px 50px;
+  text-align: center;
+}
+
+.wlt-relationships-header-inner {
+  max-width: 760px;
   margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
-.wlt-relationships-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 60px;
-  align-items: center;
-}
-
-/* --- Left Column: Content --- */
-.wlt-relationships-content-col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .wlt-relationships-eyebrow {
@@ -2724,218 +2713,330 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   color: var(--navy);
-  margin-bottom: 12px;
-  background: var(--navy-soft);
-  padding: 6px 16px;
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  padding: 6px 18px;
   border-radius: 50px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
 }
 
 .wlt-relationships-title {
   font-family: var(--font-display);
-  font-size: 42px;
+  font-size: 44px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.18;
   color: var(--navy);
-  margin: 0 0 16px 0;
+  margin: 0 0 18px;
 }
 
 .wlt-relationships-accent-line {
-  width: 60px;
+  width: 56px;
   height: 3px;
   background: var(--navy);
   border-radius: 2px;
-  margin-bottom: 24px;
+  margin: 0 auto 20px;
 }
 
 .wlt-relationships-lead {
   font-family: var(--font-body);
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--text-body);
-  margin-bottom: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
 }
 
-/* Partners Box & Pills */
-.wlt-relationships-partners-box {
-  margin-bottom: 32px;
-  width: 100%;
+/* ── Three-Panel Grid ── */
+.wlt-relationships-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
 }
 
-.wlt-relationships-partners-title {
-  font-family: var(--font-body);
-  font-size: 14.5px;
-  font-weight: 700;
-  color: var(--text-body);
-  margin-bottom: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.wlt-relationships-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  min-height: 520px;
 }
 
-.wlt-relationships-partners-pills {
+/* ── Shared Panel Base ── */
+.wlt-rel-panel {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 44px 36px;
 }
 
-.wlt-relationships-partner-pill {
+/* ── Dark Left Panel ── */
+.wlt-rel-panel--dark {
+  background: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.wlt-rel-panel--dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at top left,
+    rgba(39, 68, 114, 0.5) 0%,
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+.wlt-rel-panel-label {
   font-family: var(--font-body);
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--navy);
-  background: var(--navy-soft);
-  border: 1px solid var(--navy-border);
-  padding: 8px 16px;
-  border-radius: 50px;
-  transition: transform var(--transition), background-color var(--transition);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
 }
 
-.wlt-relationships-partner-pill:hover {
-  transform: translateY(-2px);
-  background: var(--navy);
-  color: var(--bg-white);
+.wlt-rel-panel-label--dark {
+  color: var(--text-muted);
 }
 
-/* Benefits Grid & Cards */
-.wlt-relationships-benefits-wrapper {
-  width: 100%;
+/* Partner numbered list */
+.wlt-rel-partner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  z-index: 1;
 }
 
-.wlt-relationships-benefits-title {
+.wlt-rel-partner-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: default;
+  transition: background var(--transition), padding-left var(--transition);
+  border-radius: 6px;
+}
+
+.wlt-rel-partner-item:last-child {
+  border-bottom: none;
+}
+
+.wlt-rel-partner-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 8px;
+}
+
+.wlt-rel-partner-num {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  min-width: 24px;
+  flex-shrink: 0;
+}
+
+.wlt-rel-partner-name {
   font-family: var(--font-body);
   font-size: 15px;
-  font-weight: 700;
-  color: var(--text-body);
-  margin-bottom: 18px;
+  font-weight: 600;
+  color: var(--bg-white);
+  flex: 1;
 }
 
-.wlt-relationships-benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.wlt-rel-partner-arrow {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.2);
+  transition: color var(--transition), transform var(--transition);
 }
 
-.wlt-relationships-benefit-card {
-  display: flex;
-  gap: 12px;
-  background: var(--bg-soft);
-  padding: 18px;
+.wlt-rel-partner-item:hover .wlt-rel-partner-arrow {
+  color: rgba(255, 255, 255, 0.7);
+  transform: translateX(4px);
+}
+
+/* ── Centre Image Panel ── */
+.wlt-rel-panel--image {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+}
+
+.wlt-rel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wlt-rel-panel--image:hover .wlt-rel-img {
+  transform: scale(1.04);
+}
+
+/* Glass stat badge */
+.wlt-rel-img-badge {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 28, 46, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius);
-  border: 1px solid var(--navy-border);
-  transition: border-color var(--transition), box-shadow var(--transition);
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.wlt-relationships-benefit-card:hover {
-  border-color: rgba(39, 68, 114, 0.3);
-  box-shadow: var(--shadow);
+.wlt-rel-badge-num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--bg-soft);
+  line-height: 1;
 }
 
-.wlt-relationships-benefit-icon {
+.wlt-rel-badge-text {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+/* ── Light Right Panel ── */
+.wlt-rel-panel--light {
+  background: var(--bg-white);
+}
+
+/* Stacked benefit rows */
+.wlt-rel-benefits-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.wlt-rel-benefit-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--navy-border);
+  transition: background var(--transition);
+}
+
+.wlt-rel-benefit-row:first-child {
+  padding-top: 0;
+}
+
+.wlt-rel-benefit-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.wlt-rel-benefit-icon {
   background: var(--navy);
   color: var(--bg-white);
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(39, 68, 114, 0.2);
+  box-shadow: 0 4px 12px rgba(39, 68, 114, 0.25);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.wlt-relationships-benefit-text {
+.wlt-rel-benefit-row:hover .wlt-rel-benefit-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(39, 68, 114, 0.35);
+}
+
+.wlt-rel-benefit-copy {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.wlt-relationships-benefit-name {
+.wlt-rel-benefit-title {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--bg-dark);
   margin: 0;
 }
 
-.wlt-relationships-benefit-desc {
+.wlt-rel-benefit-desc {
   font-family: var(--font-body);
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--text-muted);
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
-  font-weight: 500;
 }
 
-/* --- Right Column: Image Wrapper --- */
-.wlt-relationships-image-col {
-  position: relative;
-}
-
-.wlt-relationships-image-wrapper {
-  position: relative;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-}
-
-.wlt-relationships-image {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
-  display: block;
-  transition: transform var(--transition);
-}
-
-.wlt-relationships-image-wrapper:hover .wlt-relationships-image {
-  transform: scale(1.03);
-}
-
-/* Floating overlay tag */
-.wlt-relationships-image-tag {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(15, 28, 46, 0.85);
-  backdrop-filter: blur(8px);
-  padding: 8px 18px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.wlt-relationships-tag-text {
-  font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--bg-white);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-/* --- Responsive layout --- */
-@media (max-width: 991px) {
-  .wlt-relationships-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .wlt-relationships-main-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
   }
-  
-  .wlt-relationships-image {
-    height: 400px;
+
+  .wlt-rel-panel--image {
+    grid-column: 1 / -1;
+    min-height: 360px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .wlt-relationships-title {
     font-size: 32px;
   }
-  
-  .wlt-relationships-benefits-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
+
+  .wlt-relationships-header-wrap {
+    padding: 60px 20px 36px;
   }
-  
-  .wlt-relationships-section {
-    padding: 60px 15px;
+
+  .wlt-relationships-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wlt-rel-panel {
+    padding: 32px 24px;
+  }
+
+  .wlt-rel-panel--image {
+    grid-column: auto;
+    min-height: 280px;
+  }
+
+  .wlt-rel-img-badge {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
   }
 }
+
 
 
 
