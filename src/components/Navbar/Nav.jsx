@@ -216,6 +216,14 @@ const Nav = () => {
               >
                 Why Trips and Ships Luxury Travel for Universities
               </NavLink>
+
+              <NavLink
+                to="/disney-cruise-vs-viking-ocean-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise vs Viking Ocean Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -434,6 +442,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Why Trips and Ships Luxury Travel for Universities
+            </NavLink>
+
+            <NavLink
+              to="/disney-cruise-vs-viking-ocean-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise vs Viking Ocean Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

@@ -26,6 +26,7 @@ import SmallShipAlumniCruises from "./pages/SmallShipAlumniCruises/SmallShipAlum
 import DonorTravelPrograms from "./pages/DonorTravelPrograms/DonorTravelPrograms";
 import MultiGenerationalAlumniTravel from "./pages/Multi-GenerationalAlumniTravel/MultiGenerationalAlumniTravel";
 import WhyLuxuryTravelForUniversities from "./pages/WhyLuxuryTravelForUniversities/WhyLuxuryTravelForUniversities";
+import DisneyCruisevsVikingOcean from "./pages/DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean";
 
 function App() {
   return (
@@ -158,6 +159,12 @@ function App() {
           <Route
             path="/why-trips-and-ships-luxury-travel-for-universities"
             element={<WhyLuxuryTravelForUniversities />}
+          />
+
+           
+          <Route
+            path="/disney-cruise-vs-viking-ocean-cruises"
+            element={<DisneyCruisevsVikingOcean />}
           />
         </Routes>
       </BrowserRouter>
