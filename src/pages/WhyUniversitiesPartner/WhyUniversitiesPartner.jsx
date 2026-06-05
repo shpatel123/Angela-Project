@@ -27,13 +27,13 @@ import TravelExperience from "../../assets/WhyUniversitiesPartner/Traveler_Exper
 import TravelExperience2 from "../../assets/WhyUniversitiesPartner/Alumni_Travel_Benefits.jpg";
 import TravelExperience3 from "../../assets/WhyUniversitiesPartner/FacultyLedTravel.jpg";
 
-import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
-import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
-import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
-import Experience3 from "../../assets/EducationalTravelPrograms/Educational_Travel4.jpg";
-import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
-import Experience5 from "../../assets/EducationalTravelPrograms/Educational_Travel6.jpg";
-import Experience6 from "../../assets/EducationalTravelPrograms/Educational_Travel7.jpg";
+// import Experience from "../../assets/LuxuryAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg";
+// import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
+// import Experience2 from "../../assets/LuxuryAlumniTravel/historic-university-campus-entrance-academic-landmark-education.jpg";
+// import Experience3 from "../../assets/EducationalTravelPrograms/Educational_Travel4.jpg";
+// import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
+// import Experience5 from "../../assets/EducationalTravelPrograms/Educational_Travel6.jpg";
+// import Experience6 from "../../assets/EducationalTravelPrograms/Educational_Travel7.jpg";
 
 import { Helmet } from "react-helmet-async";
 const sections = [
@@ -119,37 +119,36 @@ const sections = [
     ],
   },
 ];
-const experienceSlides = [
-  {
-    img: Experience,
-    text: "Educational Safari Experiences",
-  },
-  {
-    img: Experience1,
-    text: "Cultural & Nature Exploration",
-  },
-  {
-    img: Experience2,
-    text: "Experiential Adventure Learning",
-  },
-  {
-    img: Experience3,
-    text: "Polar Expedition Learning",
-  },
-  {
-    img: Experience4,
-    text: "Luxury Educational Journeys",
-  },
-  {
-    img: Experience5,
-    text: "Travel the World, Gain New Perspectives",
-  },
-  {
-    img: Experience6,
-    text: "Inspiring Journeys for Lifelong Learners",
-  },
-];
-
+// const experienceSlides = [
+//   {
+//     img: Experience,
+//     text: "Educational Safari Experiences",
+//   },
+//   {
+//     img: Experience1,
+//     text: "Cultural & Nature Exploration",
+//   },
+//   {
+//     img: Experience2,
+//     text: "Experiential Adventure Learning",
+//   },
+//   {
+//     img: Experience3,
+//     text: "Polar Expedition Learning",
+//   },
+//   {
+//     img: Experience4,
+//     text: "Luxury Educational Journeys",
+//   },
+//   {
+//     img: Experience5,
+//     text: "Travel the World, Gain New Perspectives",
+//   },
+//   {
+//     img: Experience6,
+//     text: "Inspiring Journeys for Lifelong Learners",
+//   },
+// ];
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -189,8 +188,7 @@ const schemaData = {
       "@type": "WebPage",
       "@id":
         "https://www.tripsandships.com/why-universities-partner-with-travel-companies",
-      url:
-        "https://www.tripsandships.com/why-universities-partner-with-travel-companies",
+      url: "https://www.tripsandships.com/why-universities-partner-with-travel-companies",
       name: "Why Universities Partner With Travel Companies",
       description:
         "Learn why universities partner with professional travel companies to manage alumni cruises, donor travel programs, educational tours, luxury travel experiences, and university group travel initiatives.",
@@ -217,8 +215,7 @@ const schemaData = {
           "@type": "ListItem",
           position: 2,
           name: "Why Universities Partner With Travel Companies",
-          item:
-            "https://www.tripsandships.com/why-universities-partner-with-travel-companies",
+          item: "https://www.tripsandships.com/why-universities-partner-with-travel-companies",
         },
       ],
     },
@@ -352,12 +349,11 @@ const schemaData = {
             "@type": "Answer",
             text: "A consultation with Trips & Ships Luxury Travel helps identify goals, audiences, destinations, travel formats, and strategic opportunities for long-term success.",
           },
-        }
+        },
       ],
     },
   ],
 };
-
 
 function FAQ() {
   const [open, setOpen] = useState(null);
@@ -667,6 +663,42 @@ WHY UNIVERSITY TRAVEL PROGRAMS CONTINUE TO GROW
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              Change the Way You See the World with HX Expeditions
+            </h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Explore some of the world’s most remote and extraordinary
+              destinations with HX Expeditions. From Antarctica and the Arctic
+              to Greenland, Alaska, and the Galápagos, HX combines expedition
+              cruising with science, education, and responsible exploration.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/8GQe39pWKUU"
+                title="Change the Way You See the World with HX Expeditions"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ════════════════════════════════════════
 WHY INTERNAL TRAVEL PLANNING OFTEN BECOMES CHALLENGING
 ════════════════════════════════════════ */}
@@ -927,6 +959,52 @@ THE TOP REASONS UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL COMPANIES
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              Scenic Yacht Experience: Antarctica from Pole to Pole
+            </h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Discover Antarctica in ultra-luxury with Scenic Eclipse, The
+              World’s First Discovery Yachts™. Journey through pristine polar
+              landscapes, encounter extraordinary wildlife, and explore some of
+              the most remote destinations on Earth. 
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame" style={{ paddingTop: "0" }}>
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                  borderRadius: "12px",
+                }}
+              >
+                <source
+                  src="https://www.dropbox.com/scl/fo/50i1fncme11gdwvndkgz9/AFuDvLLkBLDeL8XFI88FMRY/Scenic/Scenic%20Ocean/Videos/Antarctica/SE25TV1430_16x9_Pole%20to%20Pole_Trade%20(1).mp4?rlkey=hh4iogyoyp7gt2ar13rl22oir&st=x7mosvy4&raw=1"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== EXPERIENCE ===== */}
       {/* <section className="experience">
         <div className="section-inner wide">
@@ -944,72 +1022,6 @@ THE TOP REASONS UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL COMPANIES
                   <span>{slide.text}</span>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* VIDEO SECTION */}
-      {/* <section
-        className="Asc-video-section"
-        id="Asc-video"
-        style={{ backgroundColor: "var(--navy-soft)" }}
-      >
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Closer to the World with Azamara</h2>
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-              Experience how Azamara’s smaller ships, longer stays, and
-              immersive journeys create more meaningful connections with the
-              world. Discover destinations in a more personal, authentic, and
-              unhurried way — where every horizon feels closer.
-            </p>
-          </div>
-
-          <div className="Asc-video-wrapper">
-            <div className="Asc-video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/GQj8QXkJeik"
-                title="Closer to the World with Azamara"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* VIDEO SECTION */}
-      {/* <section
-        className="Asc-video-section"
-        id="Asc-video"
-        style={{ backgroundColor: "var(--bg-soft)" }}
-      >
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Lens of a Local: Pasta Making in Italy</h2>
-
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-              Experience Azamara’s immersive destination-focused travel through
-              this authentic pasta-making journey in Civitavecchia, Italy, where
-              local culture, culinary traditions, and meaningful travel
-              experiences come together beyond the typical cruise itinerary.
-            </p>
-          </div>
-
-          <div className="Asc-video-wrapper">
-            <div className="Asc-video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/VUWKldvItdU"
-                title="Azamara's Lens of a Local: Pasta Making in Civitavecchia, Italy"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
             </div>
           </div>
         </div>
@@ -1194,6 +1206,38 @@ BETTER TRAVELER EXPERIENCES
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--navy-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Discover the World with AmaWaterways</h2>
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Discover the world with AmaWaterways’ extraordinary river
+              journeys.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/nowojFPp1CI"
+                title="Discover the World with AmaWaterways"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── THE TRIPS & SHIPS LUXURY TRAVEL ADVANTAGE ───────────────────────────── */}
       <section className="ugt-advantage-section" id="ugt-advantage">
         <div className="ugt-advantage-container">
@@ -1332,11 +1376,46 @@ WHY UNIVERSITIES PARTNER WITH PROFESSIONAL TRAVEL EXPERTS
         </div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Explore the World with Viking</h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Discover how Viking creates enriching travel experiences through
+              thoughtfully designed river, ocean, and expedition voyages.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/rzdEww4n8lI"
+                title="Explore the World with Viking"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHO SHOULD CHOOSE */}
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">Who Are Alumni River Cruises Best For?</h2>
+            <h2 className="Asc-h2">
+              Who Are Universities Partnering <br /> with Travel Companies Best
+              For?
+            </h2>
             <div className="Asc-accent-line"></div>
           </div>
 

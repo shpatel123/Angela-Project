@@ -27,10 +27,10 @@ import Mediterranean from "../../assets/LuxuryAlumniTravel/Mediterranean.jpg";
 import Alaska from "../../assets/LuxuryAlumniTravel/Alaska.jpg";
 import SouthAmerica from "../../assets/FacultyLedTravelPrograms/South_America.jpg";
 
-import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
+import Experience from "../../assets/LuxuryAlumniTravel/Educational-Safari-Experiences.jpeg";
 import Experience1 from "../../assets/LuxuryAlumniTravel/Alumni-Travel-Experiences.jpeg";
-import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
-import Experience3 from "../../assets/LuxuryAlumniTravel/Alumni-Travel-Experiences2.jpeg";
+import Experience2 from "../../assets/LuxuryAlumniTravel/historic-university-campus-entrance-academic-landmark-education.jpg";
+import Experience3 from "../../assets/LuxuryAlumniTravel/iceland-horseback-riding-kirkjufell-mountain-lupine-fields-adventure.jpg";
 import Experience4 from "../../assets/LuxuryAlumniTravel/Alumni-Travel-Experiences3.jpeg";
 import Experience5 from "../../assets/EducationalTravelPrograms/Educational_Travel6.jpg";
 import Experience6 from "../../assets/EducationalTravelPrograms/Educational_Travel7.jpg";
@@ -52,7 +52,7 @@ const experienceSlides = [
   },
   {
     img: Experience3,
-    text: "Polar Expedition Learning",
+    text: "Horseback Riding Through Iceland's Landscapes",
   },
   {
     img: Experience4,

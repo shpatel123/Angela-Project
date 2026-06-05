@@ -25,9 +25,9 @@ import CTAImage from "../../assets/UniversityGroupTravelPlanning/StartPlan.jpeg"
 
 import Europe from "../../assets/LuxuryAlumniTravel/Europe.jpeg";
 
-import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
+import Experience from "../../assets/LuxuryAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg";
 import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
-import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
+import Experience2 from "../../assets/LuxuryAlumniTravel/historic-university-campus-entrance-academic-landmark-education.jpg";
 import Experience3 from "../../assets/EducationalTravelPrograms/Educational_Travel4.jpg";
 import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
 import Experience5 from "../../assets/EducationalTravelPrograms/Educational_Travel6.jpg";

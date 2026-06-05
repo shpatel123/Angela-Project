@@ -25,12 +25,12 @@ import Asia from "../../assets/FacultyLedTravelPrograms/Asia.jpeg";
 import Africa from "../../assets/EducationalTravelPrograms/Educational_Travel.jpg";
 import SouthAmerica from "../../assets/FacultyLedTravelPrograms/South_America.jpg";
 
-import Experience from "../../assets/LuxuryAlumniTravel/FacultyLedTravel.jpg";
+import Experience from "../../assets/LuxuryAlumniTravel/alumni-luxury-safari-group-travel-africa-wildlife-experience.jpg";
 import Experience1 from "../../assets/LuxuryAlumniTravel/Educational_Travel_Experiences.jpg";
-import Experience2 from "../../assets/LuxuryAlumniTravel/FacultyLedTravel3.jpg";
-import Experience3 from "../../assets/EducationalTravelPrograms/Educational_Travel4.jpg";
-import Experience4 from "../../assets/EducationalTravelPrograms/Educational_Travel5.jpg";
-import Experience5 from "../../assets/EducationalTravelPrograms/Educational_Travel6.jpg";
+import Experience2 from "../../assets/LuxuryAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg";
+import Experience3 from "../../assets/LuxuryAlumniTravel/alumni-adventure-travel-whitewater-rafting-group-experience.jpg.jpg";
+import Experience4 from "../../assets/LuxuryAlumniTravel/alumni-group-travel-santorini-greece-community-experience.jpg";
+import Experience5 from "../../assets/LuxuryAlumniTravel/paris-luxury-travelers-eiffel-tower-riverside-cultural-experience.jpg";
 import Experience6 from "../../assets/EducationalTravelPrograms/Educational_Travel7.jpg";
 
 import { Helmet } from "react-helmet-async";
@@ -38,7 +38,7 @@ import { Helmet } from "react-helmet-async";
 const experienceSlides = [
   {
     img: Experience,
-    text: "Educational Safari Experiences",
+    text: "Luxury African Safari for Alumni Travelers",
   },
   {
     img: Experience1,
@@ -50,15 +50,15 @@ const experienceSlides = [
   },
   {
     img: Experience3,
-    text: "Polar Expedition Learning",
+    text: "Alumni Whitewater Rafting Adventure",
   },
   {
     img: Experience4,
-    text: "Luxury Educational Journeys",
+    text: "Alumni Group Travel in Santorini, Greece",
   },
   {
     img: Experience5,
-    text: "Travel the World, Gain New Perspectives",
+    text: "Luxury Cultural Experience in Paris",
   },
   {
     img: Experience6,
