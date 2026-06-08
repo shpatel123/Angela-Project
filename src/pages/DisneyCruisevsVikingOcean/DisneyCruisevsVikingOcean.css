@@ -748,16 +748,27 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .dve-entertainment-compare-section,
   .dve-winner-section,
   .dfg-ideal-section {
     padding: 4rem 0;
   }
+  .dfg-card h3,.adg-c-venue-name{
+    font-size: 22px;
+  }
+  .dve-winner-badge, .dve-footer-badge {
+    font-size: 10px;
+    margin-right:10px;
+  }
+  
 
   .dve-section-title,
   .dfg-section-title {
-    font-size: 2rem;
+    font-size: 24px;
+  }
+  .dfg-section-subtitle,.dmg-ships-intro{
+    font-size: 16px;
   }
 
   .dve-compare-card,
@@ -772,7 +783,7 @@
   }
 
   .dve-card-icon-header h3 {
-    font-size: 1.5rem;
+    font-size: 22px;
   }
 
   .dve-highlight-item {
@@ -795,7 +806,7 @@
   }
 
   .dve-winner-title {
-    font-size: 1.7rem;
+    font-size: 22px;
   }
 
   .dve-winner-image-wrap {
@@ -1037,7 +1048,7 @@
   }
   
   .dmg-ships-title {
-    font-size: 2.2rem;
+    font-size: 28px;
   }
   
   .dmg-ships-header {
@@ -1045,10 +1056,13 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .dmg-ships-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .dmg-ship-name{
+    font-size: 22px;
   }
   
   .dmg-ship-card-inner {
@@ -1056,7 +1070,10 @@
   }
   
     .dmg-ships-title {
-    font-size: 1.85rem;
+    font-size: 24px;
+  }
+  h2{
+    font-size: 24px;
   }
 }
 
@@ -1337,7 +1354,7 @@
   }
 
   .dmg-info-title {
-    font-size: 1.9rem;
+    font-size: 28px;
   }
 
   .dmg-media-img {
@@ -1351,7 +1368,7 @@
   }
 
   .dmg-info-title {
-    font-size: 1.65rem;
+    font-size: 24px;
   }
 
   .dmg-media-img {
@@ -2430,7 +2447,7 @@
     padding: 4.5rem 0;
   }
   .lta-section-title {
-    font-size: 2rem;
+    font-size: 28px;
   }
   .lta-card-content {
     padding: 2rem 1.75rem;
@@ -2442,13 +2459,13 @@
     padding: 4rem 0;
   }
   .lta-section-title {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
   .lta-card-content {
     padding: 1.75rem 1.25rem;
   }
   .lta-card-title {
-    font-size: 1.45rem;
+    font-size: 22px;
   }
 }
 
