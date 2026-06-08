@@ -1662,3 +1662,793 @@
     transform: translateY(0);
   }
 }
+
+/* ==========================================================================
+   ALASKA EXPERTISE SECTION (ake-expertise-section)
+   ========================================================================== */
+
+.ake-expertise-section {
+  padding: 6rem 0;
+  background: linear-gradient(160deg, var(--bg-soft) 0%, #eaf0fb 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle ambient glow */
+.ake-expertise-section::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(39, 68, 114, 0.06) 0%, transparent 70%);
+  top: -150px;
+  right: -150px;
+  pointer-events: none;
+}
+
+.ake-expertise-section::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(39, 68, 114, 0.05) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.ake-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Section Header ── */
+.ake-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.ake-section-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.ake-section-accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+.ake-section-subtitle {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-muted) !important;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* ── Cards Grid ── */
+.ake-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* ── Individual Card ── */
+.ake-card {
+  background: var(--bg-white);
+  border-radius: 24px;
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 12px 35px rgba(39, 68, 114, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ake-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 65px rgba(39, 68, 114, 0.13);
+  border-color: var(--navy-light);
+}
+
+/* ── Card Image ── */
+.ake-card-image-wrap {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.ake-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ake-card:hover .ake-card-img {
+  transform: scale(1.07);
+}
+
+.ake-card-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.6) 0%,
+    rgba(15, 23, 42, 0.1) 50%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+.ake-card-image-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--bg-white);
+  background: rgba(39, 68, 114, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ake-princess-badge {
+  background: rgba(15, 30, 65, 0.88);
+}
+
+/* ── Card Content ── */
+.ake-card-content {
+  padding: 2.5rem 2.25rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ake-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.ake-card-icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--navy-soft);
+  border: 1px solid var(--navy-border);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.ake-card:hover .ake-card-icon-wrap {
+  background: var(--navy);
+  color: var(--bg-white);
+  border-color: var(--navy-light);
+  transform: scale(1.1) rotate(10deg);
+}
+
+.ake-princess-icon-wrap {
+  background: rgba(39, 68, 114, 0.1);
+}
+
+.ake-card-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.ake-card-intro {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+/* ── Group Label ── */
+.ake-card-group-label {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+/* ── Simple Checklist (Disney) ── */
+.ake-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ake-card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: var(--text-body);
+  padding: 0.7rem 1rem;
+  background: var(--bg-soft);
+  border-radius: 10px;
+  border: 1px solid var(--navy-border);
+  transition: all 0.3s ease;
+}
+
+.ake-card-list-item:hover {
+  transform: translateX(6px);
+  background: var(--bg-white);
+  border-color: var(--navy-light);
+}
+
+.ake-card-list-icon {
+  color: var(--navy);
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.ake-card-list-item:hover .ake-card-list-icon {
+  background: var(--navy);
+  color: var(--bg-white);
+  border-color: var(--navy-light);
+}
+
+/* ── Feature List (Princess) ── */
+.ake-card-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.ake-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--bg-soft);
+  border-radius: 14px;
+  border: 1px solid var(--navy-border);
+  transition: all 0.3s ease;
+}
+
+.ake-feature-item:hover {
+  transform: translateX(6px);
+  background: var(--bg-white);
+  border-color: var(--navy-light);
+  box-shadow: 0 6px 18px rgba(39, 68, 114, 0.08);
+}
+
+.ake-feature-icon-box {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: all 0.3s ease;
+}
+
+.ake-feature-item:hover .ake-feature-icon-box {
+  background: var(--navy);
+  color: var(--bg-white);
+  border-color: var(--navy-light);
+}
+
+.ake-feature-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ake-feature-title {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.ake-feature-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── Divider ── */
+.ake-card-divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--navy-border), transparent);
+  margin: 1.5rem 0;
+}
+
+/* ── Highlight Box ── */
+.ake-card-highlight {
+  margin-top: auto;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-soft);
+  border-radius: 14px;
+  border: 1px solid var(--navy-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.ake-card-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--navy), var(--navy-light));
+  border-radius: 2px 0 0 2px;
+}
+
+.ake-card-highlight p {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 8px;
+}
+
+/* ── Winner Highlight (Princess) ── */
+.ake-winner-highlight {
+  background: linear-gradient(135deg, rgba(39, 68, 114, 0.06) 0%, rgba(39, 68, 114, 0.02) 100%);
+  border-color: var(--navy-light);
+}
+
+.ake-winner-label {
+  display: inline-block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--bg-white);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: 0.85rem;
+  margin-left: 8px;
+}
+
+.ake-winner-highlight p {
+  color: var(--navy) !important;
+  font-weight: 500;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .ake-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ake-section-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ake-expertise-section {
+    padding: 4.5rem 0;
+  }
+
+  .ake-section-title {
+    font-size: 2rem;
+  }
+
+  .ake-card-image-wrap {
+    height: 230px;
+  }
+
+  .ake-card-content {
+    padding: 2rem 1.75rem 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ake-expertise-section {
+    padding: 4rem 0;
+  }
+
+  .ake-section-title {
+    font-size: 1.75rem;
+  }
+
+  .ake-card-image-wrap {
+    height: 200px;
+  }
+
+  .ake-card-content {
+    padding: 1.75rem 1.25rem 1.5rem;
+  }
+
+  .ake-card-title {
+    font-size: 1.45rem;
+  }
+}
+
+/* ==========================================================================
+   LAND TOURS AND ALASKA EXPLORATION SECTION (lta-landtours-section)
+   ========================================================================== */
+
+.lta-landtours-section {
+  padding: 60px 20px;
+  background: var(--bg-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.lta-landtours-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(39, 68, 114, 0.05) 0%, transparent 70%);
+  top: -100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.lta-landtours-section::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(39, 68, 114, 0.04) 0%, transparent 70%);
+  bottom: -150px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.lta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.lta-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.lta-section-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.lta-section-subtitle {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-muted) !important;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin-top: 20px;
+}
+
+/* Cards Grid */
+.lta-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* Individual Card */
+.lta-card {
+  background: var(--bg-white);
+  border-radius: 24px;
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 12px 35px rgba(39, 68, 114, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lta-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 65px rgba(39, 68, 114, 0.13);
+  border-color: var(--navy-light);
+}
+
+.lta-card-content {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.lta-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.lta-card-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--navy-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  transition: all 0.35s ease;
+}
+
+.lta-card:hover .lta-card-icon-wrap {
+  background: var(--navy);
+  color: var(--bg-white);
+  transform: scale(1.05);
+}
+
+.lta-card-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0;
+}
+
+.lta-card-intro {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.lta-card-divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--navy-border), transparent);
+  margin: 1.5rem 0;
+}
+
+.lta-group-label {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+/* Feature list and list items */
+.lta-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lta-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: var(--text-body);
+}
+
+.lta-list-icon {
+  color: #10b981; /* beautiful green */
+  flex-shrink: 0;
+}
+
+.lta-list-icon-minus {
+  color: #ef4444; /* beautiful red */
+  flex-shrink: 0;
+}
+
+/* Single feature item for Disney */
+.lta-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.lta-feature-icon-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.08); /* light red/coral soft background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef4444;
+  flex-shrink: 0;
+}
+
+.lta-feature-texts {
+  flex: 1;
+}
+
+.lta-feature-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Card Highlight Box */
+.lta-card-highlight {
+  margin-top: auto;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-soft);
+  border-radius: 14px;
+  border: 1px solid var(--navy-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.lta-card-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--navy), var(--navy-light));
+  border-radius: 2px 0 0 2px;
+}
+
+.lta-card-highlight p {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: var(--text-body) !important;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 8px;
+}
+
+/* Winner styling */
+.lta-winner-highlight {
+  border-color: var(--navy-light);
+  box-shadow: 0 12px 40px rgba(39, 68, 114, 0.1);
+  position: relative;
+}
+
+.lta-winner-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+}
+
+.lta-winner-highlight-box {
+  background: linear-gradient(135deg, rgba(39, 68, 114, 0.06) 0%, rgba(39, 68, 114, 0.02) 100%);
+  border-color: var(--navy-light);
+}
+
+.lta-winner-label {
+  display: inline-block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--bg-white);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: 0.85rem;
+  margin-left: 8px;
+}
+
+.lta-winner-highlight-box p {
+  color: var(--navy) !important;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .lta-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .lta-section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lta-landtours-section {
+    padding: 4.5rem 0;
+  }
+  .lta-section-title {
+    font-size: 2rem;
+  }
+  .lta-card-content {
+    padding: 2rem 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .lta-landtours-section {
+    padding: 4rem 0;
+  }
+  .lta-section-title {
+    font-size: 1.75rem;
+  }
+  .lta-card-content {
+    padding: 1.75rem 1.25rem;
+  }
+  .lta-card-title {
+    font-size: 1.45rem;
+  }
+}
+

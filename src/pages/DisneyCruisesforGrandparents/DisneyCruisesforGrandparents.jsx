@@ -19,7 +19,7 @@ import {
   Umbrella,
   Mountain,
   Landmark,
-} from "lucide-react"; 
+} from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 // import HeroImage1 from "../../assets/MultiGenerationalAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg.jpg";
@@ -204,7 +204,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in university travel programs, alumni cruises, donor travel programs, educational travel, and luxury group travel experiences.",
+        "Luxury travel agency specializing in luxury cruises, family travel, river cruises, expedition cruises, and custom travel planning.",
     },
 
     {
@@ -213,41 +213,36 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Trusted university travel partner providing alumni travel programs, donor travel experiences, educational travel planning, luxury cruises, and customized group travel solutions.",
-    },
-
-    {
-      "@type": "Person",
-      "@id": "https://www.tripsandships.com/#angelahughes",
-      name: "Angela Hughes",
-      jobTitle: "CEO",
-      worksFor: {
-        "@id": "https://www.tripsandships.com/#organization",
-      },
-      description:
-        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board Member, luxury travel educator, international speaker, columnist, and travel expert with more than 40 years of experience and travel to over 121 countries.",
+        "Luxury travel experts helping travelers choose the right cruise experiences through expert comparisons, planning, and personalized travel services.",
     },
 
     {
       "@type": "WebPage",
       "@id":
-        "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities",
-      url: "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities",
-      name: "Why Trips & Ships Luxury Travel for Universities",
+        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
+      url: "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
+      name: "Disney Cruise vs Viking Ocean Cruises",
       description:
-        "Discover why universities, alumni associations, advancement offices, and lifelong learning organizations choose Trips & Ships Luxury Travel for alumni cruises, donor travel programs, educational travel, and luxury group experiences.",
+        "Compare Disney Cruise Line and Viking Ocean Cruises. Explore differences in destinations, accommodations, dining, entertainment, pricing, family travel, luxury experiences, and overall value.",
       isPartOf: {
         "@id": "https://www.tripsandships.com/#website",
       },
-      about: {
-        "@id": "https://www.tripsandships.com/#travelagency",
-      },
+      about: [
+        {
+          "@type": "Organization",
+          name: "Disney Cruise Line",
+        },
+        {
+          "@type": "Organization",
+          name: "Viking Ocean Cruises",
+        },
+      ],
     },
 
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities#breadcrumb",
+        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -258,8 +253,14 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Why Trips & Ships Luxury Travel for Universities",
-          item: "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities",
+          name: "Cruise Comparisons",
+          item: "https://www.tripsandships.com/cruise-comparisons",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Disney Cruise vs Viking Ocean Cruises",
+          item: "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
         },
       ],
     },
@@ -267,132 +268,131 @@ const schemaData = {
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.tripsandships.com/why-trips-and-ships-luxury-travel-for-universities#faq",
+        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "Why do universities choose Trips & Ships Luxury Travel?",
+          name: "Is Disney Cruise Line more luxurious than Viking?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Universities choose Trips & Ships Luxury Travel because we understand alumni engagement, donor relations, educational travel, luxury travel planning, and the unique objectives of higher education institutions.",
+            text: "No. Viking Ocean Cruises is generally considered a luxury cruise line, while Disney Cruise Line is a premium family cruise brand focused on entertainment and family experiences.",
           },
         },
-
         {
           "@type": "Question",
-          name: "What types of travel programs do you manage?",
+          name: "Does Viking Ocean Cruises allow children?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We manage alumni cruises, donor travel programs, educational tours, river cruises, expedition cruises, small ship cruises, faculty-led travel programs, and custom university travel experiences.",
+            text: "No. Viking Ocean Cruises is adults-only and does not permit guests under the age of 18.",
           },
         },
-
         {
           "@type": "Question",
-          name: "How is Trips & Ships Luxury Travel different from a traditional travel agency?",
+          name: "Which cruise line is better for families?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Unlike traditional travel agencies, we focus on strategic travel experiences that support university engagement, alumni relations, donor stewardship, lifelong learning, and advancement objectives.",
+            text: "Disney Cruise Line is generally the better choice for families due to its youth programs, character experiences, family entertainment, and multi-generational appeal.",
           },
         },
-
         {
           "@type": "Question",
-          name: "Can university travel programs be customized?",
+          name: "Which cruise line is better for couples?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Absolutely. Every travel program is customized based on institutional goals, audience demographics, educational objectives, travel preferences, and engagement priorities.",
+            text: "Many couples seeking a luxury, adults-only experience prefer Viking Ocean Cruises because of its cultural enrichment, destination focus, and sophisticated atmosphere.",
           },
         },
-
         {
           "@type": "Question",
-          name: "Do you help with donor travel programs?",
+          name: "Is Disney Cruise Line worth the higher price?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Donor engagement and stewardship travel programs are among our specialties, helping institutions strengthen relationships and support advancement initiatives.",
+            text: "For travelers who value Disney entertainment, family experiences, and exceptional service, many consider Disney Cruise Line worth the premium pricing.",
           },
         },
-
         {
           "@type": "Question",
-          name: "Can faculty participate in university travel programs?",
+          name: "What is included in Viking Ocean Cruises fares?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Faculty participation is highly encouraged and often enhances the educational value of travel experiences through lectures, discussions, and destination-specific expertise.",
+            text: "Many Viking fares include a shore excursion in every port, Wi-Fi, specialty dining, beer and wine with meals, and educational programming.",
           },
         },
-
         {
           "@type": "Question",
-          name: "What destinations are most popular for university travel programs?",
+          name: "Which cruise line has better food?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Europe, Alaska, Antarctica, the Mediterranean, river cruise regions, the Galápagos Islands, and culturally rich destinations consistently perform well for university travel programs.",
+            text: "Viking generally receives stronger reviews for fine dining and destination-inspired cuisine, while Disney excels in family-friendly dining experiences.",
           },
         },
-
         {
           "@type": "Question",
-          name: "How far in advance should university travel planning begin?",
+          name: "Which cruise line has better entertainment?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Most successful university travel programs begin planning 12 to 24 months before departure to secure preferred itineraries, accommodations, and group space.",
+            text: "Disney Cruise Line leads in entertainment with Broadway-style shows, character experiences, and family programming, while Viking focuses on educational enrichment and cultural presentations.",
           },
         },
-
         {
           "@type": "Question",
-          name: "Do you provide traveler support?",
+          name: "Are Viking Ocean ships smaller than Disney ships?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. We provide comprehensive traveler support before, during, and after travel, ensuring a seamless and enjoyable experience for participants.",
+            text: "Yes. Viking Ocean ships are generally smaller and provide a more intimate luxury cruise experience compared to many mainstream family-focused cruise ships.",
           },
         },
-
         {
           "@type": "Question",
-          name: "Can travel programs support fundraising goals?",
+          name: "Which cruise line is better for first-time cruisers?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Travel experiences often strengthen alumni and donor relationships, creating opportunities that contribute to long-term advancement and fundraising success.",
+            text: "Disney Cruise Line is excellent for families taking their first cruise, while Viking Ocean Cruises is ideal for adults seeking a relaxed introduction to luxury cruising.",
           },
         },
+      ],
+    },
 
+    {
+      "@type": "ItemList",
+      "@id":
+        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises#comparison",
+      name: "Disney Cruise Line vs Viking Ocean Cruises Comparison",
+      itemListElement: [
         {
-          "@type": "Question",
-          name: "Why is Angela Hughes involved in university travel programs?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Angela Hughes brings more than 40 years of travel industry experience, expertise gained from visiting over 121 countries, and a deep commitment to educational travel and exceptional service.",
-          },
+          "@type": "ListItem",
+          position: 1,
+          name: "Best For",
+          description:
+            "Disney Cruise Line is best for families and multi-generational travelers, while Viking Ocean Cruises is best for adults and couples.",
         },
-
         {
-          "@type": "Question",
-          name: "What is the first step to working with Trips & Ships Luxury Travel?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The first step is a consultation to understand your institution's goals, audience, travel objectives, and opportunities for creating a successful travel program.",
-          },
+          "@type": "ListItem",
+          position: 2,
+          name: "Atmosphere",
+          description:
+            "Disney offers a fun and family-focused atmosphere, while Viking offers a sophisticated adults-only environment.",
         },
-
         {
-          "@type": "Question",
-          name: "What makes Trips & Ships Luxury Travel a trusted university travel partner?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Our university-focused expertise, luxury travel specialization, educational travel experience, donor engagement knowledge, strong supplier relationships, and personalized service make us a trusted partner for higher education institutions.",
-          },
+          "@type": "ListItem",
+          position: 3,
+          name: "Entertainment",
+          description:
+            "Disney emphasizes Broadway shows and character experiences, while Viking focuses on lectures and cultural enrichment.",
         },
-
         {
-          "@type": "Question",
-          name: "What benefits do universities gain from partnering with Trips & Ships Luxury Travel?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Universities gain expert planning, enhanced alumni engagement, stronger donor relationships, educational enrichment, reduced administrative burden, and access to world-class travel experiences.",
-          },
+          "@type": "ListItem",
+          position: 4,
+          name: "Dining",
+          description:
+            "Disney offers family-friendly dining experiences, while Viking specializes in destination-inspired cuisine and luxury dining.",
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          name: "Travel Style",
+          description:
+            "Disney focuses on entertainment and family fun, while Viking emphasizes destination immersion, culture, and lifelong learning.",
         },
       ],
     },
@@ -1414,9 +1414,12 @@ const DisneyCruisesforGrandparents = () => {
         <div className="luc-why-container">
           {/* LEFT — stacked images */}
           <div className="luc-why-images">
-            <div className="luc-why-img-main-wrap" style={{
-    color: "#fff",
-  }}>
+            <div
+              className="luc-why-img-main-wrap"
+              style={{
+                color: "#fff",
+              }}
+            >
               <img
                 // src={AlumniTravel3}
                 alt="Grandparents enjoying a Disney Cruise"
@@ -1425,9 +1428,12 @@ const DisneyCruisesforGrandparents = () => {
               <div className="luc-why-img-overlay"></div>
             </div>
 
-            <div className="luc-why-img-accent-wrap" style={{
-    color: "#fff",
-  }}>
+            <div
+              className="luc-why-img-accent-wrap"
+              style={{
+                color: "#fff",
+              }}
+            >
               <img
                 // src={LoveAlumni2}
                 alt="Multigenerational Disney Cruise vacation"

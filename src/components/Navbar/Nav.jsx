@@ -232,6 +232,14 @@ const Nav = () => {
               >
                 Disney Cruise For Multigenerational Families
               </NavLink>
+
+              <NavLink
+                to="/disney-alaska-vs-princess-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Alaska vs Princess Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -466,6 +474,14 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Disney Cruise For Multigenerational Families
+              </NavLink>
+
+               <NavLink
+                to="/disney-alaska-vs-princess-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Alaska vs Princess Cruises
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
