@@ -29,6 +29,7 @@ import WhyLuxuryTravelForUniversities from "./pages/WhyLuxuryTravelForUniversiti
 import DisneyCruisevsVikingOcean from "./pages/DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean";
 import DisneyCruisesforGrandparents from "./pages/DisneyCruisesforGrandparents/DisneyCruisesforGrandparents";
 import DisneyAlaskavsPrincessCruises from "./pages/DisneyAlaskavsPrincessCruises/DisneyAlaskavsPrincessCruises";
+import DisneyAlaskavsHollandAmerica from "./pages/DisneyAlaskavsHollandAmerica/DisneyAlaskavsHollandAmerica";
 
 function App() {
   return (
@@ -177,6 +178,11 @@ function App() {
            <Route
             path="/disney-alaska-vs-princess-cruises"
             element={<DisneyAlaskavsPrincessCruises />}
+          />
+
+           <Route
+            path="/disney-alaska-vs-holland-america"
+            element={<DisneyAlaskavsHollandAmerica />}
           />
         </Routes>
       </BrowserRouter>

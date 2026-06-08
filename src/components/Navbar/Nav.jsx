@@ -240,6 +240,14 @@ const Nav = () => {
               >
                 Disney Alaska vs Princess Cruises
               </NavLink>
+
+              <NavLink
+                to="/disney-alaska-vs-holland-america"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Alaska vs Holland America
+              </NavLink>
             </div>
           </div>
         </div>
@@ -469,20 +477,28 @@ const Nav = () => {
             </NavLink>
 
             <NavLink
-                to="/disney-cruises-for-grandparents-and-multigenerational-families"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Disney Cruise For Multigenerational Families
-              </NavLink>
+              to="/disney-cruises-for-grandparents-and-multigenerational-families"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise For Multigenerational Families
+            </NavLink>
 
-               <NavLink
-                to="/disney-alaska-vs-princess-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Disney Alaska vs Princess Cruises
-              </NavLink>
+            <NavLink
+              to="/disney-alaska-vs-princess-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Alaska vs Princess Cruises
+            </NavLink>
+
+            <NavLink
+              to="/disney-alaska-vs-holland-america"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Alaska vs Holland America
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

@@ -530,7 +530,7 @@ const DisneyCruisesforGrandparents = () => {
       <Nav />
 
       {/* HERO */}
-      <section className="Scenic_hero_section">
+      <section className="Scenic_hero_section"  style={{backgroundColor: "var(--bg-dark)"}}>
         {images.map((img, index) => (
           <div
             key={index}

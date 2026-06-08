@@ -2335,7 +2335,7 @@
 
 .lta-feature-desc {
   font-family: var(--font-body, "Montserrat", sans-serif);
-  font-size: 0.95rem;
+  font-size: 16px;
   color: var(--text-muted);
   line-height: 1.5;
   margin: 0;

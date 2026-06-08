@@ -22,7 +22,7 @@ import {
   Film,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela3.jpeg";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 // import HeroImage1 from "../../assets/DisneyCruisevsVikingOcean/VikingHero.webp";
 // import HeroImage2 from "../../assets/Azamarashipcomparison/Seabournhero2.webp";
 // import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";
@@ -274,64 +274,53 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "Is Disney or Princess better for Alaska?",
-      a: "Disney is generally better for families with younger children, while Princess is often preferred by travelers seeking a deeper Alaska experience.",
+      q: "Is Disney or Holland America better for Alaska?",
+      a: "Disney is generally better for families with younger children, while Holland America is often preferred by travelers seeking a more immersive Alaska experience.",
     },
+
     {
-      q: "Which cruise line is better for grandparents and grandchildren?",
-      a: "Disney Cruise Line is often the top choice for grandparents traveling with younger grandchildren.",
+      q: "Which cruise line has more Alaska experience?",
+      a: "Holland America is widely recognized as one of the most experienced Alaska cruise operators.",
     },
-    {
-      q: "Does Princess have Glacier Bay itineraries?",
-      a: "Yes. Princess offers several Glacier Bay itineraries and is known for its strong Alaska programming.",
-    },
+
     {
       q: "Is Disney Alaska worth the extra cost?",
-      a: "For families who value Disney entertainment, service, and multigenerational experiences, many believe the premium pricing is justified.",
+      a: "For families who value Disney entertainment and multigenerational experiences, many travelers feel the premium pricing is justified.",
     },
-    {
-      q: "Which cruise line has better entertainment?",
-      a: "Disney is widely considered the leader in cruise entertainment.",
-    },
-    {
-      q: "Which line offers better Alaska education?",
-      a: "Princess generally provides more in-depth destination enrichment and educational programming.",
-    },
-    {
-      q: "Does Disney offer Alaska land tours?",
-      a: "Disney focuses primarily on cruise experiences, while Princess offers extensive land-and-sea vacation packages.",
-    },
+
     {
       q: "Which line is better for wildlife viewing?",
-      a: "Both provide excellent wildlife opportunities, though Princess often offers more comprehensive Alaska-focused experiences.",
+      a: "Holland America generally offers more wildlife-focused programming and excursions.",
     },
+
     {
-      q: "Is Princess good for families?",
-      a: "Yes. Princess welcomes families, but its onboard experience is more destination-focused than Disney's.",
+      q: "Which line has better entertainment?",
+      a: "Disney is widely considered the leader in cruise entertainment.",
     },
+
     {
-      q: "Which cruise line offers better value?",
-      a: "Princess generally offers stronger value for travelers whose primary goal is exploring Alaska.",
+      q: "Which line offers better food?",
+      a: "Holland America is often praised for its dining and regional cuisine.",
     },
+
     {
-      q: "Do Disney Alaska Cruises visit Glacier Bay National Park?",
-      a: "Some Disney Alaska itineraries include Glacier Bay National Park, while others visit destinations such as Endicott Arm and Dawes Glacier. It is important to review the specific itinerary before booking, as glacier destinations can vary by sailing.",
+      q: "Does Holland America offer Glacier Bay?",
+      a: "Yes. Holland America operates numerous Glacier Bay itineraries.",
     },
+
     {
-      q: "Which Alaska cruise is better for first-time visitors?",
-      a: "Both are excellent choices for first-time Alaska travelers. Disney is often preferred by families seeking a balance of sightseeing and onboard entertainment, while Princess is ideal for travelers who want a more destination-focused Alaska experience.",
+      q: "Is Holland America good for families?",
+      a: "Yes, particularly for families with older children and teenagers who enjoy nature and destination-focused travel.",
     },
+
     {
-      q: "Are shore excursions included on Disney and Princess Alaska cruises?",
-      a: "No. Most shore excursions are available at an additional cost on both cruise lines. Popular excursions include whale watching, glacier tours, dog sledding experiences, fishing trips, and wildlife viewing adventures.",
+      q: "Which line offers better value?",
+      a: "Holland America typically provides stronger overall value for Alaska-focused travelers.",
     },
+
     {
-      q: "Which cruise line has better cabins for families?",
-      a: "Disney Cruise Line is generally considered better for families thanks to larger staterooms, split-bathroom designs, family-friendly layouts, and a greater selection of connecting cabins that accommodate larger groups.",
-    },
-    {
-      q: "Can I combine an Alaska cruise with a visit to Denali National Park?",
-      a: "Princess Cruises offers some of the industry's most popular Alaska Cruisetour packages, which combine an Alaska cruise with visits to Denali National Park, scenic rail journeys, and wilderness lodges. Disney's Alaska cruises primarily focus on the cruise experience and do not offer the same extensive land-tour options.",
+      q: "Which cruise line is best for grandparents and grandchildren?",
+      a: "Disney is often the top choice when younger grandchildren are involved.",
     },
   ];
 
@@ -363,10 +352,9 @@ function FAQ() {
     </div>
   );
 }
-const DisneyAlaskavsPrincessCruises = () => {
+const DisneyAlaskavsHollandAmerica = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const [readMoreEducation, setReadMoreEducation] = useState(false);
   <p className="azs-exp-highlight">
     <strong>Winner: Princess</strong>
     <br />
@@ -385,21 +373,21 @@ const DisneyAlaskavsPrincessCruises = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Disney Alaska vs Princess Cruises | Which Alaska Cruise Is Best?
+          Disney Alaska vs Holland America | Which Alaska Cruise Is Best?
         </title>
         <meta
           name="title"
-          content="Disney Alaska vs Princess Cruises Comparison Guide"
+          content="Disney Alaska vs Holland America Alaska Cruise Comparison"
         />
         <meta
           name="description"
-          content="Compare Disney Alaska Cruises and Princess Cruises Alaska sailings. Explore differences in family experiences, Glacier Bay access, entertainment, dining, excursions, pricing, and overall value to find the best Alaska cruise for your travel style."
+          content="Compare Disney Alaska Cruises and Holland America Alaska Cruises. Discover differences in family travel, Glacier Bay access, dining, entertainment, wildlife experiences, pricing, and Alaska expertise to find the right cruise for your vacation."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
       <Nav />
       {/* HERO */}
-      <section className="Scenic_hero_section"  style={{backgroundColor: "var(--navy)"}}>
+      <section className="Scenic_hero_section" style={{backgroundColor: "var(--navy)"}}>
         {images.map((img, index) => (
           <div
             key={index}
@@ -412,12 +400,12 @@ const DisneyAlaskavsPrincessCruises = () => {
 
         <div className="Scenic_hero_content">
           <h1>
-            Disney Alaska vs Princess Cruises: Which Alaska Cruise Delivers the
-            Better Experience?
+            Disney Alaska vs Holland America: Family Adventure or Alaska
+            Immersion?
           </h1>
 
           <p>
-            Alaska is one of the most spectacular cruise destinations in the
+            Alaska is one of the most extraordinary cruise destinations in the
             world.
           </p>
 
@@ -425,32 +413,32 @@ const DisneyAlaskavsPrincessCruises = () => {
           {readMore && (
             <>
               <p>
-                Towering glaciers, abundant wildlife, breathtaking scenery, and
-                fascinating frontier history make it a bucket-list destination
-                for travelers of all ages.
+                From towering glaciers and breaching whales to remote wilderness
+                and charming coastal towns, Alaska offers experiences unlike
+                anywhere else on Earth.
               </p>
 
               <p>
-                Two of the most popular options for Alaska cruises are Disney
-                Cruise Line and Princess Cruises.
+                When planning an Alaska cruise, two popular choices often
+                emerge: Disney Cruise Line and Holland America Line.
               </p>
 
               <p>
-                While both cruise lines offer unforgettable journeys through
-                Alaska's Inside Passage, they provide very different vacation
-                experiences.
+                While both provide exceptional Alaska itineraries, they deliver
+                very different vacation experiences.
               </p>
 
               <p>
-                Disney focuses on family entertainment, multigenerational
-                travel, and Disney magic, while Princess emphasizes destination
-                immersion, Alaska expertise, and comprehensive land-and-sea
-                adventures.
+                Disney Cruise Line focuses on family entertainment,
+                multigenerational travel, and Disney magic, while Holland
+                America emphasizes destination immersion, wildlife experiences,
+                culinary excellence, and deep Alaska expertise.
               </p>
 
               <p>
-                The right choice depends on who is traveling and what kind of
-                Alaska experience you want.
+                The best choice depends on what matters most to you:
+                family-focused fun or a more authentic Alaska-centered
+                experience.
               </p>
             </>
           )}
@@ -479,8 +467,8 @@ const DisneyAlaskavsPrincessCruises = () => {
               <thead>
                 <tr>
                   <th>Category</th>
-                  <th>Disney Alaska Cruise</th>
-                  <th>Princess Alaska Cruise</th>
+                  <th>Disney Alaska Cruises</th>
+                  <th>Holland America Alaska Cruises</th>
                 </tr>
               </thead>
 
@@ -535,26 +523,26 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <tr>
                   <td>
+                    <strong>Wildlife Focus</strong>
+                  </td>
+                  <td>Good</td>
+                  <td>Outstanding</td>
+                </tr>
+
+                <tr>
+                  <td>
                     <strong>Land Tours</strong>
                   </td>
                   <td>Limited</td>
-                  <td>Industry Leader</td>
+                  <td>Extensive</td>
                 </tr>
 
                 <tr>
                   <td>
-                    <strong>Kids Programs</strong>
+                    <strong>Dining</strong>
                   </td>
-                  <td>Outstanding</td>
-                  <td>Good</td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <strong>Multigenerational Travel</strong>
-                  </td>
-                  <td>Exceptional</td>
-                  <td>Very Good</td>
+                  <td>Family-Oriented</td>
+                  <td>Culinary Focused</td>
                 </tr>
 
                 <tr>
@@ -562,7 +550,7 @@ const DisneyAlaskavsPrincessCruises = () => {
                     <strong>Value</strong>
                   </td>
                   <td>Premium Pricing</td>
-                  <td>Better Overall Value</td>
+                  <td>Strong Value</td>
                 </tr>
               </tbody>
             </table>
@@ -628,23 +616,23 @@ const DisneyAlaskavsPrincessCruises = () => {
             {/* Right Side: Content */}
             <div className="azs-content-col">
               <p className="azs-intro">
-                Disney Cruise Line brings its signature family experience to
-                Alaska.
+                Disney Cruise Line brings its unique family-focused experience
+                to one of the world's most spectacular destinations.
               </p>
 
               <div className="azs-sub-grid">
                 {/* Group 1 */}
                 <div className="azs-info-card">
-                  <h4 className="azs-group-title">Disney combines:</h4>
+                  <h4 className="azs-group-title">Guests enjoy:</h4>
 
                   <ul className="azs-list">
                     {[
-                      "Alaska scenery",
-                      "Family entertainment",
+                      "Alaska exploration",
                       "Character experiences",
-                      "Broadway-style shows",
-                      "Family activities",
+                      "Broadway-style entertainment",
+                      "Family-friendly activities",
                       "Exceptional service",
+                      "Multigenerational experiences",
                     ].map((item, i) => (
                       <li key={i} className="azs-list-item">
                         <Check size={16} className="azs-list-icon" />
@@ -656,17 +644,15 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 {/* Group 2 */}
                 <div className="azs-info-card">
-                  <h4 className="azs-group-title">
-                    Disney Alaska cruises appeal most to:
-                  </h4>
+                  <h4 className="azs-group-title">Best For</h4>
 
                   <ul className="azs-list">
                     {[
                       "Families with children",
                       "Grandparents traveling with grandchildren",
                       "Disney fans",
-                      "First-time Alaska cruisers",
-                      "Multigenerational travelers",
+                      "First-time Alaska visitors",
+                      "Multi-generational groups",
                     ].map((item, i) => (
                       <li key={i} className="azs-list-item">
                         <ArrowRight size={16} className="azs-list-icon" />
@@ -678,24 +664,24 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 {/* Group 3 */}
                 <div className="azs-info-card azs-recommend-card">
-                  For many families, Disney transforms Alaska into both an
-                  educational adventure and a magical vacation.
+                  Disney creates a vacation where Alaska becomes both an
+                  adventure and a family memory-making experience.
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* PRINCESS CRUISES ALASKA OVERVIEW */}
+      {/* HOLLAND AMERICA ALASKA OVERVIEW */}
       <section
         className="azs-overview-section"
-        id="azs-princess-overview"
+        id="azs-holland-overview"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="azs-container">
           <div className="Avs-verdict-header">
             <h2 className="Avs-verdict-title">
-              Princess Cruises Alaska Overview
+              Holland America Alaska Cruises Overview
             </h2>
             <div className="Avs-verdict-accent"></div>
           </div>
@@ -704,23 +690,25 @@ const DisneyAlaskavsPrincessCruises = () => {
             {/* Right Side: Content */}
             <div className="azs-content-col">
               <p className="azs-intro">
-                Princess Cruises is widely regarded as one of Alaska's most
-                experienced cruise operators.
+                Few cruise lines have stronger Alaska credentials than Holland
+                America.
               </p>
 
               <div className="azs-sub-grid">
                 {/* Group 1 */}
                 <div className="azs-info-card">
-                  <h4 className="azs-group-title">Princess specializes in:</h4>
+                  <h4 className="azs-group-title">
+                    Holland America focuses on:
+                  </h4>
 
                   <ul className="azs-list">
                     {[
-                      "Glacier viewing",
-                      "Wildlife experiences",
-                      "Alaska education",
-                      "Land and sea vacations",
-                      "National Park access",
-                      "Destination immersion",
+                      "Glacier exploration",
+                      "Wildlife viewing",
+                      "Cultural immersion",
+                      "Alaska history",
+                      "Regional cuisine",
+                      "Destination enrichment",
                     ].map((item, i) => (
                       <li key={i} className="azs-list-item">
                         <Check size={16} className="azs-list-icon" />
@@ -732,15 +720,16 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 {/* Group 2 */}
                 <div className="azs-info-card">
-                  <h4 className="azs-group-title">Princess appeals most to:</h4>
+                  <h4 className="azs-group-title">Best For</h4>
 
                   <ul className="azs-list">
                     {[
                       "Couples",
                       "Retirees",
                       "Nature lovers",
+                      "Wildlife enthusiasts",
+                      "Experienced cruisers",
                       "Alaska-focused travelers",
-                      "Families seeking destination-driven travel",
                     ].map((item, i) => (
                       <li key={i} className="azs-list-item">
                         <ArrowRight size={16} className="azs-list-icon" />
@@ -754,8 +743,9 @@ const DisneyAlaskavsPrincessCruises = () => {
                 <div className="azs-info-card azs-recommend-card">
                   <div className="azs-quote-box">
                     <p className="azs-quote-text">
-                      Princess is often considered one of the strongest Alaska
-                      cruise brands in the industry.
+                      For travelers who want Alaska to be the star of the
+                      vacation, Holland America is often considered one of the
+                      best options available.
                     </p>
                   </div>
                 </div>
@@ -765,25 +755,28 @@ const DisneyAlaskavsPrincessCruises = () => {
             {/* Left Side: Image */}
             <div className="azs-image-col" style={{ height: "100%" }}>
               <img
-                // src={VikingCruise}
-                alt="Princess Cruises Alaska experience"
+                // src={HollandAmericaImage}
+                alt="Holland America Alaska cruise experience"
                 className="azs-overview-img"
               />
               <div className="azs-image-overlay">
-                <span className="azs-image-badge">Alaska Experts</span>
+                <span className="azs-image-badge">Alaska Specialists</span>
                 <h3 className="azs-image-title">
-                  Glacier Viewing & Destination Immersion
+                  Wildlife, Glaciers & Cultural Discovery
                 </h3>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* EDUCATIONAL VALUE */}
+
+      {/* EDUCATIONAL AND ENRICHMENT PROGRAMS */}
       <section className="azs-experience-section" id="azs-experience">
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-section-title">Educational Value</h2>
+            <h2 className="azs-section-title">
+              Educational and Enrichment Programs
+            </h2>
             <div className="azs-section-accent"></div>
           </div>
 
@@ -810,16 +803,14 @@ const DisneyAlaskavsPrincessCruises = () => {
                 <div className="azs-exp-body">
                   <div className="azs-exp-group">
                     <h4 className="azs-exp-group-title">
-                      Disney incorporates:
+                      Educational offerings include:
                     </h4>
 
                     <ul className="azs-exp-list">
                       {[
-                        "Nature presentations",
-                        "Junior Ranger activities",
-                        "Alaska-focused learning",
-                        "Wildlife education programs",
-                        "Glacier and ecosystem presentations",
+                        "Nature talks",
+                        "Junior Ranger programs",
+                        "Alaska-themed learning experiences",
                       ].map((item, idx) => (
                         <li key={idx} className="azs-exp-list-item">
                           <Check size={16} className="azs-exp-list-icon" />
@@ -832,21 +823,18 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <div className="azs-exp-divider"></div>
 
                   <p className="azs-exp-highlight">
-                    These experiences appeal particularly to children and
-                    families.
+                    These are especially appealing to younger travelers.
                   </p>
-
-                  <div className="azs-exp-divider"></div>
                 </div>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="azs-experience-card azs-seabourn-exp">
               <div className="azs-exp-image-wrap">
                 <img
-                  //   src={VikingOcean}
-                  alt="Princess Alaska educational programs"
+                  // src={HollandAmericaEducation}
+                  alt="Holland America Alaska educational programs"
                   className="azs-exp-img"
                 />
                 <div className="azs-exp-image-badge">
@@ -857,7 +845,9 @@ const DisneyAlaskavsPrincessCruises = () => {
               <div className="azs-exp-content">
                 <div className="azs-exp-header">
                   <Ship size={24} className="azs-exp-icon" />
-                  <h3 className="azs-exp-title">Princess Alaska Cruises</h3>
+                  <h3 className="azs-exp-title">
+                    Holland America Alaska Cruises
+                  </h3>
                 </div>
 
                 <div className="azs-exp-body">
@@ -866,11 +856,11 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                     <ul className="azs-exp-list">
                       {[
-                        "Wildlife",
+                        "Alaska Wildlife",
+                        "Native Cultures",
                         "Glaciology",
-                        "Native cultures",
-                        "Alaska history",
-                        "Conservation",
+                        "History of the Last Frontier",
+                        "Conservation Efforts",
                       ].map((item, idx) => (
                         <li key={idx} className="azs-exp-list-item">
                           <Check size={16} className="azs-exp-list-icon" />
@@ -883,41 +873,24 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <div className="azs-exp-divider"></div>
 
                   <p className="azs-exp-highlight">
-                    Princess offers deeper educational programming and
-                    destination enrichment throughout the voyage.
+                    Educational programming is a major strength.
                   </p>
 
                   <div className="azs-exp-divider"></div>
-                  {readMoreEducation && (
-                    <p className="azs-exp-highlight">
-                      <strong>Winner: Princess</strong>
-                      <br />
-                      Adults and lifelong learners often appreciate Princess's
-                      educational depth.
-                    </p>
-                  )}
 
-                  <div>
-                    <button
-                      onClick={() => setReadMoreEducation(!readMoreEducation)}
-                      style={{
-                        background: "none",
-                        border: "none",
-                        color: "var(--primary-color)",
-                        cursor: "pointer",
-                        fontWeight: "600",
-                        padding: 0,
-                      }}
-                    >
-                      {readMoreEducation ? "Read Less" : "Read More"}
-                    </button>
-                  </div>
+                  <p className="azs-exp-highlight">
+                    <strong>Winner: Holland America</strong>
+                    <br />
+                    Travelers seeking deeper destination understanding often
+                    prefer Holland America.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* DINING EXPERIENCE */}
       <section className="azs-dining-section" id="azs-dining">
         <div className="azs-container">
@@ -951,25 +924,22 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <div className="azs-dining-icon-circle">
                     <ChefHat size={24} className="azs-dining-icon" />
                   </div>
-                  <h3 className="azs-dining-title">Disney Cruise Dining</h3>
+                  <h3 className="azs-dining-title">Disney Dining</h3>
                 </div>
 
                 <p className="azs-dining-intro">
-                  Dining aboard Disney is designed to be part of the overall
-                  entertainment experience.
+                  Dining becomes part of the entertainment experience.
                 </p>
 
                 <div className="azs-dining-body">
-                  <h4 className="azs-dining-group-title">
-                    Highlights include:
-                  </h4>
+                  <h4 className="azs-dining-group-title">Features include:</h4>
 
                   <ul className="azs-dining-list">
                     {[
                       "Rotational dining",
                       "Family-friendly menus",
                       "Themed restaurants",
-                      "Character experiences",
+                      "Interactive experiences",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-dining-list-item">
                         <div className="azs-dining-list-icon-wrapper">
@@ -984,19 +954,19 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                   <div className="azs-dining-highlight-box azs-seabourn-highlight">
                     <p className="azs-dining-highlight-text">
-                      Dining is part of the entertainment.
+                      Dining becomes part of the entertainment.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="azs-dining-card azs-azamara-dining">
               <div className="azs-dining-image-wrap">
                 <img
-                  //   src={VikingDining}
-                  alt="Princess Cruises Dining Experience"
+                  // src={HollandAmericaDining}
+                  alt="Holland America Dining Experience"
                   className="azs-dining-img"
                 />
                 <div className="azs-dining-badge-wrapper">
@@ -1011,25 +981,25 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <div className="azs-dining-icon-circle">
                     <Utensils size={24} className="azs-dining-icon" />
                   </div>
-                  <h3 className="azs-dining-title">Princess Dining</h3>
+                  <h3 className="azs-dining-title">Holland America Dining</h3>
                 </div>
 
                 <p className="azs-dining-intro">
-                  Princess emphasizes culinary experiences inspired by Alaska
-                  and regional flavors.
+                  Holland America is known for its culinary program and regional
+                  dining experiences.
                 </p>
 
                 <div className="azs-dining-body">
                   <h4 className="azs-dining-group-title">
-                    Highlights include:
+                    Holland America is known for:
                   </h4>
 
                   <ul className="azs-dining-list">
                     {[
-                      "Alaska-inspired cuisine",
-                      "Seafood specialties",
-                      "Flexible dining options",
-                      "Elevated culinary experiences",
+                      "Regional cuisine",
+                      "Alaska seafood",
+                      "Culinary programming",
+                      "Elevated dining experiences",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-dining-list-item">
                         <div className="azs-dining-list-icon-wrapper">
@@ -1044,8 +1014,8 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                   <div className="azs-dining-highlight-box azs-azamara-highlight">
                     <p className="azs-dining-highlight-text">
-                      Winner: Tie — The better choice depends on whether you
-                      prioritize family fun or culinary exploration.
+                      Winner: Holland America — Food-focused travelers often
+                      prefer Holland America's culinary offerings.
                     </p>
                   </div>
                 </div>
@@ -1075,7 +1045,7 @@ const DisneyAlaskavsPrincessCruises = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={AlumniTravel2}
+                    // src={GlacierViewingImage}
                     alt="Alaska glacier viewing experience"
                     className="ugt-component-image"
                   />
@@ -1085,8 +1055,11 @@ const DisneyAlaskavsPrincessCruises = () => {
               {/* RIGHT CONTENT */}
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
-                  Both cruise lines provide exceptional glacier viewing
-                  opportunities throughout Alaska.
+                  Alaska cruises often revolve around glacier viewing.
+                </p>
+
+                <p className="ugt-component-text">
+                  Both cruise lines offer impressive experiences.
                 </p>
 
                 <div className="ugt-questions-box">
@@ -1096,10 +1069,10 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                   <ul className="ugt-questions-list">
                     {[
-                      "Glacier Bay (on select itineraries)",
+                      "Glacier Bay",
+                      "Hubbard Glacier",
                       "Endicott Arm",
                       "Dawes Glacier",
-                      "Hubbard Glacier",
                     ].map((item, idx) => (
                       <li key={idx} className="ugt-question-item">
                         <Check size={16} className="ugt-question-icon" />
@@ -1117,11 +1090,11 @@ const DisneyAlaskavsPrincessCruises = () => {
                     borderRadius: "6px",
                   }}
                 >
-                  Princess often offers a wider variety of glacier-focused
-                  itineraries.
+                  However, Holland America offers more glacier-focused
+                  itineraries and extensive destination interpretation.
                   <br />
                   <br />
-                  <strong>Slight Advantage: Princess</strong>
+                  <strong>Slight Advantage: Holland America</strong>
                 </p>
               </div>
             </div>
@@ -1135,7 +1108,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <h2 className="azs-section-title">Family Travel Comparison</h2>
             <div className="azs-section-accent"></div>
             <p className="azs-section-subtitle">
-              Disney Family Entertainment vs Princess Alaska Exploration
+              Disney Family Entertainment vs Holland America Alaska Exploration
             </p>
           </div>
 
@@ -1150,7 +1123,8 @@ const DisneyAlaskavsPrincessCruises = () => {
               </div>
 
               <p className="azs-ent-intro">
-                Disney is difficult to beat when traveling with children.
+                Disney is widely regarded as one of the best family cruise lines
+                in the world.
               </p>
 
               <div className="azs-ent-body">
@@ -1158,11 +1132,11 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <ul className="azs-ent-list">
                   {[
-                    "Youth Clubs",
+                    "Kids Clubs",
                     "Character Encounters",
                     "Family Entertainment",
-                    "Multigenerational Appeal",
-                    "Disney Service",
+                    "Family-Friendly Dining",
+                    "Shared Experiences",
                   ].map((item, idx) => (
                     <li key={idx} className="azs-ent-list-item">
                       <div className="azs-ent-list-icon-wrapper">
@@ -1177,34 +1151,36 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <div className="azs-ent-highlight-box azs-azamara-ent-highlight">
                   <p className="azs-ent-highlight-text">
-                    Youth clubs, Broadway-style productions, character
-                    encounters, and activities designed for grandparents,
-                    parents, and children.
+                    Industry-leading youth programs, Disney character
+                    encounters, family entertainment, family-friendly dining,
+                    and shared experiences that grandparents, parents, and
+                    grandchildren can enjoy together.
                   </p>
                 </div>
 
                 <div className="azs-ent-divider"></div>
 
                 <h4 className="azs-ent-group-title">Winner:</h4>
+
                 <p className="azs-ent-intro">
-                  For families with younger children, Disney offers the stronger
-                  onboard experience.
+                  For families with younger children, Disney offers a
+                  significantly stronger onboard experience.
                 </p>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="azs-entertainment-card azs-seabourn-ent">
               <div className="azs-ent-header">
                 <div className="azs-ent-icon-circle">
                   <Ship size={24} className="azs-ent-icon" />
                 </div>
-                <h3 className="azs-ent-title">Princess Cruises</h3>
+                <h3 className="azs-ent-title">Holland America</h3>
               </div>
 
               <p className="azs-ent-intro">
-                Princess provides family-friendly amenities but does not focus
-                exclusively on children.
+                Holland America welcomes families but caters primarily to
+                adults.
               </p>
 
               <div className="azs-ent-body">
@@ -1212,10 +1188,10 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <ul className="azs-ent-list">
                   {[
+                    "Educational activities",
+                    "Alaska programming",
                     "Youth programs",
                     "Family excursions",
-                    "Educational activities",
-                    "Wildlife experiences",
                   ].map((item, idx) => (
                     <li key={idx} className="azs-ent-list-item">
                       <div className="azs-ent-list-icon-wrapper">
@@ -1230,16 +1206,18 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <div className="azs-ent-highlight-box azs-seabourn-ent-highlight">
                   <p className="azs-ent-highlight-text">
-                    Entertainment is more destination-focused than
-                    family-focused.
+                    However, the onboard atmosphere is generally quieter and
+                    more destination-focused.
                   </p>
                 </div>
 
                 <div className="azs-ent-divider"></div>
 
                 <h4 className="azs-ent-group-title">Best For:</h4>
+
                 <p className="azs-ent-intro">
-                  Families prioritizing Alaska over onboard entertainment.
+                  Families with older children and teenagers interested in
+                  Alaska itself.
                 </p>
               </div>
             </div>
@@ -1254,7 +1232,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <h2 className="ake-section-title">Alaska Expertise</h2>
             <div className="ake-section-accent"></div>
             <p className="ake-section-subtitle">
-              Disney Family Magic vs Princess Alaska Mastery
+              Disney Family Adventures vs Holland America Alaska Expertise
             </p>
           </div>
 
@@ -1262,18 +1240,16 @@ const DisneyAlaskavsPrincessCruises = () => {
           <div className="ake-cards-grid">
             {/* Disney Card */}
             <div className="ake-card ake-disney-card">
-              {/* Image */}
               <div className="ake-card-image-wrap">
                 <img
-                  //   src={HeroImage2}
-                  alt="Disney Cruise Line Alaska expertise"
+                  // src={DisneyAlaska}
+                  alt="Disney Cruise Line Alaska experience"
                   className="ake-card-img"
                 />
                 <div className="ake-card-image-overlay"></div>
                 <span className="ake-card-image-badge">Disney Cruise Line</span>
               </div>
 
-              {/* Content */}
               <div className="ake-card-content">
                 <div className="ake-card-header">
                   <div className="ake-card-icon-wrap">
@@ -1283,10 +1259,11 @@ const DisneyAlaskavsPrincessCruises = () => {
                 </div>
 
                 <p className="ake-card-intro">
-                  Disney delivers excellent Alaska itineraries and experiences.
+                  Disney offers excellent Alaska itineraries and destination
+                  experiences.
                 </p>
 
-                <h4 className="ake-card-group-label">Highlights include:</h4>
+                <h4 className="ake-card-group-label">Guests enjoy:</h4>
                 <ul className="ake-card-features-list">
                   {[
                     {
@@ -1298,12 +1275,12 @@ const DisneyAlaskavsPrincessCruises = () => {
                       desc: "Spot majestic whales, eagles, and shore bears.",
                     },
                     {
-                      title: "Junior Ranger Activities",
-                      desc: "Interactive youth programs in national parks.",
+                      title: "Nature Presentations",
+                      desc: "Informative talks led by onboard naturalists.",
                     },
                     {
-                      title: "Educational Presentations",
-                      desc: "Informative talks led by onboard naturalists.",
+                      title: "Alaska-Themed Activities",
+                      desc: "Onboard crafts, regional foods, and local experiences.",
                     },
                   ].map((feat, idx) => (
                     <li key={idx} className="ake-feature-item">
@@ -1321,65 +1298,63 @@ const DisneyAlaskavsPrincessCruises = () => {
                 <div className="ake-card-divider"></div>
 
                 <div className="ake-card-highlight">
-                  <p>
-                    Disney does an excellent job introducing families to Alaska.
-                  </p>
+                  <p>Disney does a great job introducing families to Alaska.</p>
                 </div>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="ake-card ake-princess-card">
-              {/* Image */}
               <div className="ake-card-image-wrap">
                 <img
-                  //   src={HeroImage4}
-                  alt="Princess Cruises Alaska expertise"
+                  // src={HollandAmericaAlaska}
+                  alt="Holland America Alaska expertise"
                   className="ake-card-img"
                 />
                 <div className="ake-card-image-overlay"></div>
                 <span className="ake-card-image-badge ake-princess-badge">
-                  Princess Cruises
+                  Holland America
                 </span>
               </div>
 
-              {/* Content */}
               <div className="ake-card-content">
                 <div className="ake-card-header">
                   <div className="ake-card-icon-wrap ake-princess-icon-wrap">
                     <Crown size={22} />
                   </div>
-                  <h3 className="ake-card-title">Princess Cruises</h3>
+                  <h3 className="ake-card-title">Holland America</h3>
                 </div>
 
                 <p className="ake-card-intro">
-                  This is where Princess truly shines.
+                  Alaska is one of Holland America's signature destinations.
                 </p>
 
-                <h4 className="ake-card-group-label">Princess offers:</h4>
+                <h4 className="ake-card-group-label">Advantages include:</h4>
+
                 <ul className="ake-card-features-list">
                   {[
                     {
-                      title: "Decades of Alaska Experience",
-                      desc: "Among the most experienced operators in the region.",
+                      title: "Decades of Experience",
+                      desc: "Among the most established Alaska cruise operators.",
                     },
                     {
-                      title: "Extensive Alaska Programming",
-                      desc: "Educational presentations and destination enrichment.",
+                      title: "Alaska-Focused Programming",
+                      desc: "Deep educational enrichment throughout the voyage.",
                     },
                     {
-                      title: "National Park Partnerships",
-                      desc: "Access to unique Alaska experiences.",
+                      title: "Destination Specialists",
+                      desc: "Experts provide insight into Alaska's wildlife, geology, and culture.",
                     },
                     {
-                      title: "Land and Sea Packages",
-                      desc: "Comprehensive Alaska exploration opportunities.",
+                      title: "Strong Local Connections",
+                      desc: "Extensive relationships throughout the region.",
                     },
                   ].map((feat, idx) => (
                     <li key={idx} className="ake-feature-item">
                       <div className="ake-feature-icon-box">
                         <Check size={14} />
                       </div>
+
                       <div className="ake-feature-texts">
                         <span className="ake-feature-title">{feat.title}</span>
                         <span className="ake-feature-desc">{feat.desc}</span>
@@ -1391,10 +1366,12 @@ const DisneyAlaskavsPrincessCruises = () => {
                 <div className="ake-card-divider"></div>
 
                 <div className="ake-card-highlight ake-winner-highlight">
-                  <span className="ake-winner-label">Winner: Princess</span>
+                  <span className="ake-winner-label">
+                    Winner: Holland America
+                  </span>
                   <p>
-                    Princess is widely recognized as one of Alaska's premier
-                    cruise specialists.
+                    Few cruise lines possess Holland America's depth of Alaska
+                    knowledge.
                   </p>
                 </div>
               </div>
@@ -1402,6 +1379,7 @@ const DisneyAlaskavsPrincessCruises = () => {
           </div>
         </div>
       </section>
+
       {/* ACCOMMODATIONS */}
       <section className="azs-suites-section" id="azs-suites">
         <div className="azs-container">
@@ -1409,8 +1387,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <h2 className="azs-section-title">Accommodations</h2>
             <div className="azs-section-accent"></div>
             <p className="azs-section-subtitle">
-              Family-Friendly Staterooms vs Comfortable Alaska-Focused
-              Accommodations
+              Family-Friendly Staterooms vs Adult-Focused Alaska Comfort
             </p>
           </div>
 
@@ -1424,7 +1401,7 @@ const DisneyAlaskavsPrincessCruises = () => {
                   className="azs-suites-img"
                 />
                 <span className="azs-suites-image-badge">
-                  Family-Friendly Design
+                  Winner for Families
                 </span>
               </div>
 
@@ -1437,7 +1414,7 @@ const DisneyAlaskavsPrincessCruises = () => {
                 </div>
 
                 <p className="azs-suites-intro">
-                  Disney cabins are among the most family-friendly at sea.
+                  Disney cabins excel for families.
                 </p>
 
                 <div className="azs-suites-body">
@@ -1446,9 +1423,9 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <ul className="azs-suites-list">
                     {[
                       "Split bathrooms",
-                      "Family-focused layouts",
+                      "Family-friendly layouts",
                       "Connecting cabins",
-                      "Concierge options",
+                      "Concierge suites",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-suites-list-item">
                         <div className="azs-suites-list-icon-wrapper">
@@ -1463,23 +1440,23 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                   <div className="azs-suites-highlight-box azs-seabourn-suites-highlight">
                     <p className="azs-suites-highlight-text">
-                      Winner: Disney for Families
+                      Winner for Families: Disney
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  //   src={VikingSuites}
-                  alt="Princess Cruises Alaska stateroom"
+                  // src={HollandAmericaStateroomImage}
+                  alt="Holland America Alaska stateroom"
                   className="azs-suites-img"
                 />
                 <span className="azs-suites-image-badge">
-                  Comfortable Alaska Accommodations
+                  Winner for Couples
                 </span>
               </div>
 
@@ -1488,24 +1465,24 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <div className="azs-suites-icon-circle">
                     <Ship size={24} className="azs-suites-icon" />
                   </div>
-                  <h3 className="azs-suites-title">Princess Staterooms</h3>
+                  <h3 className="azs-suites-title">
+                    Holland America Staterooms
+                  </h3>
                 </div>
 
                 <p className="azs-suites-intro">
-                  Princess accommodations emphasize comfort and scenic cruising.
+                  Designed primarily for adult comfort.
                 </p>
 
                 <div className="azs-suites-body">
-                  <h4 className="azs-suites-group-title">
-                    Accommodations emphasize:
-                  </h4>
+                  <h4 className="azs-suites-group-title">Features include:</h4>
 
                   <ul className="azs-suites-list">
                     {[
-                      "Comfort",
+                      "Comfortable furnishings",
                       "Scenic viewing",
-                      "Alaska-focused experiences",
-                      "Variety of cabin categories",
+                      "Premium suites",
+                      "Alaska-focused amenities",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-suites-list-item">
                         <div className="azs-suites-list-icon-wrapper">
@@ -1520,7 +1497,7 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                   <div className="azs-suites-highlight-box azs-azamara-suites-highlight">
                     <p className="azs-suites-highlight-text">
-                      Winner: Princess for Couples
+                      Winner for Couples: Holland America
                     </p>
                   </div>
                 </div>
@@ -1529,6 +1506,7 @@ const DisneyAlaskavsPrincessCruises = () => {
           </div>
         </div>
       </section>
+
       {/* ENTERTAINMENT COMPARISON */}
       <section
         className="dve-entertainment-compare-section"
@@ -1543,12 +1521,6 @@ const DisneyAlaskavsPrincessCruises = () => {
               Entertainment Comparison
             </h2>
             <div className="dve-section-accent"></div>
-            <p
-              className="dve-section-subtitle"
-              style={{ color: "var(--bg-white)" }}
-            >
-              Disney Magic and Family Fun vs Alaska-Focused Enrichment
-            </p>
           </div>
 
           <div className="dve-compare-grid">
@@ -1562,8 +1534,8 @@ const DisneyAlaskavsPrincessCruises = () => {
               </div>
 
               <p className="dve-card-intro">
-                Disney consistently offers some of the best entertainment at
-                sea.
+                Disney is difficult to beat when it comes to onboard
+                entertainment.
               </p>
 
               <div className="dve-highlights-list">
@@ -1572,8 +1544,8 @@ const DisneyAlaskavsPrincessCruises = () => {
                     <Theater size={20} />
                   </div>
                   <div className="dve-highlight-info">
-                    <h4>Broadway-Style Shows</h4>
-                    <p>Award-winning productions.</p>
+                    <h4>Broadway-Style Productions</h4>
+                    <p>Award-winning shows.</p>
                   </div>
                 </div>
 
@@ -1583,7 +1555,7 @@ const DisneyAlaskavsPrincessCruises = () => {
                   </div>
                   <div className="dve-highlight-info">
                     <h4>Character Experiences</h4>
-                    <p>Unique to Disney.</p>
+                    <p>Unique Disney interactions.</p>
                   </div>
                 </div>
 
@@ -1592,8 +1564,8 @@ const DisneyAlaskavsPrincessCruises = () => {
                     <Users size={20} />
                   </div>
                   <div className="dve-highlight-info">
-                    <h4>Family Events</h4>
-                    <p>Interactive activities throughout the cruise.</p>
+                    <h4>Family Activities</h4>
+                    <p>Entertainment designed for all ages.</p>
                   </div>
                 </div>
 
@@ -1602,8 +1574,8 @@ const DisneyAlaskavsPrincessCruises = () => {
                     <Film size={20} />
                   </div>
                   <div className="dve-highlight-info">
-                    <h4>Movies and Themed Experiences</h4>
-                    <p>Popular with all ages.</p>
+                    <h4>Movies and Interactive Events</h4>
+                    <p>Popular throughout the voyage.</p>
                   </div>
                 </div>
               </div>
@@ -1613,22 +1585,22 @@ const DisneyAlaskavsPrincessCruises = () => {
               </div>
 
               <p className="dve-card-intro" style={{ marginTop: "16px" }}>
-                Entertainment is one of Disney's strongest advantages.
+                Entertainment is one of Disney's greatest strengths.
               </p>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="dve-compare-card dve-viking-card">
-              <div className="dve-card-badge">Princess Cruises</div>
+              <div className="dve-card-badge">Holland America Line</div>
 
               <div className="dve-card-icon-header">
                 <Music className="dve-card-header-icon" size={32} />
-                <h3>Princess Entertainment</h3>
+                <h3>Holland America Entertainment</h3>
               </div>
 
               <p className="dve-card-intro">
-                Princess focuses more heavily on destination enrichment and
-                relaxation.
+                Holland America focuses on destination enrichment and a more
+                relaxed onboard atmosphere.
               </p>
 
               <div className="dve-highlights-list">
@@ -1638,7 +1610,7 @@ const DisneyAlaskavsPrincessCruises = () => {
                   </div>
                   <div className="dve-highlight-info">
                     <h4>Live Music</h4>
-                    <p>Entertainment throughout the ship.</p>
+                    <p>Performances throughout the ship.</p>
                   </div>
                 </div>
 
@@ -1647,8 +1619,8 @@ const DisneyAlaskavsPrincessCruises = () => {
                     <Mic size={20} />
                   </div>
                   <div className="dve-highlight-info">
-                    <h4>Destination Talks</h4>
-                    <p>Learn more about Alaska's history and culture.</p>
+                    <h4>Cultural Presentations</h4>
+                    <p>Programs focused on Alaska's culture and history.</p>
                   </div>
                 </div>
 
@@ -1657,8 +1629,8 @@ const DisneyAlaskavsPrincessCruises = () => {
                     <Globe size={20} />
                   </div>
                   <div className="dve-highlight-info">
-                    <h4>Cultural Programming</h4>
-                    <p>Experiences connected to Alaska destinations.</p>
+                    <h4>Enrichment Programs</h4>
+                    <p>Educational experiences tied to the destination.</p>
                   </div>
                 </div>
 
@@ -1667,31 +1639,32 @@ const DisneyAlaskavsPrincessCruises = () => {
                     <Coffee size={20} />
                   </div>
                   <div className="dve-highlight-info">
-                    <h4>Relaxation</h4>
-                    <p>A quieter onboard atmosphere.</p>
+                    <h4>Relaxed Evening Entertainment</h4>
+                    <p>A quieter and more destination-focused atmosphere.</p>
                   </div>
                 </div>
               </div>
 
               <p className="dve-card-intro" style={{ marginTop: "16px" }}>
-                Entertainment supports the Alaska experience rather than
-                becoming the primary attraction.
+                The destination remains the primary attraction.
               </p>
             </div>
           </div>
         </div>
       </section>
-      {/* LAND TOURS AND ALASKA EXPLORATION */}
+
+      {/* LAND TOURS AND ALASKA CRUISETOURS */}
       <section className="lta-landtours-section" id="lta-landtours">
         <div className="lta-container">
           {/* Section Header */}
           <div className="lta-section-header">
             <h2 className="lta-section-title">
-              Land Tours and Alaska Exploration
+              Land Tours and Alaska Cruisetours
             </h2>
             <div className="Asc-accent-line"></div>
             <p className="lta-section-subtitle">
-              Embark on Wilderness Journeys and Rail tours in the Great Land
+              Compare Cruise-Only Vacations with Comprehensive Alaska
+              Exploration
             </p>
           </div>
 
@@ -1704,11 +1677,11 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <div className="lta-card-icon-wrap">
                     <Ship size={24} className="lta-card-icon" />
                   </div>
-                  <h3 className="lta-card-title">Disney Cruise Line</h3>
+                  <h3 className="lta-card-title">Disney Alaska Cruises</h3>
                 </div>
 
                 <p className="lta-card-intro">
-                  Disney primarily focuses on the cruise experience.
+                  Disney primarily focuses on cruise-only experiences.
                 </p>
 
                 <div className="lta-card-divider"></div>
@@ -1719,21 +1692,20 @@ const DisneyAlaskavsPrincessCruises = () => {
                   </div>
                   <div className="lta-feature-texts">
                     <p className="lta-feature-desc">
-                      While excursions are available, extensive land programs
-                      are limited.
+                      Excursions are available, but land programs are limited.
                     </p>
                   </div>
                 </div>
 
-                <p className="lta-group-label">Disney's Cruise-Only Focus:</p>
+                <p className="lta-group-label">Disney Focuses On:</p>
 
                 <ul className="lta-feature-list">
                   {[
-                    "Guided port adventures only",
-                    "Shipboard-centric entertainment",
-                    "No wilderness lodge stays",
-                    "No scenic rail connections",
-                    "Shorter destination layovers",
+                    "Cruise-only Alaska vacations",
+                    "Family-friendly shore excursions",
+                    "Character experiences onboard",
+                    "Broadway-style entertainment",
+                    "Multigenerational family activities",
                   ].map((item, idx) => (
                     <li key={idx} className="lta-list-item">
                       <Check size={16} className="lta-list-icon" />
@@ -1744,38 +1716,40 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <div className="lta-card-highlight">
                   <p>
-                    Ideal for families looking for a classic, high-quality
-                    cruise vacation focused purely on the ocean voyage.
+                    Ideal for travelers seeking a cruise-focused Alaska vacation
+                    with family-friendly experiences onboard.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="lta-card lta-princess-card lta-winner-highlight">
               <div className="lta-card-content">
                 <div className="lta-card-header">
                   <div className="lta-card-icon-wrap lta-princess-icon-wrap">
                     <Award size={24} className="lta-card-icon" />
                   </div>
-                  <h3 className="lta-card-title">Princess Cruises</h3>
+                  <h3 className="lta-card-title">
+                    Holland America Cruisetours
+                  </h3>
                 </div>
 
                 <p className="lta-card-intro">
-                  Princess is famous for its Alaska Cruisetours.
+                  One of Holland America's greatest advantages.
                 </p>
 
                 <div className="lta-card-divider"></div>
 
-                <p className="lta-group-label">These packages combine:</p>
+                <p className="lta-group-label">Options include:</p>
 
                 <ul className="lta-feature-list">
                   {[
-                    "Cruise voyages",
                     "Denali National Park",
-                    "Interior Alaska",
+                    "Yukon Territory",
                     "Scenic rail journeys",
                     "Wilderness lodges",
+                    "Interior Alaska exploration",
                   ].map((item, idx) => (
                     <li key={idx} className="lta-list-item">
                       <Check size={16} className="lta-list-icon" />
@@ -1786,11 +1760,11 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <div className="lta-card-highlight lta-winner-highlight-box">
                   <span className="lta-winner-label">
-                    Clear Winner: Princess
+                    Clear Winner: Holland America
                   </span>
                   <p>
-                    Travelers wanting a deeper Alaska experience often choose
-                    Princess.
+                    Travelers wanting a comprehensive Alaska experience often
+                    choose a Holland America Cruisetour.
                   </p>
                 </div>
               </div>
@@ -1798,6 +1772,7 @@ const DisneyAlaskavsPrincessCruises = () => {
           </div>
         </div>
       </section>
+
       {/* PRICING COMPARISON */}
       <section
         className="Ejvs-pricing-section"
@@ -1811,7 +1786,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="Asc-accent-line"></div>
 
             <p className="Ejvs-section-subtitle">
-              Disney Premium Family Experiences vs Princess Alaska Value
+              Disney Premium Family Experiences vs Holland America Alaska Value
             </p>
           </div>
 
@@ -1828,16 +1803,15 @@ const DisneyAlaskavsPrincessCruises = () => {
               </div>
 
               <p className="Ejvs-card-intro">
-                Disney is usually among the most expensive family cruise
-                options.
+                Disney typically commands premium pricing.
               </p>
 
               <ul className="Ejvs-feature-list">
                 {[
-                  "Disney branding",
                   "Entertainment",
-                  "Family experiences",
-                  "Service quality",
+                  "Family programming",
+                  "Disney branding",
+                  "Exceptional service",
                 ].map((item, i) => (
                   <li key={i} className="Ejvs-feature-item">
                     <div className="Ejvs-feature-icon">
@@ -1851,32 +1825,34 @@ const DisneyAlaskavsPrincessCruises = () => {
 
               <div className="Ejvs-card-highlight">
                 <p>
-                  Pricing reflects Disney's premium family-focused cruise
+                  Costs reflect Disney's premium family-focused cruise
                   experience.
                 </p>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="Ejvs-pricing-card Ejvs-seabourn-card">
               <div className="Ejvs-card-header">
                 <div className="Ejvs-card-icon-wrap">
                   <Award size={24} className="Ejvs-card-icon" />
                 </div>
 
-                <h3 className="Ejvs-card-title">Princess Cruises</h3>
+                <h3 className="Ejvs-card-title">
+                  Holland America Alaska Cruises
+                </h3>
               </div>
 
               <p className="Ejvs-card-intro">
-                Princess often provides excellent value for Alaska-focused
+                Holland America often offers strong value for Alaska-focused
                 travelers.
               </p>
 
               <ul className="Ejvs-feature-list">
                 {[
                   "Lower fares",
-                  "More itinerary options",
-                  "Better Alaska-focused value",
+                  "More itinerary choices",
+                  "Better destination-focused value",
                 ].map((item, i) => (
                   <li key={i} className="Ejvs-feature-item">
                     <div className="Ejvs-feature-icon">
@@ -1890,16 +1866,17 @@ const DisneyAlaskavsPrincessCruises = () => {
 
               <div className="Ejvs-card-highlight">
                 <p>
-                  <strong>Winner: Princess</strong>
+                  <strong>Winner: Holland America</strong>
                   <br />
-                  Princess typically offers stronger overall value for
-                  Alaska-focused travelers.
+                  For Alaska-focused travelers, Holland America generally
+                  delivers stronger value.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* GRANDPARENTS AND MULTIGENERATIONAL TRAVEL */}
       <section className="dve-winner-section" id="dve-winner-comparison">
         <div className="dve-container">
@@ -1909,8 +1886,8 @@ const DisneyAlaskavsPrincessCruises = () => {
             </h2>
             <div className="dve-section-accent"></div>
             <p className="dve-section-subtitle">
-              Comparing Disney Alaska Cruises and Princess Cruises for
-              Multi-Generational Family Vacations
+              Comparing Disney Alaska Cruises and Holland America Alaska Cruises
+              for Multi-Generational Family Vacations
             </p>
           </div>
 
@@ -1924,12 +1901,12 @@ const DisneyAlaskavsPrincessCruises = () => {
                   className="dve-winner-img"
                 />
                 <span className="dve-winner-badge">
-                  Younger Grandchildren: Winner
+                  Young Grandchildren: Winner
                 </span>
               </div>
 
               <div className="dve-winner-content">
-                <h3 className="dve-winner-title">Disney Alaska Cruises</h3>
+                <h3 className="dve-winner-title">Disney Alaska</h3>
 
                 <p className="dve-winner-intro">
                   Disney excels at bringing generations together.
@@ -1937,7 +1914,9 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                 <div className="dve-winner-divider"></div>
 
-                <h4 className="dve-advantages-title">Grandparents Enjoy:</h4>
+                <h4 className="dve-advantages-title">
+                  Grandparents Appreciate:
+                </h4>
 
                 <ul className="dve-advantages-list">
                   <li>
@@ -1950,67 +1929,63 @@ const DisneyAlaskavsPrincessCruises = () => {
                   </li>
                   <li>
                     <Check size={18} className="dve-advantage-icon" />
-                    <span>Easy logistics</span>
+                    <span>Convenient planning</span>
                   </li>
                   <li>
                     <Check size={18} className="dve-advantage-icon" />
-                    <span>Child-friendly activities</span>
+                    <span>Child-friendly entertainment</span>
                   </li>
                 </ul>
 
                 <div className="dve-winner-footer">
                   <span className="dve-footer-badge">
-                    Creates unforgettable family memories
+                    Ideal for younger grandchildren
                   </span>
                 </div>
               </div>
             </div>
 
-            {/* Princess Card */}
+            {/* Holland America Card */}
             <div className="dve-winner-card dve-viking-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={VikingOceanCruise}
-                  alt="Princess Cruises Alaska family exploration"
+                  // src={HollandAmericaImage}
+                  alt="Holland America Alaska family exploration"
                   className="dve-winner-img"
                 />
                 <span className="dve-winner-badge">Teens & Adults: Winner</span>
               </div>
 
               <div className="dve-winner-content">
-                <h3 className="dve-winner-title">Princess Cruises</h3>
+                <h3 className="dve-winner-title">Holland America Alaska</h3>
 
                 <p className="dve-winner-intro">
-                  Princess works well for older children and adults interested
-                  in Alaska itself.
+                  Holland America appeals more strongly to adult families and
+                  destination-focused travelers.
                 </p>
 
                 <div className="dve-winner-divider"></div>
 
-                <h4 className="dve-advantages-title">Families Appreciate:</h4>
+                <h4 className="dve-advantages-title">Appeals To:</h4>
 
                 <ul className="dve-advantages-list">
                   <li>
                     <Check size={18} className="dve-advantage-icon" />
-                    <span>Educational travel experiences</span>
+                    <span>Adult families</span>
                   </li>
                   <li>
                     <Check size={18} className="dve-advantage-icon" />
-                    <span>Alaska-focused itineraries</span>
+                    <span>Older grandchildren</span>
                   </li>
                   <li>
                     <Check size={18} className="dve-advantage-icon" />
-                    <span>Wildlife and nature exploration</span>
-                  </li>
-                  <li>
-                    <Check size={18} className="dve-advantage-icon" />
-                    <span>Destination immersion</span>
+                    <span>Nature-focused travelers</span>
                   </li>
                 </ul>
 
                 <div className="dve-winner-footer">
                   <span className="dve-footer-badge">
-                    Ideal for educational family travel
+                    Best for teens and adults interested in Alaska
                   </span>
                 </div>
               </div>
@@ -2022,8 +1997,8 @@ const DisneyAlaskavsPrincessCruises = () => {
             style={{ marginTop: "40px", textAlign: "center" }}
           >
             <span className="dve-footer-badge">
-              Winner: Younger Grandchildren → Disney | Teenagers & Adults →
-              Princess
+              Winner: Young Grandchildren → Disney | Teenagers & Adults →
+              Holland America
             </span>
           </div>
         </div>
@@ -2073,8 +2048,8 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-verdict-intro">
-              Both Disney Alaska Cruises and Princess Alaska Cruises offer
-              incredible experiences, but the right choice depends on your
+              Both Disney Alaska Cruises and Holland America Alaska Cruises
+              offer incredible experiences, but the right choice depends on your
               travel priorities.
             </p>
           </div>
@@ -2088,12 +2063,12 @@ const DisneyAlaskavsPrincessCruises = () => {
 
               <ul className="Asc-verdict-list">
                 {[
-                  "You're traveling with young children",
+                  "You're traveling with children",
                   "You want Disney entertainment",
-                  "Family experiences are your top priority",
+                  "Family memories are the priority",
                   "Grandparents are traveling with grandchildren",
-                  "You want exceptional onboard activities",
-                  "Disney magic matters to your family",
+                  "You enjoy Disney experiences",
+                  "You want exceptional family service",
                 ].map((item, i) => (
                   <li key={i} className="Asc-verdict-item">
                     <Check size={18} className="Asc-verdict-icon" />
@@ -2103,20 +2078,20 @@ const DisneyAlaskavsPrincessCruises = () => {
               </ul>
             </div>
 
-            {/* Princess Column */}
+            {/* Holland America Column */}
             <div className="Asc-verdict-card Asc-verdict-regent">
               <h3 className="Asc-verdict-card-title">
-                Choose Princess Alaska If:
+                Choose Holland America Alaska If:
               </h3>
 
               <ul className="Asc-verdict-list">
                 {[
-                  "Alaska itself is your primary focus",
+                  "Alaska is your primary focus",
+                  "Wildlife experiences matter",
+                  "You want Glacier Bay opportunities",
+                  "You enjoy destination enrichment",
+                  "Culinary experiences are important",
                   "You want a land-and-sea vacation",
-                  "Educational experiences matter",
-                  "You enjoy wildlife and nature",
-                  "You prefer a more destination-focused experience",
-                  "Value is an important consideration",
                 ].map((item, i) => (
                   <li key={i} className="Asc-verdict-item">
                     <Check size={18} className="Asc-verdict-icon" />
@@ -2128,6 +2103,7 @@ const DisneyAlaskavsPrincessCruises = () => {
           </div>
         </div>
       </section>
+
       {/* ANGELA HUGHES AUTHORITY BOX */}
       <section className="Adg-expert-section" id="Asc-expert-insight">
         <div className="Asc-container">
@@ -2262,8 +2238,8 @@ const DisneyAlaskavsPrincessCruises = () => {
                   "Families",
                   "Grandparents and grandchildren",
                   "Disney fans",
+                  "Family reunions",
                   "First-time Alaska travelers",
-                  "Multigenerational groups",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -2274,16 +2250,16 @@ const DisneyAlaskavsPrincessCruises = () => {
             </div>
 
             <div className="Asc-who-card Asc-who-no">
-              <h3 className="Asc-who-title">Princess Cruises Alaska</h3>
+              <h3 className="Asc-who-title">Holland America Alaska Cruises</h3>
 
               <ul className="Asc-who-list">
                 {[
                   "Couples",
                   "Retirees",
-                  "Nature lovers",
-                  "Wildlife enthusiasts",
-                  "Experienced travelers",
-                  "Travelers seeking comprehensive Alaska exploration",
+                  "Nature enthusiasts",
+                  "Wildlife lovers",
+                  "Experienced cruisers",
+                  "Alaska-focused travelers",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -2313,7 +2289,7 @@ const DisneyAlaskavsPrincessCruises = () => {
         <div className="Asc-help-bg-wrap">
           <img
             // src={HeroImage1}
-            alt="Disney Alaska Cruises vs Princess Cruises"
+            alt="Disney Alaska Cruises vs Holland America Alaska Cruises"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -2326,7 +2302,7 @@ const DisneyAlaskavsPrincessCruises = () => {
                 <span className="Asc-help-eyebrow">Final Verdict</span>
 
                 <h2 className="Asc-help-h2">
-                  Disney Alaska Cruises vs Princess Cruises: Which Is Right for
+                  Disney Alaska Cruises vs Holland America: Which Is Right for
                   You?
                 </h2>
 
@@ -2336,16 +2312,15 @@ const DisneyAlaskavsPrincessCruises = () => {
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    Disney Cruise Line and Princess Cruises both offer
-                    exceptional Alaska vacations, but they serve different types
-                    of travelers.
+                    Both Disney Cruise Line and Holland America deliver
+                    exceptional Alaska vacations, but they focus on different
+                    priorities.
                   </p>
 
                   <p className="Asc-help-intro">
-                    <strong>Disney Alaska Cruises</strong> deliver unforgettable
-                    family vacations filled with entertainment, exceptional
-                    service, and multigenerational experiences that create
-                    lasting memories.
+                    <strong>Disney Alaska Cruises</strong> create unforgettable
+                    family experiences filled with entertainment, service, and
+                    multigenerational memories.
                     {!readMore && (
                       <button
                         onClick={() => setReadMore(true)}
@@ -2368,29 +2343,29 @@ const DisneyAlaskavsPrincessCruises = () => {
 
                   {readMore && (
                     <p className="Asc-help-intro">
-                      <strong>Princess Alaska Cruises</strong> provide deeper
-                      destination immersion, stronger Alaska expertise,
-                      extensive land programs, and outstanding value for
-                      travelers focused on experiencing Alaska itself.
+                      <strong>Holland America Alaska Cruises</strong> provide
+                      deeper destination immersion, stronger Alaska expertise,
+                      outstanding wildlife experiences, and comprehensive
+                      land-and-sea exploration opportunities.
                       <br />
                       <br />
-                      If your family's priority is spending quality time
-                      together while enjoying Disney's signature magic, Disney
-                      is the clear winner.
+                      If your vacation is primarily about spending quality time
+                      together as a family, Disney is the clear winner.
                       <br />
                       <br />
-                      If your priority is maximizing your Alaska experience
-                      through glaciers, wildlife, national parks, and land
-                      exploration, Princess Cruises is difficult to beat.
+                      If your goal is to experience Alaska as deeply as possible
+                      through glaciers, wildlife, national parks, and local
+                      culture, Holland America is one of the best choices in the
+                      industry.
                       <br />
                       <br />
-                      For many travelers, the decision comes down to a simple
+                      Ultimately, the decision comes down to one simple
                       question:
                       <br />
                       <br />
                       <strong>
-                        Are you choosing Alaska with Disney, or are you choosing
-                        Alaska itself?
+                        Are you looking for a Disney vacation in Alaska, or an
+                        Alaska vacation enhanced by exceptional cruising?
                       </strong>
                       <button
                         onClick={() => setReadMore(false)}
@@ -2423,10 +2398,10 @@ const DisneyAlaskavsPrincessCruises = () => {
                   <ul className="Asc-help-bullets">
                     {[
                       "Disney excels at family entertainment and multigenerational travel.",
-                      "Princess is one of the most experienced Alaska cruise operators.",
+                      "Holland America is one of the most experienced Alaska cruise operators.",
                       "Both offer excellent glacier viewing and scenic cruising.",
-                      "Princess provides stronger land tour and Alaska exploration opportunities.",
-                      "The best choice depends on whether you prioritize Disney experiences or destination immersion.",
+                      "Holland America provides stronger wildlife, cultural, and land exploration opportunities.",
+                      "The best choice depends on whether you prioritize family-focused fun or destination immersion.",
                     ].map((item, i) => (
                       <li key={i}>
                         <div className="Asc-bullet-icon">
@@ -2454,4 +2429,4 @@ const DisneyAlaskavsPrincessCruises = () => {
   );
 };
 
-export default DisneyAlaskavsPrincessCruises;
+export default DisneyAlaskavsHollandAmerica;
