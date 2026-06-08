@@ -38,7 +38,6 @@ import { Helmet } from "react-helmet-async";
 
 import "./DisneyCruisevsVikingOcean.css";
 
-
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -65,8 +64,7 @@ const schemaData = {
       "@type": "WebPage",
       "@id":
         "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
-      url:
-        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
+      url: "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
       name: "Disney Cruise vs Viking Ocean Cruises",
       description:
         "Compare Disney Cruise Line and Viking Ocean Cruises. Explore differences in destinations, dining, entertainment, accommodations, pricing, luxury level, and onboard experience.",
@@ -100,8 +98,7 @@ const schemaData = {
           "@type": "ListItem",
           position: 2,
           name: "Disney Cruise vs Viking Ocean Cruises",
-          item:
-            "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
+          item: "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
         },
       ],
     },
@@ -251,8 +248,6 @@ const schemaData = {
     },
   ],
 };
-
-
 
 function FAQ() {
   const [open, setOpen] = useState(null);
@@ -552,8 +547,7 @@ const DisneyCruisevsVikingOcean = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-section-title">Disney Cruise Line</h2>
-            <div className="azs-section-accent"></div>
+            <h2 className="azs-h2">Disney Cruise Line</h2>
 
             <p className="azs-video-intro">
               Hear directly from luxury travel expert Angela Hughes as she
@@ -565,7 +559,7 @@ const DisneyCruisevsVikingOcean = () => {
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://drive.google.com/file/d/1SkScHOm5LRAN4xsBubdxne2pMU_rMU62/preview"
+                src="https://www.youtube.com/embed/q29bYL4Nb5U"
                 title="Disney Cruise Line – Angela Hughes"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

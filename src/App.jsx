@@ -27,6 +27,7 @@ import DonorTravelPrograms from "./pages/DonorTravelPrograms/DonorTravelPrograms
 import MultiGenerationalAlumniTravel from "./pages/Multi-GenerationalAlumniTravel/MultiGenerationalAlumniTravel";
 import WhyLuxuryTravelForUniversities from "./pages/WhyLuxuryTravelForUniversities/WhyLuxuryTravelForUniversities";
 import DisneyCruisevsVikingOcean from "./pages/DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean";
+import DisneyCruisesforGrandparents from "./pages/DisneyCruisesforGrandparents/DisneyCruisesforGrandparents";
 
 function App() {
   return (
@@ -165,6 +166,11 @@ function App() {
           <Route
             path="/disney-cruise-vs-viking-ocean-cruises"
             element={<DisneyCruisevsVikingOcean />}
+          />
+
+           <Route
+            path="/disney-cruises-for-grandparents-and-multigenerational-families"
+            element={<DisneyCruisesforGrandparents />}
           />
         </Routes>
       </BrowserRouter>
