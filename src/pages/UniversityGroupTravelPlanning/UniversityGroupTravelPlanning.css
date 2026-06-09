@@ -1005,7 +1005,10 @@
   .ugt-advantage-title,.ugt-components-title{
     font-size: 24px;
   }
-  .ugt-advantage-intro,.ugt-diff-intro{
+  .ugt-advantage-intro,.ugt-diff-intro, .ugt-component-text{
+    font-size: 16px;
+  }
+  .ugt-component-footer{
     font-size: 16px;
   }
   .ugt-card-title{
@@ -1606,7 +1609,7 @@
 
 .luc-why-feature-title {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 22px;
   color: var(--bg-white);
   font-weight: 500;
   margin-bottom: 5px;
@@ -1615,7 +1618,7 @@
 
 .luc-why-feature-desc {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.52);
   line-height: 1.65;
   margin: 0;

@@ -2821,3 +2821,1311 @@
   }
 }
 
+/* ==========================================================================
+   WHAT LUXURY TRAVELERS OFTEN MISS (wlt-luxury-section)
+   ========================================================================== */
+
+.wlt-luxury-section {
+  padding: 6rem 0;
+  background-color: var(--bg-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.wlt-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.wlt-section-header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.wlt-eyebrow {
+  display: block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.wlt-section-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+}
+
+.wlt-accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+.wlt-section-subtitle {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-muted) !important;
+  font-weight: 300;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.wlt-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.wlt-interactive-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wlt-tabs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wlt-tab-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--bg-soft);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius, 12px);
+  cursor: pointer;
+  transition: all var(--transition, 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.wlt-tab-item:hover {
+  transform: translateX(8px);
+  background-color: rgba(39, 68, 114, 0.03);
+  border-color: var(--navy-light);
+}
+
+.wlt-tab-item.wlt-active {
+  background-color: var(--navy);
+  border-color: var(--navy-light);
+  box-shadow: var(--shadow-lg);
+}
+
+.wlt-tab-number {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy-light);
+  opacity: 0.6;
+  transition: all var(--transition, 0.3s ease);
+}
+
+.wlt-tab-item.wlt-active .wlt-tab-number {
+  color: var(--bg-white);
+  opacity: 0.9;
+}
+
+.wlt-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.wlt-tab-content h3 {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+  transition: all var(--transition, 0.3s ease);
+}
+
+.wlt-tab-item.wlt-active .wlt-tab-content h3 {
+  color: var(--bg-white);
+}
+
+.wlt-tab-content p {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.9rem;
+  color: var(--text-body) !important;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 400;
+  transition: all var(--transition, 0.3s ease);
+  opacity: 0.85;
+}
+
+.wlt-tab-item.wlt-active .wlt-tab-content p {
+  color: var(--bg-white) !important;
+  opacity: 0.9;
+}
+
+.wlt-quote-box {
+  padding: 1.75rem 2rem;
+  background-color: var(--navy-soft);
+  border-left: 4px solid var(--navy);
+  border-radius: 0 12px 12px 0;
+  margin-top: 1rem;
+}
+
+.wlt-quote-text {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--navy) !important;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.wlt-slider-viewport {
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.wlt-slider-container {
+  position: relative;
+  height: 480px;
+  border-radius: var(--radius-lg, 20px);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.wlt-slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+  z-index: 1;
+}
+
+.wlt-slide-item.wlt-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.wlt-slide-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wlt-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 6s ease;
+}
+
+.wlt-slide-item.wlt-active .wlt-slide-image {
+  transform: scale(1.08);
+}
+
+.wlt-slide-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(to top, rgba(15, 28, 46, 0.95) 0%, rgba(15, 28, 46, 0.4) 60%, transparent 100%);
+  color: var(--bg-white);
+  z-index: 3;
+}
+
+.wlt-slide-index {
+  display: inline-block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--navy-light);
+  margin-bottom: 0.5rem;
+}
+
+.wlt-slide-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 1.8rem;
+  color: var(--bg-white) !important;
+  font-weight: 400;
+  margin: 0;
+}
+
+.wlt-slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.wlt-dot-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--navy-border);
+  cursor: pointer;
+  transition: all var(--transition, 0.3s ease);
+}
+
+.wlt-dot-btn:hover {
+  background-color: var(--navy-light);
+}
+
+.wlt-dot-btn.wlt-active {
+  width: 28px;
+  border-radius: 5px;
+  background-color: var(--navy);
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES (wlt-luxury-section)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .wlt-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .wlt-slider-viewport {
+    position: relative;
+    top: 0;
+  }
+  
+  .wlt-slider-container {
+    height: 400px;
+  }
+  
+  .wlt-section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wlt-luxury-section {
+    padding: 4rem 0;
+  }
+
+  .wlt-section-title {
+    font-size: 24px;
+  }
+  .wlt-section-subtitle{
+    font-size: 16px;
+  }
+  
+  .wlt-slider-container {
+    height: 300px;
+  }
+  
+  .wlt-tab-item {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .wlt-tab-content h3 {
+    font-size: 1rem;
+  }
+  
+  .wlt-slide-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* ==========================================================================
+   WHY COUPLES WITHOUT CHILDREN CHOOSE DISNEY (wcc-couples-section)
+   ========================================================================== */
+
+.wcc-couples-section {
+  padding: 6rem 0;
+  background-color: var(--bg-soft);
+  position: relative;
+}
+
+.wcc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.wcc-section-header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.wcc-eyebrow {
+  display: block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.wcc-section-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+}
+
+.wcc-accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+.wcc-section-intro {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-muted) !important;
+  font-weight: 300;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.wcc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.wcc-card {
+  background-color: var(--bg-white);
+  border-radius: var(--radius-lg, 20px);
+  border: 1px solid var(--navy-border);
+  padding: 3rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+  transition: all var(--transition, 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+  position: relative;
+}
+
+.wcc-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(39, 68, 114, 0.1);
+  border-color: var(--navy-light);
+}
+
+.wcc-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.wcc-card-icon-wrap {
+  background: var(--navy-soft);
+  color: var(--navy);
+  border: 1px solid var(--navy-border);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.wcc-card:hover .wcc-card-icon-wrap {
+  transform: rotate(12deg) scale(1.1);
+  background: var(--navy);
+  color: var(--bg-white);
+  border-color: var(--navy-light);
+}
+
+.wcc-card h3 {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.wcc-card-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.wcc-card-features-box {
+  margin-bottom: 1.5rem;
+}
+
+.wcc-features-title {
+  display: block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.wcc-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wcc-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.4;
+}
+
+.wcc-check-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--navy);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.wcc-features-list li:hover .wcc-check-dot {
+  transform: scale(1.5);
+}
+
+.wcc-subfeatures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.wcc-subfeature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--navy-border);
+}
+
+.wcc-subfeature-item h4 {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+}
+
+.wcc-subfeature-item p {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  color: var(--text-muted) !important;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.wcc-card-footer-note {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-muted);
+  border-top: 1px solid var(--navy-border);
+  padding-top: 1.5rem;
+  margin-top: auto;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES (wcc-couples-section)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .wcc-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .wcc-section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wcc-couples-section {
+    padding: 4rem 0;
+  }
+
+  .wcc-section-title {
+    font-size: 24px;
+  }
+  .wcc-section-intro{
+    font-size: 16px;
+  }
+  .wcc-card h3{
+    font-size: 22px;
+  }
+  
+  .wcc-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   WILDLIFE EXPERIENCES SECTION (wle-wildlife-section)
+   ========================================================================== */
+
+.wle-wildlife-section {
+  padding: 6rem 0;
+  background-color: var(--bg-white);
+  position: relative;
+}
+
+.wle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.wle-section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.wle-eyebrow {
+  display: block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.wle-section-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+}
+
+.wle-accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.wle-rows-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.wle-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg, 24px);
+  background-color: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  box-shadow: 0 12px 35px rgba(39, 68, 114, 0.07);
+  transition: all var(--transition, 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.wle-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(39, 68, 114, 0.15);
+  border-color: var(--navy-light);
+}
+
+.wle-holland-row {
+  grid-template-columns: 1fr 1.1fr;
+}
+
+.wle-image-col {
+  width: 100%;
+}
+
+.wle-image-container {
+  position: relative;
+  height: 380px;
+  border-radius: var(--radius-lg, 20px);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--navy-border);
+}
+
+.wle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.wle-row:hover .wle-img {
+  transform: scale(1.04);
+}
+
+.wle-image-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(15, 28, 46, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--bg-white);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 2;
+}
+
+.wle-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.wle-brand-eyebrow {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: var(--navy-light);
+}
+
+.wle-row-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 2.2rem;
+  color: var(--navy);
+  margin: 0;
+  font-weight: 500;
+}
+
+.wle-row-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 18px;
+  color: var(--text-body);
+  line-height: 1.65;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.wle-items-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.wle-items-title {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--navy);
+}
+
+.wle-tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.wle-tag-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  background-color: var(--bg-white);
+  border: 1px solid var(--navy-border);
+  border-radius: 30px;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.9rem;
+  color: var(--text-body);
+  font-weight: 500;
+  transition: all var(--transition, 0.3s ease);
+  box-shadow: 0 2px 6px rgba(39, 68, 114, 0.02);
+}
+
+.wle-row:hover .wle-tag-item {
+  border-color: rgba(39, 68, 114, 0.15);
+}
+
+.wle-tag-item:hover {
+  border-color: var(--navy-light) !important;
+  background-color: var(--bg-soft);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.wle-tag-icon {
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+.wle-footer-callout {
+  border-left: 3px solid var(--navy-light);
+  padding-left: 1.25rem;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  padding: 10px;
+  color: var(--text-muted);
+  margin: 0.5rem 0 0 0;
+  background-color: var(--bg-soft);
+}
+.wle-footer-callout p{
+  color: var(--navy);
+}
+
+.wle-winner-callout {
+  background-color: var(--bg-white);
+  border-left: 4px solid var(--navy);
+  padding: 1.25rem 1.75rem;
+  border-radius: 0 12px 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 12px rgba(39, 68, 114, 0.02);
+  transition: all var(--transition);
+  background-color: var(--bg-soft);
+}
+
+.wle-winner-badge {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--navy);
+}
+
+.wle-winner-text {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 16px;
+  color: var(--navy) !important;
+  margin: 0;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES (wle-wildlife-section)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .wle-row {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--navy-border);
+    background-color: var(--bg-soft);
+  }
+  
+  .wle-row:hover {
+    box-shadow: none;
+  }
+  
+  .wle-holland-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .wle-holland-row .wle-image-col {
+    grid-row: 1;
+  }
+  
+  .wle-image-container {
+    height: 320px;
+  }
+  
+  .wle-section-title {
+    font-size: 2.2rem;
+  }
+  
+  .wle-rows-container {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .wle-wildlife-section {
+    padding: 4rem 0;
+  }
+
+  .wle-section-title {
+    font-size: 1.75rem;
+  }
+  
+  .wle-row-title {
+    font-size: 1.8rem;
+  }
+  
+  .wle-image-container {
+    height: 240px;
+  }
+  
+  .wle-content-col {
+    gap: 1rem;
+  }
+}
+
+/* ==========================================================================
+   EDUCATIONAL & ENRICHMENT PROGRAMS SECTION (eep-section)
+   ========================================================================== */
+
+.eep-section {
+  padding: 60px 20px;
+  background-color: var(--bg-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.eep-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eep-section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.eep-eyebrow {
+  display: block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.eep-section-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+}
+
+.eep-accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ── Dossier Grid ── */
+.eep-dossier-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.4fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* ── Column 1: Scenic Card ── */
+.eep-scenic-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3.5rem 2.25rem 3rem;
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.eep-scenic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+  border-color: rgba(39, 68, 114, 0.25);
+}
+
+.eep-scenic-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.9) 0%,
+    rgba(15, 23, 42, 0.5) 60%,
+    rgba(15, 23, 42, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.eep-scenic-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.eep-scenic-tag {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffca28; /* High-contrast golden amber */
+  margin-bottom: 0.75rem;
+}
+
+.eep-scenic-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 2.2rem;
+  color: var(--bg-white) !important;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+
+.eep-scenic-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+.eep-scenic-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+.eep-scenic-subtext {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75); /* Higher contrast */
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── Columns 2 & 3: Comparison Cards ── */
+.eep-comparison-card {
+  background-color: var(--bg-white);
+  border-radius: 24px;
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.eep-comparison-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+  border-color: rgba(39, 68, 114, 0.25);
+}
+
+.eep-card-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(39, 68, 114, 0.1);
+}
+
+.eep-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.eep-comparison-card:hover .eep-card-img {
+  transform: scale(1.04);
+}
+
+.eep-card-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--bg-white);
+  padding: 6px 16px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.eep-disney-badge {
+  background: rgba(184, 134, 11, 0.85); /* Dark Goldenrod */
+  backdrop-filter: blur(8px);
+}
+
+.eep-holland-badge {
+  background: rgba(39, 68, 114, 0.85); /* Navy Light */
+  backdrop-filter: blur(8px);
+}
+
+.eep-card-body {
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.eep-card-brand {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: var(--navy-light);
+  margin-bottom: 0.5rem;
+}
+
+.eep-card-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 1.85rem;
+  color: var(--navy);
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.eep-card-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 0 0 1.75rem;
+  opacity: 0.9;
+}
+
+.eep-card-list-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.eep-list-title {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--navy);
+  margin: 0;
+}
+
+.eep-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.eep-card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 14.5px;
+  color: var(--text-body);
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.eep-card-list-item:hover {
+  transform: translateX(3px);
+  color: var(--navy);
+}
+
+.eep-card-list-icon {
+  flex-shrink: 0;
+}
+
+.eep-disney-icon {
+  color: #b8860b !important;
+}
+
+.eep-holland-icon {
+  color: var(--navy) !important;
+}
+
+/* ── Footers ── */
+.eep-card-footer-box {
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  margin-top: auto;
+  box-shadow: 0 2px 10px rgba(39, 68, 114, 0.02);
+}
+
+.eep-card-footer-box p {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.eep-disney-footer {
+  background-color: rgba(218, 165, 32, 0.07); /* Slightly stronger gold tint */
+  border-left: 3px solid rgba(218, 165, 32, 0.6);
+}
+
+.eep-disney-footer p {
+  color: #725304 !important; /* Dark golden brown for absolute readability */
+}
+
+.eep-disney-footer p strong {
+  color: #5c4302 !important;
+}
+
+.eep-winner-footer {
+  background-color: var(--bg-soft);
+  border-left: 4px solid var(--navy);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.eep-winner-tag {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--navy);
+}
+
+.eep-winner-footer p {
+  color: var(--navy) !important;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES (eep-section)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .eep-dossier-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .eep-scenic-card {
+    grid-column: 1 / span 2;
+    height: 380px;
+    padding: 3rem 2rem;
+  }
+  
+  .eep-scenic-desc {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .eep-dossier-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .eep-scenic-card {
+    grid-column: 1;
+    height: 320px;
+    padding: 2.25rem 1.75rem;
+  }
+  
+  .eep-scenic-desc {
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+  }
+
+  .eep-card-img-wrap {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .eep-section {
+    padding: 4rem 0;
+  }
+
+  .eep-section-title {
+    font-size: 1.85rem;
+  }
+  
+  .eep-scenic-card {
+    height: 340px;
+  }
+  
+  .eep-scenic-title {
+    font-size: 1.75rem;
+  }
+
+  .eep-card-body {
+    padding: 1.75rem 1.25rem;
+  }
+  
+  .eep-card-title {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+

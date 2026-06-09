@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
+import "../ScenicVSFourSeasonsYachts.css";
 // import HeroImage1 from "../../assets/MultiGenerationalAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg.jpg";
 // import HeroImage2 from "../../assets/MultiGenerationalAlumniTravel/historic-university-campus-entrance-academic-landmark-education.jpg";
 // import HeroImage3 from "../../assets/MultiGenerationalAlumniTravel/alumni-university-campus-community-aerial-view.jpg";
@@ -842,6 +843,120 @@ const DisneyCruisesforGrandparents = () => {
         </div>
       </section>
 
+      {/* SECTION 7.6: IMAGE GALLERY */}
+      <section className="svf-section svf-gallery-section">
+        <div className="svf-inner">
+          <div className="svf-gallery-header">
+            <h2 className="svf-h2" style={{ textAlign: "center" }}>
+              Multigenerational Magic on Every Voyage
+            </h2>
+            <div className="svf-bar" style={{ margin: "20px auto 0" }}></div>
+            <p
+              className="svf-p"
+              style={{
+                textAlign: "center",
+                marginTop: "20px",
+                maxWidth: "700px",
+                margin: "20px auto 0",
+              }}
+            >
+              From grandparent-grandchild character moments to family dining and
+              private island adventures — Disney Cruise Line creates
+              unforgettable memories for every generation traveling together.
+            </p>
+          </div>
+
+          <div className="svf-gallery-grid">
+            <div className="svf-gallery-item svf-gallery-item--large">
+              <div className="svf-gallery-image-wrap">
+                <img
+                  // src={CastawayBayImage}
+                  alt="Grandparents and grandchildren enjoying Castaway Cay private island beach on Disney Cruise"
+                  className="svf-gallery-image"
+                />
+                <div className="svf-gallery-overlay">
+                  <div className="svf-gallery-content">
+                    <span className="svf-gallery-badge">
+                      Private Island Escape
+                    </span>
+                    <h3>Castaway Cay — Disney's Own Island</h3>
+                    <p>
+                      Relax on a pristine Bahamian beach exclusive to Disney
+                      guests, where grandparents unwind at Serenity Bay while
+                      grandchildren splash in family-friendly waters nearby.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="svf-gallery-item">
+              <div className="svf-gallery-image-wrap">
+                <img
+                  // src={CharacterMomentImage}
+                  alt="Grandparent and grandchild sharing a magical character meet-and-greet moment on Disney Cruise"
+                  className="svf-gallery-image"
+                />
+                <div className="svf-gallery-overlay">
+                  <div className="svf-gallery-content">
+                    <span className="svf-gallery-badge">Character Magic</span>
+                    <h3>Moments Grandchildren Never Forget</h3>
+                    <p>
+                      Meeting beloved Disney characters together as a family
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="svf-gallery-item">
+              <div className="svf-gallery-image-wrap">
+                <img
+                  // src={FamilyDiningImage}
+                  alt="Multigenerational family enjoying rotational dining experience onboard Disney Cruise Line"
+                  className="svf-gallery-image"
+                />
+                <div className="svf-gallery-overlay">
+                  <div className="svf-gallery-content">
+                    <span className="svf-gallery-badge">Family Dining</span>
+                    <h3>Rotational Dining for Every Generation</h3>
+                    <p>
+                      Disney's unique rotational dining brings the whole family
+                      together each evening in a new themed restaurant, with
+                      menus designed to delight every age group.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="svf-gallery-item svf-gallery-item--wide">
+              <div className="svf-gallery-image-wrap">
+                <img
+                  // src={BroadwayShowImage}
+                  alt="Family watching Broadway-style entertainment show together on Disney Cruise Line"
+                  className="svf-gallery-image"
+                />
+                <div className="svf-gallery-overlay">
+                  <div className="svf-gallery-content">
+                    <span className="svf-gallery-badge">
+                      World-Class Entertainment
+                    </span>
+                    <h3>Broadway-Style Shows the Whole Family Loves</h3>
+                    <p>
+                      Disney's spectacular onboard productions captivate
+                      grandparents, parents, and grandchildren alike —
+                      delivering show-stopping performances that become
+                      cherished shared memories.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ACTIVITIES GRANDPARENTS AND GRANDCHILDREN CAN ENJOY TOGETHER */}
       <section className="adg-c-section adg-c-bg-soft" id="adg-donor-programs">
         <div className="adg-c-container">
@@ -1556,71 +1671,6 @@ const DisneyCruisesforGrandparents = () => {
           </div>
         </div>
       </section>
-      {/* VIDEO SECTION */}
-      {/* <section
-        className="Asc-video-section"
-        id="Asc-video"
-        style={{ backgroundColor: "var(--navy-soft)" }}
-      >
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Closer to the World with Azamara</h2>
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-              Experience how Azamara’s smaller ships, longer stays, and
-              immersive journeys create more meaningful connections with the
-              world. Discover destinations in a more personal, authentic, and
-              unhurried way — where every horizon feels closer.
-            </p>
-          </div>
-
-          <div className="Asc-video-wrapper">
-            <div className="Asc-video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/GQj8QXkJeik"
-                title="Closer to the World with Azamara"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* VIDEO SECTION */}
-      {/* <section
-        className="Asc-video-section"
-        id="Asc-video"
-        style={{ backgroundColor: "var(--bg-soft)" }}
-      >
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Lens of a Local: Pasta Making in Italy</h2>
-
-            <div className="Asc-accent-line"></div>
-
-            <p className="Asc-video-intro">
-              Experience Azamara’s immersive destination-focused travel through
-              this authentic pasta-making journey in Civitavecchia, Italy, where
-              local culture, culinary traditions, and meaningful travel
-              experiences come together beyond the typical cruise itinerary.
-            </p>
-          </div>
-
-          <div className="Asc-video-wrapper">
-            <div className="Asc-video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/VUWKldvItdU"
-                title="Azamara's Lens of a Local: Pasta Making in Civitavecchia, Italy"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* ── TIPS FOR PLANNING A MULTIGENERATIONAL DISNEY CRUISE ───────────────────────────── */}
       <section className="ugt-advantage-section" id="ugt-advantage">

@@ -248,6 +248,14 @@ const Nav = () => {
               >
                 Disney Alaska vs Holland America
               </NavLink>
+
+              <NavLink
+                to="/is-disney-cruise-really-just-for-kids"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Disney Cruise Really For Kids
+              </NavLink>
             </div>
           </div>
         </div>
@@ -498,6 +506,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Disney Alaska vs Holland America
+            </NavLink>
+
+            <NavLink
+              to="/is-disney-cruise-really-just-for-kids"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Disney Cruise Really For Kids
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

@@ -399,7 +399,10 @@ const DisneyAlaskavsPrincessCruises = () => {
       </Helmet>
       <Nav />
       {/* HERO */}
-      <section className="Scenic_hero_section"  style={{backgroundColor: "var(--navy)"}}>
+      <section
+        className="Scenic_hero_section"
+        style={{ backgroundColor: "var(--navy)" }}
+      >
         {images.map((img, index) => (
           <div
             key={index}
@@ -779,145 +782,164 @@ const DisneyAlaskavsPrincessCruises = () => {
           </div>
         </div>
       </section>
+
       {/* EDUCATIONAL VALUE */}
-      <section className="azs-experience-section" id="azs-experience">
-        <div className="azs-container">
-          <div className="azs-section-header">
-            <h2 className="azs-section-title">Educational Value</h2>
-            <div className="azs-section-accent"></div>
+      <section className="eep-section" id="eep-education">
+        <div className="eep-container">
+          <div className="eep-section-header">
+      
+            <h2 className="eep-section-title">Educational Value</h2>
+            <div className="eep-accent-line"></div>
           </div>
 
-          <div className="azs-experience-grid">
-            {/* Disney Card */}
-            <div className="azs-experience-card azs-azamara-exp">
-              <div className="azs-exp-image-wrap">
+          <div className="eep-dossier-grid">
+            {/* DISNEY CARD */}
+            <div className="eep-comparison-card eep-disney-card">
+              <div className="eep-card-img-wrap">
                 <img
                   // src={DisneyAlaskaEducation}
                   alt="Disney Alaska educational experiences"
-                  className="azs-exp-img"
+                  className="eep-card-img"
                 />
-                <div className="azs-exp-image-badge">
+                <span className="eep-card-badge eep-holland-badge">
                   Family Learning Experiences
-                </div>
+                </span>
               </div>
 
-              <div className="azs-exp-content">
-                <div className="azs-exp-header">
-                  <Ship size={24} className="azs-exp-icon" />
-                  <h3 className="azs-exp-title">Disney Alaska Cruises</h3>
+              <div className="eep-card-body">
+                <span className="eep-card-brand">Disney Cruise Line</span>
+
+                <h3 className="eep-card-title">Disney Alaska Cruises</h3>
+
+                <p className="eep-card-desc">
+                  Disney incorporates educational experiences into its
+                  family-focused cruise experience through storytelling,
+                  discovery, and interactive learning opportunities.
+                </p>
+
+                <div className="eep-card-list-box">
+                  <h4 className="eep-list-title">Disney incorporates:</h4>
+
+                  <ul className="eep-card-list">
+                    {[
+                      "Nature presentations",
+                      "Junior Ranger activities",
+                      "Alaska-focused learning",
+                      "Wildlife education programs",
+                      "Glacier and ecosystem presentations",
+                    ].map((item, idx) => (
+                      <li key={idx} className="eep-card-list-item">
+                        <Check
+                          size={14}
+                          className="eep-card-list-icon eep-holland-icon"
+                        />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <div className="azs-exp-body">
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">
-                      Disney incorporates:
-                    </h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Nature presentations",
-                        "Junior Ranger activities",
-                        "Alaska-focused learning",
-                        "Wildlife education programs",
-                        "Glacier and ecosystem presentations",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <p className="azs-exp-highlight">
+                <div className="eep-card-footer-box eep-winner-footer">
+                  <p>
                     These experiences appeal particularly to children and
                     families.
                   </p>
-
-                  <div className="azs-exp-divider"></div>
                 </div>
               </div>
             </div>
 
-            {/* Princess Card */}
-            <div className="azs-experience-card azs-seabourn-exp">
-              <div className="azs-exp-image-wrap">
+            {/* PRINCESS CARD */}
+            <div className="eep-comparison-card eep-holland-card">
+              <div className="eep-card-img-wrap">
                 <img
-                  //   src={VikingOcean}
+                  // src={PrincessEducation}
                   alt="Princess Alaska educational programs"
-                  className="azs-exp-img"
+                  className="eep-card-img"
                 />
-                <div className="azs-exp-image-badge">
+                <span className="eep-card-badge eep-holland-badge">
                   Destination Enrichment
-                </div>
+                </span>
               </div>
 
-              <div className="azs-exp-content">
-                <div className="azs-exp-header">
-                  <Ship size={24} className="azs-exp-icon" />
-                  <h3 className="azs-exp-title">Princess Alaska Cruises</h3>
+              <div className="eep-card-body">
+                <span className="eep-card-brand">Princess Cruises</span>
+
+                <h3 className="eep-card-title">Princess Alaska Cruises</h3>
+
+                <p className="eep-card-desc">
+                  Princess offers deeper educational programming and destination
+                  enrichment designed to help travelers better understand
+                  Alaska's wildlife, culture, history, and natural environment.
+                </p>
+
+                <div className="eep-card-list-box">
+                  <h4 className="eep-list-title">Topics may include:</h4>
+
+                  <ul className="eep-card-list">
+                    {[
+                      "Wildlife",
+                      "Glaciology",
+                      "Native cultures",
+                      "Alaska history",
+                      "Conservation",
+                    ].map((item, idx) => (
+                      <li key={idx} className="eep-card-list-item">
+                        <Check
+                          size={14}
+                          className="eep-card-list-icon eep-holland-icon"
+                        />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <div className="azs-exp-body">
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">Topics may include:</h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Wildlife",
-                        "Glaciology",
-                        "Native cultures",
-                        "Alaska history",
-                        "Conservation",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <p className="azs-exp-highlight">
+                <div className="eep-card-footer-box eep-winner-footer">
+                  <p>
                     Princess offers deeper educational programming and
                     destination enrichment throughout the voyage.
                   </p>
 
-                  <div className="azs-exp-divider"></div>
                   {readMoreEducation && (
-                    <p className="azs-exp-highlight">
-                      <strong>Winner: Princess</strong>
-                      <br />
-                      Adults and lifelong learners often appreciate Princess's
-                      educational depth.
-                    </p>
+                    <>
+                      <hr
+                        style={{
+                          margin: "16px 0",
+                          opacity: 0.2,
+                        }}
+                      />
+
+                      <span className="eep-winner-tag">Winner: Princess</span>
+
+                      <p style={{ marginTop: "12px" }}>
+                        Adults and lifelong learners often appreciate Princess's
+                        educational depth.
+                      </p>
+                    </>
                   )}
 
-                  <div>
-                    <button
-                      onClick={() => setReadMoreEducation(!readMoreEducation)}
-                      style={{
-                        background: "none",
-                        border: "none",
-                        color: "var(--primary-color)",
-                        cursor: "pointer",
-                        fontWeight: "600",
-                        padding: 0,
-                      }}
-                    >
-                      {readMoreEducation ? "Read Less" : "Read More"}
-                    </button>
-                  </div>
+                  <button
+                    onClick={() => setReadMoreEducation(!readMoreEducation)}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "var(--navy)",
+                      cursor: "pointer",
+                      fontWeight: "600",
+                      padding: 0,
+                   
+                      marginTop: "12px",
+                    }}
+                  >
+                    {readMoreEducation ? "Read Less" : "Read More"}
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* DINING EXPERIENCE */}
       <section className="azs-dining-section" id="azs-dining">
         <div className="azs-container">
@@ -1682,167 +1704,162 @@ const DisneyAlaskavsPrincessCruises = () => {
         </div>
       </section>
 
-{/* LAND TOURS AND ALASKA EXPLORATION */}
-<section className="lth-landtours-section" id="lth-landtours">
-  <div className="lth-container">
-    {/* Section Header */}
-    <div className="lth-section-header">
-      <h2 className="lth-section-title">
-        Land Tours and Alaska Exploration
-      </h2>
-      <div className="lth-accent-line"></div>
-      <p className="lth-section-subtitle">
-        Compare Cruise-Only Vacations with Comprehensive Alaska Cruisetours
-      </p>
-    </div>
-
-    {/* Main Visual Layout */}
-    <div className="lth-main-grid">
-      {/* Visual Column */}
-      <div className="lth-visual-col">
-        <div className="lth-image-wrapper">
-          <img
-            // src={AlaskaCruisetourImage}
-            alt="Alaska Land Tours and Cruisetours"
-            className="lth-main-image"
-          />
-
-          <div className="lth-image-overlay">
-            <div className="lth-image-content">
-              <span className="lth-badge">Explore Beyond the Coast</span>
-
-              <h3 className="lth-image-title">
-                Denali & Interior Alaska
-              </h3>
-
-              <p className="lth-image-desc">
-                Venture deep into Alaska with scenic rail journeys,
-                wilderness lodges, and unforgettable adventures beyond
-                the cruise ports.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Comparison Cards */}
-      <div className="lth-cards-col">
-        {/* Disney Card */}
-        <div className="lth-card lth-disney-card">
-          <div className="lth-card-header">
-            <div className="lth-icon-wrap">
-              <Ship size={22} />
-            </div>
-            <h3 className="lth-card-title">Disney Cruise Line</h3>
-          </div>
-
-          <p className="lth-card-intro">
-            Disney primarily focuses on the cruise experience.
-          </p>
-
-          <ul className="lth-feature-list">
-            <li className="lth-feature-item">
-              <div className="lth-feature-icon-minus">
-                <Minus size={14} />
-              </div>
-              <span>
-                Extensive land tour programs are limited.
-              </span>
-            </li>
-
-            <li className="lth-feature-item">
-              <div className="lth-feature-icon">
-                <Check size={14} />
-              </div>
-              <span>
-                Shore excursions are available in Alaska ports.
-              </span>
-            </li>
-
-            <li className="lth-feature-item">
-              <div className="lth-feature-icon">
-                <Check size={14} />
-              </div>
-              <span>
-                Strong onboard entertainment and family experiences.
-              </span>
-            </li>
-          </ul>
-
-          <div className="lth-card-highlight">
-            <p>
-              Ideal for travelers seeking a cruise-focused Alaska vacation
-              with Disney magic onboard.
+      {/* LAND TOURS AND ALASKA EXPLORATION */}
+      <section className="lth-landtours-section" id="lth-landtours">
+        <div className="lth-container">
+          {/* Section Header */}
+          <div className="lth-section-header">
+            <h2 className="lth-section-title">
+              Land Tours and Alaska Exploration
+            </h2>
+            <div className="lth-accent-line"></div>
+            <p className="lth-section-subtitle">
+              Compare Cruise-Only Vacations with Comprehensive Alaska
+              Cruisetours
             </p>
           </div>
-        </div>
 
-        {/* Princess Card */}
-        <div className="lth-card lth-holland-card lth-winner-card">
-          <div className="lth-card-header">
-            <div className="lth-icon-wrap lth-winner-icon-wrap">
-              <Crown size={22} />
+          {/* Main Visual Layout */}
+          <div className="lth-main-grid">
+            {/* Visual Column */}
+            <div className="lth-visual-col">
+              <div className="lth-image-wrapper">
+                <img
+                  // src={AlaskaCruisetourImage}
+                  alt="Alaska Land Tours and Cruisetours"
+                  className="lth-main-image"
+                />
+
+                <div className="lth-image-overlay">
+                  <div className="lth-image-content">
+                    <span className="lth-badge">Explore Beyond the Coast</span>
+
+                    <h3 className="lth-image-title">
+                      Denali & Interior Alaska
+                    </h3>
+
+                    <p className="lth-image-desc">
+                      Venture deep into Alaska with scenic rail journeys,
+                      wilderness lodges, and unforgettable adventures beyond the
+                      cruise ports.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <h3 className="lth-card-title">Princess Cruises</h3>
+            {/* Comparison Cards */}
+            <div className="lth-cards-col">
+              {/* Disney Card */}
+              <div className="lth-card lth-disney-card">
+                <div className="lth-card-header">
+                  <div className="lth-icon-wrap">
+                    <Ship size={22} />
+                  </div>
+                  <h3 className="lth-card-title">Disney Cruise Line</h3>
+                </div>
 
-            <span className="lth-winner-badge">
-              Clear Winner
-            </span>
-          </div>
+                <p className="lth-card-intro">
+                  Disney primarily focuses on the cruise experience.
+                </p>
 
-          <p className="lth-card-intro">
-            Princess is famous for its Alaska Cruisetours.
-          </p>
+                <ul className="lth-feature-list">
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon-minus">
+                      <Minus size={14} />
+                    </div>
+                    <span>Extensive land tour programs are limited.</span>
+                  </li>
 
-          <ul className="lth-feature-list">
-            <li className="lth-feature-item">
-              <div className="lth-feature-icon">
-                <Check size={14} />
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span>Shore excursions are available in Alaska ports.</span>
+                  </li>
+
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span>
+                      Strong onboard entertainment and family experiences.
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="lth-card-highlight">
+                  <p>
+                    Ideal for travelers seeking a cruise-focused Alaska vacation
+                    with Disney magic onboard.
+                  </p>
+                </div>
               </div>
-              <span>
-                <strong>Cruise Voyages:</strong> Combine sea and land
-                experiences.
-              </span>
-            </li>
 
-            <li className="lth-feature-item">
-              <div className="lth-feature-icon">
-                <Check size={14} />
+              {/* Princess Card */}
+              <div className="lth-card lth-holland-card lth-winner-card">
+                <div className="lth-card-header">
+                  <div className="lth-icon-wrap lth-winner-icon-wrap">
+                    <Crown size={22} />
+                  </div>
+
+                  <h3 className="lth-card-title">Princess Cruises</h3>
+
+                  <span className="lth-winner-badge">Clear Winner</span>
+                </div>
+
+                <p className="lth-card-intro">
+                  Princess is famous for its Alaska Cruisetours.
+                </p>
+
+                <ul className="lth-feature-list">
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span>
+                      <strong>Cruise Voyages:</strong> Combine sea and land
+                      experiences.
+                    </span>
+                  </li>
+
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span>
+                      <strong>Denali National Park:</strong> Explore Alaska's
+                      iconic wilderness.
+                    </span>
+                  </li>
+
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span>
+                      <strong>
+                        Interior Alaska, Rail Journeys & Wilderness Lodges:
+                      </strong>{" "}
+                      Enjoy scenic train travel and immersive stays in the heart
+                      of Alaska.
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="lth-card-highlight lth-winner-highlight">
+                  <p>
+                    <strong>Clear Winner: Princess</strong>
+                    <br />
+                    Travelers wanting a deeper Alaska experience often choose
+                    Princess.
+                  </p>
+                </div>
               </div>
-              <span>
-                <strong>Denali National Park:</strong> Explore Alaska's
-                iconic wilderness.
-              </span>
-            </li>
-
-            <li className="lth-feature-item">
-              <div className="lth-feature-icon">
-                <Check size={14} />
-              </div>
-              <span>
-                <strong>Interior Alaska, Rail Journeys & Wilderness Lodges:</strong>{" "}
-                Enjoy scenic train travel and immersive stays in the heart
-                of Alaska.
-              </span>
-            </li>
-          </ul>
-
-          <div className="lth-card-highlight lth-winner-highlight">
-            <p>
-              <strong>Clear Winner: Princess</strong>
-              <br />
-              Travelers wanting a deeper Alaska experience often choose
-              Princess.
-            </p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+      </section>
 
       {/* PRICING COMPARISON */}
       <section

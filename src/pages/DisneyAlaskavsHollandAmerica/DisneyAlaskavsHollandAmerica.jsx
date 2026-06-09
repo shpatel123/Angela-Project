@@ -34,8 +34,13 @@ import AboutImage from "../../assets/AboutAngela.jpeg";
 // import VikingOceanCruise from "../../assets/DisneyCruisevsVikingOcean/Viking-Ocean-Cruises.jpg";
 
 import { Helmet } from "react-helmet-async";
+import DisneyAlaskaWildlife from "../../assets/AzamaraAlaskaCruisesGuide/multigenerational-family-fly-fishing-vacation-alaska-mountain-river.jpeg";
+import HollandAmericaWildlife from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage3.webp";
+import DisneyAlaskaEducation from "../../assets/AzamaraAlaskaCruisesGuide/alaska-family-glacier-view-hiking-vacation.jpeg";
+import HollandAmericaEducation from "../../assets/AzamaraAlaskaCruisesGuide/alaska-glacier-mountain-lake-scenic-wilderness-vacation.webp";
+import AlaskaScenicBanner from "../../assets/AzamaraAlaskaCruisesGuide/alaska-mountain-reflection-lake-wilderness-nature-travel.webp";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
-import AlaskaCruisetourImage from "../../assets/AzamaraAlaskaCruisesGuide/alaska-glacier-mountain-lake-scenic-wilderness-vacation.webp";
+import "../AzamaravsSeabourn/AzamaraVsSeabourn.css";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -453,7 +458,10 @@ const DisneyAlaskavsHollandAmerica = () => {
       </Helmet>
       <Nav />
       {/* HERO */}
-      <section className="Scenic_hero_section" style={{backgroundColor: "var(--navy)"}}>
+      <section
+        className="Scenic_hero_section"
+        style={{ backgroundColor: "var(--navy)" }}
+      >
         {images.map((img, index) => (
           <div
             key={index}
@@ -631,22 +639,21 @@ const DisneyAlaskavsHollandAmerica = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Disney Cruise Line</h2>
+            <h2 className="azs-h2">Disney Destiny Ship Tour</h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Disney Cruise Line offers a vacation experience unlike any other,
-              bringing families together through world-class entertainment,
-              exceptional dining, immersive Disney storytelling, and
-              unforgettable destinations.
+              This video takes you inside the incredible spaces, staterooms,
+              suites, and dining experiences inspired by the timeless battle of
+              Heroes & Villains.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/yw922nyPxZs"
-                title="Disney Cruise Line"
+                src="https://www.youtube.com/embed/nLPuJE2a8xU"
+                title="Disney Destiny Ship Tour"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -655,6 +662,7 @@ const DisneyAlaskavsHollandAmerica = () => {
           </div>
         </div>
       </section>
+
       {/* DISNEY ALASKA CRUISES OVERVIEW */}
       <section className="azs-overview-section" id="azs-disney-overview">
         <div className="azs-container">
@@ -837,118 +845,101 @@ const DisneyAlaskavsHollandAmerica = () => {
       </section>
 
       {/* EDUCATIONAL AND ENRICHMENT PROGRAMS */}
-      <section className="azs-experience-section" id="azs-experience">
-        <div className="azs-container">
-          <div className="azs-section-header">
-            <h2 className="azs-section-title">
+      <section className="eep-section" id="eep-education">
+        <div className="eep-container">
+          <div className="eep-section-header">
+            <span className="eep-eyebrow">Onboard Learning & Discovery</span>
+            <h2 className="eep-section-title">
               Educational and Enrichment Programs
             </h2>
-            <div className="azs-section-accent"></div>
+            <div className="eep-accent-line"></div>
           </div>
 
-          <div className="azs-experience-grid">
-            {/* Disney Card */}
-            <div className="azs-experience-card azs-azamara-exp">
-              <div className="azs-exp-image-wrap">
+          <div className="eep-dossier-grid">
+            
+
+            {/* COLUMN 2: DISNEY CARD */}
+            <div className="eep-comparison-card eep-disney-card">
+              <div className="eep-card-img-wrap">
                 <img
                   // src={DisneyAlaskaEducation}
                   alt="Disney Alaska educational experiences"
-                  className="azs-exp-img"
+                  className="eep-card-img"
                 />
-                <div className="azs-exp-image-badge">
-                  Family Learning Experiences
-                </div>
+                <span className="eep-card-badge eep-holland-badge">Family Discovery</span>
               </div>
+              <div className="eep-card-body">
+                <span className="eep-card-brand">Disney Cruise Line</span>
+                <h3 className="eep-card-title">Disney Alaska Cruises</h3>
+                <p className="eep-card-desc">
+                  Disney combines educational experiences with storytelling and character magic, making learning engaging and accessible for kids and multigenerational families.
+                </p>
 
-              <div className="azs-exp-content">
-                <div className="azs-exp-header">
-                  <Ship size={24} className="azs-exp-icon" />
-                  <h3 className="azs-exp-title">Disney Alaska Cruises</h3>
+                <div className="eep-card-list-box">
+                  <h4 className="eep-list-title">Offerings Include:</h4>
+                  <ul className="eep-card-list">
+                    {[
+                      "Junior Ranger programs",
+                      "Interactive nature talks",
+                      "Family discovery crafts",
+                      "Wildlife education sessions",
+                      "Alaska-themed youth clubs",
+                    ].map((item, idx) => (
+                      <li key={idx} className="eep-card-list-item">
+                        <Check size={14} className="eep-card-list-icon eep-holland-icon" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <div className="azs-exp-body">
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">
-                      Educational offerings include:
-                    </h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Nature talks",
-                        "Junior Ranger programs",
-                        "Alaska-themed learning experiences",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <p className="azs-exp-highlight">
-                    These are especially appealing to younger travelers.
+                <div className="eep-card-footer-box eep-winner-footer">
+                  <p>
+                    <strong>Best For Families:</strong> Engages younger travelers through active storytelling and interactive discovery.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Holland America Card */}
-            <div className="azs-experience-card azs-seabourn-exp">
-              <div className="azs-exp-image-wrap">
+            {/* COLUMN 3: HOLLAND AMERICA CARD */}
+            <div className="eep-comparison-card eep-holland-card">
+              <div className="eep-card-img-wrap">
                 <img
                   // src={HollandAmericaEducation}
                   alt="Holland America Alaska educational programs"
-                  className="azs-exp-img"
+                  className="eep-card-img"
                 />
-                <div className="azs-exp-image-badge">
-                  Destination Enrichment
-                </div>
+                <span className="eep-card-badge eep-holland-badge">Destination Depth</span>
               </div>
+              <div className="eep-card-body">
+                <span className="eep-card-brand">Holland America Line</span>
+                <h3 className="eep-card-title">Holland America Cruises</h3>
+                <p className="eep-card-desc">
+                  Holland America features deep ecological, historical, and cultural programming guided by naturalists, local rangers, and cultural ambassadors.
+                </p>
 
-              <div className="azs-exp-content">
-                <div className="azs-exp-header">
-                  <Ship size={24} className="azs-exp-icon" />
-                  <h3 className="azs-exp-title">
-                    Holland America Alaska Cruises
-                  </h3>
+                <div className="eep-card-list-box">
+                  <h4 className="eep-list-title">Topics Covered:</h4>
+                  <ul className="eep-card-list">
+                    {[
+                      "Native cultural ambassadors",
+                      "Glaciology & geology seminars",
+                      "Alaska Wildlife lectures",
+                      "National Park Service rangers",
+                      "Conservation workshops",
+                    ].map((item, idx) => (
+                      <li key={idx} className="eep-card-list-item">
+                        <Check size={14} className="eep-card-list-icon eep-holland-icon" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <div className="azs-exp-body">
-                  <div className="azs-exp-group">
-                    <h4 className="azs-exp-group-title">Topics may include:</h4>
-
-                    <ul className="azs-exp-list">
-                      {[
-                        "Alaska Wildlife",
-                        "Native Cultures",
-                        "Glaciology",
-                        "History of the Last Frontier",
-                        "Conservation Efforts",
-                      ].map((item, idx) => (
-                        <li key={idx} className="azs-exp-list-item">
-                          <Check size={16} className="azs-exp-list-icon" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <p className="azs-exp-highlight">
-                    Educational programming is a major strength.
-                  </p>
-
-                  <div className="azs-exp-divider"></div>
-
-                  <p className="azs-exp-highlight">
-                    <strong>Winner: Holland America</strong>
-                    <br />
-                    Travelers seeking deeper destination understanding often
-                    prefer Holland America.
+                <div className="eep-card-footer-box eep-winner-footer">
+                  <span className="eep-winner-tag">Winner: Holland America</span>
+                  <p>
+                    Nature enthusiasts and adults prefer Holland America's academic depth and expert-led destination immersion.
                   </p>
                 </div>
               </div>
@@ -1167,6 +1158,119 @@ const DisneyAlaskavsHollandAmerica = () => {
           </div>
         </div>
       </section>
+
+      {/* ── WILDLIFE EXPERIENCES ───── */}
+      <section className="wle-wildlife-section" id="wle-wildlife">
+        <div className="wle-container">
+          <div className="wle-section-header">
+            <span className="wle-eyebrow">Alaska Excursions & Sightseeing</span>
+            <h2 className="wle-section-title">Wildlife Experiences</h2>
+            <div className="wle-accent-line"></div>
+          </div>
+
+          <div className="wle-rows-container">
+            {/* ROW 1: DISNEY */}
+            <div className="wle-row wle-disney-row">
+              <div className="wle-image-col">
+                <div className="wle-image-container">
+                  <img
+                    // src={DisneyAlaskaWildlife}
+                    alt="Disney Alaska wildlife experiences"
+                    className="wle-img"
+                  />
+                  <div className="wle-image-badge">Family Excursions</div>
+                </div>
+              </div>
+
+              <div className="wle-content-col">
+                <span className="wle-brand-eyebrow">Disney Cruise Line</span>
+                <h3 className="wle-row-title">Wildlife Viewing</h3>
+                <p className="wle-row-desc">
+                  Disney delivers family-friendly excursions that make wildlife
+                  viewing accessible, safe, and engaging for all ages.
+                </p>
+
+                <div className="wle-items-box">
+                  <span className="wle-items-title">
+                    Opportunities include:
+                  </span>
+                  <div className="wle-tags-grid">
+                    {["Whales", "Bald eagles", "Sea lions", "Bears"].map(
+                      (item, idx) => (
+                        <div key={idx} className="wle-tag-item">
+                          <Check size={14} className="wle-tag-icon" />
+                          <span>{item}</span>
+                        </div>
+                      ),
+                    )}
+                  </div>
+                </div>
+
+                <div className="wle-footer-callout">
+                  <p>
+                    Excursions are family-friendly, highly organized, and
+                    accessible.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* ROW 2: HOLLAND AMERICA */}
+            <div className="wle-row wle-holland-row">
+              <div className="wle-content-col">
+                <span className="wle-brand-eyebrow">Holland America Line</span>
+                <h3 className="wle-row-title">Wildlife Emphasis</h3>
+                <p className="wle-row-desc">
+                  Wildlife becomes a central theme of many voyages, supported by
+                  expert naturalists and destination-specific itineraries.
+                </p>
+
+                <div className="wle-items-box">
+                  <span className="wle-items-title">
+                    Guests frequently enjoy:
+                  </span>
+                  <div className="wle-tags-grid">
+                    {[
+                      "Naturalist presentations",
+                      "Wildlife-focused excursions",
+                      "Bear viewing opportunities",
+                      "Whale watching experiences",
+                      "Birding excursions",
+                    ].map((item, idx) => (
+                      <div key={idx} className="wle-tag-item">
+                        <Check size={14} className="wle-tag-icon" />
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="wle-winner-callout">
+                  <span className="wle-winner-badge">
+                    Winner: Holland America
+                  </span>
+                  <p className="wle-winner-text">
+                    Nature lovers often prefer Holland America's extensive
+                    wildlife emphasis.
+                  </p>
+                </div>
+              </div>
+
+              <div className="wle-image-col">
+                <div className="wle-image-container">
+                  <img
+                    // src={HollandAmericaWildlife}
+                    alt="Holland America Alaska wildlife experiences"
+                    className="wle-img"
+                  />
+                  <div className="wle-image-badge">Destination Enrichment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAMILY TRAVEL COMPARISON */}
       <section className="azs-entertainment-section" id="azs-entertainment">
         <div className="azs-container">
@@ -1729,7 +1833,8 @@ const DisneyAlaskavsHollandAmerica = () => {
             </h2>
             <div className="lth-accent-line"></div>
             <p className="lth-section-subtitle">
-              Compare Cruise-Only Vacations with Comprehensive Alaska Exploration
+              Compare Cruise-Only Vacations with Comprehensive Alaska
+              Exploration
             </p>
           </div>
 
@@ -1748,7 +1853,9 @@ const DisneyAlaskavsHollandAmerica = () => {
                     <span className="lth-badge">Inside the Great Land</span>
                     <h3 className="lth-image-title">Denali & The Yukon</h3>
                     <p className="lth-image-desc">
-                      Experience the rugged beauty of the Alaskan interior with wilderness lodges, luxury dome rail cars, and pristine national parks.
+                      Experience the rugged beauty of the Alaskan interior with
+                      wilderness lodges, luxury dome rail cars, and pristine
+                      national parks.
                     </p>
                   </div>
                 </div>
@@ -1765,7 +1872,7 @@ const DisneyAlaskavsHollandAmerica = () => {
                   </div>
                   <h3 className="lth-card-title">Disney Alaska Cruises</h3>
                 </div>
-                
+
                 <p className="lth-card-intro">
                   Disney primarily focuses on cruise-only experiences.
                 </p>
@@ -1775,7 +1882,9 @@ const DisneyAlaskavsHollandAmerica = () => {
                     <div className="lth-feature-icon-minus">
                       <Minus size={14} />
                     </div>
-                    <span>Limited land tour programs and wilderness lodges.</span>
+                    <span>
+                      Limited land tour programs and wilderness lodges.
+                    </span>
                   </li>
                   <li className="lth-feature-item">
                     <div className="lth-feature-icon">
@@ -1787,13 +1896,16 @@ const DisneyAlaskavsHollandAmerica = () => {
                     <div className="lth-feature-icon">
                       <Check size={14} />
                     </div>
-                    <span>Cruise-only Alaska voyages with Disney entertainment.</span>
+                    <span>
+                      Cruise-only Alaska voyages with Disney entertainment.
+                    </span>
                   </li>
                 </ul>
 
                 <div className="lth-card-highlight">
                   <p>
-                    Ideal for families seeking a cruise-focused Alaska vacation with family-friendly experiences onboard.
+                    Ideal for families seeking a cruise-focused Alaska vacation
+                    with family-friendly experiences onboard.
                   </p>
                 </div>
               </div>
@@ -1804,10 +1916,12 @@ const DisneyAlaskavsHollandAmerica = () => {
                   <div className="lth-icon-wrap lth-winner-icon-wrap">
                     <Crown size={22} />
                   </div>
-                  <h3 className="lth-card-title">Holland America Cruisetours</h3>
+                  <h3 className="lth-card-title">
+                    Holland America Cruisetours
+                  </h3>
                   <span className="lth-winner-badge">Clear Winner</span>
                 </div>
-                
+
                 <p className="lth-card-intro">
                   One of Holland America's greatest advantages in Alaska.
                 </p>
@@ -1817,19 +1931,28 @@ const DisneyAlaskavsHollandAmerica = () => {
                     <div className="lth-feature-icon">
                       <Check size={14} />
                     </div>
-                    <span><strong>Denali & Yukon Packages:</strong> Seamless land-and-sea journeys.</span>
+                    <span>
+                      <strong>Denali & Yukon Packages:</strong> Seamless
+                      land-and-sea journeys.
+                    </span>
                   </li>
                   <li className="lth-feature-item">
                     <div className="lth-feature-icon">
                       <Check size={14} />
                     </div>
-                    <span><strong>McKinley Chalet Resort:</strong> Premium stays near Denali.</span>
+                    <span>
+                      <strong>McKinley Chalet Resort:</strong> Premium stays
+                      near Denali.
+                    </span>
                   </li>
                   <li className="lth-feature-item">
                     <div className="lth-feature-icon">
                       <Check size={14} />
                     </div>
-                    <span><strong>Scenic Rail Journeys:</strong> Ride in double-decker glass dome train cars.</span>
+                    <span>
+                      <strong>Scenic Rail Journeys:</strong> Ride in
+                      double-decker glass dome train cars.
+                    </span>
                   </li>
                 </ul>
 
@@ -1837,7 +1960,8 @@ const DisneyAlaskavsHollandAmerica = () => {
                   <p>
                     <strong>Clear Winner: Holland America</strong>
                     <br />
-                    Travelers wanting a comprehensive Alaska experience often choose a Holland America Cruisetour.
+                    Travelers wanting a comprehensive Alaska experience often
+                    choose a Holland America Cruisetour.
                   </p>
                 </div>
               </div>
@@ -2085,20 +2209,22 @@ const DisneyAlaskavsHollandAmerica = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Disney Princess Half Marathon Weekend</h2>
+            <h2 className="azs-h2">Disneyland Resort</h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Relive the magic of the 2026 Disney Princess Half Marathon Weekend
-              at Walt Disney World Resort.
+              Disneyland is where imagination is the destination. For young and
+              old, big and small—it's The Happiest Place on Earth! Gather with
+              all the people who make you the happiest and experience the place
+              where dreams come true.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/B4hr8gBGMIk"
-                title="Disney Princess Half Marathon Weekend"
+                src="https://www.youtube.com/embed/GUgMMNmQ5XM"
+                title="Disneyland Resort"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
