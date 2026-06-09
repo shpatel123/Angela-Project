@@ -431,6 +431,9 @@
     .azs-overview-section {
         padding: 50px 16px;
     }
+    .azs-quote-text,.azs-intro, .azs-info-card{
+        font-size: 16px;
+    }
 
     .azs-overview-section1 {
         padding: 0 16px 50px 16px;

@@ -757,9 +757,15 @@
   .dfg-card h3,.adg-c-venue-name{
     font-size: 22px;
   }
+  .lth-image-title, .lth-card-title{
+    font-size: 22px !important;
+  }
   .dve-winner-badge, .dve-footer-badge {
     font-size: 10px;
     margin-right:10px;
+  }
+  .dve-section-subtitle{
+    font-size: 16px;
   }
   
 
@@ -814,7 +820,7 @@
   }
 
   .dve-winner-content {
-    padding: 2rem 1.5rem;
+    padding:32px 14px;
   }
 }
 
@@ -1063,6 +1069,9 @@
   }
   .dmg-ship-name{
     font-size: 22px;
+  }
+  .lth-section-subtitle{
+    font-size: 16px !important;
   }
   
   .dmg-ship-card-inner {
@@ -3684,7 +3693,7 @@
   }
   
   .wle-section-title {
-    font-size: 2.2rem;
+    font-size: 28px;
   }
   
   .wle-rows-container {
@@ -3692,17 +3701,20 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .wle-wildlife-section {
     padding: 4rem 0;
   }
 
   .wle-section-title {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
   
   .wle-row-title {
-    font-size: 1.8rem;
+    font-size: 22px;
+  }
+  .wle-row-desc, .wle-footer-callout p{
+    font-size: 16px;
   }
   
   .wle-image-container {
@@ -4100,13 +4112,13 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .eep-section {
     padding: 4rem 0;
   }
 
   .eep-section-title {
-    font-size: 1.85rem;
+    font-size: 24px;
   }
   
   .eep-scenic-card {
