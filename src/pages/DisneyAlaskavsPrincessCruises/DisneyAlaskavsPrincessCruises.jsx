@@ -1681,123 +1681,169 @@ const DisneyAlaskavsPrincessCruises = () => {
           </div>
         </div>
       </section>
-      {/* LAND TOURS AND ALASKA EXPLORATION */}
-      <section className="lta-landtours-section" id="lta-landtours">
-        <div className="lta-container">
-          {/* Section Header */}
-          <div className="lta-section-header">
-            <h2 className="lta-section-title">
-              Land Tours and Alaska Exploration
-            </h2>
-            <div className="Asc-accent-line"></div>
-            <p className="lta-section-subtitle">
-              Embark on Wilderness Journeys and Rail tours in the Great Land
-            </p>
-          </div>
 
-          {/* Cards Grid */}
-          <div className="lta-cards-grid">
-            {/* Disney Card */}
-            <div className="lta-card lta-disney-card">
-              <div className="lta-card-content">
-                <div className="lta-card-header">
-                  <div className="lta-card-icon-wrap">
-                    <Ship size={24} className="lta-card-icon" />
-                  </div>
-                  <h3 className="lta-card-title">Disney Cruise Line</h3>
-                </div>
+{/* LAND TOURS AND ALASKA EXPLORATION */}
+<section className="lth-landtours-section" id="lth-landtours">
+  <div className="lth-container">
+    {/* Section Header */}
+    <div className="lth-section-header">
+      <h2 className="lth-section-title">
+        Land Tours and Alaska Exploration
+      </h2>
+      <div className="lth-accent-line"></div>
+      <p className="lth-section-subtitle">
+        Compare Cruise-Only Vacations with Comprehensive Alaska Cruisetours
+      </p>
+    </div>
 
-                <p className="lta-card-intro">
-                  Disney primarily focuses on the cruise experience.
-                </p>
+    {/* Main Visual Layout */}
+    <div className="lth-main-grid">
+      {/* Visual Column */}
+      <div className="lth-visual-col">
+        <div className="lth-image-wrapper">
+          <img
+            // src={AlaskaCruisetourImage}
+            alt="Alaska Land Tours and Cruisetours"
+            className="lth-main-image"
+          />
 
-                <div className="lta-card-divider"></div>
+          <div className="lth-image-overlay">
+            <div className="lth-image-content">
+              <span className="lth-badge">Explore Beyond the Coast</span>
 
-                <div className="lta-feature-item">
-                  <div className="lta-feature-icon-box">
-                    <Minus size={16} />
-                  </div>
-                  <div className="lta-feature-texts">
-                    <p className="lta-feature-desc">
-                      While excursions are available, extensive land programs
-                      are limited.
-                    </p>
-                  </div>
-                </div>
+              <h3 className="lth-image-title">
+                Denali & Interior Alaska
+              </h3>
 
-                <p className="lta-group-label">Disney's Cruise-Only Focus:</p>
-
-                <ul className="lta-feature-list">
-                  {[
-                    "Guided port adventures only",
-                    "Shipboard-centric entertainment",
-                    "No wilderness lodge stays",
-                    "No scenic rail connections",
-                    "Shorter destination layovers",
-                  ].map((item, idx) => (
-                    <li key={idx} className="lta-list-item">
-                      <Check size={16} className="lta-list-icon" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="lta-card-highlight">
-                  <p>
-                    Ideal for families looking for a classic, high-quality
-                    cruise vacation focused purely on the ocean voyage.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Princess Card */}
-            <div className="lta-card lta-princess-card lta-winner-highlight">
-              <div className="lta-card-content">
-                <div className="lta-card-header">
-                  <div className="lta-card-icon-wrap lta-princess-icon-wrap">
-                    <Award size={24} className="lta-card-icon" />
-                  </div>
-                  <h3 className="lta-card-title">Princess Cruises</h3>
-                </div>
-
-                <p className="lta-card-intro">
-                  Princess is famous for its Alaska Cruisetours.
-                </p>
-
-                <div className="lta-card-divider"></div>
-
-                <p className="lta-group-label">These packages combine:</p>
-
-                <ul className="lta-feature-list">
-                  {[
-                    "Cruise voyages",
-                    "Denali National Park",
-                    "Interior Alaska",
-                    "Scenic rail journeys",
-                    "Wilderness lodges",
-                  ].map((item, idx) => (
-                    <li key={idx} className="lta-list-item">
-                      <Check size={16} className="lta-list-icon" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="lta-card-highlight lta-winner-highlight-box">
-                  <span className="lta-winner-label">
-                    Clear Winner: Princess
-                  </span>
-                  <p>
-                    Travelers wanting a deeper Alaska experience often choose
-                    Princess.
-                  </p>
-                </div>
-              </div>
+              <p className="lth-image-desc">
+                Venture deep into Alaska with scenic rail journeys,
+                wilderness lodges, and unforgettable adventures beyond
+                the cruise ports.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Comparison Cards */}
+      <div className="lth-cards-col">
+        {/* Disney Card */}
+        <div className="lth-card lth-disney-card">
+          <div className="lth-card-header">
+            <div className="lth-icon-wrap">
+              <Ship size={22} />
+            </div>
+            <h3 className="lth-card-title">Disney Cruise Line</h3>
+          </div>
+
+          <p className="lth-card-intro">
+            Disney primarily focuses on the cruise experience.
+          </p>
+
+          <ul className="lth-feature-list">
+            <li className="lth-feature-item">
+              <div className="lth-feature-icon-minus">
+                <Minus size={14} />
+              </div>
+              <span>
+                Extensive land tour programs are limited.
+              </span>
+            </li>
+
+            <li className="lth-feature-item">
+              <div className="lth-feature-icon">
+                <Check size={14} />
+              </div>
+              <span>
+                Shore excursions are available in Alaska ports.
+              </span>
+            </li>
+
+            <li className="lth-feature-item">
+              <div className="lth-feature-icon">
+                <Check size={14} />
+              </div>
+              <span>
+                Strong onboard entertainment and family experiences.
+              </span>
+            </li>
+          </ul>
+
+          <div className="lth-card-highlight">
+            <p>
+              Ideal for travelers seeking a cruise-focused Alaska vacation
+              with Disney magic onboard.
+            </p>
+          </div>
+        </div>
+
+        {/* Princess Card */}
+        <div className="lth-card lth-holland-card lth-winner-card">
+          <div className="lth-card-header">
+            <div className="lth-icon-wrap lth-winner-icon-wrap">
+              <Crown size={22} />
+            </div>
+
+            <h3 className="lth-card-title">Princess Cruises</h3>
+
+            <span className="lth-winner-badge">
+              Clear Winner
+            </span>
+          </div>
+
+          <p className="lth-card-intro">
+            Princess is famous for its Alaska Cruisetours.
+          </p>
+
+          <ul className="lth-feature-list">
+            <li className="lth-feature-item">
+              <div className="lth-feature-icon">
+                <Check size={14} />
+              </div>
+              <span>
+                <strong>Cruise Voyages:</strong> Combine sea and land
+                experiences.
+              </span>
+            </li>
+
+            <li className="lth-feature-item">
+              <div className="lth-feature-icon">
+                <Check size={14} />
+              </div>
+              <span>
+                <strong>Denali National Park:</strong> Explore Alaska's
+                iconic wilderness.
+              </span>
+            </li>
+
+            <li className="lth-feature-item">
+              <div className="lth-feature-icon">
+                <Check size={14} />
+              </div>
+              <span>
+                <strong>Interior Alaska, Rail Journeys & Wilderness Lodges:</strong>{" "}
+                Enjoy scenic train travel and immersive stays in the heart
+                of Alaska.
+              </span>
+            </li>
+          </ul>
+
+          <div className="lth-card-highlight lth-winner-highlight">
+            <p>
+              <strong>Clear Winner: Princess</strong>
+              <br />
+              Travelers wanting a deeper Alaska experience often choose
+              Princess.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
       {/* PRICING COMPARISON */}
       <section
         className="Ejvs-pricing-section"

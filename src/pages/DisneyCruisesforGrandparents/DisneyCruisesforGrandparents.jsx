@@ -530,7 +530,10 @@ const DisneyCruisesforGrandparents = () => {
       <Nav />
 
       {/* HERO */}
-      <section className="Scenic_hero_section"  style={{backgroundColor: "var(--bg-dark)"}}>
+      <section
+        className="Scenic_hero_section"
+        style={{ backgroundColor: "var(--bg-dark)" }}
+      >
         {images.map((img, index) => (
           <div
             key={index}
@@ -665,22 +668,22 @@ const DisneyCruisesforGrandparents = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Disney's Pop Century Resort</h2>
+            <h2 className="azs-h2">Disney Adventure Ship Tour</h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Take a trip through the decades at Disney’s Pop Century Resort,
-              where bold colors, larger-than-life Disney icons, and nostalgic
-              fun celebrate the most memorable trends from the 1950s through the
-              1990s.
+              Step aboard the Disney Adventure—Disney Cruise Line’s newest
+              ship—for a full walkthrough of the incredible spaces, dining
+              venues, entertainment, and family experiences awaiting guests at
+              sea in Asia.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/vlvAg8vB-4o"
-                title="Disney's Pop Century Resort Tour"
+                src="https://www.youtube.com/embed/1xrib0LgVAw"
+                title="Disney Adventure Ship Tour"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

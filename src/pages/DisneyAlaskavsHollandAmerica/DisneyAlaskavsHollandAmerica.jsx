@@ -35,6 +35,7 @@ import AboutImage from "../../assets/AboutAngela.jpeg";
 
 import { Helmet } from "react-helmet-async";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
+import AlaskaCruisetourImage from "../../assets/AzamaraAlaskaCruisesGuide/alaska-glacier-mountain-lake-scenic-wilderness-vacation.webp";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -60,11 +61,11 @@ const schemaData = {
 
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/disney-alaska-vs-princess-cruises",
-      url: "https://www.tripsandships.com/disney-alaska-vs-princess-cruises",
-      name: "Disney Alaska vs Princess Cruises",
+      "@id": "https://www.tripsandships.com/disney-alaska-vs-holland-america",
+      url: "https://www.tripsandships.com/disney-alaska-vs-holland-america",
+      name: "Disney Alaska vs Holland America",
       description:
-        "Compare Disney Alaska Cruises and Princess Cruises Alaska sailings. Explore differences in family experiences, Glacier Bay access, entertainment, dining, excursions, pricing, and overall value.",
+        "Compare Disney Alaska Cruises and Holland America Alaska Cruises. Explore differences in family experiences, Glacier Bay access, entertainment, dining, excursions, pricing, and overall value.",
       about: [
         {
           "@type": "Organization",
@@ -72,7 +73,7 @@ const schemaData = {
         },
         {
           "@type": "Organization",
-          name: "Princess Cruises",
+          name: "Holland America Line",
         },
       ],
     },
@@ -80,7 +81,7 @@ const schemaData = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.tripsandships.com/disney-alaska-vs-princess-cruises#breadcrumb",
+        "https://www.tripsandships.com/disney-alaska-vs-holland-america#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -97,8 +98,8 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "Disney Alaska vs Princess Cruises",
-          item: "https://www.tripsandships.com/disney-alaska-vs-princess-cruises",
+          name: "Disney Alaska vs Holland America",
+          item: "https://www.tripsandships.com/disney-alaska-vs-holland-america",
         },
       ],
     },
@@ -106,30 +107,22 @@ const schemaData = {
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.tripsandships.com/disney-alaska-vs-princess-cruises#faq",
+        "https://www.tripsandships.com/disney-alaska-vs-holland-america#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "Is Disney or Princess better for Alaska?",
+          name: "Is Disney or Holland America better for Alaska?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Disney is generally better for families with younger children, while Princess is often preferred by travelers seeking a deeper Alaska experience.",
+            text: "Disney is generally better for families with younger children, while Holland America is often preferred by travelers seeking a more immersive Alaska experience.",
           },
         },
         {
           "@type": "Question",
-          name: "Which cruise line is better for grandparents and grandchildren?",
+          name: "Which cruise line has more Alaska experience?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Disney Cruise Line is often the preferred choice for grandparents traveling with younger grandchildren because of its family-focused entertainment and activities.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does Princess Cruises offer Glacier Bay itineraries?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Princess Cruises offers Glacier Bay itineraries and is widely recognized for its Alaska expertise and destination-focused experiences.",
+            text: "Holland America is widely recognized as one of the most experienced Alaska cruise operators.",
           },
         },
         {
@@ -137,55 +130,103 @@ const schemaData = {
           name: "Is Disney Alaska worth the extra cost?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For families who value Disney entertainment, service, and multigenerational experiences, many travelers feel the premium pricing is justified.",
+            text: "For families who value Disney entertainment and multigenerational experiences, many travelers feel the premium pricing is justified.",
           },
         },
         {
           "@type": "Question",
-          name: "Which cruise line has better entertainment?",
+          name: "Which line is better for wildlife viewing?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Disney Cruise Line is widely regarded as the leader in cruise entertainment, offering Broadway-style productions, character experiences, and family programming.",
+            text: "Holland America generally offers more wildlife-focused programming and excursions.",
           },
         },
         {
           "@type": "Question",
-          name: "Which cruise line offers better Alaska educational experiences?",
+          name: "Which line has better entertainment?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Princess Cruises generally provides more in-depth destination enrichment, Alaska history presentations, wildlife education, and cultural programming.",
+            text: "Disney is widely considered the leader in cruise entertainment.",
           },
         },
         {
           "@type": "Question",
-          name: "Does Disney Cruise Line offer Alaska land tours?",
+          name: "Which line offers better food?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Disney primarily focuses on cruise vacations, while Princess Cruises offers extensive land-and-sea vacation packages that include destinations such as Denali National Park.",
+            text: "Holland America is often praised for its dining and regional cuisine.",
           },
         },
         {
           "@type": "Question",
-          name: "Which cruise line is better for wildlife viewing?",
+          name: "Does Holland America offer Glacier Bay?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Both cruise lines provide excellent wildlife viewing opportunities, though Princess often offers more Alaska-focused experiences and excursion options.",
+            text: "Yes. Holland America operates numerous Glacier Bay itineraries.",
           },
         },
         {
           "@type": "Question",
-          name: "Is Princess Cruises good for families?",
+          name: "Is Holland America good for families?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Princess Cruises welcomes families, but its onboard experience is more destination-focused and less entertainment-centered than Disney Cruise Line.",
+            text: "Yes, particularly for families with older children and teenagers who enjoy nature and destination-focused travel.",
           },
         },
         {
           "@type": "Question",
-          name: "Which cruise line offers better value?",
+          name: "Which line offers better value?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Princess Cruises generally offers stronger value for travelers whose primary goal is exploring Alaska through immersive itineraries and land programs.",
+            text: "Holland America typically provides stronger overall value for Alaska-focused travelers.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which cruise line is best for grandparents and grandchildren?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Disney is often the top choice when younger grandchildren are involved.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Disney Cruise Line offer Cruisetours or land packages in Alaska?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Disney Cruise Line primarily focuses on cruise-only itineraries in Alaska. Unlike Holland America's extensive overland programs (Cruisetours) to Denali National Park and the Yukon, Disney does not offer multi-day land excursions with dedicated wilderness lodge stays.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the main differences in onboard atmosphere between the two lines?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Disney offers a high-energy, family-centric experience filled with character meets, interactive themed dining, and youth clubs. Holland America provides a quieter, more traditional and relaxed cruise environment focused on live music, fine dining, and cultural destination lectures.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which cruise line is better for glacier viewing in Glacier Bay?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Holland America is the superior choice for Glacier Bay. As a legacy operator, they possess regular permits to enter Glacier Bay National Park on many of their sailings. Disney Cruise Line's itineraries rarely include Glacier Bay, instead visiting other scenic areas like Stikine Icecap, Tracy Arm Fjord, or Dawes Glacier.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do the stateroom layouts compare for families?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Disney staterooms are uniquely designed with families in mind, featuring split bathrooms (a toilet/sink in one room and a shower/sink in another) to make getting ready easier. Holland America offers spacious and highly comfortable classic layouts, but they do not feature the family-specific split-bathroom design.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What regional dining options are available onboard?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Holland America features a dedicated 'Fresh Fish Program' serving locally caught wild salmon, cod, and halibut directly in the dining venues. Disney focuses on high-quality international menus with broad family appeal but offers less regional destination-specific cuisine onboard.",
           },
         },
       ],
@@ -194,8 +235,8 @@ const schemaData = {
     {
       "@type": "ItemList",
       "@id":
-        "https://www.tripsandships.com/disney-alaska-vs-princess-cruises#comparison",
-      name: "Disney Alaska Cruise vs Princess Alaska Cruise Comparison",
+        "https://www.tripsandships.com/disney-alaska-vs-holland-america#comparison",
+      name: "Disney Alaska Cruise vs Holland America Alaska Cruise Comparison",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -209,7 +250,7 @@ const schemaData = {
           position: 2,
           name: "Alaska Expertise",
           description:
-            "Princess Cruises offers decades of Alaska experience, destination enrichment, and extensive land-and-sea vacation programs.",
+            "Holland America Line offers decades of Alaska experience, destination enrichment, and extensive land-and-sea vacation programs.",
         },
         {
           "@type": "ListItem",
@@ -223,21 +264,21 @@ const schemaData = {
           position: 4,
           name: "Educational Value",
           description:
-            "Princess Cruises provides deeper educational programming focused on wildlife, glaciers, conservation, and Alaska history.",
+            "Holland America Line provides deeper educational programming focused on wildlife, glaciers, conservation, and Alaska history.",
         },
         {
           "@type": "ListItem",
           position: 5,
           name: "Land Tours",
           description:
-            "Princess Cruises is recognized as an industry leader in Alaska land-and-sea vacation packages, including Denali experiences.",
+            "Holland America Line is recognized as an industry leader in Alaska land-and-sea vacation packages, including Denali and Yukon experiences.",
         },
         {
           "@type": "ListItem",
           position: 6,
           name: "Overall Value",
           description:
-            "Princess Cruises often delivers stronger value for destination-focused travelers, while Disney delivers premium family experiences.",
+            "Holland America Line often delivers stronger value for destination-focused travelers, while Disney delivers premium family experiences.",
         },
       ],
     },
@@ -245,11 +286,11 @@ const schemaData = {
     {
       "@type": "Article",
       "@id":
-        "https://www.tripsandships.com/disney-alaska-vs-princess-cruises#article",
+        "https://www.tripsandships.com/disney-alaska-vs-holland-america#article",
       headline:
-        "Disney Alaska vs Princess Cruises: Which Alaska Cruise Delivers the Better Experience?",
+        "Disney Alaska vs Holland America: Which Alaska Cruise Delivers the Better Experience?",
       description:
-        "A detailed comparison of Disney Alaska Cruises and Princess Cruises Alaska itineraries, including family travel, entertainment, glacier viewing, educational programs, dining, accommodations, and value.",
+        "A detailed comparison of Disney Alaska Cruises and Holland America Line Alaska itineraries, including family travel, entertainment, glacier viewing, educational programs, dining, accommodations, and value.",
       author: {
         "@id": "https://www.tripsandships.com/#organization",
       },
@@ -257,14 +298,14 @@ const schemaData = {
         "@id": "https://www.tripsandships.com/#organization",
       },
       mainEntityOfPage:
-        "https://www.tripsandships.com/disney-alaska-vs-princess-cruises",
+        "https://www.tripsandships.com/disney-alaska-vs-holland-america",
       keywords: [
-        "Disney Alaska vs Princess Cruises",
+        "Disney Alaska vs Holland America",
         "Alaska Cruise Comparison",
         "Disney Alaska Cruise Review",
-        "Princess Alaska Cruises Review",
+        "Holland America Alaska Cruises Review",
         "Best Alaska Cruise for Families",
-        "Disney vs Princess Alaska",
+        "Disney vs Holland America Alaska",
       ],
     },
   ],
@@ -321,6 +362,31 @@ function FAQ() {
     {
       q: "Which cruise line is best for grandparents and grandchildren?",
       a: "Disney is often the top choice when younger grandchildren are involved.",
+    },
+
+    {
+      q: "Does Disney Cruise Line offer Cruisetours or land packages in Alaska?",
+      a: "Disney Cruise Line primarily focuses on cruise-only itineraries in Alaska. Unlike Holland America's extensive overland programs (Cruisetours) to Denali National Park and the Yukon, Disney does not offer multi-day land excursions with dedicated wilderness lodge stays.",
+    },
+
+    {
+      q: "What are the main differences in onboard atmosphere between the two lines?",
+      a: "Disney offers a high-energy, family-centric experience filled with character meets, interactive themed dining, and youth clubs. Holland America provides a quieter, more traditional and relaxed cruise environment focused on live music, fine dining, and cultural destination lectures.",
+    },
+
+    {
+      q: "Which cruise line is better for glacier viewing in Glacier Bay?",
+      a: "Holland America is the superior choice for Glacier Bay. As a legacy operator, they possess regular permits to enter Glacier Bay National Park on many of their sailings. Disney Cruise Line's itineraries rarely include Glacier Bay, instead visiting other scenic areas like Stikine Icecap, Tracy Arm Fjord, or Dawes Glacier.",
+    },
+
+    {
+      q: "How do the stateroom layouts compare for families?",
+      a: "Disney staterooms are uniquely designed with families in mind, featuring split bathrooms (a toilet/sink in one room and a shower/sink in another) to make getting ready easier. Holland America offers spacious and highly comfortable classic layouts, but they do not feature the family-specific split-bathroom design.",
+    },
+
+    {
+      q: "What regional dining options are available onboard?",
+      a: "Holland America features a dedicated 'Fresh Fish Program' serving locally caught wild salmon, cod, and halibut directly in the dining venues. Disney focuses on high-quality international menus with broad family appeal but offers less regional destination-specific cuisine onboard.",
     },
   ];
 
@@ -1654,117 +1720,124 @@ const DisneyAlaskavsHollandAmerica = () => {
       </section>
 
       {/* LAND TOURS AND ALASKA CRUISETOURS */}
-      <section className="lta-landtours-section" id="lta-landtours">
-        <div className="lta-container">
+      <section className="lth-landtours-section" id="lth-landtours">
+        <div className="lth-container">
           {/* Section Header */}
-          <div className="lta-section-header">
-            <h2 className="lta-section-title">
+          <div className="lth-section-header">
+            <h2 className="lth-section-title">
               Land Tours and Alaska Cruisetours
             </h2>
-            <div className="Asc-accent-line"></div>
-            <p className="lta-section-subtitle">
-              Compare Cruise-Only Vacations with Comprehensive Alaska
-              Exploration
+            <div className="lth-accent-line"></div>
+            <p className="lth-section-subtitle">
+              Compare Cruise-Only Vacations with Comprehensive Alaska Exploration
             </p>
           </div>
 
-          {/* Cards Grid */}
-          <div className="lta-cards-grid">
-            {/* Disney Card */}
-            <div className="lta-card lta-disney-card">
-              <div className="lta-card-content">
-                <div className="lta-card-header">
-                  <div className="lta-card-icon-wrap">
-                    <Ship size={24} className="lta-card-icon" />
-                  </div>
-                  <h3 className="lta-card-title">Disney Alaska Cruises</h3>
-                </div>
-
-                <p className="lta-card-intro">
-                  Disney primarily focuses on cruise-only experiences.
-                </p>
-
-                <div className="lta-card-divider"></div>
-
-                <div className="lta-feature-item">
-                  <div className="lta-feature-icon-box">
-                    <Minus size={16} />
-                  </div>
-                  <div className="lta-feature-texts">
-                    <p className="lta-feature-desc">
-                      Excursions are available, but land programs are limited.
+          {/* Main Visual Layout */}
+          <div className="lth-main-grid">
+            {/* Visual Column (Image and Key Highlight) */}
+            <div className="lth-visual-col">
+              <div className="lth-image-wrapper">
+                <img
+                  // src={AlaskaCruisetourImage}
+                  alt="Alaska Land Tours and Cruisetours Wilderness"
+                  className="lth-main-image"
+                />
+                <div className="lth-image-overlay">
+                  <div className="lth-image-content">
+                    <span className="lth-badge">Inside the Great Land</span>
+                    <h3 className="lth-image-title">Denali & The Yukon</h3>
+                    <p className="lth-image-desc">
+                      Experience the rugged beauty of the Alaskan interior with wilderness lodges, luxury dome rail cars, and pristine national parks.
                     </p>
                   </div>
-                </div>
-
-                <p className="lta-group-label">Disney Focuses On:</p>
-
-                <ul className="lta-feature-list">
-                  {[
-                    "Cruise-only Alaska vacations",
-                    "Family-friendly shore excursions",
-                    "Character experiences onboard",
-                    "Broadway-style entertainment",
-                    "Multigenerational family activities",
-                  ].map((item, idx) => (
-                    <li key={idx} className="lta-list-item">
-                      <Check size={16} className="lta-list-icon" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="lta-card-highlight">
-                  <p>
-                    Ideal for travelers seeking a cruise-focused Alaska vacation
-                    with family-friendly experiences onboard.
-                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Holland America Card */}
-            <div className="lta-card lta-princess-card lta-winner-highlight">
-              <div className="lta-card-content">
-                <div className="lta-card-header">
-                  <div className="lta-card-icon-wrap lta-princess-icon-wrap">
-                    <Award size={24} className="lta-card-icon" />
+            {/* Comparison Cards Column */}
+            <div className="lth-cards-col">
+              {/* Disney Card */}
+              <div className="lth-card lth-disney-card">
+                <div className="lth-card-header">
+                  <div className="lth-icon-wrap">
+                    <Ship size={22} />
                   </div>
-                  <h3 className="lta-card-title">
-                    Holland America Cruisetours
-                  </h3>
+                  <h3 className="lth-card-title">Disney Alaska Cruises</h3>
                 </div>
-
-                <p className="lta-card-intro">
-                  One of Holland America's greatest advantages.
+                
+                <p className="lth-card-intro">
+                  Disney primarily focuses on cruise-only experiences.
                 </p>
 
-                <div className="lta-card-divider"></div>
-
-                <p className="lta-group-label">Options include:</p>
-
-                <ul className="lta-feature-list">
-                  {[
-                    "Denali National Park",
-                    "Yukon Territory",
-                    "Scenic rail journeys",
-                    "Wilderness lodges",
-                    "Interior Alaska exploration",
-                  ].map((item, idx) => (
-                    <li key={idx} className="lta-list-item">
-                      <Check size={16} className="lta-list-icon" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
+                <ul className="lth-feature-list">
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon-minus">
+                      <Minus size={14} />
+                    </div>
+                    <span>Limited land tour programs and wilderness lodges.</span>
+                  </li>
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span>Excellent family-focused shore excursions.</span>
+                  </li>
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span>Cruise-only Alaska voyages with Disney entertainment.</span>
+                  </li>
                 </ul>
 
-                <div className="lta-card-highlight lta-winner-highlight-box">
-                  <span className="lta-winner-label">
-                    Clear Winner: Holland America
-                  </span>
+                <div className="lth-card-highlight">
                   <p>
-                    Travelers wanting a comprehensive Alaska experience often
-                    choose a Holland America Cruisetour.
+                    Ideal for families seeking a cruise-focused Alaska vacation with family-friendly experiences onboard.
+                  </p>
+                </div>
+              </div>
+
+              {/* Holland America Card */}
+              <div className="lth-card lth-holland-card lth-winner-card">
+                <div className="lth-card-header">
+                  <div className="lth-icon-wrap lth-winner-icon-wrap">
+                    <Crown size={22} />
+                  </div>
+                  <h3 className="lth-card-title">Holland America Cruisetours</h3>
+                  <span className="lth-winner-badge">Clear Winner</span>
+                </div>
+                
+                <p className="lth-card-intro">
+                  One of Holland America's greatest advantages in Alaska.
+                </p>
+
+                <ul className="lth-feature-list">
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span><strong>Denali & Yukon Packages:</strong> Seamless land-and-sea journeys.</span>
+                  </li>
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span><strong>McKinley Chalet Resort:</strong> Premium stays near Denali.</span>
+                  </li>
+                  <li className="lth-feature-item">
+                    <div className="lth-feature-icon">
+                      <Check size={14} />
+                    </div>
+                    <span><strong>Scenic Rail Journeys:</strong> Ride in double-decker glass dome train cars.</span>
+                  </li>
+                </ul>
+
+                <div className="lth-card-highlight lth-winner-highlight">
+                  <p>
+                    <strong>Clear Winner: Holland America</strong>
+                    <br />
+                    Travelers wanting a comprehensive Alaska experience often choose a Holland America Cruisetour.
                   </p>
                 </div>
               </div>
