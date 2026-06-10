@@ -205,7 +205,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in luxury cruises, family travel, river cruises, expedition cruises, and custom travel planning.",
+        "Luxury travel agency specializing in Disney cruises, family travel, multigenerational vacations, luxury cruises, expedition cruises, and personalized travel planning."
     },
 
     {
@@ -214,190 +214,198 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Luxury travel experts helping travelers choose the right cruise experiences through expert comparisons, planning, and personalized travel services.",
+        "Travel experts helping families, grandparents, parents, and grandchildren plan unforgettable Disney Cruise vacations and multigenerational travel experiences."
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://www.tripsandships.com/#angelahughes",
+      name: "Angela Hughes",
+      jobTitle: "CEO",
+      worksFor: {
+        "@id": "https://www.tripsandships.com/#organization"
+      },
+      description:
+        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker, travel columnist, and travel expert with over 40 years of experience and travel to more than 121 countries."
     },
 
     {
       "@type": "WebPage",
       "@id":
-        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
-      url: "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
-      name: "Disney Cruise vs Viking Ocean Cruises",
+        "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families",
+      url:
+        "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families",
+      name:
+        "Disney Cruises for Grandparents & Multigenerational Families",
       description:
-        "Compare Disney Cruise Line and Viking Ocean Cruises. Explore differences in destinations, accommodations, dining, entertainment, pricing, family travel, luxury experiences, and overall value.",
-      isPartOf: {
-        "@id": "https://www.tripsandships.com/#website",
+        "Learn why Disney Cruise Line is one of the best vacation options for grandparents, parents, children, and grandchildren. Explore family-friendly ships, destinations, accommodations, activities, and planning tips."
+    },
+
+    {
+      "@type": "Article",
+      "@id":
+        "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families#article",
+      headline:
+        "Disney Cruises for Grandparents & Multigenerational Families",
+      description:
+        "A complete guide to Disney Cruises for grandparents, parents, children, and grandchildren, featuring family-friendly ships, destinations, accommodations, activities, and planning tips.",
+      author: {
+        "@id": "https://www.tripsandships.com/#angelahughes"
       },
-      about: [
-        {
-          "@type": "Organization",
-          name: "Disney Cruise Line",
-        },
-        {
-          "@type": "Organization",
-          name: "Viking Ocean Cruises",
-        },
-      ],
+      publisher: {
+        "@id": "https://www.tripsandships.com/#organization"
+      },
+      mainEntityOfPage: {
+        "@id":
+          "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families"
+      }
     },
 
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises#breadcrumb",
+        "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.tripsandships.com",
+          item: "https://www.tripsandships.com"
         },
         {
           "@type": "ListItem",
           position: 2,
-          name: "Cruise Comparisons",
-          item: "https://www.tripsandships.com/cruise-comparisons",
+          name: "Family & Multi-Generational Travel",
+          item:
+            "https://www.tripsandships.com/family-and-multigenerational-travel"
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Disney Cruise vs Viking Ocean Cruises",
-          item: "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises",
-        },
-      ],
+          name:
+            "Disney Cruises for Grandparents & Multigenerational Families",
+          item:
+            "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families"
+        }
+      ]
     },
 
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises#faq",
+        "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "Is Disney Cruise Line more luxurious than Viking?",
+          name: "Are Disney Cruises good for grandparents?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Viking Ocean Cruises is generally considered a luxury cruise line, while Disney Cruise Line is a premium family cruise brand focused on entertainment and family experiences.",
-          },
+            text:
+              "Yes. Disney Cruises offer comfort, convenience, family-friendly experiences, and activities that appeal to all generations."
+          }
         },
         {
           "@type": "Question",
-          name: "Does Viking Ocean Cruises allow children?",
+          name: "Can grandparents travel alone with grandchildren?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Viking Ocean Cruises is adults-only and does not permit guests under the age of 18.",
-          },
+            text:
+              "Yes. Many grandparents take Disney Cruises with grandchildren, though travel documentation requirements should be reviewed before departure."
+          }
         },
         {
           "@type": "Question",
-          name: "Which cruise line is better for families?",
+          name: "Which Disney ship is best for multigenerational families?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Disney Cruise Line is generally the better choice for families due to its youth programs, character experiences, family entertainment, and multi-generational appeal.",
-          },
+            text:
+              "Disney Wish, Disney Treasure, Disney Fantasy, and Disney Dream are all excellent choices depending on itinerary and family preferences."
+          }
         },
         {
           "@type": "Question",
-          name: "Which cruise line is better for couples?",
+          name: "Are Disney Cruises suitable for older adults?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Many couples seeking a luxury, adults-only experience prefer Viking Ocean Cruises because of its cultural enrichment, destination focus, and sophisticated atmosphere.",
-          },
+            text:
+              "Absolutely. Ships offer comfortable accommodations, accessible facilities, entertainment, dining, and relaxation opportunities."
+          }
         },
         {
           "@type": "Question",
-          name: "Is Disney Cruise Line worth the higher price?",
+          name: "Do Disney Cruises offer activities for grandparents?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For travelers who value Disney entertainment, family experiences, and exceptional service, many consider Disney Cruise Line worth the premium pricing.",
-          },
+            text:
+              "Yes. Adults can enjoy spas, lounges, specialty dining, live entertainment, educational experiences, and scenic cruising."
+          }
         },
         {
           "@type": "Question",
-          name: "What is included in Viking Ocean Cruises fares?",
+          name: "Are connecting rooms available?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Many Viking fares include a shore excursion in every port, Wi-Fi, specialty dining, beer and wine with meals, and educational programming.",
-          },
+            text:
+              "Yes. Disney offers connecting staterooms and family-friendly accommodation options."
+          }
         },
         {
           "@type": "Question",
-          name: "Which cruise line has better food?",
+          name: "What destinations are best for families?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Viking generally receives stronger reviews for fine dining and destination-inspired cuisine, while Disney excels in family-friendly dining experiences.",
-          },
+            text:
+              "The Caribbean, Bahamas, Alaska, and Mediterranean are among the most popular Disney Cruise destinations."
+          }
         },
         {
           "@type": "Question",
-          name: "Which cruise line has better entertainment?",
+          name: "Is Disney Cruise Line worth the cost?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Disney Cruise Line leads in entertainment with Broadway-style shows, character experiences, and family programming, while Viking focuses on educational enrichment and cultural presentations.",
-          },
+            text:
+              "Many families believe the quality of service, entertainment, family experiences, and convenience justify the premium pricing."
+          }
         },
         {
           "@type": "Question",
-          name: "Are Viking Ocean ships smaller than Disney ships?",
+          name: "Can grandparents and grandchildren spend time together while parents relax?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Viking Ocean ships are generally smaller and provide a more intimate luxury cruise experience compared to many mainstream family-focused cruise ships.",
-          },
+            text:
+              "Absolutely. Disney provides numerous activities that encourage shared family experiences."
+          }
         },
         {
           "@type": "Question",
-          name: "Which cruise line is better for first-time cruisers?",
+          name: "How far in advance should we book?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Disney Cruise Line is excellent for families taking their first cruise, while Viking Ocean Cruises is ideal for adults seeking a relaxed introduction to luxury cruising.",
-          },
-        },
-      ],
-    },
-
-    {
-      "@type": "ItemList",
-      "@id":
-        "https://www.tripsandships.com/disney-cruise-vs-viking-ocean-cruises#comparison",
-      name: "Disney Cruise Line vs Viking Ocean Cruises Comparison",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Best For",
-          description:
-            "Disney Cruise Line is best for families and multi-generational travelers, while Viking Ocean Cruises is best for adults and couples.",
+            text:
+              "Most Disney Cruises should be booked as early as possible, particularly during school holidays and peak travel seasons."
+          }
         },
         {
-          "@type": "ListItem",
-          position: 2,
-          name: "Atmosphere",
-          description:
-            "Disney offers a fun and family-focused atmosphere, while Viking offers a sophisticated adults-only environment.",
+          "@type": "Question",
+          name: "Why use a travel advisor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "A travel advisor helps families select the right ship, itinerary, accommodations, and planning strategy."
+          }
         },
         {
-          "@type": "ListItem",
-          position: 3,
-          name: "Entertainment",
-          description:
-            "Disney emphasizes Broadway shows and character experiences, while Viking focuses on lectures and cultural enrichment.",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Dining",
-          description:
-            "Disney offers family-friendly dining experiences, while Viking specializes in destination-inspired cuisine and luxury dining.",
-        },
-        {
-          "@type": "ListItem",
-          position: 5,
-          name: "Travel Style",
-          description:
-            "Disney focuses on entertainment and family fun, while Viking emphasizes destination immersion, culture, and lifelong learning.",
-        },
-      ],
-    },
-  ],
+          "@type": "Question",
+          name: "Why choose Trips & Ships Luxury Travel?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Trips & Ships Luxury Travel helps families create stress-free, memorable Disney Cruise vacations tailored to their unique needs and travel goals."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 function FAQ() {

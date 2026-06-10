@@ -4138,6 +4138,700 @@
   }
 }
 
+/* ==========================================================================
+   WHAT MAKES ALASKA SO SPECIAL SECTION (dac-special-section)
+   ========================================================================== */
+
+.dac-special-section {
+  padding: 60px 20px;
+  background-color: var(--bg-soft);
+  position: relative;
+}
+
+.dac-special-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.dac-special-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.dac-special-eyebrow {
+  display: block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy-light);
+  margin-bottom: 0.75rem;
+}
+
+.dac-special-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+}
+
+.dac-special-accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+.dac-special-lead {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.dac-special-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+
+.dac-special-card {
+  grid-column: span 2;
+  background-color: var(--bg-white);
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dac-special-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(39, 68, 114, 0.1);
+  border-color: rgba(39, 68, 114, 0.2);
+}
+
+.dac-special-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: rgba(39, 68, 114, 0.05);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.dac-special-card:hover .dac-special-icon-wrap {
+  background-color: var(--navy);
+  color: var(--bg-white);
+  transform: scale(1.1);
+}
+
+.dac-special-card-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 0.85rem;
+  font-weight: 600;
+}
+
+.dac-special-card-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 18px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Centering last two cards on desktop */
+@media (min-width: 993px) {
+  .dac-special-card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+  .dac-special-card:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
+/* ==========================================================================
+   ONBOARD DISNEY ENTERTAINMENT SECTION (dac-ent-section)
+   ========================================================================== */
+
+.dac-ent-section {
+  padding: 60px 20px;
+  background-color: var(--bg-white);
+  position: relative;
+}
+
+.dac-ent-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.dac-ent-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1.75fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+.dac-ent-left {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dac-ent-eyebrow {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy-light);
+  margin-bottom: 0.75rem;
+}
+
+.dac-ent-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 48px;
+  color: var(--navy) !important;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.dac-ent-accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+}
+
+.dac-ent-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.dac-ent-badge {
+  align-self: flex-start;
+  background: var(--bg-white);
+  border-left: 3px solid var(--navy);
+  color: var(--navy);
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dac-ent-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 1.25rem;
+}
+
+/* Custom scrollbar for right column */
+.dac-ent-right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dac-ent-right::-webkit-scrollbar-track {
+  background: rgba(39, 68, 114, 0.05);
+  border-radius: 10px;
+}
+
+.dac-ent-right::-webkit-scrollbar-thumb {
+  background: rgba(39, 68, 114, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.dac-ent-right::-webkit-scrollbar-thumb:hover {
+  background: var(--navy-light);
+}
+
+.dac-ent-card {
+  background-color: var(--bg-white);
+  border: 1px solid rgba(39, 68, 114, 0.06);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(39, 68, 114, 0.02);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dac-ent-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 30px rgba(39, 68, 114, 0.08);
+  border-color: rgba(39, 68, 114, 0.15);
+}
+
+.dac-ent-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.dac-ent-card-num {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy-light);
+  opacity: 0.4;
+}
+
+.dac-ent-card-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--navy);
+  font-weight: 600;
+  margin: 0;
+}
+
+.dac-ent-card-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 18px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   WILDLIFE ENCOUNTERS IN ALASKA SECTION (dac-wildlife-section)
+   ========================================================================== */
+
+.dac-wildlife-section {
+  padding: 60px 20px;
+  background-color: var(--bg-soft);
+}
+
+.dac-wildlife-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.dac-wildlife-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.dac-wildlife-eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy-light);
+  margin-bottom: 0.75rem;
+}
+
+.dac-wildlife-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+}
+
+.dac-wildlife-accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+.dac-wildlife-lead {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.dac-wildlife-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+
+.dac-wildlife-card {
+  grid-column: span 2;
+  background-color: var(--bg-white);
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dac-wildlife-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(39, 68, 114, 0.12);
+  border-color: rgba(39, 68, 114, 0.2);
+}
+
+.dac-wildlife-img-wrap {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.dac-wildlife-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.dac-wildlife-card:hover .dac-wildlife-img {
+  transform: scale(1.05);
+}
+
+.dac-wildlife-card-body {
+  padding: 1.75rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dac-wildlife-card-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.dac-wildlife-card-desc {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--text-body);
+  line-height: 1.55;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.dac-wildlife-footer-callout {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.25rem 2rem;
+  background-color: var(--bg-soft);
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dashed rgba(39, 68, 114, 0.15);
+}
+
+.dac-wildlife-footer-callout p {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--navy-light);
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (min-width: 993px) {
+  .dac-wildlife-card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+  .dac-wildlife-card:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
+/* ==========================================================================
+   BEST TIME TO CRUISE SECTION (dac-timing-section)
+   ========================================================================== */
+
+.dac-timing-section {
+  padding: 60px 20px;
+  background-color: var(--bg-white);
+}
+
+.dac-timing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.dac-timing-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.dac-timing-eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--navy-light);
+  margin-bottom: 0.75rem;
+}
+
+.dac-timing-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-bottom: 1rem;
+}
+
+.dac-timing-accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+.dac-timing-lead {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.dac-timing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.dac-timing-card {
+  background-color: var(--bg-white);
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dac-timing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(39, 68, 114, 0.12);
+  border-color: rgba(39, 68, 114, 0.25);
+}
+
+.dac-timing-month-header {
+  background-color: var(--navy);
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dac-timing-month-name {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--bg-white);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.dac-timing-card-body {
+  padding: 1.75rem 1.5rem;
+  flex-grow: 1;
+}
+
+.dac-timing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.dac-timing-list-item {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.dac-timing-item-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--navy-light);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.dac-timing-item-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dac-timing-item-label {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.dac-timing-item-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.dac-timing-footer-note {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.dac-timing-footer-note p {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUTS FOR NEW SECTIONS
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .dac-special-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dac-special-card {
+    grid-column: span 1 !important;
+  }
+  
+  .dac-special-card:nth-child(5) {
+    grid-column: span 2 !important;
+  }
+
+  .dac-ent-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .dac-ent-left {
+    position: relative;
+    top: 0;
+  }
+
+  .dac-ent-right {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+
+  .dac-wildlife-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dac-wildlife-card {
+    grid-column: span 1 !important;
+  }
+
+  .dac-wildlife-card:nth-child(5) {
+    grid-column: span 2 !important;
+  }
+
+  .dac-timing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dac-timing-card:nth-child(4),
+  .dac-timing-card:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .dac-special-section,
+  .dac-ent-section,
+  .dac-wildlife-section,
+  .dac-timing-section {
+    padding: 4.5rem 0;
+  }
+
+  .dac-special-title,
+  .dac-ent-title,
+  .dac-wildlife-title,
+  .dac-timing-title {
+    font-size: 2.2rem;
+  }
+
+  .dac-special-grid,
+  .dac-wildlife-grid,
+  .dac-timing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dac-special-card,
+  .dac-wildlife-card,
+  .dac-timing-card {
+    grid-column: span 1 !important;
+  }
+
+  .dac-ent-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dac-special-section,
+  .dac-ent-section,
+  .dac-wildlife-section,
+  .dac-timing-section {
+    padding: 3.5rem 0;
+  }
+
+  .dac-special-title,
+  .dac-ent-title,
+  .dac-wildlife-title,
+  .dac-timing-title {
+    font-size: 1.85rem;
+  }
+}
 
 
 

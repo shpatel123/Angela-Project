@@ -575,9 +575,9 @@
 }
 
 .adg-card-subtext {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.65;
-  color: #555555;
+  color: var(--navy);
   text-align: left;
   margin: 0;
 }
