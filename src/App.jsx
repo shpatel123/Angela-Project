@@ -33,6 +33,7 @@ import DisneyAlaskavsHollandAmerica from "./pages/DisneyAlaskavsHollandAmerica/D
 import IsDisneyCruiseReallyForKids from "./pages/IsDisneyCruiseReallyForKids/IsDisneyCruiseReallyForKids";
 import DisneyAlaskaCruises from "./pages/DisneyAlaskaCruises/DisneyAlaskaCruises";
 import DisneyEuropeCruises from "./pages/DisneyEuropeCruises/DisneyEuropeCruises";
+import DisneyCaribbeanCruises from "./pages/DisneyCaribbeanCruises/DisneyCaribbeanCruises";
 
 function App() {
   return (
@@ -201,6 +202,11 @@ function App() {
            <Route
             path="/disney-europe-cruises"
             element={<DisneyEuropeCruises />}
+          />
+
+          <Route
+            path="/disney-caribbean-cruises"
+            element={<DisneyCaribbeanCruises />}
           />
         </Routes>
       </BrowserRouter>

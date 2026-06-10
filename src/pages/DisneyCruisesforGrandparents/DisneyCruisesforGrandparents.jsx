@@ -1839,7 +1839,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Details We Dig: Aboard the Disney Wish</h2>
+            <h2 className="azs-h2">Why Families Love Disney Cruise Line</h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">

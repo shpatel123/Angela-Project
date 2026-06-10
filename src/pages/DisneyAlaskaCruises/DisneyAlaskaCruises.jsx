@@ -737,7 +737,7 @@ const DisneyAlaskaCruises = () => {
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/bQ07mNwPiTI"
+                src="https://www.youtube.com/embed/LAfSxrIqXgk"
                 title="Discover Alaska Through the Magic of Disney Cruise Line"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1527,7 +1527,6 @@ const DisneyAlaskaCruises = () => {
         </div>
       </section>
 
-
       {/* DINING ON A DISNEY ALASKA CRUISE */}
       <section className="dmg-info-section dmg-bg-soft dmg-info-reverse">
         <div className="dmg-info-container">
@@ -1624,7 +1623,7 @@ const DisneyAlaskaCruises = () => {
         </div>
       </section>
 
-            {/* ── SHORE EXCURSIONS WORTH CONSIDERING ───────────────────────────── */}
+      {/* ── SHORE EXCURSIONS WORTH CONSIDERING ───────────────────────────── */}
       <section className="ugt-advantage-section">
         <div className="ugt-container">
           <div className="ugt-advantage-header">
@@ -1990,24 +1989,22 @@ const DisneyAlaskaCruises = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Onboard Disney Entertainment</h2>
+            <h2 className="azs-h2">Disney Wonder Sails Through Alaska</h2>
 
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Discover the incredible entertainment that makes Disney Alaska
-              Cruises so memorable. From Broadway-style productions and live
-              performances to character experiences and family activities,
-              Disney delivers world-class entertainment for guests of all ages
-              throughout the voyage.
+              Disney Cruise Line offers a vacation experience unlike any other,
+              magically bringing families together while providing unparalleled
+              kid fun and relaxing adult time.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/rBKx28xA11Y"
-                title="Onboard Disney Entertainment"
+                src="https://www.youtube.com/embed/pAisyO7NAeM"
+                title="Disney Wonder Sails Through Alaska"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

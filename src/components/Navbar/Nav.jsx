@@ -272,6 +272,14 @@ const Nav = () => {
               >
                 Disney Europe Cruises
               </NavLink>
+
+              <NavLink
+                to="/disney-caribbean-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Caribbean Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -546,6 +554,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Disney Europe Cruises
+            </NavLink>
+
+            <NavLink
+              to="/disney-caribbean-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Caribbean Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
