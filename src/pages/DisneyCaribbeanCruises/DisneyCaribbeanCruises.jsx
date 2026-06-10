@@ -23,7 +23,6 @@ import AboutImage from "../../assets/AboutAngela2.jpeg";
 import { Helmet } from "react-helmet-async";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
 
-
 // ─── DESTINATION DATA ────────────────────────────────────────────────────────
 const caribbeanDestinations = [
   {
@@ -446,7 +445,9 @@ const DisneyCaribbeancruises = () => {
         ))}
         <div className="Scenic_hero_overlay"></div>
         <div className="Scenic_hero_content">
-          <h1>Set Sail on a <br /> Disney Caribbean Cruise</h1>
+          <h1>
+            Set Sail on a <br /> Disney Caribbean Cruise
+          </h1>
           <p>
             Few destinations capture the imagination quite like the Caribbean.
           </p>
@@ -548,7 +549,7 @@ const DisneyCaribbeancruises = () => {
       <section
         className="azs-video-section"
         id="azs-video-caribbean"
-        style={{ backgroundColor: "var(--bg-white)" }}
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="azs-container">
           <div className="azs-section-header">
@@ -571,6 +572,81 @@ const DisneyCaribbeancruises = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════════════════════════════════
+   DISNEY LOOKOUT CAY AT LIGHTHOUSE POINT
+═════════════════════════════════════════ */}
+
+      <section className="adg-c-section adg-c-bg-white">
+        <div className="adg-c-container">
+          <div className="adg-c-section-header">
+            <h2 className="adg-c-section-title">
+              Disney Lookout Cay at Lighthouse Point
+            </h2>
+            <div className="adg-c-accent-line"></div>
+          </div>
+
+          <div className="adg-c-overview-layout">
+            {/* LEFT — list */}
+            <div className="adg-c-overview-icons">
+              {[
+                {
+                  icon: <Check size={18} />,
+                  label: "Bahamian-Inspired Experiences",
+                },
+                {
+                  icon: <Check size={18} />,
+                  label: "Family-Friendly Beaches",
+                },
+                {
+                  icon: <Check size={18} />,
+                  label: "Cultural Entertainment",
+                },
+                {
+                  icon: <Check size={18} />,
+                  label: "Water Recreation",
+                },
+                {
+                  icon: <Check size={18} />,
+                  label: "Local Storytelling & Traditions",
+                },
+              ].map((item, i) => (
+                <div key={i} className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">{item.icon}</span>
+                  <span className="adg-c-overview-label">{item.label}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* RIGHT — callout card + image */}
+            <div className="adg-c-overview-right">
+              <div className="adg-c-overview-callout">
+                <div className="adg-c-overview-callout-inner">
+                  <Star size={28} className="adg-c-callout-star" />
+                  <p className="adg-c-callout-text">
+                    Disney's newest island destination celebrates the culture
+                    and natural beauty of The Bahamas while offering
+                    unforgettable experiences for guests of all ages.
+                  </p>
+                </div>
+              </div>
+
+              <div className="adg-c-overview-image-wrap">
+                <img
+                  // src={OverviewImage}
+                  alt="Disney Lookout Cay at Lighthouse Point"
+                  className="adg-c-overview-img"
+                />
+                <div className="adg-c-overview-img-overlay">
+                  <span className="adg-c-overview-img-label">
+                    Disney Lookout Cay
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1355,7 +1431,7 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-        {/* VIDEO SECTION */}
+      {/* VIDEO SECTION */}
       <section
         className="azs-video-section"
         id="azs-video"
