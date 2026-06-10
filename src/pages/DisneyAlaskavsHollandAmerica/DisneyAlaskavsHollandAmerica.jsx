@@ -856,8 +856,6 @@ const DisneyAlaskavsHollandAmerica = () => {
           </div>
 
           <div className="eep-dossier-grid">
-            
-
             {/* COLUMN 2: DISNEY CARD */}
             <div className="eep-comparison-card eep-disney-card">
               <div className="eep-card-img-wrap">
@@ -866,13 +864,17 @@ const DisneyAlaskavsHollandAmerica = () => {
                   alt="Disney Alaska educational experiences"
                   className="eep-card-img"
                 />
-                <span className="eep-card-badge eep-holland-badge">Family Discovery</span>
+                <span className="eep-card-badge eep-holland-badge">
+                  Family Discovery
+                </span>
               </div>
               <div className="eep-card-body">
                 <span className="eep-card-brand">Disney Cruise Line</span>
                 <h3 className="eep-card-title">Disney Alaska Cruises</h3>
                 <p className="eep-card-desc">
-                  Disney combines educational experiences with storytelling and character magic, making learning engaging and accessible for kids and multigenerational families.
+                  Disney combines educational experiences with storytelling and
+                  character magic, making learning engaging and accessible for
+                  kids and multigenerational families.
                 </p>
 
                 <div className="eep-card-list-box">
@@ -886,7 +888,10 @@ const DisneyAlaskavsHollandAmerica = () => {
                       "Alaska-themed youth clubs",
                     ].map((item, idx) => (
                       <li key={idx} className="eep-card-list-item">
-                        <Check size={14} className="eep-card-list-icon eep-holland-icon" />
+                        <Check
+                          size={14}
+                          className="eep-card-list-icon eep-holland-icon"
+                        />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -895,7 +900,9 @@ const DisneyAlaskavsHollandAmerica = () => {
 
                 <div className="eep-card-footer-box eep-winner-footer">
                   <p>
-                    <strong>Best For Families:</strong> Engages younger travelers through active storytelling and interactive discovery.
+                    <strong>Best For Families:</strong> Engages younger
+                    travelers through active storytelling and interactive
+                    discovery.
                   </p>
                 </div>
               </div>
@@ -909,13 +916,17 @@ const DisneyAlaskavsHollandAmerica = () => {
                   alt="Holland America Alaska educational programs"
                   className="eep-card-img"
                 />
-                <span className="eep-card-badge eep-holland-badge">Destination Depth</span>
+                <span className="eep-card-badge eep-holland-badge">
+                  Destination Depth
+                </span>
               </div>
               <div className="eep-card-body">
                 <span className="eep-card-brand">Holland America Line</span>
                 <h3 className="eep-card-title">Holland America Cruises</h3>
                 <p className="eep-card-desc">
-                  Holland America features deep ecological, historical, and cultural programming guided by naturalists, local rangers, and cultural ambassadors.
+                  Holland America features deep ecological, historical, and
+                  cultural programming guided by naturalists, local rangers, and
+                  cultural ambassadors.
                 </p>
 
                 <div className="eep-card-list-box">
@@ -929,7 +940,10 @@ const DisneyAlaskavsHollandAmerica = () => {
                       "Conservation workshops",
                     ].map((item, idx) => (
                       <li key={idx} className="eep-card-list-item">
-                        <Check size={14} className="eep-card-list-icon eep-holland-icon" />
+                        <Check
+                          size={14}
+                          className="eep-card-list-icon eep-holland-icon"
+                        />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -937,9 +951,12 @@ const DisneyAlaskavsHollandAmerica = () => {
                 </div>
 
                 <div className="eep-card-footer-box eep-winner-footer">
-                  <span className="eep-winner-tag">Winner: Holland America</span>
+                  <span className="eep-winner-tag">
+                    Winner: Holland America
+                  </span>
                   <p>
-                    Nature enthusiasts and adults prefer Holland America's academic depth and expert-led destination immersion.
+                    Nature enthusiasts and adults prefer Holland America's
+                    academic depth and expert-led destination immersion.
                   </p>
                 </div>
               </div>
@@ -2209,22 +2226,22 @@ const DisneyAlaskavsHollandAmerica = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Disneyland Resort</h2>
+            <h2 className="azs-h2">Relaxing Cruise Views: Sunset Sailing</h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Disneyland is where imagination is the destination. For young and
-              old, big and small—it's The Happiest Place on Earth! Gather with
-              all the people who make you the happiest and experience the place
-              where dreams come true.
+              Experience the peaceful beauty of sunset at sea with Disney Cruise
+              Line. As the sun dips below the horizon, guests can enjoy stunning
+              ocean views, fresh sea breezes, and moments of relaxation that
+              make every voyage unforgettable. 
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/GUgMMNmQ5XM"
-                title="Disneyland Resort"
+                src="https://www.youtube.com/embed/fgt9NfZnfjs"
+                title="Relaxing Cruise Views: Sunset Sailing | Disney Cruise Line"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -1831,20 +1831,21 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Disneyland Resort</h2>
+            <h2 className="azs-h2">Details We Dig: Aboard the Disney Wish</h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Discover the magic of Disneyland Resort, where imagination is the
-              destination and unforgettable memories are made every day.
+              Step aboard the Disney Wish and discover the thoughtful details,
+              innovative design, and immersive storytelling that make this ship
+              one of Disney Cruise Line’s most celebrated vessels. 
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/rTuaC01RqjE"
-                title="Disneyland Resort"
+                src="https://www.youtube.com/embed/bQ07mNwPiTI"
+                title="Details We Dig: Aboard The Disney Wish | Disney Files On Demand"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

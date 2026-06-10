@@ -660,7 +660,6 @@ const IsDisneyCruiseReallyForKids = () => {
           </div>
         </div>
       </section>
-
       {/* VIDEO SECTION */}
       <section
         className="azs-video-section"
@@ -669,22 +668,25 @@ const IsDisneyCruiseReallyForKids = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Walt Disney World Resort</h2>
+            <h2 className="azs-h2">
+              Disney Treasure – Disney Cruise Line's Newest Ship
+            </h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              At Walt Disney World, you've got a whole fantastic world to
-              celebrate in. With four spectacular theme parks, two exciting
-              water parks, and incredible shopping, dining, and recreation
-              experiences, every visit offers unforgettable moments. 
+              Discover all the exciting details about Disney Cruise Line's
+              newest ship, the Disney Treasure. From spaces inspired by beloved
+              Disney Parks attractions to immersive experiences that bring
+              Disney and Pixar stories to life, this extraordinary vessel offers
+              unforgettable adventures for guests of all ages.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/AYl_lftmTPI"
-                title="Walt Disney World Resort"
+                src="https://www.youtube.com/embed/-JTRDjv_F5g"
+                title="All The New Details About Disney Cruise Line's Newest Ship | Disney Treasure"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -693,7 +695,6 @@ const IsDisneyCruiseReallyForKids = () => {
           </div>
         </div>
       </section>
-
       {/* DISNEY HAS ENTIRE AREAS DESIGNED EXCLUSIVELY FOR ADULTS */}
       <section className="adg-c-section adg-c-bg-soft" id="adg-donor-programs">
         <div className="adg-c-container">
@@ -822,7 +823,10 @@ const IsDisneyCruiseReallyForKids = () => {
             <span className="dfg-gallery-eyebrow">
               Disney Cruise Line Experience
             </span>
-            <h2 className="dfg-gallery-title"> The Best of Disney Cruise Line Experiences</h2>
+            <h2 className="dfg-gallery-title">
+              {" "}
+              The Best of Disney Cruise Line Experiences
+            </h2>
             <div className="dfg-gallery-accent"></div>
             <p className="dfg-gallery-intro">
               From adult-only retreats to world-class dining and Concierge-level
@@ -1489,22 +1493,24 @@ const IsDisneyCruiseReallyForKids = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Disneyland Hotel at Disneyland Paris</h2>
+            <h2 className="azs-h2">
+              Relaxing Cruise Views: Disney Castaway Cay
+            </h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Explore the charm of the Deluxe Room and Superior Family Room,
-              take a look inside the breathtaking Sleeping Beauty Suite, and
-              enjoy unforgettable dining at La Table de Lumière and the Royal
-              Banquet.
+              Escape to the beauty of Disney Castaway Cay, Disney Cruise Line's
+              private island paradise in The Bahamas. Enjoy breathtaking ocean
+              views, pristine beaches, and the peaceful atmosphere that makes
+              this destination a guest favorite. 
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/d2RouZGlZ2s"
-                title="Disneyland Hotel at Disneyland Paris"
+                src="https://www.youtube.com/embed/6og55S4EgUE"
+                title="Relaxing Cruise Views: Docked at Disney Castaway Cay | Disney Cruise Line"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
