@@ -7,17 +7,12 @@ import {
   Minus,
   ArrowRight,
   Star,
-  Quote,
   Users,
   Compass,
-  Landmark,
   Home,
   Binoculars,
-  Mountain,
   Waves,
   Globe,
-  UtensilsCrossed,
-  Castle,
   Ship,
   Anchor,
   Sun,
@@ -27,8 +22,7 @@ import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 import { Helmet } from "react-helmet-async";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
-import CaribbeanSailingsImg from "../../assets/LuxuryExploraJourneysGuide/Caribbean-Sailings.webp";
-import FamilyOnboardImg from "../../assets/AzamaraDiningGuide/AzamaraWithFamiles.webp";
+
 
 // ─── DESTINATION DATA ────────────────────────────────────────────────────────
 const caribbeanDestinations = [
@@ -452,7 +446,7 @@ const DisneyCaribbeancruises = () => {
         ))}
         <div className="Scenic_hero_overlay"></div>
         <div className="Scenic_hero_content">
-          <h1>Set Sail on a Disney Caribbean Cruise</h1>
+          <h1>Set Sail on a <br /> Disney Caribbean Cruise</h1>
           <p>
             Few destinations capture the imagination quite like the Caribbean.
           </p>

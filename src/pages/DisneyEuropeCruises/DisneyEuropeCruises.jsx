@@ -594,7 +594,7 @@ const DisneyEuropeCruises = () => {
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-h2">
-              Discover Europe Through the <br /> Magic of Disney Cruise Line
+              Explore Europe with Disney Cruise Line
             </h2>
             <div className="azs-accent-line"></div>
             <p className="azs-video-intro">

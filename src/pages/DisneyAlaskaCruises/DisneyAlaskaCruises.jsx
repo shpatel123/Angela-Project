@@ -720,7 +720,7 @@ const DisneyAlaskaCruises = () => {
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-h2">
-              Discover Alaska Through the <br /> Magic of Disney Cruise Line
+             Explore Alaska with Disney Cruise Line
             </h2>
 
             <div className="azs-accent-line"></div>
@@ -1882,11 +1882,6 @@ const DisneyAlaskaCruises = () => {
                   combination of exceptional service, family-focused
                   experiences, world-class entertainment, and unforgettable
                   multigenerational memories.
-                </p>
-
-                <p className="adg-card-subtext" style={{ marginTop: "18px" }}>
-                  For families traveling together, Disney provides a distinctive
-                  blend of Alaska adventure and premium family travel.
                 </p>
               </div>
             </div>
