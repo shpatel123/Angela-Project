@@ -868,7 +868,7 @@ const DisneyAlaskaCruises = () => {
             </p>
           </div>
 
-          <div className="dac-special-grid">
+          <div className="dac-special-grid dac-alaska-special-grid">
             {[
               {
                 icon: Snowflake,
@@ -1527,100 +1527,7 @@ const DisneyAlaskaCruises = () => {
         </div>
       </section>
 
-      {/* ── SHORE EXCURSIONS WORTH CONSIDERING ───────────────────────────── */}
-      <section className="ugt-advantage-section">
-        <div className="ugt-container">
-          <div className="ugt-advantage-header">
-            <span className="ugt-advantage-eyebrow">
-              Disney Alaska Excursions
-            </span>
 
-            <h2 className="ugt-advantage-title">
-              Shore Excursions Worth Considering
-            </h2>
-
-            <div className="Asc-accent-line"></div>
-
-            <p className="ugt-advantage-intro">
-              Disney offers a variety of family-friendly Alaska excursions.
-            </p>
-          </div>
-
-          <div className="ugt-advantage-grid">
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Compass size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Whale Watching Tours</h4>
-
-              <p className="ugt-card-desc">
-                A favorite excursion for travelers of all ages.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Mountain size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Glacier Adventures</h4>
-
-              <p className="ugt-card-desc">
-                Experience Alaska's spectacular ice fields up close.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Dog size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Dog Sledding Experiences</h4>
-
-              <p className="ugt-card-desc">
-                Enjoy one of Alaska's most iconic outdoor adventures.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Train size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Scenic Rail Journeys</h4>
-
-              <p className="ugt-card-desc">
-                Explore breathtaking landscapes from historic rail routes.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Landmark size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Cultural Experiences</h4>
-
-              <p className="ugt-card-desc">
-                Learn about local traditions and indigenous heritage.
-              </p>
-            </div>
-
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Binoculars size={28} strokeWidth={1.5} />
-              </div>
-
-              <h4 className="ugt-card-title">Wildlife Tours</h4>
-
-              <p className="ugt-card-desc">
-                Opportunities to observe Alaska's incredible ecosystems.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* DINING ON A DISNEY ALASKA CRUISE */}
       <section className="dmg-info-section dmg-bg-soft dmg-info-reverse">
         <div className="dmg-info-container">
@@ -1712,6 +1619,101 @@ const DisneyAlaskaCruises = () => {
                   <span>Disney Dining Experience</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            {/* ── SHORE EXCURSIONS WORTH CONSIDERING ───────────────────────────── */}
+      <section className="ugt-advantage-section">
+        <div className="ugt-container">
+          <div className="ugt-advantage-header">
+            <span className="ugt-advantage-eyebrow">
+              Disney Alaska Excursions
+            </span>
+
+            <h2 className="ugt-advantage-title">
+              Shore Excursions Worth Considering
+            </h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="ugt-advantage-intro">
+              Disney offers a variety of family-friendly Alaska excursions.
+            </p>
+          </div>
+
+          <div className="ugt-advantage-grid">
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Compass size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Whale Watching Tours</h4>
+
+              <p className="ugt-card-desc">
+                A favorite excursion for travelers of all ages.
+              </p>
+            </div>
+
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Mountain size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Glacier Adventures</h4>
+
+              <p className="ugt-card-desc">
+                Experience Alaska's spectacular ice fields up close.
+              </p>
+            </div>
+
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Dog size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Dog Sledding Experiences</h4>
+
+              <p className="ugt-card-desc">
+                Enjoy one of Alaska's most iconic outdoor adventures.
+              </p>
+            </div>
+
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Train size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Scenic Rail Journeys</h4>
+
+              <p className="ugt-card-desc">
+                Explore breathtaking landscapes from historic rail routes.
+              </p>
+            </div>
+
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Landmark size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Cultural Experiences</h4>
+
+              <p className="ugt-card-desc">
+                Learn about local traditions and indigenous heritage.
+              </p>
+            </div>
+
+            <div className="ugt-advantage-card">
+              <div className="ugt-icon-box">
+                <Binoculars size={28} strokeWidth={1.5} />
+              </div>
+
+              <h4 className="ugt-card-title">Wildlife Tours</h4>
+
+              <p className="ugt-card-desc">
+                Opportunities to observe Alaska's incredible ecosystems.
+              </p>
             </div>
           </div>
         </div>

@@ -1179,7 +1179,7 @@
 
 .dmg-info-lead {
   font-family: var(--font-body, "Montserrat", sans-serif);
-  font-size: 1.05rem;
+  font-size: 18px;
   color: var(--text-body);
   line-height: 1.75;
   margin-bottom: 2.5rem;
@@ -4201,6 +4201,8 @@
   gap: 2rem;
 }
 
+
+
 .dac-special-card {
   grid-column: span 2;
   background-color: var(--bg-white);
@@ -4257,12 +4259,12 @@
   opacity: 0.9;
 }
 
-/* Centering last two cards on desktop */
+/* Centering last two cards on desktop for Alaska (5 cards layout) */
 @media (min-width: 993px) {
-  .dac-special-card:nth-child(4) {
+  .dac-alaska-special-grid .dac-special-card:nth-child(4) {
     grid-column: 2 / span 2;
   }
-  .dac-special-card:nth-child(5) {
+  .dac-alaska-special-grid .dac-special-card:nth-child(5) {
     grid-column: 4 / span 2;
   }
 }
@@ -4723,8 +4725,8 @@
 }
 
 .dac-timing-footer-note p {
-  font-family: var(--font-body, "Montserrat", sans-serif);
-  font-size: 15px;
+  font-family: var(--font-body);
+  font-size: 18px;
   font-style: italic;
   color: var(--text-muted);
   margin: 0;
@@ -4743,7 +4745,7 @@
     grid-column: span 1 !important;
   }
   
-  .dac-special-card:nth-child(5) {
+  .dac-alaska-special-grid .dac-special-card:nth-child(5) {
     grid-column: span 2 !important;
   }
 
@@ -4832,6 +4834,5 @@
     font-size: 1.85rem;
   }
 }
-
 
 
