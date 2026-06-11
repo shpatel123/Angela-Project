@@ -1249,7 +1249,7 @@
 .luc-dest-info-label {
   display: block;
   font-family: var(--font-body);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1691,11 +1691,14 @@
   }
 
   .luc-why-intro {
-    font-size: 15px;
+    font-size: 16px;
+  }
+  .luc-why-feature-num{
+    font-size: 22px;
   }
 
   .luc-why-feature-title {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .luc-why-feature-list {
@@ -1932,7 +1935,7 @@
 
 .luc-dest-item-text {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--text-body);
   line-height: 1.4;
@@ -1968,7 +1971,7 @@
 
 .luc-dest-theme-note-label {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1977,7 +1980,7 @@
 
 .luc-dest-theme-note-text {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   color: var(--navy);
   margin: 0;

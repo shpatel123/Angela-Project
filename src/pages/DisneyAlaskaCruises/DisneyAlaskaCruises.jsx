@@ -1038,7 +1038,7 @@ const DisneyAlaskaCruises = () => {
         <div className="dac-ent-container">
           <div className="dac-ent-grid">
             <div className="dac-ent-left">
-              <span className="dac-ent-eyebrow">Onboard Experiences</span>
+          
               <h2 className="dac-ent-title">Onboard Disney Entertainment</h2>
               <div className="dac-ent-accent"></div>
               <p className="dac-ent-desc">
@@ -1157,7 +1157,7 @@ const DisneyAlaskaCruises = () => {
       <section className="dac-timing-section">
         <div className="dac-timing-container">
           <div className="dac-timing-header">
-            <span className="dac-timing-eyebrow">Plan Your Journey</span>
+     
             <h2 className="dac-timing-title">
               Best Time to Take a Disney Alaska Cruise
             </h2>
@@ -1533,9 +1533,7 @@ const DisneyAlaskaCruises = () => {
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
               <div className="dmg-info-header">
-                <span className="dmg-info-eyebrow">
-                  Disney Alaska Cruise Experience
-                </span>
+                
 
                 <h2 className="dmg-info-title">
                   Dining on a Disney Alaska Cruise

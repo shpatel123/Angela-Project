@@ -19,210 +19,192 @@ import {
   Fish,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 import { Helmet } from "react-helmet-async";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
 
-// ─── DESTINATION DATA ────────────────────────────────────────────────────────
-const caribbeanDestinations = [
+// ─── DEPARTURE PORT DATA ──────────────────────────────────────────────────────
+const floridaPorts = [
   {
-    id: "castaway-cay",
-    badge: "Castaway Cay",
-    title: "Disney's Castaway Cay",
+    id: "port-canaveral",
+    badge: "Port Canaveral",
+    title: "Port Canaveral",
     icon: Anchor,
-    desc: "Disney's private island in the Bahamas is often the undisputed highlight of any Caribbean voyage — designed exclusively for Disney Cruise Line guests and unlike any other private island experience at sea.",
+    desc: "Port Canaveral is Disney Cruise Line's primary homeport and one of the busiest cruise ports in the world. Located near Orlando and Walt Disney World, it offers exceptional convenience for Disney travelers departing from Florida.",
     columns: [
       {
-        label: "Island Highlights",
+        label: "Port Advantages",
         items: [
-          "Family Beaches",
-          "Adult-Only Beach",
-          "Water Activities",
-          "Character Experiences",
-          "Private Island Convenience",
+          "Close to Orlando International Airport",
+          "Easy Access to Walt Disney World",
+          "Extensive Disney Cruise Departures",
+          "Convenient Transportation Options",
+          "Family-Friendly Travel Experience",
         ],
       },
       {
-        label: "Popular Activities",
+        label: "Popular Itineraries",
         items: [
-          "Swimming & Snorkeling",
-          "Biking & Paddle Sports",
-          "Meet Disney Characters",
-          "Relax on White-Sand Beaches",
+          "Bahamas Cruises",
+          "Caribbean Cruises",
+          "Special Themed Sailings",
+          "Holiday Cruises",
         ],
       },
     ],
-    themeLabel: "The Crown Jewel of Disney Cruising",
+    themeLabel: "Disney Cruise Line's Primary Florida Homeport",
     themeText:
-      "Many guests consider Castaway Cay one of the finest private island experiences in all of cruising — a place where Disney magic meets tropical paradise.",
+      "Port Canaveral's proximity to Walt Disney World makes it the ideal launch point — many families combine a theme park stay with their Disney Cruise departure.",
   },
   {
-    id: "Bahamas Cruises",
-    badge: "Bahamas Cruises",
-    title: "Bahamas Cruises",
+    id: "fort-lauderdale",
+    badge: "Fort Lauderdale",
+    title: "Fort Lauderdale (Port Everglades)",
     icon: Ship,
-    desc: "Shorter Disney Caribbean itineraries frequently visit the Bahamas.",
-
+    desc: "Disney Cruise Line also offers select departures from Fort Lauderdale via Port Everglades. This southern Florida port provides easy access for guests traveling from South Florida and the Miami area, with connections to Caribbean itineraries.",
     columns: [
       {
-        label: "Popular experiences include:",
+        label: "Port Benefits",
         items: [
-          "Beautiful beaches",
-          "Water activities",
-          "Shopping",
-          "Family excursions",
-          "Marine adventures",
+          "Easy Access from South Florida",
+          "Convenient Airport Connections",
+          "Additional Itinerary Options",
+          "Access to Caribbean Sailings",
         ],
       },
     ],
-
-    themeLabel: "Why Families Love the Bahamas",
-
+    themeLabel: "A Southern Florida Departure Option",
     themeText:
-      "The Bahamas are particularly popular for first-time cruisers and families seeking shorter vacations.",
+      "Fort Lauderdale provides another excellent departure point for Disney travelers — particularly those based in South Florida or flying into Fort Lauderdale-Hollywood International Airport.",
   },
   {
-    id: "eastern-caribbean",
-    badge: "Eastern Caribbean",
-    title: "Eastern Caribbean Cruises",
-    icon: Sun,
-    desc: "Eastern Caribbean itineraries offer stunning tropical islands, rich history, and incredible natural beauty — a perfect blend of relaxation and exploration for families and multigenerational travelers.",
-    columns: [
-      {
-        label: "Destinations",
-        items: [
-          "St. Thomas",
-          "Tortola",
-          "Puerto Rico",
-          "Disney Island Destinations",
-        ],
-      },
-      {
-        label: "Highlights",
-        items: [
-          "St. Thomas — Beautiful beaches & scenic views",
-          "Tortola — Nature lovers & outdoor adventures",
-          "Puerto Rico — History, culture & architecture",
-          "Tropical island exploration",
-        ],
-      },
-    ],
-    themeLabel: "Relaxation & Exploration",
-    themeText:
-      "Eastern Caribbean itineraries combine relaxation with discovery, offering families a chance to explore vibrant island cultures alongside stunning natural landscapes.",
-  },
-  {
-    id: "western-caribbean",
-    badge: "Western Caribbean",
-    title: "Western Caribbean Cruises",
-    icon: Globe,
-    desc: "Western Caribbean cruises deliver adventure and cultural discovery across some of the region's most iconic destinations — from world-class snorkeling reefs to ancient Maya ruins and vibrant local cultures.",
-    columns: [
-      {
-        label: "Destinations",
-        items: ["Cozumel", "Grand Cayman", "Jamaica", "Mexico"],
-      },
-      {
-        label: "Highlights",
-        items: [
-          "Cozumel — Excellent snorkeling & beach experiences",
-          "Grand Cayman — Crystal-clear waters & marine encounters",
-          "Jamaica — Beautiful scenery & vibrant culture",
-          "Mexico — Historic sites & family-friendly excursions",
-        ],
-      },
-    ],
-    themeLabel: "Adventure & Cultural Discovery",
-    themeText:
-      "Western Caribbean itineraries offer the perfect combination of outdoor adventure, cultural immersion, and breathtaking natural beauty for families of all ages.",
-  },
-  {
-    id: "southern-caribbean",
-    badge: "Southern Caribbean",
-    title: "Southern Caribbean Cruises",
+    id: "bahamas",
+    badge: "Bahamas Cruises",
+    title: "Disney Bahamas Cruises from Florida",
     icon: Waves,
-    desc: "Longer Disney Caribbean voyages venture into the Southern Caribbean — home to some of the most spectacular beaches and landscapes in the entire region.",
+    desc: "The Bahamas remains one of Disney's most requested cruise destinations from Florida. Highlights include Disney's private island Castaway Cay, the newly opened Lookout Cay at Lighthouse Point, and the vibrant port of Nassau.",
     columns: [
       {
-        label: "Destinations",
-        items: ["Aruba", "Curaçao", "Barbados", "St. Lucia", "Antigua"],
+        label: "Bahamas Destinations",
+        items: [
+          "Disney Castaway Cay",
+          "Lookout Cay at Lighthouse Point",
+          "Nassau",
+        ],
       },
       {
-        label: "Highlights",
+        label: "Ideal For",
         items: [
-          "World-class beach experiences",
-          "Vibrant island cultures",
-          "Stunning natural scenery",
-          "Deeper Caribbean exploration",
+          "Families",
+          "First-Time Cruisers",
+          "Short Vacations",
+          "Multigenerational Groups",
         ],
       },
     ],
-    themeLabel: "Deeper Caribbean Experience",
+    themeLabel: "Florida's Most Popular Disney Cruise Destination",
     themeText:
-      "Southern Caribbean cruises are especially appealing for travelers seeking a richer, more immersive Caribbean experience beyond the typical Bahamas itinerary.",
+      "Bahamas itineraries departing from Port Canaveral are among the most popular Disney sailings — combining easy access from Orlando with Disney's iconic private island experiences.",
+  },
+  {
+    id: "caribbean",
+    badge: "Caribbean Cruises",
+    title: "Disney Caribbean Cruises from Florida",
+    icon: Sun,
+    desc: "Disney Caribbean itineraries offer tropical beaches, island adventures, family excursions, water activities, and cultural experiences. Florida departures provide access to Eastern, Western, and Southern Caribbean sailings.",
+    columns: [
+      {
+        label: "Eastern Caribbean",
+        items: ["St. Thomas", "Tortola", "Tropical Beaches"],
+      },
+      {
+        label: "Western Caribbean",
+        items: ["Cozumel", "Grand Cayman", "Jamaica"],
+      },
+    ],
+    themeLabel: "Caribbean Adventures for Every Family",
+    themeText:
+      "From Eastern Caribbean island-hopping to Western Caribbean adventures, Florida offers access to Disney's full range of tropical Caribbean itineraries for families of all ages.",
+  },
+  {
+    id: "special-sailings",
+    badge: "Special Sailings",
+    title: "Special Disney Sailings from Florida",
+    icon: Star,
+    desc: "Florida departures also provide access to Disney's most beloved themed sailings — from Halloween on the High Seas to Very Merrytime holiday cruises — adding a uniquely Disney layer of magic to an already memorable vacation.",
+    columns: [
+      {
+        label: "Special Sailings",
+        items: [
+          "Halloween on the High Seas",
+          "Very Merrytime Cruises",
+          "Holiday Sailings",
+          "Special Themed Voyages",
+        ],
+      },
+    ],
+    themeLabel: "Themed Sailings Only Disney Delivers",
+    themeText:
+      "Disney's special themed sailings are exclusive experiences that go beyond a standard cruise — adding unforgettable Disney magic to every voyage departing from Florida.",
   },
 ];
 
 const faqData = [
   {
-    q: "Are Disney Caribbean Cruises good for families?",
-    a: "Yes. Disney Caribbean Cruises are among the most popular family cruise vacations in the world, combining tropical beauty with Disney's family-focused service and entertainment.",
+    q: "Where do Disney Cruises depart from in Florida?",
+    a: "Disney Cruise Line primarily sails from Port Canaveral and also offers select departures from Fort Lauderdale (Port Everglades).",
   },
   {
-    q: "What islands do Disney Caribbean Cruises visit?",
-    a: "Itineraries vary but may include destinations in The Bahamas, Eastern Caribbean (St. Thomas, Tortola, Puerto Rico), Western Caribbean (Cozumel, Grand Cayman, Jamaica), and Southern Caribbean (Aruba, Curaçao, Barbados, St. Lucia, Antigua).",
+    q: "Is Port Canaveral close to Disney World?",
+    a: "Yes. Port Canaveral is located near Orlando and Walt Disney World, making it easy to combine both vacations before or after your cruise.",
+  },
+  {
+    q: "What destinations can I visit on a Disney Cruise from Florida?",
+    a: "Popular destinations include The Bahamas, Caribbean islands, Disney Castaway Cay, and Lookout Cay at Lighthouse Point. Some itineraries also offer access to Europe, Alaska, and other international destinations.",
+  },
+  {
+    q: "Are Disney Cruises from Florida good for families?",
+    a: "Yes. Disney cruises are widely regarded as some of the best family cruise vacations available, combining exceptional entertainment, character experiences, and family-focused service.",
+  },
+  {
+    q: "Are Disney Cruises from Florida good for grandparents?",
+    a: "Absolutely. Disney's multigenerational appeal makes these cruises especially popular with grandparents traveling with grandchildren, offering comfortable travel and activities for every generation.",
+  },
+  {
+    q: "Can I visit Disney World before my cruise?",
+    a: "Yes. Many travelers combine Walt Disney World and Disney Cruise Line vacations, spending several days at the parks before or after their sailing from Port Canaveral.",
   },
   {
     q: "What is Castaway Cay?",
-    a: "Castaway Cay is Disney Cruise Line's private island destination in The Bahamas, reserved exclusively for Disney guests. It features family beaches, an adult-only retreat, water activities, and Disney character experiences in a tropical setting.",
+    a: "Disney's private island destination in The Bahamas, available exclusively to Disney Cruise Line guests. It features family beaches, an adult-only retreat, water activities, and Disney character experiences.",
   },
   {
     q: "What is Lookout Cay at Lighthouse Point?",
-    a: "Disney's newer island destination in The Bahamas that celebrates Bahamian culture, natural beauty, and family experiences — blending Disney hospitality with authentic island traditions.",
+    a: "Disney's newest Bahamian destination celebrating local culture, nature, and family experiences — blending Disney hospitality with authentic Bahamian island traditions.",
   },
   {
-    q: "Are Disney Caribbean Cruises good for grandparents?",
-    a: "Absolutely. The Caribbean's relaxed atmosphere and Disney's family-focused design make these cruises ideal for multigenerational travel, with activities and pacing that suit every generation.",
+    q: "Are Disney Cruises from Florida worth the cost?",
+    a: "Many families believe Disney's exceptional service, world-class entertainment, family-focused experiences, and private island destinations justify the premium pricing.",
   },
   {
-    q: "Do Disney Caribbean Cruises have character experiences?",
-    a: "Yes. Guests can meet beloved Disney characters throughout the voyage, both onboard the ship and at Castaway Cay and Lookout Cay.",
+    q: "What is the best Disney cruise from Florida?",
+    a: "The best itinerary depends on your interests. Bahamas and Caribbean sailings remain among the most popular, while special themed cruises like Halloween on the High Seas are perennial favorites.",
   },
   {
-    q: "What is the best Disney Caribbean itinerary?",
-    a: "This depends on your interests. Eastern and Western Caribbean cruises are among the most popular, while Bahamas-focused itineraries are great for families seeking shorter vacations. Southern Caribbean cruises suit travelers seeking a deeper island experience.",
+    q: "What is the best time to take a Disney Cruise from Florida?",
+    a: "Disney Cruise Line operates from Florida throughout much of the year. Winter offers warm-weather escapes; spring brings comfortable conditions; summer is peak family season; fall often offers attractive pricing and Halloween-themed sailings.",
   },
   {
-    q: "Are Disney Caribbean Cruises worth the cost?",
-    a: "Many families believe Disney's exceptional service, world-class entertainment, private island destinations, and family-focused atmosphere justify the premium pricing.",
-  },
-  {
-    q: "Can grandparents travel with grandchildren on Disney Caribbean Cruises?",
-    a: "Yes. Disney Caribbean Cruises are one of the best options for grandparents traveling with grandchildren, thanks to flexible pacing, multigenerational activities, and Disney's talent for uniting generations.",
-  },
-  {
-    q: "What makes Disney different from other Caribbean cruise lines?",
-    a: "Disney combines family-focused service, world-class entertainment, private island destinations, and multigenerational appeal in a way few cruise lines can match.",
-  },
-  {
-    q: "What is the best time to take a Disney Caribbean Cruise?",
-    a: "The Caribbean offers excellent cruising throughout much of the year. Winter offers a warm-weather escape; spring brings comfortable temperatures and great beach conditions; summer is peak family vacation season; fall often offers lower demand and attractive pricing opportunities.",
-  },
-  {
-    q: "Are there kids' clubs and supervised activities onboard Disney Caribbean Cruises?",
+    q: "Are there kids' clubs and supervised activities on Disney Cruises from Florida?",
     a: "Yes. Disney Cruise Line offers age-specific youth clubs — including the Oceaneer Club & Lab for younger children and Edge and Vibe for tweens and teens — providing supervised, theme-based programming throughout the voyage.",
   },
   {
-    q: "Can I book shore excursions directly through Disney for the Caribbean?",
-    a: "Yes. Disney offers a curated selection of shore excursions for each Caribbean port, ranging from snorkeling adventures and beach escapes to dolphin encounters, island tours, and nature experiences. Booking through Disney ensures coordination with the ship's schedule.",
+    q: "Can I book shore excursions through Disney for Caribbean and Bahamas ports?",
+    a: "Yes. Disney offers a curated selection of shore excursions for each port of call, ranging from snorkeling adventures and beach escapes to cultural tours. Booking through Disney ensures coordination with the ship's schedule.",
   },
   {
-    q: "How long are Disney Caribbean Cruises?",
-    a: "Disney Caribbean itineraries vary from short 3–4 night Bahamas cruises to 7-night Eastern and Western Caribbean sailings and longer 10–14 night Southern Caribbean voyages.",
-  },
-  {
-    q: "Do Disney Caribbean Cruises require a passport?",
-    a: "Most Disney Caribbean itineraries require a valid passport for US citizens, especially those visiting foreign ports. For closed-loop cruises (departing and returning to the same US port), a passport card or enhanced driver's license may be accepted, but a passport is always recommended.",
+    q: "What makes Disney different from other cruise lines departing Florida?",
+    a: "Disney combines family-focused service, world-class entertainment, exclusive private island destinations like Castaway Cay and Lookout Cay, and multigenerational appeal in a way few cruise lines can match.",
   },
 ];
 
@@ -237,33 +219,31 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in Disney cruises, luxury cruises, family travel, multigenerational vacations, Caribbean cruises, and custom travel planning.",
+        "Luxury travel agency specializing in Disney cruises, luxury cruises, family travel, multigenerational vacations, Florida cruises, and custom travel planning.",
     },
-
     {
       "@type": "TravelAgency",
       "@id": "https://www.tripsandships.com/#travelagency",
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Luxury travel experts helping families plan Disney Caribbean Cruises, Bahamas voyages, Eastern and Western Caribbean adventures, and multigenerational cruise vacations.",
+        "Luxury travel experts helping families plan Disney Cruises from Florida, Bahamas voyages, Caribbean itineraries, and multigenerational cruise vacations.",
     },
-
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/disney-caribbean-cruises",
-      url: "https://www.tripsandships.com/disney-caribbean-cruises",
-      name: "Disney Caribbean Cruises",
+      "@id": "https://www.tripsandships.com/disney-cruises-from-florida",
+      url: "https://www.tripsandships.com/disney-cruises-from-florida",
+      name: "Disney Cruises from Florida",
       description:
-        "Explore Disney Caribbean Cruises featuring Castaway Cay, Eastern Caribbean, Western Caribbean, and Southern Caribbean itineraries. Discover family-friendly tropical cruise vacations filled with sunshine, adventure, and Disney magic.",
+        "Explore Disney Cruises from Florida departing from Port Canaveral and Fort Lauderdale. Discover Bahamas, Caribbean, and special themed Disney cruise vacations for families, grandparents, and multigenerational travelers.",
     },
-
     {
       "@type": "Article",
-      "@id": "https://www.tripsandships.com/disney-caribbean-cruises#article",
-      headline: "Disney Caribbean Cruises",
+      "@id":
+        "https://www.tripsandships.com/disney-cruises-from-florida#article",
+      headline: "Disney Cruises from Florida",
       description:
-        "A comprehensive guide to Disney Caribbean Cruises, including Castaway Cay, Eastern Caribbean, Western Caribbean, Southern Caribbean itineraries, family travel experiences, and multigenerational cruise vacations.",
+        "A comprehensive guide to Disney Cruises from Florida, including Port Canaveral, Fort Lauderdale, Bahamas itineraries, Caribbean sailings, family travel experiences, and multigenerational cruise vacations.",
       author: {
         "@type": "Organization",
         name: "Trips & Ships Luxury Travel",
@@ -272,17 +252,16 @@ const schemaData = {
         "@id": "https://www.tripsandships.com/#organization",
       },
       mainEntityOfPage: {
-        "@id": "https://www.tripsandships.com/disney-caribbean-cruises",
+        "@id": "https://www.tripsandships.com/disney-cruises-from-florida",
       },
     },
-
     {
       "@type": "TouristTrip",
       "@id":
-        "https://www.tripsandships.com/disney-caribbean-cruises#touristtrip",
-      name: "Disney Caribbean Cruises",
+        "https://www.tripsandships.com/disney-cruises-from-florida#touristtrip",
+      name: "Disney Cruises from Florida",
       description:
-        "Family-friendly Disney Cruise Line vacations exploring the Caribbean, including Castaway Cay, Eastern Caribbean, Western Caribbean, and Southern Caribbean destinations.",
+        "Family-friendly Disney Cruise Line vacations departing from Florida ports, exploring The Bahamas, Caribbean islands, and beyond.",
       touristType: [
         "Families",
         "Multigenerational Travelers",
@@ -291,26 +270,22 @@ const schemaData = {
         "First-Time Cruisers",
       ],
       itinerary: [
+        { "@type": "Place", name: "Port Canaveral" },
+        { "@type": "Place", name: "Fort Lauderdale" },
         { "@type": "Place", name: "Castaway Cay" },
-        { "@type": "Place", name: "St. Thomas" },
-        { "@type": "Place", name: "Puerto Rico" },
-        { "@type": "Place", name: "Cozumel" },
-        { "@type": "Place", name: "Grand Cayman" },
-        { "@type": "Place", name: "Jamaica" },
-        { "@type": "Place", name: "Aruba" },
-        { "@type": "Place", name: "Barbados" },
+        { "@type": "Place", name: "Lookout Cay at Lighthouse Point" },
+        { "@type": "Place", name: "Nassau" },
       ],
     },
-
     {
       "@type": "Review",
-      "@id": "https://www.tripsandships.com/disney-caribbean-cruises#review",
+      "@id": "https://www.tripsandships.com/disney-cruises-from-florida#review",
       itemReviewed: {
         "@type": "TravelAction",
-        name: "Disney Caribbean Cruises",
+        name: "Disney Cruises from Florida",
       },
       reviewBody:
-        "Disney Caribbean Cruises successfully combine iconic tropical destinations with Disney's family-focused service, entertainment, accommodations, private island experiences, and multigenerational appeal.",
+        "Disney Cruises from Florida successfully combine convenient departure ports with Disney's family-focused service, entertainment, private island experiences, and multigenerational appeal.",
       reviewRating: {
         "@type": "Rating",
         ratingValue: "5",
@@ -321,11 +296,10 @@ const schemaData = {
         name: "Trips & Ships Luxury Travel",
       },
     },
-
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.tripsandships.com/disney-caribbean-cruises#breadcrumb",
+        "https://www.tripsandships.com/disney-cruises-from-florida#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -342,15 +316,14 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "Disney Caribbean Cruises",
-          item: "https://www.tripsandships.com/disney-caribbean-cruises",
+          name: "Disney Cruises from Florida",
+          item: "https://www.tripsandships.com/disney-cruises-from-florida",
         },
       ],
     },
-
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/disney-caribbean-cruises#faq",
+      "@id": "https://www.tripsandships.com/disney-cruises-from-florida#faq",
       mainEntity: faqData.map((item) => ({
         "@type": "Question",
         name: item.q,
@@ -396,15 +369,14 @@ function FAQ() {
 }
 
 // ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
-const DisneyCaribbeancruises = () => {
+const DisneyCruisesFromFlorida = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [];
-  const [activeDest, setActiveDest] = useState("castaway-cay");
-  const currentDest =
-    caribbeanDestinations.find((d) => d.id === activeDest) ||
-    caribbeanDestinations[0];
-  const ActiveIcon = currentDest.icon;
+  const [activePort, setActivePort] = useState("port-canaveral");
+  const currentPort =
+    floridaPorts.find((d) => d.id === activePort) || floridaPorts[0];
+  const ActiveIcon = currentPort.icon;
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -417,15 +389,16 @@ const DisneyCaribbeancruises = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Disney Caribbean Cruises | Family Caribbean Cruise Vacations
+          Disney Cruises from Florida | Disney Cruise Vacations Departing
+          Florida
         </title>
         <meta
           name="title"
-          content="Disney Caribbean Cruises for Families & Multigenerational Travel"
+          content="Disney Cruises from Florida for Families & Multigenerational Travel"
         />
         <meta
           name="description"
-          content="Discover Disney Caribbean Cruises featuring tropical islands, family-friendly adventures, private island experiences, world-class entertainment, and unforgettable vacations for families, grandparents, and multigenerational travelers."
+          content="Explore Disney Cruises from Florida departing from Port Canaveral, Fort Lauderdale, and other Florida ports. Discover Caribbean, Bahamas, Alaska, and international Disney cruise vacations for families, grandparents, and multigenerational travelers."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -445,34 +418,33 @@ const DisneyCaribbeancruises = () => {
         ))}
         <div className="Scenic_hero_overlay"></div>
         <div className="Scenic_hero_content">
-          <h1>
-            Set Sail on a <br /> Disney Caribbean Cruise
-          </h1>
+          <h1>Start Your Disney Cruise Adventure from Florida</h1>
           <p>
-            Few destinations capture the imagination quite like the Caribbean.
+            Florida is the gateway to some of Disney Cruise Line's most popular
+            vacations.
           </p>
           <p>
-            Crystal-clear turquoise waters, white-sand beaches, tropical
-            islands, vibrant cultures, and year-round sunshine make the
-            Caribbean one of the world's most popular cruise destinations.
+            With convenient departure ports, warm weather, and easy access from
+            across the United States, Florida serves as the launching point for
+            unforgettable Disney cruise experiences.
           </p>
           {readMore && (
             <>
               <p>
-                Now combine that tropical paradise with the exceptional service,
-                entertainment, and family-focused experiences of Disney Cruise
-                Line.
+                Whether you're dreaming of the Bahamas, the Caribbean, Europe,
+                Alaska, or a special holiday sailing, Disney Cruises from
+                Florida offer an easy and exciting way to begin your vacation.
               </p>
               <p>
-                Disney Caribbean Cruises offer the perfect blend of relaxation,
-                adventure, family bonding, and Disney magic — creating
-                unforgettable vacations for travelers of all ages.
+                For families, grandparents, and multigenerational travelers,
+                departing from Florida combines convenience with Disney's
+                signature service, entertainment, and family-focused
+                experiences.
               </p>
               <p>
-                Whether you're planning a family getaway, celebrating a special
-                occasion, or organizing a multigenerational vacation with
-                grandparents and grandchildren, Disney Caribbean Cruises deliver
-                experiences that everyone can enjoy together.
+                Many families combine a Disney cruise with a visit to Walt
+                Disney World, creating the ultimate Disney vacation experience —
+                all launched from the Sunshine State.
               </p>
             </>
           )}
@@ -487,8 +459,8 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-      {/* ══ WHY CHOOSE A DISNEY CARIBBEAN CRUISE ════════════════════════════ */}
-      <section className="adg-c-section adg-c-bg-dark" id="adg-why-caribbean">
+      {/* ══ WHY CHOOSE A DISNEY CRUISE FROM FLORIDA ═════════════════════════ */}
+      <section className="adg-c-section adg-c-bg-dark" id="adg-why-florida">
         <div className="adg-c-container">
           <div className="adg-c-why-grid">
             {/* LEFT */}
@@ -497,22 +469,22 @@ const DisneyCaribbeancruises = () => {
                 Family Travel Trends
               </span>
               <h2 className="adg-c-h2 adg-c-h2-light">
-                Why Choose a Disney Caribbean Cruise?
+                Why Choose a Disney Cruise from Florida?
               </h2>
               <div className="aac-accent-line aac-accent-white"></div>
               <p className="adg-c-lead adg-c-lead-light">
-                The Caribbean is one of Disney Cruise Line's most beloved
-                destinations.
+                Florida has become one of the world's premier cruise departure
+                regions.
               </p>
               <p className="adg-c-body adg-c-body-light">
-                Disney transforms a Caribbean vacation into something far more
-                memorable than simply visiting beautiful beaches — combining
-                tropical paradise with world-class hospitality, entertainment,
-                and private island experiences found nowhere else.
+                Florida offers everything families love about cruising — without
+                the hassle of long international travel to reach a departure
+                port. Disney transforms a Florida departure into something far
+                more memorable than simply boarding a ship.
               </p>
               <br />
               <p className="adg-c-body adg-c-body-light">
-                Disney allows travelers to focus on enjoying the Caribbean
+                Disney allows travelers to focus on enjoying their vacation
                 rather than managing complicated travel logistics.
               </p>
             </div>
@@ -522,14 +494,14 @@ const DisneyCaribbeancruises = () => {
                 <span className="adg-c-why-card-label">Guests Enjoy:</span>
                 <div className="adg-c-pill-grid">
                   {[
-                    "Beautiful Tropical Islands",
-                    "Warm Weather Year-Round",
-                    "Family-Friendly Beaches",
-                    "Disney's Private Island Experiences",
-                    "World-Class Entertainment",
-                    "Exceptional Service",
-                    "Activities for All Ages",
-                    "Stress-Free Vacation Planning",
+                    "Convenient Airport Access",
+                    "Multiple Disney Itineraries",
+                    "Warm-Weather Departures",
+                    "Easy Pre- & Post-Cruise Vacations",
+                    "Family-Friendly Travel Options",
+                    "Access to Disney Destinations",
+                    "Year-Round Cruise Opportunities",
+                    "Walt Disney World Combinations",
                   ].map((item, i) => (
                     <div key={i} className="adg-c-pill">
                       <span className="adg-c-pill-check">
@@ -548,26 +520,26 @@ const DisneyCaribbeancruises = () => {
       {/* ══ VIDEO SECTION ════════════════════════════════════════════════════ */}
       <section
         className="azs-video-section"
-        id="azs-video-caribbean"
-        style={{ backgroundColor: "var(--bg-soft)" }}
+        id="azs-video-florida"
+        style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-h2">
-              Discover the Caribbean Through the <br /> Magic of Disney Cruise
-              Line
+              Discover Florida's Gateway to <br /> Disney Cruise Line Magic
             </h2>
             <div className="azs-accent-line"></div>
             <p className="azs-video-intro">
-              Experience the turquoise waters, white-sand beaches, and vibrant
-              island cultures of the Caribbean aboard Disney Cruise Line.
+              Experience the convenience of departing from Florida while sailing
+              to some of Disney Cruise Line's most beautiful and iconic
+              destinations.
             </p>
           </div>
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/bJ1yCvxmgOY"
-                title="Discover the Caribbean Through the Magic of Disney Cruise Line"
+                src="https://www.youtube.com/embed/JJ0CEN-hoj0"
+                title="Discover Disney Cruise Line Magic from Florida"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -577,126 +549,51 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════
-   DISNEY LOOKOUT CAY AT LIGHTHOUSE POINT
-═════════════════════════════════════════ */}
-
-      <section className="adg-c-section adg-c-bg-white">
-        <div className="adg-c-container">
-          <div className="adg-c-section-header">
-            <h2 className="adg-c-section-title">
-              Disney Lookout Cay at Lighthouse Point
-            </h2>
-            <div className="adg-c-accent-line"></div>
-          </div>
-
-          <div className="adg-c-overview-layout">
-            {/* LEFT — list */}
-            <div className="adg-c-overview-icons">
-              {[
-                {
-                  icon: <Check size={18} />,
-                  label: "Bahamian-Inspired Experiences",
-                },
-                {
-                  icon: <Check size={18} />,
-                  label: "Family-Friendly Beaches",
-                },
-                {
-                  icon: <Check size={18} />,
-                  label: "Cultural Entertainment",
-                },
-                {
-                  icon: <Check size={18} />,
-                  label: "Water Recreation",
-                },
-                {
-                  icon: <Check size={18} />,
-                  label: "Local Storytelling & Traditions",
-                },
-              ].map((item, i) => (
-                <div key={i} className="adg-c-overview-item">
-                  <span className="adg-c-overview-icon">{item.icon}</span>
-                  <span className="adg-c-overview-label">{item.label}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* RIGHT — callout card + image */}
-            <div className="adg-c-overview-right">
-              <div className="adg-c-overview-callout">
-                <div className="adg-c-overview-callout-inner">
-                  <Star size={28} className="adg-c-callout-star" />
-                  <p className="adg-c-callout-text">
-                    Disney's newest island destination celebrates the culture
-                    and natural beauty of The Bahamas while offering
-                    unforgettable experiences for guests of all ages.
-                  </p>
-                </div>
-              </div>
-
-              <div className="adg-c-overview-image-wrap">
-                <img
-                  // src={OverviewImage}
-                  alt="Disney Lookout Cay at Lighthouse Point"
-                  className="adg-c-overview-img"
-                />
-                <div className="adg-c-overview-img-overlay">
-                  <span className="adg-c-overview-img-label">
-                    Disney Lookout Cay
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══ WHAT MAKES THE CARIBBEAN SPECIAL ════════════════════════════════ */}
+      {/* ══ WHAT MAKES FLORIDA SPECIAL ═══════════════════════════════════════ */}
       <section className="dac-special-section">
         <div className="dac-special-container">
           <div className="dac-special-header">
             <h2 className="dac-special-title">
-              What Makes the Caribbean So Popular?
+              Why Florida is the Perfect Cruise Departure Hub
             </h2>
             <div className="dac-special-accent"></div>
             <p className="dac-special-lead">
-              The Caribbean offers something for every type of traveler — a
-              perfect combination of natural beauty, warm weather, adventure,
-              and vibrant island culture all within easy reach.
+              Florida's combination of major airports, warm weather, and
+              proximity to Walt Disney World makes it the ideal starting point
+              for any Disney cruise vacation.
             </p>
           </div>
           <div className="dac-special-grid">
             {[
               {
-                icon: Waves,
-                title: "Stunning Beaches",
-                desc: "Relax on soft white sand beside crystal-clear waters — some of the most beautiful beaches in the world.",
+                icon: Anchor,
+                title: "Major Departure Ports",
+                desc: "Port Canaveral and Fort Lauderdale offer extensive Disney Cruise Line departures year-round, with multiple itineraries available every month.",
               },
               {
                 icon: Sun,
-                title: "Tropical Weather",
-                desc: "Warm temperatures make the Caribbean ideal throughout much of the year, perfect for an escape from colder climates.",
-              },
-              {
-                icon: Users,
-                title: "Family-Friendly Activities",
-                desc: "Perfect for children, parents, and grandparents alike — the Caribbean offers experiences suited to every generation.",
-              },
-              {
-                icon: Fish,
-                title: "Water Adventures",
-                desc: "Enjoy snorkeling, swimming, kayaking, paddleboarding, and encounters with remarkable Caribbean marine life.",
+                title: "Warm-Weather Departures",
+                desc: "Florida's climate means comfortable conditions when boarding your ship — a welcome start to any Caribbean or Bahamas adventure.",
               },
               {
                 icon: Globe,
-                title: "Island Culture",
-                desc: "Experience unique traditions, cuisine, music, and history across a diverse array of island destinations.",
+                title: "Airport Connections",
+                desc: "Orlando International, Fort Lauderdale, and Miami airports provide excellent flight access for guests traveling from across the United States.",
               },
               {
-                icon: Anchor,
-                title: "Easy Travel",
-                desc: "Cruising allows guests to visit multiple islands while unpacking only once — the ultimate stress-free vacation.",
+                icon: Ship,
+                title: "Walt Disney World Access",
+                desc: "Port Canaveral's proximity to Walt Disney World means families can easily combine theme park and cruise experiences in one seamless vacation.",
+              },
+              {
+                icon: Users,
+                title: "Family-Friendly Region",
+                desc: "Florida is one of the most family-friendly travel destinations in the world, making it easy to extend your vacation before or after your cruise.",
+              },
+              {
+                icon: Waves,
+                title: "Year-Round Sailing",
+                desc: "Florida's mild climate allows Disney Cruise Line to operate departures throughout the year, giving families maximum scheduling flexibility.",
               },
             ].map((item, idx) => {
               const Icon = item.icon;
@@ -714,35 +611,32 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-      {/* ══ POPULAR DISNEY CARIBBEAN CRUISE DESTINATIONS ════════════════════ */}
-      <section
-        className="luc-destinations-section"
-        id="luc-caribbean-destinations"
-      >
+      {/* ══ FLORIDA DEPARTURE PORTS & ITINERARIES ═══════════════════════════ */}
+      <section className="luc-destinations-section" id="luc-florida-departures">
         <div className="luc-destinations-container">
           <div className="luc-destinations-header">
             <h2 className="luc-destinations-title">
-              Popular Disney Caribbean Cruise Destinations
+              Florida Departure Ports &amp; Popular Itineraries
             </h2>
             <div className="adg-c-accent-line"></div>
             <p className="luc-destinations-intro">
-              Disney Caribbean itineraries vary throughout the year, offering
-              opportunities to explore several of the region's most beautiful
-              destinations — from exclusive private islands to vibrant tropical
-              ports.
+              Disney Cruise Line operates from several Florida ports throughout
+              the year, offering opportunities to explore the Bahamas, Caribbean
+              islands, and other iconic destinations from convenient Florida
+              departure points.
             </p>
           </div>
           <div className="luc-dest-layout">
             {/* Sidebar nav */}
             <nav className="luc-dest-nav">
-              {caribbeanDestinations.map((item) => {
+              {floridaPorts.map((item) => {
                 const NavIcon = item.icon;
-                const isActive = activeDest === item.id;
+                const isActive = activePort === item.id;
                 return (
                   <button
                     key={item.id}
                     className={`luc-dest-nav-btn ${isActive ? "luc-dest-nav-btn--active" : ""}`}
-                    onClick={() => setActiveDest(item.id)}
+                    onClick={() => setActivePort(item.id)}
                   >
                     <div className="luc-dest-nav-icon-wrap">
                       <NavIcon size={16} strokeWidth={1.8} />
@@ -754,11 +648,11 @@ const DisneyCaribbeancruises = () => {
               })}
             </nav>
             {/* Detail panel */}
-            <div className="luc-dest-panel" key={activeDest}>
+            <div className="luc-dest-panel" key={activePort}>
               <div className="luc-dest-img-wrap">
                 <img
-                  src={currentDest.image}
-                  alt={currentDest.title}
+                  src={currentPort.image}
+                  alt={currentPort.title}
                   className="luc-dest-img"
                 />
                 <div className="luc-dest-img-overlay">
@@ -766,13 +660,13 @@ const DisneyCaribbeancruises = () => {
                     <ActiveIcon size={22} strokeWidth={1.6} />
                   </div>
                   <span className="luc-dest-img-title">
-                    {currentDest.title}
+                    {currentPort.title}
                   </span>
                 </div>
               </div>
-              <p className="luc-dest-panel-desc">{currentDest.desc}</p>
+              <p className="luc-dest-panel-desc">{currentPort.desc}</p>
               <div className="luc-dest-columns">
-                {currentDest.columns.map((col, cIdx) => (
+                {currentPort.columns.map((col, cIdx) => (
                   <div key={cIdx} className="luc-dest-info-col">
                     <span className="luc-dest-info-label">{col.label}</span>
                     <div className="luc-dest-items-grid">
@@ -790,10 +684,10 @@ const DisneyCaribbeancruises = () => {
                 <div className="luc-dest-theme-note-bar"></div>
                 <div className="luc-dest-theme-note-content">
                   <span className="luc-dest-theme-note-label">
-                    {currentDest.themeLabel}
+                    {currentPort.themeLabel}
                   </span>
                   <p className="luc-dest-theme-note-text">
-                    {currentDest.themeText}
+                    {currentPort.themeText}
                   </p>
                 </div>
               </div>
@@ -802,43 +696,44 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-      {/* ══ DISNEY CARIBBEAN CRUISES FOR FAMILIES ═══════════════════════════ */}
+      {/* ══ DISNEY CRUISES FROM FLORIDA FOR FAMILIES ════════════════════════ */}
       <section className="dac-families-section">
         <div className="dac-families-container">
           <div className="dac-families-grid">
             {/* Left Content Column */}
             <div className="dac-families-left">
-              
+            
               <h2 className="dac-families-title">
-                Disney Caribbean Cruises for Families
+                Why Families Love Disney Cruises from Florida
               </h2>
               <div className="dac-families-accent"></div>
               <p className="dac-families-lead">
-                Disney Cruise Line is designed with families in mind, bringing
-                magic and tropical adventure together.
+                Disney Cruise Line consistently ranks among the most popular
+                cruise choices for families — and Florida's convenient ports
+                make it easier than ever to embark.
               </p>
 
               <div className="dac-families-features">
                 {[
                   {
-                    title: "Shared Adventures",
-                    desc: "Spend quality time together while exploring tropical destinations.",
+                    title: "Family-Friendly Entertainment",
+                    desc: "Broadway-style productions, deck parties, and interactive experiences delight guests of every age throughout the voyage.",
                   },
                   {
-                    title: "Activities for Every Age",
-                    desc: "Children, teens, parents, and grandparents can all find experiences tailored to their interests.",
+                    title: "Exceptional Youth Programs",
+                    desc: "Industry-leading clubs for children and teens provide supervised, theme-based programming throughout the cruise.",
                   },
                   {
-                    title: "Family Entertainment",
-                    desc: "Broadway-quality shows, deck parties, movies, and interactive events.",
+                    title: "Character Experiences",
+                    desc: "Meet beloved Disney characters throughout the voyage — both onboard and at private island destinations.",
                   },
                   {
-                    title: "Stress-Free Planning",
-                    desc: "Transportation, dining, accommodations, and entertainment are all included in one vacation.",
+                    title: "Family Accommodations",
+                    desc: "Staterooms and suites designed with parents and children in mind, including split bathrooms and connecting room options.",
                   },
                   {
-                    title: "Unforgettable Memories",
-                    desc: "Many families return year after year because of the memories they create together.",
+                    title: "Activities for All Ages",
+                    desc: "Every generation can enjoy the vacation together — from thrilling water slides to relaxing beach days ashore.",
                   },
                 ].map((feat, idx) => (
                   <div key={idx} className="dac-families-feature-item">
@@ -861,16 +756,16 @@ const DisneyCaribbeancruises = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
-                    alt="Disney Caribbean Cruise Family Sailing"
+                    alt="Disney Cruise from Florida family sailing"
                     className="dac-families-img"
                   />
                   <div className="dac-families-img-caption">
-                    Tropical Adventures
+                    Florida Departures
                   </div>
                 </div>
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
-                    alt="Family enjoying onboard dining and time together"
+                    alt="Family enjoying onboard Disney entertainment"
                     className="dac-families-img"
                   />
                   <div className="dac-families-img-caption">
@@ -889,173 +784,142 @@ const DisneyCaribbeancruises = () => {
         style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="dac-ent-container">
-          <div className="dac-ent-grid">
-            <div className="dac-ent-left">
-
-
-              <h2 className="dac-ent-title">Onboard Disney Entertainment</h2>
-
-              <div className="dac-ent-accent"></div>
-
-              <p className="dac-ent-desc">
-                Even with beautiful Caribbean destinations waiting at every
-                port, Disney continues to deliver world-class onboard
-                experiences throughout the voyage.
-              </p>
-
-              <div className="dac-ent-badge">
-                Entertainment for Every Generation
-              </div>
-            </div>
-
-            <div className="dac-ent-right">
-              {[
-                {
-                  title: "Broadway-Style Shows",
-                  desc: "Award-winning productions featuring spectacular performances, storytelling, music, and stage effects for guests of all ages.",
-                },
-                {
-                  title: "Character Experiences",
-                  desc: "Meet beloved Disney characters throughout the voyage and enjoy memorable family photo opportunities onboard and at private island destinations.",
-                },
-                {
-                  title: "Deck Parties",
-                  desc: "High-energy celebrations unique to Disney Cruise Line — tropical-themed deck parties that light up the night sky at sea.",
-                },
-                {
-                  title: "Family Activities",
-                  desc: "Interactive entertainment, themed events, games, and activities designed to bring families together throughout the voyage.",
-                },
-                {
-                  title: "Youth Clubs",
-                  desc: "Industry-leading programs and dedicated spaces for children and teens supervised by Disney's trained counselors.",
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="dac-ent-card">
-                  <div className="dac-ent-card-header">
-                    <div className="dac-ent-card-num">0{idx + 1}</div>
-
-                    <h3 className="dac-ent-card-title">{item.title}</h3>
-                  </div>
-
-                  <p className="dac-ent-card-desc">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══ IMAGE GALLERY ════════════════════════════════════════════════════ */}
-      <section
-        className="svf-section svf-gallery-section"
-        style={{ background: "var(--bg-soft)" }}
-      >
-        <div className="svf-inner">
-          <div className="svf-gallery-header">
-            <h2 className="svf-h2" style={{ textAlign: "center" }}>
-              The Caribbean's Greatest Moments, <br /> Experienced Through
-              Disney
+          <div className="dac-ent-header">
+            <h2 className="dac-ent-title" style={{ textAlign: "center" }}>
+              Onboard Disney Entertainment
             </h2>
-            <div className="svf-bar" style={{ margin: "20px auto 0" }}></div>
-            <p
-              className="svf-p"
-              style={{
-                textAlign: "center",
-                maxWidth: "700px",
-                margin: "20px auto 0",
-              }}
-            >
-              From the pristine beaches of Castaway Cay and turquoise reefs of
-              the Eastern Caribbean to the vibrant culture of Jamaica and the
-              spectacular landscapes of the Southern Caribbean — Disney
-              Caribbean Cruises deliver the region's most iconic experiences
-              wrapped in unmatched family-focused service.
+            <div className="adg-c-accent-line"></div>
+            <p className="dac-ent-intro">
+              Disney remains one of the entertainment leaders at sea — every
+              sailing from Florida delivers world-class experiences for the
+              entire family.
             </p>
           </div>
-          <div className="svf-gallery-grid">
-            <div className="svf-gallery-item svf-gallery-item--large">
-              <div className="svf-gallery-image-wrap">
-                <img
-                  alt="Castaway Cay private island beach on a Disney Caribbean Cruise"
-                  className="svf-gallery-image"
-                />
-                <div className="svf-gallery-overlay">
-                  <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Castaway Cay</span>
-                    <h3>Disney's Private Island Paradise</h3>
-                    <p>
-                      Step ashore at Castaway Cay — Disney's exclusive private
-                      island where turquoise waters, white sand, and Disney
-                      magic combine for an unforgettable day in the Bahamas.
-                    </p>
-                  </div>
+          <div className="dac-ent-grid" style={{gap: "30px"}}>
+            {[
+              {
+                title: "Broadway-Style Shows",
+                desc: "Award-winning theatrical productions performed onboard — full-scale, immersive Disney entertainment unlike anything else at sea.",
+              },
+              {
+                title: "Character Meet-and-Greets",
+                desc: "A favorite for children and Disney fans alike — exclusive opportunities to meet beloved Disney characters throughout the voyage.",
+              },
+              {
+                title: "Deck Parties",
+                desc: "High-energy celebrations unique to Disney Cruise Line — tropical-themed deck parties that bring families together under the stars.",
+              },
+              {
+                title: "Family Activities",
+                desc: "Interactive entertainment, themed events, games, and activities designed to bring families together throughout the voyage.",
+              },
+              {
+                title: "Youth Clubs",
+                desc: "Industry-leading programs and dedicated spaces for children and teens supervised by Disney's trained counselors.",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="dac-ent-card">
+                <div className="dac-ent-card-header">
+                  <div className="dac-ent-card-num">0{idx + 1}</div>
+                  <h3 className="dac-ent-card-title">{item.title}</h3>
                 </div>
+                <p className="dac-ent-card-desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── IMAGE GALLERY ────────────────────────────────────────────── */}
+      <section className="dfg-gallery-section" id="dfg-gallery">
+        <div className="dfg-gallery-container">
+          <div className="dfg-gallery-header">
+            <span className="dfg-gallery-eyebrow">
+              Disney Cruise Line Experience
+            </span>
+            <h2 className="dfg-gallery-title">
+              {" "}
+              Florida's Gateway to Disney's <br /> Greatest Destinations
+            </h2>
+            <div className="dfg-gallery-accent"></div>
+            <p className="dfg-gallery-intro">
+             From the pristine beaches of Castaway Cay and the cultural
+              richness of Lookout Cay to the vibrant islands of the Caribbean —
+              Disney Cruises from Florida deliver iconic experiences wrapped in
+              unmatched family-focused service.
+            </p>
+          </div>
+
+          <div className="dfg-gallery-mosaic">
+            {/* Large featured image — top left */}
+            <div
+              className="dfg-gallery-item dfg-gallery-large"
+              style={{
+                color: "#fff",
+              }}
+            >
+              <img
+                alt="Port Canaveral Disney Cruise Line departure Florida"
+                className="dfg-gallery-img"
+              />
+              <div className="dfg-gallery-overlay">
+                <span className="dfg-gallery-caption">Disney's Florida Homeport</span>
               </div>
             </div>
 
-            <div className="svf-gallery-item">
-              <div className="svf-gallery-image-wrap">
-                <img
-                  alt="Snorkeling in crystal-clear Caribbean waters on a Disney cruise"
-                  className="svf-gallery-image"
-                />
-                <div className="svf-gallery-overlay">
-                  <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Eastern Caribbean</span>
-                    <h3>Snorkeling in Stunning Caribbean Waters</h3>
-                    <p>
-                      Explore colorful coral reefs and vibrant marine life in
-                      some of the clearest waters on earth.
-                    </p>
-                  </div>
-                </div>
+            {/* Tall image — top right */}
+            <div
+              className="dfg-gallery-item dfg-gallery-tall"
+              style={{
+                color: "#fff",
+              }}
+            >
+              <img
+                alt="Castaway Cay Disney private island Bahamas from Florida"
+                className="dfg-gallery-img"
+              />
+              <div className="dfg-gallery-overlay">
+                <span className="dfg-gallery-caption">Disney's Private Island Paradiseo</span>
               </div>
             </div>
 
-            <div className="svf-gallery-item">
-              <div className="svf-gallery-image-wrap">
-                <img
-                  alt="Tropical Caribbean island scenery on a Disney cruise itinerary"
-                  className="svf-gallery-image"
-                />
-                <div className="svf-gallery-overlay">
-                  <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Western Caribbean</span>
-                    <h3>Cozumel's World-Class Reefs & Beaches</h3>
-                    <p>
-                      Discover why Cozumel is celebrated as one of the world's
-                      premier snorkeling and beach destinations.
-                    </p>
-                  </div>
-                </div>
+            {/* Wide image — bottom left */}
+            <div
+              className="dfg-gallery-item dfg-gallery-wide"
+              style={{
+                color: "#fff",
+              }}
+            >
+              <img
+                alt="Caribbean cruise from Florida Disney Cruise Line"
+                className="dfg-gallery-img"
+              />
+              <div className="dfg-gallery-overlay">
+                <span className="dfg-gallery-caption">
+            Tropical Caribbean Adventures
+                </span>
               </div>
             </div>
 
-            <div className="svf-gallery-item svf-gallery-item--wide">
-              <div className="svf-gallery-image-wrap">
-                <img
-                  alt="Southern Caribbean island destination on a Disney cruise"
-                  className="svf-gallery-image"
-                />
-                <div className="svf-gallery-overlay">
-                  <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">
-                      Southern Caribbean Shore Excursion
-                    </span>
-                    <h3>The Southern Caribbean's Spectacular Beauty</h3>
-                    <p>
-                      Explore Aruba, Barbados, St. Lucia, and beyond on longer
-                      Disney voyages that reveal the Caribbean's most
-                      breathtaking landscapes.
-                    </p>
-                  </div>
-                </div>
+            {/* Square — bottom right */}
+            <div
+              className="dfg-gallery-item dfg-gallery-square"
+              style={{
+                color: "#fff",
+              }}
+            >
+              <img
+                alt="Walt Disney World and Disney Cruise combination vacation from Florida"
+                className="dfg-gallery-img"
+              />
+              <div className="dfg-gallery-overlay">
+                <span className="dfg-gallery-caption">The Ultimate Disney Vacation</span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* ══ BEST TIME TO CRUISE ══════════════════════════════════════════════ */}
       <section
         className="dac-timing-section"
@@ -1064,13 +928,11 @@ const DisneyCaribbeancruises = () => {
         <div className="dac-timing-container">
           <div className="dac-timing-header">
             <h2 className="dac-timing-title">
-              Best Time to Take a Disney Caribbean Cruise
+              Best Time to Take a Disney Cruise from Florida
             </h2>
-
             <div className="dac-timing-accent"></div>
-
             <p className="dac-timing-lead">
-              The Caribbean offers excellent cruising throughout much of the
+              Disney Cruise Line operates from Florida throughout much of the
               year. Each season offers unique benefits depending on your travel
               goals.
             </p>
@@ -1082,12 +944,12 @@ const DisneyCaribbeancruises = () => {
                 month: "Winter",
                 items: [
                   {
-                    label: "Warm Weather Escape",
-                    desc: "Enjoy sunny tropical destinations while escaping colder winter climates.",
+                    label: "Warm-Weather Escape",
+                    desc: "Enjoy sunny tropical departures while escaping colder winter climates from across the United States.",
                   },
                   {
                     label: "Popular Holiday Season",
-                    desc: "A favorite time for families celebrating holidays and special occasions together.",
+                    desc: "A favorite time for families celebrating holidays — Disney's Very Merrytime cruises add extra magic.",
                   },
                 ],
               },
@@ -1096,11 +958,11 @@ const DisneyCaribbeancruises = () => {
                 items: [
                   {
                     label: "Comfortable Temperatures",
-                    desc: "Pleasant weather ideal for sightseeing, beach days, and outdoor activities.",
+                    desc: "Pleasant weather ideal for beach days, island exploration, and outdoor excursions throughout the Bahamas and Caribbean.",
                   },
                   {
-                    label: "Excellent Beach Conditions",
-                    desc: "Calm waters and beautiful beaches make spring a popular travel season.",
+                    label: "Family Vacation Opportunities",
+                    desc: "Spring break and school holiday periods make this a popular time for families to cruise from Florida.",
                   },
                 ],
               },
@@ -1108,12 +970,12 @@ const DisneyCaribbeancruises = () => {
                 month: "Summer",
                 items: [
                   {
-                    label: "Family Vacation Season",
-                    desc: "School holidays make summer one of the busiest and most popular cruise periods.",
+                    label: "Peak Family Travel Season",
+                    desc: "School holidays make summer the busiest and most vibrant cruise period from Florida — excellent for families.",
                   },
                   {
                     label: "Warm Tropical Weather",
-                    desc: "Enjoy sunshine, warm seas, and classic Caribbean vacation conditions.",
+                    desc: "Enjoy warm seas, sunny skies, and classic tropical vacation conditions throughout Caribbean and Bahamas destinations.",
                   },
                 ],
               },
@@ -1121,12 +983,12 @@ const DisneyCaribbeancruises = () => {
                 month: "Fall",
                 items: [
                   {
-                    label: "Lower Demand Periods",
-                    desc: "Often fewer crowds compared to peak travel seasons.",
+                    label: "Halloween on the High Seas",
+                    desc: "Disney's beloved Halloween-themed sailings make fall one of the most magical and popular times to cruise from Florida.",
                   },
                   {
                     label: "Attractive Pricing Opportunities",
-                    desc: "Travelers may find excellent value and promotional offers during the fall months.",
+                    desc: "Travelers may find excellent value and promotional offers during shoulder-season fall months.",
                   },
                 ],
               },
@@ -1137,18 +999,15 @@ const DisneyCaribbeancruises = () => {
                     {seasonItem.month}
                   </span>
                 </div>
-
                 <div className="dac-timing-card-body">
                   <ul className="dac-timing-list">
                     {seasonItem.items.map((item, itemIdx) => (
                       <li key={itemIdx} className="dac-timing-list-item">
                         <div className="dac-timing-item-bullet"></div>
-
                         <div className="dac-timing-item-texts">
                           <span className="dac-timing-item-label">
                             {item.label}
                           </span>
-
                           <span className="dac-timing-item-desc">
                             {item.desc}
                           </span>
@@ -1166,7 +1025,7 @@ const DisneyCaribbeancruises = () => {
       {/* ══ ACCOMMODATIONS ═══════════════════════════════════════════════════ */}
       <section
         className="dmg-info-section dmg-bg-soft"
-        id="dmg-accommodations-caribbean"
+        id="dmg-accommodations-florida"
       >
         <div className="dmg-info-container">
           <div className="dmg-info-grid">
@@ -1182,19 +1041,19 @@ const DisneyCaribbeancruises = () => {
                 {[
                   {
                     title: "Split Bathrooms",
-                    desc: "A favorite convenience for families sharing staterooms.",
+                    desc: "A major convenience for families — separate vanity and bath areas reduce morning bottlenecks for everyone.",
                   },
                   {
-                    title: "Connecting Cabins",
-                    desc: "Perfect for larger groups and multigenerational families.",
+                    title: "Connecting Staterooms",
+                    desc: "Ideal for larger groups and multigenerational families traveling together from Florida.",
                   },
                   {
                     title: "Family Suites",
-                    desc: "Ideal for multigenerational travel with more space and privacy.",
+                    desc: "Perfect for multigenerational travel — more space, more privacy, and more comfort for extended family groups.",
                   },
                   {
                     title: "Concierge Accommodations",
-                    desc: "Premium service and exclusive benefits for the ultimate Disney experience.",
+                    desc: "Premium service and exclusive benefits for the ultimate Disney cruise experience from Florida.",
                   },
                 ].map((feat, i) => (
                   <div key={i} className="dmg-info-feature-item">
@@ -1209,14 +1068,15 @@ const DisneyCaribbeancruises = () => {
                 ))}
               </div>
               <p className="dmg-info-lead" style={{ marginTop: "24px" }}>
-                Disney's thoughtful cabin designs help make Caribbean travel
-                more comfortable and convenient for families of every size.
+                Disney's thoughtful cabin designs help make Florida cruise
+                departures more comfortable and convenient for families of every
+                size.
               </p>
             </div>
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  alt="Disney Caribbean Cruise family stateroom accommodations"
+                  alt="Disney Cruise from Florida family stateroom accommodations"
                   className="dmg-media-img"
                 />
                 <div className="dmg-media-overlay"></div>
@@ -1236,34 +1096,35 @@ const DisneyCaribbeancruises = () => {
             <div className="dmg-info-content">
               <div className="dmg-info-header">
                 <h2 className="dmg-info-title">
-                  Dining on a Disney Caribbean Cruise
+                  Dining on a Disney Cruise from Florida
                 </h2>
                 <div className="dmg-info-accent"></div>
                 <p className="dmg-info-lead">
-                  Dining is a major highlight of every Disney voyage.
+                  Dining is one of the highlights of every Disney cruise
+                  experience.
                 </p>
               </div>
               <div className="dmg-info-features">
                 {[
                   {
                     title: "Rotational Dining",
-                    desc: "Experience multiple themed restaurants throughout the cruise.",
+                    desc: "Experience multiple themed restaurants throughout the voyage — guests rotate through different dining venues each evening.",
                   },
                   {
                     title: "Family-Friendly Menus",
-                    desc: "Options for all ages, preferences, and dietary needs.",
-                  },
-                  {
-                    title: "Tropical Flavors",
-                    desc: "Regional influences and Caribbean-inspired dishes featured throughout the voyage.",
+                    desc: "Options for all ages, preferences, and dietary needs — from young children to discerning adult palates.",
                   },
                   {
                     title: "Specialty Dining",
-                    desc: "Elevated dining experiences for adults seeking something extra special.",
+                    desc: "Elevated adult dining experiences for those seeking something extra special during their cruise.",
+                  },
+                  {
+                    title: "Casual Dining Options",
+                    desc: "Relaxed poolside and quick-service options perfect for busy days exploring destinations ashore.",
                   },
                   {
                     title: "Exceptional Service",
-                    desc: "Disney's dining teams consistently earn high praise from guests worldwide.",
+                    desc: "Disney's dining teams consistently earn high praise from guests — the same attentive crew serves guests throughout the voyage.",
                   },
                 ].map((feat, i) => (
                   <div key={i} className="dmg-info-feature-item">
@@ -1281,7 +1142,7 @@ const DisneyCaribbeancruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  alt="Dining on a Disney Caribbean Cruise"
+                  alt="Dining on a Disney Cruise from Florida"
                   className="dmg-media-img"
                 />
                 <div className="dmg-media-overlay"></div>
@@ -1295,20 +1156,20 @@ const DisneyCaribbeancruises = () => {
       </section>
 
       {/* ══ GRANDPARENTS & GRANDCHILDREN ════════════════════════════════════ */}
-      <section className="luc-why-section" id="luc-why-caribbean">
+      <section className="luc-why-section" id="luc-why-florida">
         <div className="luc-why-container">
           {/* LEFT — stacked images */}
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
-                alt="Grandparents and grandchildren enjoying a Disney Caribbean Cruise together"
+                alt="Grandparents and grandchildren enjoying a Disney Cruise from Florida"
                 className="luc-why-img-main"
               />
               <div className="luc-why-img-overlay"></div>
             </div>
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
-                alt="Disney Caribbean multigenerational family vacation"
+                alt="Disney multigenerational family cruise vacation from Florida"
                 className="luc-why-img-accent"
               />
               <div className="luc-why-img-badge">
@@ -1320,37 +1181,38 @@ const DisneyCaribbeancruises = () => {
           {/* RIGHT — content */}
           <div className="luc-why-content">
             <h2 className="luc-why-title">
-              Disney Caribbean Cruises for Grandparents &amp; Grandchildren
+              Disney Cruises from Florida for Grandparents &amp; Grandchildren
             </h2>
             <div className="aac-accent-line aac-accent-white"></div>
             <p className="luc-why-intro">
-              The Caribbean is one of the best destinations for
-              multigenerational travel.
+              Florida departures are especially popular among multigenerational
+              travelers.
             </p>
             <p className="luc-why-intro">
-              Grandparents choose Disney Caribbean Cruises because they combine:
+              Grandparents choose Disney Cruises from Florida because they
+              combine:
             </p>
             <div className="luc-why-features">
               {[
                 {
                   num: "01",
-                  title: "Easy Travel Logistics",
-                  desc: "No constant packing or hotel changes — unpack once and let the ship carry you between beautiful tropical destinations.",
+                  title: "Easy Travel Planning",
+                  desc: "Cruising eliminates the need to coordinate multiple hotels and transportation arrangements — unpack once and travel in comfort.",
                 },
                 {
                   num: "02",
-                  title: "Family Bonding Opportunities",
-                  desc: "Plenty of activities designed for shared experiences across every generation, from the beach to Broadway-style shows.",
+                  title: "Shared Experiences",
+                  desc: "Character encounters, beach days, shore excursions, Broadway-style entertainment, and dining experiences enjoyed together across generations.",
                 },
                 {
                   num: "03",
-                  title: "Relaxation and Recreation",
-                  desc: "Everyone can enjoy the vacation at their own pace — quiet beach time, poolside relaxation, or island adventures.",
+                  title: "Comfortable Travel",
+                  desc: "Disney's family-designed staterooms and connecting cabin options make traveling with grandchildren far more comfortable and convenient.",
                 },
                 {
                   num: "04",
-                  title: "Meaningful Experiences",
-                  desc: "Disney excels at helping multiple generations enjoy the same vacation — creating lifelong memories and meaningful family connections.",
+                  title: "Lifelong Family Memories",
+                  desc: "Disney cruises consistently create memorable moments that families — grandparents and grandchildren alike — remember for years after returning to port.",
                 },
               ].map((feat, i) => (
                 <div key={i} className="luc-why-feature">
@@ -1366,52 +1228,40 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-      {/* ══ SHORE EXCURSIONS ═════════════════════════════════════════════════ */}
+      {/* ══ COMBINING DISNEY WORLD & CRUISE ══════════════════════════════════ */}
       <section className="ugt-advantage-section">
         <div className="ugt-container">
           <div className="ugt-advantage-header">
             <span className="ugt-advantage-eyebrow">
-              Disney Caribbean Excursions
+              The Ultimate Disney Vacation
             </span>
-            <h2 className="ugt-advantage-title">Caribbean Shore Excursions</h2>
+            <h2 className="ugt-advantage-title">
+              Combining Walt Disney World &amp; a Disney Cruise
+            </h2>
             <div className="Asc-accent-line"></div>
             <p className="ugt-advantage-intro">
-              Disney offers a wide variety of excursions across the Caribbean —
-              every destination provides opportunities for both adventure and
-              relaxation for families of all ages.
+              One of the biggest advantages of cruising from Florida is the
+              opportunity to combine your voyage with a Walt Disney World
+              vacation. Many families consider this the ultimate Disney
+              experience.
             </p>
           </div>
           <div className="ugt-advantage-grid">
             {[
               {
-                icon: Fish,
-                title: "Snorkeling Adventures",
-                desc: "Explore colorful coral reefs and vibrant marine life in some of the Caribbean's most spectacular underwater environments.",
+                icon: Ship,
+                title: "Disney World Before the Cruise",
+                desc: "Enjoy the parks and resort experience before relaxing at sea — arrive in Florida a few days early to maximize your Disney adventure.",
               },
               {
-                icon: Waves,
-                title: "Beach Escapes",
-                desc: "Relax at some of the Caribbean's most beautiful beaches — from Castaway Cay's pristine sands to world-famous tropical shores.",
-              },
-              {
-                icon: Anchor,
-                title: "Dolphin Encounters",
-                desc: "A beloved family activity available across several Caribbean destinations — unforgettable for children and adults alike.",
+                icon: Sun,
+                title: "Disney World After the Cruise",
+                desc: "Extend your vacation after returning to Florida by heading straight to Walt Disney World to continue the magic on land.",
               },
               {
                 icon: Globe,
-                title: "Island Tours",
-                desc: "Discover local culture, history, and traditions across a diverse collection of Caribbean islands.",
-              },
-              {
-                icon: Waves,
-                title: "Water Sports",
-                desc: "Kayaking, paddleboarding, jet skiing, and other aquatic adventures for the whole family.",
-              },
-              {
-                icon: Binoculars,
-                title: "Nature Experiences",
-                desc: "Explore tropical ecosystems, wildlife, and natural wonders unique to the Caribbean region.",
+                title: "Complete Disney Vacation Package",
+                desc: "Experience both land and sea adventures in one seamless trip — Disney packages often make this combination even easier to plan.",
               },
             ].map((card, i) => {
               const Icon = card.icon;
@@ -1429,32 +1279,32 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-      {/* VIDEO SECTION */}
+      {/* ══ VIDEO SECTION — DISNEY CRUISE EXPERIENCE ═════════════════════════ */}
       <section
         className="azs-video-section"
-        id="azs-video"
+        id="azs-video-florida-ent"
         style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Onboard Disney Entertainment</h2>
-
+            <h2 className="azs-h2">
+              Experience the Magic of Disney Cruise Line
+            </h2>
             <div className="azs-accent-line"></div>
-
             <p className="azs-video-intro">
-              Discover the incredible entertainment that makes Disney Alaska
-              Cruises so memorable. From Broadway-style productions and live
-              performances to character experiences and family activities,
-              Disney delivers world-class entertainment for guests of all ages
-              throughout the voyage.
+              Discover what makes Disney Cruise Line unlike any other vacation
+              at sea. From unforgettable family experiences and immersive
+              entertainment to dedicated adult spaces and legendary Disney
+              service, every voyage is designed to create magical memories for
+              guests of all ages.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/rBKx28xA11Y"
-                title="Onboard Disney Entertainment"
+                src="https://www.youtube.com/embed/lZrL1PXIm08"
+                title="Experience the Magic of Disney Cruise Line"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -1465,10 +1315,12 @@ const DisneyCaribbeancruises = () => {
       </section>
 
       {/* ══ IS IT WORTH IT ═══════════════════════════════════════════════════ */}
-      <section className="adg-section" id="adg-worth-it-caribbean">
+      <section className="adg-section" id="adg-worth-it-florida">
         <div className="adg-container">
           <div className="adg-section-header" style={{ marginBottom: "60px" }}>
-            <h2 className="adg-h2">Is a Disney Caribbean Cruise Worth It?</h2>
+            <h2 className="adg-h2">
+              Is a Disney Cruise from Florida Worth It?
+            </h2>
             <div className="adg-accent-line"></div>
           </div>
           <div
@@ -1477,7 +1329,7 @@ const DisneyCaribbeancruises = () => {
           >
             <div className="adg-content-card-side">
               <img
-                alt="Disney Caribbean Cruise family experience"
+                alt="Disney Cruise from Florida family experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
               />
@@ -1489,13 +1341,13 @@ const DisneyCaribbeancruises = () => {
                 <p className="adg-card-lead">For many families, absolutely.</p>
                 <div className="adg-card-divider"></div>
                 <p className="adg-card-subtext">
-                  Disney Caribbean Cruises often carry premium pricing compared
-                  to some mainstream cruise lines.
+                  Disney Cruises from Florida often carry premium pricing
+                  compared to some mainstream cruise lines.
                 </p>
                 <p className="adg-card-subtext" style={{ marginTop: "18px" }}>
-                  For travelers seeking both Caribbean beauty and premium family
-                  experiences, Disney offers a compelling and highly-valued
-                  combination.
+                  For travelers seeking both exceptional service and premium
+                  family experiences, Disney delivers a compelling and
+                  highly-valued combination that justifies the investment.
                 </p>
               </div>
             </div>
@@ -1507,11 +1359,11 @@ const DisneyCaribbeancruises = () => {
                   icon: <Check size={20} />,
                 },
                 {
-                  title: "Family-Focused Experiences",
+                  title: "Private Island Access",
                   icon: <Star size={20} />,
                 },
                 {
-                  title: "Private Island Destinations",
+                  title: "Year-Round Florida Departures",
                   icon: <Anchor size={20} />,
                 },
                 {
@@ -1523,7 +1375,7 @@ const DisneyCaribbeancruises = () => {
                   icon: <Home size={20} />,
                 },
                 {
-                  title: "Stress-Free Vacation Planning",
+                  title: "High Guest Satisfaction",
                   icon: <Compass size={20} />,
                 },
               ].map((item, i) => (
@@ -1542,7 +1394,7 @@ const DisneyCaribbeancruises = () => {
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-section-title">
-              Who Should Choose a Disney Caribbean Cruise?
+              Who Should Choose a Disney Cruise from Florida?
             </h2>
             <div className="Asc-accent-line"></div>
           </div>
@@ -1554,10 +1406,10 @@ const DisneyCaribbeancruises = () => {
                   "Families with Children",
                   "Grandparents and Grandchildren",
                   "Multi-Generational Groups",
-                  "First-Time Cruisers",
                   "Disney Fans",
+                  "First-Time Cruisers",
                   "Celebration Vacations",
-                  "Travelers Seeking Stress-Free Family Travel",
+                  "Travelers Combining Disney World & Cruising",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -1570,9 +1422,9 @@ const DisneyCaribbeancruises = () => {
               <h3 className="Asc-who-title">May Not Be Ideal For</h3>
               <ul className="Asc-who-list">
                 {[
-                  "Adults Seeking Adults-Only Cruises",
+                  "Adults Seeking Adults-Only Vacations",
                   "Budget-Focused Travelers",
-                  "Expedition Travelers",
+                  "Expedition Cruise Enthusiasts",
                   "Guests Seeking Ultra-Luxury Cruising",
                 ].map((item, i) => (
                   <li key={i}>
@@ -1586,15 +1438,13 @@ const DisneyCaribbeancruises = () => {
         </div>
       </section>
 
-      {/* ANGELA HUGHES AUTHORITY BOX */}
+      {/* ══ ANGELA HUGHES AUTHORITY BOX ══════════════════════════════════════ */}
       <section className="Adg-expert-section" id="Asc-expert-insight">
         <div className="Asc-container">
           {/* TOP HEADING */}
           <div className="Adg-expert-heading">
             <span className="Adg-expert-eyebrow">Luxury Travel Authority</span>
-
             <h2 className="Adg-expert-title">Meet Angela Hughes</h2>
-
             <div className="Adg-expert-divider"></div>
           </div>
 
@@ -1608,22 +1458,17 @@ const DisneyCaribbeancruises = () => {
                   alt="Angela Hughes – Luxury Travel Expert"
                   className="Adg-expert-portrait"
                 />
-
                 <div className="Adg-expert-portrait-badge">
                   <Star size={14} />
                   <span>40+ Years Experience</span>
                 </div>
               </div>
-
               <div className="Adg-expert-name-card">
                 <h3 className="Adg-expert-name">Angela Hughes</h3>
-
                 <p className="Adg-expert-role">
                   CEO · Trips &amp; Ships Luxury Travel
                 </p>
-
                 <div className="Adg-expert-name-divider"></div>
-
                 <p className="Adg-expert-countries">
                   <MapPin size={14} />
                   121+ Countries Visited
@@ -1638,7 +1483,6 @@ const DisneyCaribbeancruises = () => {
                   <Award size={16} />
                   Angela Hughes Authority Box
                 </h4>
-
                 <div className="Adg-expert-credentials-grid">
                   {[
                     {
@@ -1690,7 +1534,6 @@ const DisneyCaribbeancruises = () => {
                   ].map((item, i) => (
                     <div className="Adg-expert-list-item" key={i}>
                       <span className="Adg-expert-list-icon">{item.icon}</span>
-
                       <span className="Adg-expert-list-label">
                         {item.label}
                       </span>
@@ -1704,13 +1547,13 @@ const DisneyCaribbeancruises = () => {
       </section>
 
       {/* ══ FAQ ═══════════════════════════════════════════════════════════════ */}
-      <section className="Asc-section Asc-bg-white" id="Asc-faq-caribbean">
+      <section className="Asc-section Asc-bg-white" id="Asc-faq-florida">
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">Frequently Asked Questions</h2>
             <div className="Asc-accent-line"></div>
             <p className="Asc-faq-intro">
-              Everything you need to know about Disney Caribbean Cruises.
+              Everything you need to know about Disney Cruises from Florida.
             </p>
           </div>
           <FAQ />
@@ -1720,7 +1563,7 @@ const DisneyCaribbeancruises = () => {
       {/* ══ FINAL THOUGHTS / CTA ══════════════════════════════════════════════ */}
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
-          <img alt="Disney Caribbean Cruise" className="Asc-help-bg-img" />
+          <img alt="Disney Cruise from Florida" className="Asc-help-bg-img" />
           <div className="Asc-help-overlay"></div>
         </div>
         <div className="Asc-container">
@@ -1728,7 +1571,7 @@ const DisneyCaribbeancruises = () => {
             <div className="Asc-help-content">
               <div className="Asc-help-header">
                 <span className="Asc-help-eyebrow">
-                  Disney Caribbean Cruises
+                  Disney Cruises from Florida
                 </span>
                 <h2 className="Asc-help-h2">Final Thoughts</h2>
                 <div className="Asc-help-accent"></div>
@@ -1736,13 +1579,15 @@ const DisneyCaribbeancruises = () => {
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    A Disney Caribbean Cruise combines the best of two worlds:
+                    Disney Cruises from Florida provide one of the easiest and
+                    most enjoyable ways to experience Disney Cruise Line.
                   </p>
                   <p className="Asc-help-intro">
                     <strong>
-                      The beauty of the Caribbean with the exceptional service,
-                      entertainment, and family-focused experience of Disney
-                      Cruise Line.
+                      With convenient departures from Port Canaveral and Fort
+                      Lauderdale, travelers can access tropical destinations,
+                      private islands, world-class entertainment, and
+                      unforgettable family experiences.
                     </strong>
                     {!readMore && (
                       <button
@@ -1764,26 +1609,24 @@ const DisneyCaribbeancruises = () => {
                   <br />
                   {readMore && (
                     <p className="Asc-help-intro">
-                      From relaxing on tropical beaches and exploring vibrant
-                      islands to enjoying Broadway-style entertainment and
-                      creating family memories that last a lifetime, Disney
-                      delivers a vacation experience designed for every
-                      generation.
+                      Whether you're planning a quick Bahamas getaway, a
+                      Caribbean adventure, or a complete Disney vacation that
+                      includes Walt Disney World, Florida serves as the perfect
+                      starting point.
                       <br />
                       <br />
-                      Whether you're traveling with young children, celebrating
-                      with grandparents, or gathering the entire family for a
-                      special getaway, Disney Caribbean Cruises offer a seamless
-                      blend of adventure, relaxation, and family connection.
+                      For families, grandparents, and multigenerational
+                      travelers, Disney Cruises from Florida offer more than a
+                      vacation.
                       <br />
                       <br />
-                      Because the best Caribbean vacations aren't just about
-                      where you go.
+                      They offer the opportunity to create memories that will
+                      last long after the ship returns to port.
                       <br />
                       <br />
                       <strong>
-                        They're about sharing the journey with the people who
-                        matter most.
+                        Because the best vacations aren't measured by how many
+                        places you visit.
                       </strong>
                       <button
                         onClick={() => setReadMore(false)}
@@ -1803,7 +1646,7 @@ const DisneyCaribbeancruises = () => {
                   )}
                   <div className="Asc-help-btn-container">
                     <button className="Asc-help-cta-btn">
-                      Plan Your Disney Caribbean Cruise
+                      Plan Your Disney Cruise from Florida
                       <ArrowRight size={18} />
                     </button>
                   </div>
@@ -1811,17 +1654,17 @@ const DisneyCaribbeancruises = () => {
 
                 <div className="Asc-help-list-box">
                   <h3 className="Asc-help-list-title">
-                    Why Families Choose Disney for the Caribbean:
+                    Why Families Choose Disney from Florida:
                   </h3>
                   <ul className="Asc-help-bullets">
                     {[
-                      "Caribbean Exploration",
+                      "Port Canaveral Convenience",
+                      "Castaway Cay Access",
+                      "Caribbean & Bahamas Itineraries",
+                      "Walt Disney World Combinations",
                       "Family Entertainment",
-                      "Private Island Experiences",
                       "Exceptional Service",
                       "Multigenerational Appeal",
-                      "Comfortable Accommodations",
-                      "Stress-Free Travel Planning",
                     ].map((item, i) => (
                       <li key={i}>
                         <div className="Asc-bullet-icon">
@@ -1834,7 +1677,7 @@ const DisneyCaribbeancruises = () => {
                   <p className="Asc-help-intro" style={{ marginTop: "20px" }}>
                     <strong>
                       Contact Trips &amp; Ships Luxury Travel today to begin
-                      planning your Disney Caribbean adventure.
+                      planning your Disney Cruise from Florida.
                     </strong>
                   </p>
                 </div>
@@ -1847,4 +1690,4 @@ const DisneyCaribbeancruises = () => {
   );
 };
 
-export default DisneyCaribbeancruises;
+export default DisneyCruisesFromFlorida;

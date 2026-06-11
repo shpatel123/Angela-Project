@@ -887,7 +887,7 @@ const DisneyEuropeCruises = () => {
         <div className="dac-ent-container">
           <div className="dac-ent-grid">
             <div className="dac-ent-left">
-              <span className="dac-ent-eyebrow">Onboard Experiences</span>
+            
 
               <h2 className="dac-ent-title">Onboard Disney Entertainment</h2>
 
@@ -1229,9 +1229,7 @@ const DisneyEuropeCruises = () => {
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
               <div className="dmg-info-header">
-                <span className="dmg-info-eyebrow">
-                  Disney Europe Cruise Experience
-                </span>
+               
                 <h2 className="dmg-info-title">
                   Dining on a Disney Europe Cruise
                 </h2>

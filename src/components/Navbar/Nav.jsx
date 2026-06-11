@@ -280,6 +280,38 @@ const Nav = () => {
               >
                 Disney Caribbean Cruises
               </NavLink>
+
+              <NavLink
+                to="/disney-bahamas-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Bahamas Cruises
+              </NavLink>
+
+              <NavLink
+                to="/disney-cruises-from-florida"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruises From Florida
+              </NavLink>
+
+              <NavLink
+                to="/disney-cruises-from-port-canaveral"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruises From Port Canaveral
+              </NavLink>
+
+              {/* <NavLink
+                to="/why-are-disney-cruises-so-expensive"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Why Are Disney Cruises So Expensive
+              </NavLink> */}
             </div>
           </div>
         </div>
@@ -563,6 +595,38 @@ const Nav = () => {
             >
               Disney Caribbean Cruises
             </NavLink>
+
+            <NavLink
+              to="/disney-bahamas-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Bahamas Cruises
+            </NavLink>
+
+            <NavLink
+              to="/disney-cruises-from-florida"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruises From Florida
+            </NavLink>
+
+            <NavLink
+              to="/disney-cruises-from-port-canaveral"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruises From Port Canaveral
+            </NavLink>
+
+            {/* <NavLink
+              to="/why-are-disney-cruises-so-expensive"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Why Are Disney Cruises So Expensive
+            </NavLink> */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>

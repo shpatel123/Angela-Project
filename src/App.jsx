@@ -34,6 +34,10 @@ import IsDisneyCruiseReallyForKids from "./pages/IsDisneyCruiseReallyForKids/IsD
 import DisneyAlaskaCruises from "./pages/DisneyAlaskaCruises/DisneyAlaskaCruises";
 import DisneyEuropeCruises from "./pages/DisneyEuropeCruises/DisneyEuropeCruises";
 import DisneyCaribbeanCruises from "./pages/DisneyCaribbeanCruises/DisneyCaribbeanCruises";
+import DisneyBahamasCruises from "./pages/DisneyBahamasCruises/DisneyBahamasCruises";
+import DisneyCruisesFromFlorida from "./pages/DisneyCruisesFromFlorida/Disneycruisesfromflorida";
+import DisneyCruisesFromPortCanaveral from "./pages/DisneyCruisesFromPortCanaveral/DisneyCruisesFromPortCanaveral";
+import WhyAreDisneyCruisesSoExpensive from "./pages/WhyAreDisneyCruisesSoExpensive/WhyAreDisneyCruisesSoExpensive";
 
 function App() {
   return (
@@ -207,6 +211,26 @@ function App() {
           <Route
             path="/disney-caribbean-cruises"
             element={<DisneyCaribbeanCruises />}
+          />
+
+          <Route
+            path="/disney-bahamas-cruises"
+            element={<DisneyBahamasCruises />}
+          />
+
+          <Route
+            path="/disney-cruises-from-florida"
+            element={<DisneyCruisesFromFlorida />}
+          />
+
+           <Route
+            path="/disney-cruises-from-port-canaveral"
+            element={<DisneyCruisesFromPortCanaveral />}
+          />
+
+          <Route
+            path="/why-are-disney-cruises-so-expensive"
+            element={<WhyAreDisneyCruisesSoExpensive />}
           />
         </Routes>
       </BrowserRouter>

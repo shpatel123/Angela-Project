@@ -75,7 +75,7 @@
 }
 
 .afc-why-title {
-    font-size: 13px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 600;
@@ -83,7 +83,7 @@
 }
 
 .afc-why-text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     color: #444444;
     margin: 0;
@@ -97,7 +97,7 @@
 }
 
 .afc-sub-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: var(--navy);
     margin: 0;
@@ -139,9 +139,9 @@
 }
 
 .afc-rec-label {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    color: #222222;
+    color: var(--navy);
 }
 
 /* Right Media Block Styles */
@@ -177,9 +177,9 @@
 }
 
 .afc-strategy-lead {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #444444;
+    color: var(--navy);
     margin: 0 0 16px 0;
     font-weight: 400;
 }
@@ -195,7 +195,7 @@
     color: var(--navy);
     padding: 8px 14px;
     border-radius: 30px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
     border: 1px solid rgba(39, 68, 114, 0.04);
@@ -229,6 +229,17 @@
     .afc-lead-text {
         font-size: 18px;
     }
+}
+
+@media (max-width: 480px) {
+    .afc-h2{
+        font-size: 24px !important;
+    }
+    .afc-lead-text, .afc-why-text, .afc-rec-label,.afc-strategy-lead
+{
+        font-size: 16px;
+    }
+    
 }
 
 
