@@ -28,7 +28,7 @@ import HeroImage1 from "../../assets/DisneyCruisevsVikingOcean/VikingHero.webp";
 import HeroImage2 from "../../assets/DisneyCruisevsVikingOcean/disney-castaway-cay-private-island-aerial-beach-lagoon.jpg";
 import HeroImage4 from "../../assets/DisneyCruisevsVikingOcean/disney-castaway-cay-private-island-aerial-drone-view-cruise-ship.jpg";
 import DisneyCruise from "../../assets/DisneyCruisevsVikingOcean/disney-cruise-ship-docked-at-castaway-cay-aerial-view.jpg";
-import DisneyDestinations  from "../../assets/DisneyCruisevsVikingOcean/disney-cruise-sunset-ocean-voyage-luxury-family-cruise-experience.jpg";
+import DisneyDestinations  from "../../assets/DisneyCruisevsVikingOcean/disney-wish-cruise-ship-deck-pools-night-lighting.jpg";
 import DisneyDining  from "../../assets/DisneyCruisevsVikingOcean/romantic-fine-dining-on-disney-cruise.jpg";
 import DisneySuites  from "../../assets/DisneyCruisevsVikingOcean/disney-wish-the-rose-lounge-adults-only-luxury-seating.jpg";
 import DisneyOcean  from "../../assets/DisneyCruisevsVikingOcean/disney-wish-enchante-restaurant-luxury-booth-seating-adults.jpg";
