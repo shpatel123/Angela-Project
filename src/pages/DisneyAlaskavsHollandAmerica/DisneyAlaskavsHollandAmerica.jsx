@@ -23,24 +23,11 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
-// import HeroImage1 from "../../assets/DisneyCruisevsVikingOcean/VikingHero.webp";
-// import HeroImage2 from "../../assets/Azamarashipcomparison/Seabournhero2.webp";
-// import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";
-
-// import VikingCruise from "../../assets/DisneyCruisevsVikingOcean/Viking-Cruises.webp";
-// import VikingDining from "../../assets/DisneyCruisevsVikingOcean/Viking-Dining.jpg";
-// import VikingSuites from "../../assets/DisneyCruisevsVikingOcean/Viking-Suites.jpg";
-// import VikingOcean from "../../assets/DisneyCruisevsVikingOcean/Viking-Ocean.jpg";
-// import VikingOceanCruise from "../../assets/DisneyCruisevsVikingOcean/Viking-Ocean-Cruises.jpg";
+import HeroImage1 from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-glacier-view-inside-passage.jpg";
+import HeroImage2 from "../../assets/DisneyAlaskavsHollandAmerica/aerial-view-disney-cruise-ship-top-deck-pools-open-ocean.jpg";
+import HeroImage3 from "../../assets/DisneyAlaskavsHollandAmerica/disney-wish-cruise-ship-bahamas-itinerary-sunset-view.jpg";
 
 import { Helmet } from "react-helmet-async";
-import DisneyAlaskaWildlife from "../../assets/AzamaraAlaskaCruisesGuide/multigenerational-family-fly-fishing-vacation-alaska-mountain-river.jpeg";
-import HollandAmericaWildlife from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage3.webp";
-import DisneyAlaskaEducation from "../../assets/AzamaraAlaskaCruisesGuide/alaska-family-glacier-view-hiking-vacation.jpeg";
-import HollandAmericaEducation from "../../assets/AzamaraAlaskaCruisesGuide/alaska-glacier-mountain-lake-scenic-wilderness-vacation.webp";
-import AlaskaScenicBanner from "../../assets/AzamaraAlaskaCruisesGuide/alaska-mountain-reflection-lake-wilderness-nature-travel.webp";
-import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
-import "../AzamaravsSeabourn/AzamaraVsSeabourn.css";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -431,7 +418,7 @@ const DisneyAlaskavsHollandAmerica = () => {
     <br />
     Adults and lifelong learners often appreciate Princess's educational depth.
   </p>;
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {

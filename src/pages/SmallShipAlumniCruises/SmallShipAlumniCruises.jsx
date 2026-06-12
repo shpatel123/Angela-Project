@@ -41,32 +41,7 @@ import TravelExperience from "../../assets/SmallShipAlumniCruises/StartPlan.jpg"
 
 import { Helmet } from "react-helmet-async";
 const smallShipDestinations = [
-  {
-    id: "mediterranean",
-    title: "Mediterranean Small Ship Cruises",
-    badge: "Mediterranean",
-    icon: Compass,
-    image: Mediterian,
-    desc: "The Mediterranean remains one of the most popular regions for alumni travel, combining world-class cultural experiences with exceptional small ship cruising.",
-    columns: [
-      {
-        label: "Highlights include:",
-        items: ["Greece", "Italy", "Croatia", "France", "Spain"],
-      },
-      {
-        label: "Educational themes:",
-        items: [
-          "Ancient history",
-          "Art and architecture",
-          "Culinary traditions",
-          "Cultural heritage",
-        ],
-      },
-    ],
-    themeLabel: "Why the Mediterranean?",
-    themeText:
-      "A perfect combination of history, culture, education, and luxury travel that consistently appeals to alumni travelers.",
-  },
+  
 
   {
     id: "northern-europe",
@@ -93,6 +68,32 @@ const smallShipDestinations = [
     themeLabel: "Educational Value:",
     themeText:
       "An outstanding region for institutions interested in history, innovation, sustainability, and cultural exploration.",
+  },
+  {
+    id: "mediterranean",
+    title: "Mediterranean Small Ship Cruises",
+    badge: "Mediterranean",
+    icon: Compass,
+    // image: Mediterian,
+    desc: "The Mediterranean remains one of the most popular regions for alumni travel, combining world-class cultural experiences with exceptional small ship cruising.",
+    columns: [
+      {
+        label: "Highlights include:",
+        items: ["Greece", "Italy", "Croatia", "France", "Spain"],
+      },
+      {
+        label: "Educational themes:",
+        items: [
+          "Ancient history",
+          "Art and architecture",
+          "Culinary traditions",
+          "Cultural heritage",
+        ],
+      },
+    ],
+    themeLabel: "Why the Mediterranean?",
+    themeText:
+      "A perfect combination of history, culture, education, and luxury travel that consistently appeals to alumni travelers.",
   },
 
   {
@@ -914,71 +915,7 @@ const SmallShipAlumniCruises = () => {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════
-    PERSONALIZED SERVICE
-════════════════════════════════════════ */}
-      <section className="adg-c-section adg-c-bg-white" id="adg-overview">
-        <div className="adg-c-container">
-          <div className="adg-c-section-header">
-            <span className="adg-c-eyebrow">Luxury Small Ship Experiences</span>
 
-            <h2 className="adg-c-h2">Personalized Service</h2>
-
-            <div className="adg-c-accent-line"></div>
-          </div>
-
-          <div className="adg-c-overview-layout">
-            {/* LEFT — list */}
-            <div className="adg-c-overview-icons">
-              {[
-                "Personalized Attention",
-                "Higher Staff-to-Guest Ratios",
-                "Fine Dining Experiences",
-                "Spacious Accommodations",
-                "Tailored Excursions",
-              ].map((label, i) => (
-                <div key={i} className="adg-c-overview-item">
-                  <span className="adg-c-overview-icon">
-                    <Check size={16} strokeWidth={2.5} />
-                  </span>
-
-                  <span className="adg-c-overview-label">{label}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* RIGHT — callout card + image */}
-            <div className="adg-c-overview-right">
-              <div className="adg-c-overview-callout">
-                <div className="adg-c-overview-callout-inner">
-                  <Star size={28} className="adg-c-callout-star" />
-
-                  <p className="adg-c-callout-text">
-                    Luxury small ship operators are known for exceptional
-                    hospitality, providing attentive service and highly
-                    personalized experiences that elevate every aspect of the
-                    journey.
-                  </p>
-                </div>
-              </div>
-
-              <div className="adg-c-overview-image-wrap">
-                <img
-                  src={FineDining}
-                  alt="Luxury small ship personalized service"
-                  className="adg-c-overview-img"
-                />
-
-                <div className="adg-c-overview-img-overlay">
-                  <span className="adg-c-overview-img-label">
-                    Exceptional Guest Service
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── BEST DESTINATIONS FOR SMALL SHIP ALUMNI CRUISES ───── */}
       <section className="luc-destinations-section" id="luc-destinations">
@@ -1342,6 +1279,72 @@ const SmallShipAlumniCruises = () => {
               meaningful interactions, immersive educational programming, and
               shared travel experiences.
             </p>
+          </div>
+        </div>
+      </section>
+
+            {/* ════════════════════════════════════════
+    PERSONALIZED SERVICE
+════════════════════════════════════════ */}
+      <section className="adg-c-section adg-c-bg-white" id="adg-overview">
+        <div className="adg-c-container">
+          <div className="adg-c-section-header">
+            <span className="adg-c-eyebrow">Luxury Small Ship Experiences</span>
+
+            <h2 className="adg-c-h2">Personalized Service</h2>
+
+            <div className="adg-c-accent-line"></div>
+          </div>
+
+          <div className="adg-c-overview-layout">
+            {/* LEFT — list */}
+            <div className="adg-c-overview-icons">
+              {[
+                "Personalized Attention",
+                "Higher Staff-to-Guest Ratios",
+                "Fine Dining Experiences",
+                "Spacious Accommodations",
+                "Tailored Excursions",
+              ].map((label, i) => (
+                <div key={i} className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">
+                    <Check size={16} strokeWidth={2.5} />
+                  </span>
+
+                  <span className="adg-c-overview-label">{label}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* RIGHT — callout card + image */}
+            <div className="adg-c-overview-right">
+              <div className="adg-c-overview-callout">
+                <div className="adg-c-overview-callout-inner">
+                  <Star size={28} className="adg-c-callout-star" />
+
+                  <p className="adg-c-callout-text">
+                    Luxury small ship operators are known for exceptional
+                    hospitality, providing attentive service and highly
+                    personalized experiences that elevate every aspect of the
+                    journey.
+                  </p>
+                </div>
+              </div>
+
+              <div className="adg-c-overview-image-wrap">
+                <img
+                  src={FineDining}
+                  alt="Luxury small ship personalized service"
+                  className="adg-c-overview-img"
+                />
+
+                <div className="adg-c-overview-img-overlay">
+                  <span className="adg-c-overview-img-label">
+                    Exceptional Guest Service
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

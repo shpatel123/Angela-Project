@@ -23,15 +23,25 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
-// import HeroImage1 from "../../assets/DisneyCruisevsVikingOcean/VikingHero.webp";
-// import HeroImage2 from "../../assets/Azamarashipcomparison/Seabournhero2.webp";
-// import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";
+import HeroImage1 from "../../assets/DisneyAlaskavsPrincessCruises/disney-dream-cruise-ship-ocean-voyage-family-cruise-vacation.jpg";
+import HeroImage2 from "../../assets/DisneyAlaskavsPrincessCruises/disney-cruise-ship-at-caribbean-island-with-water-sports.jpg";
+import HeroImage3 from "../../assets/DisneyAlaskavsPrincessCruises/disney-wish-enchante-restaurant-luxury-french-fine-dining.jpg";
+import DisneyAlaska from "../../assets/DisneyAlaskavsPrincessCruises/disney-wonder-alaska-glacier-cruise-scenic-inside-passage-adventure.jpeg";
+import DisneyPrincess from "../../assets/DisneyAlaskavsPrincessCruises/disney-wish-the-bayou-lounge-princess-frog-theme-bar.jpeg";
+import DisneyAlaskaCruises from "../../assets/DisneyAlaskavsPrincessCruises/disney-cruise-alaska-inside-passage-glacier-view-ship-stern.jpg";
+import PrincessAlaskaCruises from "../../assets/DisneyAlaskavsPrincessCruises/disney-cruise-inside-passage-alaska-fjord-glacier-scenery.jpg";
+import DisneyCruiseDining from "../../assets/DisneyAlaskavsPrincessCruises/marceline-market-family-dining-disney-cruise.jpg";
+import PrincessDining from "../../assets/DisneyAlaskavsPrincessCruises/skipper-society-lounge-disney-treasure.jpg";
+import GlacierViewing from "../../assets/DisneyAlaskavsPrincessCruises/disney-wonder-alaska-cruise-glacier-view-scenic-itinerary.jpg";
+import DisneyAlaskaLine from "../../assets/DisneyAlaskavsPrincessCruises/disney-cruise-alaska-shore-excursion-whale-watching-family.jpeg";
+import DisneyPrincessLine from "../../assets/DisneyAlaskavsPrincessCruises/disney-wonder-alaska-cruise-mickey-mouse-family-photo.jpg";
+import DisneyStaterooms from "../../assets/DisneyAlaskavsPrincessCruises/disney-treasure-deluxe-stateroom-king-bed.jpg";
+import PrincessStaterooms from "../../assets/DisneyAlaskavsPrincessCruises/disney-treasure-verandah-stateroom-with-ocean-view.jpg";
+import LandTours from "../../assets/DisneyAlaskavsPrincessCruises/disney-wonder-alaska-cruise-tracy-arm-fjord-excursion.jpg";
+import DisneyYounger from "../../assets/DisneyAlaskavsPrincessCruises/disney-cruise-alaska-itinerary-family-watching-ship-mountains.jpg";
+import DisneyTeen from "../../assets/DisneyAlaskavsPrincessCruises/disney-cruise-alaska-mickey-mouse-family-character-photo.jpg";
+import DisneyAlaskaCta from "../../assets/DisneyAlaskavsPrincessCruises/disney-cruise-alaska-itinerary-couples-vacation-deck-view.jpg";
 
-// import VikingCruise from "../../assets/DisneyCruisevsVikingOcean/Viking-Cruises.webp";
-// import VikingDining from "../../assets/DisneyCruisevsVikingOcean/Viking-Dining.jpg";
-// import VikingSuites from "../../assets/DisneyCruisevsVikingOcean/Viking-Suites.jpg";
-// import VikingOcean from "../../assets/DisneyCruisevsVikingOcean/Viking-Ocean.jpg";
-// import VikingOceanCruise from "../../assets/DisneyCruisevsVikingOcean/Viking-Ocean-Cruises.jpg";
 
 import { Helmet } from "react-helmet-async";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
@@ -372,7 +382,7 @@ const DisneyAlaskavsPrincessCruises = () => {
     <br />
     Adults and lifelong learners often appreciate Princess's educational depth.
   </p>;
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -618,7 +628,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             {/* Left Side: Image */}
             <div className="azs-image-col">
               <img
-                // src={HeroImage1}
+                src={DisneyAlaska}
                 alt="Disney Alaska cruise experience"
                 className="azs-overview-img"
               />
@@ -768,7 +778,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             {/* Left Side: Image */}
             <div className="azs-image-col" style={{ height: "100%" }}>
               <img
-                // src={VikingCruise}
+                src={DisneyPrincess}
                 alt="Princess Cruises Alaska experience"
                 className="azs-overview-img"
               />
@@ -797,7 +807,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="eep-comparison-card eep-disney-card">
               <div className="eep-card-img-wrap">
                 <img
-                  // src={DisneyAlaskaEducation}
+                  src={DisneyAlaskaCruises}
                   alt="Disney Alaska educational experiences"
                   className="eep-card-img"
                 />
@@ -852,7 +862,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="eep-comparison-card eep-holland-card">
               <div className="eep-card-img-wrap">
                 <img
-                  // src={PrincessEducation}
+                  src={PrincessAlaskaCruises}
                   alt="Princess Alaska educational programs"
                   className="eep-card-img"
                 />
@@ -957,7 +967,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="azs-dining-card azs-seabourn-dining">
               <div className="azs-dining-image-wrap">
                 <img
-                  // src={DisneyDining}
+                  src={DisneyCruiseDining}
                   alt="Disney Cruise Dining Experience"
                   className="azs-dining-img"
                 />
@@ -1017,7 +1027,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="azs-dining-card azs-azamara-dining">
               <div className="azs-dining-image-wrap">
                 <img
-                  //   src={VikingDining}
+                    src={PrincessDining}
                   alt="Princess Cruises Dining Experience"
                   className="azs-dining-img"
                 />
@@ -1097,7 +1107,7 @@ const DisneyAlaskavsPrincessCruises = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={AlumniTravel2}
+                    src={GlacierViewing}
                     alt="Alaska glacier viewing experience"
                     className="ugt-component-image"
                   />
@@ -1287,7 +1297,7 @@ const DisneyAlaskavsPrincessCruises = () => {
               {/* Image */}
               <div className="ake-card-image-wrap">
                 <img
-                  //   src={HeroImage2}
+                    src={DisneyAlaskaLine}
                   alt="Disney Cruise Line Alaska expertise"
                   className="ake-card-img"
                 />
@@ -1355,7 +1365,7 @@ const DisneyAlaskavsPrincessCruises = () => {
               {/* Image */}
               <div className="ake-card-image-wrap">
                 <img
-                  //   src={HeroImage4}
+                    src={DisneyPrincessLine}
                   alt="Princess Cruises Alaska expertise"
                   className="ake-card-img"
                 />
@@ -1441,7 +1451,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={DisneyStateroomImage}
+                  src={DisneyStaterooms}
                   alt="Disney Cruise Line family stateroom"
                   className="azs-suites-img"
                 />
@@ -1496,7 +1506,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  //   src={VikingSuites}
+                    src={PrincessStaterooms}
                   alt="Princess Cruises Alaska stateroom"
                   className="azs-suites-img"
                 />
@@ -1725,7 +1735,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="lth-visual-col">
               <div className="lth-image-wrapper">
                 <img
-                  // src={AlaskaCruisetourImage}
+                  src={LandTours}
                   alt="Alaska Land Tours and Cruisetours"
                   className="lth-main-image"
                 />
@@ -1982,7 +1992,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  // src={DisneyWinnerImage}
+                  src={DisneyYounger}
                   alt="Disney Alaska multigenerational family cruise"
                   className="dve-winner-img"
                 />
@@ -2033,7 +2043,7 @@ const DisneyAlaskavsPrincessCruises = () => {
             <div className="dve-winner-card dve-viking-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={VikingOceanCruise}
+                    src={DisneyTeen}
                   alt="Princess Cruises Alaska family exploration"
                   className="dve-winner-img"
                 />
@@ -2375,7 +2385,7 @@ const DisneyAlaskavsPrincessCruises = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={HeroImage1}
+            src={DisneyAlaskaCta}
             alt="Disney Alaska Cruises vs Princess Cruises"
             className="Asc-help-bg-img"
           />

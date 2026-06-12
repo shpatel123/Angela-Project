@@ -25,8 +25,14 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 import HeroImage1 from "../../assets/DisneyCruisevsVikingOcean/VikingHero.webp";
-// import HeroImage2 from "../../assets/Azamarashipcomparison/Seabournhero2.webp";
-// import HeroImage4 from "../../assets/Azamarashipcomparison/Small_Ship.webp";
+import HeroImage2 from "../../assets/DisneyCruisevsVikingOcean/disney-castaway-cay-private-island-aerial-beach-lagoon.jpg";
+import HeroImage4 from "../../assets/DisneyCruisevsVikingOcean/disney-castaway-cay-private-island-aerial-drone-view-cruise-ship.jpg";
+import DisneyCruise from "../../assets/DisneyCruisevsVikingOcean/disney-cruise-ship-docked-at-castaway-cay-aerial-view.jpg";
+import DisneyDestinations  from "../../assets/DisneyCruisevsVikingOcean/disney-cruise-sunset-ocean-voyage-luxury-family-cruise-experience.jpg";
+import DisneyDining  from "../../assets/DisneyCruisevsVikingOcean/romantic-fine-dining-on-disney-cruise.jpg";
+import DisneySuites  from "../../assets/DisneyCruisevsVikingOcean/disney-wish-the-rose-lounge-adults-only-luxury-seating.jpg";
+import DisneyOcean  from "../../assets/DisneyCruisevsVikingOcean/disney-wish-enchante-restaurant-luxury-booth-seating-adults.jpg";
+import DisneyCruiseExperience  from "../../assets/DisneyCruisevsVikingOcean/disney-castaway-cay-private-island-tropical-beachfront-relaxation.jpg";
 
 import VikingCruise from "../../assets/DisneyCruisevsVikingOcean/Viking-Cruises.webp";
 import VikingDining from "../../assets/DisneyCruisevsVikingOcean/Viking-Dining.jpg";
@@ -346,7 +352,7 @@ function FAQ() {
 const DisneyCruisevsVikingOcean = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [HeroImage1];
+  const images = [HeroImage2,HeroImage1,HeroImage4];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -581,7 +587,7 @@ const DisneyCruisevsVikingOcean = () => {
             {/* Left Side: Image */}
             <div className="azs-image-col">
               <img
-                // src={HeroImage1}
+                src={DisneyCruise}
                 alt="Disney Cruise Line family cruise experience"
                 className="azs-overview-img"
               />
@@ -768,7 +774,7 @@ const DisneyCruisevsVikingOcean = () => {
             <div className="azs-experience-card azs-azamara-exp">
               <div className="azs-exp-image-wrap">
                 <img
-                  //   src={AzamaraOverviewImage}
+                    src={DisneyDestinations}
                   alt="Disney Cruise Line destinations"
                   className="azs-exp-img"
                 />
@@ -891,7 +897,7 @@ const DisneyCruisevsVikingOcean = () => {
             <div className="azs-dining-card azs-seabourn-dining">
               <div className="azs-dining-image-wrap">
                 <img
-                  //   src={AzamaraDining}
+                    src={DisneyDining}
                   alt="Disney Cruise Line dining experience"
                   className="azs-dining-img"
                 />
@@ -1151,7 +1157,7 @@ const DisneyCruisevsVikingOcean = () => {
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  //   src={AzamaraCabinImage}
+                    src={DisneySuites}
                   alt="Disney Cruise Line family stateroom"
                   className="azs-suites-img"
                 />
@@ -1539,7 +1545,7 @@ const DisneyCruisevsVikingOcean = () => {
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={DisneyWinnerImage}
+                    src={DisneyOcean}
                   alt="Disney Cruise Line family vacation experience"
                   className="dve-winner-img"
                 />
@@ -2015,7 +2021,7 @@ const DisneyCruisevsVikingOcean = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            src={HeroImage1}
+            src={DisneyCruiseExperience}
             alt="Disney Cruise Line vs Viking Ocean Cruises"
             className="Asc-help-bg-img"
           />

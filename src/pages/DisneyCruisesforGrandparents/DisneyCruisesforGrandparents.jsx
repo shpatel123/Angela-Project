@@ -23,29 +23,38 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 import "../ScenicVSFourSeasonsYachts.css";
-// import HeroImage1 from "../../assets/MultiGenerationalAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg.jpg";
-// import HeroImage2 from "../../assets/MultiGenerationalAlumniTravel/historic-university-campus-entrance-academic-landmark-education.jpg";
-// import HeroImage3 from "../../assets/MultiGenerationalAlumniTravel/alumni-university-campus-community-aerial-view.jpg";
-// import CTAImage from "../../assets/MultiGenerationalAlumniTravel/Partner-With-Travel.jpeg";
-// import AlumniTravel from "../../assets/MultiGenerationalAlumniTravel/Luxury-Travel-Expertise.jpeg";
-// import AlumniTravel2 from "../../assets/MultiGenerationalAlumniTravel/luxury-travelers-exploring-european-village-cultural-vacation.jpg";
-// import AlumniTravel3 from "../../assets/MultiGenerationalAlumniTravel/Travelers.jpeg";
-// import Personalized from "../../assets/MultiGenerationalAlumniTravel/Personalized-Service.jpeg";
-// import LoveAlumni from "../../assets/MultiGenerationalAlumniTravel/Love_Alumni_Travel.jpeg";
-// import LoveAlumni2 from "../../assets/MultiGenerationalAlumniTravel/Universities.jpeg";
+import HeroImage1 from "../../assets/DisneyCruisesforGrandparents/disney-wish-grand-hall-atrium-balcony-view-live-entertainment.jpg";
+import HeroImage2 from "../../assets/DisneyCruisesforGrandparents/disney-caribbean-family-beach-vacation-cruise-line-island-escape.jpg";
+import HeroImage3 from "../../assets/DisneyCruisesforGrandparents/Disney-Treasure-Exterior-Stern.jpg";
+import CTAImage from "../../assets/DisneyCruisesforGrandparents/disney-cruise-quiet-cove-pool-deck-adults-only-relaxation.jpg";
+import DisneySuite from "../../assets/DisneyCruisesforGrandparents/disney-cruise-line-tangled-stateroom-family-cabin.jpg";
+import DisneyDinig from "../../assets/DisneyCruisesforGrandparents/disney-wish-the-rose-lounge-adults-only-luxury-seating.jpg";
+import DisneyExperience from "../../assets/DisneyCruisesforGrandparents/disney-castaway-cay-private-island-tropical-beachfront-relaxation.jpg";
+import DisneyExperience2 from "../../assets/DisneyCruisesforGrandparents/disney-wish-luna-lounge-circular-stage-architecture.jpg";
 
-// import FamilySuitesImg from "../../assets/ExploraJourneysCruises/Luxury-Oceanfront-Suites.webp";
-// import FamilyDiningImg from "../../assets/AzamaraDiningGuide/AzamaraWithFamiles.webp";
+import DisneyFamilyExperience1 from "../../assets/DisneyCruisesforGrandparents/disney-wish-palo-steakhouse-oceanview-table-setting-fine-dining.jpg";
+import DisneyFamilyExperience2 from "../../assets/DisneyCruisesforGrandparents/Disney-Treasure-Plaza-De-Coco.jpg";
+import DisneyFamilyExperience3 from "../../assets/DisneyCruisesforGrandparents/disney-cruise-funnel-vision-outdoor-movie-deck-family.jpg";
+import DisneyFamilyExperience4 from "../../assets/DisneyCruisesforGrandparents/disney-cruise-stateroom-cabin-interior-toddler-interactive-features.jpg";
+
+import DisneyGrandparentExperience1 from "../../assets/DisneyCruisesforGrandparents/bergen-norway-waterfront-harbor-cityscape-fjord-cruise-port-destination.jpg";
+import DisneyGrandparentExperience2 from "../../assets/DisneyCruisesforGrandparents/disney-castaway-cay-private-beach-cabana-rental-family.jpg";
+import DisneyGrandparentExperience3 from "../../assets/DisneyCruisesforGrandparents/disney-wish-palo-steakhouse-adults-only-fine-dining-table.jpg";
+import DisneyGrandparentExperience4 from "../../assets/DisneyCruisesforGrandparents/disney-wish-pool-deck-and-aquamouse-attraction.jpg";
+import AlaskaCruise from "../../assets/DisneyCruisesforGrandparents/disney-cruise-ship-alaska-cruise-itinerary-snow-capped-mountains.jpg";
+import BahamasCruise from "../../assets/DisneyCruisesforGrandparents/disney-cruise-ship-docked-at-castaway-cay-bahamas-private-island.jpeg";
+import CaribbeanCruise from "../../assets/DisneyCruisesforGrandparents/best-disney-cruise-caribbean-family-beach-vacation-excursion.jpg";
+import MediterraneanCruise from "../../assets/DisneyCruisesforGrandparents/disney-cruise-mediterranean-greece-itinerary-santorini-island-view.jpg";
 
 import { Helmet } from "react-helmet-async";
 
 const disneyDestinations = [
   {
     id: "caribbean",
-    title: "Caribbean Cruises",
+    title: "Caribbean",
     badge: "Caribbean",
     icon: Palmtree,
-    // image: CaribbeanImage,
+    image: CaribbeanCruise,
 
     desc: "Among Disney's most popular itineraries, Caribbean cruises offer the perfect combination of relaxation, family fun, and tropical destinations for travelers of all ages.",
 
@@ -68,10 +77,10 @@ const disneyDestinations = [
 
   {
     id: "bahamas",
-    title: "Bahamas Cruises",
+    title: "Bahamas",
     badge: "Bahamas",
     icon: Umbrella,
-    // image: BahamasImage,
+    image: BahamasCruise,
 
     desc: "Perfect for shorter family getaways, Bahamas cruises deliver Disney magic with convenient itineraries and unforgettable island experiences.",
 
@@ -103,10 +112,10 @@ const disneyDestinations = [
 
   {
     id: "alaska",
-    title: "Alaska Cruises",
+    title: "Alaska",
     badge: "Alaska",
     icon: Mountain,
-    // image: AlaskaImage,
+    image: AlaskaCruise,
 
     desc: "An outstanding choice for educational family travel, Alaska combines breathtaking scenery with enriching experiences that appeal across generations.",
 
@@ -129,10 +138,10 @@ const disneyDestinations = [
 
   {
     id: "mediterranean",
-    title: "Mediterranean Cruises",
+    title: "Mediterranean",
     badge: "Mediterranean",
     icon: Landmark,
-    // image: MediterraneanImage,
+    image: MediterraneanCruise,
 
     desc: "Mediterranean cruises combine family adventure with cultural discovery, making them ideal for travelers interested in history, food, and exploration.",
 
@@ -205,7 +214,7 @@ const schemaData = {
       url: "https://www.tripsandships.com",
       logo: "https://www.tripsandships.com/logo.png",
       description:
-        "Luxury travel agency specializing in Disney cruises, family travel, multigenerational vacations, luxury cruises, expedition cruises, and personalized travel planning."
+        "Luxury travel agency specializing in Disney cruises, family travel, multigenerational vacations, luxury cruises, expedition cruises, and personalized travel planning.",
     },
 
     {
@@ -214,7 +223,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Travel experts helping families, grandparents, parents, and grandchildren plan unforgettable Disney Cruise vacations and multigenerational travel experiences."
+        "Travel experts helping families, grandparents, parents, and grandchildren plan unforgettable Disney Cruise vacations and multigenerational travel experiences.",
     },
 
     {
@@ -223,42 +232,39 @@ const schemaData = {
       name: "Angela Hughes",
       jobTitle: "CEO",
       worksFor: {
-        "@id": "https://www.tripsandships.com/#organization"
+        "@id": "https://www.tripsandships.com/#organization",
       },
       description:
-        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker, travel columnist, and travel expert with over 40 years of experience and travel to more than 121 countries."
+        "CEO of Trips & Ships Luxury Travel, Founder of Luxury Travel University, Travel Leaders Network Advisory Board member, global luxury travel speaker, travel columnist, and travel expert with over 40 years of experience and travel to more than 121 countries.",
     },
 
     {
       "@type": "WebPage",
       "@id":
         "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families",
-      url:
-        "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families",
-      name:
-        "Disney Cruises for Grandparents & Multigenerational Families",
+      url: "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families",
+      name: "Disney Cruises for Grandparents & Multigenerational Families",
       description:
-        "Learn why Disney Cruise Line is one of the best vacation options for grandparents, parents, children, and grandchildren. Explore family-friendly ships, destinations, accommodations, activities, and planning tips."
+        "Learn why Disney Cruise Line is one of the best vacation options for grandparents, parents, children, and grandchildren. Explore family-friendly ships, destinations, accommodations, activities, and planning tips.",
     },
 
     {
       "@type": "Article",
       "@id":
         "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families#article",
-      headline:
-        "Disney Cruises for Grandparents & Multigenerational Families",
+      headline: "Disney Cruises for Grandparents & Multigenerational Families",
       description:
         "A complete guide to Disney Cruises for grandparents, parents, children, and grandchildren, featuring family-friendly ships, destinations, accommodations, activities, and planning tips.",
       author: {
-        "@id": "https://www.tripsandships.com/#angelahughes"
+        "@id": "https://www.tripsandships.com/#angelahughes",
       },
       publisher: {
-        "@id": "https://www.tripsandships.com/#organization"
+        "@id": "https://www.tripsandships.com/#organization",
       },
       mainEntityOfPage: {
         "@id":
-          "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families"
-      }
+          "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families",
+      },
     },
 
     {
@@ -270,24 +276,21 @@ const schemaData = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.tripsandships.com"
+          item: "https://www.tripsandships.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Family & Multi-Generational Travel",
-          item:
-            "https://www.tripsandships.com/family-and-multigenerational-travel"
+          item: "https://www.tripsandships.com/family-and-multigenerational-travel",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name:
-            "Disney Cruises for Grandparents & Multigenerational Families",
-          item:
-            "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families"
-        }
-      ]
+          name: "Disney Cruises for Grandparents & Multigenerational Families",
+          item: "https://www.tripsandships.com/disney-cruises-for-grandparents-and-multigenerational-families",
+        },
+      ],
     },
 
     {
@@ -300,112 +303,100 @@ const schemaData = {
           name: "Are Disney Cruises good for grandparents?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Yes. Disney Cruises offer comfort, convenience, family-friendly experiences, and activities that appeal to all generations."
-          }
+            text: "Yes. Disney Cruises offer comfort, convenience, family-friendly experiences, and activities that appeal to all generations.",
+          },
         },
         {
           "@type": "Question",
           name: "Can grandparents travel alone with grandchildren?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Yes. Many grandparents take Disney Cruises with grandchildren, though travel documentation requirements should be reviewed before departure."
-          }
+            text: "Yes. Many grandparents take Disney Cruises with grandchildren, though travel documentation requirements should be reviewed before departure.",
+          },
         },
         {
           "@type": "Question",
           name: "Which Disney ship is best for multigenerational families?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Disney Wish, Disney Treasure, Disney Fantasy, and Disney Dream are all excellent choices depending on itinerary and family preferences."
-          }
+            text: "Disney Wish, Disney Treasure, Disney Fantasy, and Disney Dream are all excellent choices depending on itinerary and family preferences.",
+          },
         },
         {
           "@type": "Question",
           name: "Are Disney Cruises suitable for older adults?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Absolutely. Ships offer comfortable accommodations, accessible facilities, entertainment, dining, and relaxation opportunities."
-          }
+            text: "Absolutely. Ships offer comfortable accommodations, accessible facilities, entertainment, dining, and relaxation opportunities.",
+          },
         },
         {
           "@type": "Question",
           name: "Do Disney Cruises offer activities for grandparents?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Yes. Adults can enjoy spas, lounges, specialty dining, live entertainment, educational experiences, and scenic cruising."
-          }
+            text: "Yes. Adults can enjoy spas, lounges, specialty dining, live entertainment, educational experiences, and scenic cruising.",
+          },
         },
         {
           "@type": "Question",
           name: "Are connecting rooms available?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Yes. Disney offers connecting staterooms and family-friendly accommodation options."
-          }
+            text: "Yes. Disney offers connecting staterooms and family-friendly accommodation options.",
+          },
         },
         {
           "@type": "Question",
           name: "What destinations are best for families?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "The Caribbean, Bahamas, Alaska, and Mediterranean are among the most popular Disney Cruise destinations."
-          }
+            text: "The Caribbean, Bahamas, Alaska, and Mediterranean are among the most popular Disney Cruise destinations.",
+          },
         },
         {
           "@type": "Question",
           name: "Is Disney Cruise Line worth the cost?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Many families believe the quality of service, entertainment, family experiences, and convenience justify the premium pricing."
-          }
+            text: "Many families believe the quality of service, entertainment, family experiences, and convenience justify the premium pricing.",
+          },
         },
         {
           "@type": "Question",
           name: "Can grandparents and grandchildren spend time together while parents relax?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Absolutely. Disney provides numerous activities that encourage shared family experiences."
-          }
+            text: "Absolutely. Disney provides numerous activities that encourage shared family experiences.",
+          },
         },
         {
           "@type": "Question",
           name: "How far in advance should we book?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Most Disney Cruises should be booked as early as possible, particularly during school holidays and peak travel seasons."
-          }
+            text: "Most Disney Cruises should be booked as early as possible, particularly during school holidays and peak travel seasons.",
+          },
         },
         {
           "@type": "Question",
           name: "Why use a travel advisor?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "A travel advisor helps families select the right ship, itinerary, accommodations, and planning strategy."
-          }
+            text: "A travel advisor helps families select the right ship, itinerary, accommodations, and planning strategy.",
+          },
         },
         {
           "@type": "Question",
           name: "Why choose Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text:
-              "Trips & Ships Luxury Travel helps families create stress-free, memorable Disney Cruise vacations tailored to their unique needs and travel goals."
-          }
-        }
-      ]
-    }
-  ]
+            text: "Trips & Ships Luxury Travel helps families create stress-free, memorable Disney Cruise vacations tailored to their unique needs and travel goals.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 function FAQ() {
@@ -504,7 +495,7 @@ function FAQ() {
 const DisneyCruisesforGrandparents = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("antarctica");
   const currentDest =
     disneyDestinations.find((d) => d.id === activeDest) ||
@@ -878,20 +869,21 @@ const DisneyCruisesforGrandparents = () => {
             <div className="svf-gallery-item svf-gallery-item--large">
               <div className="svf-gallery-image-wrap">
                 <img
-                  // src={CastawayBayImage}
-                  alt="Grandparents and grandchildren enjoying Castaway Cay private island beach on Disney Cruise"
+                  src={DisneyGrandparentExperience1}
+                  alt="Bergen Norway waterfront harbor cityscape with cruise ships and scenic fjord views"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
                     <span className="svf-gallery-badge">
-                      Private Island Escape
+                      Scenic Destinations
                     </span>
-                    <h3>Castaway Cay — Disney's Own Island</h3>
+                    <h3>Explore Beautiful Fjord Cities</h3>
                     <p>
-                      Relax on a pristine Bahamian beach exclusive to Disney
-                      guests, where grandparents unwind at Serenity Bay while
-                      grandchildren splash in family-friendly waters nearby.
+                      Discover breathtaking waterfront destinations like Bergen,
+                      Norway, where colorful harbor views, historic charm, and
+                      spectacular fjord landscapes create unforgettable memories
+                      for every generation.
                     </p>
                   </div>
                 </div>
@@ -901,16 +893,21 @@ const DisneyCruisesforGrandparents = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  // src={CharacterMomentImage}
-                  alt="Grandparent and grandchild sharing a magical character meet-and-greet moment on Disney Cruise"
+                  src={DisneyGrandparentExperience2}
+                  alt="Disney Castaway Cay private beach cabana with family enjoying a relaxing island day"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Character Magic</span>
-                    <h3>Moments Grandchildren Never Forget</h3>
+                    <span className="svf-gallery-badge">
+                      Private Island Retreat
+                    </span>
+                    <h3>Relax in a Beachfront Cabana</h3>
                     <p>
-                      Meeting beloved Disney characters together as a family
+                      Enjoy a peaceful day at Disney Castaway Cay with private
+                      cabanas, pristine beaches, and plenty of space for
+                      families to relax, reconnect, and soak up the island
+                      atmosphere.
                     </p>
                   </div>
                 </div>
@@ -920,18 +917,20 @@ const DisneyCruisesforGrandparents = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  // src={FamilyDiningImage}
-                  alt="Multigenerational family enjoying rotational dining experience onboard Disney Cruise Line"
+                  src={DisneyGrandparentExperience3}
+                  alt="Palo Steakhouse adults-only fine dining restaurant aboard Disney Wish"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Family Dining</span>
-                    <h3>Rotational Dining for Every Generation</h3>
+                    <span className="svf-gallery-badge">
+                      Adults-Only Dining
+                    </span>
+                    <h3>Elegant Evenings at Palo Steakhouse</h3>
                     <p>
-                      Disney's unique rotational dining brings the whole family
-                      together each evening in a new themed restaurant, with
-                      menus designed to delight every age group.
+                      Treat yourself to an exceptional dining experience
+                      featuring premium steaks, refined cuisine, and a
+                      sophisticated atmosphere designed exclusively for adults.
                     </p>
                   </div>
                 </div>
@@ -941,21 +940,19 @@ const DisneyCruisesforGrandparents = () => {
             <div className="svf-gallery-item svf-gallery-item--wide">
               <div className="svf-gallery-image-wrap">
                 <img
-                  // src={BroadwayShowImage}
-                  alt="Family watching Broadway-style entertainment show together on Disney Cruise Line"
+                  src={DisneyGrandparentExperience4}
+                  alt="Disney Wish pool deck featuring the AquaMouse attraction and family recreation areas"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">
-                      World-Class Entertainment
-                    </span>
-                    <h3>Broadway-Style Shows the Whole Family Loves</h3>
+                    <span className="svf-gallery-badge">Onboard Fun</span>
+                    <h3>AquaMouse and Pool Deck Adventures</h3>
                     <p>
-                      Disney's spectacular onboard productions captivate
-                      grandparents, parents, and grandchildren alike —
-                      delivering show-stopping performances that become
-                      cherished shared memories.
+                      From splash-filled pool areas to the exciting AquaMouse
+                      attraction, Disney Wish offers entertainment and
+                      activities that keep children, parents, and grandparents
+                      engaged throughout the voyage.
                     </p>
                   </div>
                 </div>
@@ -1112,6 +1109,7 @@ const DisneyCruisesforGrandparents = () => {
               }}
             >
               <img
+                src={DisneyFamilyExperience1}
                 alt="Personalized Disney Cruise family service"
                 className="dfg-gallery-img"
               />
@@ -1130,6 +1128,7 @@ const DisneyCruisesforGrandparents = () => {
               }}
             >
               <img
+                src={DisneyFamilyExperience2}
                 alt="Families loving Disney Cruise experiences"
                 className="dfg-gallery-img"
               />
@@ -1146,6 +1145,7 @@ const DisneyCruisesforGrandparents = () => {
               }}
             >
               <img
+                src={DisneyFamilyExperience3}
                 alt="Multi-generational family dining onboard"
                 className="dfg-gallery-img"
               />
@@ -1153,22 +1153,6 @@ const DisneyCruisesforGrandparents = () => {
                 <span className="dfg-gallery-caption">
                   Culinary Experiences
                 </span>
-              </div>
-            </div>
-
-            {/* Square — bottom middle */}
-            <div
-              className="dfg-gallery-item dfg-gallery-square"
-              style={{
-                color: "#fff",
-              }}
-            >
-              <img
-                alt="Luxury family suite on Disney Cruise"
-                className="dfg-gallery-img"
-              />
-              <div className="dfg-gallery-overlay">
-                <span className="dfg-gallery-caption">Luxury Staterooms</span>
               </div>
             </div>
 
@@ -1180,6 +1164,7 @@ const DisneyCruisesforGrandparents = () => {
               }}
             >
               <img
+                src={DisneyFamilyExperience4}
                 alt="Universities and multigenerational travel"
                 className="dfg-gallery-img"
               />
@@ -1430,7 +1415,7 @@ const DisneyCruisesforGrandparents = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={FamilySuitesImg}
+                  src={DisneySuite}
                   alt="Disney Cruise family stateroom luxury cabin"
                   className="dmg-media-img"
                 />
@@ -1521,7 +1506,7 @@ const DisneyCruisesforGrandparents = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={FamilyDiningImg}
+                  src={DisneyDinig}
                   alt="Disney Cruise multi-generational family dining"
                   className="dmg-media-img"
                 />
@@ -1547,7 +1532,7 @@ const DisneyCruisesforGrandparents = () => {
               }}
             >
               <img
-                // src={AlumniTravel3}
+                src={DisneyExperience}
                 alt="Grandparents enjoying a Disney Cruise"
                 className="luc-why-img-main"
               />
@@ -1561,7 +1546,7 @@ const DisneyCruisesforGrandparents = () => {
               }}
             >
               <img
-                // src={LoveAlumni2}
+                src={DisneyExperience2}
                 alt="Multigenerational Disney Cruise vacation"
                 className="luc-why-img-accent"
               />
@@ -1845,7 +1830,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
             <p className="azs-video-intro">
               Step aboard the Disney Wish and discover the thoughtful details,
               innovative design, and immersive storytelling that make this ship
-              one of Disney Cruise Line’s most celebrated vessels. 
+              one of Disney Cruise Line’s most celebrated vessels.
             </p>
           </div>
 
@@ -2033,7 +2018,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CTAImage}
+            src={CTAImage}
             alt="Disney Cruise Family Vacation"
             className="Asc-help-bg-img"
           />

@@ -305,13 +305,13 @@ const Nav = () => {
                 Disney Cruises From Port Canaveral
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/why-are-disney-cruises-so-expensive"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Why Are Disney Cruises So Expensive
-              </NavLink> */}
+              </NavLink>
             </div>
           </div>
         </div>
@@ -620,13 +620,13 @@ const Nav = () => {
               Disney Cruises From Port Canaveral
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/why-are-disney-cruises-so-expensive"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Why Are Disney Cruises So Expensive
-            </NavLink> */}
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
