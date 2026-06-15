@@ -37,6 +37,9 @@ import DisneyExperience7 from "../../assets/DisneyEuropeCruises/disney-wish-pool
 import DisneyExperience8 from "../../assets/DisneyEuropeCruises/donald-duck-character-meet-and-greet-disney-cruise-family-vacation.jpg";
 import DisneyExperience9 from "../../assets/DisneyEuropeCruises/family-enjoying-ocean-sunset-view-on-disney-cruise-ship-deck.jpg";
 import Accommodations  from "../../assets/DisneyEuropeCruises/disney-cruise-oceanview-stateroom-porthole-sunset-view-family-cabin.jpg";
+import Mediterranean  from "../../assets/DisneyEuropeCruises/disney-dream-cruise-ship-mediterranean-cannes-france.jpg";
+import GreekIsles  from "../../assets/DisneyEuropeCruises/disney-cruise-mediterranean-greece-itinerary-santorini-island-view.jpg";
+import NorthernEurope  from "../../assets/DisneyEuropeCruises/disney-dream-cruise-ship-mediterranean-cannes-france.jpg";
 import Dining  from "../../assets/DisneyEuropeCruises/disney-wish-palo-steakhouse-oceanview-table-setting-fine-dining.jpg";
 import CTAimage  from "../../assets/DisneyEuropeCruises/kids-playing-at-tropical-beach-near-disney-cruise-ship.jpg";
 
@@ -46,6 +49,7 @@ const europeDestinations = [
     id: "mediterranean",
     badge: "Mediterranean",
     title: "Mediterranean",
+    image: Mediterranean,
     icon: Waves,
     desc: "The Mediterranean is one of Disney's most popular European cruise destinations, offering an ideal balance of culture, history, food, and family-friendly experiences.",
     columns: [
@@ -71,6 +75,7 @@ const europeDestinations = [
     id: "greek-isles",
     badge: "Greek Isles",
     title: "Greek Isles",
+    image: GreekIsles,
     icon: Landmark,
     desc: "The Greek Islands are among Europe's most breathtaking destinations, combining ancient ruins, whitewashed villages, and Mediterranean cuisine with unmatched natural beauty.",
     columns: [
@@ -96,6 +101,7 @@ const europeDestinations = [
     id: "northern-europe",
     badge: "Northern Europe",
     title: "Northern Europe",
+    image: NorthernEurope,
     icon: Mountain,
     desc: "Northern Europe offers a completely different experience — spectacular natural scenery, rich history, and fascinating cultures across Scandinavia, the British Isles, and beyond.",
     columns: [

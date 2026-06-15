@@ -30,6 +30,7 @@ import MultigenerationalDisneyCruise from "../../assets/IsDisneyCruiseReallyForK
 import Alaska from "../../assets/IsDisneyCruiseReallyForKids/disney-wonder-alaska-glacier-cruise-scenic-inside-passage-adventure.jpeg";
 import Bahamas from "../../assets/IsDisneyCruiseReallyForKids/aerial-view-disney-cruise-line-castaway-cay-private-island-bahamas-family-beach.jpg";
 import Mediterranean from "../../assets/IsDisneyCruiseReallyForKids/disney-dream-cruise-ship-mediterranean-cannes-france.jpg";
+import NorthEurope from "../../assets/IsDisneyCruiseReallyForKids/disney-cruise-line-ship-at-bahamas-island-port-ocean-view.jpg";
 
 import PremiumService from "../../assets/IsDisneyCruiseReallyForKids/Disney-Treasure-Periscope-Pub.jpg";
 import Accommodations from "../../assets/IsDisneyCruiseReallyForKids/Disney-Treasure-Funnel-Suite.jpg";
@@ -89,6 +90,7 @@ const disneyDestinations = [
     id: "northern-europe",
     title: "Northern Europe",
     badge: "Northern Europe",
+    image: NorthEurope,
     icon: Landmark,
     // image: NorthernEuropeImage,
     desc: "Northern Europe cruises offer a mix of scenic landscapes, fascinating history, and cultural immersion.",
