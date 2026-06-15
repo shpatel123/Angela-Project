@@ -26,6 +26,21 @@ import AboutImage from "../../assets/AboutAngela.jpeg";
 import HeroImage1 from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-glacier-view-inside-passage.jpg";
 import HeroImage2 from "../../assets/DisneyAlaskavsHollandAmerica/aerial-view-disney-cruise-ship-top-deck-pools-open-ocean.jpg";
 import HeroImage3 from "../../assets/DisneyAlaskavsHollandAmerica/disney-wish-cruise-ship-bahamas-itinerary-sunset-view.jpg";
+import DisneyAlaska from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-inside-passage-glacier-view-ship-stern.jpg";
+import HollandAmerica from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-itinerary-family-watching-ship-mountains.jpg";
+import DisneyAlaskaCruises from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-mickey-mouse-family-character-photo.jpg";
+import HollandAmericaCruises from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-shore-excursion-rainforest-suspension-bridge.jpg";
+import DisneyDining from "../../assets/DisneyAlaskavsHollandAmerica/marceline-market-family-dining-disney-cruise.jpg";
+import HollandDining from "../../assets/DisneyAlaskavsHollandAmerica/worlds-of-marvel-restaurant-spider-man.jpg";
+import GlacierViewing from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-inside-passage-alaska-fjord-glacier-scenery.jpg";
+import DisneyExperience from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-characters-mickey-minnie-donald-daisy.jpg";
+import HollandExperience from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-itinerary-couples-vacation-deck-view.jpg";
+import HollandSuites from "../../assets/DisneyAlaskavsHollandAmerica/disney-treasure-concierge-suite-bedroom.jpg";
+import DisneySuites from "../../assets/DisneyAlaskavsHollandAmerica/disney-treasure-family-stateroom-with-bunk-beds.jpg";
+import LandTours  from "../../assets/DisneyAlaskavsHollandAmerica/disney-wonder-alaska-cruise-mickey-mouse-family-photo.jpg";
+import CTAImage  from "../../assets/DisneyAlaskavsHollandAmerica/disney-wonder-alaska-cruise-glacier-bay-national-park-scenic-voyage.jpeg";
+import DisneyAlaskaLine from "../../assets/DisneyAlaskavsHollandAmerica/disney-wonder-alaska-cruise-through-scenic-fjord-snow-capped-mountains.jpg";
+import HollandAlaskaLine from "../../assets/DisneyAlaskavsHollandAmerica/disney-alaska-cruise-hot-chocolate-promenade-service.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -664,7 +679,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             {/* Left Side: Image */}
             <div className="azs-image-col">
               <img
-                // src={HeroImage1}
+                src={DisneyAlaska}
                 alt="Disney Alaska cruise experience"
                 className="azs-overview-img"
               />
@@ -816,7 +831,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             {/* Left Side: Image */}
             <div className="azs-image-col" style={{ height: "100%" }}>
               <img
-                // src={HollandAmericaImage}
+                src={HollandAmerica}
                 alt="Holland America Alaska cruise experience"
                 className="azs-overview-img"
               />
@@ -847,7 +862,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="eep-comparison-card eep-disney-card">
               <div className="eep-card-img-wrap">
                 <img
-                  // src={DisneyAlaskaEducation}
+                  src={DisneyAlaskaCruises}
                   alt="Disney Alaska educational experiences"
                   className="eep-card-img"
                 />
@@ -899,7 +914,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="eep-comparison-card eep-holland-card">
               <div className="eep-card-img-wrap">
                 <img
-                  // src={HollandAmericaEducation}
+                  src={HollandAmericaCruises}
                   alt="Holland America Alaska educational programs"
                   className="eep-card-img"
                 />
@@ -969,7 +984,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="azs-dining-card azs-seabourn-dining">
               <div className="azs-dining-image-wrap">
                 <img
-                  // src={DisneyDining}
+                  src={DisneyDining}
                   alt="Disney Cruise Dining Experience"
                   className="azs-dining-img"
                 />
@@ -1026,7 +1041,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="azs-dining-card azs-azamara-dining">
               <div className="azs-dining-image-wrap">
                 <img
-                  // src={HollandAmericaDining}
+                  src={HollandDining}
                   alt="Holland America Dining Experience"
                   className="azs-dining-img"
                 />
@@ -1106,7 +1121,7 @@ const DisneyAlaskavsHollandAmerica = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={GlacierViewingImage}
+                    src={GlacierViewing}
                     alt="Alaska glacier viewing experience"
                     className="ugt-component-image"
                   />
@@ -1416,7 +1431,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="ake-card ake-disney-card">
               <div className="ake-card-image-wrap">
                 <img
-                  // src={DisneyAlaska}
+                  src={DisneyExperience}
                   alt="Disney Cruise Line Alaska experience"
                   className="ake-card-img"
                 />
@@ -1481,7 +1496,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="ake-card ake-princess-card">
               <div className="ake-card-image-wrap">
                 <img
-                  // src={HollandAmericaAlaska}
+                  src={HollandExperience}
                   alt="Holland America Alaska expertise"
                   className="ake-card-img"
                 />
@@ -1570,7 +1585,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={DisneyStateroomImage}
+                  src={DisneySuites}
                   alt="Disney Cruise Line family stateroom"
                   className="azs-suites-img"
                 />
@@ -1625,7 +1640,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={HollandAmericaStateroomImage}
+                  src={HollandSuites}
                   alt="Holland America Alaska stateroom"
                   className="azs-suites-img"
                 />
@@ -1848,7 +1863,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="lth-visual-col">
               <div className="lth-image-wrapper">
                 <img
-                  // src={AlaskaCruisetourImage}
+                  src={LandTours}
                   alt="Alaska Land Tours and Cruisetours Wilderness"
                   className="lth-main-image"
                 />
@@ -2097,7 +2112,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  // src={DisneyWinnerImage}
+                  src={DisneyAlaskaLine}
                   alt="Disney Alaska multigenerational family cruise"
                   className="dve-winner-img"
                 />
@@ -2150,7 +2165,7 @@ const DisneyAlaskavsHollandAmerica = () => {
             <div className="dve-winner-card dve-viking-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  // src={HollandAmericaImage}
+                  src={HollandAlaskaLine}
                   alt="Holland America Alaska family exploration"
                   className="dve-winner-img"
                 />
@@ -2491,7 +2506,7 @@ const DisneyAlaskavsHollandAmerica = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={HeroImage1}
+            src={CTAImage}
             alt="Disney Alaska Cruises vs Holland America Alaska Cruises"
             className="Asc-help-bg-img"
           />

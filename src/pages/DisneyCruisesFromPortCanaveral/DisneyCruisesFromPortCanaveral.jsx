@@ -16,7 +16,6 @@ import {
   Ship,
   Anchor,
   Sun,
-  Fish,
   CheckCircle,
   KeyRound,
   Bus,
@@ -26,7 +25,28 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 import { Helmet } from "react-helmet-async";
-import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
+
+import Port from "../../assets/DisneyCruisesFromPortCanaveral/disney-magic-cruise-ship-at-port.jpeg";
+import HeroImage2 from "../../assets/DisneyCruisesFromPortCanaveral/disney-treasure-cruise-ship-bow-view-at-sea-luxury-family-cruise.jpg";
+import HeroImage3 from "../../assets/DisneyCruisesFromPortCanaveral/disney-wish-cruise-ship-sailing-at-sunset.jpg";
+import HeroImage1 from "../../assets/DisneyCruisesFromPortCanaveral/disney-destiny-cruise-line-ship-ocean-sunset.jpg";
+import DisneyCruisePortExp1 from "../../assets/DisneyCruisesFromPortCanaveral/family-building-sandcastles-castaway-cay.jpg";
+import DisneyCruisePortExp2 from "../../assets/DisneyCruisesFromPortCanaveral/marceline-market-family-dining-disney-cruise.jpg";
+import DisneyCruisePortExp3 from "../../assets/DisneyCruisesFromPortCanaveral/disney-cruise-wonderland-cinema-movie-theater.jpg";
+import DisneyCruisePortExp4 from "../../assets/DisneyCruisesFromPortCanaveral/disney-cruise-oceaneer-club-youth-activity-goofy-drawing.jpg";
+import DisneyCruisePortExp5 from "../../assets/DisneyCruisesFromPortCanaveral/disney-cruise-line-promenade-deck-service-family-vacation.jpg";
+import DisneyCruisePortExp6 from "../../assets/DisneyCruisesFromPortCanaveral/disney-cruise-line-family-walking-promenade-deck.jpg";
+import DisneyCruisePortExp7 from "../../assets/DisneyCruisesFromPortCanaveral/disney-alaska-cruise-hot-chocolate-promenade-service.jpg";
+import DisneyCruisePortExp8 from "../../assets/DisneyCruisesFromPortCanaveral/Disney-Treasure-Skipper-Society.jpg";
+import DisneyCruisePortExp9 from "../../assets/DisneyCruisesFromPortCanaveral/romantic-disney-cruise-balcony-ocean-view-couples-vacation-at-sea.jpg";
+import DisneyCruisePortSuite from "../../assets/DisneyCruisesFromPortCanaveral/disney-cruise-line-deluxe-oceanview-stateroom-with-private-verandah.jpg";
+import DisneyCruisePortDining from "../../assets/DisneyCruisesFromPortCanaveral/romantic-fine-dining-on-disney-cruise.jpg";
+import DisneyCruisePortCta from "../../assets/DisneyCruisesFromPortCanaveral/family-beach-day-disney-caribbean-cruise-shore-excursion-vacation.jpeg";
+
+import Bahamas from "../../assets/DisneyCruisesFromPortCanaveral/disney-dream-cruise-ship-cannes-france-mediterranean.jpg";
+import Caribbean from "../../assets/DisneyCruisesFromPortCanaveral/best-disney-cruise-caribbean-family-beach-vacation-excursion.jpg";
+import CastawayCay from "../../assets/DisneyCruisesFromPortCanaveral/disney-castaway-cay-private-island-family-beach-day.jpg";
+import LookoutCay from "../../assets/DisneyCruisesFromPortCanaveral/family-building-sandcastle-castaway-cay.jpg";
 
 // ─── PORT CANAVERAL DESTINATION DATA ─────────────────────────────────────────
 const portCanaveraldestinations = [
@@ -34,6 +54,7 @@ const portCanaveraldestinations = [
     id: "bahamas",
     badge: "Bahamas Cruises",
     title: "Disney Bahamas Cruises from Port Canaveral",
+    image: Bahamas,
     icon: Waves,
     desc: "Bahamas sailings are among the most popular Disney itineraries departing from Port Canaveral. Highlights often include Disney's iconic private island Castaway Cay, the newest Bahamian destination Lookout Cay at Lighthouse Point, and the vibrant port of Nassau.",
     columns: [
@@ -63,6 +84,7 @@ const portCanaveraldestinations = [
     id: "caribbean",
     badge: "Caribbean Cruises",
     title: "Disney Caribbean Cruises from Port Canaveral",
+    image: Caribbean,
     icon: Sun,
     desc: "Port Canaveral is also the gateway to incredible Caribbean adventures. Disney Caribbean itineraries combine tropical beauty with exceptional onboard entertainment, offering guests access to Eastern, Western, and Southern Caribbean destinations.",
     columns: [
@@ -83,6 +105,7 @@ const portCanaveraldestinations = [
     id: "castaway-cay",
     badge: "Castaway Cay",
     title: "Disney's Castaway Cay",
+    image: CastawayCay,
     icon: Anchor,
     desc: "For many guests, Castaway Cay becomes the highlight of the entire cruise. Disney's private island in The Bahamas is reserved exclusively for Disney Cruise Line guests — a place where turquoise waters, white sand, and Disney magic combine for an unforgettable day ashore.",
     columns: [
@@ -114,6 +137,7 @@ const portCanaveraldestinations = [
     id: "lookout-cay",
     badge: "Lookout Cay",
     title: "Lookout Cay at Lighthouse Point",
+    image: LookoutCay,
     icon: Binoculars,
     desc: "Disney's newest Bahamian destination celebrates the culture, traditions, and natural beauty of The Bahamas. Lookout Cay combines authentic island storytelling and vibrant local experiences with the family-friendly hospitality Disney is known for.",
     columns: [
@@ -454,7 +478,7 @@ function FAQ() {
 const DisneyCruisesFromPortCanaveral = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("port-canaveral");
   const currentDest =
     portCanaveraldestinations.find((d) => d.id === activeDest) ||
@@ -613,6 +637,7 @@ const DisneyCruisesFromPortCanaveral = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
+                    src={Port}
                     alt="Port Canaveral Florida cruise terminal"
                     className="ugt-component-image"
                   />
@@ -892,6 +917,7 @@ const DisneyCruisesFromPortCanaveral = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
+                    src={DisneyCruisePortExp1}
                     alt="Disney Cruise from Port Canaveral family sailing"
                     className="dac-families-img"
                   />
@@ -901,6 +927,7 @@ const DisneyCruisesFromPortCanaveral = () => {
                 </div>
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
+                    src={DisneyCruisePortExp2}
                     alt="Family enjoying onboard Disney entertainment from Port Canaveral"
                     className="dac-families-img"
                   />
@@ -940,12 +967,13 @@ const DisneyCruisesFromPortCanaveral = () => {
               style={{ color: "#fff" }}
             >
               <img
-                alt="Port Canaveral Disney Cruise Line departure Florida Space Coast"
+                src={DisneyCruisePortExp3}
+                alt="Disney Cruise Wonderland Cinema movie theater"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
                 <span className="dfg-gallery-caption">
-                  Disney's Florida Homeport
+                  Wonderland Cinema Experience
                 </span>
               </div>
             </div>
@@ -956,12 +984,13 @@ const DisneyCruisesFromPortCanaveral = () => {
               style={{ color: "#fff" }}
             >
               <img
-                alt="Castaway Cay Disney private island from Port Canaveral"
+                src={DisneyCruisePortExp4}
+                alt="Disney Oceaneer Club youth activity with Goofy drawing"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
                 <span className="dfg-gallery-caption">
-                  Disney's Private Island Paradise
+                  Oceaneer Club Kids Adventures
                 </span>
               </div>
             </div>
@@ -972,12 +1001,13 @@ const DisneyCruisesFromPortCanaveral = () => {
               style={{ color: "#fff" }}
             >
               <img
-                alt="Caribbean cruise from Port Canaveral Disney Cruise Line"
+                src={DisneyCruisePortExp5}
+                alt="Disney Cruise Line promenade deck service during a family vacation"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
                 <span className="dfg-gallery-caption">
-                  Tropical Caribbean Adventures
+                  Exceptional Service at Sea
                 </span>
               </div>
             </div>
@@ -988,12 +1018,13 @@ const DisneyCruisesFromPortCanaveral = () => {
               style={{ color: "#fff" }}
             >
               <img
-                alt="Walt Disney World and Disney Cruise combination vacation from Port Canaveral"
+                src={DisneyCruisePortExp6}
+                alt="Family walking along the Disney Cruise Line promenade deck"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
                 <span className="dfg-gallery-caption">
-                  The Ultimate Disney Vacation
+                  Family Moments on Deck
                 </span>
               </div>
             </div>
@@ -1155,6 +1186,7 @@ const DisneyCruisesFromPortCanaveral = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                  src={DisneyCruisePortSuite}
                   alt="Disney Cruise from Port Canaveral family stateroom accommodations"
                   className="dmg-media-img"
                 />
@@ -1220,6 +1252,7 @@ const DisneyCruisesFromPortCanaveral = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                  src={DisneyCruisePortDining}
                   alt="Dining on a Disney Cruise from Port Canaveral"
                   className="dmg-media-img"
                 />
@@ -1239,6 +1272,7 @@ const DisneyCruisesFromPortCanaveral = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
+                src={DisneyCruisePortExp7}
                 alt="Grandparents and grandchildren enjoying a Disney Cruise from Port Canaveral"
                 className="luc-why-img-main"
               />
@@ -1246,6 +1280,7 @@ const DisneyCruisesFromPortCanaveral = () => {
             </div>
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
+                src={DisneyCruisePortExp8}
                 alt="Disney multigenerational family cruise vacation from Port Canaveral"
                 className="luc-why-img-accent"
               />
@@ -1413,6 +1448,7 @@ const DisneyCruisesFromPortCanaveral = () => {
           >
             <div className="adg-content-card-side">
               <img
+                src={DisneyCruisePortExp9}
                 alt="Disney Cruise from Port Canaveral family experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1646,6 +1682,7 @@ const DisneyCruisesFromPortCanaveral = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
+            src={DisneyCruisePortCta}
             alt="Disney Cruise from Port Canaveral"
             className="Asc-help-bg-img"
           />

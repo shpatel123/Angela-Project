@@ -16,19 +16,28 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
-// import HeroImage1 from "../../assets/MultiGenerationalAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg.jpg";
-// import HeroImage2 from "../../assets/MultiGenerationalAlumniTravel/historic-university-campus-entrance-academic-landmark-education.jpg";
-// import HeroImage3 from "../../assets/MultiGenerationalAlumniTravel/alumni-university-campus-community-aerial-view.jpg";
-// import CTAImage from "../../assets/MultiGenerationalAlumniTravel/Partner-With-Travel.jpeg";
-// import AlumniTravel from "../../assets/MultiGenerationalAlumniTravel/Luxury-Travel-Expertise.jpeg";
-// import AlumniTravel2 from "../../assets/MultiGenerationalAlumniTravel/luxury-travelers-exploring-european-village-cultural-vacation.jpg";
-// import AlumniTravel3 from "../../assets/MultiGenerationalAlumniTravel/Travelers.jpeg";
-// import Personalized from "../../assets/MultiGenerationalAlumniTravel/Personalized-Service.jpeg";
-// import LoveAlumni from "../../assets/MultiGenerationalAlumniTravel/Love_Alumni_Travel.jpeg";
-// import LoveAlumni2 from "../../assets/MultiGenerationalAlumniTravel/Universities.jpeg";
+import HeroImage1 from "../../assets/IsDisneyCruiseReallyForKids/disney-cruise-line-vacation-packages-special-offers.jpg";
+import HeroImage2 from "../../assets/IsDisneyCruiseReallyForKids/disney-dream-cruise-ship-ocean-sunset-aerial-view.jpg";
+import HeroImage3 from "../../assets/IsDisneyCruiseReallyForKids/disney-cruise-character-walk-donald-duck-promenade-deck.jpg";
+import FamilyVaction from "../../assets/IsDisneyCruiseReallyForKids/disney-wish-luna-lounge-circular-stage-architecture.jpg";
 
-// import FamilySuitesImg from "../../assets/ExploraJourneysCruises/Luxury-Oceanfront-Suites.webp";
-// import FamilyDiningImg from "../../assets/AzamaraDiningGuide/AzamaraWithFamiles.webp";
+import DisneyCruiseLineExperiences1 from "../../assets/IsDisneyCruiseReallyForKids/accessible-disney-cruise-experience-for-families-on-deck.jpeg";
+import DisneyCruiseLineExperiences2 from "../../assets/IsDisneyCruiseReallyForKids/disney-cruise-royal-suite-multigenerational-family-luxury-travel.jpg";
+import DisneyCruiseLineExperiences3 from "../../assets/IsDisneyCruiseReallyForKids/disney-wish-oceaneer-club-kids-space-interactive-slide.jpg";
+import DisneyCruiseLineExperiences4 from "../../assets/IsDisneyCruiseReallyForKids/disney-wish-sarabi-lounge-interior-modern-wood-architecture.jpg";
+import GrandparentsDisneyCruise from "../../assets/IsDisneyCruiseReallyForKids/disney-wish-the-rose-adults-only-lounge-oceanview.jpg";
+import MultigenerationalDisneyCruise from "../../assets/IsDisneyCruiseReallyForKids/family-enjoying-pirate-night-deck-party-fireworks-cruise-ship.jpg";
+import Alaska from "../../assets/IsDisneyCruiseReallyForKids/disney-wonder-alaska-glacier-cruise-scenic-inside-passage-adventure.jpeg";
+import Bahamas from "../../assets/IsDisneyCruiseReallyForKids/aerial-view-disney-cruise-line-castaway-cay-private-island-bahamas-family-beach.jpg";
+import Mediterranean from "../../assets/IsDisneyCruiseReallyForKids/disney-dream-cruise-ship-mediterranean-cannes-france.jpg";
+
+import PremiumService from "../../assets/IsDisneyCruiseReallyForKids/Disney-Treasure-Periscope-Pub.jpg";
+import Accommodations from "../../assets/IsDisneyCruiseReallyForKids/Disney-Treasure-Funnel-Suite.jpg";
+import SpaciousFamilySuites from "../../assets/IsDisneyCruiseReallyForKids/disney-cruise-line-deluxe-oceanview-stateroom-with-private-verandah.jpg";
+import FineDining from "../../assets/IsDisneyCruiseReallyForKids/disney-wish-oceaneer-club-mickey-minnie-captains-deck-kids.jpg";
+import PersonalizedExperiences from "../../assets/IsDisneyCruiseReallyForKids/romantic-couple-cruise-ship-cocktails-adult-vacation-onboard-experience.jpg";
+import HighAttention from "../../assets/IsDisneyCruiseReallyForKids/disney-wish-sarabi-lounge-family-entertainment-venue-stage.jpg";
+import CTAImage from "../../assets/IsDisneyCruiseReallyForKids/disney-dream-cruise-ship-aerial-ocean-crossing-family-cruise-vacation.jpg";
 
 import { Helmet } from "react-helmet-async";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
@@ -39,7 +48,7 @@ const disneyDestinations = [
     title: "Alaska",
     badge: "Alaska",
     icon: Mountain,
-    // image: AlaskaImage,
+    image: Alaska,
     desc: "Alaska cruises combine breathtaking scenery with enriching experiences that appeal to travelers of all ages.",
     columns: [
       {
@@ -60,7 +69,7 @@ const disneyDestinations = [
     title: "Mediterranean",
     badge: "Mediterranean",
     icon: Landmark,
-    // image: MediterraneanImage,
+    image: Mediterranean,
     desc: "Mediterranean itineraries combine family adventure with cultural discovery across some of the world's most iconic destinations.",
     columns: [
       {
@@ -98,7 +107,7 @@ const disneyDestinations = [
     title: "Caribbean & Bahamas",
     badge: "Caribbean & Bahamas",
     icon: Palmtree,
-    // image: CaribbeanImage,
+    image: Bahamas,
     desc: "These popular itineraries are perfect for relaxation, sunshine, and family fun.",
     columns: [
       {
@@ -419,7 +428,7 @@ function FAQ() {
 const IsDisneyCruiseReallyForKids = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("antarctica");
   const currentDest =
     disneyDestinations.find((d) => d.id === activeDest) ||
@@ -432,42 +441,42 @@ const IsDisneyCruiseReallyForKids = () => {
   const luxurySlides = [
     {
       title: "Premium Service",
-      //   image: AlumniTravel,
+        image: PremiumService,
       description:
         "Experience the legendary Disney hospitality, where every detail is meticulously handled with warmth and absolute professionalism.",
       number: "01",
     },
     {
       title: "Concierge-Level Accommodations",
-      //   image: LoveAlumni,
+        image: Accommodations,
       description:
         "Enjoy private lounges, exclusive sun decks, pre-arrival planning services, and priority boarding that rival high-end luxury resorts.",
       number: "02",
     },
     {
       title: "Spacious Family Suites",
-      //   image: FamilySuitesImg,
+        image: SpaciousFamilySuites,
       description:
         "Meticulously designed staterooms featuring separate split bathrooms, ample storage, and upscale finishes tailored for multi-generational comfort.",
       number: "03",
     },
     {
       title: "Fine Dining",
-      //   image: FamilyDiningImg,
+        image: FineDining,
       description:
         "Exquisite adult-exclusive culinary venues like Palo and Remy, featuring menus curated by Michelin-starred chefs for a sophisticated dining experience.",
       number: "04",
     },
     {
       title: "Personalized Experiences",
-      //   image: Personalized,
+        image: PersonalizedExperiences,
       description:
         "From customized onboard celebrations to bespoke private shore adventures, Disney tailors each moment to your family's unique preferences.",
       number: "05",
     },
     {
       title: "High Crew-to-Guest Attention",
-      //   image: AlumniTravel3,
+        image: HighAttention,
       description:
         "An impressive crew-to-guest ratio ensures highly prompt, attentive, and personalized care for every traveler throughout the voyage.",
       number: "06",
@@ -583,7 +592,9 @@ const IsDisneyCruiseReallyForKids = () => {
         <div className="Asc-container">
           {/* HEADER */}
           <div className="ugt-components-header">
-            <h2 className="adg-c-h2">Where the Misconception Comes From</h2>
+            <h2 className="adg-c-h2">
+              Why Many Travelers Think Disney Cruises Are <br /> Only for Kids
+            </h2>
 
             <div className="adg-c-accent-line"></div>
           </div>
@@ -595,7 +606,7 @@ const IsDisneyCruiseReallyForKids = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={DisneyFamilyImage}
+                    src={FamilyVaction}
                     alt="Disney Cruise family vacation"
                     className="ugt-component-image"
                   />
@@ -839,49 +850,50 @@ const IsDisneyCruiseReallyForKids = () => {
             {/* Large featured image — top left */}
             <div
               className="dfg-gallery-item dfg-gallery-large"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Adult-only Quiet Cove Pool deck on a Disney Cruise ship"
+                src={DisneyCruiseLineExperiences1}
+                alt="Accessible Disney Cruise experience for families on deck"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
-                <span className="dfg-gallery-caption">Adult-Only Retreats</span>
+                <span className="dfg-gallery-caption">
+                  Accessible Family Experiences
+                </span>
               </div>
             </div>
 
             {/* Tall image — top right */}
             <div
               className="dfg-gallery-item dfg-gallery-tall"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Couples enjoying fine dining at Palo restaurant on Disney Cruise"
+                src={DisneyCruiseLineExperiences2}
+                alt="Disney Cruise Royal Suite for multigenerational family luxury travel"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
-                <span className="dfg-gallery-caption">Fine Dining at Palo</span>
+                <span className="dfg-gallery-caption">
+                  Luxury Family Suites
+                </span>
               </div>
             </div>
 
             {/* Wide image — bottom left */}
             <div
               className="dfg-gallery-item dfg-gallery-wide"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Multigenerational family enjoying Broadway-style show onboard Disney Cruise"
+                src={DisneyCruiseLineExperiences3}
+                alt="Disney Wish Oceaneer Club interactive play space for kids"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
                 <span className="dfg-gallery-caption">
-                  Broadway-Style Entertainment
+                  Kids' Adventure Clubs
                 </span>
               </div>
             </div>
@@ -889,16 +901,17 @@ const IsDisneyCruiseReallyForKids = () => {
             {/* Square — bottom right */}
             <div
               className="dfg-gallery-item dfg-gallery-square"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Family exploring Castaway Cay private island on Disney Cruise"
+                src={DisneyCruiseLineExperiences4}
+                alt="Disney Wish Sarabi Lounge with modern interior design"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
-                <span className="dfg-gallery-caption">Castaway Cay Island</span>
+                <span className="dfg-gallery-caption">
+                  Adult Lounges & Entertainment
+                </span>
               </div>
             </div>
           </div>
@@ -1156,7 +1169,7 @@ const IsDisneyCruiseReallyForKids = () => {
               }}
             >
               <img
-                // src={GrandparentsDisneyCruise}
+                src={GrandparentsDisneyCruise}
                 alt="Grandparents enjoying a Disney Cruise"
                 className="luc-why-img-main"
               />
@@ -1170,7 +1183,7 @@ const IsDisneyCruiseReallyForKids = () => {
               }}
             >
               <img
-                // src={MultigenerationalDisneyCruise}
+                src={MultigenerationalDisneyCruise}
                 alt="Multigenerational Disney Cruise vacation"
                 className="luc-why-img-accent"
               />
@@ -1502,7 +1515,7 @@ const IsDisneyCruiseReallyForKids = () => {
               Escape to the beauty of Disney Castaway Cay, Disney Cruise Line's
               private island paradise in The Bahamas. Enjoy breathtaking ocean
               views, pristine beaches, and the peaceful atmosphere that makes
-              this destination a guest favorite. 
+              this destination a guest favorite.
             </p>
           </div>
 
@@ -1697,7 +1710,7 @@ const IsDisneyCruiseReallyForKids = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CTAImage}
+            src={CTAImage}
             alt="Disney Cruise Line Experience"
             className="Asc-help-bg-img"
           />

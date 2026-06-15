@@ -23,14 +23,29 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 import { Helmet } from "react-helmet-async";
-import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
+
+import HeroImage1 from "../../assets/DisneyEuropeCruises/disney-castaway-cay-private-island-aerial-drone-view-cruise-ship.jpg";
+import HeroImage2 from "../../assets/DisneyEuropeCruises/disney-wish-grand-hall-atrium-balcony-view-live-entertainment.jpg";
+import HeroImage3 from "../../assets/DisneyEuropeCruises/disney-cruise-quiet-cove-pool-deck-adults-only-relaxation.jpg";
+import DisneyExperience1 from "../../assets/DisneyEuropeCruises/disney-cruise-stateroom-cabin-interior-toddler-interactive-features.jpg";
+import DisneyExperience2 from "../../assets/DisneyEuropeCruises/disney-wish-palo-steakhouse-oceanview-table-setting.jpg";
+import DisneyExperience3 from "../../assets/DisneyEuropeCruises/children-playing-at-disney-cruise-pool-family-cruise-vacation-fun.jpg";
+import DisneyExperience4 from "../../assets/DisneyEuropeCruises/disney-cruise-aquaduck-water-coaster-family-pool-deck-fun.jpg";
+import DisneyExperience5 from "../../assets/DisneyEuropeCruises/disney-cruise-stateroom-balcony-oceanview-sunset.jpg";
+import DisneyExperience6 from "../../assets/DisneyEuropeCruises/disney-magic-cruise-ship-at-port.jpeg";
+import DisneyExperience7 from "../../assets/DisneyEuropeCruises/disney-wish-pool-deck-and-aquamouse-attraction.jpg";
+import DisneyExperience8 from "../../assets/DisneyEuropeCruises/donald-duck-character-meet-and-greet-disney-cruise-family-vacation.jpg";
+import DisneyExperience9 from "../../assets/DisneyEuropeCruises/family-enjoying-ocean-sunset-view-on-disney-cruise-ship-deck.jpg";
+import Accommodations  from "../../assets/DisneyEuropeCruises/disney-cruise-oceanview-stateroom-porthole-sunset-view-family-cabin.jpg";
+import Dining  from "../../assets/DisneyEuropeCruises/disney-wish-palo-steakhouse-oceanview-table-setting-fine-dining.jpg";
+import CTAimage  from "../../assets/DisneyEuropeCruises/kids-playing-at-tropical-beach-near-disney-cruise-ship.jpg";
 
 // ─── DESTINATION DATA ────────────────────────────────────────────────────────
 const europeDestinations = [
   {
     id: "mediterranean",
     badge: "Mediterranean",
-    title: "Mediterranean Cruises",
+    title: "Mediterranean",
     icon: Waves,
     desc: "The Mediterranean is one of Disney's most popular European cruise destinations, offering an ideal balance of culture, history, food, and family-friendly experiences.",
     columns: [
@@ -55,7 +70,7 @@ const europeDestinations = [
   {
     id: "greek-isles",
     badge: "Greek Isles",
-    title: "Greek Isles Cruises",
+    title: "Greek Isles",
     icon: Landmark,
     desc: "The Greek Islands are among Europe's most breathtaking destinations, combining ancient ruins, whitewashed villages, and Mediterranean cuisine with unmatched natural beauty.",
     columns: [
@@ -80,7 +95,7 @@ const europeDestinations = [
   {
     id: "northern-europe",
     badge: "Northern Europe",
-    title: "Northern Europe Cruises",
+    title: "Northern Europe",
     icon: Mountain,
     desc: "Northern Europe offers a completely different experience — spectacular natural scenery, rich history, and fascinating cultures across Scandinavia, the British Isles, and beyond.",
     columns: [
@@ -443,7 +458,7 @@ function FAQ() {
 const DisneyEuropeCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("mediterranean");
   const currentDest =
     europeDestinations.find((d) => d.id === activeDest) ||
@@ -593,9 +608,7 @@ const DisneyEuropeCruises = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">
-              Explore Europe with Disney Cruise Line
-            </h2>
+            <h2 className="azs-h2">Explore Europe with Disney Cruise Line</h2>
             <div className="azs-accent-line"></div>
             <p className="azs-video-intro">
               Experience the iconic landmarks, breathtaking coastlines, and rich
@@ -781,11 +794,12 @@ const DisneyEuropeCruises = () => {
             <div className="eep-comparison-card eep-disney-card">
               <div className="eep-card-img-wrap">
                 <img
+                  src={DisneyExperience1}
                   alt="Educational adventures on a Disney Europe Cruise"
                   className="eep-card-img"
                 />
                 <span className="eep-card-badge eep-holland-badge">
-                  Educational Adventures
+                  Young Explorer Adventures
                 </span>
               </div>
               <div className="eep-card-body">
@@ -829,6 +843,7 @@ const DisneyEuropeCruises = () => {
             <div className="eep-comparison-card eep-holland-card">
               <div className="eep-card-img-wrap">
                 <img
+                  src={DisneyExperience2}
                   alt="Families enjoying a Disney Europe Cruise together"
                   className="eep-card-img"
                 />
@@ -887,8 +902,6 @@ const DisneyEuropeCruises = () => {
         <div className="dac-ent-container">
           <div className="dac-ent-grid">
             <div className="dac-ent-left">
-            
-
               <h2 className="dac-ent-title">Onboard Disney Entertainment</h2>
 
               <div className="dac-ent-accent"></div>
@@ -970,17 +983,19 @@ const DisneyEuropeCruises = () => {
             <div className="svf-gallery-item svf-gallery-item--large">
               <div className="svf-gallery-image-wrap">
                 <img
-                  alt="Mediterranean coastline viewed from a Disney Europe Cruise ship"
+                  src={DisneyExperience3}
+                  alt="Children enjoying the Disney Cruise pool during a family vacation"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Mediterranean</span>
-                    <h3>Sail the Iconic Mediterranean Coast</h3>
+                    <span className="svf-gallery-badge">Family Pool Fun</span>
+                    <h3>Endless Fun for Kids and Families</h3>
                     <p>
-                      Glide past ancient coastlines and into legendary ports as
-                      the Mediterranean's beauty unfolds around you — a backdrop
-                      that every generation will treasure.
+                      From splash zones and family pools to organized
+                      activities, Disney Cruise Line creates unforgettable
+                      moments where children can play while parents relax and
+                      enjoy quality time together.
                     </p>
                   </div>
                 </div>
@@ -990,16 +1005,20 @@ const DisneyEuropeCruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  alt="Santorini Greece whitewashed village on Disney Greek Isles cruise"
+                  src={DisneyExperience4}
+                  alt="Guests riding the AquaDuck water coaster aboard Disney Cruise Line"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Greek Isles</span>
-                    <h3>Santorini's Legendary White & Blue</h3>
+                    <span className="svf-gallery-badge">
+                      AquaDuck Adventure
+                    </span>
+                    <h3>Thrilling Water Coaster Excitement</h3>
                     <p>
-                      Wander the iconic whitewashed villages of Santorini — a
-                      scene that feels almost too beautiful to be real.
+                      Experience the famous AquaDuck, Disney's signature onboard
+                      water coaster that delivers twists, turns, and spectacular
+                      ocean views high above the ship's deck.
                     </p>
                   </div>
                 </div>
@@ -1009,17 +1028,20 @@ const DisneyEuropeCruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  alt="Norwegian fjord scenery on a Disney Northern Europe cruise"
+                  src={DisneyExperience5}
+                  alt="Disney Cruise stateroom balcony overlooking the ocean at sunset"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Northern Europe</span>
-                    <h3>Norway's Spectacular Fjords</h3>
+                    <span className="svf-gallery-badge">
+                      Oceanview Stateroom
+                    </span>
+                    <h3>Relax with Stunning Balcony Views</h3>
                     <p>
-                      Cruise through towering fjords and breathtaking
-                      Scandinavian landscapes that leave every traveler
-                      awestruck.
+                      Unwind in spacious accommodations designed for families
+                      while enjoying breathtaking ocean sunsets from the comfort
+                      of your private balcony.
                     </p>
                   </div>
                 </div>
@@ -1029,19 +1051,19 @@ const DisneyEuropeCruises = () => {
             <div className="svf-gallery-item svf-gallery-item--wide">
               <div className="svf-gallery-image-wrap">
                 <img
-                  //   src={FlyFishingImg}
-                  alt="Multigenerational family fly fishing together in an Alaskan mountain river during a Disney Alaska Cruise excursion"
+                  src={DisneyExperience6}
+                  alt="Disney Magic cruise ship docked at a European port"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">
-                      Barcelona Shore Excursion
-                    </span>
-                    <h3>Barcelona — Art, Architecture & Energy</h3>
+                    <span className="svf-gallery-badge">Disney Magic</span>
+                    <h3>Explore Europe Aboard Disney Magic</h3>
                     <p>
-                      Explore Gaudí's masterpieces and the vibrant culture of
-                      one of Europe's most captivating cities.
+                      Sail to Europe's most iconic destinations aboard Disney
+                      Magic, combining world-class entertainment, exceptional
+                      service, and unforgettable adventures both onboard and
+                      ashore.
                     </p>
                   </div>
                 </div>
@@ -1210,6 +1232,7 @@ const DisneyEuropeCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                src={Accommodations}
                   alt="Disney Europe Cruise family stateroom accommodations"
                   className="dmg-media-img"
                 />
@@ -1229,7 +1252,6 @@ const DisneyEuropeCruises = () => {
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
               <div className="dmg-info-header">
-               
                 <h2 className="dmg-info-title">
                   Dining on a Disney Europe Cruise
                 </h2>
@@ -1276,6 +1298,7 @@ const DisneyEuropeCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                src={Dining}
                   alt="Dining on a Disney Europe Cruise"
                   className="dmg-media-img"
                 />
@@ -1360,6 +1383,7 @@ const DisneyEuropeCruises = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
+              src={DisneyExperience7}
                 alt="Grandparents and grandchildren on a Disney Europe Cruise"
                 className="luc-why-img-main"
               />
@@ -1367,6 +1391,7 @@ const DisneyEuropeCruises = () => {
             </div>
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
+                  src={DisneyExperience8}
                 alt="Disney Europe multigenerational family vacation"
                 className="luc-why-img-accent"
               />
@@ -1433,7 +1458,9 @@ const DisneyEuropeCruises = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Discover the Disney Cruise Line Experience</h2>
+            <h2 className="azs-h2">
+              Discover the Disney Cruise Line Experience
+            </h2>
 
             <div className="azs-accent-line"></div>
 
@@ -1471,6 +1498,7 @@ const DisneyEuropeCruises = () => {
           >
             <div className="adg-content-card-side">
               <img
+              src={DisneyExperience9}
                 alt="Disney Europe Cruise family experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1709,7 +1737,7 @@ const DisneyEuropeCruises = () => {
       {/* ══ FINAL THOUGHTS / CTA ══════════════════════════════════════════════ */}
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
-          <img alt="Disney Europe Cruise" className="Asc-help-bg-img" />
+          <img src={CTAimage} alt="Disney Europe Cruise" className="Asc-help-bg-img" />
           <div className="Asc-help-overlay"></div>
         </div>
         <div className="Asc-container">

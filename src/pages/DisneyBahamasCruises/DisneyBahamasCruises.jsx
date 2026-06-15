@@ -21,7 +21,28 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 import { Helmet } from "react-helmet-async";
-import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
+
+import HeroImage1 from "../../assets/DisneyBahamasCruises/disney-wish-cruise-ship-aerial-view.jpg";
+import HeroImage2 from "../../assets/DisneyBahamasCruises/best-disney-cruise-caribbean-family-beach-vacation-excursion.jpg";
+import HeroImage3 from "../../assets/DisneyBahamasCruises/aerial-view-disney-castaway-cay-private-island-bahamas-cruise-destination.jpeg";
+import DisneyBahamasExp1 from "../../assets/DisneyBahamasCruises/father-and-daughter-disney-cruise-deck-snacks-family-vacation-fun.jpg";
+import DisneyBahamasExp2 from "../../assets/DisneyBahamasCruises/romantic-couple-cruise-ship-cocktails-adult-vacation-onboard-experience.jpg";
+import DisneyBahamasExp3 from "../../assets/DisneyBahamasCruises/children-meeting-olaf-at-frozen-themed-disney-cruise-event.jpg";
+import DisneyBahamasExp4 from "../../assets/DisneyBahamasCruises/adults-only-pool-lounge-area-on-disney-cruise-ship.jpg";
+import DisneyBahamasExp5 from "../../assets/DisneyBahamasCruises/disney-wish-keg-compass-pub-sports-bar-counter.jpg";
+import DisneyBahamasExp6 from "../../assets/DisneyBahamasCruises/disney-wish-the-rose-lounge-adults-only-luxury-booths.jpg";
+import DisneyBahamasExp7 from "../../assets/DisneyBahamasCruises/kids-enjoying-ocean-views-from-disney-cruise-deck.jpg";
+import DisneyBahamasExp8 from "../../assets/DisneyBahamasCruises/kids-playing-on-caribbean-cruise-beach-disney-family-vacation.jpeg";
+import DisneyBahamasExp9 from "../../assets/DisneyBahamasCruises/mother-and-daughter-bodyboarding-disney-caribbean-beach-cruise-excursion.jpeg";
+import DisneyBahamasSuite from "../../assets/DisneyBahamasCruises/disney-wish-deluxe-oceanview-stateroom-porthole-cabin-layout.jpg";
+import DisneyBahamasDining from "../../assets/DisneyBahamasCruises/family-breakfast-on-cruise-ship-outdoor-deck-ocean-vacation-dining.jpg";
+import DisneyBahamasCta from "../../assets/DisneyBahamasCruises/mother-and-son-tropical-beach-day-disney-cruise-island-getaway.jpg";
+
+import DisneyCastawayCay from "../../assets/DisneyBahamasCruises/disney-castaway-cay-private-beach-cabana-rental-family.jpg";
+import Lookout from "../../assets/DisneyBahamasCruises/disney-caribbean-family-beach-vacation-cruise-line-island-escape.jpg";
+import Nassau from "../../assets/DisneyBahamasCruises/disney-cruise-ship-docked-at-castaway-cay-aerial-view.jpg";
+import ShortBahamas from "../../assets/DisneyBahamasCruises/family-walking-on-tropical-beach-near-cruise-ship-family-vacation.jpeg";
+import ExtendedBahamas from "../../assets/DisneyBahamasCruises/family-walking-on-disney-castaway-cay-private-island-beach-adventure.jpeg";
 
 // ─── DESTINATION DATA ────────────────────────────────────────────────────────
 const bahamasDestinations = [
@@ -29,6 +50,7 @@ const bahamasDestinations = [
     id: "castaway-cay",
     badge: "Castaway Cay",
     title: "Disney's Castaway Cay",
+    image: DisneyCastawayCay,
     icon: Anchor,
     desc: "Disney's private island in The Bahamas is reserved exclusively for Disney Cruise Line guests and has become one of the most beloved destinations in cruising — a place where turquoise waters, white sand, and Disney magic combine for an unforgettable day.",
     columns: [
@@ -60,6 +82,7 @@ const bahamasDestinations = [
     id: "lookout-cay",
     badge: "Lookout Cay",
     title: "Lookout Cay at Lighthouse Point",
+    image: Lookout,
     icon: Binoculars,
     desc: "Disney's newest Bahamian destination celebrates the culture, traditions, and natural beauty of The Bahamas, offering guests a unique blend of Disney hospitality and authentic Bahamian island experiences.",
     columns: [
@@ -82,6 +105,7 @@ const bahamasDestinations = [
     id: "nassau",
     badge: "Nassau",
     title: "Nassau, Bahamas",
+    image: Nassau,
     icon: Globe,
     desc: "Nassau is one of the most frequently visited ports in The Bahamas, offering a rich mix of history, culture, tropical beaches, and family-friendly adventures for guests of all ages.",
     columns: [
@@ -104,6 +128,7 @@ const bahamasDestinations = [
     id: "short-cruises",
     badge: "Short Cruises",
     title: "Short Bahamas Cruises",
+    image: ShortBahamas,
     icon: Ship,
     desc: "Disney's shorter Bahamas itineraries are perfect for first-time cruisers, families seeking weekend getaways, and travelers celebrating special occasions — delivering Disney magic without requiring extended time away.",
     columns: [
@@ -129,6 +154,7 @@ const bahamasDestinations = [
     id: "extended-cruises",
     badge: "Extended Cruises",
     title: "Extended Bahamas Cruises",
+    image: ExtendedBahamas,
     icon: Sun,
     desc: "Longer Bahamas itineraries offer more time onboard, additional island destinations, expanded entertainment opportunities, and a more immersive Disney vacation experience for families seeking deeper relaxation.",
     columns: [
@@ -366,7 +392,7 @@ function FAQ() {
 const DisneyBahamasCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("castaway-cay");
   const currentDest =
     bahamasDestinations.find((d) => d.id === activeDest) ||
@@ -754,6 +780,7 @@ const DisneyBahamasCruises = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
+                  src={DisneyBahamasExp1}
                     alt="Disney Bahamas Cruise Family Sailing"
                     className="dac-families-img"
                   />
@@ -763,6 +790,7 @@ const DisneyBahamasCruises = () => {
                 </div>
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
+                    src={DisneyBahamasExp2}
                     alt="Family enjoying onboard dining and time together"
                     className="dac-families-img"
                   />
@@ -868,6 +896,7 @@ const DisneyBahamasCruises = () => {
             <div className="svf-gallery-item svf-gallery-item--large">
               <div className="svf-gallery-image-wrap">
                 <img
+                src={DisneyBahamasExp3}
                   alt="Castaway Cay private island beach on a Disney Bahamas Cruise"
                   className="svf-gallery-image"
                 />
@@ -888,6 +917,7 @@ const DisneyBahamasCruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
+                   src={DisneyBahamasExp4}
                   alt="Lookout Cay at Lighthouse Point Bahamian cultural experience"
                   className="svf-gallery-image"
                 />
@@ -907,6 +937,7 @@ const DisneyBahamasCruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
+                   src={DisneyBahamasExp5}
                   alt="Nassau Bahamas historic and tropical experience on a Disney cruise"
                   className="svf-gallery-image"
                 />
@@ -926,6 +957,7 @@ const DisneyBahamasCruises = () => {
             <div className="svf-gallery-item svf-gallery-item--wide">
               <div className="svf-gallery-image-wrap">
                 <img
+                   src={DisneyBahamasExp6}
                   alt="Family snorkeling and water adventures on a Disney Bahamas Cruise"
                   className="svf-gallery-image"
                 />
@@ -1106,6 +1138,7 @@ const DisneyBahamasCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                src={DisneyBahamasSuite}
                   alt="Disney Bahamas Cruise family stateroom accommodations"
                   className="dmg-media-img"
                 />
@@ -1171,6 +1204,7 @@ const DisneyBahamasCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                src={DisneyBahamasDining}
                   alt="Dining on a Disney Bahamas Cruise"
                   className="dmg-media-img"
                 />
@@ -1191,6 +1225,7 @@ const DisneyBahamasCruises = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
+              src={DisneyBahamasExp7}
                 alt="Grandparents and grandchildren enjoying a Disney Bahamas Cruise together"
                 className="luc-why-img-main"
               />
@@ -1198,6 +1233,7 @@ const DisneyBahamasCruises = () => {
             </div>
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
+                    src={DisneyBahamasExp8}
                 alt="Disney Bahamas multigenerational family vacation"
                 className="luc-why-img-accent"
               />
@@ -1370,6 +1406,7 @@ const DisneyBahamasCruises = () => {
           >
             <div className="adg-content-card-side">
               <img
+                    src={DisneyBahamasExp9}
                 alt="Disney Bahamas Cruise family experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1613,7 +1650,7 @@ const DisneyBahamasCruises = () => {
       {/* ══ FINAL THOUGHTS / CTA ══════════════════════════════════════════════ */}
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
-          <img alt="Disney Bahamas Cruise" className="Asc-help-bg-img" />
+          <img src={DisneyBahamasCta} alt="Disney Bahamas Cruise" className="Asc-help-bg-img" />
           <div className="Asc-help-overlay"></div>
         </div>
         <div className="Asc-container">

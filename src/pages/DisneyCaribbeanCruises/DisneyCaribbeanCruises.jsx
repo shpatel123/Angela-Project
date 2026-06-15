@@ -21,7 +21,26 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 import { Helmet } from "react-helmet-async";
-import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
+
+import HeroImage1 from "../../assets/DisneyCaribbeanCruises/disney-cruise-ship-at-caribbean-island-with-water-sports.jpg";
+import HeroImage2 from "../../assets/DisneyCaribbeanCruises/disney-dream-cruise-ship-ocean-voyage-family-cruise-vacation.jpg";
+import HeroImage3 from "../../assets/DisneyCaribbeanCruises/disney-wish-palo-steakhouse-adults-only-premium-dining.jpg";
+import NightPoint from "../../assets/DisneyCaribbeanCruises/disney-wish-star-wars-hyperspace-lounge-adults-cocktails.jpg";
+import DiseyCaribbeanExp1 from "../../assets/DisneyCaribbeanCruises/Disney-Treasure-Periscope-Pub.jpg";
+import DiseyCaribbeanExp2 from "../../assets/DisneyCaribbeanCruises/skipper-society-lounge-disney-treasure.jpg";
+import DiseyCaribbeanExp3 from "../../assets/DisneyCaribbeanCruises/disney-very-merrytime-cruise-deck-sunset-ocean-view.jpg";
+import DiseyCaribbeanExp4 from "../../assets/DisneyCaribbeanCruises/disney-treasure-adults-only-lounge-ocean-view.jpg";
+import DiseyCaribbeanExp5 from "../../assets/DisneyCaribbeanCruises/adults-relaxing-at-disney-cruise-pool-bar-with-tropical-drinks.jpg";
+import DiseyCaribbeanExp6 from "../../assets/DisneyCaribbeanCruises/disney-wish-cruise-ship-caribbean-family-vacation-at-sea.jpg";
+import DiseyCaribbeanExp7 from "../../assets/DisneyCaribbeanCruises/disney-cruise-vibe-teen-club-foosball-youth-activities.jpg";
+import DiseyCaribbeanExp8 from "../../assets/DisneyCaribbeanCruises/family-enjoying-ocean-sunset-view-on-disney-cruise-ship-deck.jpg";
+import DiseyCaribbeanExp9 from "../../assets/DisneyCaribbeanCruises/kids-enjoying-disney-cruise-deck-family-vacation-at-sea.jpg";
+import DiseyCaribbeanSuite from "../../assets/DisneyCaribbeanCruises/disney-cruise-oceanview-stateroom-cabin-with-porthole-room.jpg";
+import DiseyCaribbeanDining from "../../assets/DisneyCaribbeanCruises/family-dining-with-ocean-views-on-disney-cruise-ship.jpg";
+import DiseyCaribbeanCta from "../../assets/DisneyCaribbeanCruises/disney-wish-the-bayou-lounge-bar-cocktails-cruise-nightlife.jpeg";
+
+import DisneyCastawayCay from "../../assets/DisneyCaribbeanCruises/disney-castaway-cay-private-island-tropical-beachfront-relaxation.jpg";
+import BahamasCruises from "../../assets/DisneyCaribbeanCruises/aerial-view-disney-castaway-cay-private-island-bahamas-cruise-destination.jpeg";
 
 // ─── DESTINATION DATA ────────────────────────────────────────────────────────
 const caribbeanDestinations = [
@@ -29,6 +48,7 @@ const caribbeanDestinations = [
     id: "castaway-cay",
     badge: "Castaway Cay",
     title: "Disney's Castaway Cay",
+    image: DisneyCastawayCay,
     icon: Anchor,
     desc: "Disney's private island in the Bahamas is often the undisputed highlight of any Caribbean voyage — designed exclusively for Disney Cruise Line guests and unlike any other private island experience at sea.",
     columns: [
@@ -60,6 +80,7 @@ const caribbeanDestinations = [
     id: "Bahamas Cruises",
     badge: "Bahamas Cruises",
     title: "Bahamas Cruises",
+    image: BahamasCruises,
     icon: Ship,
     desc: "Shorter Disney Caribbean itineraries frequently visit the Bahamas.",
 
@@ -399,7 +420,7 @@ function FAQ() {
 const DisneyCaribbeancruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("castaway-cay");
   const currentDest =
     caribbeanDestinations.find((d) => d.id === activeDest) ||
@@ -637,7 +658,7 @@ const DisneyCaribbeancruises = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  // src={OverviewImage}
+                  src={NightPoint}
                   alt="Disney Lookout Cay at Lighthouse Point"
                   className="adg-c-overview-img"
                 />
@@ -808,7 +829,6 @@ const DisneyCaribbeancruises = () => {
           <div className="dac-families-grid">
             {/* Left Content Column */}
             <div className="dac-families-left">
-              
               <h2 className="dac-families-title">
                 Disney Caribbean Cruises for Families
               </h2>
@@ -861,6 +881,7 @@ const DisneyCaribbeancruises = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
+                    src={DiseyCaribbeanExp1}
                     alt="Disney Caribbean Cruise Family Sailing"
                     className="dac-families-img"
                   />
@@ -870,6 +891,7 @@ const DisneyCaribbeancruises = () => {
                 </div>
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
+                    src={DiseyCaribbeanExp2}
                     alt="Family enjoying onboard dining and time together"
                     className="dac-families-img"
                   />
@@ -891,8 +913,6 @@ const DisneyCaribbeancruises = () => {
         <div className="dac-ent-container">
           <div className="dac-ent-grid">
             <div className="dac-ent-left">
-
-
               <h2 className="dac-ent-title">Onboard Disney Entertainment</h2>
 
               <div className="dac-ent-accent"></div>
@@ -977,17 +997,21 @@ const DisneyCaribbeancruises = () => {
             <div className="svf-gallery-item svf-gallery-item--large">
               <div className="svf-gallery-image-wrap">
                 <img
-                  alt="Castaway Cay private island beach on a Disney Caribbean Cruise"
+                  src={DiseyCaribbeanExp3}
+                  alt="Disney Very Merrytime Cruise deck at sunset overlooking the ocean"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Castaway Cay</span>
-                    <h3>Disney's Private Island Paradise</h3>
+                    <span className="svf-gallery-badge">
+                      Very Merrytime Cruise
+                    </span>
+                    <h3>Celebrate the Holidays at Sea</h3>
                     <p>
-                      Step ashore at Castaway Cay — Disney's exclusive private
-                      island where turquoise waters, white sand, and Disney
-                      magic combine for an unforgettable day in the Bahamas.
+                      Experience Disney's Very Merrytime Cruise as festive
+                      décor, seasonal entertainment, and breathtaking ocean
+                      sunsets create a magical Caribbean vacation unlike any
+                      other.
                     </p>
                   </div>
                 </div>
@@ -997,16 +1021,21 @@ const DisneyCaribbeancruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  alt="Snorkeling in crystal-clear Caribbean waters on a Disney cruise"
+                  src={DiseyCaribbeanExp4}
+                  alt="Disney Treasure adults-only lounge with panoramic ocean views"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Eastern Caribbean</span>
-                    <h3>Snorkeling in Stunning Caribbean Waters</h3>
+                    <span className="svf-gallery-badge">
+                      Adults-Only Retreat
+                    </span>
+                    <h3>Relax in Sophisticated Oceanfront Lounges</h3>
                     <p>
-                      Explore colorful coral reefs and vibrant marine life in
-                      some of the clearest waters on earth.
+                      Escape to elegant adults-only spaces aboard Disney
+                      Treasure, where handcrafted cocktails, comfortable
+                      seating, and panoramic sea views offer the perfect place
+                      to unwind.
                     </p>
                   </div>
                 </div>
@@ -1016,16 +1045,20 @@ const DisneyCaribbeancruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  alt="Tropical Caribbean island scenery on a Disney cruise itinerary"
+                  src={DiseyCaribbeanExp5}
+                  alt="Adults enjoying tropical drinks at a Disney Cruise pool bar"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">Western Caribbean</span>
-                    <h3>Cozumel's World-Class Reefs & Beaches</h3>
+                    <span className="svf-gallery-badge">
+                      Poolside Relaxation
+                    </span>
+                    <h3>Tropical Drinks and Caribbean Vibes</h3>
                     <p>
-                      Discover why Cozumel is celebrated as one of the world's
-                      premier snorkeling and beach destinations.
+                      Sip refreshing tropical beverages beside the pool while
+                      soaking up the sunshine and enjoying the laid-back
+                      atmosphere of your Disney Caribbean Cruise.
                     </p>
                   </div>
                 </div>
@@ -1035,19 +1068,19 @@ const DisneyCaribbeancruises = () => {
             <div className="svf-gallery-item svf-gallery-item--wide">
               <div className="svf-gallery-image-wrap">
                 <img
-                  alt="Southern Caribbean island destination on a Disney cruise"
+                  src={DiseyCaribbeanExp6}
+                  alt="Disney Wish cruise ship sailing through the Caribbean with families onboard"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
-                    <span className="svf-gallery-badge">
-                      Southern Caribbean Shore Excursion
-                    </span>
-                    <h3>The Southern Caribbean's Spectacular Beauty</h3>
+                    <span className="svf-gallery-badge">Disney Wish</span>
+                    <h3>The Ultimate Caribbean Family Vacation</h3>
                     <p>
-                      Explore Aruba, Barbados, St. Lucia, and beyond on longer
-                      Disney voyages that reveal the Caribbean's most
-                      breathtaking landscapes.
+                      Set sail aboard Disney Wish and enjoy world-class
+                      entertainment, imaginative dining, spacious
+                      accommodations, and unforgettable adventures designed for
+                      every member of the family.
                     </p>
                   </div>
                 </div>
@@ -1216,6 +1249,7 @@ const DisneyCaribbeancruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                  src={DiseyCaribbeanSuite}
                   alt="Disney Caribbean Cruise family stateroom accommodations"
                   className="dmg-media-img"
                 />
@@ -1281,6 +1315,7 @@ const DisneyCaribbeancruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                  src={DiseyCaribbeanDining}
                   alt="Dining on a Disney Caribbean Cruise"
                   className="dmg-media-img"
                 />
@@ -1301,6 +1336,7 @@ const DisneyCaribbeancruises = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
+                src={DiseyCaribbeanExp7}
                 alt="Grandparents and grandchildren enjoying a Disney Caribbean Cruise together"
                 className="luc-why-img-main"
               />
@@ -1308,6 +1344,7 @@ const DisneyCaribbeancruises = () => {
             </div>
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
+                src={DiseyCaribbeanExp8}
                 alt="Disney Caribbean multigenerational family vacation"
                 className="luc-why-img-accent"
               />
@@ -1477,6 +1514,7 @@ const DisneyCaribbeancruises = () => {
           >
             <div className="adg-content-card-side">
               <img
+                src={DiseyCaribbeanExp9}
                 alt="Disney Caribbean Cruise family experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1720,7 +1758,11 @@ const DisneyCaribbeancruises = () => {
       {/* ══ FINAL THOUGHTS / CTA ══════════════════════════════════════════════ */}
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
-          <img alt="Disney Caribbean Cruise" className="Asc-help-bg-img" />
+          <img
+            src={DiseyCaribbeanCta}
+            alt="Disney Caribbean Cruise"
+            className="Asc-help-bg-img"
+          />
           <div className="Asc-help-overlay"></div>
         </div>
         <div className="Asc-container">

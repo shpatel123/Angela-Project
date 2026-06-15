@@ -18,11 +18,25 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 import { Helmet } from "react-helmet-async";
-import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
-import AlumniRiverCruise1 from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise.jpg";
-import AlumniRiverCruise2 from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise2.jpg";
-import AlumniRiverCruise3 from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise3.jpg";
-import AlumniRiverCruise4 from "../../assets/LuxuryAlumniRiverCruises/AlumniRiverCruise4.jpg";
+
+import HeroImage1 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-dream-cruise-ship-ocean-voyage-family-cruise-vacation.jpg";
+import HeroImage2 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-dream-cruise-ship-sailing-at-sunset-caribbean-family-vacation.jpg";
+import HeroImage3 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-castaway-cay-private-island-aerial-beach-lagoon.jpg";
+import DisneyExpensiveExp1 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-cruise-deck-bar-poolside-cocktails-friends-vacation.jpeg";
+import DisneyExpensiveExp2 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-cruise-deck-bar-poolside-cocktails-friends-vacation.jpeg";
+import DisneyExpensiveExp3 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-cruise-line-upper-deck-balcony-view-oceanview.jpg";
+import DisneyExpensiveExp4 from "../../assets/WhyAreDisneyCruisesSoExpensive/romantic-couple-cruise-vacation-sunset-oceanview-lounge.jpg";
+import DisneyExpensiveExp5 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-cruise-line-deck-activities-goofy-pluto-characters-family.jpg";
+import DisneyExpensiveExp6 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-cruise-line-family-walking-promenade-deck.jpg";
+import DisneyExpensiveExp7 from "../../assets/WhyAreDisneyCruisesSoExpensive/family-building-sandcastle-castaway-cay.jpg";
+import DisneyExpensiveExp8 from "../../assets/WhyAreDisneyCruisesSoExpensive/sanctum-lounge-disney-destiny.png";
+import DisneyExpensiveExp9 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-cruise-cove-cafe-adults-only-lounge-oceanview.jpg";
+import DisneyExpensiveExp10 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-cruise-aquaduck-water-coaster-family-pool-deck-fun.jpg";
+import DisneyExpensiveExp11 from "../../assets/WhyAreDisneyCruisesSoExpensive/accessible-disney-cruise-experience-for-families-on-deck.jpeg";
+import DisneyExpensiveExp12 from "../../assets/WhyAreDisneyCruisesSoExpensive/disney-wish-the-rose-adults-only-lounge-oceanview.jpg";
+import DisneyExpensiveExp13 from "../../assets/WhyAreDisneyCruisesSoExpensive/family-beach-day-disney-caribbean-cruise-shore-excursion-vacation.jpeg";
+import DisneyExpensivecta from "../../assets/WhyAreDisneyCruisesSoExpensive/family-playing-on-tropical-beach-during-disney-cruise-vacation.jpg";
+
 
 const disneyValueReasons = [
   {
@@ -402,7 +416,7 @@ function FAQ() {
 const WhyAreDisneyCruisesSoExpensive = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("entertainment");
   const currentDest =
     disneyValueReasons.find((d) => d.id === activeDest) ||
@@ -584,6 +598,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
+                  src={DisneyExpensiveExp1}
                     alt="Disney Cruise Line premium family experience"
                     className="ugt-component-image"
                   />
@@ -803,6 +818,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
               style={{ color: "#fff" }}
             >
               <img
+              src={DisneyExpensiveExp2}
                 alt="Broadway-style live show on a Disney Cruise ship"
                 className="dfg-gallery-img"
               />
@@ -818,6 +834,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
               style={{ color: "#fff" }}
             >
               <img
+                 src={DisneyExpensiveExp3}
                 alt="Disney character meet and greet onboard Disney Cruise"
                 className="dfg-gallery-img"
               />
@@ -833,6 +850,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
               style={{ color: "#fff" }}
             >
               <img
+                 src={DisneyExpensiveExp4}
                 alt="Families enjoying Castaway Cay private island Disney Cruise"
                 className="dfg-gallery-img"
               />
@@ -848,6 +866,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
               style={{ color: "#fff" }}
             >
               <img
+                 src={DisneyExpensiveExp5}
                 alt="Spacious Disney Cruise stateroom with split bathroom family layout"
                 className="dfg-gallery-img"
               />
@@ -975,7 +994,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        //   src={AlumniRiverCruise1}
+                          src={DisneyExpensiveExp6}
                         alt="Multigenerational Families"
                         className="dac-reasons-img"
                       />
@@ -996,7 +1015,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        //    src={AlumniRiverCruise2}
+                                    src={DisneyExpensiveExp7}
                         alt="Disney Private Island Destinations"
                         className="dac-reasons-img"
                       />
@@ -1070,7 +1089,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        //    src={AlumniRiverCruise3}
+                                 src={DisneyExpensiveExp8}
                         alt="Strong Cruise Demand"
                         className="dac-reasons-img"
                       />
@@ -1091,7 +1110,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        //    src={AlumniRiverCruise4}
+                                    src={DisneyExpensiveExp9}
                         alt="Included Experiences in Disney Cruise Fare"
                         className="dac-reasons-img"
                       />
@@ -1145,6 +1164,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
+              src={DisneyExpensiveExp10}
                 alt="Family planning a Disney Cruise vacation"
                 className="luc-why-img-main"
               />
@@ -1153,6 +1173,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
 
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
+                    src={DisneyExpensiveExp11}
                 alt="Travel advisor helping plan a Disney Cruise"
                 className="luc-why-img-accent"
               />
@@ -1346,6 +1367,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
           >
             <div className="adg-content-card-side">
               <img
+              src={DisneyExpensiveExp12}
                 alt="Disney Cruise Line value and premium vacation experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1468,6 +1490,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
             <div className="afc-media-side">
               <div className="afc-image-wrapper">
                 <img
+                src={DisneyExpensiveExp13}
                   alt="Multigenerational family enjoying Disney Cruise Line vacation"
                   className="afc-showcase-image"
                 />
@@ -1713,6 +1736,7 @@ const WhyAreDisneyCruisesSoExpensive = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
+          src={DisneyExpensivecta}
             alt="Disney Cruise Line Experience"
             className="Asc-help-bg-img"
           />

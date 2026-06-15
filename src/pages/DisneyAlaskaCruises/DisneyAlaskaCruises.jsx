@@ -22,26 +22,24 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 import "../ScenicVSFourSeasonsYachts.css";
-// import HeroImage1 from "../../assets/MultiGenerationalAlumniTravel/university-historic-campus-clock-tower-academic-building.jpg.jpg";
-// import HeroImage2 from "../../assets/MultiGenerationalAlumniTravel/historic-university-campus-entrance-academic-landmark-education.jpg";
-// import HeroImage3 from "../../assets/MultiGenerationalAlumniTravel/alumni-university-campus-community-aerial-view.jpg";
-// import CTAImage from "../../assets/MultiGenerationalAlumniTravel/Partner-With-Travel.jpeg";
-// import AlumniTravel from "../../assets/MultiGenerationalAlumniTravel/Luxury-Travel-Expertise.jpeg";
-// import AlumniTravel2 from "../../assets/MultiGenerationalAlumniTravel/luxury-travelers-exploring-european-village-cultural-vacation.jpg";
-// import AlumniTravel3 from "../../assets/MultiGenerationalAlumniTravel/Travelers.jpeg";
-// import Personalized from "../../assets/MultiGenerationalAlumniTravel/Personalized-Service.jpeg";
-// import LoveAlumni from "../../assets/MultiGenerationalAlumniTravel/Love_Alumni_Travel.jpeg";
-// import LoveAlumni2 from "../../assets/MultiGenerationalAlumniTravel/Universities.jpeg";
+import HeroImage1 from "../../assets/DisneyAlaskaCruises/disney-wonder-alaska-cruise-tracy-arm-fjord-excursion.jpg";
+import HeroImage2 from "../../assets/DisneyAlaskaCruises/disney-wonder-alaska-cruise-glacier-view-scenic-itinerary.jpg";
+import HeroImage3 from "../../assets/DisneyAlaskaCruises/disney-cruise-alaska-inside-passage-glacier-view-ship-stern.jpg";
 
-// import FamilySuitesImg from "../../assets/ExploraJourneysCruises/Luxury-Oceanfront-Suites.webp";
-// import FamilyDiningImg from "../../assets/AzamaraDiningGuide/AzamaraWithFamiles.webp";
+import DisneyAlaskaExperience1 from "../../assets/DisneyAlaskaCruises/alaska-family-cruise-glacier-viewing-inside-passage-disney-cruise-line-shore-excursion.jpeg";
+import DisneyAlaskaExperience2 from "../../assets/DisneyAlaskaCruises/disney-cruise-family-entertainment-wreck-it-ralph-kids-zone.jpg";
+import DisneyAlaskaExperience3 from "../../assets/DisneyAlaskaCruises/disney-cruise-alaska-shore-excursion-whale-watching-family.jpeg";
+import DisneyAlaskaExperience4 from "../../assets/DisneyAlaskaCruises/disney-cruise-inside-passage-alaska-fjord-glacier-scenery.jpg";
+import DisneyAlaskaExperience5 from "../../assets/DisneyAlaskaCruises/disney-alaska-cruise-goofy-character-meet-and-greet-kids.jpg";
+import DisneyAlaskaExperience6 from "../../assets/DisneyAlaskaCruises/disney-alaska-cruise-mickey-minnie-mouse-deck-walk.jpg";
+import DisneyAlaskaExperience7 from "../../assets/DisneyAlaskaCruises/disney-wish-the-rose-adults-only-lounge-oceanview.jpg";
+import DisneyAlaskaExperience8 from "../../assets/DisneyAlaskaCruises/disney-wish-the-rose-lounge-adults-only-luxury-seating.jpg";
+import DisneyAlaskaExperience9 from "../../assets/DisneyAlaskaCruises/disney-wonder-alaska-cruise-mickey-mouse-family-photo.jpg";
+import DisneySuites from "../../assets/DisneyAlaskaCruises/Disney-Treasure-Verandah-Stateroom.jpg";
+import DisneyDining from "../../assets/DisneyAlaskaCruises/disney-wish-oceaneer-club-kids-space-interactive-slide.jpg";
+import CTAImage from "../../assets/DisneyAlaskaCruises/disney-wish-cruise-ship-aerial-view.jpg";
 
 import { Helmet } from "react-helmet-async";
-import AlaskImage from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage.webp";
-import AlaskImage2 from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage2.webp";
-import AlaskImage3 from "../../assets/AzamaraAlaskaCruisesGuide/AlaskImage3.webp";
-import FlyFishingImg from "../../assets/AzamaraAlaskaCruisesGuide/multigenerational-family-fly-fishing-vacation-alaska-mountain-river.jpeg";
-import IcebergScenicImg from "../../assets/AzamaraAlaskaCruisesGuide/alaska-iceberg-scenic-cruise-vacation.webp";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
 
 const disneyAlaskaDestinations = [
@@ -555,7 +553,7 @@ function FAQ() {
 const DisneyAlaskaCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("antarctica");
   const currentDest =
     disneyAlaskaDestinations.find((d) => d.id === activeDest) ||
@@ -719,9 +717,7 @@ const DisneyAlaskaCruises = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">
-             Explore Alaska with Disney Cruise Line
-            </h2>
+            <h2 className="azs-h2">Explore Alaska with Disney Cruise Line</h2>
 
             <div className="azs-accent-line"></div>
 
@@ -934,26 +930,25 @@ const DisneyAlaskaCruises = () => {
               family-focused service.
             </p>
           </div>
-
           <div className="svf-gallery-grid">
             <div className="svf-gallery-item svf-gallery-item--large">
               <div className="svf-gallery-image-wrap">
                 <img
-                  //   src={IcebergScenicImg}
-                  alt="Spectacular glacier calving scenery viewed from a Disney Alaska Cruise ship in Endicott Arm fjord"
+                  src={DisneyAlaskaExperience1}
+                  alt="Family enjoying glacier viewing during a Disney Alaska Cruise through the Inside Passage"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
                     <span className="svf-gallery-badge">
-                      Glacier Viewing Day
+                      Family Glacier Adventure
                     </span>
-                    <h3>Witness Alaska's Ancient Glaciers Up Close</h3>
+                    <h3>Experience Alaska's Majestic Glaciers Together</h3>
                     <p>
-                      Drift silently past Dawes Glacier and Endicott Arm as
-                      massive walls of ancient ice calve thunderously into the
-                      sea — a breathtaking moment the entire family will never
-                      forget.
+                      Gather on deck as towering glaciers and icy landscapes
+                      unfold before your eyes. Disney Alaska Cruises offer
+                      unforgettable family moments while sailing through the
+                      breathtaking Inside Passage.
                     </p>
                   </div>
                 </div>
@@ -963,20 +958,21 @@ const DisneyAlaskaCruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  //   src={AlaskImage}
-                  alt="Humpback whale breaching in the Inside Passage during a Disney Alaska Cruise whale watching excursion"
+                  src={DisneyAlaskaExperience2}
+                  alt="Disney Cruise family entertainment featuring Wreck-It Ralph themed kids activities"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
                     <span className="svf-gallery-badge">
-                      Wildlife Encounter
+                      Onboard Entertainment
                     </span>
-                    <h3>Humpback Whales in the Inside Passage</h3>
+                    <h3>Immersive Disney Fun for Kids and Families</h3>
                     <p>
-                      Watch in awe as humpback whales breach, tail-slap, and
-                      bubble-net feed just off the ship's deck — an
-                      unforgettable Alaska wildlife moment for all ages.
+                      From Wreck-It Ralph experiences to interactive youth
+                      clubs, Disney Cruise Line delivers world-class
+                      entertainment that keeps children engaged while parents
+                      enjoy unforgettable family vacation memories.
                     </p>
                   </div>
                 </div>
@@ -986,20 +982,21 @@ const DisneyAlaskaCruises = () => {
             <div className="svf-gallery-item">
               <div className="svf-gallery-image-wrap">
                 <img
-                  //   src={AlaskImage2}
-                  alt="Family exploring Mendenhall Glacier near Juneau Alaska on a Disney Cruise shore excursion"
+                  src={DisneyAlaskaExperience3}
+                  alt="Family whale watching during a Disney Alaska Cruise shore excursion"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
                     <span className="svf-gallery-badge">
-                      Juneau Shore Excursion
+                      Whale Watching Excursion
                     </span>
-                    <h3>Mendenhall Glacier — Juneau's Crown Jewel</h3>
+                    <h3>Witness Alaska's Incredible Marine Wildlife</h3>
                     <p>
-                      Step off the ship in Juneau and stand face-to-face with
-                      the magnificent Mendenhall Glacier — one of Alaska's most
-                      accessible and awe-inspiring natural landmarks.
+                      Get up close to humpback whales, orcas, and other marine
+                      life during guided shore excursions. These unforgettable
+                      wildlife encounters are among the highlights of any Disney
+                      Alaska Cruise.
                     </p>
                   </div>
                 </div>
@@ -1009,21 +1006,21 @@ const DisneyAlaskaCruises = () => {
             <div className="svf-gallery-item svf-gallery-item--wide">
               <div className="svf-gallery-image-wrap">
                 <img
-                  //   src={FlyFishingImg}
-                  alt="Multigenerational family fly fishing together in an Alaskan mountain river during a Disney Alaska Cruise excursion"
+                  src={DisneyAlaskaExperience4}
+                  alt="Scenic fjords and glacier views in Alaska's Inside Passage aboard Disney Cruise Line"
                   className="svf-gallery-image"
                 />
                 <div className="svf-gallery-overlay">
                   <div className="svf-gallery-content">
                     <span className="svf-gallery-badge">
-                      Multigenerational Adventure
+                      Inside Passage Scenery
                     </span>
-                    <h3>Family Adventures in Alaska's Untouched Wilderness</h3>
+                    <h3>Sail Through Alaska's Stunning Fjords</h3>
                     <p>
-                      From fly fishing in glacial rivers to helicopter hikes and
-                      dog sledding — Disney Alaska shore excursions create
-                      shared outdoor adventures that bring every generation
-                      closer together.
+                      Cruise past dramatic fjords, snow-capped mountains, and
+                      pristine wilderness landscapes. Alaska's Inside Passage
+                      offers some of the most spectacular scenery you'll
+                      experience anywhere in the world.
                     </p>
                   </div>
                 </div>
@@ -1038,7 +1035,6 @@ const DisneyAlaskaCruises = () => {
         <div className="dac-ent-container">
           <div className="dac-ent-grid">
             <div className="dac-ent-left">
-          
               <h2 className="dac-ent-title">Onboard Disney Entertainment</h2>
               <div className="dac-ent-accent"></div>
               <p className="dac-ent-desc">
@@ -1157,7 +1153,6 @@ const DisneyAlaskaCruises = () => {
       <section className="dac-timing-section">
         <div className="dac-timing-container">
           <div className="dac-timing-header">
-     
             <h2 className="dac-timing-title">
               Best Time to Take a Disney Alaska Cruise
             </h2>
@@ -1311,13 +1306,13 @@ const DisneyAlaskaCruises = () => {
             <div className="eep-comparison-card eep-disney-card">
               <div className="eep-card-img-wrap">
                 <img
-                  // src={DisneyAlaskaLearning}
+                  src={DisneyAlaskaExperience5}
                   alt="Educational experiences on a Disney Alaska Cruise"
                   className="eep-card-img"
                 />
 
                 <span className="eep-card-badge eep-holland-badge">
-                  Educational Adventures
+                 Discover Alaska Together
                 </span>
               </div>
 
@@ -1365,7 +1360,7 @@ const DisneyAlaskaCruises = () => {
             <div className="eep-comparison-card eep-holland-card">
               <div className="eep-card-img-wrap">
                 <img
-                  // src={DisneyAlaskaFamilyBonding}
+                  src={DisneyAlaskaExperience6}
                   alt="Families enjoying a Disney Alaska Cruise together"
                   className="eep-card-img"
                 />
@@ -1511,7 +1506,7 @@ const DisneyAlaskaCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={FamilySuitesImg}
+                  src={DisneySuites}
                   alt="Disney Alaska Cruise family accommodations"
                   className="dmg-media-img"
                 />
@@ -1533,8 +1528,6 @@ const DisneyAlaskaCruises = () => {
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
               <div className="dmg-info-header">
-                
-
                 <h2 className="dmg-info-title">
                   Dining on a Disney Alaska Cruise
                 </h2>
@@ -1606,7 +1599,7 @@ const DisneyAlaskaCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={DiningImg}
+                  src={DisneyDining}
                   alt="Dining on a Disney Alaska Cruise"
                   className="dmg-media-img"
                 />
@@ -1727,7 +1720,7 @@ const DisneyAlaskaCruises = () => {
               }}
             >
               <img
-                // src={AlaskaFamilyAdventure}
+                src={DisneyAlaskaExperience7}
                 alt="Grandparents and grandchildren on a Disney Alaska Cruise"
                 className="luc-why-img-main"
               />
@@ -1741,7 +1734,7 @@ const DisneyAlaskaCruises = () => {
               }}
             >
               <img
-                // src={AlaskaWildlifeExperience}
+                src={DisneyAlaskaExperience8}
                 alt="Disney Alaska Cruise multigenerational family vacation"
                 className="luc-why-img-accent"
               />
@@ -1854,7 +1847,7 @@ const DisneyAlaskaCruises = () => {
             {/* Left Content Column */}
             <div className="adg-content-card-side">
               <img
-                // src={ExploraCrema}
+                src={DisneyAlaskaExperience9}
                 alt="Disney Alaska Cruise family experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -2124,7 +2117,7 @@ const DisneyAlaskaCruises = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CTAImage}
+            src={CTAImage}
             alt="Disney Alaska Cruise"
             className="Asc-help-bg-img"
           />

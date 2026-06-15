@@ -10,18 +10,37 @@ import {
   Users,
   Compass,
   Home,
-  Binoculars,
   Waves,
   Globe,
   Ship,
   Anchor,
   Sun,
-  Fish,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 import { Helmet } from "react-helmet-async";
-import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
+
+import HeroImage1 from "../../assets/Disneycruisesfromflorida/disney-cruise-norwegian-fjords-scenic-cruise-waterfalls-mountains.jpeg";
+import HeroImage2 from "../../assets/Disneycruisesfromflorida/disney-cruise-quiet-cove-pool-deck-adults-only-relaxation.jpg";
+import HeroImage3 from "../../assets/Disneycruisesfromflorida/disney-dream-cruise-ship-aerial-ocean-crossing-family-cruise-vacation.jpg";
+import DisneyFloridaExp1 from "../../assets/Disneycruisesfromflorida/disney-wish-atrium-oceaneer-club-secret-entrance-slide.jpg";
+import DisneyFloridaExp2 from "../../assets/Disneycruisesfromflorida/disney-wish-triton-lounge-family-entertainment-live-show.jpg";
+import DisneyFloridaExp3 from "../../assets/Disneycruisesfromflorida/disney-wish-sarabi-lounge-interior-modern-wood-architecture.jpg";
+import DisneyFloridaExp4 from "../../assets/Disneycruisesfromflorida/guests-enjoying-cocktails-at-cruise-ship-nightlife-bar.jpg";
+import DisneyFloridaExp5 from "../../assets/Disneycruisesfromflorida/guests-relaxing-on-luxury-cruise-veranda-deck.jpg";
+import DisneyFloridaExp6 from "../../assets/Disneycruisesfromflorida/disney-destiny-cask-cannon-pub-pirates-theme-bar.jpg";
+import DisneyFloridaExp7 from "../../assets/Disneycruisesfromflorida/disney-cruise-line-vacation-packages-special-offers.jpg";
+import DisneyFloridaExp8 from "../../assets/Disneycruisesfromflorida/disney-wish-sarabi-lounge-family-entertainment-venue.jpg";
+import DisneyFloridaExp9 from "../../assets/Disneycruisesfromflorida/multi-generational-family-enjoying-ocean-views-from-cruise-balcony.jpg";
+import DisneyFloridasuite from "../../assets/Disneycruisesfromflorida/family-enjoying-spacious-oceanview-cruise-stateroom.jpeg";
+import DisneyFloridaDining from "../../assets/Disneycruisesfromflorida/disney-wish-palo-steakhouse-oceanview-table-setting-fine-dining.jpg";
+import DisneyFloridaCta from "../../assets/Disneycruisesfromflorida/disney-wonder-cruise-ship-ocean-classic-family-vacation.jpg";
+
+import PortCanaveral from "../../assets/Disneycruisesfromflorida/disney-magic-cruise-ship-at-port.jpeg";
+import FortLauderdale from "../../assets/Disneycruisesfromflorida/disney-wish-arendelle-frozen-dining-adventure-family-dinner.jpeg";
+import Bahamas from "../../assets/Disneycruisesfromflorida/aerial-view-disney-castaway-cay-private-island-bahamas-cruise-destination.jpeg";
+import Caribbean from "../../assets/Disneycruisesfromflorida/disney-caribbean-family-beach-vacation-cruise-line-island-escape.jpg";
+import DisneySailings from "../../assets/Disneycruisesfromflorida/disney-dream-cruise-ship-bow-view-luxury-family-cruise-at-sea.jpg";
 
 // ─── DEPARTURE PORT DATA ──────────────────────────────────────────────────────
 const floridaPorts = [
@@ -29,6 +48,7 @@ const floridaPorts = [
     id: "port-canaveral",
     badge: "Port Canaveral",
     title: "Port Canaveral",
+    image: PortCanaveral,
     icon: Anchor,
     desc: "Port Canaveral is Disney Cruise Line's primary homeport and one of the busiest cruise ports in the world. Located near Orlando and Walt Disney World, it offers exceptional convenience for Disney travelers departing from Florida.",
     columns: [
@@ -60,6 +80,7 @@ const floridaPorts = [
     id: "fort-lauderdale",
     badge: "Fort Lauderdale",
     title: "Fort Lauderdale (Port Everglades)",
+    image: FortLauderdale,
     icon: Ship,
     desc: "Disney Cruise Line also offers select departures from Fort Lauderdale via Port Everglades. This southern Florida port provides easy access for guests traveling from South Florida and the Miami area, with connections to Caribbean itineraries.",
     columns: [
@@ -81,6 +102,7 @@ const floridaPorts = [
     id: "bahamas",
     badge: "Bahamas Cruises",
     title: "Disney Bahamas Cruises from Florida",
+    image: Bahamas,
     icon: Waves,
     desc: "The Bahamas remains one of Disney's most requested cruise destinations from Florida. Highlights include Disney's private island Castaway Cay, the newly opened Lookout Cay at Lighthouse Point, and the vibrant port of Nassau.",
     columns: [
@@ -110,7 +132,8 @@ const floridaPorts = [
     id: "caribbean",
     badge: "Caribbean Cruises",
     title: "Disney Caribbean Cruises from Florida",
-    icon: Sun,
+    image: Caribbean,
+    icon: Globe,
     desc: "Disney Caribbean itineraries offer tropical beaches, island adventures, family excursions, water activities, and cultural experiences. Florida departures provide access to Eastern, Western, and Southern Caribbean sailings.",
     columns: [
       {
@@ -130,6 +153,7 @@ const floridaPorts = [
     id: "special-sailings",
     badge: "Special Sailings",
     title: "Special Disney Sailings from Florida",
+    image: DisneySailings,
     icon: Star,
     desc: "Florida departures also provide access to Disney's most beloved themed sailings — from Halloween on the High Seas to Very Merrytime holiday cruises — adding a uniquely Disney layer of magic to an already memorable vacation.",
     columns: [
@@ -372,7 +396,7 @@ function FAQ() {
 const DisneyCruisesFromFlorida = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activePort, setActivePort] = useState("port-canaveral");
   const currentPort =
     floridaPorts.find((d) => d.id === activePort) || floridaPorts[0];
@@ -702,7 +726,6 @@ const DisneyCruisesFromFlorida = () => {
           <div className="dac-families-grid">
             {/* Left Content Column */}
             <div className="dac-families-left">
-            
               <h2 className="dac-families-title">
                 Why Families Love Disney Cruises from Florida
               </h2>
@@ -756,6 +779,7 @@ const DisneyCruisesFromFlorida = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
+                    src={DisneyFloridaExp1}
                     alt="Disney Cruise from Florida family sailing"
                     className="dac-families-img"
                   />
@@ -765,6 +789,7 @@ const DisneyCruisesFromFlorida = () => {
                 </div>
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
+                    src={DisneyFloridaExp2}
                     alt="Family enjoying onboard Disney entertainment"
                     className="dac-families-img"
                   />
@@ -795,7 +820,7 @@ const DisneyCruisesFromFlorida = () => {
               entire family.
             </p>
           </div>
-          <div className="dac-ent-grid" style={{gap: "30px"}}>
+          <div className="dac-ent-grid" style={{ gap: "30px" }}>
             {[
               {
                 title: "Broadway-Style Shows",
@@ -843,7 +868,7 @@ const DisneyCruisesFromFlorida = () => {
             </h2>
             <div className="dfg-gallery-accent"></div>
             <p className="dfg-gallery-intro">
-             From the pristine beaches of Castaway Cay and the cultural
+              From the pristine beaches of Castaway Cay and the cultural
               richness of Lookout Cay to the vibrant islands of the Caribbean —
               Disney Cruises from Florida deliver iconic experiences wrapped in
               unmatched family-focused service.
@@ -854,49 +879,50 @@ const DisneyCruisesFromFlorida = () => {
             {/* Large featured image — top left */}
             <div
               className="dfg-gallery-item dfg-gallery-large"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Port Canaveral Disney Cruise Line departure Florida"
+                src={DisneyFloridaExp3}
+                alt="Disney Wish Sarabi Lounge interior with modern wood architecture"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
-                <span className="dfg-gallery-caption">Disney's Florida Homeport</span>
+                <span className="dfg-gallery-caption">
+                  Sarabi Lounge Aboard Disney Wish
+                </span>
               </div>
             </div>
 
             {/* Tall image — top right */}
             <div
               className="dfg-gallery-item dfg-gallery-tall"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Castaway Cay Disney private island Bahamas from Florida"
+                src={DisneyFloridaExp4}
+                alt="Guests enjoying cocktails at a Disney Cruise nightlife bar"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
-                <span className="dfg-gallery-caption">Disney's Private Island Paradiseo</span>
+                <span className="dfg-gallery-caption">
+                  Vibrant Nightlife & Cocktails
+                </span>
               </div>
             </div>
 
             {/* Wide image — bottom left */}
             <div
               className="dfg-gallery-item dfg-gallery-wide"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Caribbean cruise from Florida Disney Cruise Line"
+                src={DisneyFloridaExp5}
+                alt="Guests relaxing on a luxury cruise ship veranda overlooking the ocean"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
                 <span className="dfg-gallery-caption">
-            Tropical Caribbean Adventures
+                  Relaxing Veranda Ocean Views
                 </span>
               </div>
             </div>
@@ -904,16 +930,17 @@ const DisneyCruisesFromFlorida = () => {
             {/* Square — bottom right */}
             <div
               className="dfg-gallery-item dfg-gallery-square"
-              style={{
-                color: "#fff",
-              }}
+              style={{ color: "#fff" }}
             >
               <img
-                alt="Walt Disney World and Disney Cruise combination vacation from Florida"
+                src={DisneyFloridaExp6}
+                alt="Disney Destiny Cask & Cannon pirate-themed pub"
                 className="dfg-gallery-img"
               />
               <div className="dfg-gallery-overlay">
-                <span className="dfg-gallery-caption">The Ultimate Disney Vacation</span>
+                <span className="dfg-gallery-caption">
+                  Cask & Cannon Pirate Pub
+                </span>
               </div>
             </div>
           </div>
@@ -1076,6 +1103,7 @@ const DisneyCruisesFromFlorida = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                  src={DisneyFloridasuite}
                   alt="Disney Cruise from Florida family stateroom accommodations"
                   className="dmg-media-img"
                 />
@@ -1142,6 +1170,7 @@ const DisneyCruisesFromFlorida = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
+                  src={DisneyFloridaDining}
                   alt="Dining on a Disney Cruise from Florida"
                   className="dmg-media-img"
                 />
@@ -1162,6 +1191,7 @@ const DisneyCruisesFromFlorida = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
+                src={DisneyFloridaExp7}
                 alt="Grandparents and grandchildren enjoying a Disney Cruise from Florida"
                 className="luc-why-img-main"
               />
@@ -1169,6 +1199,7 @@ const DisneyCruisesFromFlorida = () => {
             </div>
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
+                src={DisneyFloridaExp8}
                 alt="Disney multigenerational family cruise vacation from Florida"
                 className="luc-why-img-accent"
               />
@@ -1329,6 +1360,7 @@ const DisneyCruisesFromFlorida = () => {
           >
             <div className="adg-content-card-side">
               <img
+                src={DisneyFloridaExp9}
                 alt="Disney Cruise from Florida family experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1563,7 +1595,11 @@ const DisneyCruisesFromFlorida = () => {
       {/* ══ FINAL THOUGHTS / CTA ══════════════════════════════════════════════ */}
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
-          <img alt="Disney Cruise from Florida" className="Asc-help-bg-img" />
+          <img
+            src={DisneyFloridaCta}
+            alt="Disney Cruise from Florida"
+            className="Asc-help-bg-img"
+          />
           <div className="Asc-help-overlay"></div>
         </div>
         <div className="Asc-container">
