@@ -41,6 +41,8 @@ import DiseyCaribbeanCta from "../../assets/DisneyCaribbeanCruises/disney-wish-t
 
 import DisneyCastawayCay from "../../assets/DisneyCaribbeanCruises/disney-castaway-cay-private-island-tropical-beachfront-relaxation.jpg";
 import BahamasCruises from "../../assets/DisneyCaribbeanCruises/aerial-view-disney-castaway-cay-private-island-bahamas-cruise-destination.jpeg";
+import WesternCaribbean from "../../assets/DisneyCaribbeanCruises/best-disney-cruise-caribbean-family-beach-vacation-excursion.jpg";
+import southernCaribbean from "../../assets/DisneyCaribbeanCruises/disney-dream-cruise-ship-sailing-at-sunset-caribbean-family-vacation.jpg";
 
 // ─── DESTINATION DATA ────────────────────────────────────────────────────────
 const caribbeanDestinations = [
@@ -79,7 +81,7 @@ const caribbeanDestinations = [
   {
     id: "Bahamas Cruises",
     badge: "Bahamas Cruises",
-    title: "Bahamas Cruises",
+    title: "Bahamas",
     image: BahamasCruises,
     icon: Ship,
     desc: "Shorter Disney Caribbean itineraries frequently visit the Bahamas.",
@@ -105,7 +107,8 @@ const caribbeanDestinations = [
   {
     id: "eastern-caribbean",
     badge: "Eastern Caribbean",
-    title: "Eastern Caribbean Cruises",
+    title: "Eastern Caribbean",
+    image: HeroImage1,
     icon: Sun,
     desc: "Eastern Caribbean itineraries offer stunning tropical islands, rich history, and incredible natural beauty — a perfect blend of relaxation and exploration for families and multigenerational travelers.",
     columns: [
@@ -135,7 +138,8 @@ const caribbeanDestinations = [
   {
     id: "western-caribbean",
     badge: "Western Caribbean",
-    title: "Western Caribbean Cruises",
+    title: "Western Caribbean",
+    image: WesternCaribbean,
     icon: Globe,
     desc: "Western Caribbean cruises deliver adventure and cultural discovery across some of the region's most iconic destinations — from world-class snorkeling reefs to ancient Maya ruins and vibrant local cultures.",
     columns: [
@@ -160,7 +164,8 @@ const caribbeanDestinations = [
   {
     id: "southern-caribbean",
     badge: "Southern Caribbean",
-    title: "Southern Caribbean Cruises",
+    title: "Southern Caribbean",
+    image: southernCaribbean,
     icon: Waves,
     desc: "Longer Disney Caribbean voyages venture into the Southern Caribbean — home to some of the most spectacular beaches and landscapes in the entire region.",
     columns: [

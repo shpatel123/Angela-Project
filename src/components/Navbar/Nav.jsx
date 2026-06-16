@@ -312,6 +312,22 @@ const Nav = () => {
               >
                 Why Are Disney Cruises So Expensive
               </NavLink>
+
+              <NavLink
+                to="/what-is-included-on-a-disney-cruise"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What is included on a disney cruise
+              </NavLink>
+
+               <NavLink
+                to="/best-disney-cruise-ship-for-families"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Disney Cruise For Families
+              </NavLink>
             </div>
           </div>
         </div>
@@ -627,6 +643,22 @@ const Nav = () => {
             >
               Why Are Disney Cruises So Expensive
             </NavLink>
+
+            <NavLink
+              to="/what-is-included-on-a-disney-cruise"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What is included on a disney cruise
+            </NavLink>
+
+              <NavLink
+                to="/best-disney-cruise-ship-for-families"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Disney Cruise For Families
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

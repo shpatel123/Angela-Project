@@ -38,6 +38,8 @@ import DisneyBahamasCruises from "./pages/DisneyBahamasCruises/DisneyBahamasCrui
 import DisneyCruisesFromFlorida from "./pages/DisneyCruisesFromFlorida/Disneycruisesfromflorida";
 import DisneyCruisesFromPortCanaveral from "./pages/DisneyCruisesFromPortCanaveral/DisneyCruisesFromPortCanaveral";
 import WhyAreDisneyCruisesSoExpensive from "./pages/WhyAreDisneyCruisesSoExpensive/WhyAreDisneyCruisesSoExpensive";
+import WhatIsIncludedDisneyCruise from "./pages/WhatIsIncludedDisneyCruise/WhatIsIncludedDisneyCruise";
+import BestDisneyCruiseShipForFamilies from "./pages/BestDisneyCruiseShipForFamilies/BestDisneyCruiseShipForFamilies";
 
 function App() {
   return (
@@ -231,6 +233,16 @@ function App() {
           <Route
             path="/why-are-disney-cruises-so-expensive"
             element={<WhyAreDisneyCruisesSoExpensive />}
+          />
+
+            <Route
+            path="/what-is-included-on-a-disney-cruise"
+            element={<WhatIsIncludedDisneyCruise />}
+          />
+
+          <Route
+            path="/best-disney-cruise-ship-for-families"
+            element={<BestDisneyCruiseShipForFamilies />}
           />
         </Routes>
       </BrowserRouter>

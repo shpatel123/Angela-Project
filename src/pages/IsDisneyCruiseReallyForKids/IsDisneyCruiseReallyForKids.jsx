@@ -588,7 +588,6 @@ const IsDisneyCruiseReallyForKids = () => {
       {/* ── WHERE THE MISCONCEPTION COMES FROM ───── */}
       <section
         className="ugt-components-section"
-        id="ugt-components"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Asc-container">
