@@ -321,12 +321,20 @@ const Nav = () => {
                 What is included on a disney cruise
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/best-disney-cruise-ship-for-families"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Best Disney Cruise For Families
+              </NavLink>
+
+              <NavLink
+                to="/viking-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Cruises
               </NavLink>
             </div>
           </div>
@@ -652,13 +660,21 @@ const Nav = () => {
               What is included on a disney cruise
             </NavLink>
 
-              <NavLink
-                to="/best-disney-cruise-ship-for-families"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Best Disney Cruise For Families
-              </NavLink>
+            <NavLink
+              to="/best-disney-cruise-ship-for-families"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Disney Cruise For Families
+            </NavLink>
+
+            <NavLink
+              to="/viking-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Cruises
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

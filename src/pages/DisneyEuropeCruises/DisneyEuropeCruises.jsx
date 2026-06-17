@@ -39,7 +39,7 @@ import DisneyExperience9 from "../../assets/DisneyEuropeCruises/family-enjoying-
 import Accommodations  from "../../assets/DisneyEuropeCruises/disney-cruise-oceanview-stateroom-porthole-sunset-view-family-cabin.jpg";
 import Mediterranean  from "../../assets/DisneyEuropeCruises/disney-dream-cruise-ship-mediterranean-cannes-france.jpg";
 import GreekIsles  from "../../assets/DisneyEuropeCruises/disney-cruise-mediterranean-greece-itinerary-santorini-island-view.jpg";
-import NorthernEurope  from "../../assets/DisneyEuropeCruises/disney-dream-cruise-ship-mediterranean-cannes-france.jpg";
+import NorthernEurope  from "../../assets/DisneyEuropeCruises/disney-cruise-ship-sailing-through-alaskan-mountain-landscape.jpg";
 import Dining  from "../../assets/DisneyEuropeCruises/disney-wish-palo-steakhouse-oceanview-table-setting-fine-dining.jpg";
 import CTAimage  from "../../assets/DisneyEuropeCruises/kids-playing-at-tropical-beach-near-disney-cruise-ship.jpg";
 
