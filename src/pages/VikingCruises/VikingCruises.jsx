@@ -1700,7 +1700,7 @@ const VikingCruises = () => {
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-h2">
-              Discover the Viking River Cruise Experience
+              Discover the Viking Cruise Experience
             </h2>
             <div className="azs-accent-line"></div>
             <p className="azs-video-intro">

@@ -41,6 +41,7 @@ import WhyAreDisneyCruisesSoExpensive from "./pages/WhyAreDisneyCruisesSoExpensi
 import WhatIsIncludedDisneyCruise from "./pages/WhatIsIncludedDisneyCruise/WhatIsIncludedDisneyCruise";
 import BestDisneyCruiseShipForFamilies from "./pages/BestDisneyCruiseShipForFamilies/BestDisneyCruiseShipForFamilies";
 import VikingCruises from "./pages/VikingCruises/VikingCruises";
+import VikingRiverCruises from "./pages/VikingRiverCruises/VikingRiverCruises";
 
 function App() {
   return (
@@ -249,6 +250,11 @@ function App() {
           <Route
             path="/viking-cruises"
             element={<VikingCruises />}
+          />
+
+          <Route
+            path="/viking-river-cruises"
+            element={<VikingRiverCruises />}
           />
         </Routes>
       </BrowserRouter>
