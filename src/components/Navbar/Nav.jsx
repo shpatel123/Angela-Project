@@ -352,6 +352,14 @@ const Nav = () => {
               >
                 Viking Ocean Cruises
               </NavLink>
+
+               <NavLink
+                to="/viking-expedition-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Expedition Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -706,6 +714,14 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Viking Ocean Cruises
+              </NavLink>
+
+               <NavLink
+                to="/viking-expedition-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Expedition Cruises
               </NavLink>
 
 

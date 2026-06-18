@@ -1963,10 +1963,6 @@ const VikingOceanCruises = () => {
             <div className="Asc-accent-line"></div>
           </div>
 
-          <p className="Asc-intro-text">
-            For many travelers, Viking Ocean offers outstanding value. The right
-            choice depends on your travel priorities.
-          </p>
 
           <div className="Asc-who-grid">
             <div className="Asc-who-card Asc-who-yes">
