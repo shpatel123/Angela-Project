@@ -15,96 +15,110 @@ import {
   Mountain,
   X,
   Sparkles,
+  Anchor,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 import { Helmet } from "react-helmet-async";
 
-import HeroImage1 from "../../assets/VikingRiverCruises/budapest-hungary-river-cruise-danube.jpg";
-import HeroImage2 from "../../assets/VikingRiverCruises/viking-expedition-ship-welland-canal.jpg";
-import HeroImage3 from "../../assets/VikingRiverCruises/viking-river-cruises.jpg";
-import Vikingrhine from "../../assets/VikingRiverCruises/Rhine-River.jpg";
-import Vikingdanube from "../../assets/VikingRiverCruises/Danube-River.jpg";
-import VikingExp1 from "../../assets/VikingRiverCruises/Explorer Suite.jpg";
-import VikingExp2 from "../../assets/VikingRiverCruises/Explorer Suite - Living-Room.jpg";
-import VikingExp3 from "../../assets/VikingRiverCruises/The-Living-Room.jpg";
-import VikingExp4 from "../../assets/VikingRiverCruises/Aquavit-Terrace_.jpg";
-import VikingExp5 from "../../assets/VikingRiverCruises/avignon-france-river-cruise-view.jpg";
-import VikingExp6 from "../../assets/VikingRiverCruises/Expedition-Ship-Welland-Canal.jpg";
-import VikingExp7 from "../../assets/VikingRiverCruises/Aquavit-Terrace.jpg";
-import VikingExp8 from "../../assets/VikingRiverCruises/Aquavit-dinig.jpg";
-import VikingCta from "../../assets/VikingRiverCruises/viking-Exterior.jpg";
+import HeroImage1 from "../../assets/VikingOceanCruises/viking-Tromso-Norway.jpg";
+import HeroImage2 from "../../assets/VikingOceanCruises/viking-Halong-Bay-Vietnam.jpg";
+import HeroImage3 from "../../assets/VikingOceanCruises/viking-Dubrovnik-Croatia.jpg";
+// import VikingMediterranean from "../../assets/VikingOceanCruises/Mediterranean.jpg";
+// import VikingNorthern from "../../assets/VikingOceanCruises/Northern-Europe.jpg";
+import VikingExp1 from "../../assets/VikingOceanCruises/Bay-of-Islands-New-Zealand.jpg";
+import VikingExp2 from "../../assets/VikingOceanCruises/Aquavit-Terrace-Waiter.jpg";
+import VikingExp3 from "../../assets/VikingOceanCruises/The-Restaurant.jpg";
+import VikingExp4 from "../../assets/VikingOceanCruises/viking-aquavit-terrace-ocean-dining.jpg";
+import VikingExp5 from "../../assets/VikingOceanCruises/Viking-Aquavit-Terrace.jpg";
+import VikingExp6 from "../../assets/VikingOceanCruises/Viking-Aquavit-Terrace-Dining.jpg";
+import VikingExp7 from "../../assets/VikingOceanCruises/Montego-Bay-Jamaica.jpg";
+import VikingExp8 from "../../assets/VikingOceanCruises/Viking-family-experience.jpg";
+import VikingExp9 from "../../assets/VikingOceanCruises/Viking-Multiple-Dining.jpg";
+import VikingExp10 from "../../assets/VikingOceanCruises/Viking-Explorer-Suite.jpg";
+import VikingExp11 from "../../assets/VikingOceanCruises/viking-ocean-cruise-aquavit-terrace-outdoor-dining.jpg";
+import VikingCta from "../../assets/VikingOceanCruises/flam-norway-fjord-cruise.jpg";
 
-// ─── VIKING RIVER CRUISE ITINERARY PANEL DATA ────────────────────────────────
-const vikingRiverItineraries = [
+// ─── VIKING OCEAN CRUISE DESTINATION PANEL DATA ──────────────────────────────
+const vikingOceanDestinations = [
   {
-    id: "rhine",
-    title: "Rhine River Cruises",
-    badge: "Rhine River",
-    icon: Waves,
-    desc: "The Rhine is one of Viking's most popular river itineraries and is frequently recommended for first-time river cruisers. Travelers sail past fairytale castles, charming villages, world-famous vineyards, and historic cultural landmarks across multiple countries.",
+    id: "mediterranean",
+    title: "Mediterranean Cruises",
+    badge: "Mediterranean",
+    icon: Globe,
+    desc: "The Mediterranean remains one of Viking's most popular ocean cruise regions. Travelers experience ancient history, world-famous cuisine, and iconic landmarks across Italy, Greece, Spain, Croatia, and beyond.",
     columns: [
       {
-        label: "Countries Often Visited:",
-        items: ["Netherlands", "Germany", "France", "Switzerland"],
+        label: "Popular Destinations:",
+        items: ["Italy", "Greece", "Spain", "Croatia"],
       },
     ],
-    themeLabel: "Ideal For First-Time River Cruisers",
+    themeLabel: "Culture, History & Coastal Beauty",
     themeText:
-      "The Rhine combines stunning scenery, medieval history, and easy accessibility — making it one of the most satisfying introductions to European river cruising.",
+      "Mediterranean voyages combine rich cultural heritage, breathtaking coastlines, and world-class cuisine — consistently ranking among Viking Ocean's most requested itineraries.",
   },
   {
-    id: "danube",
-    title: "Danube River Cruises",
-    badge: "Danube River",
-    icon: Globe,
-    desc: "The Danube is another Viking favorite, blending imperial architecture, classical music heritage, and breathtaking scenery across Central Europe. Key cities include Vienna, Budapest, and Bratislava.",
+    id: "northern",
+    title: "Northern Europe & Scandinavia",
+    badge: "Northern Europe",
+    icon: Waves,
+    desc: "Given Viking's Scandinavian heritage, Northern Europe itineraries are especially beloved. Guests explore dramatic Norwegian fjords, volcanic Iceland, historic Baltic capitals, and iconic British landmarks.",
     columns: [
       {
         label: "Highlights Include:",
-        items: ["Vienna", "Budapest", "Bratislava", "Scenic Countryside"],
-      },
-    ],
-    themeLabel: "A Journey Through Central Europe",
-    themeText:
-      "The Danube offers a blend of history, culture, and stunning scenery — from elegant imperial capitals to quiet riverside villages.",
-  },
-  {
-    id: "seine",
-    title: "Seine River Cruises",
-    badge: "Seine River",
-    icon: Compass,
-    desc: "Viking's Seine itineraries explore France's rich history and culture — from the iconic boulevards of Paris to the solemn Normandy landing beaches and the authentic charm of French villages.",
-    columns: [
-      {
-        label: "Featured Destinations:",
-        items: ["Paris", "Normandy", "French Villages", "Culinary Experiences"],
-      },
-    ],
-    themeLabel: "Popular With France Enthusiasts",
-    themeText:
-      "The Seine is particularly sought after by travelers interested in French culture, history, and cuisine — offering a deeply immersive French experience.",
-  },
-  {
-    id: "other",
-    title: "More River Destinations",
-    badge: "More Destinations",
-    icon: Mountain,
-    desc: "Beyond Europe's most iconic rivers, Viking also sails the Rhône through Southern France, the Douro through Portugal's terraced wine valleys, the Nile through ancient Egypt, and the Mekong through Southeast Asia.",
-    columns: [
-      {
-        label: "Additional Rivers:",
         items: [
-          "Rhône (Southern France)",
-          "Douro (Portugal)",
-          "Nile (Egypt)",
-          "Mekong (Southeast Asia)",
+          "Norwegian Fjords",
+          "Iceland",
+          "Baltic Capitals",
+          "United Kingdom",
         ],
       },
     ],
-    themeLabel: "River Cruising Beyond Europe",
+    themeLabel: "Viking's Ancestral Home Waters",
     themeText:
-      "From ancient Egyptian monuments to Southeast Asian temples, Viking's river network extends well beyond Europe — offering culturally rich itineraries on nearly every continent.",
+      "Northern Europe offers unforgettable natural beauty and deep cultural exploration — particularly meaningful aboard a cruise line rooted in Scandinavian tradition.",
+  },
+  {
+    id: "alaska",
+    title: "Alaska Cruises",
+    badge: "Alaska",
+    icon: Mountain,
+    desc: "Viking's Alaska itineraries appeal to travelers seeking nature, wildlife, and discovery. Guests experience glacier viewing, wildlife encounters, indigenous cultural experiences, and some of the most spectacular scenery on earth.",
+    columns: [
+      {
+        label: "Alaska Highlights:",
+        items: [
+          "Glacier Viewing",
+          "Wildlife Encounters",
+          "Indigenous Culture",
+          "Scenic Coastal Ports",
+        ],
+      },
+    ],
+    themeLabel: "A Bucket-List Destination",
+    themeText:
+      "Alaska remains one of Viking Ocean's most sought-after destinations — combining wilderness grandeur with the comfort of Viking's premium ocean ships.",
+  },
+  {
+    id: "other",
+    title: "Asia, Australia & Beyond",
+    badge: "Global Voyages",
+    icon: Compass,
+    desc: "Beyond Europe and Alaska, Viking Ocean sails throughout Asia — including Japan, Southeast Asia, China, and South Korea — as well as Australia and New Zealand, offering longer voyages to distant and fascinating destinations.",
+    columns: [
+      {
+        label: "Global Regions:",
+        items: [
+          "Japan & South Korea",
+          "Southeast Asia",
+          "Australia & New Zealand",
+          "China",
+        ],
+      },
+    ],
+    themeLabel: "Six Continents, Hundreds of Destinations",
+    themeText:
+      "Viking Ocean's global reach means that curious travelers can sail virtually anywhere in the world — always with the same destination-focused philosophy at the heart of every voyage.",
   },
 ];
 
@@ -127,21 +141,21 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
       description:
-        "Luxury travel experts helping travelers discover Viking river cruise experiences through expert guidance and personalized travel planning.",
+        "Luxury travel experts helping travelers discover Viking Ocean cruise experiences through expert guidance and personalized travel planning.",
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.tripsandships.com/viking-river-cruises",
-      url: "https://www.tripsandships.com/viking-river-cruises",
-      name: "Viking River Cruises | Europe's Most Popular River Cruise Experiences",
+      "@id": "https://www.tripsandships.com/viking-ocean-cruises",
+      url: "https://www.tripsandships.com/viking-ocean-cruises",
+      name: "Viking Ocean Cruises | Elegant Destination-Focused Ocean Voyages",
       description:
-        "Discover Viking River Cruises and explore Europe's iconic waterways, cultural destinations, and immersive travel experiences. Learn why Viking is a leader in river cruising for travelers seeking history, culture, and destination-focused adventures.",
+        "Explore Viking Ocean Cruises and discover destination-focused voyages, elegant Scandinavian design, enriching cultural experiences, and award-winning service. Learn why travelers choose Viking Ocean Cruises for sophisticated ocean travel.",
       isPartOf: { "@id": "https://www.tripsandships.com/#website" },
       about: [{ "@type": "Organization", name: "Viking Cruises" }],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.tripsandships.com/viking-river-cruises#breadcrumb",
+      "@id": "https://www.tripsandships.com/viking-ocean-cruises#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -158,53 +172,41 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "Viking River Cruises",
-          item: "https://www.tripsandships.com/viking-river-cruises",
+          name: "Viking Ocean Cruises",
+          item: "https://www.tripsandships.com/viking-ocean-cruises",
         },
       ],
     },
     {
       "@type": "ItemList",
-      "@id": "https://www.tripsandships.com/viking-river-cruises#itemlist",
-      name: "Popular Viking River Cruise Itineraries",
+      "@id": "https://www.tripsandships.com/viking-ocean-cruises#itemlist",
+      name: "Popular Viking Ocean Cruise Destinations",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Rhine River Cruises" },
-        { "@type": "ListItem", position: 2, name: "Danube River Cruises" },
-        { "@type": "ListItem", position: 3, name: "Seine River Cruises" },
-        { "@type": "ListItem", position: 4, name: "Douro River Cruises" },
+        { "@type": "ListItem", position: 1, name: "Mediterranean Cruises" },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Northern Europe & Scandinavia",
+        },
+        { "@type": "ListItem", position: 3, name: "Alaska Cruises" },
+        { "@type": "ListItem", position: 4, name: "Asia & Australia Cruises" },
       ],
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.tripsandships.com/viking-river-cruises#faq",
+      "@id": "https://www.tripsandships.com/viking-ocean-cruises#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is Viking River Cruises known for?",
+          name: "What is Viking Ocean Cruises known for?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Viking is known for destination-focused river cruising with cultural enrichment, included excursions, and elegant ships.",
+            text: "Viking Ocean Cruises is known for destination-focused itineraries, adult-only travel, cultural enrichment, and elegant Scandinavian design.",
           },
         },
         {
           "@type": "Question",
-          name: "Are Viking River Cruises all-inclusive?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Not fully, but many amenities such as dining, Wi-Fi, excursions, and beer and wine with meals are included.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the most popular Viking River Cruise?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Rhine and Danube River itineraries are among Viking's most popular offerings.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Are Viking River Cruises adults-only?",
+          name: "Are Viking Ocean Cruises adults-only?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. Guests are generally required to be at least 18 years old.",
@@ -212,103 +214,111 @@ const schemaData = {
         },
         {
           "@type": "Question",
-          name: "Does Viking offer excursions on river cruises?",
+          name: "Does Viking have casinos?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Most itineraries include at least one guided excursion in every port.",
+            text: "No. Viking ships do not feature casinos.",
           },
         },
         {
           "@type": "Question",
-          name: "Are Viking River Cruises luxury cruises?",
+          name: "Are shore excursions included on Viking Ocean Cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Viking is generally considered a premium or upper-premium river cruise brand with many luxury-style features.",
+            text: "Many itineraries include at least one complimentary excursion in each port.",
           },
         },
         {
           "@type": "Question",
-          name: "Which Viking River Cruise is best for first-time travelers?",
+          name: "Is Viking considered luxury?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The Rhine River and Danube River cruises are often recommended for first-time guests.",
+            text: "Viking is generally considered a premium or upper-premium cruise line offering many luxury-style experiences.",
           },
         },
         {
           "@type": "Question",
-          name: "Are drinks included on Viking River Cruises?",
+          name: "Are drinks included on Viking Ocean Cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Beer, wine, and soft drinks with meals are typically included.",
+            text: "Beer and wine with lunch and dinner are often included.",
           },
         },
         {
           "@type": "Question",
-          name: "Is Wi-Fi included on Viking River Cruises?",
+          name: "Does Viking sail Alaska?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Complimentary Wi-Fi is generally available onboard.",
+            text: "Yes. Alaska is one of Viking's most popular ocean cruise destinations.",
           },
         },
         {
           "@type": "Question",
-          name: "Are Viking River Cruises worth the cost?",
+          name: "Is Wi-Fi included on Viking Ocean Cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Many travelers believe Viking offers strong value due to included excursions, destination access, service, and cultural experiences.",
+            text: "Yes. Complimentary Wi-Fi is generally included.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the dress code onboard a Viking river cruise?",
+          name: "Are Viking Ocean Cruises good for solo travelers?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The dress code is casual and comfortable. There are no formal nights, but guests often wear smart casual attire for dinner. Comfortable walking shoes are highly recommended for shore excursions.",
+            text: "Many solo travelers enjoy Viking's relaxed and culturally focused atmosphere.",
           },
         },
         {
           "@type": "Question",
-          name: "Is there laundry service on Viking river cruise ships?",
+          name: "Are Viking Ocean Cruises worth the money?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, laundry services are available onboard for a fee. Some stateroom classes include complimentary laundry, but self-service launderettes are not typically available on river ships.",
+            text: "Many travelers believe Viking offers excellent value due to its service, enrichment programs, included amenities, and destination-focused experiences.",
           },
         },
         {
           "@type": "Question",
-          name: "Are gratuities included in the fare for Viking river cruises?",
+          name: "What is the dress code on Viking Ocean ships?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Gratuities are not included in the cruise fare. Tips for the ship's crew and local tour guides are discretionary, though Viking provides recommended daily amounts which can be paid onboard or pre-paid.",
+            text: "Viking Ocean has a casual, relaxed dress code. There are no formal nights. Smart casual attire is appropriate for evening dining, and comfortable clothing is ideal for daytime exploration ashore.",
           },
         },
         {
           "@type": "Question",
-          name: "How does Viking handle dietary restrictions and allergies onboard?",
+          name: "Are gratuities included on Viking Ocean Cruises?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Viking's chefs can accommodate most dietary requests, including vegetarian, low-sodium, diabetic, and gluten-free diets. It is best to notify Viking in advance and discuss dietary needs with the maître d' upon embarkation.",
+            text: "Gratuities are not included in the cruise fare. Viking provides recommended daily gratuity amounts, which can be pre-paid or settled onboard.",
           },
         },
         {
           "@type": "Question",
-          name: "Can I bring my own wine or alcohol onboard a Viking river ship?",
+          name: "How does Viking Ocean handle dietary restrictions?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Guests are welcome to bring local wines, beers, or spirits onboard and consume them in their staterooms or at dinner with no corkage fees.",
+            text: "Viking's culinary team can accommodate most dietary needs including vegetarian, vegan, gluten-free, and low-sodium diets. It is best to notify Viking in advance of the voyage.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I bring wine onboard a Viking Ocean ship?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Guests are welcome to bring wine and spirits onboard and enjoy them in their staterooms or at dinner with no corkage fees.",
           },
         },
       ],
     },
     {
       "@type": "Review",
-      "@id": "https://www.tripsandships.com/viking-river-cruises#review",
+      "@id": "https://www.tripsandships.com/viking-ocean-cruises#review",
       itemReviewed: {
         "@type": "TravelAction",
-        name: "Viking River Cruises",
+        name: "Viking Ocean Cruises",
       },
       reviewBody:
-        "Viking River Cruises offers award-winning European and international river voyages designed for curious adult travelers — combining elegant ships, inclusive pricing, destination-focused itineraries, and cultural enrichment programs that set it apart in the river cruise industry.",
+        "Viking Ocean Cruises offers award-winning destination-focused ocean voyages designed for curious adult travelers — combining elegant Scandinavian design, inclusive pricing, cultural enrichment programs, and smaller ship intimacy that set it apart from mainstream cruise lines.",
       reviewRating: {
         "@type": "Rating",
         ratingValue: "5",
@@ -321,10 +331,10 @@ const schemaData = {
     },
     {
       "@type": "TouristTrip",
-      "@id": "https://www.tripsandships.com/viking-river-cruises#touristtrip",
-      name: "Viking River Cruises — European & International River Voyages",
+      "@id": "https://www.tripsandships.com/viking-ocean-cruises#touristtrip",
+      name: "Viking Ocean Cruises — Destination-Focused Ocean Voyages",
       description:
-        "Award-winning Viking river cruises exploring Europe's iconic waterways, the Nile, the Mekong, and beyond — designed for culturally curious adult travelers seeking immersive destination experiences.",
+        "Award-winning Viking ocean cruises spanning the Mediterranean, Northern Europe, Alaska, Asia, Australia, and beyond — designed for culturally curious adult travelers seeking immersive destination experiences.",
       touristType: [
         "Cultural Travelers",
         "Couples",
@@ -343,64 +353,60 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is Viking River Cruises known for?",
-      a: "Viking is known for destination-focused river cruising with cultural enrichment, included excursions, and elegant ships.",
+      q: "What is Viking Ocean Cruises known for?",
+      a: "Viking Ocean Cruises is known for destination-focused itineraries, adult-only travel, cultural enrichment, and elegant Scandinavian design.",
     },
     {
-      q: "Are Viking River Cruises all-inclusive?",
-      a: "Not fully, but many amenities such as dining, Wi-Fi, excursions, and beer and wine with meals are included.",
-    },
-    {
-      q: "What is the most popular Viking River Cruise?",
-      a: "Rhine and Danube River itineraries are among Viking's most popular offerings.",
-    },
-    {
-      q: "Are Viking River Cruises adults-only?",
+      q: "Are Viking Ocean Cruises adults-only?",
       a: "Yes. Guests are generally required to be at least 18 years old.",
     },
     {
-      q: "Does Viking offer excursions on river cruises?",
-      a: "Yes. Most itineraries include at least one guided excursion in every port.",
+      q: "Does Viking have casinos?",
+      a: "No. Viking ships do not feature casinos.",
     },
     {
-      q: "Are Viking River Cruises luxury cruises?",
-      a: "Viking is generally considered a premium or upper-premium river cruise brand with many luxury-style features.",
+      q: "Are shore excursions included on Viking Ocean Cruises?",
+      a: "Many itineraries include at least one complimentary excursion in each port.",
     },
     {
-      q: "Which Viking River Cruise is best for first-time travelers?",
-      a: "The Rhine River and Danube River cruises are often recommended for first-time guests.",
+      q: "Is Viking considered luxury?",
+      a: "Viking is generally considered a premium or upper-premium cruise line offering many luxury-style experiences.",
     },
     {
-      q: "Are drinks included on Viking River Cruises?",
-      a: "Beer, wine, and soft drinks with meals are typically included.",
+      q: "Are drinks included on Viking Ocean Cruises?",
+      a: "Beer and wine with lunch and dinner are often included.",
     },
     {
-      q: "Is Wi-Fi included on Viking River Cruises?",
-      a: "Yes. Complimentary Wi-Fi is generally available onboard.",
+      q: "Does Viking sail Alaska?",
+      a: "Yes. Alaska is one of Viking's most popular ocean cruise destinations.",
     },
     {
-      q: "Are Viking River Cruises worth the cost?",
-      a: "Many travelers believe Viking offers strong value due to included excursions, destination access, service, and cultural experiences.",
+      q: "Is Wi-Fi included on Viking Ocean Cruises?",
+      a: "Yes. Complimentary Wi-Fi is generally included.",
     },
     {
-      q: "What is the dress code onboard a Viking river cruise?",
-      a: "The dress code is casual and comfortable. There are no formal nights, but guests often wear smart casual attire for dinner. Comfortable walking shoes are highly recommended for shore excursions.",
+      q: "Are Viking Ocean Cruises good for solo travelers?",
+      a: "Many solo travelers enjoy Viking's relaxed and culturally focused atmosphere.",
     },
     {
-      q: "Is there laundry service on Viking river cruise ships?",
-      a: "Yes, laundry services are available onboard for a fee. Some stateroom classes include complimentary laundry, but self-service launderettes are not typically available on river ships.",
+      q: "Are Viking Ocean Cruises worth the money?",
+      a: "Many travelers believe Viking offers excellent value due to its service, enrichment programs, included amenities, and destination-focused experiences.",
     },
     {
-      q: "Are gratuities included in the fare for Viking river cruises?",
-      a: "Gratuities are not included in the cruise fare. Tips for the ship's crew and local tour guides are discretionary, though Viking provides recommended daily amounts which can be paid onboard or pre-paid.",
+      q: "What is the dress code on Viking Ocean ships?",
+      a: "Viking Ocean has a casual, relaxed dress code. There are no formal nights. Smart casual attire is appropriate for evening dining, and comfortable clothing is ideal for daytime exploration ashore.",
     },
     {
-      q: "How does Viking handle dietary restrictions and allergies onboard?",
-      a: "Viking's chefs can accommodate most dietary requests, including vegetarian, low-sodium, diabetic, and gluten-free diets. It is best to notify Viking in advance and discuss dietary needs with the maître d' upon embarkation.",
+      q: "Are gratuities included on Viking Ocean Cruises?",
+      a: "Gratuities are not included in the cruise fare. Viking provides recommended daily gratuity amounts, which can be pre-paid or settled onboard.",
     },
     {
-      q: "Can I bring my own wine or alcohol onboard a Viking river ship?",
-      a: "Yes. Guests are welcome to bring local wines, beers, or spirits onboard and consume them in their staterooms or at dinner with no corkage fees.",
+      q: "How does Viking Ocean handle dietary restrictions?",
+      a: "Viking's culinary team can accommodate most dietary needs including vegetarian, vegan, gluten-free, and low-sodium diets. It is best to notify Viking in advance of the voyage.",
+    },
+    {
+      q: "Can I bring wine onboard a Viking Ocean ship?",
+      a: "Yes. Guests are welcome to bring wine and spirits onboard and enjoy them in their staterooms or at dinner with no corkage fees.",
     },
   ];
 
@@ -434,55 +440,55 @@ function FAQ() {
 }
 
 // ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
-const VikingRiverCruises = () => {
+const VikingOceanCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
-  const [activeDest, setActiveDest] = useState("rhine");
+  const [activeDest, setActiveDest] = useState("mediterranean");
   const currentDest =
-    vikingRiverItineraries.find((d) => d.id === activeDest) ||
-    vikingRiverItineraries[0];
+    vikingOceanDestinations.find((d) => d.id === activeDest) ||
+    vikingOceanDestinations[0];
   const ActiveIcon = currentDest.icon;
 
   const [currentLuxurySlide, setCurrentLuxurySlide] = useState(0);
   const [activeReasonTab, setActiveReasonTab] = useState(5);
   const [activeTypeIndex, setActiveTypeIndex] = useState(0);
 
-  const riverCruiseAdvantages = [
+  const oceanCruiseAdvantages = [
     {
-      title: "Sail Into City Centers",
+      title: "No Casinos, No Water Parks",
       description:
-        "River ships dock directly in historic districts and city centers — not industrial ports. Guests often walk straight into major attractions without transfers.",
+        "Viking deliberately excludes casinos, water parks, and large-scale amusement attractions — keeping the focus firmly on cultural exploration and destination immersion.",
       number: "01",
     },
     {
-      title: "Fewer Days at Sea",
+      title: "Smaller Ships, More Intimate",
       description:
-        "Unlike ocean cruising, river voyages focus almost entirely on destination exploration. Most ports are visited daily, maximizing time ashore.",
+        "Viking Ocean ships carry fewer passengers than many mainstream vessels, creating a more relaxed, personal atmosphere and access to ports that larger ships may overlook.",
       number: "02",
     },
     {
-      title: "Smaller, More Intimate Ships",
+      title: "Scandinavian-Inspired Design",
       description:
-        "River vessels carry far fewer passengers than ocean ships — creating a quieter, more relaxed, and more personal travel atmosphere.",
+        "Clean architecture, natural materials, panoramic windows, and open spaces create an atmosphere guests consistently describe as sophisticated, calm, and timeless.",
       number: "03",
     },
     {
-      title: "Continuously Changing Scenery",
+      title: "Destination-Focused Philosophy",
       description:
-        "Guests enjoy an ever-changing landscape as the ship moves through castles, vineyards, villages, and historic cities rather than open ocean.",
+        "Every aspect of the Viking experience — itinerary design, enrichment programs, dining, and shore excursions — is built around the destinations being visited.",
       number: "04",
     },
     {
-      title: "Multiple Countries, One Journey",
+      title: "Adults-Only Atmosphere",
       description:
-        "River cruises often pass through several countries in a single sailing — offering cultural variety without the hassle of repeated packing and unpacking.",
+        "Viking Ocean is adults-only (18+), creating a quieter, more refined onboard environment that appeals to couples, retirees, and culturally focused solo travelers.",
       number: "05",
     },
     {
-      title: "Cultural Immersion at Every Port",
+      title: "Inclusive Pricing Structure",
       description:
-        "Viking's included excursions and enrichment programs ensure guests engage meaningfully with each destination rather than simply passing through.",
+        "Wi-Fi, one shore excursion per port, beer and wine with meals, dining, and enrichment programs are often included — making budgeting straightforward and predictable.",
       number: "06",
     },
   ];
@@ -503,42 +509,42 @@ const VikingRiverCruises = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentLuxurySlide(
-        (prev) => (prev + 1) % riverCruiseAdvantages.length,
+        (prev) => (prev + 1) % oceanCruiseAdvantages.length,
       );
     }, 5000);
     return () => clearInterval(timer);
-  }, [riverCruiseAdvantages.length]);
+  }, [oceanCruiseAdvantages.length]);
 
   return (
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Viking River Cruises | Europe's Most Popular River Cruise Experiences
+          Viking Ocean Cruises | Elegant Destination-Focused Ocean Voyages
         </title>
         <meta
           name="title"
-          content="Viking River Cruises | Award-Winning River Cruise Vacations"
+          content="Viking Ocean Cruises | Luxury-Inspired Cruises for Curious Travelers"
         />
         <meta
           name="description"
-          content="Discover Viking River Cruises and explore Europe's iconic waterways, cultural destinations, and immersive travel experiences. Learn why Viking is a leader in river cruising for travelers seeking history, culture, and destination-focused adventures."
+          content="Explore Viking Ocean Cruises and discover destination-focused voyages, elegant Scandinavian design, enriching cultural experiences, and award-winning service. Learn why travelers choose Viking Ocean Cruises for sophisticated ocean travel."
         />
         <meta
           property="og:title"
-          content="Viking River Cruises | Europe's Most Popular River Cruise Experiences"
+          content="Viking Ocean Cruises | Elegant Destination-Focused Ocean Voyages"
         />
         <meta
           property="og:description"
-          content="Discover Viking River Cruises — award-winning river voyages through Europe's legendary waterways, designed for culturally curious adult travelers."
+          content="Discover Viking Ocean Cruises — award-winning destination-focused ocean voyages with elegant Scandinavian design, designed for culturally curious adult travelers."
         />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://www.tripsandships.com/viking-river-cruises"
+          content="https://www.tripsandships.com/viking-ocean-cruises"
         />
         <link
           rel="canonical"
-          href="https://www.tripsandships.com/viking-river-cruises"
+          href="https://www.tripsandships.com/viking-ocean-cruises"
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -560,35 +566,36 @@ const VikingRiverCruises = () => {
         ))}
         <div className="Scenic_hero_overlay"></div>
         <div className="Scenic_hero_content">
-          <h1>Explore the World with Viking River Cruises</h1>
+          <h1>Discover the World with Viking Ocean Cruises</h1>
           <p>
-            For travelers seeking a more immersive and culturally enriching way
-            to explore the world, Viking River Cruises has become one of the
-            most recognized names in river cruising.
+            For travelers who want to explore the world in comfort while
+            focusing on culture, history, and meaningful experiences, Viking
+            Ocean Cruises offers a refreshing alternative to traditional
+            cruising.
           </p>
           <p>
-            Unlike traditional ocean cruises that visit large ports and spend
-            days at sea, river cruises place travelers directly in the heart of
-            historic cities, charming villages, and iconic cultural
-            destinations.
+            Rather than emphasizing casinos, water parks, and large-scale
+            attractions, Viking creates ocean voyages centered on discovery,
+            enrichment, and destination immersion.
           </p>
           {readMore && (
             <>
               <p>
-                With elegant ships, thoughtfully designed itineraries, and a
-                strong focus on destination experiences, Viking River Cruises
-                offers travelers the opportunity to discover Europe, Asia,
-                Egypt, and North America in a unique and meaningful way.
+                From the Mediterranean and Northern Europe to Alaska, Asia,
+                Australia, and beyond, Viking Ocean Cruises combines elegant
+                ships, thoughtful service, and carefully curated itineraries
+                that appeal to travelers seeking more than a typical cruise
+                vacation.
               </p>
               <p>
-                For many guests, river cruising is not simply a vacation. It's a
-                journey through history, culture, architecture, cuisine, and
-                local traditions.
+                For many guests, Viking represents a different way to see the
+                world — one where the destination remains the star of the
+                journey.
               </p>
               <p>
-                At Trips &amp; Ships Luxury Travel, we help travelers find the
-                right Viking river itinerary for their travel style, interests,
-                and preferred destinations.
+                At Trips &amp; Ships Luxury Travel, we help travelers evaluate
+                whether Viking Ocean is the right fit for their travel style,
+                goals, and preferred destinations.
               </p>
             </>
           )}
@@ -603,7 +610,7 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ WHAT MAKES VIKING RIVER CRUISES DIFFERENT ════════════════════════ */}
+      {/* ══ WHAT IS VIKING OCEAN CRUISES ══════════════════════════════════════ */}
       <section
         className="ugt-components-section"
         id="ugt-components"
@@ -611,9 +618,7 @@ const VikingRiverCruises = () => {
       >
         <div className="Asc-container">
           <div className="ugt-components-header">
-            <h2 className="adg-c-h2">
-              What Makes Viking River Cruises Different?
-            </h2>
+            <h2 className="adg-c-h2">What Is Viking Ocean Cruises?</h2>
             <div className="adg-c-accent-line"></div>
           </div>
 
@@ -623,8 +628,8 @@ const VikingRiverCruises = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    src={VikingExp6}
-                    alt="Viking River Cruise sailing through Budapest Hungary Danube"
+                    src={VikingExp1}
+                    alt="Viking Ocean cruise ship sailing scenic destination"
                     className="ugt-component-image"
                   />
                 </div>
@@ -633,32 +638,32 @@ const VikingRiverCruises = () => {
               {/* RIGHT CONTENT */}
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
-                  Viking helped popularize modern river cruising by focusing on
-                  what many travelers value most — the destination itself.
-                  Rather than emphasizing onboard attractions, Viking places
-                  cultural immersion and historic exploration at the center of
-                  every journey.
+                  Viking Ocean Cruises is the ocean-going division of Viking,
+                  one of the world's most respected travel brands. The company
+                  bridges the gap between mainstream and luxury cruising —
+                  offering premium experiences without unnecessary complexity.
                 </p>
                 <p className="ugt-component-text">
-                  The result is a travel experience that feels genuinely
-                  different from mainstream cruising — quieter, more intimate,
-                  and more enriching.
+                  Rather than competing on size, casinos, or entertainment
+                  spectacle, Viking Ocean focuses on the destination itself —
+                  creating journeys that feel genuinely different from
+                  mainstream ocean cruising.
                 </p>
 
                 <div className="ugt-questions-box">
                   <span className="ugt-questions-title">
-                    Viking River Cruises Focus On:
+                    Viking Ocean Cruises Is Known For:
                   </span>
                   <ul className="ugt-questions-list">
                     {[
-                      "Cultural Immersion",
-                      "Historic Destinations",
-                      "Smaller Ships",
-                      "Scenic Sailing",
-                      "Included Excursions",
-                      "Adult-Focused Atmosphere",
-                      "Educational Enrichment",
-                      "Comfortable Accommodations",
+                      "Destination-Focused Itineraries",
+                      "Smaller Ocean Ships",
+                      "Scandinavian-Inspired Design",
+                      "Adult-Only Cruising (18+)",
+                      "Cultural Enrichment Programs",
+                      "Included Amenities",
+                      "Award-Winning Service",
+                      "Sophisticated Atmosphere",
                     ].map((item, idx) => (
                       <li key={idx} className="ugt-question-item">
                         <Check size={16} className="ugt-question-icon" />
@@ -681,22 +686,22 @@ const VikingRiverCruises = () => {
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-h2">
-                Discover Viking's Rhine Getaway Journey
+              Discover the Viking Ocean Cruise Experience
             </h2>
             <div className="azs-accent-line"></div>
             <p className="azs-video-intro">
-              Explore Europe's legendary waterways aboard a Viking river cruise
-              — sailing directly into the hearts of historic cities, guided by
-              Viking's signature cultural enrichment programs and exceptional
-              service.
+              Explore the world's most fascinating destinations aboard a Viking
+              Ocean ship — combining elegant Scandinavian design, cultural
+              enrichment programs, and thoughtful service that places the
+              destination at the center of every journey.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/mm-TtRkvDwc"
-                title="Discover the Viking River Cruise Experience"
+                src="https://www.youtube.com/embed/z7vttI7fin4"
+                title="Discover the Viking Ocean Cruise Experience"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -706,23 +711,85 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ WHY CHOOSE A RIVER CRUISE INSTEAD OF AN OCEAN CRUISE? ═══════════════════════ */}
+      {/* ══ FLEET OVERVIEW BREAKDOWN ════════════════════════════════════════ */}
+      <section className="dbf-fleet-breakdown-section">
+        <div className="dbf-fleet-container">
+          <div className="dbf-fleet-header">
+            <h2 className="dbf-fleet-title">
+              Smaller Ships, Bigger Experiences
+            </h2>
+            <div className="dbf-fleet-accent"></div>
+          </div>
+
+          <div className="dbf-fleet-grid">
+            {[
+              {
+                name: "Fewer Guests",
+                desc: "Less crowding throughout the ship, creating a more comfortable experience.",
+                icon: Anchor,
+              },
+              {
+                name: "Easier Navigation",
+                desc: "Ships are simple, intuitive, and enjoyable to explore.",
+                icon: Compass,
+              },
+              {
+                name: "Personalized Service",
+                desc: "Crew members often get to know guests throughout the voyage.",
+                icon: Ship,
+              },
+              {
+                name: "More Relaxed Atmosphere",
+                desc: "A quieter onboard environment focused on comfort and enrichment.",
+                icon: Waves,
+              },
+              {
+                name: "Better Destination Access",
+                desc: "Many itineraries focus on ports larger ships may not prioritize.",
+                icon: Globe,
+              },
+              {
+                name: "Destination-Focused Travel",
+                desc: "More time spent experiencing destinations rather than onboard attractions.",
+                icon: Sparkles,
+              },
+            ].map((benefit, idx) => {
+              const IconComponent = benefit.icon;
+              return (
+                <div key={idx} className="dbf-ship-overview-card">
+                  <div className="dbf-ship-card-icon-wrap">
+                    <IconComponent size={22} />
+                  </div>
+                  <h3 className="dbf-ship-card-name">{benefit.name}</h3>
+                  <p className="dbf-ship-card-desc">{benefit.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+          <p className="dbf-fleet-lead-footer">
+            The smaller ship approach is a major reason travelers return to
+            Viking again and again.
+          </p>
+        </div>
+      </section>
+
+      {/* ══ WHY TRAVELERS CHOOSE VIKING OCEAN CRUISES ═══════════════════════ */}
       <section className="luc-why-section" id="luc-why-viking">
         <div className="luc-why-container">
           {/* LEFT — stacked images */}
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
               <img
-                src={VikingExp1}
-                alt="Viking river cruise guests dining with scenic views"
+                src={VikingExp2}
+                alt="Viking Ocean cruise lounge elegant Scandinavian design"
                 className="luc-why-img-main"
               />
               <div className="luc-why-img-overlay"></div>
             </div>
             <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
               <img
-                src={VikingExp2}
-                alt="Viking river cruise restaurant regional cuisine"
+                src={VikingExp3}
+                alt="Viking Ocean cruise dining regional cuisine destination-inspired"
                 className="luc-why-img-accent"
               />
               <div className="luc-why-img-badge">
@@ -735,40 +802,39 @@ const VikingRiverCruises = () => {
           {/* RIGHT — content */}
           <div className="luc-why-content">
             <h2 className="luc-why-title">
-              Why Choose a River Cruise Instead of an Ocean Cruise?
+              Why Travelers Choose Viking Ocean Cruises
             </h2>
             <div className="aac-accent-line aac-accent-white"></div>
             <p className="luc-why-intro">
-              River cruising offers several unique advantages that redefine the
-              traditional travel experience, bringing you closer to your
-              destinations.
+              Many travelers are drawn to Viking because of what it doesn't
+              offer — and because of what it delivers instead.
             </p>
             <div className="luc-why-features">
               {[
                 {
                   num: "01",
-                  title: "Sail Through the Heart of Destinations",
-                  desc: "River ships dock directly in city centers rather than industrial ports, allowing guests to walk immediately into historic districts and major attractions.",
+                  title: "No Casinos, No Water Parks",
+                  desc: "Viking deliberately excludes casinos, water parks, and large-scale amusement attractions — keeping the focus firmly on cultural exploration and destination immersion.",
                 },
                 {
                   num: "02",
-                  title: "Less Time at Sea",
-                  desc: "Unlike ocean cruising, river voyages focus intensely on destination exploration with different, culturally rich ports visited on a daily basis.",
+                  title: "Cultural Exploration at the Center",
+                  desc: "Viking emphasizes cultural learning, historical exploration, and local experiences rather than onboard attractions — placing the destination at the heart of every voyage.",
                 },
                 {
                   num: "03",
-                  title: "Smaller Ships",
-                  desc: "River vessels typically carry far fewer passengers than ocean liners, creating a significantly more intimate, personal, and relaxed atmosphere onboard.",
+                  title: "Adults-Only Atmosphere",
+                  desc: "Viking Ocean ships are adults-only (18+), creating a quieter, more refined environment that appeals to couples, retirees, and culturally focused solo travelers.",
                 },
                 {
                   num: "04",
-                  title: "Scenic Cruising",
-                  desc: "Travelers enjoy continuously changing landscapes rather than vast stretches of open ocean. Castles, vineyards, and villages become part of the daily view.",
+                  title: "Elegant Scandinavian Design",
+                  desc: "Clean architecture, natural materials, panoramic windows, and open spaces create an onboard atmosphere that feels sophisticated, calm, and timeless.",
                 },
                 {
                   num: "05",
-                  title: "Easy Access",
-                  desc: "Guests experience multiple countries, languages, and cultures seamlessly, without the hassle of repeatedly packing and unpacking their luggage.",
+                  title: "Inclusive Pricing Structure",
+                  desc: "Wi-Fi, one shore excursion per port, beer and wine with meals, dining, and enrichment programs are often included — simplifying vacation budgeting.",
                 },
               ].map((feat, i) => (
                 <div key={i} className="luc-why-feature">
@@ -784,20 +850,143 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ POPULAR RIVER CRUISE DESTINATIONS — TABBED SECTION ══════════════ */}
+      <section
+        className="dmg-info-section dmg-bg-white"
+        id="dmg-accommodations"
+      >
+        <div className="dmg-info-container">
+          <div className="dmg-info-grid">
+            {/* Left Side Image */}
+            <div className="dmg-info-media">
+              <div className="dmg-media-wrapper">
+                <img
+                  src={VikingExp4}
+                  alt="Elegant Scandinavian design aboard a Viking Ocean ship"
+                  className="dmg-media-img"
+                />
+                <div className="dmg-media-overlay"></div>
+
+                <div className="dmg-media-badge">
+                  <span>Scandinavian Elegance</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side Content */}
+            <div className="dmg-info-content">
+              <h2 className="dmg-info-title">Elegant Scandinavian Design</h2>
+              <div className="dmg-info-accent"></div>
+
+              <p className="dmg-info-lead">
+                One of the defining characteristics of Viking Ocean Cruises is
+                its Scandinavian-inspired design, blending simplicity,
+                functionality, and understated luxury.
+              </p>
+
+              <div className="dmg-info-features">
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Clean Architecture
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Modern spaces feel elegant and sophisticated without being
+                      overly formal.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Natural Materials
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Wood, stone, and soft textures create a warm and welcoming
+                      atmosphere throughout the ship.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">Open Spaces</h3>
+                    <p className="dmg-info-feature-desc">
+                      Thoughtful layouts make ships feel spacious, comfortable,
+                      and uncrowded.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">Panoramic Views</h3>
+                    <p className="dmg-info-feature-desc">
+                      Large windows maximize connections to the surrounding
+                      destination and scenery.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Comfortable Luxury
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Refined accommodations are designed for relaxation,
+                      comfort, and effortless travel.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p
+            className="dmg-info-lead"
+            style={{
+              marginTop: "40px",
+              textAlign: "center",
+              maxWidth: "900px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            The result is an atmosphere many guests describe as sophisticated,
+            calm, and timeless.
+          </p>
+        </div>
+      </section>
+
+      {/* ══ POPULAR OCEAN CRUISE DESTINATIONS — TABBED SECTION ══════════════ */}
       <section className="dac-reasons-section">
         <div className="dac-reasons-container">
           <div className="dac-reasons-header">
             <span className="dac-reasons-eyebrow">
-              Popular Viking River Cruise Destinations
+              Popular Viking Ocean Cruise Destinations
             </span>
             <h2 className="dac-reasons-title">
-              Popular Viking River Cruise Destinations
+              Popular Viking Ocean Cruise Destinations
             </h2>
             <div className="dac-reasons-accent"></div>
             <p className="dac-reasons-lead">
-              Viking operates river cruises throughout some of the world's most
-              fascinating regions.
+              Viking Ocean sails to destinations across the globe.
             </p>
           </div>
 
@@ -807,11 +996,11 @@ const VikingRiverCruises = () => {
               onClick={() => setActiveReasonTab(5)}
             >
               <span className="dac-reasons-tab-icon-wrap">
-                <Waves size={18} />
+                <Globe size={18} />
               </span>
               <div className="dac-reasons-tab-text-wrap">
                 <span className="dac-reasons-tab-num">01</span>
-                <span className="dac-reasons-tab-title">Rhine</span>
+                <span className="dac-reasons-tab-title">Mediterranean</span>
               </div>
             </button>
 
@@ -820,11 +1009,11 @@ const VikingRiverCruises = () => {
               onClick={() => setActiveReasonTab(6)}
             >
               <span className="dac-reasons-tab-icon-wrap">
-                <Globe size={18} />
+                <Waves size={18} />
               </span>
               <div className="dac-reasons-tab-text-wrap">
                 <span className="dac-reasons-tab-num">02</span>
-                <span className="dac-reasons-tab-title">Danube</span>
+                <span className="dac-reasons-tab-title">Northern Europe</span>
               </div>
             </button>
 
@@ -833,11 +1022,11 @@ const VikingRiverCruises = () => {
               onClick={() => setActiveReasonTab(7)}
             >
               <span className="dac-reasons-tab-icon-wrap">
-                <Compass size={18} />
+                <Mountain size={18} />
               </span>
               <div className="dac-reasons-tab-text-wrap">
                 <span className="dac-reasons-tab-num">03</span>
-                <span className="dac-reasons-tab-title">Seine</span>
+                <span className="dac-reasons-tab-title">Alaska</span>
               </div>
             </button>
 
@@ -846,11 +1035,11 @@ const VikingRiverCruises = () => {
               onClick={() => setActiveReasonTab(8)}
             >
               <span className="dac-reasons-tab-icon-wrap">
-                <Mountain size={18} />
+                <Compass size={18} />
               </span>
               <div className="dac-reasons-tab-text-wrap">
                 <span className="dac-reasons-tab-num">04</span>
-                <span className="dac-reasons-tab-title">Rhône & Douro</span>
+                <span className="dac-reasons-tab-title">Asia</span>
               </div>
             </button>
 
@@ -863,126 +1052,38 @@ const VikingRiverCruises = () => {
               </span>
               <div className="dac-reasons-tab-text-wrap">
                 <span className="dac-reasons-tab-num">05</span>
-                <span className="dac-reasons-tab-title">Nile & Mekong</span>
+                <span className="dac-reasons-tab-title">Australia & NZ</span>
               </div>
             </button>
           </div>
 
           <div className="dac-reasons-tabs-content">
-            {/* Tab 5 — Rhine */}
+            {/* Tab 5 — Mediterranean */}
             {activeReasonTab === 5 && (
               <div className="dac-reasons-tab-panel fade-in">
                 <div className="dac-reasons-row dac-reasons-row--left-content">
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">01</span>
                     <h3 className="dac-reasons-row-title">
-                      Rhine River Cruises
+                      Mediterranean Cruises
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      The Rhine is one of Viking's most popular itineraries and
-                      is frequently recommended for first-time river cruisers.
-                      Travelers sail past fairytale castles, charming villages,
-                      world-famous vineyards, and historic cultural landmarks.
+                      The Mediterranean remains one of Viking's most popular
+                      ocean cruise regions. Travelers experience ancient
+                      history, world-famous cuisine, and iconic landmarks across
+                      Italy, Greece, Spain, Croatia, and beyond.
                     </p>
                     <div className="dac-reasons-pills">
                       {[
-                        "Netherlands",
-                        "Germany",
-                        "France",
-                        "Switzerland",
-                        "Historic Castles",
-                        "Vineyards",
+                        "Italy",
+                        "Greece",
+                        "Spain",
+                        "Croatia",
+                        "Ancient History",
+                        "Coastal Beauty",
                       ].map((pill, idx) => (
                         <span key={idx} className="dac-reasons-pill">
-                          <Waves size={12} style={{ marginRight: "6px" }} />
-                          {pill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="dac-reasons-media">
-                    <div className="dac-reasons-img-container">
-                      <img
-                        // src={HeroImage1}
-                        alt="Viking Rhine River Cruise scenic European landscapes"
-                        className="dac-reasons-img"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Tab 6 — Danube */}
-            {activeReasonTab === 6 && (
-              <div className="dac-reasons-tab-panel fade-in">
-                <div className="dac-reasons-row dac-reasons-row--right-content">
-                  <div className="dac-reasons-media">
-                    <div className="dac-reasons-img-container">
-                      <img
-                        // src={VikingRiver}
-                        alt="Viking Danube River Cruise Budapest Hungary"
-                        className="dac-reasons-img"
-                      />
-                    </div>
-                  </div>
-                  <div className="dac-reasons-content">
-                    <span className="dac-reasons-row-number">02</span>
-                    <h3 className="dac-reasons-row-title">
-                      Danube River Cruises
-                    </h3>
-                    <p className="dac-reasons-row-desc">
-                      The Danube blends imperial architecture, classical music
-                      heritage, and breathtaking scenery across Central Europe.
-                      Key highlights include Vienna, Budapest, and Bratislava.
-                    </p>
-                    <div className="dac-reasons-bullets">
-                      {[
-                        "Vienna — Imperial Architecture",
-                        "Budapest — One of Europe's Most Beautiful Capitals",
-                        "Bratislava — Historic Old Town",
-                        "Scenic Countryside Villages",
-                      ].map((bullet, idx) => (
-                        <div key={idx} className="dac-reasons-bullet-item">
-                          <Globe
-                            size={16}
-                            className="dac-reasons-bullet-icon"
-                          />
-                          <span>{bullet}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Tab 7 — Seine */}
-            {activeReasonTab === 7 && (
-              <div className="dac-reasons-tab-panel fade-in">
-                <div className="dac-reasons-row dac-reasons-row--left-content">
-                  <div className="dac-reasons-content">
-                    <span className="dac-reasons-row-number">03</span>
-                    <h3 className="dac-reasons-row-title">
-                      Seine River Cruises
-                    </h3>
-                    <p className="dac-reasons-row-desc">
-                      Viking's Seine itineraries explore France's rich history
-                      and culture — from iconic Paris to the historic Normandy
-                      landing beaches and the authentic charm of French
-                      villages.
-                    </p>
-                    <div className="dac-reasons-pills">
-                      {[
-                        "Paris",
-                        "Normandy",
-                        "French Villages",
-                        "Culinary Traditions",
-                        "Regional Wine",
-                        "WWII History",
-                      ].map((pill, idx) => (
-                        <span key={idx} className="dac-reasons-pill">
-                          <Compass size={12} style={{ marginRight: "6px" }} />
+                          <Globe size={12} style={{ marginRight: "6px" }} />
                           {pill}
                         </span>
                       ))}
@@ -992,7 +1093,7 @@ const VikingRiverCruises = () => {
                     <div className="dac-reasons-img-container">
                       <img
                         // src={VikingMediterranean}
-                        alt="Viking Seine River Cruise France Paris Normandy"
+                        alt="Viking Ocean Mediterranean cruise coastal landmarks"
                         className="dac-reasons-img"
                       />
                     </div>
@@ -1001,40 +1102,39 @@ const VikingRiverCruises = () => {
               </div>
             )}
 
-            {/* Tab 8 — Rhône & Douro */}
-            {activeReasonTab === 8 && (
+            {/* Tab 6 — Northern Europe */}
+            {activeReasonTab === 6 && (
               <div className="dac-reasons-tab-panel fade-in">
                 <div className="dac-reasons-row dac-reasons-row--right-content">
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingExp8}
-                        alt="Rhône River Cruise Southern France Avignon Provence"
+                        // src={VikingNorthern}
+                        alt="Viking Ocean Northern Europe Scandinavia fjords"
                         className="dac-reasons-img"
                       />
                     </div>
                   </div>
                   <div className="dac-reasons-content">
-                    <span className="dac-reasons-row-number">04</span>
+                    <span className="dac-reasons-row-number">02</span>
                     <h3 className="dac-reasons-row-title">
-                      Rhône & Douro River Cruises
+                      Northern Europe & Scandinavia
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      The Rhône winds through Southern France past Provence,
-                      vineyards, and medieval towns with Roman ruins — a
-                      favorite for food and wine enthusiasts. Portugal's Douro
-                      Valley offers terraced UNESCO vineyards and spectacular
-                      river scenery.
+                      Given Viking's Scandinavian roots, Northern Europe
+                      itineraries are especially popular. Guests explore
+                      dramatic Norwegian fjords, volcanic Iceland, historic
+                      Baltic capitals, and iconic British landmarks.
                     </p>
                     <div className="dac-reasons-bullets">
                       {[
-                        "Provence & Southern France",
-                        "Medieval Towns & Roman Ruins",
-                        "Douro Valley — UNESCO Wine Region",
-                        "Portuguese Heritage & Scenic Landscapes",
+                        "Norwegian Fjords — Dramatic Landscapes",
+                        "Iceland — Volcanic Wonders",
+                        "Baltic Capitals — Rich Cultural Heritage",
+                        "United Kingdom — Iconic Landmarks",
                       ].map((bullet, idx) => (
                         <div key={idx} className="dac-reasons-bullet-item">
-                          <Mountain
+                          <Waves
                             size={16}
                             className="dac-reasons-bullet-icon"
                           />
@@ -1047,27 +1147,112 @@ const VikingRiverCruises = () => {
               </div>
             )}
 
-            {/* Tab 9 — Nile & Mekong */}
+            {/* Tab 7 — Alaska */}
+            {activeReasonTab === 7 && (
+              <div className="dac-reasons-tab-panel fade-in">
+                <div className="dac-reasons-row dac-reasons-row--left-content">
+                  <div className="dac-reasons-content">
+                    <span className="dac-reasons-row-number">03</span>
+                    <h3 className="dac-reasons-row-title">Alaska Cruises</h3>
+                    <p className="dac-reasons-row-desc">
+                      Viking's Alaska itineraries appeal to travelers seeking
+                      nature and discovery. Guests experience glacier viewing,
+                      wildlife encounters, indigenous cultural experiences, and
+                      some of the most spectacular scenery on earth.
+                    </p>
+                    <div className="dac-reasons-pills">
+                      {[
+                        "Glacier Viewing",
+                        "Wildlife",
+                        "Indigenous Culture",
+                        "Scenic Ports",
+                        "Wilderness",
+                        "Natural Beauty",
+                      ].map((pill, idx) => (
+                        <span key={idx} className="dac-reasons-pill">
+                          <Mountain size={12} style={{ marginRight: "6px" }} />
+                          {pill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="dac-reasons-media">
+                    <div className="dac-reasons-img-container">
+                      <img
+                        // src={HeroImage2}
+                        alt="Viking Ocean Alaska cruise glacier wildlife scenery"
+                        className="dac-reasons-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Tab 8 — Asia */}
+            {activeReasonTab === 8 && (
+              <div className="dac-reasons-tab-panel fade-in">
+                <div className="dac-reasons-row dac-reasons-row--right-content">
+                  <div className="dac-reasons-media">
+                    <div className="dac-reasons-img-container">
+                      <img
+                        // src={VikingExp5}
+                        alt="Viking Ocean Asia cruise cultural destinations"
+                        className="dac-reasons-img"
+                      />
+                    </div>
+                  </div>
+                  <div className="dac-reasons-content">
+                    <span className="dac-reasons-row-number">04</span>
+                    <h3 className="dac-reasons-row-title">Asia Cruises</h3>
+                    <p className="dac-reasons-row-desc">
+                      Viking also explores fascinating destinations throughout
+                      Asia. Travelers experience diverse cultures, cuisine,
+                      history, and natural beauty across some of the world's
+                      most compelling destinations.
+                    </p>
+                    <div className="dac-reasons-bullets">
+                      {[
+                        "Japan — History, Culture & Natural Beauty",
+                        "Southeast Asia — Vibrant Traditions",
+                        "China — Ancient & Modern",
+                        "South Korea — Dynamic Culture",
+                      ].map((bullet, idx) => (
+                        <div key={idx} className="dac-reasons-bullet-item">
+                          <Compass
+                            size={16}
+                            className="dac-reasons-bullet-icon"
+                          />
+                          <span>{bullet}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Tab 9 — Australia & NZ */}
             {activeReasonTab === 9 && (
               <div className="dac-reasons-tab-panel fade-in">
                 <div className="dac-reasons-row dac-reasons-row--left-content">
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">05</span>
                     <h3 className="dac-reasons-row-title">
-                      Nile & Mekong River Cruises
+                      Australia & New Zealand
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      For travelers fascinated by ancient civilizations or
-                      Southeast Asian culture, Viking offers Nile River cruises
-                      through Egypt and select Mekong itineraries through
-                      Vietnam and Cambodia.
+                      Australia and New Zealand attract adventurous travelers
+                      seeking longer journeys to spectacular destinations. These
+                      itineraries feature stunning coastlines, vibrant cities,
+                      unique wildlife, and rich cultural experiences.
                     </p>
                     <div className="dac-reasons-bullets">
                       {[
-                        "Luxor & Karnak Temple",
-                        "Valley of the Kings",
-                        "Aswan & Ancient Egyptian Monuments",
-                        "Vietnam & Cambodia Cultural Landmarks",
+                        "Spectacular Coastlines & Natural Landscapes",
+                        "Vibrant Cities — Sydney, Melbourne, Auckland",
+                        "Unique Wildlife Encounters",
+                        "Rich Indigenous & Colonial Cultural Experiences",
                       ].map((bullet, idx) => (
                         <div key={idx} className="dac-reasons-bullet-item">
                           <Globe
@@ -1082,8 +1267,8 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingAntarctica}
-                        alt="Viking Nile River Cruise Egypt ancient monuments"
+                        // src={HeroImage1}
+                        alt="Viking Ocean Australia New Zealand cruise scenic coastline"
                         className="dac-reasons-img"
                       />
                     </div>
@@ -1095,7 +1280,7 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* LIFE ONBOARD A VIKING RIVER SHIP */}
+      {/* ══ LIFE ONBOARD A VIKING OCEAN SHIP ═════════════════════════════════ */}
       <section
         className="dmg-info-section dmg-bg-white"
         id="dmg-accommodations"
@@ -1104,14 +1289,14 @@ const VikingRiverCruises = () => {
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
               <h2 className="dmg-info-title">
-                Life Onboard a Viking River Ship
+                Life Onboard a Viking Ocean Ship
               </h2>
               <div className="dmg-info-accent"></div>
 
               <p className="dmg-info-lead">
-                Viking ships are designed to complement the destinations they
-                visit, creating an atmosphere focused on comfort, culture, and
-                exploration.
+                The onboard experience is intentionally designed to complement
+                the destinations being visited — creating a floating boutique
+                hotel atmosphere rather than a floating resort.
               </p>
 
               <div className="dmg-info-features">
@@ -1120,25 +1305,10 @@ const VikingRiverCruises = () => {
                     <Check size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Scandinavian Design
-                    </h3>
+                    <h3 className="dmg-info-feature-title">Relaxation</h3>
                     <p className="dmg-info-feature-desc">
-                      Clean, elegant, and comfortable interiors inspired by
-                      Nordic design principles.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">Panoramic Views</h3>
-                    <p className="dmg-info-feature-desc">
-                      Large windows maximize scenic viewing opportunities
-                      throughout the voyage.
+                      Quiet public spaces encourage meaningful downtime between
+                      destination-rich port days.
                     </p>
                   </div>
                 </div>
@@ -1149,11 +1319,41 @@ const VikingRiverCruises = () => {
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Comfortable Public Spaces
+                      Cultural Enrichment
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Ideal for relaxing, reading, or socializing after a day of
-                      exploration.
+                      Destination-focused lectures and presentations deepen
+                      guests' understanding of every place visited.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Panoramic Scenic Viewing
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Observation areas and large windows throughout the ship
+                      maximize enjoyment of coastal and ocean scenery.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Wellness & Fitness
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Fitness facilities and spa experiences support guest
+                      wellbeing throughout the voyage.
                     </p>
                   </div>
                 </div>
@@ -1168,21 +1368,7 @@ const VikingRiverCruises = () => {
                     </h3>
                     <p className="dmg-info-feature-desc">
                       Guests spend more time discussing travel experiences than
-                      onboard attractions.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Smaller Guest Capacity
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Creates a more personal and intimate onboard environment.
+                      onboard attractions — by design.
                     </p>
                   </div>
                 </div>
@@ -1192,8 +1378,8 @@ const VikingRiverCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  src={VikingExp3}
-                  alt="Life onboard a Viking River Ship"
+                    src={VikingExp5}
+                  alt="Life onboard a Viking Ocean Ship elegant lounge"
                   className="dmg-media-img"
                 />
                 <div className="dmg-media-overlay"></div>
@@ -1215,7 +1401,9 @@ const VikingRiverCruises = () => {
               marginRight: "auto",
             }}
           >
-            Many travelers appreciate the peaceful and sophisticated atmosphere.
+            Many travelers describe Viking Ocean ships as floating boutique
+            hotels rather than floating resorts — sophisticated, calm, and
+            focused on the world beyond the ship.
           </p>
         </div>
       </section>
@@ -1224,7 +1412,9 @@ const VikingRiverCruises = () => {
       <section className="Asc-section Asc-bg-soft" id="Asc-fleet">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">Viking River Cruises vs Ocean Cruises</h2>
+            <h2 className="Asc-h2">
+              Viking Ocean Cruises vs Traditional Cruise Lines
+            </h2>
             <div className="Asc-accent-line"></div>
           </div>
 
@@ -1233,42 +1423,35 @@ const VikingRiverCruises = () => {
               <thead>
                 <tr>
                   <th>Feature</th>
-                  <th>Viking River Cruises</th>
-                  <th>Traditional Ocean Cruises</th>
+                  <th>Viking Ocean Cruises</th>
+                  <th>Mainstream Cruise Lines</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>
-                    <strong>Ship Size</strong>
+                    <strong>Atmosphere</strong>
                   </td>
-                  <td>Small</td>
-                  <td>Large</td>
+                  <td>Relaxed &amp; Sophisticated</td>
+                  <td>Varies</td>
                 </tr>
                 <tr>
                   <td>
-                    <strong>Passenger Count</strong>
+                    <strong>Kids Programs</strong>
                   </td>
-                  <td>Lower</td>
-                  <td>Higher</td>
+                  <td>No</td>
+                  <td>Yes</td>
                 </tr>
                 <tr>
                   <td>
-                    <strong>Destination Access</strong>
+                    <strong>Casinos</strong>
                   </td>
-                  <td>City Centers</td>
-                  <td>Major Ports</td>
+                  <td>No</td>
+                  <td>Often Yes</td>
                 </tr>
                 <tr>
                   <td>
-                    <strong>Scenic Cruising</strong>
-                  </td>
-                  <td>Constant</td>
-                  <td>Occasional</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Family Programs</strong>
+                    <strong>Water Attractions</strong>
                   </td>
                   <td>No</td>
                   <td>Often Yes</td>
@@ -1285,14 +1468,21 @@ const VikingRiverCruises = () => {
                     <strong>Included Excursions</strong>
                   </td>
                   <td>Often Included</td>
-                  <td>Frequently Extra</td>
+                  <td>Usually Extra</td>
                 </tr>
                 <tr>
                   <td>
-                    <strong>Atmosphere</strong>
+                    <strong>Ship Size</strong>
                   </td>
-                  <td>Relaxed &amp; Educational</td>
-                  <td>Varies</td>
+                  <td>Smaller</td>
+                  <td>Larger</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Adult-Oriented</strong>
+                  </td>
+                  <td>Yes</td>
+                  <td>Mixed</td>
                 </tr>
               </tbody>
             </table>
@@ -1300,32 +1490,32 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ VIKING RIVER CRUISE EXPERIENCE SPOTLIGHTS ══════════════════════ */}
+      {/* ══ VIKING OCEAN CRUISE EXPERIENCE SPOTLIGHTS ══════════════════════ */}
       <section className="dbf-spotlight-section">
         <div className="dbf-spotlight-container">
           <div className="dbf-spotlight-header">
             <h2 className="dbf-spotlight-title">
-              Viking River Cruise Highlights
+              Viking Ocean Cruise Highlights
             </h2>
             <div className="dbf-spotlight-accent"></div>
           </div>
 
           <div className="dbf-spotlight-grid">
-            {/* CARD 1: Dining on Viking */}
+            {/* CARD 1: Dining on Viking Ocean */}
             <div className="dbf-spotlight-card dbf-spotlight-card--wish">
               <div className="dbf-spotlight-card-header">
                 <span className="dbf-spotlight-card-badge">
                   Culinary Experience
                 </span>
                 <h3 className="dbf-spotlight-card-title">
-                  Dining on Viking River Cruises
+                  Dining on Viking Ocean Cruises
                 </h3>
               </div>
 
               <div className="dbf-spotlight-card-media">
                 <img
-                  src={VikingExp4}
-                  alt="Dining on Viking River Cruises"
+                    src={VikingExp6 }
+                  alt="Dining on Viking Ocean Cruises Aquavit Terrace"
                   className="dbf-spotlight-card-img"
                 />
                 <div className="dbf-spotlight-card-img-overlay"></div>
@@ -1336,9 +1526,9 @@ const VikingRiverCruises = () => {
 
               <div className="dbf-spotlight-card-body">
                 <p className="dbf-spotlight-card-lead">
-                  Dining on Viking emphasizes regional cuisine, fresh
-                  ingredients, and local flavors inspired by the destinations
-                  visited.
+                  Dining on Viking Ocean reflects the line's destination-focused
+                  philosophy — emphasizing regional cuisine, fresh ingredients,
+                  and local flavors inspired by the places being visited.
                 </p>
 
                 <div className="dbf-spotlight-features-box">
@@ -1349,24 +1539,24 @@ const VikingRiverCruises = () => {
                   <ul className="dbf-spotlight-features-list">
                     {[
                       {
-                        title: "Fresh Ingredients",
-                        text: "Prepared with quality seasonal products.",
-                      },
-                      {
-                        title: "Destination-Inspired Menus",
-                        text: "Reflecting local culinary traditions.",
-                      },
-                      {
-                        title: "Regional Specialties",
-                        text: "Authentic flavors from each destination.",
+                        title: "Regional Cuisine",
+                        text: "Inspired by the destinations being visited.",
                       },
                       {
                         title: "International Favorites",
-                        text: "Familiar options alongside local dishes.",
+                        text: "Classic dishes from around the world.",
                       },
                       {
-                        title: "Relaxed Dining Atmosphere",
-                        text: "Comfortable and welcoming onboard experience.",
+                        title: "Casual Dining",
+                        text: "Relaxed venues for everyday meals.",
+                      },
+                      {
+                        title: "Specialty Restaurants",
+                        text: "Unique culinary experiences included on many voyages.",
+                      },
+                      {
+                        title: "High-Quality Ingredients",
+                        text: "Fresh and thoughtfully prepared menus.",
                       },
                     ].map((item, idx) => (
                       <li key={idx} className="dbf-spotlight-feature-item">
@@ -1385,8 +1575,8 @@ const VikingRiverCruises = () => {
               <div className="dbf-spotlight-card-footer">
                 <Sparkles size={16} className="dbf-spotlight-footer-icon" />
                 <p>
-                  Many travelers consider dining one of the highlights of a
-                  Viking voyage.
+                  Dining is often considered one of the highlights of the Viking
+                  Ocean experience.
                 </p>
               </div>
             </div>
@@ -1398,14 +1588,14 @@ const VikingRiverCruises = () => {
                   Popular Guest Profile
                 </span>
                 <h3 className="dbf-spotlight-card-title">
-                  Viking River Cruises for Mature Travelers
+                  Viking Ocean Cruises for Mature Travelers
                 </h3>
               </div>
 
               <div className="dbf-spotlight-card-media">
                 <img
-                  src={VikingExp5}
-                  alt="Mature travelers enjoying a Viking river cruise"
+                    src={VikingExp7}
+                  alt="Mature travelers enjoying a Viking Ocean cruise destination"
                   className="dbf-spotlight-card-img"
                 />
                 <div className="dbf-spotlight-card-img-overlay"></div>
@@ -1416,8 +1606,9 @@ const VikingRiverCruises = () => {
 
               <div className="dbf-spotlight-card-body">
                 <p className="dbf-spotlight-card-lead">
-                  Viking appeals strongly to travelers who prioritize culture,
-                  learning, and destination-focused exploration.
+                  Viking Ocean's atmosphere naturally appeals to travelers who
+                  prioritize culture, learning, and meaningful destination
+                  exploration over onboard entertainment.
                 </p>
 
                 <div className="dbf-spotlight-features-box">
@@ -1429,31 +1620,31 @@ const VikingRiverCruises = () => {
                     {[
                       {
                         title: "Retirees",
-                        text: "Seeking enriching travel experiences.",
+                        text: "Seeking enriching destination experiences.",
                       },
                       {
                         title: "Empty Nesters",
-                        text: "Exploring the world at a relaxed pace.",
+                        text: "Exploring the world at a relaxed, meaningful pace.",
                       },
                       {
                         title: "Couples",
-                        text: "Enjoying meaningful shared experiences.",
-                      },
-                      {
-                        title: "Lifelong Learners",
-                        text: "Interested in culture and history.",
+                        text: "Sharing sophisticated cultural experiences.",
                       },
                       {
                         title: "Solo Travelers",
-                        text: "Looking for comfortable exploration.",
+                        text: "Comfortable exploration in a relaxed atmosphere.",
+                      },
+                      {
+                        title: "Cultural Travelers",
+                        text: "Drawn to history, architecture, and local traditions.",
                       },
                       {
                         title: "History Enthusiasts",
-                        text: "Drawn to immersive destinations.",
+                        text: "Immersive destinations rich in historical significance.",
                       },
                       {
-                        title: "Food & Wine Travelers",
-                        text: "Interested in regional culinary experiences.",
+                        title: "Lifelong Learners",
+                        text: "Enrichment programs and educational experiences onboard.",
                       },
                     ].map((item, idx) => (
                       <li key={idx} className="dbf-spotlight-feature-item">
@@ -1472,8 +1663,8 @@ const VikingRiverCruises = () => {
               <div className="dbf-spotlight-card-footer">
                 <Users size={16} className="dbf-spotlight-footer-icon" />
                 <p>
-                  The atmosphere tends to be quieter and more educational than
-                  many mainstream cruise vacations.
+                  The experience is intentionally designed for adults seeking
+                  exploration rather than entertainment-focused vacations.
                 </p>
               </div>
             </div>
@@ -1481,12 +1672,12 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ IS VIKING RIVER FAMILY-FRIENDLY? ════════════════════════════════ */}
+      {/* ══ IS VIKING OCEAN FAMILY-FRIENDLY? ════════════════════════════════ */}
       <section className="adg-section">
         <div className="adg-container">
           <div className="adg-section-header" style={{ marginBottom: "60px" }}>
             <h2 className="adg-h2">
-              Are Viking River Cruises Family-Friendly?
+              Are Viking Ocean Cruises Family-Friendly?
             </h2>
             <div className="adg-accent-line"></div>
           </div>
@@ -1497,8 +1688,8 @@ const VikingRiverCruises = () => {
           >
             <div className="adg-content-card-side">
               <img
-                src={VikingExp7}
-                alt="Adults-only Viking river cruise experience"
+                src={VikingExp8}
+                alt="Adults-only Viking Ocean cruise stateroom experience"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
               />
@@ -1507,25 +1698,26 @@ const VikingRiverCruises = () => {
                 <div className="adg-card-meta">
                   <Compass size={28} />
                   <span className="adg-meta-label">
-                    Adult-Oriented River Cruise Experience
+                    Adults-Only Ocean Cruise Experience
                   </span>
                 </div>
 
                 <p className="adg-card-lead">
-                  Viking is not designed for families with young children.
+                  Viking is not a family cruise line.
                 </p>
 
                 <div className="adg-card-divider"></div>
 
                 <p className="adg-card-subtext">
                   Guests must generally be at least 18 years old to sail on
-                  Viking river cruises.
+                  Viking Ocean ships.
                 </p>
 
                 <p className="adg-card-subtext" style={{ marginTop: "18px" }}>
                   The cruise line focuses on cultural enrichment, destination
-                  exploration, and a quieter onboard atmosphere designed
-                  specifically for adult travelers.
+                  exploration, and a refined atmosphere designed specifically
+                  for adult travelers. Families with young children may prefer
+                  cruise lines built for multigenerational travel.
                 </p>
               </div>
             </div>
@@ -1537,7 +1729,7 @@ const VikingRiverCruises = () => {
                   icon: <Check size={20} />,
                 },
                 {
-                  title: "No Water Slides or Family Attractions",
+                  title: "No Water Slides or Amusement Attractions",
                   icon: <Waves size={20} />,
                 },
                 {
@@ -1549,7 +1741,7 @@ const VikingRiverCruises = () => {
                   icon: <Star size={20} />,
                 },
                 {
-                  title: "Designed for Adult Travelers Seeking Culture",
+                  title: "No Casinos",
                   icon: <Compass size={20} />,
                 },
               ].map((item, i) => (
@@ -1563,7 +1755,7 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ BEST VIKING RIVER CRUISES FOR FIRST-TIME TRAVELERS ════════════ */}
+      {/* ══ WHY LUXURY TRAVELERS APPRECIATE VIKING OCEAN ════════════════════ */}
       <section className="dac-families-section">
         <div className="dac-families-container">
           <div className="dac-families-grid">
@@ -1571,33 +1763,38 @@ const VikingRiverCruises = () => {
             <div className="dac-families-left">
               <div className="dac-families-heading-wrap">
                 <h2 className="dac-families-title">
-                  Best Viking River Cruises for First-Time Travelers
+                  Why Luxury Travelers Appreciate Viking Ocean
                 </h2>
                 <div className="dac-families-accent"></div>
               </div>
 
               <p className="dac-families-intro">
-                Many first-time guests choose these iconic itineraries, which
-                consistently rank among Viking's most popular journeys:
+                Many luxury-minded travelers choose Viking Ocean because it
+                focuses on meaningful travel — destinations take center stage,
+                and the onboard experience is built to support that priority.
               </p>
 
               <div className="dac-families-features">
                 {[
                   {
-                    title: "Rhine River Cruises",
-                    desc: "Ideal combination of scenery, castles, and culture.",
+                    title: "Meaningful Travel",
+                    desc: "Destinations take center stage throughout every Viking voyage — not casinos, water parks, or onboard spectacle.",
                   },
                   {
-                    title: "Danube River Cruises",
-                    desc: "Excellent introduction to Central Europe.",
+                    title: "Elegant Design",
+                    desc: "Sophisticated Scandinavian-inspired interiors that feel refined without being overly formal.",
                   },
                   {
-                    title: "Seine River Cruises",
-                    desc: "Perfect for travelers interested in France.",
+                    title: "Included Amenities",
+                    desc: "Less nickel-and-diming onboard — many key amenities are covered in the fare, simplifying planning.",
                   },
                   {
-                    title: "Douro River Cruises",
-                    desc: "Beautiful landscapes and wine experiences.",
+                    title: "Personalized Service",
+                    desc: "Smaller ships allow crew members to deliver a more intimate, attentive guest experience.",
+                  },
+                  {
+                    title: "Educational Enrichment",
+                    desc: "Lectures, destination presentations, and cultural programming provide meaningful learning throughout the voyage.",
                   },
                 ].map((feat, idx) => (
                   <div key={idx} className="dac-families-feature-item">
@@ -1620,22 +1817,24 @@ const VikingRiverCruises = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
-                    src={Vikingrhine}
-                    alt="Viking river cruise scenic journey"
+                    src={VikingExp10}
+                    alt="Viking Ocean cruise Mediterranean destination experience"
                     className="dac-families-img"
                   />
                   <div className="dac-families-img-caption">
-                    Rhine River Cruises
+                    Viking Explorer Suite
                   </div>
                 </div>
 
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
-                    src={Vikingdanube}
-                    alt="Viking river cruise cultural destination experience"
+                    src={VikingExp11}
+                    alt="Viking Ocean Northern Europe Scandinavia cultural cruise"
                     className="dac-families-img"
                   />
-                  <div className="dac-families-img-caption">Danube River</div>
+                  <div className="dac-families-img-caption">
+                    Viking Outdoor Dining
+                  </div>
                 </div>
               </div>
             </div>
@@ -1651,7 +1850,7 @@ const VikingRiverCruises = () => {
         <div className="Asc-container">
           <div className="ugt-components-header">
             <h2 className="adg-c-h2">
-              What Is Included on a Viking River Cruise?
+              What Is Included on a Viking Ocean Cruise?
             </h2>
             <div className="adg-c-accent-line"></div>
           </div>
@@ -1662,8 +1861,8 @@ const VikingRiverCruises = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    src={VikingExp8}
-                    alt="Viking river cruise stateroom elegant comfortable accommodations"
+                    src={VikingExp9}
+                    alt="Viking Ocean cruise dining regional cuisine included"
                     className="ugt-component-image"
                   />
                 </div>
@@ -1672,30 +1871,30 @@ const VikingRiverCruises = () => {
               {/* RIGHT CONTENT */}
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
-                  One of Viking's most attractive features is its relatively
-                  inclusive pricing structure. Depending on the itinerary, fares
-                  often include a meaningful range of amenities that simplify
-                  budgeting and reduce surprise expenses.
+                  One reason Viking enjoys strong guest loyalty is its
+                  relatively inclusive pricing structure. Depending on the
+                  itinerary, fares often include a meaningful range of amenities
+                  that simplify budgeting and reduce surprise expenses.
                 </p>
 
                 <p className="ugt-component-text">
-                  This helps travelers compare the true cost of a Viking river
-                  cruise more accurately against other options — once inclusions
-                  are factored in, the value proposition often becomes clearer.
+                  This allows travelers to better predict the true cost of a
+                  Viking Ocean voyage — and often makes the value proposition
+                  clearer when compared to mainstream cruise lines.
                 </p>
 
                 <div className="ugt-questions-box">
                   <span className="ugt-questions-title">
-                    Often Included in Viking River Cruise Fares:
+                    Often Included in Viking Ocean Cruise Fares:
                   </span>
                   <ul className="ugt-questions-list">
                     {[
-                      "Comfortable Stateroom Accommodations",
-                      "Breakfast, Lunch & Dinner Onboard",
+                      "Comfortable Staterooms & Suites",
+                      "Multiple Dining Venues Throughout the Ship",
                       "Beer & Wine with Meals",
                       "Complimentary Wi-Fi",
-                      "One Included Shore Excursion Per Port",
-                      "Cultural Enrichment Programs & Lectures",
+                      "At Least One Shore Excursion Per Port",
+                      "Cultural Enrichment Lectures & Programs",
                       "Port Charges & Fees",
                     ].map((item, idx) => (
                       <li key={idx} className="ugt-question-item">
@@ -1723,28 +1922,27 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ VIDEO SECTION 2 ══════════════════════════════════════════════════ */}
+    {/* ══ VIDEO SECTION 2 ══════════════════════════════════════════════════ */}
       <section
         className="azs-video-section"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">Explore the Danube with Viking</h2>
+            <h2 className="azs-h2">Discover Viking Longships</h2>
             <div className="azs-accent-line"></div>
 
             <p className="azs-video-intro">
-              Soak up soothing steam at a Budapest thermal bath, learn to waltz
-              at a traditional Viennese dance school, and savor authentic
-              Austro-Hungarian cuisine in Vienna and Budapest
+              Viking's award-winning Longships showcase innovative engineering,
+              streamlined Scandinavian design, and understated elegance.
             </p>
           </div>
 
           <div className="azs-video-wrapper">
             <div className="azs-video-frame">
               <iframe
-                src="https://www.youtube.com/embed/FFVou8VsXz4"
-                title="Danube Waltz Itinerary | Viking"
+                src="https://www.youtube.com/embed/drsLIk6vJ5A"
+                title="Discover Viking Longships"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -1754,20 +1952,20 @@ const VikingRiverCruises = () => {
         </div>
       </section>
 
-      {/* ══ IS VIKING RIVER WORTH IT? ══════════════════════════════════════ */}
+      {/* ══ IS VIKING OCEAN WORTH IT? ══════════════════════════════════════ */}
       <section
         className="Asc-section Asc-alt-bg"
         style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2>Are Viking River Cruises Worth It?</h2>
+            <h2>Are Viking Ocean Cruises Worth It?</h2>
             <div className="Asc-accent-line"></div>
           </div>
 
           <p className="Asc-intro-text">
-            For many travelers, Viking River Cruises offer excellent value. The
-            right choice depends on your travel priorities.
+            For many travelers, Viking Ocean offers outstanding value. The right
+            choice depends on your travel priorities.
           </p>
 
           <div className="Asc-who-grid">
@@ -1776,13 +1974,13 @@ const VikingRiverCruises = () => {
 
               <ul className="Asc-who-list">
                 {[
-                  "Cultural travelers",
-                  "History enthusiasts",
                   "Couples",
                   "Retirees",
-                  "Food and wine lovers",
+                  "Solo travelers",
+                  "Cultural explorers",
+                  "History enthusiasts",
                   "Destination-focused travelers",
-                  "First-time river cruisers",
+                  "Luxury-minded guests",
                 ].map((item, i) => (
                   <li key={i}>
                     <Check size={16} className="Asc-icon-green" />
@@ -1800,8 +1998,8 @@ const VikingRiverCruises = () => {
                   "Families with young children",
                   "Travelers seeking nightlife",
                   "Budget-focused travelers",
-                  "Guests wanting large-scale onboard attractions",
-                  "Travelers seeking highly active entertainment",
+                  "Guests wanting water parks and attractions",
+                  "Travelers seeking highly active onboard entertainment",
                 ].map((item, i) => (
                   <li key={i}>
                     <X size={16} className="Asc-icon-red" />
@@ -1827,7 +2025,7 @@ const VikingRiverCruises = () => {
             <div className="Adg-expert-image-col">
               <div className="Adg-expert-portrait-wrap">
                 <img
-                  src={AboutImage}
+                    src={AboutImage}
                   alt="Angela Hughes – Luxury Travel Expert"
                   className="Adg-expert-portrait"
                 />
@@ -1925,7 +2123,7 @@ const VikingRiverCruises = () => {
             <h2 className="Asc-h2">Frequently Asked Questions</h2>
             <div className="Asc-accent-line"></div>
             <p className="Asc-faq-intro">
-              Everything you need to know about Viking River Cruises.
+              Everything you need to know about Viking Ocean Cruises.
             </p>
           </div>
           <FAQ />
@@ -1937,7 +2135,7 @@ const VikingRiverCruises = () => {
         <div className="Asc-help-bg-wrap">
           <img
             src={VikingCta}
-            alt="Viking River Cruise scenic cultural destination experience"
+            alt="Viking Ocean cruise scenic destination ocean voyage"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -1948,11 +2146,11 @@ const VikingRiverCruises = () => {
             <div className="Asc-help-content">
               <div className="Asc-help-header">
                 <span className="Asc-help-eyebrow">
-                  Viking River Cruises Guide
+                  Viking Ocean Cruises Guide
                 </span>
                 <h2 className="Asc-help-h2">
-                  The True Magic of River Cruising <br /> Is Found Beyond the
-                  Riverbank
+                  The Most Memorable Journeys Are Defined <br /> by the
+                  Destinations You Explore
                 </h2>
                 <div className="Asc-help-accent"></div>
               </div>
@@ -1960,16 +2158,14 @@ const VikingRiverCruises = () => {
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    Viking River Cruises offers travelers a unique opportunity
-                    to experience some of the world's most fascinating
-                    destinations from a completely different perspective.
+                    Viking Ocean Cruises has redefined ocean travel for a
+                    generation of curious, destination-focused travelers.
                   </p>
                   <p className="Asc-help-intro">
-                    Whether you're sailing past medieval castles on the Rhine,
-                    exploring imperial cities along the Danube, discovering
-                    French culture on the Seine, or uncovering the mysteries of
-                    ancient Egypt on the Nile, Viking combines comfort, culture,
-                    and exploration into one seamless experience.
+                    By eliminating many of the distractions commonly found on
+                    large cruise ships and focusing instead on culture, history,
+                    enrichment, and exploration, Viking creates journeys that
+                    feel more meaningful and immersive.
                     {!readMore && (
                       <button
                         onClick={() => setReadMore(true)}
@@ -1990,19 +2186,23 @@ const VikingRiverCruises = () => {
                   <br />
                   {readMore && (
                     <p className="Asc-help-intro">
-                      For travelers who value meaningful journeys over onboard
-                      attractions, Viking River Cruises continues to set the
-                      standard for destination-focused travel.
+                      Whether you're sailing through the Mediterranean,
+                      exploring the Norwegian Fjords, discovering Alaska's
+                      wilderness, or crossing oceans to distant destinations,
+                      Viking offers a sophisticated and rewarding travel
+                      experience.
                       <br />
                       <br />
-                      Because the true magic of river cruising isn't found
-                      onboard.
+                      For travelers who value learning, discovery, and authentic
+                      connections with the world around them, Viking Ocean
+                      Cruises remains one of the most respected names in modern
+                      cruising.
+                      <br />
                       <br />
                       <strong>
-                        {" "}
-                        It's found in the historic cities, breathtaking
-                        landscapes, and unforgettable experiences waiting just
-                        beyond the riverbank.
+                        Because the most memorable journeys aren't defined by
+                        what happens onboard. They're defined by the
+                        destinations you explore and the stories you bring home.
                       </strong>
                       <button
                         onClick={() => setReadMore(false)}
@@ -2022,7 +2222,7 @@ const VikingRiverCruises = () => {
                   )}
                   <div className="Asc-help-btn-container">
                     <button className="Asc-help-cta-btn">
-                      Explore Viking River Cruise Vacations
+                      Explore Viking Ocean Cruise Vacations
                       <ArrowRight size={18} />
                     </button>
                   </div>
@@ -2030,17 +2230,17 @@ const VikingRiverCruises = () => {
 
                 <div className="Asc-help-list-box">
                   <h3 className="Asc-help-list-title">
-                    Why Travelers Choose Viking River Cruises:
+                    Why Travelers Choose Viking Ocean Cruises:
                   </h3>
                   <ul className="Asc-help-bullets">
                     {[
                       "Destination-Focused Travel",
                       "Cultural Enrichment Programs",
-                      "Award-Winning River Cruise Experiences",
-                      "Scenic Sailing Through Historic Landscapes",
+                      "Elegant Scandinavian Ocean Ships",
                       "Adults-Only Sophisticated Atmosphere",
                       "Inclusive Pricing Structure",
-                      "Elegant Scandinavian Ship Design",
+                      "Smaller Ships, More Personal Experience",
+                      "Award-Winning Service",
                     ].map((item, i) => (
                       <li key={i}>
                         <div className="Asc-bullet-icon">
@@ -2053,7 +2253,7 @@ const VikingRiverCruises = () => {
                   <p className="Asc-help-intro" style={{ marginTop: "20px" }}>
                     <strong>
                       Contact Trips &amp; Ships Luxury Travel to explore Viking
-                      river cruise itineraries and find the perfect voyage for
+                      Ocean cruise itineraries and find the perfect voyage for
                       your travel style.
                     </strong>
                   </p>
@@ -2067,4 +2267,4 @@ const VikingRiverCruises = () => {
   );
 };
 
-export default VikingRiverCruises;
+export default VikingOceanCruises;

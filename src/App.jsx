@@ -42,6 +42,7 @@ import WhatIsIncludedDisneyCruise from "./pages/WhatIsIncludedDisneyCruise/WhatI
 import BestDisneyCruiseShipForFamilies from "./pages/BestDisneyCruiseShipForFamilies/BestDisneyCruiseShipForFamilies";
 import VikingCruises from "./pages/VikingCruises/VikingCruises";
 import VikingRiverCruises from "./pages/VikingRiverCruises/VikingRiverCruises";
+import VikingOceanCruises from "./pages/VikingOceanCruises/VikingOceanCruises";
 
 function App() {
   return (
@@ -255,6 +256,11 @@ function App() {
           <Route
             path="/viking-river-cruises"
             element={<VikingRiverCruises />}
+          />
+
+           <Route
+            path="/viking-ocean-cruises"
+            element={<VikingOceanCruises />}
           />
         </Routes>
       </BrowserRouter>
