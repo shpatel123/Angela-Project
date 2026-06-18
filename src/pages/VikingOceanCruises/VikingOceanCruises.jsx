@@ -38,6 +38,7 @@ import VikingExp9 from "../../assets/VikingOceanCruises/Viking-Multiple-Dining.j
 import VikingExp10 from "../../assets/VikingOceanCruises/Viking-Explorer-Suite.jpg";
 import VikingExp11 from "../../assets/VikingOceanCruises/viking-ocean-cruise-aquavit-terrace-outdoor-dining.jpg";
 import VikingCta from "../../assets/VikingOceanCruises/flam-norway-fjord-cruise.jpg";
+import VikingAlaska from "../../assets/VikingOceanCruises/alaska-glacier-mountain-lake-scenic-wilderness-vacation.jpg";
 
 // ─── VIKING OCEAN CRUISE DESTINATION PANEL DATA ──────────────────────────────
 const vikingOceanDestinations = [
@@ -849,7 +850,8 @@ const VikingOceanCruises = () => {
           </div>
         </div>
       </section>
-
+      
+{/* Elegant Scandinavian Design */}
       <section
         className="dmg-info-section dmg-bg-white"
         id="dmg-accommodations"
@@ -883,7 +885,7 @@ const VikingOceanCruises = () => {
                 functionality, and understated luxury.
               </p>
 
-              <div className="dmg-info-features">
+              <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
                     <Check size={16} />
@@ -1179,7 +1181,7 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={HeroImage2}
+                        src={VikingAlaska}
                         alt="Viking Ocean Alaska cruise glacier wildlife scenery"
                         className="dac-reasons-img"
                       />
@@ -1299,7 +1301,7 @@ const VikingOceanCruises = () => {
                 hotel atmosphere rather than a floating resort.
               </p>
 
-              <div className="dmg-info-features">
+              <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
                     <Check size={16} />
@@ -1378,7 +1380,7 @@ const VikingOceanCruises = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                    src={VikingExp5}
+                  src={VikingExp5}
                   alt="Life onboard a Viking Ocean Ship elegant lounge"
                   className="dmg-media-img"
                 />
@@ -1514,7 +1516,7 @@ const VikingOceanCruises = () => {
 
               <div className="dbf-spotlight-card-media">
                 <img
-                    src={VikingExp6 }
+                  src={VikingExp6}
                   alt="Dining on Viking Ocean Cruises Aquavit Terrace"
                   className="dbf-spotlight-card-img"
                 />
@@ -1558,6 +1560,14 @@ const VikingOceanCruises = () => {
                         title: "High-Quality Ingredients",
                         text: "Fresh and thoughtfully prepared menus.",
                       },
+                      {
+                        title: "Oceanfront Dining Venues",
+                        text: "Many restaurants feature panoramic sea views that enhance the dining experience.",
+                      },
+                      {
+                        title: "Complimentary Dining Options",
+                        text: "Multiple dining venues are included without additional specialty dining fees.",
+                      },
                     ].map((item, idx) => (
                       <li key={idx} className="dbf-spotlight-feature-item">
                         <span className="dbf-spotlight-feature-check">
@@ -1594,7 +1604,7 @@ const VikingOceanCruises = () => {
 
               <div className="dbf-spotlight-card-media">
                 <img
-                    src={VikingExp7}
+                  src={VikingExp7}
                   alt="Mature travelers enjoying a Viking Ocean cruise destination"
                   className="dbf-spotlight-card-img"
                 />
@@ -1768,12 +1778,6 @@ const VikingOceanCruises = () => {
                 <div className="dac-families-accent"></div>
               </div>
 
-              <p className="dac-families-intro">
-                Many luxury-minded travelers choose Viking Ocean because it
-                focuses on meaningful travel — destinations take center stage,
-                and the onboard experience is built to support that priority.
-              </p>
-
               <div className="dac-families-features">
                 {[
                   {
@@ -1922,7 +1926,7 @@ const VikingOceanCruises = () => {
         </div>
       </section>
 
-    {/* ══ VIDEO SECTION 2 ══════════════════════════════════════════════════ */}
+      {/* ══ VIDEO SECTION 2 ══════════════════════════════════════════════════ */}
       <section
         className="azs-video-section"
         style={{ backgroundColor: "var(--bg-soft)" }}
@@ -1962,7 +1966,6 @@ const VikingOceanCruises = () => {
             <h2>Are Viking Ocean Cruises Worth It?</h2>
             <div className="Asc-accent-line"></div>
           </div>
-
 
           <div className="Asc-who-grid">
             <div className="Asc-who-card Asc-who-yes">
@@ -2021,7 +2024,7 @@ const VikingOceanCruises = () => {
             <div className="Adg-expert-image-col">
               <div className="Adg-expert-portrait-wrap">
                 <img
-                    src={AboutImage}
+                  src={AboutImage}
                   alt="Angela Hughes – Luxury Travel Expert"
                   className="Adg-expert-portrait"
                 />

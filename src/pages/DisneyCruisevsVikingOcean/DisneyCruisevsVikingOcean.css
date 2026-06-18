@@ -1193,6 +1193,30 @@
   gap: 1.1rem;
 }
 
+.dmg-info-features-scrollable {
+  max-height: 440px;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+
+/* Custom scrollbar styling for premium look */
+.dmg-info-features-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dmg-info-features-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dmg-info-features-scrollable::-webkit-scrollbar-thumb {
+  background-color: rgba(39, 68, 114, 0.15);
+  border-radius: 10px;
+}
+
+.dmg-info-features-scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: var(--navy-light);
+}
+
 .dmg-info-feature-item {
   display: flex;
   align-items: flex-start;
@@ -5017,6 +5041,10 @@
 .dac-families-right {
   position: relative;
   z-index: 2;
+  margin-top: auto;
+}
+.dac-families-heading-wrap{
+  margin-bottom: 45px;
 }
 
 .dac-families-image-wrapper {

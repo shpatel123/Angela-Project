@@ -680,9 +680,7 @@ const VikingRiverCruises = () => {
       >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-h2">
-                Discover Viking's Rhine Getaway Journey
-            </h2>
+            <h2 className="azs-h2">Discover Viking's Rhine Getaway Journey</h2>
             <div className="azs-accent-line"></div>
             <p className="azs-video-intro">
               Explore Europe's legendary waterways aboard a Viking river cruise
@@ -1368,6 +1366,14 @@ const VikingRiverCruises = () => {
                         title: "Relaxed Dining Atmosphere",
                         text: "Comfortable and welcoming onboard experience.",
                       },
+                      {
+                        title: "Complimentary Beer & Wine",
+                        text: "Included with lunch and dinner on many Viking itineraries.",
+                      },
+                      {
+                        title: "Open Seating Dining",
+                        text: "Flexible dining arrangements encourage a relaxed guest experience.",
+                      },
                     ].map((item, idx) => (
                       <li key={idx} className="dbf-spotlight-feature-item">
                         <span className="dbf-spotlight-feature-check">
@@ -1576,11 +1582,6 @@ const VikingRiverCruises = () => {
                 <div className="dac-families-accent"></div>
               </div>
 
-              <p className="dac-families-intro">
-                Many first-time guests choose these iconic itineraries, which
-                consistently rank among Viking's most popular journeys:
-              </p>
-
               <div className="dac-families-features">
                 {[
                   {
@@ -1764,11 +1765,6 @@ const VikingRiverCruises = () => {
             <h2>Are Viking River Cruises Worth It?</h2>
             <div className="Asc-accent-line"></div>
           </div>
-
-          <p className="Asc-intro-text">
-            For many travelers, Viking River Cruises offer excellent value. The
-            right choice depends on your travel priorities.
-          </p>
 
           <div className="Asc-who-grid">
             <div className="Asc-who-card Asc-who-yes">

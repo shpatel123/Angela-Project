@@ -911,7 +911,7 @@ const VikingExpeditionCruises = () => {
                 natural habitats.
               </p>
 
-              <div className="dmg-info-features">
+              <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
                     <Check size={16} />
@@ -1633,12 +1633,7 @@ const VikingExpeditionCruises = () => {
                 <div className="dac-families-accent"></div>
               </div>
 
-              <p className="dac-families-intro">
-                Many luxury travelers choose Viking because it successfully
-                balances adventure with comfort. Experiences focus on
-                exploration, while the onboard services remain consistently
-                premium.
-              </p>
+              
 
               <div className="dac-families-features">
                 {[

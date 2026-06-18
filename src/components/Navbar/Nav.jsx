@@ -345,7 +345,7 @@ const Nav = () => {
                 Viking River Cruises
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/viking-ocean-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -353,12 +353,20 @@ const Nav = () => {
                 Viking Ocean Cruises
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/viking-expedition-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Viking Expedition Cruises
+              </NavLink>
+
+              <NavLink
+                to="/is-viking-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Viking Worth It
               </NavLink>
             </div>
           </div>
@@ -700,30 +708,37 @@ const Nav = () => {
               Viking Cruises
             </NavLink>
 
-             <NavLink
-                to="/viking-river-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Viking River Cruises
-              </NavLink>
+            <NavLink
+              to="/viking-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking River Cruises
+            </NavLink>
 
-              <NavLink
-                to="/viking-ocean-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Viking Ocean Cruises
-              </NavLink>
+            <NavLink
+              to="/viking-ocean-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Ocean Cruises
+            </NavLink>
 
-               <NavLink
-                to="/viking-expedition-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Viking Expedition Cruises
-              </NavLink>
+            <NavLink
+              to="/viking-expedition-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Expedition Cruises
+            </NavLink>
 
+            <NavLink
+              to="/is-viking-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Viking Worth It
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

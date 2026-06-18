@@ -44,6 +44,7 @@ import VikingCruises from "./pages/VikingCruises/VikingCruises";
 import VikingRiverCruises from "./pages/VikingRiverCruises/VikingRiverCruises";
 import VikingOceanCruises from "./pages/VikingOceanCruises/VikingOceanCruises";
 import VikingExpeditionCruises from "./pages/VikingExpeditionCruises/VikingExpeditionCruises";
+import IsVikingWorthIt from "./pages/IsVikingWorthIt/IsVikingWorthIt";
 
 function App() {
   return (
@@ -267,6 +268,11 @@ function App() {
            <Route
             path="/viking-expedition-cruises"
             element={<VikingExpeditionCruises />}
+          />
+
+           <Route
+            path="/is-viking-worth-it"
+            element={<IsVikingWorthIt />}
           />
         </Routes>
       </BrowserRouter>
