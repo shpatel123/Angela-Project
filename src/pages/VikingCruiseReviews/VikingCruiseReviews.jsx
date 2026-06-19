@@ -1413,94 +1413,94 @@ const VikingCruiseReviews = () => {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════
-2. REVIEW OVERVIEW
-════════════════════════════════════════ */}
+        {/* ════════════════════════════════════════
+  2. REVIEW OVERVIEW
+  ════════════════════════════════════════ */}
 
-      <section className="adg-c-section adg-c-bg-white">
-        <div className="adg-c-container">
-          <div className="adg-c-section-header">
-            <h2 className="adg-c-h2">Is Viking Worth the Positive Reviews?</h2>
-            <div className="adg-c-accent-line"></div>
-          </div>
-
-          <div className="adg-c-overview-layout">
-            {/* LEFT — list */}
-            <div className="adg-c-overview-icons">
-              <div className="adg-c-overview-item">
-                <span className="adg-c-overview-icon">✔</span>
-                <span className="adg-c-overview-label">Service</span>
-              </div>
-
-              <div className="adg-c-overview-item">
-                <span className="adg-c-overview-icon">✔</span>
-                <span className="adg-c-overview-label">Destinations</span>
-              </div>
-
-              <div className="adg-c-overview-item">
-                <span className="adg-c-overview-icon">✔</span>
-                <span className="adg-c-overview-label">Cultural Immersion</span>
-              </div>
-
-              <div className="adg-c-overview-item">
-                <span className="adg-c-overview-icon">✔</span>
-                <span className="adg-c-overview-label">Comfort</span>
-              </div>
-
-              <div className="adg-c-overview-item">
-                <span className="adg-c-overview-icon">✔</span>
-                <span className="adg-c-overview-label">
-                  Educational Enrichment
-                </span>
-              </div>
-
-              <div className="adg-c-overview-item">
-                <span className="adg-c-overview-icon">✔</span>
-                <span className="adg-c-overview-label">
-                  Thoughtful Itineraries
-                </span>
-              </div>
-
-              <div className="adg-c-overview-item">
-                <span className="adg-c-overview-icon">✔</span>
-                <span className="adg-c-overview-label">
-                  Smaller Ship Experiences
-                </span>
-              </div>
+        <section className="adg-c-section adg-c-bg-white">
+          <div className="adg-c-container">
+            <div className="adg-c-section-header">
+              <h2 className="adg-c-h2">Is Viking Worth the Positive Reviews?</h2>
+              <div className="adg-c-accent-line"></div>
             </div>
 
-            {/* RIGHT — callout card + image */}
-            <div className="adg-c-overview-right">
-              <div className="adg-c-overview-callout">
-                <div className="adg-c-overview-callout-inner">
-                  <Star size={28} className="adg-c-callout-star" />
-                  <p className="adg-c-callout-text">
-                    Many guests believe Viking delivers on its reputation
-                    because it consistently focuses on exceptional service,
-                    enriching destinations, cultural immersion, comfort,
-                    educational programs, and thoughtfully designed itineraries.
-                    For travelers who value these qualities, Viking frequently
-                    exceeds expectations.
-                  </p>
+            <div className="adg-c-overview-layout">
+              {/* LEFT — list */}
+              <div className="adg-c-overview-icons">
+                <div className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">✔</span>
+                  <span className="adg-c-overview-label">Service</span>
                 </div>
-              </div>
 
-              <div className="adg-c-overview-image-wrap">
-                <img
-                  src={VikingExp5}
-                  alt="Viking cruise guest experience"
-                  className="adg-c-overview-img"
-                />
-                <div className="adg-c-overview-img-overlay">
-                  <span className="adg-c-overview-img-label">
-                    Viking Reviews
+                <div className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">✔</span>
+                  <span className="adg-c-overview-label">Destinations</span>
+                </div>
+
+                <div className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">✔</span>
+                  <span className="adg-c-overview-label">Cultural Immersion</span>
+                </div>
+
+                <div className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">✔</span>
+                  <span className="adg-c-overview-label">Comfort</span>
+                </div>
+
+                <div className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">✔</span>
+                  <span className="adg-c-overview-label">
+                    Educational Enrichment
+                  </span>
+                </div>
+
+                <div className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">✔</span>
+                  <span className="adg-c-overview-label">
+                    Thoughtful Itineraries
+                  </span>
+                </div>
+
+                <div className="adg-c-overview-item">
+                  <span className="adg-c-overview-icon">✔</span>
+                  <span className="adg-c-overview-label">
+                    Smaller Ship Experiences
                   </span>
                 </div>
               </div>
+
+              {/* RIGHT — callout card + image */}
+              <div className="adg-c-overview-right">
+                <div className="adg-c-overview-callout">
+                  <div className="adg-c-overview-callout-inner">
+                    <Star size={28} className="adg-c-callout-star" />
+                    <p className="adg-c-callout-text">
+                      Many guests believe Viking delivers on its reputation
+                      because it consistently focuses on exceptional service,
+                      enriching destinations, cultural immersion, comfort,
+                      educational programs, and thoughtfully designed itineraries.
+                      For travelers who value these qualities, Viking frequently
+                      exceeds expectations.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="adg-c-overview-image-wrap">
+                  <img
+                    src={VikingExp5}
+                    alt="Viking cruise guest experience"
+                    className="adg-c-overview-img"
+                  />
+                  <div className="adg-c-overview-img-overlay">
+                    <span className="adg-c-overview-img-label">
+                      Viking Reviews
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* ══ ANGELA HUGHES AUTHORITY BOX ══════════════════════════════════════ */}
       <section className="Adg-expert-section" id="Asc-expert-insight">

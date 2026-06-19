@@ -46,6 +46,7 @@ import VikingOceanCruises from "./pages/VikingOceanCruises/VikingOceanCruises";
 import VikingExpeditionCruises from "./pages/VikingExpeditionCruises/VikingExpeditionCruises";
 import IsVikingWorthIt from "./pages/IsVikingWorthIt/IsVikingWorthIt";
 import VikingCruiseReviews from "./pages/VikingCruiseReviews/VikingCruiseReviews";
+import VikingCruiseCostGuide from "./pages/VikingCruiseCostGuide/VikingCruiseCostGuide";
 
 function App() {
   return (
@@ -279,6 +280,11 @@ function App() {
           <Route
             path="/viking-cruise-reviews"
             element={<VikingCruiseReviews />}
+          />
+
+           <Route
+            path="/viking-cruise-cost-guide"
+            element={<VikingCruiseCostGuide />}
           />
         </Routes>
       </BrowserRouter>

@@ -428,3 +428,519 @@
     font-size: 28px;
   }
 }
+
+/* ==========================================================================
+   VIKING CRUISE COSTS SECTION STYLING (vcc-costs-section)
+   ========================================================================== */
+
+.vcc-costs-section {
+  padding: 60px 20px;
+  background-color: var(--bg-soft, #f7f9fc);
+}
+
+.vcc-costs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.vcc-costs-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.vcc-costs-eyebrow {
+  display: block;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--navy-light);
+  margin-bottom: 0.75rem;
+}
+
+.vcc-costs-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 1.25rem;
+  line-height: 1.25;
+}
+
+.vcc-costs-accent {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+.vcc-costs-lead {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Slider Viewport and Track Layout */
+.vcc-slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.vcc-slider-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 12px 28px;
+  border-radius: 50px;
+  background: var(--bg-white);
+  border: 1px solid rgba(39, 68, 114, 0.1);
+  color: var(--navy);
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(39, 68, 114, 0.02);
+}
+
+.vcc-slider-nav-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(39, 68, 114, 0.3);
+  box-shadow: 0 6px 20px rgba(39, 68, 114, 0.05);
+}
+
+.vcc-slider-nav-btn.active {
+  background: var(--navy);
+  color: var(--bg-white);
+  border-color: var(--navy);
+  box-shadow: 0 10px 25px rgba(39, 68, 114, 0.15);
+  font-weight: 600;
+}
+
+.vcc-slider-nav-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+}
+
+.vcc-slider-nav-btn.active .vcc-slider-nav-num {
+  opacity: 0.8;
+}
+
+.vcc-slider-nav-icon {
+  flex-shrink: 0;
+}
+
+.vcc-slider-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px;
+  margin: -15px;
+}
+
+.vcc-slider-track {
+  display: flex;
+  width: 300%;
+  transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.vcc-slider-slide {
+  width: 33.333333%;
+  flex-shrink: 0;
+  padding: 15px 25px;
+  box-sizing: border-box;
+}
+
+.vcc-slide-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3.5rem;
+  align-items: stretch;
+  background: var(--bg-white, #fff);
+  border-radius: 16px;
+  border: 1px solid rgba(39, 68, 114, 0.08);
+  box-shadow: 0 12px 35px rgba(39, 68, 114, 0.04);
+  overflow: hidden;
+}
+
+.vcc-slide-content {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vcc-slide-number {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(39, 68, 114, 0.05);
+}
+
+.vcc-slide-badge {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+.vcc-slide-badge.river {
+  background: #2b7a78;
+}
+
+.vcc-slide-badge.ocean {
+  background: #17252a;
+}
+
+.vcc-slide-badge.expedition {
+  background: #3a6073;
+}
+
+.vcc-slide-card-title {
+  font-family: var(--font-display, "Playfair Display", serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.vcc-slide-card-desc {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.05rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 95%;
+}
+
+.vcc-slide-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.vcc-details-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.vcc-details-title {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  letter-spacing: 1.2px;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(39, 68, 114, 0.12);
+  padding-bottom: 6px;
+}
+
+/* Itineraries list */
+.vcc-itineraries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vcc-itinerary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.vcc-itinerary-name {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.vcc-itinerary-detail {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.45;
+}
+
+/* Bullets list */
+.vcc-bullets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vcc-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.vcc-bullet-icon {
+  color: #2b7a78;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.vcc-bullet-item span {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.45;
+}
+
+/* Tags group */
+.vcc-tags-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.vcc-dest-tag {
+  background: var(--bg-soft, #f4f6f8);
+  border: 1px solid rgba(39, 68, 114, 0.12);
+  color: var(--navy);
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* Pricing Table */
+.vcc-pricing-table {
+  background: var(--bg-soft, #f7f9fc);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.vcc-pricing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.vcc-pricing-row:last-child {
+  border-bottom: none;
+}
+
+.vcc-pricing-row.premium {
+  background: rgba(39, 68, 114, 0.04);
+}
+
+.vcc-pricing-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.vcc-pricing-icon {
+  color: var(--navy-light);
+  flex-shrink: 0;
+}
+
+.vcc-pricing-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.vcc-price-amount {
+  font-family: var(--font-body, "Montserrat", sans-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.vcc-price-sub {
+  font-size: 0.78rem;
+  color: #666;
+  font-family: var(--font-body, "Montserrat", sans-serif);
+}
+
+/* Slide Media */
+.vcc-slide-media {
+  position: relative;
+}
+
+.vcc-media-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.vcc-media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vcc-slide-row:hover .vcc-media-img {
+  transform: scale(1.04);
+}
+
+.vcc-media-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(39, 68, 114, 0) 60%, rgba(39, 68, 114, 0.35) 100%);
+  pointer-events: none;
+}
+
+.vcc-media-badge {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.vcc-media-badge.river {
+  background: rgba(43, 122, 120, 0.85);
+}
+
+.vcc-media-badge.ocean {
+  background: rgba(23, 37, 42, 0.85);
+}
+
+.vcc-media-badge.expedition {
+  background: rgba(58, 96, 115, 0.85);
+}
+
+/* Slider dots */
+.vcc-slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+}
+
+.vcc-slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(39, 68, 114, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.vcc-slider-dot:hover {
+  background: rgba(39, 68, 114, 0.4);
+}
+
+.vcc-slider-dot.active {
+  width: 30px;
+  border-radius: 20px;
+  background: var(--navy);
+  box-shadow: 0 4px 10px rgba(39, 68, 114, 0.15);
+}
+
+/* ==========================================================================
+   VIKING CRUISE COSTS MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .vcc-slide-row {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2rem;
+  }
+  
+  .vcc-slide-content {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vcc-costs-section {
+    padding: 60px 15px;
+  }
+
+  .vcc-costs-title {
+    font-size: 32px;
+  }
+
+  .vcc-slider-nav {
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .vcc-slider-nav-btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+
+  .vcc-slide-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .vcc-slide-media {
+    order: -1;
+    height: 250px;
+  }
+
+  .vcc-slide-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .vcc-slide-number {
+    display: none;
+  }
+
+  .vcc-slide-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .vcc-slider-slide {
+    padding: 15px 10px;
+  }
+}

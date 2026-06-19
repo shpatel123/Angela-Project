@@ -376,6 +376,14 @@ const Nav = () => {
               >
                 Viking Cruise Reviews
               </NavLink>
+
+              <NavLink
+                to="/viking-cruise-cost-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Cruise Cost Guide
+              </NavLink>
             </div>
           </div>
         </div>
@@ -754,6 +762,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Viking Cruise Reviews
+            </NavLink>
+
+            <NavLink
+              to="/viking-cruise-cost-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Cruise Cost Guide
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
