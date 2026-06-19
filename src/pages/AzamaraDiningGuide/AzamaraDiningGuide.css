@@ -835,7 +835,7 @@
 }
 
 .adg-card-title {
-  font-size: 18px !important;
+  font-size: 22px !important;
   font-weight: 600 !important;
   color: var(--navy) !important;
   line-height: 1.3 !important;
@@ -873,7 +873,7 @@
 }
 
 .adg-card-list-text {
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-weight: 400 !important;
   color: var(--navy) !important;
   line-height: 1.45;

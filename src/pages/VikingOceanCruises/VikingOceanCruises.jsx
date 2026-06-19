@@ -40,88 +40,6 @@ import VikingExp11 from "../../assets/VikingOceanCruises/viking-ocean-cruise-aqu
 import VikingCta from "../../assets/VikingOceanCruises/flam-norway-fjord-cruise.jpg";
 import VikingAlaska from "../../assets/VikingOceanCruises/alaska-glacier-mountain-lake-scenic-wilderness-vacation.jpg";
 
-// ─── VIKING OCEAN CRUISE DESTINATION PANEL DATA ──────────────────────────────
-const vikingOceanDestinations = [
-  {
-    id: "mediterranean",
-    title: "Mediterranean Cruises",
-    badge: "Mediterranean",
-    icon: Globe,
-    desc: "The Mediterranean remains one of Viking's most popular ocean cruise regions. Travelers experience ancient history, world-famous cuisine, and iconic landmarks across Italy, Greece, Spain, Croatia, and beyond.",
-    columns: [
-      {
-        label: "Popular Destinations:",
-        items: ["Italy", "Greece", "Spain", "Croatia"],
-      },
-    ],
-    themeLabel: "Culture, History & Coastal Beauty",
-    themeText:
-      "Mediterranean voyages combine rich cultural heritage, breathtaking coastlines, and world-class cuisine — consistently ranking among Viking Ocean's most requested itineraries.",
-  },
-  {
-    id: "northern",
-    title: "Northern Europe & Scandinavia",
-    badge: "Northern Europe",
-    icon: Waves,
-    desc: "Given Viking's Scandinavian heritage, Northern Europe itineraries are especially beloved. Guests explore dramatic Norwegian fjords, volcanic Iceland, historic Baltic capitals, and iconic British landmarks.",
-    columns: [
-      {
-        label: "Highlights Include:",
-        items: [
-          "Norwegian Fjords",
-          "Iceland",
-          "Baltic Capitals",
-          "United Kingdom",
-        ],
-      },
-    ],
-    themeLabel: "Viking's Ancestral Home Waters",
-    themeText:
-      "Northern Europe offers unforgettable natural beauty and deep cultural exploration — particularly meaningful aboard a cruise line rooted in Scandinavian tradition.",
-  },
-  {
-    id: "alaska",
-    title: "Alaska Cruises",
-    badge: "Alaska",
-    icon: Mountain,
-    desc: "Viking's Alaska itineraries appeal to travelers seeking nature, wildlife, and discovery. Guests experience glacier viewing, wildlife encounters, indigenous cultural experiences, and some of the most spectacular scenery on earth.",
-    columns: [
-      {
-        label: "Alaska Highlights:",
-        items: [
-          "Glacier Viewing",
-          "Wildlife Encounters",
-          "Indigenous Culture",
-          "Scenic Coastal Ports",
-        ],
-      },
-    ],
-    themeLabel: "A Bucket-List Destination",
-    themeText:
-      "Alaska remains one of Viking Ocean's most sought-after destinations — combining wilderness grandeur with the comfort of Viking's premium ocean ships.",
-  },
-  {
-    id: "other",
-    title: "Asia, Australia & Beyond",
-    badge: "Global Voyages",
-    icon: Compass,
-    desc: "Beyond Europe and Alaska, Viking Ocean sails throughout Asia — including Japan, Southeast Asia, China, and South Korea — as well as Australia and New Zealand, offering longer voyages to distant and fascinating destinations.",
-    columns: [
-      {
-        label: "Global Regions:",
-        items: [
-          "Japan & South Korea",
-          "Southeast Asia",
-          "Australia & New Zealand",
-          "China",
-        ],
-      },
-    ],
-    themeLabel: "Six Continents, Hundreds of Destinations",
-    themeText:
-      "Viking Ocean's global reach means that curious travelers can sail virtually anywhere in the world — always with the same destination-focused philosophy at the heart of every voyage.",
-  },
-];
 
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
 const schemaData = {
@@ -445,54 +363,8 @@ const VikingOceanCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
-  const [activeDest, setActiveDest] = useState("mediterranean");
-  const currentDest =
-    vikingOceanDestinations.find((d) => d.id === activeDest) ||
-    vikingOceanDestinations[0];
-  const ActiveIcon = currentDest.icon;
-
-  const [currentLuxurySlide, setCurrentLuxurySlide] = useState(0);
   const [activeReasonTab, setActiveReasonTab] = useState(5);
-  const [activeTypeIndex, setActiveTypeIndex] = useState(0);
 
-  const oceanCruiseAdvantages = [
-    {
-      title: "No Casinos, No Water Parks",
-      description:
-        "Viking deliberately excludes casinos, water parks, and large-scale amusement attractions — keeping the focus firmly on cultural exploration and destination immersion.",
-      number: "01",
-    },
-    {
-      title: "Smaller Ships, More Intimate",
-      description:
-        "Viking Ocean ships carry fewer passengers than many mainstream vessels, creating a more relaxed, personal atmosphere and access to ports that larger ships may overlook.",
-      number: "02",
-    },
-    {
-      title: "Scandinavian-Inspired Design",
-      description:
-        "Clean architecture, natural materials, panoramic windows, and open spaces create an atmosphere guests consistently describe as sophisticated, calm, and timeless.",
-      number: "03",
-    },
-    {
-      title: "Destination-Focused Philosophy",
-      description:
-        "Every aspect of the Viking experience — itinerary design, enrichment programs, dining, and shore excursions — is built around the destinations being visited.",
-      number: "04",
-    },
-    {
-      title: "Adults-Only Atmosphere",
-      description:
-        "Viking Ocean is adults-only (18+), creating a quieter, more refined onboard environment that appeals to couples, retirees, and culturally focused solo travelers.",
-      number: "05",
-    },
-    {
-      title: "Inclusive Pricing Structure",
-      description:
-        "Wi-Fi, one shore excursion per port, beer and wine with meals, dining, and enrichment programs are often included — making budgeting straightforward and predictable.",
-      number: "06",
-    },
-  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -501,20 +373,6 @@ const VikingOceanCruises = () => {
     return () => clearInterval(timer);
   }, [images.length]);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveTypeIndex((prev) => (prev + 1) % 3);
-    }, 6000);
-  }, []);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentLuxurySlide(
-        (prev) => (prev + 1) % oceanCruiseAdvantages.length,
-      );
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [oceanCruiseAdvantages.length]);
 
   return (
     <div className="Asc-page-wrapper">

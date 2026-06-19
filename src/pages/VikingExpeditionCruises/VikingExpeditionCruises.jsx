@@ -41,95 +41,6 @@ import VikingExp11 from "../../assets/VikingExpeditionCruises/viking-expedition-
 import VikingExp12 from "../../assets/VikingExpeditionCruises/viking-ocean-cruise-world-cafe-outdoor-deck.jpg";
 import VikingCta from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica6.jpg";
 
-// ─── VIKING EXPEDITION CRUISE DESTINATION PANEL DATA ─────────────────────────
-const vikingExpeditionDestinations = [
-  {
-    id: "antarctica",
-    title: "Antarctica Expeditions",
-    badge: "Antarctica",
-    icon: Mountain,
-    desc: "Antarctica remains one of the most sought-after expedition destinations in the world. A once-in-a-lifetime polar journey where guests explore remote channels, towering glaciers, and observe vast penguin colonies.",
-    columns: [
-      {
-        label: "Antarctica Highlights:",
-        items: [
-          "Massive Icebergs",
-          "Penguin Colonies",
-          "Spectacular Landscapes",
-          "Zodiac Excursions",
-          "Scientific Insights",
-        ],
-      },
-    ],
-    themeLabel: "The White Continent",
-    themeText:
-      "A polar wilderness of glaciers, mountains, and ice, offering travelers unparalleled exploration and direct connection with wildlife and nature in its purest form.",
-  },
-  {
-    id: "arctic",
-    title: "Arctic Expeditions",
-    badge: "Arctic & Svalbard",
-    icon: Globe,
-    desc: "The Arctic offers dramatic polar scenery, wildlife sightings, and rich cultural history. Guests sail remote Greenland coasts, Svalbard archipelago, and seek polar wildlife in untouched wilderness.",
-    columns: [
-      {
-        label: "Arctic Highlights:",
-        items: [
-          "Greenland Fjords",
-          "Svalbard Wilderness",
-          "Arctic Wildlife Watching",
-          "Polar Exploration History",
-        ],
-      },
-    ],
-    themeLabel: "Crown of the World",
-    themeText:
-      "Navigate remote northern passages steeped in polar exploration history, witnessing rugged coastlines, towering glaciers, and specialized polar wildlife under the midnight sun.",
-  },
-  {
-    id: "greatlakes",
-    title: "Great Lakes Expeditions",
-    badge: "Great Lakes",
-    icon: Waves,
-    desc: "A unique expedition experience exploring North America's massive inland seas: Lake Superior, Lake Michigan, Lake Huron, Lake Erie, and Lake Ontario, showcasing historic ports and scenic coastlines.",
-    columns: [
-      {
-        label: "Great Lakes Highlights:",
-        items: [
-          "All Five Great Lakes",
-          "Maritime History Tours",
-          "Indigenous Heritage Sites",
-          "Breathtaking Island Reserves",
-        ],
-      },
-    ],
-    themeLabel: "Inland Sea Exploration",
-    themeText:
-      "Explore the cultural heritage, industrial history, and dramatic natural geology of the massive waterways connecting the heart of North America.",
-  },
-  {
-    id: "coastal",
-    title: "North American Coastal",
-    badge: "Coastal Expeditions",
-    icon: Compass,
-    desc: "Itineraries exploring remote coastal regions, hidden scenic waterways, rich wildlife habitats, and historical communities along North America's scenic ocean passages.",
-    columns: [
-      {
-        label: "Coastal Highlights:",
-        items: [
-          "Remote Scenic Passages",
-          "Diverse Marine Wildlife",
-          "Indigenous Cultural Landmarks",
-          "Lesser-Known Communities",
-        ],
-      },
-    ],
-    themeLabel: "Hidden Shorelines",
-    themeText:
-      "Sail off the beaten path to discover remote coastal ports, unique shoreline ecosystems, and local historic landmarks larger cruise ships cannot visit.",
-  },
-];
-
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
 const schemaData = {
   "@context": "https://schema.org",
@@ -467,54 +378,8 @@ const VikingExpeditionCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
-  const [activeDest, setActiveDest] = useState("antarctica");
-  const currentDest =
-    vikingExpeditionDestinations.find((d) => d.id === activeDest) ||
-    vikingExpeditionDestinations[0];
-  const ActiveIcon = currentDest.icon;
-
-  const [currentLuxurySlide, setCurrentLuxurySlide] = useState(0);
   const [activeReasonTab, setActiveReasonTab] = useState(5);
-  const [activeTypeIndex, setActiveTypeIndex] = useState(0);
 
-  const expeditionCruiseAdvantages = [
-    {
-      title: "Exploration with Comfort",
-      description:
-        "Viking expedition ships are purpose-built to navigate polar environments and remote regions while maintaining the brand's signature luxury and service.",
-      number: "01",
-    },
-    {
-      title: "Science and Discovery",
-      description:
-        "Equipped with wet and dry laboratory facilities, Viking's ships allow guests to join researchers in active science and environmental studies onboard.",
-      number: "02",
-    },
-    {
-      title: "Expert Expedition Teams",
-      description:
-        "Lecturers, biologists, geologists, and polar specialists lead Zodiac landings, kayak tours, and daily enrichment lectures to explain each destination.",
-      number: "03",
-    },
-    {
-      title: "Smaller Guest Capacity",
-      description:
-        "Carrying around 378 guests, Viking expedition vessels offer an intimate atmosphere with fewer crowds and highly personalized exploration.",
-      number: "04",
-    },
-    {
-      title: "No Casinos, No Water Parks",
-      description:
-        "Like all Viking ships, the onboard environment is designed for relaxation, learning, and destination focus — free from mainstream cruise distractions.",
-      number: "05",
-    },
-    {
-      title: "Adults-Only Atmosphere",
-      description:
-        "Viking is adults-only (18+), providing a quiet, sophisticated onboard experience built for culturally curious travelers and lifelong learners.",
-      number: "06",
-    },
-  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -523,21 +388,6 @@ const VikingExpeditionCruises = () => {
     return () => clearInterval(timer);
   }, [images.length]);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveTypeIndex((prev) => (prev + 1) % 3);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentLuxurySlide(
-        (prev) => (prev + 1) % expeditionCruiseAdvantages.length,
-      );
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [expeditionCruiseAdvantages.length]);
 
   return (
     <div className="Asc-page-wrapper">

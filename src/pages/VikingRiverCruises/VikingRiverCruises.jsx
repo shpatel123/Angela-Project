@@ -35,79 +35,6 @@ import VikingExp7 from "../../assets/VikingRiverCruises/Aquavit-Terrace.jpg";
 import VikingExp8 from "../../assets/VikingRiverCruises/Aquavit-dinig.jpg";
 import VikingCta from "../../assets/VikingRiverCruises/viking-Exterior.jpg";
 
-// ─── VIKING RIVER CRUISE ITINERARY PANEL DATA ────────────────────────────────
-const vikingRiverItineraries = [
-  {
-    id: "rhine",
-    title: "Rhine River Cruises",
-    badge: "Rhine River",
-    icon: Waves,
-    desc: "The Rhine is one of Viking's most popular river itineraries and is frequently recommended for first-time river cruisers. Travelers sail past fairytale castles, charming villages, world-famous vineyards, and historic cultural landmarks across multiple countries.",
-    columns: [
-      {
-        label: "Countries Often Visited:",
-        items: ["Netherlands", "Germany", "France", "Switzerland"],
-      },
-    ],
-    themeLabel: "Ideal For First-Time River Cruisers",
-    themeText:
-      "The Rhine combines stunning scenery, medieval history, and easy accessibility — making it one of the most satisfying introductions to European river cruising.",
-  },
-  {
-    id: "danube",
-    title: "Danube River Cruises",
-    badge: "Danube River",
-    icon: Globe,
-    desc: "The Danube is another Viking favorite, blending imperial architecture, classical music heritage, and breathtaking scenery across Central Europe. Key cities include Vienna, Budapest, and Bratislava.",
-    columns: [
-      {
-        label: "Highlights Include:",
-        items: ["Vienna", "Budapest", "Bratislava", "Scenic Countryside"],
-      },
-    ],
-    themeLabel: "A Journey Through Central Europe",
-    themeText:
-      "The Danube offers a blend of history, culture, and stunning scenery — from elegant imperial capitals to quiet riverside villages.",
-  },
-  {
-    id: "seine",
-    title: "Seine River Cruises",
-    badge: "Seine River",
-    icon: Compass,
-    desc: "Viking's Seine itineraries explore France's rich history and culture — from the iconic boulevards of Paris to the solemn Normandy landing beaches and the authentic charm of French villages.",
-    columns: [
-      {
-        label: "Featured Destinations:",
-        items: ["Paris", "Normandy", "French Villages", "Culinary Experiences"],
-      },
-    ],
-    themeLabel: "Popular With France Enthusiasts",
-    themeText:
-      "The Seine is particularly sought after by travelers interested in French culture, history, and cuisine — offering a deeply immersive French experience.",
-  },
-  {
-    id: "other",
-    title: "More River Destinations",
-    badge: "More Destinations",
-    icon: Mountain,
-    desc: "Beyond Europe's most iconic rivers, Viking also sails the Rhône through Southern France, the Douro through Portugal's terraced wine valleys, the Nile through ancient Egypt, and the Mekong through Southeast Asia.",
-    columns: [
-      {
-        label: "Additional Rivers:",
-        items: [
-          "Rhône (Southern France)",
-          "Douro (Portugal)",
-          "Nile (Egypt)",
-          "Mekong (Southeast Asia)",
-        ],
-      },
-    ],
-    themeLabel: "River Cruising Beyond Europe",
-    themeText:
-      "From ancient Egyptian monuments to Southeast Asian temples, Viking's river network extends well beyond Europe — offering culturally rich itineraries on nearly every continent.",
-  },
-];
-
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
 const schemaData = {
   "@context": "https://schema.org",
@@ -438,54 +365,8 @@ const VikingRiverCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
-  const [activeDest, setActiveDest] = useState("rhine");
-  const currentDest =
-    vikingRiverItineraries.find((d) => d.id === activeDest) ||
-    vikingRiverItineraries[0];
-  const ActiveIcon = currentDest.icon;
-
-  const [currentLuxurySlide, setCurrentLuxurySlide] = useState(0);
   const [activeReasonTab, setActiveReasonTab] = useState(5);
-  const [activeTypeIndex, setActiveTypeIndex] = useState(0);
 
-  const riverCruiseAdvantages = [
-    {
-      title: "Sail Into City Centers",
-      description:
-        "River ships dock directly in historic districts and city centers — not industrial ports. Guests often walk straight into major attractions without transfers.",
-      number: "01",
-    },
-    {
-      title: "Fewer Days at Sea",
-      description:
-        "Unlike ocean cruising, river voyages focus almost entirely on destination exploration. Most ports are visited daily, maximizing time ashore.",
-      number: "02",
-    },
-    {
-      title: "Smaller, More Intimate Ships",
-      description:
-        "River vessels carry far fewer passengers than ocean ships — creating a quieter, more relaxed, and more personal travel atmosphere.",
-      number: "03",
-    },
-    {
-      title: "Continuously Changing Scenery",
-      description:
-        "Guests enjoy an ever-changing landscape as the ship moves through castles, vineyards, villages, and historic cities rather than open ocean.",
-      number: "04",
-    },
-    {
-      title: "Multiple Countries, One Journey",
-      description:
-        "River cruises often pass through several countries in a single sailing — offering cultural variety without the hassle of repeated packing and unpacking.",
-      number: "05",
-    },
-    {
-      title: "Cultural Immersion at Every Port",
-      description:
-        "Viking's included excursions and enrichment programs ensure guests engage meaningfully with each destination rather than simply passing through.",
-      number: "06",
-    },
-  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -494,20 +375,6 @@ const VikingRiverCruises = () => {
     return () => clearInterval(timer);
   }, [images.length]);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveTypeIndex((prev) => (prev + 1) % 3);
-    }, 6000);
-  }, []);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentLuxurySlide(
-        (prev) => (prev + 1) % riverCruiseAdvantages.length,
-      );
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [riverCruiseAdvantages.length]);
 
   return (
     <div className="Asc-page-wrapper">

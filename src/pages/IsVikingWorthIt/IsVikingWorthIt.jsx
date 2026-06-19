@@ -8,20 +8,13 @@ import {
   ArrowRight,
   Star,
   Users,
-  Sparkles,
   Ship,
-  Anchor,
   Compass,
-  Globe,
   Waves,
   BookOpen,
   Mountain,
-  TrendingUp,
-  ThumbsUp,
-  ThumbsDown,
   Coffee,
   Gift,
-  DollarSign,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
@@ -42,97 +35,7 @@ import VikingExp6 from "../../assets/IsVikingWorthIt/viking-Exterior.jpg";
 import VikingExp7 from "../../assets/IsVikingWorthIt/Sun-Terrace-with_br_Infinity-Plunge-Pool.jpg";
 import Vikingcta from "../../assets/IsVikingWorthIt/Viking-Octanis-with-Viking-Star-and-Viking-Sea.jpg";
 
-// ─── REASONS VIKING IS WORTH IT — INTERACTIVE PANEL DATA ──────────────────────
-const vikingValueReasons = [
-  {
-    id: "destinations",
-    title: "Reason #1 — The Destinations Come First",
-    badge: "Destinations First",
-    icon: Globe,
-    desc: "Unlike many cruise lines that build vacations around water slides, casinos, and onboard attractions, Viking builds voyages around exploration. Guests spend more time in cities, at historical sites, learning local culture, and experiencing authentic destinations — rather than being encouraged to stay onboard.",
-    columns: [
-      {
-        label: "What This Means for Guests:",
-        items: [
-          "More Time Exploring Cities & Cultural Sites",
-          "Fewer Sea Days on Many Itineraries",
-          "Deeper Connection to Each Destination",
-          "Meaningful Travel Rather Than Entertainment",
-          "Experiences You Can't Get on a Large Ship",
-        ],
-      },
-    ],
-    themeLabel: "The Core of the Viking Philosophy",
-    themeText:
-      "For destination-focused travelers, Viking's philosophy alone can justify the higher price — you are paying for a fundamentally different type of travel experience.",
-  },
-  {
-    id: "excursions",
-    title: "Reason #2 — Included Shore Excursions Add Real Value",
-    badge: "Included Excursions",
-    icon: Compass,
-    desc: "One of Viking's most appreciated features is the inclusion of guided shore excursions. Most itineraries include one excursion per port, allowing guests to begin exploring immediately without purchasing expensive add-ons. For travelers visiting multiple destinations, this inclusion can represent significant value.",
-    columns: [
-      {
-        label: "Excursion Inclusion Benefits:",
-        items: [
-          "One Guided Excursion Per Port Included",
-          "No Surprise Add-On Costs",
-          "Immediate City Access from Ship",
-          "Expert Local Guides Provided",
-          "Significant Value Across Multi-Port Itineraries",
-        ],
-      },
-    ],
-    themeLabel: "Meaningful Savings When Compared Honestly",
-    themeText:
-      "When the cost of independent shore excursions is factored in, Viking's all-in pricing often compares favorably to cruise lines with lower base fares but high excursion costs.",
-  },
-  {
-    id: "atmosphere",
-    title: "Reason #3 — Smaller Ships & Adult-Only Atmosphere",
-    badge: "Intimate Experience",
-    icon: Anchor,
-    desc: "Viking generally offers a more intimate onboard experience — fewer passengers, more personal service, less waiting, easier navigation, and a relaxed adult-only atmosphere. Guests must generally be at least 18 years old, creating a peaceful environment that enhances the vacation for couples and retirees.",
-    columns: [
-      {
-        label: "Benefits of Smaller Ships:",
-        items: [
-          "More Personal, Attentive Service",
-          "Less Crowded Public Spaces",
-          "Relaxed & Sophisticated Atmosphere",
-          "No Kids Clubs or Children's Programs",
-          "Better Scenic Viewing Opportunities",
-        ],
-      },
-    ],
-    themeLabel: "A Fundamentally Different Onboard Experience",
-    themeText:
-      "Many guests find Viking's smaller, quieter ships significantly more enjoyable than larger cruise ships carrying thousands of passengers — a key reason repeat guests return.",
-  },
-  {
-    id: "enrichment",
-    title: "Reason #4 — Cultural Enrichment Is Included",
-    badge: "Cultural Learning",
-    icon: BookOpen,
-    desc: "Viking places a strong emphasis on learning. Guests enjoy expert lectures, destination presentations, historical insights, cultural programs, and educational experiences — all included in the fare. Travelers who value lifelong learning consistently rate this as one of Viking's greatest strengths.",
-    columns: [
-      {
-        label: "Enrichment Programs Include:",
-        items: [
-          "Expert Onboard Lectures",
-          "Destination Presentations",
-          "Historical & Cultural Insights",
-          "Educational Programming",
-          "Guest Speakers & Specialists",
-        ],
-      },
-    ],
-    themeLabel: "Learning Is Central to the Viking Experience",
-    themeText:
-      "For curious, intellectually engaged travelers, Viking's enrichment programming transforms a cruise vacation into something far more meaningful and memorable.",
-  },
-];
+
 
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
 const schemaData = {
@@ -484,53 +387,7 @@ const IsVikingWorthIt = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
-  const [activeDest, setActiveDest] = useState("destinations");
-  const currentDest =
-    vikingValueReasons.find((d) => d.id === activeDest) ||
-    vikingValueReasons[0];
-  const ActiveIcon = currentDest.icon;
-
-  const [currentLuxurySlide, setCurrentLuxurySlide] = useState(0);
   const [activeReasonTab, setActiveReasonTab] = useState(5);
-
-  const vikingValueCategories = [
-    {
-      title: "Destinations Come First",
-      description:
-        "Viking builds voyages around exploration — more time in cities, historical sites, and authentic destinations than virtually any mainstream cruise line.",
-      number: "01",
-    },
-    {
-      title: "Included Shore Excursions",
-      description:
-        "One guided excursion per port is typically included — adding real value for travelers visiting multiple destinations across an itinerary.",
-      number: "02",
-    },
-    {
-      title: "Smaller Ships, Better Experience",
-      description:
-        "Fewer passengers, more personal service, less waiting, and a relaxed adult atmosphere create a fundamentally better experience for many travelers.",
-      number: "03",
-    },
-    {
-      title: "Cultural Enrichment Programs",
-      description:
-        "Expert lectures, destination presentations, and educational programming are included — making Viking a natural fit for lifelong learners.",
-      number: "04",
-    },
-    {
-      title: "Inclusive Pricing",
-      description:
-        "Wi-Fi, dining, beer and wine with meals, excursions, and enrichment programs often included — reducing surprise expenses throughout the voyage.",
-      number: "05",
-    },
-    {
-      title: "High Guest Loyalty",
-      description:
-        "Viking earns some of the highest repeat-guest rates in the industry — a reliable signal of consistent quality, service, and satisfaction.",
-      number: "06",
-    },
-  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -539,14 +396,6 @@ const IsVikingWorthIt = () => {
     return () => clearInterval(timer);
   }, [images.length]);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentLuxurySlide(
-        (prev) => (prev + 1) % vikingValueCategories.length,
-      );
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [vikingValueCategories.length]);
 
   return (
     <div className="Asc-page-wrapper">
