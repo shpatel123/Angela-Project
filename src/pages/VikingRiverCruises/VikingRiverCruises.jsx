@@ -34,6 +34,9 @@ import VikingExp6 from "../../assets/VikingRiverCruises/Expedition-Ship-Welland-
 import VikingExp7 from "../../assets/VikingRiverCruises/Aquavit-Terrace.jpg";
 import VikingExp8 from "../../assets/VikingRiverCruises/Aquavit-dinig.jpg";
 import VikingCta from "../../assets/VikingRiverCruises/viking-Exterior.jpg";
+import VikingRhineImage from "../../assets/VikingRiverCruises/DE_AmaSiena_Rhine.jpg";
+import VikingDanubeImage from "../../assets/VikingRiverCruises/DE_Passau_Danube.webp";
+import VikingDouroImage from "../../assets/VikingRiverCruises/AmaDouro_ships.jpg";
 
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
 const schemaData = {
@@ -768,7 +771,7 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={HeroImage1}
+                        src={VikingRhineImage}
                         alt="Viking Rhine River Cruise scenic European landscapes"
                         className="dac-reasons-img"
                       />
@@ -785,7 +788,7 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingRiver}
+                        src={VikingDanubeImage}
                         alt="Viking Danube River Cruise Budapest Hungary"
                         className="dac-reasons-img"
                       />
@@ -873,7 +876,7 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingExp8}
+                        src={VikingDouroImage}
                         alt="Rhône River Cruise Southern France Avignon Provence"
                         className="dac-reasons-img"
                       />

@@ -384,6 +384,22 @@ const Nav = () => {
               >
                 Viking Cruise Cost Guide
               </NavLink>
+
+              <NavLink
+                to="/what-is-included-on-viking-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What is included on viking cruises
+              </NavLink>
+
+              <NavLink
+                to="/who-should-sail-viking"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Who should sail viking
+              </NavLink>
             </div>
           </div>
         </div>
@@ -770,6 +786,22 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Viking Cruise Cost Guide
+            </NavLink>
+
+            <NavLink
+              to="/what-is-included-on-viking-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What is included on viking cruises
+            </NavLink>
+
+            <NavLink
+              to="/who-should-sail-viking"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Who should sail viking
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

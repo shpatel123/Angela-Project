@@ -39,6 +39,7 @@ import VikingExp10 from "../../assets/VikingOceanCruises/Viking-Explorer-Suite.j
 import VikingExp11 from "../../assets/VikingOceanCruises/viking-ocean-cruise-aquavit-terrace-outdoor-dining.jpg";
 import VikingCta from "../../assets/VikingOceanCruises/flam-norway-fjord-cruise.jpg";
 import VikingAlaska from "../../assets/VikingOceanCruises/alaska-glacier-mountain-lake-scenic-wilderness-vacation.jpg";
+import VikingIcaland from "../../assets/VikingOceanCruises/Iceland.jpg";
 
 
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
@@ -969,7 +970,7 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingNorthern}
+                        src={VikingIcaland}
                         alt="Viking Ocean Northern Europe Scandinavia fjords"
                         className="dac-reasons-img"
                       />
