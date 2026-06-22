@@ -18,15 +18,15 @@ import {
   Sparkles,
   Anchor,
 } from "lucide-react";
-import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 import { Helmet } from "react-helmet-async";
 
 import HeroImage1 from "../../assets/VikingOceanCruises/viking-Tromso-Norway.jpg";
 import HeroImage2 from "../../assets/VikingOceanCruises/viking-Halong-Bay-Vietnam.jpg";
 import HeroImage3 from "../../assets/VikingOceanCruises/viking-Dubrovnik-Croatia.jpg";
-// import VikingMediterranean from "../../assets/VikingOceanCruises/Mediterranean.jpg";
-// import VikingNorthern from "../../assets/VikingOceanCruises/Northern-Europe.jpg";
+import VikingMediterranean from "../../assets/VikingOceanCruises/Mediterranean.jpg";
+import VikingNorthern from "../../assets/VikingOceanCruises/Australia.jpg";
+import VikingAsia from "../../assets/VikingOceanCruises/Asia.jpg";
 import VikingExp1 from "../../assets/VikingOceanCruises/Bay-of-Islands-New-Zealand.jpg";
 import VikingExp2 from "../../assets/VikingOceanCruises/Aquavit-Terrace-Waiter.jpg";
 import VikingExp3 from "../../assets/VikingOceanCruises/The-Restaurant.jpg";
@@ -451,7 +451,7 @@ const VikingOceanCruises = () => {
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
-      <Nav />
+     
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section
@@ -1001,7 +1001,7 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingMediterranean}
+                        src={VikingMediterranean}
                         alt="Viking Ocean Mediterranean cruise coastal landmarks"
                         className="dac-reasons-img"
                       />
@@ -1111,7 +1111,7 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingExp5}
+                        src={VikingAsia}
                         alt="Viking Ocean Asia cruise cultural destinations"
                         className="dac-reasons-img"
                       />
@@ -1182,7 +1182,7 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={HeroImage1}
+                        src={VikingNorthern}
                         alt="Viking Ocean Australia New Zealand cruise scenic coastline"
                         className="dac-reasons-img"
                       />

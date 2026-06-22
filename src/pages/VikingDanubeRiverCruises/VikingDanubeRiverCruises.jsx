@@ -708,7 +708,7 @@ const VikingDanubeRiverCruises = () => {
             <div className="dac-reasons-accent"></div>
             <p className="dac-reasons-lead">
               Viking offers several Danube-focused itineraries, each designed to
-              showcase different regions of Central and Eastern Europe.
+              showcase different regions of Central and Eastern Europe. During the holiday season, they also offer the highly sought-after <Link to="/viking-christmas-market-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Christmas Market Cruises</Link> along the Danube.
             </p>
           </div>
 
@@ -858,7 +858,7 @@ const VikingDanubeRiverCruises = () => {
                       Grand European Tour
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      A longer voyage combining the Rhine and Danube Rivers —
+                      A longer voyage combining <Link to="/viking-rhine-river-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Rhine River Cruises</Link> and Danube River itineraries —
                       approximately 14–15 nights sailing from Amsterdam through
                       Cologne, Würzburg, Nuremberg, Passau, Vienna, and
                       Budapest. Ideal for travelers wanting a comprehensive
@@ -871,7 +871,7 @@ const VikingDanubeRiverCruises = () => {
                           textDecoration: "underline",
                         }}
                       >
-                        Viking Cruise Reviews
+                        Viking Reviews
                       </Link>{" "}
                       for guest experiences.
                     </p>
@@ -1636,7 +1636,7 @@ const VikingDanubeRiverCruises = () => {
                     itineraries combine scenic river cruising, historic cities,
                     cultural experiences, and convenient travel logistics into a
                     single journey. The Danube consistently ranks among Viking's
-                    most popular itineraries for good reason.
+                    most popular itineraries for good reason. For more detailed perspectives, explore our main guide to <Link to="/viking-river-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking River Cruises</Link> or read our comprehensive <Link to="/viking-cruise-reviews" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Reviews</Link>.
                   </p>
                 </div>
               </div>

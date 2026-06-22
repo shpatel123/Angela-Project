@@ -617,14 +617,14 @@ const VikingCruiseCost = () => {
             Understanding true Viking value beyond the advertised fare
           </p>
 
-          <p className="aac_hero_text">
-            One of the first questions travelers ask when researching Viking is:{" "}
+          <p>
+            One of the first questions travelers ask when researching Viking is:{" "} <br />
             <strong>"How much does a Viking Cruise cost?"</strong>
           </p>
 
           {/* ── Expandable content ── */}
           <div className={`aac_expandable ${readMore ? "open" : ""}`}>
-            <p className="aac_hero_text">
+            <p style={{marginTop: "10px"}}>
               The answer depends on several factors — cruise type, destination,
               cabin category, sailing season, trip length, and included
               promotions. While Viking is generally more expensive than many
@@ -632,13 +632,13 @@ const VikingCruiseCost = () => {
               experiences that often cost extra elsewhere.
             </p>
 
-            <p className="aac_list_intro">
+            <p style={{marginTop: "10px"}}>
               For many travelers, understanding the complete value — not just
               the advertised fare — is key to determining whether Viking is
               worth the investment:
             </p>
 
-            <ul className="aac_hero_list">
+            <ul className="aac_hero_list" style={{marginTop: "20px"}}>
               {[
                 "Destination-focused itineraries",
                 "Included shore excursions in most ports",
@@ -655,7 +655,7 @@ const VikingCruiseCost = () => {
               ))}
             </ul>
 
-            <p className="aac_hero_text">
+            <p>
               According to <strong>Angela Hughes</strong> — CEO of Trips &amp;
               Ships Luxury Travel, founder of Luxury Travel University, global
               luxury travel speaker, and one of the most influential women in
