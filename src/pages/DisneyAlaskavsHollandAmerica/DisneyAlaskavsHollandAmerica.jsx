@@ -41,6 +41,8 @@ import LandTours  from "../../assets/DisneyAlaskavsHollandAmerica/disney-wonder-
 import CTAImage  from "../../assets/DisneyAlaskavsHollandAmerica/disney-wonder-alaska-cruise-glacier-bay-national-park-scenic-voyage.jpeg";
 import DisneyAlaskaLine from "../../assets/DisneyAlaskavsHollandAmerica/disney-wonder-alaska-cruise-through-scenic-fjord-snow-capped-mountains.jpg";
 import HollandAlaskaLine from "../../assets/DisneyAlaskavsHollandAmerica/disney-alaska-cruise-hot-chocolate-promenade-service.jpg";
+import Alaskabears from "../../assets/DisneyAlaskavsHollandAmerica/Bears.png";
+import Alaskawhale from "../../assets/DisneyAlaskavsHollandAmerica/Whale.png";
 
 import { Helmet } from "react-helmet-async";
 
@@ -1193,7 +1195,7 @@ const DisneyAlaskavsHollandAmerica = () => {
               <div className="wle-image-col">
                 <div className="wle-image-container">
                   <img
-                    // src={DisneyAlaskaWildlife}
+                    src={Alaskabears}
                     alt="Disney Alaska wildlife experiences"
                     className="wle-img"
                   />
@@ -1278,7 +1280,7 @@ const DisneyAlaskavsHollandAmerica = () => {
               <div className="wle-image-col">
                 <div className="wle-image-container">
                   <img
-                    // src={HollandAmericaWildlife}
+                    src={Alaskawhale}
                     alt="Holland America Alaska wildlife experiences"
                     className="wle-img"
                   />

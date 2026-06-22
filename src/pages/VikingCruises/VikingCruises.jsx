@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   MapPin,
   Award,
@@ -762,7 +763,9 @@ const VikingCruises = () => {
                   <div className="vk-types-content">
                     <span className="vk-types-row-number">01</span>
                     <span className="vk-types-badge">River Cruising</span>
-                    <h3 className="vk-types-row-title">Viking River Cruises</h3>
+                    <h3 className="vk-types-row-title">
+                      <Link to="/viking-river-cruises" style={{ color: "inherit", textDecoration: "none" }}>Viking River Cruises</Link>
+                    </h3>
                     <p className="vk-types-row-desc">
                       Viking is perhaps best known for its river cruise
                       experiences. River cruising allows travelers to sail
@@ -804,6 +807,11 @@ const VikingCruises = () => {
                         ))}
                       </div>
                     </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-river-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Viking River Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="vk-types-media">
@@ -828,7 +836,9 @@ const VikingCruises = () => {
                   <div className="vk-types-content">
                     <span className="vk-types-row-number">02</span>
                     <span className="vk-types-badge">Ocean Voyages</span>
-                    <h3 className="vk-types-row-title">Viking Ocean Cruises</h3>
+                    <h3 className="vk-types-row-title">
+                      <Link to="/viking-ocean-cruises" style={{ color: "inherit", textDecoration: "none" }}>Viking Ocean Cruises</Link>
+                    </h3>
                     <p className="vk-types-row-desc">
                       Viking Ocean Cruises combines elegant ships with
                       destination-rich itineraries. Viking Ocean Cruises has
@@ -872,6 +882,11 @@ const VikingCruises = () => {
                         ))}
                       </div>
                     </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-ocean-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Viking Ocean Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="vk-types-media">
@@ -897,7 +912,7 @@ const VikingCruises = () => {
                     <span className="vk-types-row-number">03</span>
                     <span className="vk-types-badge">Remote Exploration</span>
                     <h3 className="vk-types-row-title">
-                      Viking Expedition Cruises
+                      <Link to="/viking-expedition-cruises" style={{ color: "inherit", textDecoration: "none" }}>Viking Expedition Cruises</Link>
                     </h3>
                     <p className="vk-types-row-desc">
                       For travelers seeking adventure, Viking Expedition Cruises
@@ -940,6 +955,11 @@ const VikingCruises = () => {
                           </div>
                         ))}
                       </div>
+                    </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-expedition-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Viking Expedition Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
                     </div>
                   </div>
 
@@ -1150,10 +1170,7 @@ const VikingCruises = () => {
                     <span className="dac-reasons-row-number">01</span>
                     <h3 className="dac-reasons-row-title">Europe</h3>
                     <p className="dac-reasons-row-desc">
-                      One of Viking's strongest regions. Popular destinations
-                      include Italy, France, Norway, Greece, Spain, and the
-                      United Kingdom. Europe remains a favorite among Viking
-                      guests.
+                      One of Viking's strongest regions, Europe is best explored on the waterways. You can sail the historic rivers on a <Link to="/viking-danube-river-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Danube River Cruise</Link> or a <Link to="/viking-rhine-river-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Rhine River Cruise</Link>. For a truly magical holiday, check out our favorite <Link to="/viking-christmas-market-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Christmas Market Cruises</Link>.
                     </p>
                     <div className="dac-reasons-pills">
                       {[
@@ -1203,8 +1220,7 @@ const VikingCruises = () => {
                       Scandinavia & Northern Europe
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      Viking's heritage makes Northern Europe especially
-                      popular.
+                      Viking's heritage makes Northern Europe especially popular. Explore the dramatic fjords or embark on a volcanic journey with <Link to="/viking-iceland-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Iceland Cruises</Link>.
                     </p>
                     <div className="dac-reasons-bullets">
                       {[
@@ -1235,10 +1251,7 @@ const VikingCruises = () => {
                     <span className="dac-reasons-row-number">03</span>
                     <h3 className="dac-reasons-row-title">Mediterranean</h3>
                     <p className="dac-reasons-row-desc">
-                      Mediterranean cruises offer ancient history, world-famous
-                      landmarks, coastal villages, and culinary experiences.
-                      Popular ports include Rome, Athens, Barcelona, and
-                      Venice-region destinations.
+                      Mediterranean cruises offer ancient history, world-famous landmarks, coastal villages, and culinary experiences. Popular ports include Rome, Athens, Barcelona, and Venice-region destinations. Experience these historic shores on a luxury <Link to="/viking-mediterranean-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Mediterranean Cruise</Link>.
                     </p>
                     <div className="dac-reasons-pills">
                       {[
@@ -1290,8 +1303,7 @@ const VikingCruises = () => {
                       Alaska — Wilderness, Wildlife & Scenic Cruising
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      Viking offers Alaska itineraries designed for travelers
-                      interested in scenery, wildlife, and cultural experiences.
+                      Viking offers destination-focused <Link to="/viking-alaska-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Alaska Cruises</Link> designed for travelers interested in scenery, wildlife, and cultural experiences.
                     </p>
                     <div className="dac-reasons-bullets">
                       {[
@@ -1522,6 +1534,13 @@ const VikingCruises = () => {
               </tbody>
             </table>
           </div>
+          <p style={{ marginTop: "25px", textAlign: "center", fontSize: "1.05rem", color: "var(--text-soft)" }}>
+            Looking to compare Viking against other premium luxury river cruise operators? Check out our in-depth comparisons: 
+            {" "}<Link to="/viking-vs-amawaterways" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking vs AmaWaterways</Link> | 
+            {" "}<Link to="/viking-vs-tauck" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking vs Tauck</Link> | 
+            {" "}<Link to="/viking-vs-scenic" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking vs Scenic</Link> | 
+            {" "}<Link to="/viking-vs-uniworld" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking vs Uniworld</Link>.
+          </p>
         </div>
       </section>
 
@@ -1644,13 +1663,13 @@ const VikingCruises = () => {
                   One reason travelers appreciate Viking is its relatively
                   inclusive pricing structure. Depending on the itinerary, fares
                   often include a meaningful range of amenities that simplify
-                  budgeting and reduce surprise expenses.
+                  budgeting and reduce surprise expenses. Read our comprehensive <Link to="/what-is-included-on-viking-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>What Is Included on Viking Cruises</Link> guide.
                 </p>
 
                 <p className="ugt-component-text">
                   This helps travelers compare the true cost of a Viking cruise
                   more accurately against mainstream options — once inclusions
-                  are factored in, the value proposition often becomes clearer.
+                  are factored in, the value proposition often becomes clearer. For detailed pricing and differences, see our <Link to="/viking-cruise-cost-guide" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Cost Guide</Link>.
                 </p>
 
                 <div className="ugt-questions-box">
@@ -1833,10 +1852,10 @@ const VikingCruises = () => {
 
           <p className="Asc-intro-text">
             For many travelers, Viking offers excellent value. The right choice
-            depends on your travel priorities.
+            depends on your travel priorities. Read our detailed analysis in our <Link to="/is-viking-worth-it" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Is Viking Worth It</Link> guide, see what other guests say in our <Link to="/viking-cruise-reviews" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Reviews</Link>, and find out <Link to="/why-i-resisted-viking-for-years" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Why I Resisted Viking for Years</Link>.
           </p>
 
-          <div className="Asc-who-grid">
+          <div className="Asc-who-grid" style={{marginTop: "20px"}}>
             <div className="Asc-who-card Asc-who-yes">
               <h3 className="Asc-who-title">Worth It For</h3>
 

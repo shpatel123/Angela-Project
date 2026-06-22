@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   MapPin,
   Award,
@@ -379,6 +380,50 @@ const VikingRiverCruises = () => {
   }, [images.length]);
 
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const tabParam = params.get("tab");
+    if (tabParam) {
+      const tabMap = {
+        rhine: 5,
+        danube: 6,
+        seine: 7,
+        rhone: 8,
+        douro: 8,
+        "rhone-douro": 8,
+        nile: 9,
+        mekong: 9,
+        "nile-mekong": 9,
+        christmas: 10,
+        "christmas-market": 10,
+      };
+      const targetTab = tabMap[tabParam.toLowerCase()];
+      if (targetTab) {
+        setActiveReasonTab(targetTab);
+        setTimeout(() => {
+          const element = document.querySelector(".dac-reasons-tabs-nav");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 300);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash) {
+      setTimeout(() => {
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 500);
+    }
+  }, []);
+
+
+
   return (
     <div className="Asc-page-wrapper">
       <Helmet>
@@ -480,6 +525,9 @@ const VikingRiverCruises = () => {
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Asc-container">
+          {/* Quick Page Links for Pillar/Cluster Hierarchy */}
+            
+
           <div className="ugt-components-header">
             <h2 className="adg-c-h2">
               What Makes Viking River Cruises Different?
@@ -734,6 +782,19 @@ const VikingRiverCruises = () => {
                 <span className="dac-reasons-tab-title">Nile & Mekong</span>
               </div>
             </button>
+
+            <button
+              className={`dac-reasons-tab-btn ${activeReasonTab === 10 ? "active" : ""}`}
+              onClick={() => setActiveReasonTab(10)}
+            >
+              <span className="dac-reasons-tab-icon-wrap">
+                <Sparkles size={18} />
+              </span>
+              <div className="dac-reasons-tab-text-wrap">
+                <span className="dac-reasons-tab-num">06</span>
+                <span className="dac-reasons-tab-title">Christmas Markets</span>
+              </div>
+            </button>
           </div>
 
           <div className="dac-reasons-tabs-content">
@@ -744,13 +805,10 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">01</span>
                     <h3 className="dac-reasons-row-title">
-                      Rhine River Cruises
+                      <Link to="/viking-rhine-river-cruises" style={{ color: "inherit", textDecoration: "none" }}>Rhine River Cruises</Link>
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      The Rhine is one of Viking's most popular itineraries and
-                      is frequently recommended for first-time river cruisers.
-                      Travelers sail past fairytale castles, charming villages,
-                      world-famous vineyards, and historic cultural landmarks.
+                      The Rhine is one of Viking's most popular itineraries and is frequently recommended for first-time river cruisers. Travelers sail past fairytale castles, charming villages, world-famous vineyards, and historic cultural landmarks. To see if it's right for you, check our analysis in the <Link to="/is-viking-worth-it" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Is Viking Worth It</Link> guide.
                     </p>
                     <div className="dac-reasons-pills">
                       {[
@@ -766,6 +824,11 @@ const VikingRiverCruises = () => {
                           {pill}
                         </span>
                       ))}
+                    </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-rhine-river-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Rhine River Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
                     </div>
                   </div>
                   <div className="dac-reasons-media">
@@ -797,12 +860,10 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">02</span>
                     <h3 className="dac-reasons-row-title">
-                      Danube River Cruises
+                      <Link to="/viking-danube-river-cruises" style={{ color: "inherit", textDecoration: "none" }}>Danube River Cruises</Link>
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      The Danube blends imperial architecture, classical music
-                      heritage, and breathtaking scenery across Central Europe.
-                      Key highlights include Vienna, Budapest, and Bratislava.
+                      The Danube blends imperial architecture, classical music heritage, and breathtaking scenery across Central Europe. Key highlights include Vienna, Budapest, and Bratislava. Plan your travel budget with our <Link to="/viking-cruise-cost-guide" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Cost Guide</Link> and read detailed feedback in our <Link to="/viking-cruise-reviews" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Reviews</Link>.
                     </p>
                     <div className="dac-reasons-bullets">
                       {[
@@ -819,6 +880,11 @@ const VikingRiverCruises = () => {
                           <span>{bullet}</span>
                         </div>
                       ))}
+                    </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-danube-river-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Danube River Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -954,6 +1020,51 @@ const VikingRiverCruises = () => {
                         alt="Viking Nile River Cruise Egypt ancient monuments"
                         className="dac-reasons-img"
                       />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Tab 10 — Christmas Markets */}
+            {activeReasonTab === 10 && (
+              <div className="dac-reasons-tab-panel fade-in">
+                <div className="dac-reasons-row dac-reasons-row--right-content">
+                  <div className="dac-reasons-media">
+                    <div className="dac-reasons-img-container">
+                      <img
+                        src={VikingRhineImage}
+                        alt="Viking Christmas Market Cruises Europe"
+                        className="dac-reasons-img"
+                      />
+                    </div>
+                  </div>
+                  <div className="dac-reasons-content">
+                    <span className="dac-reasons-row-number">06</span>
+                    <h3 className="dac-reasons-row-title">
+                      Viking Christmas Market Cruises
+                    </h3>
+                    <p className="dac-reasons-row-desc">
+                      Experience the magic of the holiday season on the Rhine or Danube. 
+                      Viking Christmas Market cruises sail through the heart of Germany, 
+                      Austria, and France, stopping at historic town squares filled with festive 
+                      wooden stalls, artisanal crafts, gingerbread, and hot mulled wine.
+                    </p>
+                    <div className="dac-reasons-bullets">
+                      {[
+                        "Festive Holiday Atmosphere Onboard & Ashore",
+                        "Traditional Wooden Craft & Food Stalls",
+                        "Strasbourg, Cologne & Vienna Markets",
+                        "Exclusive Holiday Music and Culinary Events",
+                      ].map((bullet, idx) => (
+                        <div key={idx} className="dac-reasons-bullet-item">
+                          <Globe
+                            size={16}
+                            className="dac-reasons-bullet-icon"
+                          />
+                          <span>{bullet}</span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -1621,6 +1732,99 @@ const VikingRiverCruises = () => {
                 allowFullScreen
               ></iframe>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ VIKING VS OTHER RIVER CRUISE LINES ════════════════════════════════ */}
+      <section
+        className="Asc-section Asc-alt-bg"
+        id="viking-river-cruises-vs-competitors"
+        style={{ backgroundColor: "var(--bg-soft)", padding: "80px 0" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header" style={{ marginBottom: "50px" }}>
+            <h2>Viking River Cruises vs. Competitors</h2>
+            <div className="Asc-accent-line"></div>
+            <p className="Asc-faq-intro" style={{ marginTop: "15px" }}>
+              How does Viking compare to other leading river cruise lines? Explore key differences to help choose the perfect voyage.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "30px", marginTop: "30px" }}>
+            
+            {/* Card 1: Viking vs AmaWaterways */}
+            <div id="viking-vs-amawaterways" style={{ backgroundColor: "var(--bg-white)", borderRadius: "10px", padding: "30px", boxShadow: "0 4px 20px rgba(0,0,0,0.05)", borderTop: "4px solid var(--navy)", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div>
+                <span style={{ fontSize: "0.85rem", fontWeight: "bold", textTransform: "uppercase", color: "var(--accent)", letterSpacing: "1px" }}>Comparison Guide</span>
+                <h3 style={{ fontSize: "1.4rem", margin: "10px 0 15px", color: "var(--navy)" }}>Viking vs. AmaWaterways</h3>
+                <p style={{ fontSize: "0.95rem", lineHeight: "1.6", color: "var(--text-soft)", marginBottom: "20px" }}>
+                  AmaWaterways is renowned for active river travel, wellness programs, and themed wine cruises. While Viking focuses on history and quiet destination immersion, AmaWaterways provides active excursions like guided bike tours and hiking, plus a livelier onboard wellness culture.
+                </p>
+                <div style={{ borderTop: "1px solid var(--border-color)", paddingTop: "15px", marginBottom: "20px" }}>
+                  <span style={{ fontSize: "0.9rem", fontWeight: "bold", display: "block", marginBottom: "8px" }}>Key Difference:</span>
+                  <p style={{ fontSize: "0.9rem", color: "var(--text-main)" }}>AmaWaterways features active excursions (bikes/hiking) and wellness hosts, whereas Viking offers quiet Scandinavian luxury and historical lectures.</p>
+                </div>
+              </div>
+              <Link to="/viking-vs-amawaterways" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none", color: "var(--navy)", fontWeight: "bold", fontSize: "0.95rem", transition: "color 0.2s" }} onMouseEnter={(e) => e.target.style.color = "var(--accent)"} onMouseLeave={(e) => e.target.style.color = "var(--navy)"}>
+                Compare Viking vs. AmaWaterways <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+              </Link>
+            </div>
+
+            {/* Card 2: Viking vs Tauck */}
+            <div id="viking-vs-tauck" style={{ backgroundColor: "var(--bg-white)", borderRadius: "10px", padding: "30px", boxShadow: "0 4px 20px rgba(0,0,0,0.05)", borderTop: "4px solid var(--navy)", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div>
+                <span style={{ fontSize: "0.85rem", fontWeight: "bold", textTransform: "uppercase", color: "var(--accent)", letterSpacing: "1px" }}>Comparison Guide</span>
+                <h3 style={{ fontSize: "1.4rem", margin: "10px 0 15px", color: "var(--navy)" }}>Viking vs. Tauck</h3>
+                <p style={{ fontSize: "0.95rem", lineHeight: "1.6", color: "var(--text-soft)", marginBottom: "20px" }}>
+                  Tauck is an ultra-premium tour operator providing fully all-inclusive luxury river cruises. Unlike Viking's optional premium excursions and extra dining fees, Tauck fares cover absolutely everything: unlimited drinks, all gratuities, premium dining, and private exclusive land excursions.
+                </p>
+                <div style={{ borderTop: "1px solid var(--border-color)", paddingTop: "15px", marginBottom: "20px" }}>
+                  <span style={{ fontSize: "0.9rem", fontWeight: "bold", display: "block", marginBottom: "8px" }}>Key Difference:</span>
+                  <p style={{ fontSize: "0.9rem", color: "var(--text-main)" }}>Tauck is completely all-inclusive with exclusive land tour guides; Viking has a more customizable, entry-friendly pricing tier.</p>
+                </div>
+              </div>
+              <Link to="/viking-vs-tauck" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none", color: "var(--navy)", fontWeight: "bold", fontSize: "0.95rem", transition: "color 0.2s" }} onMouseEnter={(e) => e.target.style.color = "var(--accent)"} onMouseLeave={(e) => e.target.style.color = "var(--navy)"}>
+                Compare Viking vs. Tauck <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+              </Link>
+            </div>
+
+            {/* Card 3: Viking vs Scenic */}
+            <div id="viking-vs-scenic" style={{ backgroundColor: "var(--bg-white)", borderRadius: "10px", padding: "30px", boxShadow: "0 4px 20px rgba(0,0,0,0.05)", borderTop: "4px solid var(--navy)", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div>
+                <span style={{ fontSize: "0.85rem", fontWeight: "bold", textTransform: "uppercase", color: "var(--accent)", letterSpacing: "1px" }}>Comparison Guide</span>
+                <h3 style={{ fontSize: "1.4rem", margin: "10px 0 15px", color: "var(--navy)" }}>Viking vs. Scenic</h3>
+                <p style={{ fontSize: "0.95rem", lineHeight: "1.6", color: "var(--text-soft)", marginBottom: "20px" }}>
+                  Scenic operates ultra-luxury "Space-Ships" featuring private butler service for every guest and open bar throughout the cruise. While Viking provides high-quality self-service luxury with premium upgrades, Scenic is fully all-inclusive luxury with high-tech onboard experiences.
+                </p>
+                <div style={{ borderTop: "1px solid var(--border-color)", paddingTop: "15px", marginBottom: "20px" }}>
+                  <span style={{ fontSize: "0.9rem", fontWeight: "bold", display: "block", marginBottom: "8px" }}>Key Difference:</span>
+                  <p style={{ fontSize: "0.9rem", color: "var(--text-main)" }}>Scenic includes butler service and unlimited open-bar beverages; Viking is more understated Scandinavian luxury.</p>
+                </div>
+              </div>
+              <Link to="/viking-vs-scenic" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none", color: "var(--navy)", fontWeight: "bold", fontSize: "0.95rem", transition: "color 0.2s" }} onMouseEnter={(e) => e.target.style.color = "var(--accent)"} onMouseLeave={(e) => e.target.style.color = "var(--navy)"}>
+                Compare Viking vs. Scenic <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+              </Link>
+            </div>
+
+            {/* Card 4: Viking vs Uniworld */}
+            <div id="viking-vs-uniworld" style={{ backgroundColor: "var(--bg-white)", borderRadius: "10px", padding: "30px", boxShadow: "0 4px 20px rgba(0,0,0,0.05)", borderTop: "4px solid var(--navy)", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div>
+                <span style={{ fontSize: "0.85rem", fontWeight: "bold", textTransform: "uppercase", color: "var(--accent)", letterSpacing: "1px" }}>Comparison Guide</span>
+                <h3 style={{ fontSize: "1.4rem", margin: "10px 0 15px", color: "var(--navy)" }}>Viking vs. Uniworld</h3>
+                <p style={{ fontSize: "0.95rem", lineHeight: "1.6", color: "var(--text-soft)", marginBottom: "20px" }}>
+                  Uniworld features boutique, ultra-luxury river cruising with uniquely designed, theme-decorated ships. While Viking maintains a minimalist, uniform Scandinavian fleet, Uniworld ships feel like floating palaces with custom art, luxury fabrics, and gourmet farm-to-table dining.
+                </p>
+                <div style={{ borderTop: "1px solid var(--border-color)", paddingTop: "15px", marginBottom: "20px" }}>
+                  <span style={{ fontSize: "0.9rem", fontWeight: "bold", display: "block", marginBottom: "8px" }}>Key Difference:</span>
+                  <p style={{ fontSize: "0.9rem", color: "var(--text-main)" }}>Uniworld is a boutique hotel aesthetic with maximalist art, whereas Viking is sleek, uniform, and minimal Scandinavian design.</p>
+                </div>
+              </div>
+              <Link to="/viking-vs-uniworld" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none", color: "var(--navy)", fontWeight: "bold", fontSize: "0.95rem", transition: "color 0.2s" }} onMouseEnter={(e) => e.target.style.color = "var(--accent)"} onMouseLeave={(e) => e.target.style.color = "var(--navy)"}>
+                Compare Viking vs. Uniworld <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+              </Link>
+            </div>
+
           </div>
         </div>
       </section>

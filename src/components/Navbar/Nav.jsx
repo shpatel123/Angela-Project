@@ -400,6 +400,22 @@ const Nav = () => {
               >
                 Who should sail viking
               </NavLink>
+
+              <NavLink
+                to="/who-should-not-sail-viking"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Who should not sail viking
+              </NavLink>
+
+              <NavLink
+                to="/viking-danube-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Viking Danube River Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -802,6 +818,22 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Who should sail viking
+            </NavLink>
+
+            <NavLink
+              to="/who-should-not-sail-viking"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Who should not sail viking
+            </NavLink>
+
+            <NavLink
+              to="/viking-danube-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Viking Danube River Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

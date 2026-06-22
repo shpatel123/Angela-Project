@@ -49,6 +49,8 @@ import VikingCruiseReviews from "./pages/VikingCruiseReviews/VikingCruiseReviews
 import VikingCruiseCostGuide from "./pages/VikingCruiseCostGuide/VikingCruiseCostGuide";
 import WhatIncludedVikingCruises from "./pages/WhatIncludedVikingCruises/WhatIncludedVikingCruises";
 import WhoShouldSailViking from "./pages/WhoShouldSailViking/WhoShouldSailViking";
+import WhoShouldNotSailViking from "./pages/WhoShouldNotSailViking/WhoShouldNotSailViking";
+import VikingDanubeRiverCruises from "./pages/VikingDanubeRiverCruises/VikingDanubeRiverCruises";
 
 function App() {
   return (
@@ -297,6 +299,16 @@ function App() {
           <Route
             path="/who-should-sail-viking"
             element={<WhoShouldSailViking />}
+          />
+
+           <Route
+            path="/who-should-not-sail-viking"
+            element={<WhoShouldNotSailViking />}
+          />
+
+          <Route
+            path="/viking-danube-river-cruises"
+            element={<VikingDanubeRiverCruises />}
           />
         </Routes>
       </BrowserRouter>

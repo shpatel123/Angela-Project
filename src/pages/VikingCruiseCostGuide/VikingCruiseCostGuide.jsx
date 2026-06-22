@@ -232,7 +232,8 @@ const schemaData = {
 
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.tripsandships.com/viking-cruise-cost-guide#breadcrumb",
+      "@id":
+        "https://www.tripsandships.com/viking-cruise-cost-guide#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -259,7 +260,8 @@ const schemaData = {
 
     {
       "@type": "PriceSpecification",
-      "@id": "https://www.tripsandships.com/viking-cruise-cost-guide#pricespecification",
+      "@id":
+        "https://www.tripsandships.com/viking-cruise-cost-guide#pricespecification",
       name: "Viking Cruise Pricing",
       description:
         "Average starting prices for Viking River Cruises, Ocean Cruises, and Expedition Cruises.",
@@ -270,7 +272,8 @@ const schemaData = {
 
     {
       "@type": "TouristTrip",
-      "@id": "https://www.tripsandships.com/viking-cruise-cost-guide#touristtrip",
+      "@id":
+        "https://www.tripsandships.com/viking-cruise-cost-guide#touristtrip",
       name: "Viking Cruises — River, Ocean & Expedition Voyages",
       description:
         "Award-winning Viking cruises spanning rivers, oceans, and remote expedition destinations — designed for culturally curious adult travelers seeking destination-focused experiences.",
@@ -619,16 +622,16 @@ const VikingCruiseCost = () => {
             <strong>"How much does a Viking Cruise cost?"</strong>
           </p>
 
-          <p className="aac_hero_text">
-            The answer depends on several factors — cruise type, destination,
-            cabin category, sailing season, trip length, and included
-            promotions. While Viking is generally more expensive than many
-            mainstream cruise lines, it also includes amenities and experiences
-            that often cost extra elsewhere.
-          </p>
-
           {/* ── Expandable content ── */}
           <div className={`aac_expandable ${readMore ? "open" : ""}`}>
+            <p className="aac_hero_text">
+              The answer depends on several factors — cruise type, destination,
+              cabin category, sailing season, trip length, and included
+              promotions. While Viking is generally more expensive than many
+              mainstream cruise lines, it also includes amenities and
+              experiences that often cost extra elsewhere.
+            </p>
+
             <p className="aac_list_intro">
               For many travelers, understanding the complete value — not just
               the advertised fare — is key to determining whether Viking is

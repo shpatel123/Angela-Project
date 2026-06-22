@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   MapPin,
   Award,
@@ -389,6 +390,46 @@ const VikingExpeditionCruises = () => {
   }, [images.length]);
 
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const tabParam = params.get("tab");
+    if (tabParam) {
+      const tabMap = {
+        antarctica: 5,
+        arctic: 6,
+        "the-arctic": 6,
+        greatlakes: 7,
+        "great-lakes": 7,
+        coast: 8,
+        "north-american-coast": 8,
+      };
+      const targetTab = tabMap[tabParam.toLowerCase()];
+      if (targetTab) {
+        setActiveReasonTab(targetTab);
+        setTimeout(() => {
+          const element = document.querySelector(".dac-reasons-tabs-nav");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 300);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash) {
+      setTimeout(() => {
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 500);
+    }
+  }, []);
+
+
+
   return (
     <div className="Asc-page-wrapper">
       <Helmet>
@@ -488,6 +529,8 @@ const VikingExpeditionCruises = () => {
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Asc-container">
+          {/* Quick Page Links for Pillar/Cluster Hierarchy */}
+
           <div className="ugt-components-header">
             <h2 className="adg-c-h2">What Is a Viking Expedition Cruise?</h2>
             <div className="adg-c-accent-line"></div>
@@ -1662,6 +1705,9 @@ const VikingExpeditionCruises = () => {
           <div className="Asc-section-header">
             <h2>Are Viking Expedition Cruises Worth It?</h2>
             <div className="Asc-accent-line"></div>
+            <p className="Asc-faq-intro" style={{ marginTop: "15px", marginBottom: "30px", fontSize: "1.1rem" }}>
+              To see if an adventure voyage is right for your travel goals, read our core <Link to="/is-viking-worth-it" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Is Viking Worth It</Link> analysis and see what guest feedback reports in our <Link to="/viking-cruise-reviews" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Reviews</Link>.
+            </p>
           </div>
 
           <div className="Asc-who-grid">

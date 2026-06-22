@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   MapPin,
   Award,
@@ -375,6 +376,48 @@ const VikingOceanCruises = () => {
   }, [images.length]);
 
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const tabParam = params.get("tab");
+    if (tabParam) {
+      const tabMap = {
+        mediterranean: 5,
+        med: 5,
+        "northern-europe": 6,
+        northerneurope: 6,
+        iceland: 6,
+        alaska: 7,
+        asia: 8,
+        australia: 9,
+        "australia-nz": 9,
+      };
+      const targetTab = tabMap[tabParam.toLowerCase()];
+      if (targetTab) {
+        setActiveReasonTab(targetTab);
+        setTimeout(() => {
+          const element = document.querySelector(".dac-reasons-tabs-nav");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 300);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash) {
+      setTimeout(() => {
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 500);
+    }
+  }, []);
+
+
+
   return (
     <div className="Asc-page-wrapper">
       <Helmet>
@@ -477,6 +520,9 @@ const VikingOceanCruises = () => {
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Asc-container">
+          {/* Quick Page Links for Pillar/Cluster Hierarchy */}
+          
+
           <div className="ugt-components-header">
             <h2 className="adg-c-h2">What Is Viking Ocean Cruises?</h2>
             <div className="adg-c-accent-line"></div>
@@ -926,13 +972,10 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">01</span>
                     <h3 className="dac-reasons-row-title">
-                      Mediterranean Cruises
+                      <Link to="/viking-mediterranean-cruises" style={{ color: "inherit", textDecoration: "none" }}>Mediterranean Cruises</Link>
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      The Mediterranean remains one of Viking's most popular
-                      ocean cruise regions. Travelers experience ancient
-                      history, world-famous cuisine, and iconic landmarks across
-                      Italy, Greece, Spain, Croatia, and beyond.
+                      The Mediterranean remains one of Viking's most popular ocean cruise regions. Travelers experience ancient history, world-famous cuisine, and iconic landmarks across Italy, Greece, Spain, Croatia, and beyond. To see detailed ratings and reviews, read our <Link to="/viking-cruise-reviews" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Reviews</Link>.
                     </p>
                     <div className="dac-reasons-pills">
                       {[
@@ -948,6 +991,11 @@ const VikingOceanCruises = () => {
                           {pill}
                         </span>
                       ))}
+                    </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-mediterranean-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Mediterranean Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
                     </div>
                   </div>
                   <div className="dac-reasons-media">
@@ -982,10 +1030,7 @@ const VikingOceanCruises = () => {
                       Northern Europe & Scandinavia
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      Given Viking's Scandinavian roots, Northern Europe
-                      itineraries are especially popular. Guests explore
-                      dramatic Norwegian fjords, volcanic Iceland, historic
-                      Baltic capitals, and iconic British landmarks.
+                      Given Viking's Scandinavian roots, Northern Europe itineraries are especially popular. Guests explore dramatic Norwegian fjords, volcanic Iceland (often featured on <Link to="/viking-iceland-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Iceland Cruises</Link>), historic Baltic capitals, and iconic British landmarks.
                     </p>
                     <div className="dac-reasons-bullets">
                       {[
@@ -1003,6 +1048,11 @@ const VikingOceanCruises = () => {
                         </div>
                       ))}
                     </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-iceland-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Iceland Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1014,12 +1064,11 @@ const VikingOceanCruises = () => {
                 <div className="dac-reasons-row dac-reasons-row--left-content">
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">03</span>
-                    <h3 className="dac-reasons-row-title">Alaska Cruises</h3>
+                    <h3 className="dac-reasons-row-title">
+                      <Link to="/viking-alaska-cruises" style={{ color: "inherit", textDecoration: "none" }}>Alaska Cruises</Link>
+                    </h3>
                     <p className="dac-reasons-row-desc">
-                      Viking's Alaska itineraries appeal to travelers seeking
-                      nature and discovery. Guests experience glacier viewing,
-                      wildlife encounters, indigenous cultural experiences, and
-                      some of the most spectacular scenery on earth.
+                      Viking's Alaska itineraries (featured in our <Link to="/viking-alaska-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Alaska Cruises</Link> guide) appeal to travelers seeking nature and discovery. Guests experience glacier viewing, wildlife encounters, and some of the most spectacular scenery on earth. Check our pricing overview in the <Link to="/viking-cruise-cost-guide" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Cost Guide</Link> or see if it's the right choice in the <Link to="/is-viking-worth-it" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Is Viking Worth It</Link> guide.
                     </p>
                     <div className="dac-reasons-pills">
                       {[
@@ -1035,6 +1084,11 @@ const VikingOceanCruises = () => {
                           {pill}
                         </span>
                       ))}
+                    </div>
+                    <div style={{ marginTop: "25px" }}>
+                      <Link to="/viking-alaska-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+                        Explore Alaska Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      </Link>
                     </div>
                   </div>
                   <div className="dac-reasons-media">

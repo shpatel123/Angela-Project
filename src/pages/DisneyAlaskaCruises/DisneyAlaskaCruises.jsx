@@ -38,6 +38,14 @@ import DisneyAlaskaExperience9 from "../../assets/DisneyAlaskaCruises/disney-won
 import DisneySuites from "../../assets/DisneyAlaskaCruises/Disney-Treasure-Verandah-Stateroom.jpg";
 import DisneyDining from "../../assets/DisneyAlaskaCruises/disney-wish-oceaneer-club-kids-space-interactive-slide.jpg";
 import CTAImage from "../../assets/DisneyAlaskaCruises/disney-wish-cruise-ship-aerial-view.jpg";
+import AlaskaWhale from "../../assets/DisneyAlaskaCruises/Whale.png";
+import AlaskaBears from "../../assets/DisneyAlaskaCruises/Bears.png";
+import AlaskaSeal from "../../assets/DisneyAlaskaCruises/seal-on-antarctic-ice.webp";
+
+import JuneauImg from "../../assets/DisneyAlaskaCruises/alaska-glacier-mountain-lake-scenic-wilderness-vacation.jpg";
+import SkagwayImg from "../../assets/DisneyAlaskaCruises/Ketchikan.png";
+import KetchikanImg from "../../assets/DisneyAlaskaCruises/Skagway.png";
+import GlacierImg from "../../assets/DisneyAlaskaCruises/Glacier-Viewing.png";
 
 import { Helmet } from "react-helmet-async";
 import "../DisneyCruisevsVikingOcean/DisneyCruisevsVikingOcean.css";
@@ -47,7 +55,7 @@ const disneyAlaskaDestinations = [
     id: "juneau",
     badge: "Juneau",
     title: "Juneau",
-    // image: JuneauImg,
+    image: JuneauImg,
     icon: Mountain,
     desc: "Alaska's capital city is surrounded by mountains, glaciers, and wildlife, making it one of the most popular stops on Disney Alaska itineraries.",
     columns: [
@@ -69,7 +77,7 @@ const disneyAlaskaDestinations = [
     id: "skagway",
     badge: "Skagway",
     title: "Skagway",
-    // image: SkagwayImg,
+    image: SkagwayImg,
     icon: Train,
     desc: "Step back into Alaska's Gold Rush history while exploring one of the state's most iconic cruise destinations.",
     columns: [
@@ -91,7 +99,7 @@ const disneyAlaskaDestinations = [
     id: "ketchikan",
     badge: "Ketchikan",
     title: "Ketchikan",
-    // image: KetchikanImg,
+    image: KetchikanImg,
     icon: Fish,
     desc: "Known as Alaska's 'Salmon Capital,' Ketchikan offers culture, wildlife, and outdoor exploration.",
     columns: [
@@ -113,7 +121,7 @@ const disneyAlaskaDestinations = [
     id: "glaciers",
     badge: "Glacier Days",
     title: "Glacier Viewing Days",
-    // image: GlacierImg,
+    image: GlacierImg,
     icon: Snowflake,
     desc: "Many Disney Alaska itineraries include spectacular glacier viewing opportunities that often become the highlight of the voyage.",
     columns: [
@@ -1099,27 +1107,18 @@ const DisneyAlaskaCruises = () => {
           <div className="dac-wildlife-grid">
             {[
               {
-                // img: AlaskImage,
+                img: AlaskaWhale,
                 title: "Humpback Whales",
                 desc: "Spot these majestic giants breaching, tail-slapping, and bubble-net feeding throughout the Inside Passage.",
               },
+             
               {
-                // img: AlaskImage2,
-                title: "Orcas",
-                desc: "Witness one of Alaska's most iconic marine species swimming in family pods along coastal waterways.",
-              },
-              {
-                // img: AlaskImage3,
-                title: "Bald Eagles",
-                desc: "Look up to find these proud birds soaring high above the tree line or nesting along rocky shore cliffs.",
-              },
-              {
-                // img: FlyFishingImg,
+                img: AlaskaBears,
                 title: "Bears",
                 desc: "Keep a lookout for grizzly and black bears hunting for wild salmon in coastal rivers on select shore excursions.",
               },
               {
-                // img: IcebergScenicImg,
+                img: AlaskaSeal,
                 title: "Sea Lions and Seals",
                 desc: "Observe groups of sea lions resting on rocky shores and harbor seals floating on glacial ice floes.",
               },
