@@ -51,6 +51,7 @@ import WhatIncludedVikingCruises from "./pages/WhatIncludedVikingCruises/WhatInc
 import WhoShouldSailViking from "./pages/WhoShouldSailViking/WhoShouldSailViking";
 import WhoShouldNotSailViking from "./pages/WhoShouldNotSailViking/WhoShouldNotSailViking";
 import VikingDanubeRiverCruises from "./pages/VikingDanubeRiverCruises/VikingDanubeRiverCruises";
+import DisneyCruiseLineVacations from "./pages/DisneyCruiseLineVacations/DisneyCruiseLineVacations";
 
 function App() {
   return (
@@ -254,6 +255,12 @@ function App() {
           <Route
             path="/best-disney-cruise-ship-for-families"
             element={<BestDisneyCruiseShipForFamilies />}
+          />
+
+          
+          <Route
+            path="/disney-cruise-line-vacations"
+            element={<DisneyCruiseLineVacations />}
           />
 
           <Route

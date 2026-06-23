@@ -218,6 +218,14 @@ const Nav = () => {
               </NavLink>
 
               <NavLink
+                to="/disney-cruise-line-vacations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Disney Cruise Line Vacations
+              </NavLink>
+
+              <NavLink
                 to="/disney-cruise-vs-viking-ocean-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -634,6 +642,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Why Trips and Ships Luxury Travel for Universities
+            </NavLink>
+
+            <NavLink
+              to="/disney-cruise-line-vacations"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Disney Cruise Line Vacations
             </NavLink>
 
             <NavLink
