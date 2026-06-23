@@ -424,6 +424,22 @@ const Nav = () => {
               >
                 Viking Danube River Cruises
               </NavLink>
+
+              <NavLink
+                to="/travel-programs-for-museums"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Travel Programs For Museums
+              </NavLink>
+
+              <NavLink
+                to="/travel-programs-for-aquariums"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Travel Programs For Aquariums
+              </NavLink>
             </div>
           </div>
         </div>
@@ -850,6 +866,22 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Viking Danube River Cruises
+            </NavLink>
+
+            <NavLink
+              to="/travel-programs-for-museums"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Travel Programs For Museums
+            </NavLink>
+
+            <NavLink
+              to="/travel-programs-for-aquariums"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Travel Programs For Aquariums
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

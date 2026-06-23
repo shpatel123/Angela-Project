@@ -38,6 +38,9 @@ import VikingCta from "../../assets/VikingRiverCruises/viking-Exterior.jpg";
 import VikingRhineImage from "../../assets/VikingRiverCruises/DE_AmaSiena_Rhine.jpg";
 import VikingDanubeImage from "../../assets/VikingRiverCruises/DE_Passau_Danube.webp";
 import VikingDouroImage from "../../assets/VikingRiverCruises/AmaDouro_ships.jpg";
+import VikingSenieImage from "../../assets/VikingRiverCruises/Seine-River.jpg";
+import VikingNileImage from "../../assets/VikingRiverCruises/Nile-Mekong.jpg";
+import VikingChristmasImage from "../../assets/VikingRiverCruises/Christmas-Market.jpg";
 
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
 const schemaData = {
@@ -925,7 +928,7 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingMediterranean}
+                        src={VikingSenieImage}
                         alt="Viking Seine River Cruise France Paris Normandy"
                         className="dac-reasons-img"
                       />
@@ -1016,7 +1019,7 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        // src={VikingAntarctica}
+                        src={VikingNileImage}
                         alt="Viking Nile River Cruise Egypt ancient monuments"
                         className="dac-reasons-img"
                       />
@@ -1033,7 +1036,7 @@ const VikingRiverCruises = () => {
                   <div className="dac-reasons-media">
                     <div className="dac-reasons-img-container">
                       <img
-                        src={VikingRhineImage}
+                        src={VikingChristmasImage}
                         alt="Viking Christmas Market Cruises Europe"
                         className="dac-reasons-img"
                       />

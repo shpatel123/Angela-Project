@@ -371,6 +371,46 @@ const schemaData = {
             text: "Families appreciate the combination of entertainment, service, safety, dining, accommodations, and Disney storytelling.",
           },
         },
+        {
+          "@type": "Question",
+          name: "Can I bring my own alcohol onboard a Disney Cruise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Guests aged 21 and older may bring up to 2 bottles of unopened wine or champagne, or 6 beers, at the beginning of the voyage and at each port of call. These must be packed in carry-on luggage.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Disney Cruise Line offer ground transfers and vacation packages?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Disney Cruise Line offers ground transfers from nearby airports and select Disney Resorts to the cruise port, as well as land-and-sea vacation packages that combine a cruise with a Walt Disney World stay.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is Disney Cruise Line's dining rotation and dress code?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Disney's unique rotational dining moves you to a different themed restaurant each night with your same servers. The dress code is mostly cruise casual with optional dress-up nights depending on itinerary length.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Wi-Fi included, and is there a Disney Cruise app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Wi-Fi packages are available for purchase onboard. The complimentary Disney Cruise Line Navigator app is highly recommended, allowing guests to view daily schedules, menus, and chat with family members.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does Disney Cruise Line handle dietary restrictions and allergies?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Disney Cruise Line is exceptionally accommodating with dietary needs, including gluten-free, vegetarian, vegan, halal, kosher, and specific food allergies. You can specify these in your reservation or inform your servers.",
+          },
+        },
       ],
     },
   ],
@@ -419,6 +459,26 @@ function FAQ() {
     {
       q: "Why do families choose Disney Cruise Line?",
       a: "Families appreciate the combination of entertainment, service, safety, dining, accommodations, and Disney storytelling.",
+    },
+    {
+      q: "Can I bring my own alcohol onboard a Disney Cruise?",
+      a: "Yes. Guests aged 21 and older may bring up to 2 bottles of unopened wine or champagne, or 6 beers, at the beginning of the voyage and at each port of call. These must be packed in carry-on luggage.",
+    },
+    {
+      q: "Does Disney Cruise Line offer ground transfers and vacation packages?",
+      a: "Yes. Disney Cruise Line offers ground transfers from nearby airports and select Disney Resorts to the cruise port, as well as land-and-sea vacation packages that combine a cruise with a Walt Disney World stay.",
+    },
+    {
+      q: "What is Disney Cruise Line's dining rotation and dress code?",
+      a: "Disney's unique rotational dining moves you to a different themed restaurant each night with your same servers. The dress code is mostly cruise casual with optional dress-up nights depending on itinerary length.",
+    },
+    {
+      q: "Is Wi-Fi included, and is there a Disney Cruise app?",
+      a: "Wi-Fi packages are available for purchase onboard. The complimentary Disney Cruise Line Navigator app is highly recommended, allowing guests to view daily schedules, menus, and chat with family members.",
+    },
+    {
+      q: "How does Disney Cruise Line handle dietary restrictions and allergies?",
+      a: "Disney Cruise Line is exceptionally accommodating with dietary needs, including gluten-free, vegetarian, vegan, halal, kosher, and specific food allergies. You can specify these in your reservation or inform your servers.",
     },
   ];
 

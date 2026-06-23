@@ -20,21 +20,21 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
-import HeroImage1 from "../../assets/DonorTravelPrograms/DonorProgram.jpg";
-import HeroImage2 from "../../assets/DonorTravelPrograms/DonorProgram2.jpg";
-import HeroImage3 from "../../assets/DonorTravelPrograms/DonorProgram3.jpg";
-import CTAImage from "../../assets/DonorTravelPrograms/Start_Planning.jpg";
+// import HeroImage1 from "../../assets/DonorTravelPrograms/DonorProgram.jpg";
+// import HeroImage2 from "../../assets/DonorTravelPrograms/DonorProgram2.jpg";
+// import HeroImage3 from "../../assets/DonorTravelPrograms/DonorProgram3.jpg";
+// import CTAImage from "../../assets/DonorTravelPrograms/Start_Planning.jpg";
 
 import Mediterian from "../../assets/DonorTravelPrograms/Mediterian.jpg";
 import Danube from "../../assets/DonorTravelPrograms/Danube.jpg";
 import Britislen from "../../assets/DonorTravelPrograms/BritishIsles.jpg";
 import France from "../../assets/DonorTravelPrograms/France.jpg";
 import Antarctica from "../../assets/DonorTravelPrograms/Antarctica.jpg";
-import DonorTravel from "../../assets/DonorTravelPrograms/FacultyLedTravel.jpg";
+// import DonorTravel from "../../assets/DonorTravelPrograms/FacultyLedTravel.jpg";
 
-import DonorExperience from "../../assets/DonorTravelPrograms/DonorTravel.jpeg";
-import DonorExperience2 from "../../assets/DonorTravelPrograms/DonorExperience.jpg";
-import DonorExperience3 from "../../assets/DonorTravelPrograms/Colombia_Maralyn.jpg";
+// import DonorExperience from "../../assets/DonorTravelPrograms/DonorTravel.jpeg";
+// import DonorExperience2 from "../../assets/DonorTravelPrograms/DonorExperience.jpg";
+// import DonorExperience3 from "../../assets/DonorTravelPrograms/Colombia_Maralyn.jpg";
 
 
 import { Helmet } from "react-helmet-async";
@@ -453,7 +453,7 @@ function FAQ() {
 const DonorTravelPrograms = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [HeroImage1, HeroImage3, HeroImage2];
+  const images = [];
   const [activeDest, setActiveDest] = useState("antarctica");
   const currentDest =
     donorTravelDestinations.find((d) => d.id === activeDest) ||
@@ -609,7 +609,7 @@ const DonorTravelPrograms = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  src={DonorExperience3}
+                  // src={DonorExperience3}
                   alt="University donor travel program"
                   className="adg-c-overview-img"
                 />
@@ -752,7 +752,7 @@ const DonorTravelPrograms = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    src={DonorTravel}
+                    // src={DonorTravel}
                     alt="University Donor Travel Educational Experience"
                     className="ugt-component-image"
                   />
@@ -1130,7 +1130,7 @@ const DonorTravelPrograms = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
-                src={DonorExperience}
+                // src={DonorExperience}
                 alt="Luxury donor travel experience"
                 className="luc-why-img-main"
               />
@@ -1139,7 +1139,7 @@ const DonorTravelPrograms = () => {
 
             <div className="luc-why-img-accent-wrap">
               <img
-                src={DonorExperience2}
+                // src={DonorExperience2}
                 alt="Premium luxury travel experience"
                 className="luc-why-img-accent"
               />
@@ -1676,7 +1676,7 @@ WHY UNIVERSITIES CHOOSE TRIPS & SHIPS LUXURY TRAVEL
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            src={CTAImage}
+            // src={CTAImage}
             alt="University Donor Travel Experience"
             className="Asc-help-bg-img"
           />

@@ -52,17 +52,15 @@ import WhoShouldSailViking from "./pages/WhoShouldSailViking/WhoShouldSailViking
 import WhoShouldNotSailViking from "./pages/WhoShouldNotSailViking/WhoShouldNotSailViking";
 import VikingDanubeRiverCruises from "./pages/VikingDanubeRiverCruises/VikingDanubeRiverCruises";
 import DisneyCruiseLineVacations from "./pages/DisneyCruiseLineVacations/DisneyCruiseLineVacations";
+import TravelProgramsForMuseums from "./pages/TravelProgramsForMuseums/TravelProgramsForMuseums";
+import TravelProgramsForAquariums from "./pages/TravelProgramsForAquariums/TravelProgramsForAquariums";
 
 function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
         <Routes>
-
-          <Route
-            path="/"
-            element={<AzamaraShipComparison />}
-          />
+          <Route path="/" element={<AzamaraShipComparison />} />
 
           <Route
             path="/azamara-ship-comparison"
@@ -74,16 +72,12 @@ function App() {
             element={<AzamaravsRegentSevenSeas />}
           />
 
-          <Route
-            path="/azamara-vs-seabourn"
-            element={<AzamaraVsSeabourn />}
-          />
+          <Route path="/azamara-vs-seabourn" element={<AzamaraVsSeabourn />} />
 
           <Route
             path="/azamara-dining-guide"
             element={<AzamaraDiningGuide />}
           />
-
 
           <Route
             path="/azamara-alaska-cruises"
@@ -95,12 +89,12 @@ function App() {
             element={<AzamaraNorwayFjordsCruises />}
           />
 
-           <Route
+          <Route
             path="/luxury-explora-journeys-guide"
             element={<LuxuryExploraJourneysGuide />}
           />
 
-           <Route
+          <Route
             path="/is-explora-journeys-worth-it"
             element={<ExploraJourneysWorth />}
           />
@@ -110,67 +104,59 @@ function App() {
             element={<ExploraJourneysCruises />}
           />
 
-          
           <Route
             path="/how-much-does-an-explora-cruise-cost-2026-2027"
             element={<ExploraCruiseCost />}
           />
 
-           <Route
+          <Route
             path="/explora-journeys-vs-seabourn"
             element={<ExploraJourneysvsSeabourn />}
           />
 
-            <Route
+          <Route
             path="/faculty-led-travel-programs"
             element={<FacultyLedTravelPrograms />}
           />
 
-          
-            <Route
+          <Route
             path="/educational-travel-programs"
             element={<EducationalTravelPrograms />}
           />
 
-           <Route
+          <Route
             path="/luxury-alumni-travel"
             element={<LuxuryAlumniTravel />}
           />
 
-          <Route
-            path="/alumni-cruises"
-            element={<AlumniCruises />}
-          />
+          <Route path="/alumni-cruises" element={<AlumniCruises />} />
 
-          
           <Route
             path="/university-group-travel-planning"
             element={<UniversityGroupTravelPlanning />}
           />
 
-          
           <Route
             path="/why-universities-partner-with-travel-companies"
             element={<WhyUniversitiesPartner />}
           />
 
-           <Route
+          <Route
             path="/alumni-river-cruises"
             element={<LuxuryAlumniRiverCruises />}
           />
 
-          
-           <Route
+          <Route
             path="/alumni-expedition-cruises"
             element={<LuxuryAlumniExpeditionCruises />}
           />
 
-           <Route
+          <Route
             path="/small-ship-alumni-cruises"
             element={<SmallShipAlumniCruises />}
           />
 
-           <Route
+          <Route
             path="/donor-travel-programs"
             element={<DonorTravelPrograms />}
           />
@@ -180,29 +166,27 @@ function App() {
             element={<MultiGenerationalAlumniTravel />}
           />
 
-          
           <Route
             path="/why-trips-and-ships-luxury-travel-for-universities"
             element={<WhyLuxuryTravelForUniversities />}
           />
 
-           
           <Route
             path="/disney-cruise-vs-viking-ocean-cruises"
             element={<DisneyCruisevsVikingOcean />}
           />
 
-           <Route
+          <Route
             path="/disney-cruises-for-grandparents-and-multigenerational-families"
             element={<DisneyCruisesforGrandparents />}
           />
 
-           <Route
+          <Route
             path="/disney-alaska-vs-princess-cruises"
             element={<DisneyAlaskavsPrincessCruises />}
           />
 
-           <Route
+          <Route
             path="/disney-alaska-vs-holland-america"
             element={<DisneyAlaskavsHollandAmerica />}
           />
@@ -212,12 +196,12 @@ function App() {
             element={<IsDisneyCruiseReallyForKids />}
           />
 
-            <Route
+          <Route
             path="/disney-alaska-cruises"
             element={<DisneyAlaskaCruises />}
           />
 
-           <Route
+          <Route
             path="/disney-europe-cruises"
             element={<DisneyEuropeCruises />}
           />
@@ -237,7 +221,7 @@ function App() {
             element={<DisneyCruisesFromFlorida />}
           />
 
-           <Route
+          <Route
             path="/disney-cruises-from-port-canaveral"
             element={<DisneyCruisesFromPortCanaveral />}
           />
@@ -247,7 +231,7 @@ function App() {
             element={<WhyAreDisneyCruisesSoExpensive />}
           />
 
-            <Route
+          <Route
             path="/what-is-included-on-a-disney-cruise"
             element={<WhatIsIncludedDisneyCruise />}
           />
@@ -257,48 +241,41 @@ function App() {
             element={<BestDisneyCruiseShipForFamilies />}
           />
 
-          
           <Route
             path="/disney-cruise-line-vacations"
             element={<DisneyCruiseLineVacations />}
           />
 
-          <Route
-            path="/viking-cruises"
-            element={<VikingCruises />}
-          />
+          <Route path="/viking-cruises" element={<VikingCruises />} />
 
           <Route
             path="/viking-river-cruises"
             element={<VikingRiverCruises />}
           />
 
-           <Route
+          <Route
             path="/viking-ocean-cruises"
             element={<VikingOceanCruises />}
           />
 
-           <Route
+          <Route
             path="/viking-expedition-cruises"
             element={<VikingExpeditionCruises />}
           />
 
-           <Route
-            path="/is-viking-worth-it"
-            element={<IsVikingWorthIt />}
-          />
+          <Route path="/is-viking-worth-it" element={<IsVikingWorthIt />} />
 
           <Route
             path="/viking-cruise-reviews"
             element={<VikingCruiseReviews />}
           />
 
-           <Route
+          <Route
             path="/viking-cruise-cost-guide"
             element={<VikingCruiseCostGuide />}
           />
 
-           <Route
+          <Route
             path="/what-is-included-on-viking-cruises"
             element={<WhatIncludedVikingCruises />}
           />
@@ -308,7 +285,7 @@ function App() {
             element={<WhoShouldSailViking />}
           />
 
-           <Route
+          <Route
             path="/who-should-not-sail-viking"
             element={<WhoShouldNotSailViking />}
           />
@@ -316,6 +293,16 @@ function App() {
           <Route
             path="/viking-danube-river-cruises"
             element={<VikingDanubeRiverCruises />}
+          />
+
+           <Route
+            path="/travel-programs-for-museums"
+            element={<TravelProgramsForMuseums />}
+          />
+
+           <Route
+            path="/travel-programs-for-aquariums"
+            element={<TravelProgramsForAquariums />}
           />
         </Routes>
       </BrowserRouter>

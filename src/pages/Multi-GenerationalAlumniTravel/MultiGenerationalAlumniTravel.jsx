@@ -33,6 +33,7 @@ import Danube from "../../assets/MultiGenerationalAlumniTravel/EuropeRiver.jpg";
 import Britislen from "../../assets/MultiGenerationalAlumniTravel/Britishlens.jpg";
 import Alaska from "../../assets/MultiGenerationalAlumniTravel/Alaska.jpg";
 import Galapagos from "../../assets/MultiGenerationalAlumniTravel/Galapagos.jpg";
+import Mediterranean  from "../../assets/SmallShipAlumniCruises/Mediterranean.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -68,7 +69,7 @@ const donorTravelDestinations = [
     title: "Mediterranean Family Cruises",
     badge: "Mediterranean",
     icon: Ship,
-    // image: Mediterian,
+    image: Mediterranean,
 
     desc: "Mediterranean itineraries offer timeless, cross-generational appeal by seamlessly blending foundational history, deep culture, great food, and inherently family-friendly experiences.",
 

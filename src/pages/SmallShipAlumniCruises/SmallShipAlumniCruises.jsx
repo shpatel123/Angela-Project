@@ -36,6 +36,7 @@ import FineDining from "../../assets/SmallShipAlumniCruises/Fine_Dining.jpg";
 import SmallShipExperience from "../../assets/SmallShipAlumniCruises/Small_Ship_Experience.jpg";
 import Alaska from "../../assets/LuxuryAlumniExpeditionCruises/Alaska.webp";
 import TravelExperience from "../../assets/SmallShipAlumniCruises/StartPlan.jpg";
+import Mediterranean  from "../../assets/SmallShipAlumniCruises/Mediterranean.jpg";
 
 
 
@@ -74,7 +75,7 @@ const smallShipDestinations = [
     title: "Mediterranean Small Ship Cruises",
     badge: "Mediterranean",
     icon: Compass,
-    // image: Mediterian,
+    image: Mediterranean,
     desc: "The Mediterranean remains one of the most popular regions for alumni travel, combining world-class cultural experiences with exceptional small ship cruising.",
     columns: [
       {
