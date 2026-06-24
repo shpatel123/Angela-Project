@@ -54,6 +54,9 @@ import VikingDanubeRiverCruises from "./pages/VikingDanubeRiverCruises/VikingDan
 import DisneyCruiseLineVacations from "./pages/DisneyCruiseLineVacations/DisneyCruiseLineVacations";
 import TravelProgramsForMuseums from "./pages/TravelProgramsForMuseums/TravelProgramsForMuseums";
 import TravelProgramsForAquariums from "./pages/TravelProgramsForAquariums/TravelProgramsForAquariums";
+import TravelProgramsForZoos from "./pages/TravelProgramsForZoos/TravelProgramsForZoos";
+import TravelProgramsForFoundations from "./pages/TravelProgramsForFoundations/TravelProgramsForFoundations";
+import DonorExpeditionCruises from "./pages/DonorExpeditionCruises/DonorExpeditionCruises";
 
 function App() {
   return (
@@ -303,6 +306,22 @@ function App() {
            <Route
             path="/travel-programs-for-aquariums"
             element={<TravelProgramsForAquariums />}
+          />
+
+           <Route
+            path="/travel-programs-for-zoos-conservation-organizations"
+            element={<TravelProgramsForZoos />}
+          />
+
+           <Route
+            path="/travel-programs-for-foundations-nonprofits"
+            element={<TravelProgramsForFoundations />}
+          />
+
+          
+           <Route
+            path="/donor-expedition-cruises"
+            element={<DonorExpeditionCruises />}
           />
         </Routes>
       </BrowserRouter>

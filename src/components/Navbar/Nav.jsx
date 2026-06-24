@@ -440,6 +440,30 @@ const Nav = () => {
               >
                 Travel Programs For Aquariums
               </NavLink>
+
+              <NavLink
+                to="/travel-programs-for-zoos-conservation-organizations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Travel Programs For Zoos Conservation Organizations
+              </NavLink>
+
+              <NavLink
+                to="/travel-programs-for-foundations-nonprofits"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Travel Programs For Foundations Nonprofits
+              </NavLink>
+
+              <NavLink
+                to="/donor-expedition-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Donor Expedition Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -882,6 +906,30 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Travel Programs For Aquariums
+            </NavLink>
+
+            <NavLink
+              to="/travel-programs-for-zoos-conservation-organizations"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Travel Programs For Zoos Conservation Organizations
+            </NavLink>
+
+            <NavLink
+              to="/travel-programs-for-foundations-nonprofits"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Travel Programs For Foundations Nonprofits
+            </NavLink>
+
+            <NavLink
+              to="/donor-expedition-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Donor Expedition Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

@@ -285,6 +285,7 @@ const schemaData = {
     },
   ],
 };
+
 const travelerTypeData = [
   {
     key: "river",
