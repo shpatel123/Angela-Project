@@ -464,6 +464,14 @@ const Nav = () => {
               >
                 Donor Expedition Cruises
               </NavLink>
+
+              <NavLink
+                to="/pressrelease"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Pressrelease
+              </NavLink>
             </div>
           </div>
         </div>

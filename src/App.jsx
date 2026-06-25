@@ -57,6 +57,7 @@ import TravelProgramsForAquariums from "./pages/TravelProgramsForAquariums/Trave
 import TravelProgramsForZoos from "./pages/TravelProgramsForZoos/TravelProgramsForZoos";
 import TravelProgramsForFoundations from "./pages/TravelProgramsForFoundations/TravelProgramsForFoundations";
 import DonorExpeditionCruises from "./pages/DonorExpeditionCruises/DonorExpeditionCruises";
+import Pressrelease from "./pages/Pressrelease/Pressrelease";
 
 function App() {
   return (
@@ -322,6 +323,11 @@ function App() {
            <Route
             path="/donor-expedition-cruises"
             element={<DonorExpeditionCruises />}
+          />
+
+          <Route
+            path="/pressrelease"
+            element={<Pressrelease />}
           />
         </Routes>
       </BrowserRouter>
