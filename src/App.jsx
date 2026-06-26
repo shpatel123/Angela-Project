@@ -58,6 +58,10 @@ import TravelProgramsForZoos from "./pages/TravelProgramsForZoos/TravelProgramsF
 import TravelProgramsForFoundations from "./pages/TravelProgramsForFoundations/TravelProgramsForFoundations";
 import DonorExpeditionCruises from "./pages/DonorExpeditionCruises/DonorExpeditionCruises";
 import Pressrelease from "./pages/Pressrelease/Pressrelease";
+import WhichExploraShipChoose from "./pages/WhichExploraShipChoose/WhichExploraShipChoose";
+import WhichExploraSuiteWorthUpgrade from "./pages/WhichExploraSuiteWorthUpgrade/WhichExploraSuiteWorthUpgrade";
+import IsAnthologyWorthIt from "./pages/IsAnthologyWorthIt/IsAnthologyWorthIt";
+import WhichMediterraneanIsBest from "./pages/WhichMediterraneanIsBest/WhichMediterraneanIsBest";
 
 function App() {
   return (
@@ -328,6 +332,28 @@ function App() {
           <Route
             path="/pressrelease"
             element={<Pressrelease />}
+          />
+
+          
+          <Route
+            path="/which-explora-ship-should-you-choose"
+            element={<WhichExploraShipChoose />}
+          />
+
+           
+          <Route
+            path="/which-explora-suite-is-worth-the-upgrade"
+            element={<WhichExploraSuiteWorthUpgrade />}
+          />
+
+           <Route
+            path="/is-anthology-worth-it"
+            element={<IsAnthologyWorthIt />}
+          />
+
+          <Route
+            path="/which-mediterranean-itinerary-is-best"
+            element={<WhichMediterraneanIsBest />}
           />
         </Routes>
       </BrowserRouter>

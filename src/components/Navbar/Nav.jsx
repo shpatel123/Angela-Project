@@ -472,6 +472,38 @@ const Nav = () => {
               >
                 Pressrelease
               </NavLink>
+
+              <NavLink
+                to="/which-explora-ship-should-you-choose"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Which Explora Ship should you choose
+              </NavLink>
+
+              <NavLink
+                to="/which-explora-suite-is-worth-the-upgrade"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Which Explora Suite is worht the upgrade
+              </NavLink>
+
+              <NavLink
+                to="/is-anthology-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Anthology Worth It
+              </NavLink>
+
+              <NavLink
+                to="/which-mediterranean-itinerary-is-best"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Which Mediterranean itinerary is best
+              </NavLink>
             </div>
           </div>
         </div>
@@ -938,6 +970,38 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Donor Expedition Cruises
+            </NavLink>
+
+            <NavLink
+              to="/which-explora-ship-should-you-choose"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Which Explora Ship should you choose
+            </NavLink>
+
+            <NavLink
+              to="/which-explora-suite-is-worth-the-upgrade"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Which Explora Suite is worht the upgrade
+            </NavLink>
+
+            <NavLink
+              to="/is-anthology-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Anthology Worth It
+            </NavLink>
+
+            <NavLink
+              to="/which-mediterranean-itinerary-is-best"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Which Mediterranean itinerary is best
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
