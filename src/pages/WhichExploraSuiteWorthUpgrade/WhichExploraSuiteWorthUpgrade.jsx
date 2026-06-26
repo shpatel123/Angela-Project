@@ -17,11 +17,11 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 
-import HeroImage1 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-central-pool-deck-aerial-view.jpg";
-import HeroImage2 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-aft-pool-luxury-sundeck.jpg";
-import HeroImage4 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-luxury-cruise-aerial-view-mediterranean.jpg";
+import HeroImage1 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-central-pool-deck-aerial-view.JPG";
+import HeroImage2 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-aft-pool-luxury-sundeck.JPG";
+import HeroImage4 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-luxury-cruise-aerial-view-mediterranean.JPG";
 import ExpolaSuite from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-luxury-pool-deck-daybeds.jpg";
-import ExpolaSuite2 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-oceanfront-pool-lounge-deck.jpg";
+import ExpolaSuite2 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-oceanfront-pool-lounge-deck.JPG";
 import ExpolaSuite3 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-outside-suites.jpg";
 import ExpolaSuite4 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-III-oceanfront-infinity-pool-luxury-cruise-deck.jpg";
 import ExpolaSuite5 from "../../assets/WhichExploraSuiteWorthUpgrade/Regent-Seven-Seas-Cruises.webp";
