@@ -62,6 +62,9 @@ import WhichExploraShipChoose from "./pages/WhichExploraShipChoose/WhichExploraS
 import WhichExploraSuiteWorthUpgrade from "./pages/WhichExploraSuiteWorthUpgrade/WhichExploraSuiteWorthUpgrade";
 import IsAnthologyWorthIt from "./pages/IsAnthologyWorthIt/IsAnthologyWorthIt";
 import WhichMediterraneanIsBest from "./pages/WhichMediterraneanIsBest/WhichMediterraneanIsBest";
+import IsExploraGoodForFamilies from "./pages/IsExploraGoodForFamilies/IsExploraGoodForFamilies";
+import IsExploraGoodForSoloTravelers from "./pages/IsExploraGoodForSoloTravelers/IsExploraGoodForSoloTravelers";
+import HowAdvanceShouldBookExplora from "./pages/HowAdvanceShouldBookExplora/HowAdvanceShouldBookExplora";
 
 function App() {
   return (
@@ -354,6 +357,22 @@ function App() {
           <Route
             path="/which-mediterranean-itinerary-is-best"
             element={<WhichMediterraneanIsBest />}
+          />
+
+          
+          <Route
+            path="/is-explora-good-for-families"
+            element={<IsExploraGoodForFamilies />}
+          />
+
+          <Route
+            path="/is-explora-good-for-solo-travelers"
+            element={<IsExploraGoodForSoloTravelers />}
+          />
+
+           <Route
+            path="/how-far-in-advance-should-you-book-explora"
+            element={<HowAdvanceShouldBookExplora />}
           />
         </Routes>
       </BrowserRouter>

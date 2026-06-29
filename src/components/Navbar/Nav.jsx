@@ -504,6 +504,30 @@ const Nav = () => {
               >
                 Which Mediterranean itinerary is best
               </NavLink>
+
+              <NavLink
+                to="/is-explora-good-for-families"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is explora good for families
+              </NavLink>
+
+              <NavLink
+                to="/is-explora-good-for-solo-travelers"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is explora good for solo travelers
+              </NavLink>
+
+              <NavLink
+                to="/how-far-in-advance-should-you-book-explora"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                How far in advance should you book explora
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1002,6 +1026,30 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Which Mediterranean itinerary is best
+            </NavLink>
+
+            <NavLink
+              to="/is-explora-good-for-families"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is explora good for families
+            </NavLink>
+
+            <NavLink
+              to="/is-explora-good-for-solo-travelers"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is explora good for solo travelers
+            </NavLink>
+
+            <NavLink
+              to="/how-far-in-advance-should-you-book-explora"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              How far in advance should you book explora
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

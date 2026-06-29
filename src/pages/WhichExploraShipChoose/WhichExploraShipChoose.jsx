@@ -653,7 +653,7 @@ const WhichExploraShip = () => {
                   </td>
                   <td>Coming Soon</td>
                   <td>Approximately 900 guests</td>
-                  <td>2026</td>
+                  <td>July 24,2026</td>
                 </tr>
                 <tr>
                   <td>
