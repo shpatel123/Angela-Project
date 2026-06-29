@@ -24,7 +24,7 @@ import HeroImage1 from "../../assets/IsExploraGoodForFamilies/EXPLORA-III-PANAMA
 import HeroImage2 from "../../assets/IsExploraGoodForFamilies/ExploraCruise3.webp";
 import HeroImage3 from "../../assets/IsExploraGoodForFamilies/Luxury-Explora-Journeys.webp";
 import ExploraSuite from "../../assets/IsExploraGoodForFamilies/explora-I-infinity-pool-ocean-wake-view.jpg";
-import ExploraSuites from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.jpg";
+import ExploraSuites from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.JPG";
 import Exploraexp1 from "../../assets/IsExploraGoodForFamilies/explora-outside-suites.jpg";
 import Exploraexp2 from "../../assets/IsExploraGoodForFamilies/explora-journeys-oceanfront-infinity-pool-deck.jpg";
 import Exploraexp3 from "../../assets/IsExploraGoodForFamilies/Regent-Seven-Seas-Cruises.webp";
