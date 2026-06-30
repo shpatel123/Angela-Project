@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Award,
   Globe,
@@ -488,9 +489,9 @@ const PressRelease = () => {
             <p className="pr-cta-sub">
               Learn more and connect with the Trips &amp; Ships Luxury Travel team.
             </p>
-            <a href="http://www.tripsandships.com" target="_blank" rel="noopener noreferrer" className="pr-cta-btn">
+            <Link to="/contact" className="pr-cta-btn">
               Visit www.tripsandships.com <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

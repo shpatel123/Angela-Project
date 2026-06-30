@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Ship,
   Users,
@@ -1419,10 +1420,10 @@ const IsExploraGoodForSoloTravelers = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <button className="Asc-help-cta-btn">
+                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
                       Start Planning Your Explora Solo Journey
                       <ArrowRight size={18} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 

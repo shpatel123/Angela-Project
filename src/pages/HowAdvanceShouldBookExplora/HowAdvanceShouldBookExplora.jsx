@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Ship,
   Users,
@@ -24,7 +25,7 @@ import HeroImage1 from "../../assets/HowAdvanceShouldBookExplora/explora-final-d
 import HeroImage2 from "../../assets/HowAdvanceShouldBookExplora/explora-II.jpg";
 import HeroImage4 from "../../assets/HowAdvanceShouldBookExplora/explora-III.jpg";
 
-import ExploraDetination from "../../assets/HowAdvanceShouldBookExplora/explora-ii-amalfi-coast-mediterranean-cruise.jpg";
+import ExploraDetination from "../../assets/WhichExploraSuiteWorthUpgrade/EXPLORA-CARIBBEAN.jpg";
 import ExploraDetination2 from "../../assets/HowAdvanceShouldBookExplora/allinn-estonia-old-town-summer-travel-aerial.jpg";
 import ExploraDetination3 from "../../assets/WhichExploraShipChoose/EXPLORA-III-PANAMA-CANAL.jpg";
 import ExploraDetination4 from "../../assets/WhichExploraShipChoose/EXPLORA-III-IV-Anthology.jpg";
@@ -1422,10 +1423,10 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <button className="Asc-help-cta-btn">
+                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
                       Start Planning Your Explora Journey
                       <ArrowRight size={18} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 

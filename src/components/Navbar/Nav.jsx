@@ -528,6 +528,22 @@ const Nav = () => {
               >
                 How far in advance should you book explora
               </NavLink>
+
+              <NavLink
+                to="/how-to-get-the-best-value-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                How to get the best value on explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/what-to-pack-for-an-explora-cruise"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What to pack for an explora cruise
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1050,6 +1066,22 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               How far in advance should you book explora
+            </NavLink>
+
+            <NavLink
+              to="/how-to-get-the-best-value-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              How to get the best value on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/what-to-pack-for-an-explora-cruise"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What to pack for an explora cruise
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

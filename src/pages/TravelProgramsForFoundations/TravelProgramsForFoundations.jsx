@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   MapPin,
   Award,
@@ -1608,10 +1609,10 @@ const TravelProgramsForFoundationsNonprofits = () => {
                     </p>
                   )}
                   <div className="Asc-help-btn-container">
-                    <button className="Asc-help-cta-btn">
+                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
                       Start Planning Your Nonprofit Travel Program
                       <ArrowRight size={18} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 
