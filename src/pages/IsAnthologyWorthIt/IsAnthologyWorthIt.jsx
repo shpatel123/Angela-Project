@@ -24,7 +24,7 @@ import HeroImage1 from "../../assets/ExploraJourneysCruises/ExploraCruise.webp";
 import HeroImage2 from "../../assets/IsExploraGoodForFamilies/ExploraCruise3.webp";
 import HeroImage3 from "../../assets/IsExploraGoodForFamilies/Luxury-Explora-Journeys.webp";
 import ExploraShip from "../../assets/WhichExploraShipChoose/ExploraCruise3.webp";
-import Exploracta from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-central-pool-deck-aerial-view.jpg";
+import Exploracta from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-central-pool-deck-aerial-view.JPG";
 import FineDining from "../../assets/WhichExploraShipChoose/Fine-Dining.webp";
 import FineDining2 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-luxury-dining2.jpg";
 import FineDining3 from "../../assets/WhichExploraSuiteWorthUpgrade/explora-luxury-dining.jpg";
