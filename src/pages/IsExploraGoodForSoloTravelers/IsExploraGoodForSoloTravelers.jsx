@@ -40,7 +40,6 @@ import ExploraDesti4 from "../../assets/IsExploraGoodForFamilies/Explora-Journey
 import ExploraDesti5 from "../../assets/IsExploraGoodForFamilies/explora-journeys-retreat-residence-luxury-suite-living-room.webp";
 import ExploraDesti6 from "../../assets/IsExploraGoodForFamilies/explora-I-luxury-pool-deck-daybeds.jpg";
 
-
 import { Helmet } from "react-helmet-async";
 
 const schemaData = {
@@ -1165,11 +1164,44 @@ const IsExploraGoodForSoloTravelers = () => {
         </div>
       </section>
 
+      {/* OCEAN WELLNESS VIDEO */}
+      <section className="Asc-section" id="ocean-wellness-video">
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              Ocean Wellness Aboard <br /> EXPLORA I
+            </h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Discover Explora Journeys' Ocean Wellness experience aboard
+              EXPLORA I. Inspired by the calming power of the sea, these
+              thoughtfully designed wellness spaces and programs help guests
+              relax, recharge, and enjoy a greater sense of balance throughout
+              their voyage.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/nCZWJjrQsvU"
+                title="Ocean Wellness Aboard EXPLORA I | Relaxation & Well-Being at Sea"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── IS THE SOLO SUPPLEMENT WORTH IT? ───── */}
       <section
         className="ugt-components-section"
         id="ugt-components"
-        style={{ backgroundColor: "var(--bg-white)" }}
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="ugt-components-container">
           <div className="ugt-components-header">
@@ -1420,7 +1452,11 @@ const IsExploraGoodForSoloTravelers = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Explora Solo Journey
                       <ArrowRight size={18} />
                     </Link>

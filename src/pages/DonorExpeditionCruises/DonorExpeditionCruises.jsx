@@ -31,6 +31,22 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
+// Existing Expedition & Antarctica images
+import ExpeditionShip1 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica.jpg";
+import ExpeditionShip2 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica2.jpg";
+import ExpeditionShip3 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica3.jpg";
+import ExpeditionShip4 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica4.jpg";
+import ExpeditionShip5 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica5.jpg";
+import ExpeditionShip6 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica6.jpg";
+import GuestsAntarctica1 from "../../assets/VikingExpeditionCruises/Guests-in-Antarctica.jpg";
+import GuestsAntarctica2 from "../../assets/VikingExpeditionCruises/Guests-in-Antarctica2.jpg";
+import GuestsAntarctica3 from "../../assets/VikingExpeditionCruises/Guests-in-Antarctica3.jpg";
+
+// University / Museum / Aquarium images
+import UniversityImage from "../../assets/WhyUniversitiesPartner/Alumni_Travel_Benefits.jpg";
+import MuseumImage from "../../assets/WhyUniversitiesPartner/Educational_Travelimage.jpg";
+import AquariumImage from "../../assets/WhyUniversitiesPartner/FacultyLedTravel.jpg";
+
 import { Helmet } from "react-helmet-async";
 
 const donorExpeditionDestinations = [
@@ -39,6 +55,7 @@ const donorExpeditionDestinations = [
     title: "Antarctica Expedition Cruises",
     badge: "Antarctica",
     icon: Ship,
+    image: ExpeditionShip1,
     desc: "Antarctica remains one of the most sought-after expedition destinations for donor travel — offering powerful opportunities for conservation, science, and education-focused programming amid some of the most dramatic landscapes on Earth.",
     columns: [
       {
@@ -61,6 +78,7 @@ const donorExpeditionDestinations = [
     title: "Arctic Expedition Cruises",
     badge: "Arctic",
     icon: Compass,
+    image: ExpeditionShip5,
     desc: "The Arctic offers a compelling combination of wildlife and environmental education, often resonating strongly with environmentally conscious donors who care deeply about climate and conservation.",
     columns: [
       {
@@ -83,6 +101,7 @@ const donorExpeditionDestinations = [
     title: "Galápagos Islands Expeditions",
     badge: "Galápagos",
     icon: Anchor,
+    image: ExpeditionShip6,
     desc: "The Galápagos Islands are a natural fit for educational and conservation organizations, combining adventure with exceptional educational value and a living case study in evolutionary biology.",
     columns: [
       {
@@ -105,6 +124,7 @@ const donorExpeditionDestinations = [
     title: "Alaska Expedition Cruises",
     badge: "Alaska",
     icon: Waves,
+    image: GuestsAntarctica3,
     desc: "Alaska offers a more accessible expedition experience that appeals to a wide range of donor audiences and often serves as an ideal first expedition cruise for first-time donor travelers.",
     columns: [
       {
@@ -127,6 +147,7 @@ const donorExpeditionDestinations = [
     title: "Wildlife & Conservation Expeditions",
     badge: "Wildlife & Conservation",
     icon: MapPin,
+    image: GuestsAntarctica2,
     desc: "Destinations such as South Georgia, the Falkland Islands, Costa Rica, Baja California, Norway, Iceland, and Greenland often align particularly well with conservation-focused missions.",
     columns: [
       {
@@ -149,7 +170,7 @@ const donorExpeditionDestinations = [
 const travelerTypeData = [
   {
     key: "universities",
-    // image: UniversityImage,
+    image: UniversityImage,
     imageAlt: "University alumni and educational expedition travel",
     eyebrow: "Universities",
     icon: <GraduationCap size={18} />,
@@ -164,7 +185,7 @@ const travelerTypeData = [
   },
   {
     key: "museums",
-    // image: MuseumImage,
+    image: MuseumImage,
     imageAlt: "Museum members exploring historical and cultural destinations",
     eyebrow: "Museums",
     icon: <Landmark size={18} />,
@@ -179,7 +200,7 @@ const travelerTypeData = [
   },
   {
     key: "aquariums",
-    // image: AquariumImage,
+    image: AquariumImage,
     imageAlt: "Marine wildlife expedition and ocean conservation experience",
     eyebrow: "Aquariums",
     icon: <Waves size={18} />,
@@ -483,7 +504,7 @@ function FAQ() {
 const DonorExpeditionCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const images = [ExpeditionShip1, ExpeditionShip2, ExpeditionShip3];
   const [activeDest, setActiveDest] = useState("antarctica");
 
   const currentDest =
@@ -647,6 +668,7 @@ const DonorExpeditionCruises = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
+                    src={GuestsAntarctica1}
                     alt="Donors and supporters participating in an educational expedition cruise experience"
                     className="ugt-component-image"
                   />
@@ -823,7 +845,7 @@ const DonorExpeditionCruises = () => {
             {/* Left — Image */}
             <div className="Ejv-verdict-img-col">
               <img
-                //   src={VikingExp5}
+                src={ExpeditionShip4}
                 alt="Donors participating in educational expedition travel experiences"
                 className="Ejv-verdict-img"
               />
@@ -917,10 +939,10 @@ const DonorExpeditionCruises = () => {
             {/* Left Content Column */}
             <div className="adg-content-card-side">
               <img
-                //   src={DonorExpeditionImage}
+                src={GuestsAntarctica2}
                 alt="Donors participating in an expedition cruise and educational travel experience"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid" }}
+                style={{ height: "30vh" }}
               />
 
               <div className="adg-info-card">
@@ -1236,6 +1258,7 @@ const DonorExpeditionCruises = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
+                src={GuestsAntarctica1}
                 alt="Donors enjoying a high-quality expedition cruise excursion"
                 className="luc-why-img-main"
               />
@@ -1243,6 +1266,7 @@ const DonorExpeditionCruises = () => {
             </div>
             <div className="luc-why-img-accent-wrap">
               <img
+                src={ExpeditionShip2}
                 alt="Premium donor expedition cruise experience with expert leadership"
                 className="luc-why-img-accent"
               />
@@ -1344,12 +1368,14 @@ const DonorExpeditionCruises = () => {
               <div className="wnf-image-stack">
                 <div className="wnf-img-frame wnf-frame-primary">
                   <img
+                    src={ExpeditionShip3}
                     alt="Donor expedition cruise planning and logistics strategy"
                     className="wnf-photo"
                   />
                 </div>
                 <div className="wnf-img-frame wnf-frame-secondary">
                   <img
+                    src={GuestsAntarctica2}
                     alt="Major donors enjoying a high-quality expedition cruise experience"
                     className="wnf-photo"
                   />
@@ -1490,6 +1516,7 @@ const DonorExpeditionCruises = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
+                  src={ExpeditionShip6}
                   alt="Donors exploring expedition destinations with expert guides"
                   className="adg-c-overview-img"
                 />
@@ -1617,6 +1644,7 @@ const DonorExpeditionCruises = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
+            src={ExpeditionShip5}
             alt="Donor expedition cruise wildlife and exploration experience"
             className="Asc-help-bg-img"
           />

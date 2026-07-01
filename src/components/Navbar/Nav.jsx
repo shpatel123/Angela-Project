@@ -781,7 +781,7 @@ const Nav = () => {
             </NavLink>
 
             <NavLink
-              to="/disney-cruises-for-grandparents-and-multigenerational-families"
+              to="/ "
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
@@ -953,7 +953,7 @@ const Nav = () => {
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
-              Who should sail viking
+              Who should sail viking  
             </NavLink>
 
             <NavLink

@@ -612,7 +612,9 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
         <div className="Scenic_hero_overlay"></div>
 
         <div className="Scenic_hero_content">
-          <h1>How Far in Advance Should <br /> You Book Explora?</h1>
+          <h1>
+            How Far in Advance Should <br /> You Book Explora?
+          </h1>
 
           <p>
             Luxury cruises are different from mainstream cruises. Instead of
@@ -667,7 +669,7 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
       <section
         className="Asc-section Asc-bg-white"
         id="Asc-booking-window"
-        style={{ backgroundColor: "var(--bg-soft)" }}
+        style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="Asc-container">
           <div className="Asc-section-header">
@@ -728,6 +730,37 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+
+      {/* EXPLORA CLUB VIDEO */}
+      <section className="Asc-section" id="explora-club-video" style={{backgroundColor: 'var(--bg-soft)'}}>
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              Introducing <br /> Explora Club
+            </h2>
+
+            <div className="Asc-accent-line"></div>
+
+            <p className="Asc-video-intro">
+              Learn about Explora Club, the loyalty program designed to reward
+              returning guests with exclusive benefits and personalized
+              privileges.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/C_BMby4dyDE"
+                title="Introducing Explora Club | Explora Journeys Loyalty Program"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -1073,7 +1106,7 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
         </div>
       </section>
 
-            {/* ── BOOKING TIMELINE BY TRAVELER TYPE ───────────────────────── */}
+      {/* ── BOOKING TIMELINE BY TRAVELER TYPE ───────────────────────── */}
       <section
         className="Asc-section Asc-bg-white"
         id="Asc-traveler-timeline"
@@ -1127,8 +1160,6 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
           </div>
         </div>
       </section>
-
-
 
       {/* ── SHOULD YOU USE A TRAVEL ADVISOR ─────────────────────────── */}
       <section className="adg-section" id="adg-advisor">
@@ -1189,7 +1220,7 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
           </div>
         </div>
       </section>
-      
+
       {/* ── BOOK NOW OR WAIT ─────────────────────────────────────────── */}
       <section className="Asc-section Asc-bg-white" id="Asc-who">
         <div className="Asc-container">
@@ -1243,7 +1274,6 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
           </p>
         </div>
       </section>
-
 
       {/* ── ANGELA HUGHES AUTHORITY ────────────────────────────────── */}
       <section className="Adg-expert-section" id="Asc-expert-insight">
@@ -1423,7 +1453,11 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Explora Journey
                       <ArrowRight size={18} />
                     </Link>

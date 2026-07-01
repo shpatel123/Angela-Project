@@ -688,6 +688,39 @@ const IsExploraGoodForFamilies = () => {
         </div>
       </section>
 
+      <section
+        className="Asc-video-section"
+        id="Asc-video-2"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              Experience the Caribbean with Explora Journeys
+            </h2>
+            <div className="Asc-accent-line"></div>
+            <p className="Asc-video-intro">
+              From elegant ocean-front spaces to thoughtfully curated interiors,
+              see how leading architects and world-renowned design brands create
+              a seamless connection between guests, the sea, and modern European
+              luxury.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/XrrbICIeWhQ"
+                title="Chapter Two: Tales of the Caribbean Sea | Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ══ DESTINATIONS BECOME THE MAIN ATTRACTION ═══════════════════════════════ */}
       <section className="dac-families-section">
         <div className="dac-families-container">
@@ -1194,7 +1227,7 @@ const IsExploraGoodForFamilies = () => {
       <section
         className="ugt-components-section"
         id="ugt-components"
-        style={{ backgroundColor: "var(--bg-white)" }}
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="ugt-components-container">
           <div className="ugt-components-header">
@@ -1259,6 +1292,39 @@ const IsExploraGoodForFamilies = () => {
                   high-energy character complexes.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="Asc-video-section"
+        id="Asc-video-2"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              How EXPLORA II Was Built | Explora Journeys Shipyard
+            </h2>
+            <div className="Asc-accent-line"></div>
+            <p className="Asc-video-intro">
+              Discover how EXPLORA II began its journey from concept to reality
+              at the shipyard. This behind-the-scenes look at the steel cutting
+              ceremony highlights the craftsmanship, engineering, and attention
+              to detail that shape every Explora Journeys ship.
+            </p>
+          </div>
+
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/u1HGTeyQW94"
+                title="Building EXPLORA II: Steel Cutting Ceremony and Ship Construction"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -1574,7 +1640,11 @@ const IsExploraGoodForFamilies = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Explora Family Journey
                       <ArrowRight size={18} />
                     </Link>
