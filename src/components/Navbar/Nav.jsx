@@ -544,6 +544,30 @@ const Nav = () => {
               >
                 What to pack for an explora cruise
               </NavLink>
+
+              <NavLink
+                to="/professional-athlete-family-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                professional athlete family travel
+              </NavLink>
+
+              <NavLink
+                to="/off-season-luxury-travel-for-professional-athletes"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                off season luxury travel for professional athletes
+              </NavLink>
+
+              <NavLink
+                to="/multigenerational-travel-for-professional-athletes"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                multigenerational travel for professional athletes
+              </NavLink>
             </div>
           </div>
         </div>
@@ -953,7 +977,7 @@ const Nav = () => {
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
-              Who should sail viking  
+              Who should sail viking
             </NavLink>
 
             <NavLink
@@ -1082,6 +1106,30 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               What to pack for an explora cruise
+            </NavLink>
+
+            <NavLink
+              to="/professional-athlete-family-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              professional athlete family travel
+            </NavLink>
+
+            <NavLink
+              to="/off-season-luxury-travel-for-professional-athletes"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              off season luxury travel for professional athletes
+            </NavLink>
+
+            <NavLink
+              to="/multigenerational-travel-for-professional-athletes"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              multigenerational travel for professional athletes
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

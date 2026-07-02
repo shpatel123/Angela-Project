@@ -67,6 +67,9 @@ import IsExploraGoodForSoloTravelers from "./pages/IsExploraGoodForSoloTravelers
 import HowAdvanceShouldBookExplora from "./pages/HowAdvanceShouldBookExplora/HowAdvanceShouldBookExplora";
 import HowGetBestValueExploraJourneys from "./pages/HowGetBestValueExploraJourneys/HowGetBestValueExploraJourneys";
 import WhatPackForExploraCruise from "./pages/WhatPackForExploraCruise/WhatPackForExploraCruise";
+import ProfessionalAthleteFamilyTravel from "./pages/ProfessionalAthleteFamilyTravel/ProfessionalAthleteFamilyTravel";
+import OffSeasonLuxuryTravel from "./pages/OffSeasonLuxuryTravel/OffSeasonLuxuryTravel";
+import MultigenerationalTravel from "./pages/MultigenerationalTravel/MultigenerationalTravel";
 
 function App() {
   return (
@@ -385,6 +388,22 @@ function App() {
           <Route
             path="/what-to-pack-for-an-explora-cruise"
             element={<WhatPackForExploraCruise />}
+          />
+
+          
+          <Route
+            path="/professional-athlete-family-travel"
+            element={<ProfessionalAthleteFamilyTravel />}
+          />
+
+          <Route
+            path="/off-season-luxury-travel-for-professional-athletes"
+            element={<OffSeasonLuxuryTravel />}
+          />
+
+            <Route
+            path="/multigenerational-travel-for-professional-athletes"
+            element={<MultigenerationalTravel />}
           />
         </Routes>
       </BrowserRouter>
