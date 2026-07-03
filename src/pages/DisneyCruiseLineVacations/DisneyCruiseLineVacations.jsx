@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   MapPin,
   Award,
@@ -1950,6 +1951,89 @@ const DisneyCruiseLineVacations = () => {
                 </blockquote>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EXPLORE MORE DISNEY CRUISE GUIDES */}
+      <section className="Asc-section Asc-bg-soft" id="Asc-related-guides" style={{ backgroundColor: "var(--bg-soft)" }}>
+        <div className="Asc-container">
+          <div className="Asc-section-header" style={{ marginBottom: "40px" }}>
+            <h2 className="Asc-h2">Explore Our Disney Cruise Line Guides</h2>
+            <div className="Asc-accent-line"></div>
+            <p className="Asc-section-intro">
+              Plan your perfect voyage with our comprehensive guides covering ships, destinations, planning timelines, and comparisons.
+            </p>
+          </div>
+
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+            gap: "20px",
+            marginTop: "20px"
+          }}>
+            {[
+              { path: "/disney-cruise-vs-viking-ocean-cruises", label: "Disney Cruise vs. Viking Ocean Cruises" },
+              { path: "/disney-cruises-for-grandparents-and-multigenerational-families", label: "Disney Cruises for Grandparents & Families" },
+              { path: "/disney-alaska-vs-princess-cruises", label: "Disney Alaska vs. Princess Cruises" },
+              { path: "/disney-alaska-vs-holland-america", label: "Disney Alaska vs. Holland America" },
+              { path: "/is-disney-cruise-really-just-for-kids", label: "Is a Disney Cruise Really Just for Kids?" },
+              { path: "/disney-alaska-cruises", label: "Disney Alaska Cruises Guide" },
+              { path: "/disney-europe-cruises", label: "Disney Europe Cruises Guide" },
+              { path: "/disney-caribbean-cruises", label: "Disney Caribbean Cruises Guide" },
+              { path: "/disney-bahamas-cruises", label: "Disney Bahamas Cruises Guide" },
+              { path: "/disney-cruises-from-florida", label: "Disney Cruises from Florida" },
+              { path: "/disney-cruises-from-port-canaveral", label: "Disney Cruises from Port Canaveral" },
+              { path: "/why-are-disney-cruises-so-expensive", label: "Why Are Disney Cruises So Expensive?" },
+              { path: "/what-is-included-on-a-disney-cruise", label: "What Is Included on a Disney Cruise?" },
+              { path: "/best-disney-cruise-ship-for-families", label: "Best Disney Cruise Ship for Families" },
+              { path: "/disney-cruise-for-adults-without-kids", label: "Disney Cruise for Adults Without Kids" },
+              { path: "/what-luxury-travelers-get-wrong-about-disney-cruise-line", label: "What Luxury Travelers Get Wrong About Disney" },
+              { path: "/is-disney-cruise-line-worth-the-money", label: "Is Disney Cruise Line Worth the Money?" },
+              { path: "/disney-cruise-vs-royal-caribbean", label: "Disney Cruise vs. Royal Caribbean" },
+              { path: "/is-disney-concierge-worth-it", label: "Is Disney Concierge Worth It?" },
+              { path: "/best-disney-cruise-ship-for-adults", label: "Best Disney Cruise Ship for Adults" },
+              { path: "/disney-cruise-vs-celebrity-cruises", label: "Disney Cruise vs. Celebrity Cruises" },
+              { path: "/disney-wish-vs-disney-treasure", label: "Disney Wish vs. Disney Treasure" },
+              { path: "/castaway-cay-vs-lookout-cay", label: "Castaway Cay vs. Lookout Cay" },
+              { path: "/disney-concierge-benefits-explained", label: "Disney Concierge Benefits Explained" },
+              { path: "/disney-cruise-dining-guide", label: "Disney Cruise Dining Guide" },
+              { path: "/best-disney-cruise-cabins", label: "Best Disney Cruise Cabins" },
+              { path: "/disney-cruise-booking-timeline", label: "Disney Cruise Booking Timeline" },
+              { path: "/disney-cruise-packing-list", label: "Disney Cruise Packing List" }
+            ].map((link, idx) => (
+              <Link
+                key={idx}
+                to={link.path}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  padding: "15px 20px",
+                  background: "var(--bg-white, #fff)",
+                  border: "1px solid rgba(39, 68, 114, 0.08)",
+                  borderRadius: "12px",
+                  color: "var(--navy, #274472)",
+                  textDecoration: "none",
+                  fontWeight: "600",
+                  fontSize: "0.95rem",
+                  boxShadow: "0 4px 12px rgba(39, 68, 114, 0.02)",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                  e.currentTarget.style.boxShadow = "0 8px 20px rgba(39, 68, 114, 0.08)";
+                  e.currentTarget.style.borderColor = "var(--navy-light, #4b7a78)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "none";
+                  e.currentTarget.style.boxShadow = "0 4px 12px rgba(39, 68, 114, 0.02)";
+                  e.currentTarget.style.borderColor = "rgba(39, 68, 114, 0.08)";
+                }}
+              >
+                <ArrowRight size={16} style={{ marginRight: "10px", flexShrink: 0, color: "var(--navy-light, #4b7a78)" }} />
+                <span>{link.label}</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

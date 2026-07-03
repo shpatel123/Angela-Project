@@ -568,6 +568,38 @@ const Nav = () => {
               >
                 multigenerational travel for professional athletes
               </NavLink>
+
+              <NavLink
+                to="/private-villas-yachts-exclusive-resorts"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                private villas, yachts, and exclusive resorts
+              </NavLink>
+
+              <NavLink
+                to="/privacy-security-travel-planning"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                privacy and security in travel planning
+              </NavLink>
+
+              <NavLink
+                to="/championship-celebrations-milestone-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                championship celebrations and milestone travel
+              </NavLink>
+
+              <NavLink
+                to="/luxury-wellness-recovery-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                luxury wellness and recovery travel
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1130,6 +1162,38 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               multigenerational travel for professional athletes
+            </NavLink>
+
+            <NavLink
+              to="/private-villas-yachts-exclusive-resorts"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              private villas, yachts, and exclusive resorts
+            </NavLink>
+
+            <NavLink
+              to="/privacy-security-travel-planning"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              privacy and security in travel planning
+            </NavLink>
+
+            <NavLink
+              to="/championship-celebrations-milestone-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              championship celebrations and milestone travel
+            </NavLink>
+
+            <NavLink
+              to="/luxury-wellness-recovery-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              luxury wellness and recovery travel
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

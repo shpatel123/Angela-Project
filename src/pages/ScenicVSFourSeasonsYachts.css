@@ -1936,7 +1936,7 @@
     }
 
     .svf-gallery-header .svf-h2 {
-        font-size: 36px !important;
+        font-size: 28px !important;
     }
 
     .svf-gallery-header .svf-p {
@@ -1980,10 +1980,7 @@
         margin-bottom: 40px;
     }
 
-    .svf-gallery-header .svf-h2 {
-        font-size: 30px !important;
-    }
-
+ 
     .svf-gallery-header .svf-p {
         font-size: 16px !important;
     }
@@ -2002,60 +1999,14 @@
         grid-row: span 1;
     }
 
-    /* Mobile tap-to-reveal: overlay hidden by default, shown on tap */
-    .svf-gallery-item {
-        /* Make the item focusable so :focus-within works on tap */
-        cursor: pointer;
-    }
-
-    .svf-gallery-image-wrap {
-        /* Ensure the wrap fills the item for the tap target */
-        display: block;
-    }
-
-    /* Default: overlay hidden (same as desktop default) */
     .svf-gallery-overlay {
-        opacity: 0;
-        padding: 20px;
-        background: linear-gradient(to top, rgba(39, 68, 114, 0.95) 0%, rgba(39, 68, 114, 0.4) 60%, transparent 100%);
-        transition: opacity 0.3s ease;
-    }
-
-    /* Default: content slid down */
-    .svf-gallery-content {
-        transform: translateY(20px);
-        transition: transform 0.3s ease;
-    }
-
-    /* On tap (focus-within) — reveal overlay and slide content up */
-    .svf-gallery-item:focus-within .svf-gallery-overlay,
-    .svf-gallery-item:active .svf-gallery-overlay {
         opacity: 1;
+        padding: 20px;
+        background: linear-gradient(to top, rgba(39, 68, 114, 0.95) 0%, rgba(39, 68, 114, 0.3) 60%, transparent 100%);
     }
 
-    .svf-gallery-item:focus-within .svf-gallery-content,
-    .svf-gallery-item:active .svf-gallery-content {
+    .svf-gallery-content {
         transform: translateY(0);
-    }
-
-    /* Show a persistent badge-only hint at bottom so users know to tap */
-    .svf-gallery-item::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        background: linear-gradient(to top, rgba(39, 68, 114, 0.55) 0%, transparent 100%);
-        pointer-events: none;
-        border-radius: 0 0 16px 16px;
-        z-index: 1;
-        transition: opacity 0.3s ease;
-    }
-
-    .svf-gallery-item:focus-within::after,
-    .svf-gallery-item:active::after {
-        opacity: 0;
     }
 
     .svf-gallery-content h3 {
@@ -2178,7 +2129,7 @@
     }
 
     .svf-gallery-header .svf-h2 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
 
     .svf-gallery-header .svf-p {

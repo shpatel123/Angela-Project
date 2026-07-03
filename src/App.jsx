@@ -70,6 +70,10 @@ import WhatPackForExploraCruise from "./pages/WhatPackForExploraCruise/WhatPackF
 import ProfessionalAthleteFamilyTravel from "./pages/ProfessionalAthleteFamilyTravel/ProfessionalAthleteFamilyTravel";
 import OffSeasonLuxuryTravel from "./pages/OffSeasonLuxuryTravel/OffSeasonLuxuryTravel";
 import MultigenerationalTravel from "./pages/MultigenerationalTravel/MultigenerationalTravel";
+import PrivateVillasYachtsExclusiveResorts from "./pages/PrivateVillasYachtsExclusiveResorts/PrivateVillasYachtsExclusiveResorts";
+import PrivacySecurityTravelPlanning from "./pages/PrivacySecurityTravelPlanning/PrivacySecurityTravelPlanning";
+import ChampionshipCelebrationsMilestoneTravel from "./pages/ChampionshipCelebrationsMilestoneTravel/ChampionshipCelebrationsMilestoneTravel";
+import LuxuryWellnessRecoveryTravel from "./pages/LuxuryWellnessRecoveryTravel/LuxuryWellnessRecoveryTravel";
 
 function App() {
   return (
@@ -404,6 +408,27 @@ function App() {
             <Route
             path="/multigenerational-travel-for-professional-athletes"
             element={<MultigenerationalTravel />}
+          />
+
+           <Route
+            path="/private-villas-yachts-exclusive-resorts"
+            element={<PrivateVillasYachtsExclusiveResorts />}
+          />
+
+          
+           <Route
+            path="/privacy-security-travel-planning"
+            element={<PrivacySecurityTravelPlanning />}
+          />
+
+            <Route
+            path="/championship-celebrations-milestone-travel"
+            element={<ChampionshipCelebrationsMilestoneTravel />}
+          />
+
+          <Route
+            path="/luxury-wellness-recovery-travel"
+            element={<LuxuryWellnessRecoveryTravel />}
           />
         </Routes>
       </BrowserRouter>

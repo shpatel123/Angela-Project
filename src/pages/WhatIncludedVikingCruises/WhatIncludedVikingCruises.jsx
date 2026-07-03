@@ -1496,7 +1496,7 @@ const WhatIsIncludedOnVikingCruises = () => {
             <p className="azs-video-intro">
               Watch as Viking Chairman Torstein Hagen thanks guests and
               colleagues after Viking was recognized among the top cruise lines
-              for ocean, river, and expedition travel. 
+              for ocean, river, and expedition travel.
             </p>
           </div>
 
@@ -1634,6 +1634,10 @@ const WhatIsIncludedOnVikingCruises = () => {
               <div className="adg-c-overview-item">
                 <span className="adg-c-overview-icon">✔</span>
                 <span className="adg-c-overview-label">Port Taxes & Fees</span>
+              </div>
+              <div className="adg-c-overview-item">
+                <span className="adg-c-overview-icon">✔</span>
+                <span className="adg-c-overview-label">Specialty Dining</span>
               </div>
             </div>
 

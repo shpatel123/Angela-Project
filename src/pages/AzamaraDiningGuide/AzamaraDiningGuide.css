@@ -18,6 +18,11 @@
   overflow: hidden;
 }
 
+.Adg-expert-credentials-intro-p{
+  color: var(--navy) !important; 
+  margin-bottom: 15px;            
+}
+
 .Adg-expert-section::before {
   content: "";
   position: absolute;
@@ -504,7 +509,7 @@
   }
 
   .adg-h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .adg-intro-text {
@@ -835,7 +840,7 @@
 }
 
 .adg-card-title {
-  font-size: 22px !important;
+  font-size: 18px !important;
   font-weight: 600 !important;
   color: var(--navy) !important;
   line-height: 1.3 !important;
@@ -873,7 +878,7 @@
 }
 
 .adg-card-list-text {
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-weight: 400 !important;
   color: var(--navy) !important;
   line-height: 1.45;
@@ -2116,6 +2121,9 @@
   .Adg-expert-title {
     font-size: 24px !important;
   }
+  .adg-c-venue-name{
+    font-size: 20px !important;
+  }
   .adg-c-lead,
   .adg-c-worth-note-emphasis {
     font-size: 18px !important;
@@ -2124,4 +2132,12 @@
   .Asc-section-intro, .adg-card-subtext {
     font-size: 16px;
   }
+  .adg-grid1{
+    grid-template-columns: 1fr;
+  }
+  
+    .Avs-verdict-title {
+        font-size: 24px !important;
+    }
+
 }

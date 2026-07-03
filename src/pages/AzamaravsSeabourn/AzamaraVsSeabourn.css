@@ -166,10 +166,6 @@
     .Avs-verdict-col-winner {
         justify-content: flex-start;
     }
-
-    .Avs-verdict-title {
-        font-size: 24px;
-    }
 }
 
 /* ==========================================================================
@@ -2062,7 +2058,7 @@
     }
 
     .azs-trust-heading {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
@@ -2076,7 +2072,7 @@
     }
 
     .azs-trust-heading {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .azs-trust-card {
@@ -2189,7 +2185,7 @@
   }
   .azs-title,
   .azs-section-title {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 

@@ -567,7 +567,7 @@
   }
 
   .Ejv-title {
-    font-size: 26px;
+    font-size: 28px;
   }
   .Ejv-verdict-card {
     grid-template-columns: 1fr;
@@ -578,7 +578,7 @@
     max-height: 300px;
   }
   .Ejv-verdict-title {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .Ejv-verdict-content {
@@ -600,6 +600,9 @@
 @media (max-width: 480px) {
   .Ejv-container {
     padding: 0 16px;
+  }
+  .Ejv-title{
+    font-size: 24px;
   }
 
   .Ejv-section {

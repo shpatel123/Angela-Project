@@ -19,6 +19,7 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 import { Helmet } from "react-helmet-async";
+import "../VikingCruises/VikingCruises.css";
 
 import HeroImage1 from "../../assets/VikingDanubeRiverCruises/budapest-hungary-river-cruise-danube.jpg";
 import HeroImage2 from "../../assets/VikingDanubeRiverCruises/vienna-austria-danube-river-cruise.jpg";
@@ -377,6 +378,7 @@ function FAQ() {
 const VikingDanubeRiverCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeReasonTab, setActiveReasonTab] = useState(5);
 
@@ -681,15 +683,26 @@ const VikingDanubeRiverCruises = () => {
                   title: "Convenient City-Center Docking",
                   desc: "Viking river ships often dock close to major attractions, making it easy for guests to step directly into historic neighborhoods.",
                 },
-              ].map((feat, i) => (
-                <div key={i} className="luc-why-feature">
-                  <div className="luc-why-feature-num">{feat.num}</div>
-                  <div className="luc-why-feature-body">
-                    <h3 className="luc-why-feature-title">{feat.title}</h3>
-                    <p className="luc-why-feature-desc">{feat.desc}</p>
+              ]
+                .slice(0, readMoreWhy ? 5 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+
+            <div className="Scenic_readmore_wrapper" style={{ marginTop: "25px", textAlign: "left" }}>
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1211,7 +1224,7 @@ const VikingDanubeRiverCruises = () => {
                 <img
                   src={VikingExp3}
                   alt="Viking Danube River Cruise inclusions"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: "670px"}}
                 />
                 <div className="dmg-media-overlay"></div>
 

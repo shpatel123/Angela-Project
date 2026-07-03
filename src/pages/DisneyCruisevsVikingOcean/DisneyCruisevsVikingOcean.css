@@ -534,7 +534,7 @@
 
 .dfg-section-title {
   font-family: var(--font-display, "Playfair Display", serif);
-  font-size: 2.8rem;
+  font-size: 48px;
   font-weight: 500;
   color: var(--navy) !important;
   margin-bottom: 1rem;
@@ -744,7 +744,7 @@
 
   .dve-section-title,
   .dfg-section-title {
-    font-size: 2.3rem;
+    font-size: 28px;
   }
 }
 
@@ -753,6 +753,12 @@
   .dve-winner-section,
   .dfg-ideal-section {
     padding: 4rem 0;
+  }
+  .dve-winner-title, .eep-card-title, .azs-suites-title, .dac-special-card-title{
+    font-size: 20px !important;
+  }
+  .dac-special-card-desc, .dac-families-lead, .dac-ent-desc, .dac-ent-card-desc, .dac-timing-lead, .dmg-info-feature-desc, .dmg-info-lead{
+    font-size: 16px !important;
   }
   .dfg-card h3,.adg-c-venue-name{
     font-size: 22px;
@@ -1052,6 +1058,9 @@
   .dmg-ships-section {
     padding: 4.5rem 0;
   }
+  .dfg-card h3{
+    font-size: 22px !important;
+  }
   
   .dmg-ships-title {
     font-size: 28px;
@@ -1060,12 +1069,21 @@
   .dmg-ships-header {
     margin-bottom: 3rem;
   }
+  .dmg-ship-name{
+    font-size: 22px !important;
+  }
+  .dmg-info-accent, .aac-accent-white{
+    margin: auto;
+  }
 }
 
 @media (max-width: 480px) {
   .dmg-ships-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .dmg-info-feature-title{
+    font-size: 20px !important;
   }
   .dmg-ship-name{
     font-size: 22px;
@@ -1484,7 +1502,7 @@
 
 .dfg-gallery-title {
   font-family: var(--font-display, "Playfair Display", serif);
-  font-size: 2.8rem;
+  font-size: 48px;
   font-weight: 500;
   color: var(--bg-white) !important;
   margin-bottom: 1rem;
@@ -1677,7 +1695,7 @@
   }
 
   .dfg-gallery-title {
-    font-size: 2.2rem;
+    font-size: 28px;
   }
 
   .dfg-gallery-mosaic {
@@ -1704,7 +1722,7 @@
   }
 
   .dfg-gallery-title {
-    font-size: 1.85rem;
+    font-size: 24px;
   }
 
   .dfg-gallery-caption {
@@ -1765,7 +1783,7 @@
 
 .ake-section-title {
   font-family: var(--font-display, "Playfair Display", serif);
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 500;
   color: var(--navy) !important;
   margin-bottom: 1rem;
@@ -2129,18 +2147,19 @@
     gap: 2rem;
   }
 
-  .ake-section-title {
-    font-size: 2.4rem;
-  }
+
 }
 
 @media (max-width: 768px) {
   .ake-expertise-section {
     padding: 4.5rem 0;
   }
+  .azs-dining-title, .eep-card-title, .lth-card-title, .Ejvs-card-title, .wcc-card h3{
+    font-size: 24px !important;
+  }
 
-  .ake-section-title {
-    font-size: 2rem;
+  .ake-section-title, .eep-section-title {
+    font-size: 28px !important;
   }
 
   .ake-card-image-wrap {
@@ -2158,7 +2177,7 @@
   }
 
   .ake-section-title {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
 
   .ake-card-image-wrap {
@@ -2541,7 +2560,7 @@
 
 .lth-section-title {
   font-family: var(--font-display, "Playfair Display", serif);
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 500;
   color: var(--navy) !important;
   margin-bottom: 1rem;
@@ -2821,7 +2840,7 @@
   }
   
   .lth-section-title {
-    font-size: 2.2rem;
+    font-size: 28px;
   }
   
   .lth-image-overlay {
@@ -2839,7 +2858,7 @@
   }
   
   .lth-section-title {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
   
   .lth-card {
@@ -3729,10 +3748,20 @@
   .wle-wildlife-section {
     padding: 4rem 0;
   }
+  .dac-families-feature-title{
+    font-size: 20px !important;
+  }
+  .lth-card-title, .ake-card-title, .wle-row-title, .azs-dining-title, .eep-card-title, .dac-ent-card-title, .wcc-card h3{
+    font-size: 20px !important;
+  }
 
   .wle-section-title {
     font-size: 24px;
   }
+  .eep-section-title{
+    font-size: 24px !important;
+  }
+
   
   .wle-row-title {
     font-size: 22px;
@@ -4139,6 +4168,11 @@
 @media (max-width: 480px) {
   .eep-section {
     padding: 4rem 0;
+  }
+  
+
+  .Ejvs-card-title{
+    font-size: 20px !important;
   }
 
   .eep-section-title {
@@ -4761,27 +4795,6 @@
    ========================================================================== */
 
 @media (max-width: 992px) {
-  .dac-families-grid {
-    grid-template-columns: 1fr;
-    gap: 3.5rem;
-  }
-  
-  .dac-families-image-wrapper {
-    height: 400px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .dac-families-title {
-    font-size: 32px;
-  }
-
-  .dac-families-features {
-    max-height: none;
-    overflow-y: visible;
-    padding-right: 0;
-  }
-
   .dac-special-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4839,13 +4852,17 @@
   .dac-timing-section {
     padding: 4.5rem 0;
   }
+  .dve-winner-title{
+    font-size: 24px !important;
+  }
 
   .dac-special-title,
   .dac-ent-title,
   .dac-wildlife-title,
   .dac-timing-title {
-    font-size: 2.2rem;
+    font-size: 28px;
   }
+
 
   .dac-special-grid,
   .dac-wildlife-grid,
@@ -4856,6 +4873,10 @@
   .dac-special-card,
   .dac-wildlife-card,
   .dac-timing-card {
+    grid-column: span 1 !important;
+  }
+
+  .dac-alaska-special-grid .dac-special-card:nth-child(5) {
     grid-column: span 1 !important;
   }
 
@@ -4876,7 +4897,7 @@
   .dac-ent-title,
   .dac-wildlife-title,
   .dac-timing-title {
-    font-size: 1.85rem;
+    font-size: 24px;
   }
 }
 
@@ -5107,13 +5128,66 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 992px) {
+  .dac-families-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  
+  .dac-families-image-wrapper {
+    height: auto;
+    display: flex;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 2rem auto 0;
+  }
+  
+  .dac-families-img-card {
+    position: relative !important;
+    width: 50% !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+  }
+
+  .dac-families-img-card--primary {
+    transform: translateY(-10px);
+  }
+
+  .dac-families-img-card--secondary {
+    transform: translateY(10px);
+  }
+  
+  .dac-families-title {
+    font-size: 32px;
+  }
+
+  .dac-families-features {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 576px) {
   .dac-families-section {
     padding: 60px 15px;
   }
   
   .dac-families-image-wrapper {
-    height: 320px;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .dac-families-img-card {
+    width: 100% !important;
+    transform: none !important;
+    aspect-ratio: 16 / 10;
   }
   
   .dac-families-title {
@@ -5669,7 +5743,7 @@
     font-size: 16px;
   }
   .dac-reasons-row-title{
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .dac-reasons-row-number{
     font-size: 40px;
@@ -6113,10 +6187,10 @@
     padding: 80px 20px;
   }
   .dbf-fleet-title {
-    font-size: 34px;
+    font-size: 28px;
   }
   .dbf-spotlight-title {
-    font-size: 34px;
+    font-size: 28px;
   }
   .dbf-spotlight-card {
     padding: 2.5rem 2rem;
@@ -6127,6 +6201,14 @@
   .dbf-fleet-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
+
+  }
+  .dac-wildlife-card-title{
+    font-size: 24px !important;
+  }
+  .dac-ent-accent{
+    margin: auto;
+    margin-bottom: 15px;
   }
 }
 
@@ -6138,13 +6220,22 @@
     padding: 60px 15px;
   }
   .dbf-fleet-title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .dbf-spotlight-title {
-    font-size: 28px;
+    font-size: 24px;
   }
-  .dbf-spotlight-card-title {
-    font-size: 22px;
+  .dbf-spotlight-card-title, .dbf-ship-card-name {
+    font-size: 20px !important;
+  }
+  .dac-families-title{
+    font-size: 24px !important;
+  }
+  .aac-accent-line, .dac-families-accent{
+    margin: auto;
+  }
+  .Leg-card-title{
+    font-size: 20px !important;
   }
 }
 

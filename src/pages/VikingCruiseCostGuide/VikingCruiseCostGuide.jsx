@@ -26,6 +26,7 @@ import {
   Bed,
   Calendar,
   Waves,
+  Utensils,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
@@ -618,13 +619,14 @@ const VikingCruiseCost = () => {
           </p>
 
           <p>
-            One of the first questions travelers ask when researching Viking is:{" "} <br />
+            One of the first questions travelers ask when researching Viking is:{" "}
+            <br />
             <strong>"How much does a Viking Cruise cost?"</strong>
           </p>
 
           {/* ── Expandable content ── */}
           <div className={`aac_expandable ${readMore ? "open" : ""}`}>
-            <p style={{marginTop: "10px"}}>
+            <p style={{ marginTop: "10px" }}>
               The answer depends on several factors — cruise type, destination,
               cabin category, sailing season, trip length, and included
               promotions. While Viking is generally more expensive than many
@@ -632,13 +634,13 @@ const VikingCruiseCost = () => {
               experiences that often cost extra elsewhere.
             </p>
 
-            <p style={{marginTop: "10px"}}>
+            <p style={{ marginTop: "10px" }}>
               For many travelers, understanding the complete value — not just
               the advertised fare — is key to determining whether Viking is
               worth the investment:
             </p>
 
-            <ul className="aac_hero_list" style={{marginTop: "20px"}}>
+            <ul className="aac_hero_list" style={{ marginTop: "20px" }}>
               {[
                 "Destination-focused itineraries",
                 "Included shore excursions in most ports",
@@ -1540,6 +1542,10 @@ const VikingCruiseCost = () => {
                   title: "Adult-Only Environment",
                   icon: <Star size={20} />,
                 },
+                {
+                  title: "Specialty Dining Included",
+                  icon: <Utensils size={20} />,
+                },
               ].map((item, i) => (
                 <div key={i} className="adg-list-item-card">
                   <div className="adg-list-item-icon">{item.icon}</div>
@@ -1665,6 +1671,19 @@ const VikingCruiseCost = () => {
                 <span className="adg-c-overview-icon">✔</span>
                 <span className="adg-c-overview-label">
                   Adult-Oriented Atmosphere
+                </span>
+              </div>
+              <div className="adg-c-overview-item">
+                <span className="adg-c-overview-icon">✔</span>
+                <span className="adg-c-overview-label">
+                  Elegant Scandinavian Design
+                </span>
+              </div>
+
+              <div className="adg-c-overview-item">
+                <span className="adg-c-overview-icon">✔</span>
+                <span className="adg-c-overview-label">
+                  High-Quality Dining
                 </span>
               </div>
             </div>

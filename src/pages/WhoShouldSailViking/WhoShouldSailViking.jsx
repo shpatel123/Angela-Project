@@ -1513,6 +1513,12 @@ const WhoShouldSailViking = () => {
                   Meaningful Experiences
                 </span>
               </div>
+              <div className="adg-c-overview-item">
+                <span className="adg-c-overview-icon">✔</span>
+                <span className="adg-c-overview-label">
+                  Destination Immersion
+                </span>
+              </div>
             </div>
 
             {/* RIGHT — callout card + image */}

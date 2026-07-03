@@ -117,8 +117,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 15px;
-  margin: -15px;
+  padding: 15px 0;
+  margin: -15px 0;
 }
 
 .vk-slider-track {
@@ -129,6 +129,7 @@
 
 .vk-slider-slide {
   width: 33.333333%;
+  min-width: 0;
   flex-shrink: 0;
   padding: 15px 25px;
   box-sizing: border-box;
@@ -417,15 +418,54 @@
     padding: 10px 18px;
     font-size: 0.8rem;
   }
+
+  .vk-slider-nav-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
   .vk-types-section {
-    padding: 60px 15px;
+    padding: 50px 15px;
   }
 
   .vk-types-title {
-    font-size: 28px;
+    font-size: 26px;
+  }
+  
+  .vk-slider-nav-btn {
+    padding: 8px 14px;
+    font-size: 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .vk-types-row {
+    gap: 2rem;
+  }
+
+  .vk-types-content {
+    padding: 2rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .vk-types-row-title {
+    font-size: 20px;
+  }
+
+  .vk-types-row-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .vk-types-row-number {
+    font-size: 48px;
+    top: 16px;
+    right: 20px;
+  }
+  
+  .vk-types-img-container {
+    border-radius: 20px;
+    border-width: 4px;
   }
 }
 
@@ -546,8 +586,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 15px;
-  margin: -15px;
+  padding: 15px 0;
+  margin: -15px 0;
 }
 
 .vcc-slider-track {
@@ -558,6 +598,7 @@
 
 .vcc-slider-slide {
   width: 33.333333%;
+  min-width: 0;
   flex-shrink: 0;
   padding: 15px 25px;
   box-sizing: border-box;
@@ -915,6 +956,10 @@
     font-size: 0.8rem;
   }
 
+  .vcc-slider-nav-icon {
+    display: none;
+  }
+
   .vcc-slide-row {
     grid-template-columns: 1fr;
     gap: 0;
@@ -943,4 +988,80 @@
   .vcc-slider-slide {
     padding: 15px 10px;
   }
+}
+
+@media (max-width: 576px) {
+  .vcc-slider-nav-btn {
+    padding: 8px 14px;
+    font-size: 0.75rem;
+  }
+}
+
+/* ==========================================================================
+   VIKING RIVER CRUISE DESTINATIONS — HEIGHT ALIGNMENT
+   ========================================================================== */
+
+.dac-reasons-row {
+  align-items: stretch;
+}
+
+.dac-reasons-media {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dac-reasons-img-container {
+  height: 100%;
+  flex-grow: 1;
+  aspect-ratio: auto;
+}
+
+.dac-reasons-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   VIKING RIVER CRUISE WHY CHOOSE — HEIGHT ALIGNMENT & RESPONSIVE SCALING
+   ========================================================================== */
+
+.luc-why-container {
+  align-items: stretch;
+}
+
+.luc-why-images {
+  height: 100%;
+  min-height: 560px;
+}
+
+.luc-why-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   VIKING TRAVEL EXPERIENCES (SLIDER) — HEIGHT ALIGNMENT
+   ========================================================================== */
+
+.vk-types-row {
+  align-items: stretch;
+}
+
+.vk-types-media {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.vk-types-img-container {
+  height: 100%;
+  flex-grow: 1;
+  aspect-ratio: auto;
+}
+
+.vk-types-img {
+  height: 100%;
+  object-fit: cover;
 }

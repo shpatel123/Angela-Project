@@ -699,7 +699,7 @@
   }
   
   .ugt-components-section {
-    padding: 90px 15px;
+    padding: 60px 20px;
   }
 
   .ugt-components-title {
@@ -1001,6 +1001,15 @@
 @media (max-width: 480px) {
   .ugt-diff-grid,.ugt-advantage-grid   {
     grid-template-columns: 1fr;
+  }
+  .wlt-relationships-title, .ugt-diff-title{
+    font-size: 24px !important;
+  }
+  .mga-card-title{
+    font-size: 20px !important;
+  }
+  .ugt-components-header{
+    margin-bottom: 20px;
   }
   .ugt-advantage-title,.ugt-components-title{
     font-size: 24px;
@@ -1687,7 +1696,11 @@
   }
 
   .luc-why-title, .ugt-component-subtitle {
-    font-size: 24px;
+    font-size: 24px !important;
+  }
+  .ugt-component-subtitle::after{
+    margin:auto;
+    margin-top: 6px;
   }
 
   .luc-why-intro {
@@ -2482,7 +2495,7 @@
   }
   
   .wlt-personalized-title {
-    font-size: 32px;
+    font-size: 24px;
   }
   
   .wlt-personalized-image-card {
@@ -2674,7 +2687,7 @@
   }
   
   .wlt-planning-title {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
@@ -2689,7 +2702,7 @@
   }
   
   .wlt-planning-title {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
@@ -3017,9 +3030,9 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .wlt-relationships-title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .wlt-relationships-header-wrap {

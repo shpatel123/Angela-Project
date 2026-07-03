@@ -17,9 +17,12 @@ import {
   X,
   Sparkles,
   Anchor,
+  BookOpen,
+  Coffee,
 } from "lucide-react";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 import { Helmet } from "react-helmet-async";
+import "../VikingCruises/VikingCruises.css";
 
 import HeroImage1 from "../../assets/VikingOceanCruises/viking-Tromso-Norway.jpg";
 import HeroImage2 from "../../assets/VikingOceanCruises/viking-Halong-Bay-Vietnam.jpg";
@@ -41,7 +44,6 @@ import VikingExp11 from "../../assets/VikingOceanCruises/viking-ocean-cruise-aqu
 import VikingCta from "../../assets/VikingOceanCruises/flam-norway-fjord-cruise.jpg";
 import VikingAlaska from "../../assets/VikingOceanCruises/alaska-glacier-mountain-lake-scenic-wilderness-vacation.jpg";
 import VikingIcaland from "../../assets/VikingOceanCruises/Iceland.jpg";
-
 
 // ─── SCHEMA DATA ─────────────────────────────────────────────────────────────
 const schemaData = {
@@ -364,9 +366,9 @@ function FAQ() {
 const VikingOceanCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeReasonTab, setActiveReasonTab] = useState(5);
-
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -374,7 +376,6 @@ const VikingOceanCruises = () => {
     }, 6000);
     return () => clearInterval(timer);
   }, [images.length]);
-
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -416,8 +417,6 @@ const VikingOceanCruises = () => {
     }
   }, []);
 
-
-
   return (
     <div className="Asc-page-wrapper">
       <Helmet>
@@ -451,7 +450,6 @@ const VikingOceanCruises = () => {
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
-     
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section
@@ -521,7 +519,6 @@ const VikingOceanCruises = () => {
       >
         <div className="Asc-container">
           {/* Quick Page Links for Pillar/Cluster Hierarchy */}
-          
 
           <div className="ugt-components-header">
             <h2 className="adg-c-h2">What Is Viking Ocean Cruises?</h2>
@@ -742,21 +739,35 @@ const VikingOceanCruises = () => {
                   title: "Inclusive Pricing Structure",
                   desc: "Wi-Fi, one shore excursion per port, beer and wine with meals, dining, and enrichment programs are often included — simplifying vacation budgeting.",
                 },
-              ].map((feat, i) => (
-                <div key={i} className="luc-why-feature">
-                  <div className="luc-why-feature-num">{feat.num}</div>
-                  <div className="luc-why-feature-body">
-                    <h3 className="luc-why-feature-title">{feat.title}</h3>
-                    <p className="luc-why-feature-desc">{feat.desc}</p>
+              ]
+                .slice(0, readMoreWhy ? 5 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+
+            <div
+              className="Scenic_readmore_wrapper"
+              style={{ marginTop: "25px", textAlign: "left" }}
+            >
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
       </section>
-      
-{/* Elegant Scandinavian Design */}
+
+      {/* Elegant Scandinavian Design */}
       <section
         className="dmg-info-section dmg-bg-white"
         id="dmg-accommodations"
@@ -769,7 +780,7 @@ const VikingOceanCruises = () => {
                 <img
                   src={VikingExp4}
                   alt="Elegant Scandinavian design aboard a Viking Ocean ship"
-                  className="dmg-media-img"
+                  className="dmg-media-img"  style={{height: "700px"}}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -972,10 +983,30 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">01</span>
                     <h3 className="dac-reasons-row-title">
-                      <Link to="/viking-mediterranean-cruises" style={{ color: "inherit", textDecoration: "none" }}>Mediterranean Cruises</Link>
+                      <Link
+                        to="/viking-mediterranean-cruises"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        Mediterranean Cruises
+                      </Link>
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      The Mediterranean remains one of Viking's most popular ocean cruise regions. Travelers experience ancient history, world-famous cuisine, and iconic landmarks across Italy, Greece, Spain, Croatia, and beyond. To see detailed ratings and reviews, read our <Link to="/viking-cruise-reviews" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Reviews</Link>.
+                      The Mediterranean remains one of Viking's most popular
+                      ocean cruise regions. Travelers experience ancient
+                      history, world-famous cuisine, and iconic landmarks across
+                      Italy, Greece, Spain, Croatia, and beyond. To see detailed
+                      ratings and reviews, read our{" "}
+                      <Link
+                        to="/viking-cruise-reviews"
+                        style={{
+                          color: "var(--navy)",
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        Viking Cruise Reviews
+                      </Link>
+                      .
                     </p>
                     <div className="dac-reasons-pills">
                       {[
@@ -993,8 +1024,17 @@ const VikingOceanCruises = () => {
                       ))}
                     </div>
                     <div style={{ marginTop: "25px" }}>
-                      <Link to="/viking-mediterranean-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
-                        Explore Mediterranean Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      <Link
+                        to="/viking-mediterranean-cruises"
+                        className="Scenic_readmore_btn"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          textDecoration: "none",
+                        }}
+                      >
+                        Explore Mediterranean Cruises{" "}
+                        <ArrowRight size={16} style={{ marginLeft: "6px" }} />
                       </Link>
                     </div>
                   </div>
@@ -1030,7 +1070,21 @@ const VikingOceanCruises = () => {
                       Northern Europe & Scandinavia
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      Given Viking's Scandinavian roots, Northern Europe itineraries are especially popular. Guests explore dramatic Norwegian fjords, volcanic Iceland (often featured on <Link to="/viking-iceland-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Iceland Cruises</Link>), historic Baltic capitals, and iconic British landmarks.
+                      Given Viking's Scandinavian roots, Northern Europe
+                      itineraries are especially popular. Guests explore
+                      dramatic Norwegian fjords, volcanic Iceland (often
+                      featured on{" "}
+                      <Link
+                        to="/viking-iceland-cruises"
+                        style={{
+                          color: "var(--navy)",
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        Viking Iceland Cruises
+                      </Link>
+                      ), historic Baltic capitals, and iconic British landmarks.
                     </p>
                     <div className="dac-reasons-bullets">
                       {[
@@ -1049,8 +1103,17 @@ const VikingOceanCruises = () => {
                       ))}
                     </div>
                     <div style={{ marginTop: "25px" }}>
-                      <Link to="/viking-iceland-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
-                        Explore Iceland Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      <Link
+                        to="/viking-iceland-cruises"
+                        className="Scenic_readmore_btn"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          textDecoration: "none",
+                        }}
+                      >
+                        Explore Iceland Cruises{" "}
+                        <ArrowRight size={16} style={{ marginLeft: "6px" }} />
                       </Link>
                     </div>
                   </div>
@@ -1065,10 +1128,51 @@ const VikingOceanCruises = () => {
                   <div className="dac-reasons-content">
                     <span className="dac-reasons-row-number">03</span>
                     <h3 className="dac-reasons-row-title">
-                      <Link to="/viking-alaska-cruises" style={{ color: "inherit", textDecoration: "none" }}>Alaska Cruises</Link>
+                      <Link
+                        to="/viking-alaska-cruises"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        Alaska Cruises
+                      </Link>
                     </h3>
                     <p className="dac-reasons-row-desc">
-                      Viking's Alaska itineraries (featured in our <Link to="/viking-alaska-cruises" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Alaska Cruises</Link> guide) appeal to travelers seeking nature and discovery. Guests experience glacier viewing, wildlife encounters, and some of the most spectacular scenery on earth. Check our pricing overview in the <Link to="/viking-cruise-cost-guide" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Cost Guide</Link> or see if it's the right choice in the <Link to="/is-viking-worth-it" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Is Viking Worth It</Link> guide.
+                      Viking's Alaska itineraries (featured in our{" "}
+                      <Link
+                        to="/viking-alaska-cruises"
+                        style={{
+                          color: "var(--navy)",
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        Viking Alaska Cruises
+                      </Link>{" "}
+                      guide) appeal to travelers seeking nature and discovery.
+                      Guests experience glacier viewing, wildlife encounters,
+                      and some of the most spectacular scenery on earth. Check
+                      our pricing overview in the{" "}
+                      <Link
+                        to="/viking-cruise-cost-guide"
+                        style={{
+                          color: "var(--navy)",
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        Viking Cruise Cost Guide
+                      </Link>{" "}
+                      or see if it's the right choice in the{" "}
+                      <Link
+                        to="/is-viking-worth-it"
+                        style={{
+                          color: "var(--navy)",
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        Is Viking Worth It
+                      </Link>{" "}
+                      guide.
                     </p>
                     <div className="dac-reasons-pills">
                       {[
@@ -1086,8 +1190,17 @@ const VikingOceanCruises = () => {
                       ))}
                     </div>
                     <div style={{ marginTop: "25px" }}>
-                      <Link to="/viking-alaska-cruises" className="Scenic_readmore_btn" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
-                        Explore Alaska Cruises <ArrowRight size={16} style={{ marginLeft: "6px" }} />
+                      <Link
+                        to="/viking-alaska-cruises"
+                        className="Scenic_readmore_btn"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          textDecoration: "none",
+                        }}
+                      >
+                        Explore Alaska Cruises{" "}
+                        <ArrowRight size={16} style={{ marginLeft: "6px" }} />
                       </Link>
                     </div>
                   </div>
@@ -1295,7 +1408,7 @@ const VikingOceanCruises = () => {
                 <img
                   src={VikingExp5}
                   alt="Life onboard a Viking Ocean Ship elegant lounge"
-                  className="dmg-media-img"
+                  className="dmg-media-img"  style={{height: "700px"}}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1305,21 +1418,6 @@ const VikingOceanCruises = () => {
               </div>
             </div>
           </div>
-
-          <p
-            className="dmg-info-lead"
-            style={{
-              marginTop: "40px",
-              textAlign: "center",
-              maxWidth: "900px",
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
-          >
-            Many travelers describe Viking Ocean ships as floating boutique
-            hotels rather than floating resorts — sophisticated, calm, and
-            focused on the world beyond the ship.
-          </p>
         </div>
       </section>
 
@@ -1666,6 +1764,15 @@ const VikingOceanCruises = () => {
                 {
                   title: "No Casinos",
                   icon: <Compass size={20} />,
+                },
+                {
+                  title:
+                    "Enrichment Lectures & Destination-Focused Programming",
+                  icon: <BookOpen size={20} />,
+                },
+                {
+                  title: "Relaxed Adults-Only Atmosphere",
+                  icon: <Coffee size={20} />,
                 },
               ].map((item, i) => (
                 <div key={i} className="adg-list-item-card">

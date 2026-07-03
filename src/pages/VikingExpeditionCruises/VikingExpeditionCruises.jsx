@@ -18,10 +18,12 @@ import {
   Sparkles,
   Anchor,
   Sun,
+  BookOpen,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 import { Helmet } from "react-helmet-async";
+import "../VikingCruises/VikingCruises.css";
 
 // Import polar expedition images from assets
 import HeroImage1 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica.jpg";
@@ -378,9 +380,9 @@ function FAQ() {
 const VikingExpeditionCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeReasonTab, setActiveReasonTab] = useState(5);
-
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -388,7 +390,6 @@ const VikingExpeditionCruises = () => {
     }, 6000);
     return () => clearInterval(timer);
   }, [images.length]);
-
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -427,8 +428,6 @@ const VikingExpeditionCruises = () => {
       }, 500);
     }
   }, []);
-
-
 
   return (
     <div className="Asc-page-wrapper">
@@ -752,16 +751,30 @@ const VikingExpeditionCruises = () => {
                   title: "Expedition Excellence",
                   desc: "Combines exploration capabilities with Viking's signature comfort and service.",
                 },
-              ].map((feat, i) => (
-                <div key={i} className="luc-why-feature">
-                  <div className="luc-why-feature-num">{feat.num}</div>
+              ]
+                .slice(0, readMoreWhy ? 6 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
 
-                  <div className="luc-why-feature-body">
-                    <h3 className="luc-why-feature-title">{feat.title}</h3>
-                    <p className="luc-why-feature-desc">{feat.desc}</p>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+
+            <div
+              className="Scenic_readmore_wrapper"
+              style={{ marginTop: "25px", textAlign: "left" }}
+            >
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -781,6 +794,7 @@ const VikingExpeditionCruises = () => {
                   src={VikingExp4}
                   alt="Scenic kayaking near massive glacier"
                   className="dmg-media-img"
+                  style={{ height: "710px" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1502,6 +1516,14 @@ const VikingExpeditionCruises = () => {
                   title: "Focus Placed on Science, Education & Culture",
                   icon: <Compass size={20} />,
                 },
+                {
+                  title: "Expert-Led Expedition Lectures & Workshops",
+                  icon: <BookOpen size={20} />,
+                },
+                {
+                  title: "Peaceful Atmosphere for Meaningful Exploration",
+                  icon: <Mountain size={20} />,
+                },
               ].map((item, i) => (
                 <div key={i} className="adg-list-item-card">
                   <div className="adg-list-item-icon">{item.icon}</div>
@@ -1525,8 +1547,6 @@ const VikingExpeditionCruises = () => {
                 </h2>
                 <div className="dac-families-accent"></div>
               </div>
-
-              
 
               <div className="dac-families-features">
                 {[
@@ -1705,8 +1725,38 @@ const VikingExpeditionCruises = () => {
           <div className="Asc-section-header">
             <h2>Are Viking Expedition Cruises Worth It?</h2>
             <div className="Asc-accent-line"></div>
-            <p className="Asc-faq-intro" style={{ marginTop: "15px", marginBottom: "30px", fontSize: "1.1rem" }}>
-              To see if an adventure voyage is right for your travel goals, read our core <Link to="/is-viking-worth-it" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Is Viking Worth It</Link> analysis and see what guest feedback reports in our <Link to="/viking-cruise-reviews" style={{ color: "var(--navy)", fontWeight: "bold", textDecoration: "underline" }}>Viking Cruise Reviews</Link>.
+            <p
+              className="Asc-faq-intro"
+              style={{
+                marginTop: "15px",
+                marginBottom: "30px",
+                fontSize: "1.1rem",
+              }}
+            >
+              To see if an adventure voyage is right for your travel goals, read
+              our core{" "}
+              <Link
+                to="/is-viking-worth-it"
+                style={{
+                  color: "var(--navy)",
+                  fontWeight: "bold",
+                  textDecoration: "underline",
+                }}
+              >
+                Is Viking Worth It
+              </Link>{" "}
+              analysis and see what guest feedback reports in our{" "}
+              <Link
+                to="/viking-cruise-reviews"
+                style={{
+                  color: "var(--navy)",
+                  fontWeight: "bold",
+                  textDecoration: "underline",
+                }}
+              >
+                Viking Cruise Reviews
+              </Link>
+              .
             </p>
           </div>
 
