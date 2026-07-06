@@ -74,6 +74,11 @@ import PrivateVillasYachtsExclusiveResorts from "./pages/PrivateVillasYachtsExcl
 import PrivacySecurityTravelPlanning from "./pages/PrivacySecurityTravelPlanning/PrivacySecurityTravelPlanning";
 import ChampionshipCelebrationsMilestoneTravel from "./pages/ChampionshipCelebrationsMilestoneTravel/ChampionshipCelebrationsMilestoneTravel";
 import LuxuryWellnessRecoveryTravel from "./pages/LuxuryWellnessRecoveryTravel/LuxuryWellnessRecoveryTravel";
+import PrivateJetConciergeTravel from "./pages/PrivateJetConciergeTravel/PrivateJetConciergeTravel";
+import ExploraJourneysReviews from "./pages/ExploraJourneysReviews/ExploraJourneysReviews";
+import WhatMakesExploraDifferent from "./pages/WhatMakesExploraDifferent/WhatMakesExploraDifferent";
+import IsExploraLuxury from "./pages/IsExploraLuxury/IsExploraLuxury";
+import PlanningFirstJourney from "./pages/PlanningFirstJourney/PlanningFirstJourney";
 
 function App() {
   return (
@@ -429,6 +434,31 @@ function App() {
           <Route
             path="/luxury-wellness-recovery-travel"
             element={<LuxuryWellnessRecoveryTravel />}
+          />
+
+           <Route
+            path="/private-jet-concierge-travel"
+            element={<PrivateJetConciergeTravel />}
+          />
+
+           <Route
+            path="/explora-journeys-review"
+            element={<ExploraJourneysReviews />}
+          />
+
+           <Route
+            path="/what-makes-explora-journeys-different"
+            element={<WhatMakesExploraDifferent />}
+          />
+
+           <Route
+            path="/is-explora-journeys-luxury"
+            element={<IsExploraLuxury />}
+          />
+
+           <Route
+            path="/planning-your-first-explora-journey"
+            element={<PlanningFirstJourney />}
           />
         </Routes>
       </BrowserRouter>

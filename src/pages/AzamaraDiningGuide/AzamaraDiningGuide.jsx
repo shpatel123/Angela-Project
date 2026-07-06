@@ -62,6 +62,8 @@ const diningOverview = [
   { icon: <Flame size={18} />, label: "Wine-focused culinary experiences" },
 ];
 
+
+
 const complimentaryVenues = [
   {
     id: "discoveries",

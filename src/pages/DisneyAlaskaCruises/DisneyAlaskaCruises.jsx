@@ -22,6 +22,8 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 import "../ScenicVSFourSeasonsYachts.css";
+import "../VikingCruises/VikingCruises.css";
+import {Link} from "react-router-dom";
 import HeroImage1 from "../../assets/DisneyAlaskaCruises/disney-wonder-alaska-cruise-tracy-arm-fjord-excursion.jpg";
 import HeroImage2 from "../../assets/DisneyAlaskaCruises/disney-wonder-alaska-cruise-glacier-view-scenic-itinerary.jpg";
 import HeroImage3 from "../../assets/DisneyAlaskaCruises/disney-cruise-alaska-inside-passage-glacier-view-ship-stern.jpg";
@@ -561,6 +563,7 @@ function FAQ() {
 const DisneyAlaskaCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("antarctica");
   const currentDest =
@@ -592,7 +595,8 @@ const DisneyAlaskaCruises = () => {
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
-      <Nav />
+      <Nav/>
+
       {/* HERO */}
       <section
         className="Scenic_hero_section"
@@ -1436,7 +1440,7 @@ const DisneyAlaskaCruises = () => {
                 cruise industry.
               </p>
 
-              <div className="dmg-info-features">
+              <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
                     <Check size={16} />
@@ -1507,7 +1511,7 @@ const DisneyAlaskaCruises = () => {
                 <img
                   src={DisneySuites}
                   alt="Disney Alaska Cruise family accommodations"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{ height: "780px" }}
                 />
 
                 <div className="dmg-media-overlay"></div>
@@ -1537,7 +1541,7 @@ const DisneyAlaskaCruises = () => {
                 </p>
               </div>
 
-              <div className="dmg-info-features">
+              <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
                     <Check size={16} />
@@ -1600,7 +1604,7 @@ const DisneyAlaskaCruises = () => {
                 <img
                   src={DisneyDining}
                   alt="Dining on a Disney Alaska Cruise"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{ height: "650px" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1764,70 +1768,53 @@ const DisneyAlaskaCruises = () => {
             </p>
 
             <div className="luc-why-features">
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">01</div>
+              {[
+                {
+                  num: "01",
+                  title: "Shared Discovery",
+                  desc: "Exploring glaciers and wildlife creates memories that last a lifetime.",
+                },
+                {
+                  num: "02",
+                  title: "Convenient Travel",
+                  desc: "Unpack once while visiting multiple destinations throughout Alaska.",
+                },
+                {
+                  num: "03",
+                  title: "Comfortable Accommodations",
+                  desc: "Disney ships are designed with family comfort in mind.",
+                },
+                {
+                  num: "04",
+                  title: "Activities for Every Generation",
+                  desc: "Grandparents can relax while grandchildren enjoy youth programs, then reunite for family experiences.",
+                },
+                {
+                  num: "05",
+                  title: "Meaningful Experiences",
+                  desc: "Many families describe Alaska as one of the most memorable trips they have ever taken together.",
+                },
+              ]
+                .slice(0, readMoreWhy ? 5 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
 
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Shared Discovery</h3>
-                  <p className="luc-why-feature-desc">
-                    Exploring glaciers and wildlife creates memories that last a
-                    lifetime.
-                  </p>
-                </div>
-              </div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
 
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">02</div>
-
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Convenient Travel</h3>
-                  <p className="luc-why-feature-desc">
-                    Unpack once while visiting multiple destinations throughout
-                    Alaska.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">03</div>
-
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Comfortable Accommodations
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Disney ships are designed with family comfort in mind.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">04</div>
-
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Activities for Every Generation
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Grandparents can relax while grandchildren enjoy youth
-                    programs, then reunite for family experiences.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">05</div>
-
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Meaningful Experiences
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Many families describe Alaska as one of the most memorable
-                    trips they have ever taken together.
-                  </p>
-                </div>
-              </div>
+            <div className="Scenic_readmore_wrapper" style={{ marginTop: "25px", textAlign: "left" }}>
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1918,7 +1905,7 @@ const DisneyAlaskaCruises = () => {
       <section className="Asc-section Asc-bg-white">
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-section-title">
+            <h2 className="Asc-h2">
               Who Should Choose a Disney Alaska Cruise?
             </h2>
             <div className="Asc-accent-line"></div>
@@ -2206,10 +2193,10 @@ const DisneyAlaskaCruises = () => {
                   )}
 
                   <div className="Asc-help-btn-container">
-                    <button className="Asc-help-cta-btn">
+                    <Link to='/contact' className="Asc-help-cta-btn">
                       Plan Your Disney Alaska Cruise
                       <ArrowRight size={18} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 

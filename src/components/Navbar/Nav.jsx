@@ -600,6 +600,46 @@ const Nav = () => {
               >
                 luxury wellness and recovery travel
               </NavLink>
+
+              {/* <NavLink
+                to="/private-jet-concierge-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                private jet concierge travel
+              </NavLink> */}
+
+              <NavLink
+                to="/explora-journeys-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explore Journeys Review
+              </NavLink>
+
+              <NavLink
+                to="/what-makes-explora-journeys-different"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Makes Explora Journeys Different?
+              </NavLink>
+
+              <NavLink
+                to="/is-explora-journeys-luxury"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Explora Journeys Luxury?
+              </NavLink>
+
+              <NavLink
+                to="/planning-your-first-explora-journey"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Planning Your First Explora Journey
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1194,6 +1234,46 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               luxury wellness and recovery travel
+            </NavLink>
+
+            {/* <NavLink
+              to="/private-jet-concierge-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              private jet concierge travel
+            </NavLink> */}
+
+            <NavLink
+              to="/explora-journeys-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explore Journeys Review
+            </NavLink>
+
+            <NavLink
+              to="/what-makes-explora-journeys-different"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What Makes Explora Journeys Different?
+            </NavLink>
+
+            <NavLink
+              to="/is-explora-journeys-luxury"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Explora Journeys Luxury?
+            </NavLink>
+
+            <NavLink
+              to="/planning-your-first-explora-journey"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Planning Your First Explora Journey
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
