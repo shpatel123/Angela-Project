@@ -36,7 +36,7 @@ import ExploraService from "../../assets/IsExploraGoodForFamilies/explora-III-oc
 import ExploraDestination from "../../assets/WhichMediterraneanItineraryIsBest/greece-zakynthos-blue-caves-mediterranean-summer-2025.jpg";
 import ExploraDestination2 from "../../assets/WhichMediterraneanItineraryIsBest/amalfi-coast-italy-mediterranean-hero-summer-2025.jpg";
 import LuxuryOceanfrontSuites from "../../assets/ExploraJourneysCruises/Suite-Services.webp";
-import LuxuryOceanfrontPool from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.jpg";
+import LuxuryOceanfrontPool from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.JPG";
 import LuxuryOceanfront from "../../assets/IsExploraGoodForFamilies/explora-outside-suites.jpg";
 import ExploraShip from "../../assets/IsExploraGoodForFamilies/Luxury-Explora-Journeys.webp";
 

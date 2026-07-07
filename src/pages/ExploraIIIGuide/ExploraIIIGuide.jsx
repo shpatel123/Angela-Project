@@ -33,13 +33,13 @@ import HeroImage2 from "../../assets/ExploraCruiseCost/ExploraCruiseCost.webp";
 import HeroImage4 from "../../assets/ExploraCruiseCost/ExploraCruiseCost2.webp";
 import ExploraPool from "../../assets/WhichExploraShipChoose/explora-journeys-atoll-pool-luxury-cruise-deck.jpg";
 import ExploraDining from "../../assets/ExploraJourneysWorth/Dining-Venues.webp";
-import ExploraService from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-aft-pool-luxury-sundeck.jpg";
+import ExploraService from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-aft-pool-luxury-sundeck.JPG";
 import ExploraDestination from "../../assets/HowAdvanceShouldBookExplora/EXPLORA-II-sailing-in-Miami.jpg";
 import ExploraDestination2 from "../../assets/HowAdvanceShouldBookExplora/greenland-expedition-cruise-arctic-luxury-voyage.jpg";
 import LuxuryOceanfrontSuites from "../../assets/ExploraJourneysCruises/Suite-Services.webp";
 import LuxuryOceanfrontPool from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-luxury-pool-deck-daybeds.jpg";
 import LuxuryOceanfront from "../../assets/IsExploraGoodForFamilies/explora-outside-suites.jpg";
-import ExploraShip from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-central-pool-deck-aerial-view.jpg";
+import ExploraShip from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-central-pool-deck-aerial-view.JPG";
 
 import { Helmet } from "react-helmet-async";
 
