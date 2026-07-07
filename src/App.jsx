@@ -79,6 +79,10 @@ import ExploraJourneysReviews from "./pages/ExploraJourneysReviews/ExploraJourne
 import WhatMakesExploraDifferent from "./pages/WhatMakesExploraDifferent/WhatMakesExploraDifferent";
 import IsExploraLuxury from "./pages/IsExploraLuxury/IsExploraLuxury";
 import PlanningFirstJourney from "./pages/PlanningFirstJourney/PlanningFirstJourney";
+import WhoShouldSailExploraJourneys from "./pages/WhoShouldSailExploraJourneys/WhoShouldSailExploraJourneys";
+import ExploraIReview from "./pages/ExploraIReview/ExploraIReview";
+import ExploraIIReview from "./pages/ExploraIIReview/ExploraIIReview";
+import ExploraIIIGuide from "./pages/ExploraIIIGuide/ExploraIIIGuide";
 
 function App() {
   return (
@@ -320,50 +324,44 @@ function App() {
             element={<VikingDanubeRiverCruises />}
           />
 
-           <Route
+          <Route
             path="/travel-programs-for-museums"
             element={<TravelProgramsForMuseums />}
           />
 
-           <Route
+          <Route
             path="/travel-programs-for-aquariums"
             element={<TravelProgramsForAquariums />}
           />
 
-           <Route
+          <Route
             path="/travel-programs-for-zoos-conservation-organizations"
             element={<TravelProgramsForZoos />}
           />
 
-           <Route
+          <Route
             path="/travel-programs-for-foundations-nonprofits"
             element={<TravelProgramsForFoundations />}
           />
 
-          
-           <Route
+          <Route
             path="/donor-expedition-cruises"
             element={<DonorExpeditionCruises />}
           />
 
-          <Route
-            path="/pressrelease"
-            element={<Pressrelease />}
-          />
+          <Route path="/pressrelease" element={<Pressrelease />} />
 
-          
           <Route
             path="/which-explora-ship-should-you-choose"
             element={<WhichExploraShipChoose />}
           />
 
-           
           <Route
             path="/which-explora-suite-is-worth-the-upgrade"
             element={<WhichExploraSuiteWorthUpgrade />}
           />
 
-           <Route
+          <Route
             path="/is-anthology-worth-it"
             element={<IsAnthologyWorthIt />}
           />
@@ -373,7 +371,6 @@ function App() {
             element={<WhichMediterraneanIsBest />}
           />
 
-          
           <Route
             path="/is-explora-good-for-families"
             element={<IsExploraGoodForFamilies />}
@@ -384,12 +381,12 @@ function App() {
             element={<IsExploraGoodForSoloTravelers />}
           />
 
-           <Route
+          <Route
             path="/how-far-in-advance-should-you-book-explora"
             element={<HowAdvanceShouldBookExplora />}
           />
 
-           <Route
+          <Route
             path="/how-to-get-the-best-value-on-explora-journeys"
             element={<HowGetBestValueExploraJourneys />}
           />
@@ -399,7 +396,6 @@ function App() {
             element={<WhatPackForExploraCruise />}
           />
 
-          
           <Route
             path="/professional-athlete-family-travel"
             element={<ProfessionalAthleteFamilyTravel />}
@@ -410,23 +406,22 @@ function App() {
             element={<OffSeasonLuxuryTravel />}
           />
 
-            <Route
+          <Route
             path="/multigenerational-travel-for-professional-athletes"
             element={<MultigenerationalTravel />}
           />
 
-           <Route
+          <Route
             path="/private-villas-yachts-exclusive-resorts"
             element={<PrivateVillasYachtsExclusiveResorts />}
           />
 
-          
-           <Route
+          <Route
             path="/privacy-security-travel-planning"
             element={<PrivacySecurityTravelPlanning />}
           />
 
-            <Route
+          <Route
             path="/championship-celebrations-milestone-travel"
             element={<ChampionshipCelebrationsMilestoneTravel />}
           />
@@ -436,30 +431,39 @@ function App() {
             element={<LuxuryWellnessRecoveryTravel />}
           />
 
-           <Route
+          <Route
             path="/private-jet-concierge-travel"
             element={<PrivateJetConciergeTravel />}
           />
 
-           <Route
+          <Route
             path="/explora-journeys-review"
             element={<ExploraJourneysReviews />}
           />
 
-           <Route
+          <Route
             path="/what-makes-explora-journeys-different"
             element={<WhatMakesExploraDifferent />}
           />
 
-           <Route
+          <Route
             path="/is-explora-journeys-luxury"
             element={<IsExploraLuxury />}
           />
 
-           <Route
+          <Route
             path="/planning-your-first-explora-journey"
             element={<PlanningFirstJourney />}
           />
+
+          <Route
+            path="/who-should-sail-explora-journeys"
+            element={<WhoShouldSailExploraJourneys />}
+          />
+
+          <Route path="/explora-i-review" element={<ExploraIReview />} />
+          <Route path="/explora-ii-review" element={<ExploraIIReview />} />
+          <Route path="/explora-iii-guide" element={<ExploraIIIGuide />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

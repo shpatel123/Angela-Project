@@ -640,6 +640,38 @@ const Nav = () => {
               >
                 Planning Your First Explora Journey
               </NavLink>
+
+              <NavLink
+                to="/who-should-sail-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Who Should Sail Explora Journeys?
+              </NavLink>
+
+              <NavLink
+                to="/explora-i-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora I Review
+              </NavLink>
+
+              <NavLink
+                to="/explora-ii-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora II Review
+              </NavLink>
+
+              <NavLink
+                to="/explora-iii-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora III Guide
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1274,6 +1306,38 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Planning Your First Explora Journey
+            </NavLink>
+
+            <NavLink
+              to="/who-should-sail-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Who Should Sail Explora Journeys?
+            </NavLink>
+
+            <NavLink
+              to="/explora-i-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora I Review
+            </NavLink>
+
+            <NavLink
+              to="/explora-ii-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora II Review
+            </NavLink>
+
+            <NavLink
+              to="/explora-iii-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora III Guide
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
