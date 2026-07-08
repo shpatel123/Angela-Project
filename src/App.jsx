@@ -83,6 +83,10 @@ import WhoShouldSailExploraJourneys from "./pages/WhoShouldSailExploraJourneys/W
 import ExploraIReview from "./pages/ExploraIReview/ExploraIReview";
 import ExploraIIReview from "./pages/ExploraIIReview/ExploraIIReview";
 import ExploraIIIGuide from "./pages/ExploraIIIGuide/ExploraIIIGuide";
+import ExploraIVGuide from "./pages/ExploraIVGuide/ExploraIVGuide";
+import DiningExploraJourneys from "./pages/DiningExploraJourneys/DiningExploraJourneys";
+import ExploraJourneysWellnessExperience from "./pages/ExploraJourneysWellnessExperience/ExploraJourneysWellnessExperience";
+import EntertainmentLifeOnboardExploraJourneys from "./pages/EntertainmentLifeOnboardExploraJourneys/EntertainmentLifeOnboardExploraJourneys";
 
 function App() {
   return (
@@ -464,6 +468,11 @@ function App() {
           <Route path="/explora-i-review" element={<ExploraIReview />} />
           <Route path="/explora-ii-review" element={<ExploraIIReview />} />
           <Route path="/explora-iii-guide" element={<ExploraIIIGuide />} />
+          <Route path="/explora-iv-guide" element={<ExploraIVGuide />} />
+          <Route path="/dining-on-explora-journeys" element={<DiningExploraJourneys />} />
+          <Route path="/explora-journeys-wellness-experience" element={<ExploraJourneysWellnessExperience />} />
+          <Route path="/entertainment-life-onboard-explora-journeys" element={<EntertainmentLifeOnboardExploraJourneys />} />
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

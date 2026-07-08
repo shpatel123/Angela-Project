@@ -26,20 +26,21 @@ import {
   CalendarClock,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-import HeroImage1 from "../../assets/ExploraCruiseCost/Asia-Ship-a-Long-Bay-Vietnam.webp";
-import HeroImage2 from "../../assets/ExploraCruiseCost/ExploraCruiseCost.webp";
-import HeroImage4 from "../../assets/ExploraCruiseCost/ExploraCruiseCost2.webp";
-import ExploraPool from "../../assets/WhichExploraShipChoose/explora-journeys-atoll-pool-luxury-cruise-deck.jpg";
-import ExploraDining from "../../assets/ExploraJourneysWorth/Dining-Venues.webp";
-import ExploraService from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-aft-pool-luxury-sundeck.JPG";
-import ExploraDestination from "../../assets/HowAdvanceShouldBookExplora/EXPLORA-II-sailing-in-Miami.jpg";
-import ExploraDestination2 from "../../assets/HowAdvanceShouldBookExplora/greenland-expedition-cruise-arctic-luxury-voyage.jpg";
-import LuxuryOceanfrontSuites from "../../assets/ExploraJourneysCruises/Suite-Services.webp";
-import LuxuryOceanfrontPool from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-luxury-pool-deck-daybeds.jpg";
-import LuxuryOceanfront from "../../assets/IsExploraGoodForFamilies/explora-outside-suites.jpg";
-import ExploraShip from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-central-pool-deck-aerial-view.JPG";
+import HeroImage1 from "../../assets/ExploraIVGuide/EXPLORA-Alaska.jpg";
+import HeroImage2 from "../../assets/ExploraIVGuide/EXPLORA-III-Exterior.jpg";
+import HeroImage4 from "../../assets/ExploraIVGuide/greenland-expedition-cruise-arctic-luxury-voyage.jpg";
+import ExploraPool from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.jpg";
+import ExploraDining from "../../assets/IsExploraGoodForFamilies/Fine-Dining.webp";
+import ExploraService from "../../assets/ExploraIVGuide/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg";
+import ExploraDestination from "../../assets/WhichExploraSuiteWorthUpgrade/EXPLORA-CARIBBEAN.jpg";
+import ExploraDestination2 from "../../assets/ExploraIVGuide/explorajourny.jpg";
+import LuxuryOceanfrontSuites from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
+import LuxuryOceanfrontPool from "../../assets/ExploraIVGuide/explora-I-infinity-pool-aerial-view.jpg";
+import LuxuryOceanfront from "../../assets/ExploraIVGuide/explora-journeys-deluxe-penthouse-suite-bedroom.jpg";
+import LuxuryOceanfront1 from "../../assets/ExploraIVGuide/explora-journeys-serenity-residence-private-whirlpool-suite.jpg";
+import ExploraShip from "../../assets/IsExploraGoodForFamilies/ExploraDestination.webp";
 
 import { Helmet } from "react-helmet-async";
 
@@ -72,19 +73,19 @@ const schemaData = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://tripsandships.com/explora-iii-guide/#webpage",
-      name: "Explora III Guide",
-      url: "https://tripsandships.com/explora-iii-guide",
+      "@id": "https://tripsandships.com/explora-iv-guide/#webpage",
+      name: "Explora IV Guide",
+      url: "https://tripsandships.com/explora-iv-guide",
       description:
-        "Discover everything you need to know about Explora III, including its design, accommodations, dining, itineraries, wellness experiences, sustainability features, and who should book this next-generation luxury cruise ship.",
+        "Discover everything you need to know about Explora IV, including accommodations, dining, wellness, sustainability, itineraries, and whether this next-generation luxury cruise ship is right for your next voyage.",
     },
     {
       "@type": "Article",
-      "@id": "https://tripsandships.com/explora-iii-guide/#article",
+      "@id": "https://tripsandships.com/explora-iv-guide/#article",
       headline:
-        "Explora III Guide | Everything You Need to Know About Explora Journeys' Next Luxury Ship",
+        "Explora IV Guide | Everything You Need to Know About Explora Journeys' Fourth Luxury Ship",
       description:
-        "A comprehensive guide to Explora III, the third ship in the Explora Journeys fleet, covering ship design, suites, dining, wellness, entertainment, destinations, sustainability, and how it compares to Explora I and Explora II.",
+        "A comprehensive guide to Explora IV, the fourth ship in the Explora Journeys fleet, covering ship design, suites, dining, wellness, entertainment, destinations, sustainability, and how it compares to Explora I, Explora II, and Explora III.",
       author: {
         "@type": "Person",
         name: "Angela Hughes",
@@ -97,7 +98,7 @@ const schemaData = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://tripsandships.com/explora-iii-guide/#breadcrumb",
+      "@id": "https://tripsandships.com/explora-iv-guide/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -114,17 +115,17 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "Explora III Guide",
-          item: "https://tripsandships.com/explora-iii-guide",
+          name: "Explora IV Guide",
+          item: "https://tripsandships.com/explora-iv-guide",
         },
       ],
     },
     {
       "@type": "Cruise",
-      "@id": "https://tripsandships.com/explora-iii-guide/#cruise",
-      name: "Explora III",
+      "@id": "https://tripsandships.com/explora-iv-guide/#cruise",
+      name: "Explora IV",
       description:
-        "The third ship in the Explora Journeys fleet, offering all-oceanfront suites, destination-focused itineraries, next-generation sustainability features, and a boutique European luxury resort atmosphere at sea.",
+        "The fourth ship in the Explora Journeys fleet, offering all-oceanfront suites, destination-focused itineraries, next-generation sustainability features, and a boutique European luxury resort atmosphere at sea.",
       provider: {
         "@type": "Organization",
         name: "Explora Journeys",
@@ -132,10 +133,10 @@ const schemaData = {
     },
     {
       "@type": "Product",
-      "@id": "https://tripsandships.com/explora-iii-guide/#product",
-      name: "Explora III",
+      "@id": "https://tripsandships.com/explora-iv-guide/#product",
+      name: "Explora IV",
       description:
-        "Third luxury cruise ship of Explora Journeys featuring all-suite oceanfront accommodations, multiple dining venues, wellness facilities, enhanced sustainability innovations, and destination-rich itineraries.",
+        "Fourth luxury cruise ship of Explora Journeys featuring all-suite oceanfront accommodations, multiple dining venues, wellness facilities, enhanced sustainability innovations, and destination-rich itineraries.",
       brand: {
         "@type": "Organization",
         name: "Explora Journeys",
@@ -143,10 +144,10 @@ const schemaData = {
     },
     {
       "@type": "TouristTrip",
-      "@id": "https://tripsandships.com/explora-iii-guide/#touristtrip",
-      name: "Explora III Luxury Cruise Experience",
+      "@id": "https://tripsandships.com/explora-iv-guide/#touristtrip",
+      name: "Explora IV Luxury Cruise Experience",
       description:
-        "A relaxed, contemporary luxury cruise experience aboard Explora III designed for travelers who value space, exceptional service, outstanding cuisine, and meaningful destinations.",
+        "A relaxed, contemporary luxury cruise experience aboard Explora IV designed for travelers who value space, exceptional service, outstanding cuisine, and meaningful destinations.",
       provider: {
         "@type": "Organization",
         name: "Explora Journeys",
@@ -154,7 +155,7 @@ const schemaData = {
     },
     {
       "@type": "Service",
-      "@id": "https://tripsandships.com/explora-iii-guide/#service",
+      "@id": "https://tripsandships.com/explora-iv-guide/#service",
       serviceType: "Luxury Cruise Vacation Planning & Booking Support",
       provider: {
         "@type": "TravelAgency",
@@ -162,14 +163,14 @@ const schemaData = {
       },
       areaServed: "Worldwide",
       description:
-        "Comprehensive travel booking, suite selection assistance, transfers, pre/post hotel bookings, and shore excursion coordination for Explora III sailings.",
+        "Comprehensive travel booking, suite selection assistance, transfers, pre/post hotel bookings, and shore excursion coordination for Explora IV sailings.",
     },
     {
       "@type": "ItemList",
-      "@id": "https://tripsandships.com/explora-iii-guide/#itemlist",
-      name: "What This Explora III Guide Covers",
+      "@id": "https://tripsandships.com/explora-iv-guide/#itemlist",
+      name: "What This Explora IV Guide Covers",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "What Is Explora III?" },
+        { "@type": "ListItem", position: 1, name: "What Is Explora IV?" },
         {
           "@type": "ListItem",
           position: 2,
@@ -181,7 +182,7 @@ const schemaData = {
           position: 4,
           name: "All-Suite Accommodations",
         },
-        { "@type": "ListItem", position: 5, name: "Dining on Explora III" },
+        { "@type": "ListItem", position: 5, name: "Dining on Explora IV" },
         { "@type": "ListItem", position: 6, name: "Wellness at Sea" },
         { "@type": "ListItem", position: 7, name: "Public Spaces" },
         { "@type": "ListItem", position: 8, name: "Entertainment" },
@@ -195,21 +196,21 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 12,
-          name: "Explora III vs Explora I & Explora II",
+          name: "Explora IV vs Explora I, II & III",
         },
         { "@type": "ListItem", position: 13, name: "Tips Before Booking" },
       ],
     },
     {
       "@type": "FAQPage",
-      "@id": "https://tripsandships.com/explora-iii-guide/#faq",
+      "@id": "https://tripsandships.com/explora-iv-guide/#faq",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is Explora III?",
+          name: "What is Explora IV?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Explora III is the third luxury ship in the Explora Journeys fleet, continuing the brand's focus on spacious suites, refined hospitality, wellness, and destination-focused cruising.",
+            text: "Explora IV is the fourth luxury ship in the Explora Journeys fleet, continuing the brand's focus on spacious suites, refined hospitality, wellness, and destination-focused cruising.",
           },
         },
         {
@@ -222,106 +223,106 @@ const schemaData = {
         },
         {
           "@type": "Question",
-          name: "Is Explora III different from Explora I and Explora II?",
+          name: "Is Explora IV different from the earlier ships?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The overall luxury experience remains consistent across the fleet, although Explora III introduces newer technology and enhanced sustainability features.",
+            text: "The overall luxury experience remains consistent, while Explora IV introduces newer technology, enhanced sustainability features, and refined operational improvements.",
           },
         },
         {
           "@type": "Question",
-          name: "Does Explora III have flexible dining?",
+          name: "Does Explora IV have specialty dining?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Guests may dine at several restaurants without traditional fixed dining schedules.",
+            text: "Yes. Guests can enjoy multiple restaurants, including premium specialty dining experiences such as Anthology.",
           },
         },
         {
           "@type": "Question",
-          name: "Is Explora III family-friendly?",
+          name: "Is Explora IV suitable for couples?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Families are welcome, although the experience is designed primarily around sophisticated luxury rather than children's entertainment.",
+            text: "Absolutely. The ship's relaxed atmosphere, elegant suites, exceptional dining, and wellness facilities make it an outstanding choice for romantic travel.",
           },
         },
         {
           "@type": "Question",
-          name: "Does Explora III include Wi-Fi?",
+          name: "Is Explora IV family-friendly?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Wi-Fi is included as part of the onboard experience.",
+            text: "Families are welcome, although the onboard experience is designed more for sophisticated luxury than children's entertainment.",
           },
         },
         {
           "@type": "Question",
-          name: "Is Explora III good for couples?",
+          name: "Does Explora IV include Wi-Fi?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Absolutely. Its relaxed atmosphere, spacious suites, exceptional dining, and wellness facilities make it an outstanding choice for romantic vacations.",
+            text: "Yes. Wi-Fi is included, allowing guests to stay connected throughout the voyage.",
           },
         },
         {
           "@type": "Question",
-          name: "What destinations does Explora III visit?",
+          name: "What destinations will Explora IV visit?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Depending on the season, itineraries include the Mediterranean, Caribbean, Northern Europe, North America, and other luxury cruise destinations.",
+            text: "Seasonal itineraries are expected to include destinations throughout Europe, the Caribbean, North America, and beyond.",
           },
         },
         {
           "@type": "Question",
-          name: "Is Explora III worth booking?",
+          name: "Is Explora IV worth booking?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For travelers seeking contemporary luxury, personalized service, and immersive travel experiences, Explora III represents one of the most exciting additions to the luxury cruise market.",
+            text: "For travelers seeking spacious accommodations, refined luxury, and exceptional service, Explora IV is expected to become one of the premier luxury cruise ships in the industry.",
           },
         },
         {
           "@type": "Question",
-          name: "Should I use a travel advisor?",
+          name: "Should I book through a travel advisor?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. A luxury travel advisor can help you compare itineraries, choose the right suite, and maximize the value of your booking.",
+            text: "Yes. A luxury travel advisor can help you choose the best itinerary, suite, and promotional offers while ensuring every detail of your vacation is professionally planned.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the environmental technology used on Explora III?",
+          name: "What is the environmental propulsion system of Explora IV?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Explora III is powered by Liquefied Natural Gas (LNG), which significantly reduces CO2 emissions and virtually eliminates sulfur oxides and particulate matter. It also features selective catalytic reduction, shore power connectivity, and advanced wastewater treatment systems.",
+            text: "Explora IV is powered by Liquefied Natural Gas (LNG), matching the eco-friendly propulsion system introduced on Explora III. This clean-burning fuel significantly reduces greenhouse gas emissions, nitrogen oxides, and fine particulate matter.",
           },
         },
         {
           "@type": "Question",
-          name: "When is the launch or maiden voyage of Explora III scheduled?",
+          name: "When is Explora IV scheduled to enter service?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Explora III is scheduled to enter service in 2026. This next-generation vessel represents the first LNG-powered ship in the Explora Journeys fleet, marking a major milestone in their sustainability roadmap.",
+            text: "Explora IV is scheduled to launch and enter service in 2027, continuing the brand's rapid fleet expansion and introducing new itineraries to luxury travelers.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the size and capacity of Explora III?",
+          name: "What is the guest capacity and size of Explora IV?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Explora III is designed to be around 63,900 gross tons, measuring approximately 248 meters in length. It will accommodate 900 guests in 461 oceanfront suites, maintaining the brand's signature spaciousness.",
+            text: "Explora IV is designed to host a maximum of 900 guests in 461 oceanfront suites. With a size of approximately 63,900 gross register tons, it maintains one of the highest space-to-guest ratios in the luxury cruise industry.",
           },
         },
         {
           "@type": "Question",
-          name: "Will Anthology dining be available onboard Explora III?",
+          name: "Does Explora IV feature hydrogen fuel cell technology?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Anthology, the signature restaurant showcasing culinary collaborations with world-renowned guest chefs, will be featured on Explora III, offering an elevated and exclusive dining experience at sea.",
+            text: "Yes. Explora IV is designed to incorporate hydrogen fuel cells to generate clean electricity for hotel operations while in port, eliminating emissions when docked and protecting local port environments.",
           },
         },
         {
           "@type": "Question",
-          name: "How does the LNG power affect the onboard guest experience?",
+          name: "Will there be a retractable glass roof pool on Explora IV?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "LNG power is not only cleaner but also operates with significantly lower noise levels and vibration compared to traditional marine diesel fuels, resulting in an exceptionally quiet and smooth sailing experience for guests.",
+            text: "Yes, Explora IV will feature the Conservatory Pool under a massive, retractable glass dome, providing a climate-controlled swimming and relaxation space that can be enjoyed in any weather condition or sailing region.",
           },
         },
       ],
@@ -335,64 +336,64 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is Explora III?",
-      a: "Explora III is the third luxury ship in the Explora Journeys fleet, continuing the brand's focus on spacious suites, refined hospitality, wellness, and destination-focused cruising.",
+      q: "What is Explora IV?",
+      a: "Explora IV is the fourth luxury ship in the Explora Journeys fleet, continuing the brand's focus on spacious suites, refined hospitality, wellness, and destination-focused cruising.",
     },
     {
       q: "Are all accommodations suites?",
       a: "Yes. Every guest stays in a luxury oceanfront suite with a private terrace.",
     },
     {
-      q: "Is Explora III different from Explora I and Explora II?",
-      a: "The overall luxury experience remains consistent across the fleet, although Explora III introduces newer technology and enhanced sustainability features.",
+      q: "Is Explora IV different from the earlier ships?",
+      a: "The overall luxury experience remains consistent, while Explora IV introduces newer technology, enhanced sustainability features, and refined operational improvements.",
     },
     {
-      q: "Does Explora III have flexible dining?",
-      a: "Yes. Guests may dine at several restaurants without traditional fixed dining schedules.",
+      q: "Does Explora IV have specialty dining?",
+      a: "Yes. Guests can enjoy multiple restaurants, including premium specialty dining experiences such as Anthology.",
     },
     {
-      q: "Is Explora III family-friendly?",
-      a: "Families are welcome, although the experience is designed primarily around sophisticated luxury rather than children's entertainment.",
+      q: "Is Explora IV suitable for couples?",
+      a: "Absolutely. The ship's relaxed atmosphere, elegant suites, exceptional dining, and wellness facilities make it an outstanding choice for romantic travel.",
     },
     {
-      q: "Does Explora III include Wi-Fi?",
-      a: "Yes. Wi-Fi is included as part of the onboard experience.",
+      q: "Is Explora IV family-friendly?",
+      a: "Families are welcome, although the onboard experience is designed more for sophisticated luxury than children's entertainment.",
     },
     {
-      q: "Is Explora III good for couples?",
-      a: "Absolutely. Its relaxed atmosphere, spacious suites, exceptional dining, and wellness facilities make it an outstanding choice for romantic vacations.",
+      q: "Does Explora IV include Wi-Fi?",
+      a: "Yes. Wi-Fi is included, allowing guests to stay connected throughout the voyage.",
     },
     {
-      q: "What destinations does Explora III visit?",
-      a: "Depending on the season, itineraries include the Mediterranean, Caribbean, Northern Europe, North America, and other luxury cruise destinations.",
+      q: "What destinations will Explora IV visit?",
+      a: "Seasonal itineraries are expected to include destinations throughout Europe, the Caribbean, North America, and beyond.",
     },
     {
-      q: "Is Explora III worth booking?",
-      a: "For travelers seeking contemporary luxury, personalized service, and immersive travel experiences, Explora III represents one of the most exciting additions to the luxury cruise market.",
+      q: "Is Explora IV worth booking?",
+      a: "For travelers seeking spacious accommodations, refined luxury, and exceptional service, Explora IV is expected to become one of the premier luxury cruise ships in the industry.",
     },
     {
-      q: "Should I use a travel advisor?",
-      a: "Yes. A luxury travel advisor can help you compare itineraries, choose the right suite, and maximize the value of your booking.",
+      q: "Should I book through a travel advisor?",
+      a: "Yes. A luxury travel advisor can help you choose the best itinerary, suite, and promotional offers while ensuring every detail of your vacation is professionally planned.",
     },
     {
-      q: "What is the environmental technology used on Explora III?",
-      a: "Explora III is powered by Liquefied Natural Gas (LNG), which significantly reduces CO2 emissions and virtually eliminates sulfur oxides and particulate matter. It also features selective catalytic reduction, shore power connectivity, and advanced wastewater treatment systems.",
+      q: "What is the environmental propulsion system of Explora IV?",
+      a: "Explora IV is powered by Liquefied Natural Gas (LNG), matching the eco-friendly propulsion system introduced on Explora III. This clean-burning fuel significantly reduces greenhouse gas emissions, nitrogen oxides, and fine particulate matter.",
     },
     {
-      q: "When is the launch or maiden voyage of Explora III scheduled?",
-      a: "Explora III is scheduled to enter service in 2026. This next-generation vessel represents the first LNG-powered ship in the Explora Journeys fleet, marking a major milestone in their sustainability roadmap.",
+      q: "When is Explora IV scheduled to enter service?",
+      a: "Explora IV is scheduled to launch and enter service in 2027, continuing the brand's rapid fleet expansion and introducing new itineraries to luxury travelers.",
     },
     {
-      q: "What is the size and capacity of Explora III?",
-      a: "Explora III is designed to be around 63,900 gross tons, measuring approximately 248 meters in length. It will accommodate 900 guests in 461 oceanfront suites, maintaining the brand's signature spaciousness.",
+      q: "What is the guest capacity and size of Explora IV?",
+      a: "Explora IV is designed to host a maximum of 900 guests in 461 oceanfront suites. With a size of approximately 63,900 gross register tons, it maintains one of the highest space-to-guest ratios in the luxury cruise industry.",
     },
     {
-      q: "Will Anthology dining be available onboard Explora III?",
-      a: "Yes. Anthology, the signature restaurant showcasing culinary collaborations with world-renowned guest chefs, will be featured on Explora III, offering an elevated and exclusive dining experience at sea.",
+      q: "Does Explora IV feature hydrogen fuel cell technology?",
+      a: "Yes. Explora IV is designed to incorporate hydrogen fuel cells to generate clean electricity for hotel operations while in port, eliminating emissions when docked and protecting local port environments.",
     },
     {
-      q: "How does the LNG power affect the onboard guest experience?",
-      a: "LNG power is not only cleaner but also operates with significantly lower noise levels and vibration compared to traditional marine diesel fuels, resulting in an exceptionally quiet and smooth sailing experience for guests.",
+      q: "Will there be a retractable glass roof pool on Explora IV?",
+      a: "Yes, Explora IV will feature the Conservatory Pool under a massive, retractable glass dome, providing a climate-controlled swimming and relaxation space that can be enjoyed in any weather condition or sailing region.",
     },
   ];
 
@@ -426,7 +427,7 @@ function FAQ() {
 }
 
 /* ── Main Component ──────────────────────────────────────────────── */
-const ExploraIIIGuide = () => {
+const ExploraIVGuide = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const [readMoreWhy, setReadMoreWhy] = useState(false);
@@ -444,13 +445,13 @@ const ExploraIIIGuide = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Explora III Guide | Everything You Need to Know About Explora
-          Journeys' Next Luxury Ship
+          Explora IV Guide | Everything You Need to Know About Explora Journeys'
+          Fourth Luxury Ship
         </title>
-        <meta name="title" content="Explora III Guide" />
+        <meta name="title" content="Explora IV Guide" />
         <meta
           name="description"
-          content="Discover everything you need to know about Explora III, including its design, accommodations, dining, itineraries, wellness experiences, sustainability features, and who should book this next-generation luxury cruise ship."
+          content="Discover everything you need to know about Explora IV, including its design, accommodations, dining, itineraries, wellness experiences, sustainability features, and who should book this next-generation luxury cruise ship."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -470,20 +471,20 @@ const ExploraIIIGuide = () => {
         <div className="Scenic_hero_overlay"></div>
 
         <div className="Scenic_hero_content">
-          <h1>Explora III Guide</h1>
+          <h1>Explora IV Guide</h1>
 
           <p>
             Explora Journeys continues expanding its luxury fleet with Explora
-            III, the next evolution of the brand's modern approach to cruising.
+            IV, the next evolution of the brand's modern approach to cruising.
           </p>
 
           <p>
-            Building on the success of Explora I and Explora II, Explora III is
-            designed to offer the same spacious accommodations, exceptional
-            dining, personalized service, and elegant atmosphere that have
-            quickly made Explora one of the most respected names in luxury
-            travel. While remaining true to the brand's philosophy, it also
-            introduces the next generation of technology, sustainability
+            Building on the success of Explora I, Explora II, and Explora III,
+            Explora IV is designed to offer the same spacious accommodations,
+            exceptional dining, personalized service, and elegant atmosphere
+            that have quickly made Explora one of the most respected names in
+            luxury travel. While remaining true to the brand's philosophy, it
+            also introduces the next generation of technology, sustainability
             initiatives, and refined guest experiences.
           </p>
 
@@ -497,9 +498,9 @@ const ExploraIIIGuide = () => {
               </p>
 
               <p>
-                If you're considering sailing aboard Explora III, this guide
-                will help you understand what to expect and whether it's the
-                right luxury cruise for your next vacation.
+                If you're considering sailing aboard Explora IV, this guide will
+                help you understand what to expect and whether it's the right
+                luxury cruise for your next vacation.
               </p>
             </>
           )}
@@ -517,12 +518,12 @@ const ExploraIIIGuide = () => {
       {/* ── FIRST IMPRESSIONS ─────────────────────────────── */}
       <section
         className="ugt-components-section"
-        id="what-is-explora-iii"
+        id="what-is-explora-iv"
         style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="ugt-components-container">
           <div className="ugt-components-header">
-            <h2 className="ugt-components-title">What Is Explora III?</h2>
+            <h2 className="ugt-components-title">What Is Explora IV?</h2>
 
             <div className="adg-c-accent-line"></div>
           </div>
@@ -533,7 +534,7 @@ const ExploraIIIGuide = () => {
                 <div className="ugt-component-image-container">
                   <img
                     src={ExploraPool}
-                    alt="Elegant interior aboard Explora III with contemporary European design"
+                    alt="Elegant interior aboard Explora IV with contemporary European design"
                     className="ugt-component-image"
                   />
                 </div>
@@ -541,7 +542,7 @@ const ExploraIIIGuide = () => {
 
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
-                  <strong>Explora III</strong> is the third luxury ship in the
+                  <strong>Explora IV</strong> is the fourth luxury ship in the
                   Explora Journeys fleet. It continues the company's vision of
                   offering a luxury resort experience at sea rather than a
                   traditional cruise vacation.
@@ -578,7 +579,7 @@ const ExploraIIIGuide = () => {
                     borderRadius: "6px",
                   }}
                 >
-                  Rather than adding more attractions, Explora III focuses on
+                  Rather than adding more attractions, Explora IV focuses on
                   refining every aspect of the luxury guest experience.
                 </p>
               </div>
@@ -602,7 +603,7 @@ const ExploraIIIGuide = () => {
 
             <p className="Asc-section-intro">
               Explora Journeys believes luxury isn't measured by the size of a
-              ship or the number of onboard attractions. Instead, Explora III is
+              ship or the number of onboard attractions. Instead, Explora IV is
               designed to offer more space, greater comfort, exceptional
               hospitality, and a relaxed atmosphere where every journey feels
               effortless.
@@ -691,11 +692,11 @@ const ExploraIIIGuide = () => {
         </div>
       </section>
 
-      {/* ── DINING ON EXPLORA III ───────────────────────────────────── */}
-      <section className="dmg-info-section" id="dining-explora-iii">
+      {/* ── DINING ON EXPLORA IV ───────────────────────────────────── */}
+      <section className="dmg-info-section" id="dining-explora-iv">
         <div className="dmg-info-container">
           <div className="dmg-info-header">
-            <h2 className="dmg-info-title">Dining on Explora III</h2>
+            <h2 className="dmg-info-title">Dining on Explora IV</h2>
             <div className="dmg-info-accent"></div>
           </div>
 
@@ -777,7 +778,7 @@ const ExploraIIIGuide = () => {
               <div className="dmg-media-wrapper">
                 <img
                   src={ExploraDining}
-                  alt="Elegant dining restaurant aboard Explora III"
+                  alt="Elegant dining restaurant aboard Explora IV"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
                 />
@@ -799,7 +800,7 @@ const ExploraIIIGuide = () => {
             }}
           >
             From relaxed lunches by the pool to memorable evenings at Anthology,
-            every meal aboard Explora III is designed to reflect the brand's
+            every meal aboard Explora IV is designed to reflect the brand's
             commitment to exceptional cuisine, quality ingredients, and
             effortless luxury.
           </p>
@@ -819,7 +820,7 @@ const ExploraIIIGuide = () => {
             </h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejvs-section-subtitle">
-              Explora III continues the brand's commitment to wellness and its
+              Explora IV continues the brand's commitment to wellness and its
               sophisticated approach to entertainment, designed for relaxation
               and enrichment.
             </p>
@@ -837,7 +838,7 @@ const ExploraIIIGuide = () => {
               </div>
 
               <p className="Ejvs-card-intro">
-                Explora III continues the brand's commitment to wellness,
+                Explora IV continues the brand's commitment to wellness,
                 integrated throughout the voyage rather than limited to a single
                 area of the ship.
               </p>
@@ -880,7 +881,7 @@ const ExploraIIIGuide = () => {
               </div>
 
               <p className="Ejvs-card-intro">
-                Entertainment aboard Explora III reflects the brand's
+                Entertainment aboard Explora IV reflects the brand's
                 sophisticated personality, emphasizing culture, music, and
                 relaxed evenings.
               </p>
@@ -923,48 +924,53 @@ const ExploraIIIGuide = () => {
       >
         <div className="dve-container">
           <div className="dve-section-header">
-            <h2 className="dve-section-title">Suite &amp; Sustainability</h2>
+            <h2 className="dve-section-title">
+              Public Areas &amp; Sustainability
+            </h2>
             <div className="dve-section-accent"></div>
             <p className="dve-section-subtitle">
               Exceptional cuisine and forward-thinking innovation are two of the
-              defining features of the Explora III experience.
+              defining features of the Explora IV experience.
             </p>
           </div>
 
           <div className="dve-winner-grid">
-            {/* All-Suite Accommodations */}
+            {/* Spacious Public Areas */}
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
                   src={LuxuryOceanfrontSuites}
-                  alt="Luxury oceanfront suite aboard Explora III"
+                  alt="Spacious public areas aboard Explora IV"
                   className="dve-winner-img"
                 />
                 <span className="dve-winner-badge">
-                  Spacious Oceanfront Luxury
+                  Spacious Oceanfront Living
                 </span>
               </div>
 
               <div className="dve-winner-content">
-                <h3 className="dve-winner-title">All-Suite Accommodations</h3>
+                <h3 className="dve-winner-title">Spacious Public Areas</h3>
 
                 <p className="dve-winner-intro">
-                  Like every Explora ship, Explora III features only luxury
-                  suites. Every accommodation is thoughtfully designed to
-                  provide exceptional comfort, space, and uninterrupted ocean
-                  views.
+                  One of Explora Journeys' greatest strengths is the amount of
+                  personal space available onboard. Explora IV has been
+                  thoughtfully designed with expansive indoor and outdoor
+                  gathering spaces, allowing guests to relax, unwind, and enjoy
+                  the journey without feeling crowded.
                 </p>
 
                 <div className="dve-winner-divider"></div>
 
-                <h4 className="dve-advantages-title">Every Suite Includes:</h4>
+                <h4 className="dve-advantages-title">Explora IV Offers:</h4>
 
                 <ul className="dve-advantages-list">
                   {[
-                    "Private oceanfront terrace",
-                    "Floor-to-ceiling windows",
-                    "Spacious bedroom",
-                    "Comfortable sitting area",
+                    "Multiple infinity pools",
+                    "Oceanfront terraces",
+                    "Elegant lounges",
+                    "Observation decks",
+                    "Quiet reading areas",
+                    "Outdoor seating throughout the ship",
                   ].map((item, i) => (
                     <li key={i}>
                       <Check size={18} className="dve-advantage-icon" />
@@ -980,7 +986,7 @@ const ExploraIIIGuide = () => {
               <div className="dve-winner-image-wrap">
                 <img
                   src={ExploraService}
-                  alt="Explora III at sea showcasing next-generation ship design"
+                  alt="Explora IV at sea showcasing next-generation ship design"
                   className="dve-winner-img"
                 />
                 <span className="dve-winner-badge">
@@ -994,21 +1000,25 @@ const ExploraIIIGuide = () => {
                 </h3>
 
                 <p className="dve-winner-intro">
-                  Explora III represents the next step in the fleet's evolution,
+                  Explora IV represents the next step in the fleet's evolution,
                   with an increased focus on environmental responsibility and
                   operational efficiency.
                 </p>
 
                 <div className="dve-winner-divider"></div>
 
-                <h4 className="dve-advantages-title">Guests Can Expect:</h4>
+                <h4 className="dve-advantages-title">
+                  Sustainability Initiatives May Include:
+                </h4>
 
                 <ul className="dve-advantages-list">
                   {[
-                    "Innovations that reduce environmental impact",
-                    "The high comfort standards Explora is known for",
-                    "Improvements that support more responsible travel",
-                    "No compromise to the guest experience",
+                    "Cleaner marine fuel technologies",
+                    "Energy-efficient systems",
+                    "Advanced waste management",
+                    "Water conservation systems",
+                    "Responsible sourcing practices",
+                    "Reduced emissions technologies",
                   ].map((item, i) => (
                     <li key={i}>
                       <ShieldCheck size={18} className="dve-advantage-icon" />
@@ -1022,22 +1032,21 @@ const ExploraIIIGuide = () => {
         </div>
       </section>
 
-      {/* ── EXPLORA III VS EXPLORA I & EXPLORA II ────────────────────────── */}
+      {/* ── EXPLORA IV VS EXPLORA I, II & III ────────────────────────── */}
       <section
         className="Asc-section Asc-bg-white"
-        id="explora-iii-vs-i-ii"
+        id="explora-iv-vs-i-ii"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Asc-container">
           <div className="Asc-section-header">
-            <h2 className="Asc-h2">
-              Explora III vs Explora I &amp; Explora II
-            </h2>
+            <h2 className="Asc-h2">Explora IV Compared with the Fleet</h2>
             <div className="Asc-accent-line"></div>
 
             <p className="Asc-body-text">
-              Many travelers wonder whether they should choose the newest ship.
-              The answer depends more on itinerary than the ship itself.
+              Across the fleet, the guest experience remains consistently
+              luxurious. For most travelers, itinerary and destination will play
+              a greater role than the specific ship they choose.
             </p>
           </div>
 
@@ -1049,12 +1058,14 @@ const ExploraIIIGuide = () => {
                   <th>Explora I</th>
                   <th>Explora II</th>
                   <th>Explora III</th>
+                  <th>Explora IV</th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr>
-                  <td>Luxury Suites</td>
+                  <td>Oceanfront Suites</td>
+                  <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
@@ -1064,15 +1075,18 @@ const ExploraIIIGuide = () => {
                   <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
+                  <td>✔</td>
                 </tr>
                 <tr>
                   <td>Flexible Dining</td>
                   <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
+                  <td>✔</td>
                 </tr>
                 <tr>
-                  <td>Wellness Facilities</td>
+                  <td>Luxury Spa</td>
+                  <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
@@ -1082,18 +1096,21 @@ const ExploraIIIGuide = () => {
                   <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
+                  <td>✔</td>
                 </tr>
                 <tr>
                   <td>Premium Restaurants</td>
                   <td>✔</td>
                   <td>✔</td>
                   <td>✔</td>
+                  <td>✔</td>
                 </tr>
                 <tr>
-                  <td>Modern Sustainability Features</td>
+                  <td>Latest Sustainability Technology</td>
                   <td>Excellent</td>
                   <td>Enhanced</td>
-                  <td>Latest Generation</td>
+                  <td>Advanced</td>
+                  <td>Next Generation</td>
                 </tr>
               </tbody>
             </table>
@@ -1113,6 +1130,110 @@ const ExploraIIIGuide = () => {
         </div>
       </section>
 
+      {/* ── LUXURY SUITES ───────────────────────────────────────────── */}
+      <section className="dmg-info-section dmg-bg-white" id="dmg-luxury-suites">
+        <div className="dmg-info-container">
+          <div className="dmg-info-grid">
+            {/* Left Side Image */}
+            <div className="dmg-info-media">
+              <div className="dmg-media-wrapper">
+                <img
+                  src={LuxuryOceanfront}
+                  alt="Luxury Suites aboard Explora IV"
+                  className="dmg-media-img"
+                  style={{ height: "650px" }}
+                />
+                <div className="dmg-media-overlay"></div>
+
+                <div className="dmg-media-badge">
+                  <span>Luxury Suites</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side Content */}
+            <div className="dmg-info-content">
+              <h2 className="dmg-info-title">
+                Luxury Suites Throughout the Ship
+              </h2>
+              <div className="dmg-info-accent"></div>
+
+              <p className="dmg-info-lead">
+                Every guest aboard Explora IV enjoys an oceanfront suite with a
+                private terrace. Standard features include:
+              </p>
+
+              <div className="dmg-info-features dmg-info-features-scrollable">
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Private Ocean Terrace
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      A spacious outdoor area perfect for breakfast, reading, or
+                      enjoying sunsets.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Spacious Living Areas
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Separate sitting areas create a residential feel rarely
+                      found on cruise ships.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">Luxury Bathrooms</h3>
+                    <p className="dmg-info-feature-desc">
+                      Elegant bathrooms include premium amenities, spacious
+                      showers, and upscale finishes.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">Premium Comfort</h3>
+                    <p className="dmg-info-feature-desc">
+                      Expect luxurious bedding, generous storage, advanced
+                      in-suite technology, and thoughtful design throughout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p
+                className="dmg-info-lead"
+                style={{ marginTop: "24px", fontSize: "1rem" }}
+              >
+                Guests seeking additional space can choose from several
+                higher-category suites offering expanded living areas and
+                exclusive amenities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── DESTINATIONS & ITINERARIES ─────────────────── */}
       <section className="luc-why-section" id="luc-destinations">
         <div className="luc-why-container">
@@ -1126,7 +1247,7 @@ const ExploraIIIGuide = () => {
             >
               <img
                 src={ExploraDestination}
-                alt="Explora III sailing in the Mediterranean"
+                alt="Explora IV sailing in the Mediterranean"
                 className="luc-why-img-main"
               />
               <div className="luc-why-img-overlay"></div>
@@ -1140,7 +1261,7 @@ const ExploraIIIGuide = () => {
             >
               <img
                 src={ExploraDestination2}
-                alt="Explora III visiting luxury cruise destinations"
+                alt="Explora IV visiting luxury cruise destinations"
                 className="luc-why-img-accent"
               />
 
@@ -1158,7 +1279,7 @@ const ExploraIIIGuide = () => {
             <div className="aac-accent-line aac-accent-white"></div>
 
             <p className="luc-why-intro">
-              Explora III will continue visiting many of the world's most
+              Explora IV will continue visiting many of the world's most
               desirable luxury cruise destinations, with itineraries designed
               for longer port stays and overnight visits.
             </p>
@@ -1198,7 +1319,7 @@ const ExploraIIIGuide = () => {
                 {
                   num: "07",
                   title: "Transatlantic Voyages",
-                  desc: "Enjoy leisurely days at sea while experiencing Explora III's luxurious onboard lifestyle.",
+                  desc: "Enjoy leisurely days at sea while experiencing Explora IV's luxurious onboard lifestyle.",
                 },
               ]
                 .slice(0, readMoreWhy ? 7 : 4)
@@ -1240,7 +1361,7 @@ const ExploraIIIGuide = () => {
               className="Asc-body-text"
               style={{ textAlign: "center", marginTop: "15px" }}
             >
-              One of the reasons many travelers appreciate Explora III is the
+              One of the reasons many travelers appreciate Explora IV is the
               generous range of inclusions, allowing guests to enjoy a seamless
               luxury vacation with fewer additional costs onboard.
             </p>
@@ -1250,7 +1371,7 @@ const ExploraIIIGuide = () => {
             <div className="adg-content-card-side">
               <img
                 src={LuxuryOceanfrontPool}
-                alt="Included amenities aboard Explora III"
+                alt="Included amenities aboard Explora IV"
                 className="adg-side-image"
                 style={{ height: "65vh" }}
               />
@@ -1295,55 +1416,131 @@ const ExploraIIIGuide = () => {
           </div>
         </div>
       </section>
-      {/* ── WHO WILL LOVE / WHO MAY PREFER ANOTHER LINE ─────────────── */}
-      <section className="Asc-section Asc-bg-white" id="Asc-who">
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Who Will Love Explora III?</h2>
-            <div className="Asc-accent-line"></div>
-            <p className="Asc-faq-intro">
-              Explora III is an excellent choice for travelers who appreciate
-              modern luxury — couples, retirees, food lovers, and experienced
-              luxury travelers are especially likely to enjoy the ship.
-            </p>
+
+      {/* WHO SHOULD SAIL EXPLORA IV? */}
+      <section className="afc-section afc-bg-white" id="afc-who-should-sail">
+        <div className="afc-container">
+          <div className="afc-section-header">
+            <h2 className="afc-h2">Who Should Sail Explora IV?</h2>
+            <div className="afc-accent-line"></div>
           </div>
 
-          <div className="Asc-who-grid">
-            <div className="Asc-who-card Asc-who-yes">
-              <h3 className="Asc-who-title">
-                You Will Appreciate Explora III If You:
-              </h3>
-              <ul className="Asc-who-list">
-                {[
-                  "Enjoy modern luxury",
-                  "Prefer spacious suites",
-                  "Appreciate gourmet dining",
-                  "Prefer quiet surroundings",
-                  "Value personalized service",
-                  "Enjoy wellness experiences",
-                  "Prefer destination-focused itineraries",
-                  "Enjoy boutique hotel-style experiences",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Check size={16} className="Asc-icon-green" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+          {/* Feature Split Layout */}
+          <div className="afc-split-layout">
+            {/* Left Column */}
+            <div className="afc-content-side">
+              <div className="afc-insight-card">
+                <p className="afc-lead-text">
+                  <strong>
+                    Explora IV is an excellent choice for travelers who
+                    appreciate:
+                  </strong>
+                </p>
+
+                <div className="afc-why-box">
+                  <span className="afc-why-title">Perfect For</span>
+
+                  <p className="afc-why-text">
+                    Boutique luxury hotels, spacious accommodations, fine
+                    dining, personalized service, wellness experiences,
+                    contemporary design, quiet elegance, and destination-focused
+                    travel.
+                  </p>
+                </div>
+              </div>
+
+              <div className="afc-recommendations-wrapper">
+                <h3 className="afc-sub-title">
+                  Travelers Will Love Explora IV For:
+                </h3>
+
+                <div className="afc-rec-grid">
+                  {[
+                    "Boutique luxury hotels",
+                    "Spacious accommodations",
+                    "Fine dining",
+                    "Personalized service",
+                    "Wellness experiences",
+                    "Contemporary design",
+                    "Quiet elegance",
+                  ].map((item, i) => (
+                    <div key={i} className="afc-rec-card">
+                      <div className="afc-rec-icon">
+                        <Check size={18} />
+                      </div>
+                      <span className="afc-rec-label">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
+            {/* Right Column */}
+            <div className="afc-media-side">
+              <div className="afc-image-wrapper" style={{ aspectRatio: "4/5" }}>
+                <img
+                  src={LuxuryOceanfront1}
+                  alt="Couple enjoying the luxury experience aboard Explora IV"
+                  className="afc-showcase-image"
+                />
+              </div>
+
+              <div className="afc-strategy-box" style={{ height: "250px" }}>
+                <p className="afc-strategy-lead">
+                  Explora IV is particularly well suited for:
+                </p>
+
+                <div className="afc-strategy-tags">
+                  {[
+                    "Couples",
+                    "Retirees",
+                    "Solo travelers",
+                    "Food & wine enthusiasts",
+                    "Luxury travelers",
+                    "Celebration vacations",
+                  ].map((tag, idx) => (
+                    <span key={idx} className="afc-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO MAY PREFER ANOTHER CRUISE LINE? */}
+      <section className="Asc-section Asc-bg-soft" id="Asc-who">
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Who May Prefer Another Cruise Line?</h2>
+
+            <div className="Asc-accent-line"></div>
+          </div>
+
+          <div
+            className="Asc-who-grid"
+            style={{
+              gridTemplateColumns: "1fr",
+              maxWidth: "800px",
+              margin: "0 auto",
+            }}
+          >
             <div className="Asc-who-card Asc-who-no">
               <h3 className="Asc-who-title">
-                You May Prefer Another Cruise Line If You Want:
+                Explora IV May Not Be the Best Fit for Travelers Seeking:
               </h3>
+
               <ul className="Asc-who-list">
                 {[
-                  "Water slides",
-                  "Large casinos",
+                  "Water parks",
                   "Theme park attractions",
-                  "Character entertainment",
-                  "Broadway productions",
+                  "Large casinos",
+                  "Broadway-style entertainment",
+                  "Character experiences",
                   "High-energy nightlife",
+                  "Constant organized activities",
                 ].map((item, i) => (
                   <li key={i}>
                     <Minus size={16} className="Asc-icon-muted" />
@@ -1358,78 +1555,15 @@ const ExploraIIIGuide = () => {
             className="Asc-body-text"
             style={{
               maxWidth: "760px",
-              margin: "40px auto 0",
+              margin: "32px auto 0",
               textAlign: "center",
             }}
           >
-            Families with young children who prioritize kids' clubs and themed
-            entertainment may find other cruise lines more suitable.
+            Travelers looking for peaceful luxury rather than nonstop
+            entertainment will likely appreciate Explora IV's refined approach,
+            while those seeking action-packed days and high-energy attractions
+            may find another cruise line better suited to their vacation style.
           </p>
-        </div>
-      </section>
-
-      {/* ── PUBLIC SPACES ───────────────────────────────────── */}
-      <section className="adg-c-section adg-c-bg-soft" id="adg-c-public-spaces">
-        <div className="adg-c-container">
-          <div className="adg-c-section-header">
-            <h2 className="adg-c-h2">Public Spaces</h2>
-            <div className="adg-c-accent-line"></div>
-
-            <p className="Asc-section-intro">
-              One of Explora Journeys' defining characteristics is its spacious
-              public areas. Explora III is thoughtfully designed with elegant,
-              open spaces where guests can relax, socialize, or simply enjoy the
-              surrounding ocean throughout the day.
-            </p>
-          </div>
-
-          <div className="adg-c-overview-layout">
-            <div className="adg-c-overview-icons">
-              {[
-                "Infinity pools",
-                "Outdoor lounges",
-                "Observation decks",
-                "Cocktail lounges",
-                "Quiet reading areas",
-                "Oceanfront terraces",
-                 "Panoramic ocean views",
-              ].map((label, i) => (
-                <div key={i} className="adg-c-overview-item">
-                  <span className="adg-c-overview-icon">
-                    <Check size={16} strokeWidth={2.5} />
-                  </span>
-                  <span className="adg-c-overview-label">{label}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="adg-c-overview-right">
-              <div className="adg-c-overview-callout">
-                <div className="adg-c-overview-callout-inner">
-                  <Star size={28} className="adg-c-callout-star" />
-                  <p className="adg-c-callout-text">
-                    The ship is designed so guests rarely feel crowded, even on
-                    sea days, creating a calm and refined atmosphere throughout
-                    every voyage.
-                  </p>
-                </div>
-              </div>
-
-              <div className="adg-c-overview-image-wrap">
-                <img
-                  src={LuxuryOceanfront}
-                  alt="Elegant public spaces aboard Explora III"
-                  className="adg-c-overview-img"
-                />
-
-                <div className="adg-c-overview-img-overlay">
-                  <span className="adg-c-overview-img-label">
-                    Spacious Places to Relax
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -1445,7 +1579,7 @@ const ExploraIIIGuide = () => {
 
             <p className="ugt-advantage-intro">
               A little planning can make a significant difference to your
-              Explora III experience. These simple tips can help you choose the
+              Explora IV experience. These simple tips can help you choose the
               right sailing, accommodations, and onboard experiences.
             </p>
           </div>
@@ -1521,41 +1655,40 @@ const ExploraIIIGuide = () => {
         </div>
       </section>
 
-{/* ── FEEL THE OCEAN STATE OF MIND ───────────────────────── */}
-<section
-  className="Asc-video-section"
-  id="Asc-video-ocean-state"
-  style={{ backgroundColor: "var(--bg-white)" }}
->
-  <div className="Asc-container">
-    <div className="Asc-section-header">
-      <h2 className="Asc-h2">
-        Feel the Ocean State of Mind with Explora Journeys
-      </h2>
+      {/* ── DISCOVER EXPLORA JOURNEYS DESTINATIONS ───────────────────────── */}
+      <section
+        className="Asc-video-section"
+        id="Asc-video-destinations"
+        style={{ backgroundColor: "var(--bg-white)" }}
+      >
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">
+              Discover Our Destinations | Explora Journeys
+            </h2>
 
-      <div className="Asc-accent-line"></div>
+            <div className="Asc-accent-line"></div>
 
-      <p className="Asc-video-intro">
-        Experience the philosophy that defines Explora Journeys. Discover
-        how the rhythm of the sea, refined design, exceptional hospitality,
-        and meaningful moments come together to create a calm, restorative,
-        and truly luxurious way to travel.
-      </p>
-    </div>
+            <p className="Asc-video-intro">
+              Explore the remarkable destinations visited by Explora Journeys,
+              from iconic coastlines and vibrant cities to hidden harbors and
+              lesser-known gems. 
+            </p>
+          </div>
 
-    <div className="Asc-video-wrapper">
-      <div className="Asc-video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/_0LLHXCZKV8"
-          title="Feel The Ocean State of Mind | Explora Journeys"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+          <div className="Asc-video-wrapper">
+            <div className="Asc-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/uRRZm11tK5U"
+                title="Discover our Destinations | Explora Journeys"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* WHY BOOK THROUGH A LUXURY TRAVEL ADVISOR? */}
       <section
@@ -1783,7 +1916,7 @@ const ExploraIIIGuide = () => {
             <div className="Asc-accent-line"></div>
             <p className="Asc-faq-intro">
               Everything travelers need to know before deciding whether Explora
-              I is the right luxury cruise ship for them.
+              IV is the right luxury cruise ship for them.
             </p>
           </div>
           <FAQ />
@@ -1794,7 +1927,7 @@ const ExploraIIIGuide = () => {
         <div className="Asc-help-bg-wrap">
           <img
             src={ExploraShip}
-            alt="Explora III luxury cruise ship"
+            alt="Explora IV luxury cruise ship"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -1814,7 +1947,7 @@ const ExploraIIIGuide = () => {
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    Explora III successfully builds upon everything that made
+                    Explora IV successfully builds upon everything that made
                     Explora I such a success. Rather than making dramatic
                     changes, it refines an already exceptional concept—offering
                     spacious all-suite accommodations, outstanding dining,
@@ -1844,7 +1977,7 @@ const ExploraIIIGuide = () => {
                       <p className="Asc-help-intro">
                         Whether you're new to luxury cruising or an experienced
                         traveler looking for a contemporary alternative to
-                        traditional luxury cruise lines, Explora III delivers an
+                        traditional luxury cruise lines, Explora IV delivers an
                         experience that feels calm, elegant, and refreshingly
                         unhurried.
                       </p>
@@ -1852,7 +1985,7 @@ const ExploraIIIGuide = () => {
                       <p className="Asc-help-intro">
                         For travelers who believe luxury is about space,
                         exceptional hospitality, and meaningful travel rather
-                        than constant activity, Explora III is one of the finest
+                        than constant activity, Explora IV is one of the finest
                         ships sailing today.
                         <button
                           onClick={() => setReadMore(false)}
@@ -1878,7 +2011,7 @@ const ExploraIIIGuide = () => {
                       className="Asc-help-cta-btn"
                       style={{ textDecoration: "none" }}
                     >
-                      Start Planning Your Explora III Journey
+                      Start Planning Your Explora IV Journey
                       <ArrowRight size={18} />
                     </Link>
                   </div>
@@ -1891,7 +2024,7 @@ const ExploraIIIGuide = () => {
 
                   <ul className="Asc-help-bullets">
                     {[
-                      "Determine whether Explora III matches your travel style",
+                      "Determine whether Explora IV matches your travel style",
                       "Recommend the ideal itinerary",
                       "Select the right suite",
                       "Compare promotional offers",
@@ -1956,6 +2089,10 @@ const ExploraIIIGuide = () => {
                       path: "/explora-ii-review",
                     },
                     {
+                      label: "Explora III Guide",
+                      path: "/explora-iii-guide",
+                    },
+                    {
                       label: "What Makes Explora Journeys Different?",
                       path: "/what-makes-explora-journeys-different",
                     },
@@ -1970,10 +2107,6 @@ const ExploraIIIGuide = () => {
                     {
                       label: "Which Explora Suite Is Worth the Upgrade?",
                       path: "/which-explora-suite-is-worth-the-upgrade",
-                    },
-                    {
-                      label: "Is Anthology Worth It?",
-                      path: "/is-anthology-worth-it",
                     },
                     {
                       label: "Planning Your First Explora Journey",
@@ -2019,4 +2152,4 @@ const ExploraIIIGuide = () => {
   );
 };
 
-export default ExploraIIIGuide;
+export default ExploraIVGuide;

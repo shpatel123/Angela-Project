@@ -672,6 +672,38 @@ const Nav = () => {
               >
                 Explora III Guide
               </NavLink>
+
+              <NavLink
+                to="/explora-iv-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora IV Guide
+              </NavLink>
+
+              <NavLink
+                to="/dining-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Dining on Explora Journeys
+              </NavLink>
+
+              <NavLink
+                to="/explora-journeys-wellness-experience"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Explora journeys wellness experience
+              </NavLink>
+
+              <NavLink
+                to="/entertainment-life-onboard-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Entertainment life onboard explora journeys
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1338,6 +1370,38 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Explora III Guide
+            </NavLink>
+
+            <NavLink
+              to="/explora-iv-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora IV Guide
+            </NavLink>
+
+            <NavLink
+              to="/dining-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Dining on Explora Journeys
+            </NavLink>
+
+            <NavLink
+              to="/explora-journeys-wellness-experience"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Explora journeys wellness experience
+            </NavLink>
+
+            <NavLink
+              to="/entertainment-life-onboard-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Entertainment life onboard explora journeys
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
