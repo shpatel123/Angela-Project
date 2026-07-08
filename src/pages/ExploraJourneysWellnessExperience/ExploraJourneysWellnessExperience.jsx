@@ -30,9 +30,9 @@ import AboutImage from "../../assets/AboutAngela2.jpeg";
 
 import HeroImage1 from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
 import HeroImage2 from "../../assets/ExploraIVGuide/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg";
-import HeroImage3 from "../../assets/ExploraIVGuide/explora-I-infinity-pool-aerial-view.jpg";
-import ExploraPool from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-oceanfront-pool-lounge-deck.jpg";
-import ExploraPool1 from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.jpg";
+import HeroImage3 from "../../assets/ExploraIVGuide/explora-I-infinity-pool-aerial-view.JPG";
+import ExploraPool from "../../assets/WhichExploraSuiteWorthUpgrade/explora-I-oceanfront-pool-lounge-deck.JPG";
+import ExploraPool1 from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
 import ExploraSpa from "../../assets/HowAdvanceShouldBookExplora/explora-journeys-luxury-ocean-wellness-spa-relaxation-room.jpg";
 import ExploraOutdoor from "../../assets/HowAdvanceShouldBookExplora/Explora-Journeys.webp";
 import ExploraDining from "../../assets/IsExploraGoodForFamilies/Fine-Dining.webp";

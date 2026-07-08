@@ -33,14 +33,14 @@ import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
 import HeroImage1 from "../../assets/ExploraIVGuide/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg";
-import HeroImage2 from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.jpg";
+import HeroImage2 from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
 import HeroImage3 from "../../assets/ExploraIVGuide/explorajourny.jpg";
 import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
 import ExploraDining from "../../assets/WhichExploraSuiteWorthUpgrade/explora-luxury-dining.jpg";
 import ExploraAtmosphere  from "../../assets/WhichExploraSuiteWorthUpgrade/explora-journeys-oceanfront-infinity-pool-deck.jpg";
 import ExploraEnough  from "../../assets/IsExploraGoodForFamilies/Explora-Journeys.webp";
 import LuxuryOceanfront from "../../assets/WhichExploraSuiteWorthUpgrade/Regent-Seven-Seas-Cruises.webp";
-import LuxuryOnboard from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.jpg";
+import LuxuryOnboard from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.JPG";
 import LuxuryOceanfront1 from "../../assets/IsExploraGoodForFamilies/explora-journeys-sunrise-pool-deck-luxury-yacht.webp";
 import LuxuryNight from "../../assets/ExploraIVGuide/ExploraIIMonacoGP25_byRomainReglade3.webp";
 import ExploraShip from "../../assets/ExploraJourneysWorth/Explora-Journeys3.webp";
