@@ -704,6 +704,38 @@ const Nav = () => {
               >
                 Entertainment life onboard explora journeys
               </NavLink>
+
+              <NavLink
+                to="/mediterranean-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Mediterranean cruises on explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/greece-greek-isles-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Greece greek isles cruises on explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/japan-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Japan Cruises on explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/alaska-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Alaska Cruises on explora journeys
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1402,6 +1434,38 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Entertainment life onboard explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/mediterranean-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Mediterranean cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/greece-greek-isles-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Greece greek isles cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/japan-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Japan Cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/alaska-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Alaska Cruises on explora journeys
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

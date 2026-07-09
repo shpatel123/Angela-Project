@@ -87,6 +87,10 @@ import ExploraIVGuide from "./pages/ExploraIVGuide/ExploraIVGuide";
 import DiningExploraJourneys from "./pages/DiningExploraJourneys/DiningExploraJourneys";
 import ExploraJourneysWellnessExperience from "./pages/ExploraJourneysWellnessExperience/ExploraJourneysWellnessExperience";
 import EntertainmentLifeOnboardExploraJourneys from "./pages/EntertainmentLifeOnboardExploraJourneys/EntertainmentLifeOnboardExploraJourneys";
+import MediterraneanCruisesExploraJourneys from "./pages/MediterraneanCruisesExploraJourneys/MediterraneanCruisesExploraJourneys";
+import GreeceGreekIslesCruisesExploraJourneys from "./pages/GreeceGreekIslesCruisesExploraJourneys/GreeceGreekIslesCruisesExploraJourneys";
+import JapanCruisesExploraJourneys from "./pages/JapanCruisesExploraJourneys/JapanCruisesExploraJourneys";
+import AlaskaCruisesExploraJourneys from "./pages/AlaskaCruisesExploraJourneys/AlaskaCruisesExploraJourneys";
 
 function App() {
   return (
@@ -472,6 +476,10 @@ function App() {
           <Route path="/dining-on-explora-journeys" element={<DiningExploraJourneys />} />
           <Route path="/explora-journeys-wellness-experience" element={<ExploraJourneysWellnessExperience />} />
           <Route path="/entertainment-life-onboard-explora-journeys" element={<EntertainmentLifeOnboardExploraJourneys />} />
+          <Route path="/mediterranean-cruises-on-explora-journeys" element={<MediterraneanCruisesExploraJourneys />} />
+          <Route path="/greece-greek-isles-cruises-on-explora-journeys" element={<GreeceGreekIslesCruisesExploraJourneys />} />
+          <Route path="/japan-cruises-on-explora-journeys" element={<JapanCruisesExploraJourneys />} />
+          <Route path="/alaska-cruises-on-explora-journeys" element={<AlaskaCruisesExploraJourneys />} />
 
         </Routes>
       </BrowserRouter>
