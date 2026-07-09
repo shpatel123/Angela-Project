@@ -38,7 +38,7 @@ import HeroImage2 from "../../assets/JapanCruisesExploraJourneys/Asia-Ship-a-Lon
 import HeroImage3 from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
 import ExploraSuite from "../../assets/ExploraIVGuide/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg";
 import JapanCoastlineImage from "../../assets/JapanCruisesExploraJourneys/okinawa-japan-tropical-island-aerial-beach-travel.jpg";
-import LifeOnboardImage from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.jpg";
+import LifeOnboardImage from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.JPG";
 import CTAImage from "../../assets/JapanCruisesExploraJourneys/angela-hughes-kiyomizu-dera-kyoto-autumn-foliage-japan-luxury-travel.jpg";
 
 import TokyoImg from "../../assets/JapanCruisesExploraJourneys/tokyo-shibuya-crossing.webp";

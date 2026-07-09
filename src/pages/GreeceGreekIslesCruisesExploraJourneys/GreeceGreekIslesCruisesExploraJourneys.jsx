@@ -37,7 +37,7 @@ import AboutImage from "../../assets/AboutAngela2.jpeg";
 import HeroImage1 from "../../assets/WhichMediterraneanItineraryIsBest/CONSIDERATIO-MED-copia-Summer.jpg";
 import HeroImage2 from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
 import ExploraPort from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORAI-Mediterranean.jpg";
-import AegeanDay from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.jpg";
+import AegeanDay from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
 import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
 import ExploraPool1 from "../../assets/WhichExploraShipChoose/explora-journeys-atoll-pool-luxury-cruise-deck.jpg";
 import ExploraDining from "../../assets/ExploraIVGuide/explora-journeys-ocean-grand-terrace-suite-balcony.jpg";
