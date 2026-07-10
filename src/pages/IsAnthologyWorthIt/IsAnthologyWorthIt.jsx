@@ -348,25 +348,24 @@ const IsAnthologyWorthIt = () => {
           <p>
             The answer depends on what you're looking for. If you appreciate
             fine dining, enjoy tasting menus, or are celebrating a special
-            occasion, Anthology can be one of the most memorable meals of
-            your voyage.
+            occasion, Anthology can be one of the most memorable meals of your
+            voyage.
           </p>
 
           {readMore && (
             <>
               <p>
-                Unlike Explora's six included dining venues, Anthology offers
-                an exclusive tasting menu experience with premium
-                ingredients, elegant presentation, and highly personalized
-                service. Because it comes with an additional charge, many
-                travelers wonder whether the experience justifies the cost.
+                Unlike Explora's six included dining venues, Anthology offers an
+                exclusive tasting menu experience with premium ingredients,
+                elegant presentation, and highly personalized service. Because
+                it comes with an additional charge, many travelers wonder
+                whether the experience justifies the cost.
               </p>
 
               <p>
                 However, if you're already satisfied with Explora's
-                complimentary restaurants, you may find that the included
-                dining options provide excellent value without the
-                additional expense.
+                complimentary restaurants, you may find that the included dining
+                options provide excellent value without the additional expense.
               </p>
             </>
           )}
@@ -399,6 +398,9 @@ const IsAnthologyWorthIt = () => {
                 "Refined culinary techniques",
                 "Intimate, elegant atmosphere",
                 "Sophisticated wine program",
+                "Curated chef-led dining experience",
+                "Exceptional service and presentation",
+                "Reservations recommended for guests",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -414,15 +416,15 @@ const IsAnthologyWorthIt = () => {
                 <div className="adg-c-overview-callout-inner">
                   <Star size={28} className="adg-c-callout-star" />
                   <p className="adg-c-callout-text">
-                    Rather than serving an à la carte menu, Anthology focuses
-                    on a carefully crafted multi-course tasting menu designed
-                    to offer an elevated culinary experience beyond the
+                    Rather than serving an à la carte menu, Anthology focuses on
+                    a carefully crafted multi-course tasting menu designed to
+                    offer an elevated culinary experience beyond the
                     complimentary restaurants onboard.
                   </p>
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: "400px"}}>
                 <img
                   src={FineDining4}
                   alt="Anthology specialty restaurant fine dining aboard Explora Journeys"
@@ -439,7 +441,6 @@ const IsAnthologyWorthIt = () => {
         </div>
       </section>
 
-      
       {/* ── HOW MUCH DOES ANTHOLOGY COST ────────────────────────────── */}
       <section className="dmg-info-section dmg-bg-white" id="dmg-cost">
         <div className="dmg-info-container">
@@ -449,7 +450,7 @@ const IsAnthologyWorthIt = () => {
                 <img
                   src={LuxuryOceanfrontSuites}
                   alt="Elegant Anthology dining table setting aboard Explora Journeys"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: "73vh"}}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -509,8 +510,8 @@ const IsAnthologyWorthIt = () => {
                       Reservations Recommended
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Booking before sailing helps secure your preferred
-                      evening and seating time.
+                      Booking before sailing helps secure your preferred evening
+                      and seating time.
                     </p>
                   </div>
                 </div>
@@ -589,7 +590,6 @@ const IsAnthologyWorthIt = () => {
           </div>
         </div>
       </section>
-
 
       {/* ══ WHAT CAN YOU EXPECT ══════════════════════════════════════ */}
       <section className="dac-families-section">
@@ -683,8 +683,8 @@ const IsAnthologyWorthIt = () => {
 
           <p className="Asc-body-text" style={{ marginBottom: "20px" }}>
             Anthology isn't necessarily "better" because the included
-            restaurants are lacking. Instead, it offers a completely
-            different type of experience.
+            restaurants are lacking. Instead, it offers a completely different
+            type of experience.
           </p>
 
           <div className="Asc-table-wrapper">
@@ -731,9 +731,8 @@ const IsAnthologyWorthIt = () => {
           </div>
 
           <p className="Asc-body-text" style={{ marginTop: "2rem" }}>
-            Many guests choose Anthology once during their cruise while
-            enjoying the included restaurants for the remainder of their
-            voyage.
+            Many guests choose Anthology once during their cruise while enjoying
+            the included restaurants for the remainder of their voyage.
           </p>
         </div>
       </section>
@@ -770,10 +769,10 @@ const IsAnthologyWorthIt = () => {
                 </h3>
 
                 <p className="ugt-component-text">
-                  Explora Journeys already offers some of the best
-                  complimentary dining at sea, making this a fair question.
-                  Included restaurants provide outstanding meals, generous
-                  variety, and excellent service without additional charges.
+                  Explora Journeys already offers some of the best complimentary
+                  dining at sea, making this a fair question. Included
+                  restaurants provide outstanding meals, generous variety, and
+                  excellent service without additional charges.
                 </p>
 
                 <div className="ugt-questions-box">
@@ -805,8 +804,7 @@ const IsAnthologyWorthIt = () => {
                 >
                   Anthology isn't meant to replace Explora's included
                   restaurants — it offers a unique culinary experience for
-                  travelers who appreciate exceptional food and elegant
-                  service.
+                  travelers who appreciate exceptional food and elegant service.
                 </p>
               </div>
             </div>
@@ -856,8 +854,8 @@ const IsAnthologyWorthIt = () => {
               </div>
               <h4 className="ugt-card-title">Exceptional Service</h4>
               <p className="ugt-card-desc">
-                Personalized table service that feels attentive without
-                being overly formal.
+                Personalized table service that feels attentive without being
+                overly formal.
               </p>
             </div>
 
@@ -867,8 +865,8 @@ const IsAnthologyWorthIt = () => {
               </div>
               <h4 className="ugt-card-title">Premium Ingredients</h4>
               <p className="ugt-card-desc">
-                High-quality seafood, meats, and seasonal produce prepared
-                with care.
+                High-quality seafood, meats, and seasonal produce prepared with
+                care.
               </p>
             </div>
 
@@ -886,7 +884,7 @@ const IsAnthologyWorthIt = () => {
         </div>
       </section>
 
-            {/* ── IS ANTHOLOGY WORTH THE EXTRA COST ───────────────────────── */}
+      {/* ── IS ANTHOLOGY WORTH THE EXTRA COST ───────────────────────── */}
       <section className="dmg-info-section dmg-bg-white" id="dmg-worth-it">
         <div className="dmg-info-container">
           <div className="dmg-info-grid">
@@ -898,10 +896,10 @@ const IsAnthologyWorthIt = () => {
 
               <p className="dmg-info-lead">
                 For many guests, yes — but only if you enjoy fine dining.
-                Anthology isn't meant to replace Explora's included
-                restaurants. Instead, it offers a unique culinary experience
-                for travelers who appreciate exceptional food, elegant
-                service, and thoughtfully crafted tasting menus.
+                Anthology isn't meant to replace Explora's included restaurants.
+                Instead, it offers a unique culinary experience for travelers
+                who appreciate exceptional food, elegant service, and
+                thoughtfully crafted tasting menus.
               </p>
 
               <div className="dmg-info-features dmg-info-features-scrollable">
@@ -910,12 +908,10 @@ const IsAnthologyWorthIt = () => {
                     <Check size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      For Celebrations
-                    </h3>
+                    <h3 className="dmg-info-feature-title">For Celebrations</h3>
                     <p className="dmg-info-feature-desc">
-                      If you're celebrating a special occasion, the
-                      additional cost can be well worth it.
+                      If you're celebrating a special occasion, the additional
+                      cost can be well worth it.
                     </p>
                   </div>
                 </div>
@@ -944,9 +940,8 @@ const IsAnthologyWorthIt = () => {
                       For Value-Focused Guests
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      If your priority is maximizing value, you'll still
-                      enjoy excellent meals throughout your cruise at no
-                      extra cost.
+                      If your priority is maximizing value, you'll still enjoy
+                      excellent meals throughout your cruise at no extra cost.
                     </p>
                   </div>
                 </div>
@@ -958,7 +953,7 @@ const IsAnthologyWorthIt = () => {
                 <img
                   src={FineDining3}
                   alt="Anthology fine dining experience aboard Explora Journeys"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: "80vh"}}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -979,11 +974,10 @@ const IsAnthologyWorthIt = () => {
               marginRight: "auto",
             }}
           >
-            Because the complimentary restaurants are already among the best
-            at sea, you won't feel like you're missing out if you skip
-            Anthology. However, for travelers who love tasting menus and
-            memorable culinary experiences, it offers something truly
-            special.
+            Because the complimentary restaurants are already among the best at
+            sea, you won't feel like you're missing out if you skip Anthology.
+            However, for travelers who love tasting menus and memorable culinary
+            experiences, it offers something truly special.
           </p>
         </div>
       </section>
@@ -999,9 +993,9 @@ const IsAnthologyWorthIt = () => {
             <h2 className="Ejvs-section-title">Potential Drawbacks</h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejvs-section-subtitle">
-              Anthology may not be the right choice for every traveler.
-              Because Explora already offers high-quality complimentary
-              dining, some guests decide the additional cost isn't necessary.
+              Anthology may not be the right choice for every traveler. Because
+              Explora already offers high-quality complimentary dining, some
+              guests decide the additional cost isn't necessary.
             </p>
           </div>
 
@@ -1011,7 +1005,9 @@ const IsAnthologyWorthIt = () => {
                 <div className="Ejvs-card-icon-wrap">
                   <Minus size={24} className="Ejvs-card-icon" />
                 </div>
-                <h3 className="Ejvs-card-title">Consider Skipping It If You:</h3>
+                <h3 className="Ejvs-card-title">
+                  Consider Skipping It If You:
+                </h3>
               </div>
 
               <p className="Ejvs-card-intro">
@@ -1037,8 +1033,8 @@ const IsAnthologyWorthIt = () => {
 
               <div className="Ejvs-card-highlight">
                 <p>
-                  Explora's included restaurants already provide excellent
-                  value without any additional charge.
+                  Explora's included restaurants already provide excellent value
+                  without any additional charge.
                 </p>
               </div>
             </div>
@@ -1074,8 +1070,8 @@ const IsAnthologyWorthIt = () => {
 
               <div className="Ejvs-card-highlight">
                 <p>
-                  Travelers focused on value will still enjoy excellent
-                  meals throughout the cruise at no extra cost.
+                  Travelers focused on value will still enjoy excellent meals
+                  throughout the cruise at no extra cost.
                 </p>
               </div>
             </div>
@@ -1132,15 +1128,13 @@ const IsAnthologyWorthIt = () => {
               marginInline: "auto",
             }}
           >
-            For many guests, booking one dinner at Anthology strikes the
-            perfect balance: enjoying Explora's outstanding included dining
-            throughout the cruise while treating yourself to one
-            unforgettable evening of fine dining.
+            For many guests, booking one dinner at Anthology strikes the perfect
+            balance: enjoying Explora's outstanding included dining throughout
+            the cruise while treating yourself to one unforgettable evening of
+            fine dining.
           </p>
         </div>
       </section>
-
-
 
       {/* ── ANGELA HUGHES AUTHORITY BOX ─────────────────────────────── */}
       <section className="Adg-expert-section" id="Asc-expert-insight">
@@ -1249,10 +1243,10 @@ const IsAnthologyWorthIt = () => {
                   className="Adg-expert-role"
                   style={{ marginTop: "24px", lineHeight: "1.8" }}
                 >
-                  Angela Hughes and the team at Trips &amp; Ships Luxury
-                  Travel help travelers decide exactly when an Anthology
-                  reservation is worth it — and when Explora's included
-                  restaurants are the better fit for the evening.
+                  Angela Hughes and the team at Trips &amp; Ships Luxury Travel
+                  help travelers decide exactly when an Anthology reservation is
+                  worth it — and when Explora's included restaurants are the
+                  better fit for the evening.
                 </p>
               </div>
             </div>
@@ -1307,21 +1301,24 @@ const IsAnthologyWorthIt = () => {
                   </p>
 
                   <p className="Asc-help-intro">
-                    From securing a reservation at the right time to
-                    pairing it with the perfect occasion, expert support
-                    helps you make the most of every dining experience
-                    onboard.
+                    From securing a reservation at the right time to pairing it
+                    with the perfect occasion, expert support helps you make the
+                    most of every dining experience onboard.
                   </p>
 
                   <p className="Asc-help-intro">
                     Whether you're celebrating a milestone or simply love
-                    exceptional food, personalized planning ensures your
-                    Explora Journeys voyage includes the right balance of
-                    included and specialty dining.
+                    exceptional food, personalized planning ensures your Explora
+                    Journeys voyage includes the right balance of included and
+                    specialty dining.
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Explora Journey
                       <ArrowRight size={18} />
                     </Link>

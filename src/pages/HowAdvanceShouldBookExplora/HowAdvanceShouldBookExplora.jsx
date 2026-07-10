@@ -783,6 +783,8 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
                 "Better location choices",
                 "Promotional fares",
                 "Flexible planning",
+                    "Access to exclusive offers",
+    "More time to customize your journey",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1093,7 +1095,7 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
                 <img
                   src={LuxuryOceanfrontSuites}
                   alt="Luxury oceanfront suite aboard an Explora Journeys ship"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: '72vh'}}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1144,7 +1146,7 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: '200px'}}>
                 <img
                   src={ExploraDetination4}
                   alt="Explora Journeys guests enjoying a luxury cruise voyage"
@@ -1177,7 +1179,7 @@ const HowFarInAdvanceShouldYouBookExplora = () => {
                 src={ExploraShip}
                 alt="Explora Journeys luxury cruise ship at sea"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "25vh" }}
               />
               <div className="adg-info-card">
                 <div className="adg-card-meta">

@@ -734,6 +734,8 @@ const HowToGetTheBestValueOnExploraJourneys = () => {
                 "Flexible payment schedules",
                 "Better peak-season availability",
                 "More planning time overall",
+                "More choice of suite locations",
+                "Higher availability for shore experiences",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1017,7 +1019,7 @@ const HowToGetTheBestValueOnExploraJourneys = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                      src={LuxuryOceanfrontSuites}
+                    src={LuxuryOceanfrontSuites}
                     alt="Travel planning budget including flights, hotels, and cruise expenses"
                     className="ugt-component-image"
                   />
@@ -1206,6 +1208,7 @@ const HowToGetTheBestValueOnExploraJourneys = () => {
                   src={Exploradining}
                   alt="Luxury oceanfront suite aboard an Explora Journeys ship"
                   className="dmg-media-img"
+                  style={{ height: "78vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1260,6 +1263,14 @@ const HowToGetTheBestValueOnExploraJourneys = () => {
                 {
                   title: "Relaxed Sophistication",
                   desc: "An elegant yet comfortable onboard environment without formality.",
+                },
+                {
+                  title: "Oceanfront Living",
+                  desc: "Private terraces and sweeping sea views create a seamless connection to the ocean.",
+                },
+                {
+                  title: "Flexible Onboard Experience",
+                  desc: "Enjoy your days at your own pace with no rigid schedules or crowded activities.",
                 },
               ].map((item, i) => (
                 <div key={i} className="adg-c-overview-item">
@@ -1322,7 +1333,7 @@ const HowToGetTheBestValueOnExploraJourneys = () => {
                 src={ExploraSuite}
                 alt="Explora Journeys luxury cruise ship at sea"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "28vh" }}
               />
               <div className="adg-info-card">
                 <div className="adg-card-meta">
@@ -1388,6 +1399,7 @@ const HowToGetTheBestValueOnExploraJourneys = () => {
                   src={ExploraPool2}
                   alt="Luxury cruise suite promotion and special offers"
                   className="dmg-media-img"
+                  style={{ height: "70vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1706,7 +1718,11 @@ const HowToGetTheBestValueOnExploraJourneys = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Explora Journey
                       <ArrowRight size={18} />
                     </Link>

@@ -390,6 +390,8 @@ const IsExploraGoodForFamilies = () => {
                 "Relaxed luxury",
                 "Destination immersion",
                 "Elegant public spaces",
+                  "Enriching onboard entertainment",
+    "Multiple pools and outdoor decks",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -414,7 +416,7 @@ const IsExploraGoodForFamilies = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: "400px"}}>
                 <img
                   src={ExploraSuite}
                   alt="Explora Journeys luxury ocean-front suite experience"
@@ -441,7 +443,7 @@ const IsExploraGoodForFamilies = () => {
                 <img
                   src={ExploraSuites}
                   alt="Family enjoying Explora Journeys luxury cruise experience"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: '72vh'}}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -951,7 +953,7 @@ const IsExploraGoodForFamilies = () => {
                 src={ExploraDesti3}
                 alt="Family activities and experiences on Explora Journeys"
                 className="adg-side-image"
-                style={{ height: "40vh", border: "1px solid" }}
+                style={{ height: "30vh"}}
               />
 
               <div className="adg-info-card">
@@ -1096,7 +1098,7 @@ const IsExploraGoodForFamilies = () => {
                 <img
                   src={ExploraDining}
                   alt="Multi-generational family enjoying an Explora Journeys cruise"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: "72vh"}}
                 />
 
                 <div className="dmg-media-overlay"></div>

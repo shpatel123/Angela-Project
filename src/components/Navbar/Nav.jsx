@@ -736,6 +736,38 @@ const Nav = () => {
               >
                 Alaska Cruises on explora journeys
               </NavLink>
+
+              <NavLink
+                to="/caribbean-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Caribbean Cruises on explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/northern-europe-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Northern Europe Cruises on explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/iceland-greenland-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Iceland Greenland Cruises on explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/asia-cruises-on-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Asia Cruises on explora journeys
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1466,6 +1498,38 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Alaska Cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/caribbean-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Caribbean Cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/northern-europe-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Northern Europe Cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/iceland-greenland-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Iceland Greenland Cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/asia-cruises-on-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Asia Cruises on explora journeys
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

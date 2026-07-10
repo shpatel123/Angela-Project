@@ -282,6 +282,7 @@ function FAQ() {
 const IsExploraGoodForSoloTravelers = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
 
   const images = [HeroImage1, HeroImage2, HeroImage3];
 
@@ -420,7 +421,7 @@ const IsExploraGoodForSoloTravelers = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: '320px'}}>
                 <img
                   src={ExploraSuite}
                   alt="Luxury cruise experience for solo travelers"
@@ -577,16 +578,27 @@ const IsExploraGoodForSoloTravelers = () => {
                   title: "Destination-Focused Itineraries",
                   desc: "The emphasis is on exploring remarkable destinations rather than spending the entire vacation onboard.",
                 },
-              ].map((feat, i) => (
-                <div key={i} className="luc-why-feature">
-                  <div className="luc-why-feature-num">{feat.num}</div>
+              ]
+                .slice(0, readMoreWhy ? 4 : 2)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
 
-                  <div className="luc-why-feature-body">
-                    <h3 className="luc-why-feature-title">{feat.title}</h3>
-                    <p className="luc-why-feature-desc">{feat.desc}</p>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+
+            <div className="Scenic_readmore_wrapper" style={{ marginTop: "25px", textAlign: "left" }}>
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
 
             <p className="luc-why-intro" style={{ marginTop: "24px" }}>
@@ -608,7 +620,7 @@ const IsExploraGoodForSoloTravelers = () => {
                 <img
                   src={ExploraSuites}
                   alt="Explora Journeys ocean-front suite for solo travelers"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: '73vh'}}
                 />
 
                 <div className="dmg-media-overlay"></div>
@@ -749,7 +761,7 @@ const IsExploraGoodForSoloTravelers = () => {
                 src={Exploraexp3}
                 alt="Solo traveler enjoying dining aboard Explora Journeys"
                 className="adg-side-image"
-                style={{ height: "40vh", border: "1px solid" }}
+                style={{ height: "25vh"}}
               />
 
               <div className="adg-info-card">
@@ -1093,7 +1105,7 @@ const IsExploraGoodForSoloTravelers = () => {
                 <img
                   src={ExploraDesti3}
                   alt="Solo travelers socializing in an elegant lounge aboard Explora Journeys"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: '72vh'}}
                 />
 
                 <div className="dmg-media-overlay"></div>

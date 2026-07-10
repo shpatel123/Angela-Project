@@ -667,6 +667,8 @@ const WhatToPackForAnExploraCruise = () => {
                 "Casual Dresses",
                 "Linen Pants",
                 "Comfortable T-Shirts",
+                "Swimwear & Cover-Up",
+                "Comfortable Walking Shoes",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1103,6 +1105,7 @@ const WhatToPackForAnExploraCruise = () => {
                   src={Exploradining}
                   alt="Accessories and toiletries packed for an Explora Journeys cruise"
                   className="dmg-media-img"
+                  style={{ height: "72vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1316,7 +1319,7 @@ const WhatToPackForAnExploraCruise = () => {
                 src={ExploraSuite}
                 alt="Suitcase packed neatly for an Explora Journeys luxury cruise"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "28vh" }}
               />
               <div className="adg-info-card">
                 <div className="adg-card-meta">
@@ -1376,6 +1379,7 @@ const WhatToPackForAnExploraCruise = () => {
                   src={ExploraPool2}
                   alt="Lightly packed suitcase for a luxury Explora Journeys cruise"
                   className="dmg-media-img"
+                  style={{ height: "64vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1738,7 +1742,11 @@ const WhatToPackForAnExploraCruise = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Explora Journey
                       <ArrowRight size={18} />
                     </Link>

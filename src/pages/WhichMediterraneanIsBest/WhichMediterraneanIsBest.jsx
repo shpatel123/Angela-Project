@@ -564,6 +564,7 @@ function FAQ() {
 const WhichMediterraneanItineraryIsBest = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
   const [activeItinerary, setActiveItinerary] = useState("western");
   const currentItinerary =
     medItineraries.find((s) => s.id === activeItinerary) || medItineraries[0];
@@ -958,15 +959,26 @@ const WhichMediterraneanItineraryIsBest = () => {
                   title: "Comprehensive Explorers",
                   desc: "Grand Mediterranean — for travelers with two weeks or more who want to experience the full breadth of Southern Europe.",
                 },
-              ].map((feat, i) => (
-                <div key={i} className="luc-why-feature">
-                  <div className="luc-why-feature-num">{feat.num}</div>
-                  <div className="luc-why-feature-body">
-                    <h3 className="luc-why-feature-title">{feat.title}</h3>
-                    <p className="luc-why-feature-desc">{feat.desc}</p>
+              ]
+                .slice(0, readMoreWhy ? 5 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+
+            <div className="Scenic_readmore_wrapper" style={{ marginTop: "25px", textAlign: "left" }}>
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1326,7 +1338,7 @@ const WhichMediterraneanItineraryIsBest = () => {
                 <img
                   src={MediterraneanGreekPort}
                   alt="Luxury small ship Mediterranean cruise sailing through the Adriatic"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: "77vh"}}
                 />
                 <div className="dmg-media-overlay"></div>
 

@@ -17,10 +17,11 @@ import {
   Dumbbell,
   Sun,
   Heart,
+  Scissors,
+  Flower2,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
-
 
 import HeroImage1 from "../../assets/ExploraJourneysCruises/ExploraCruise.webp";
 import HeroImage2 from "../../assets/ExploraJourneysCruises/ExploraCruise2.webp";
@@ -37,7 +38,6 @@ import ExploraDetination6 from "../../assets/WhichExploraShipChoose/allinn-eston
 import LuxuryOceanfrontSuites from "../../assets/WhichExploraShipChoose/Regent-Seven-Seas-Cruises.webp";
 import FineDining from "../../assets/WhichExploraShipChoose/Fine-Dining.webp";
 import ExploraShip from "../../assets/WhichExploraShipChoose/ExploraCruise3.webp";
-
 
 import { Helmet } from "react-helmet-async";
 
@@ -402,7 +402,6 @@ const exploraChoiceData = [
   },
 ];
 
-
 /* ── FAQ Component ───────────────────────────────────────────────── */
 function FAQ() {
   const [open, setOpen] = useState(null);
@@ -503,6 +502,7 @@ function FAQ() {
 const WhichExploraShip = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
   const [activeDest, setActiveDest] = useState("explora-i");
   const currentDest =
     exploraFleet.find((d) => d.id === activeDest) || exploraFleet[0];
@@ -754,7 +754,10 @@ const WhichExploraShip = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div
+                className="adg-c-overview-image-wrap"
+                style={{ height: "390px" }}
+              >
                 <img
                   src={ExploraPool}
                   alt="Luxury ocean-front suite and outdoor spaces aboard an Explora Journeys ship"
@@ -909,7 +912,6 @@ const WhichExploraShip = () => {
               <div key={item.key} className={`adg-card ${item.accent}`}>
                 {/* CARD BODY WITH FLOATING EYEBROW INCORPORATED */}
                 <div className="adg-card-body">
-                 
                   <h3 className="adg-card-title">{item.title}</h3>
 
                   <ul className="adg-card-list">
@@ -999,15 +1001,26 @@ const WhichExploraShip = () => {
                   title: "North America",
                   desc: "Select seasonal voyages hitting refined seaside locations and coastal tracks.",
                 },
-              ].map((feat, i) => (
-                <div key={i} className="luc-why-feature">
-                  <div className="luc-why-feature-num">{feat.num}</div>
-                  <div className="luc-why-feature-body">
-                    <h3 className="luc-why-feature-title">{feat.title}</h3>
-                    <p className="luc-why-feature-desc">{feat.desc}</p>
+              ]
+                .slice(0, readMoreWhy ? 5 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+
+            <div className="Scenic_readmore_wrapper" style={{ marginTop: "25px", textAlign: "left" }}>
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1095,9 +1108,10 @@ const WhichExploraShip = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                    src={FineDining} 
+                  src={FineDining}
                   alt="Explora Journeys fine dining luxury experience"
                   className="dmg-media-img"
+                  style={{ height: "73vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1198,7 +1212,7 @@ const WhichExploraShip = () => {
                 src={LuxuryOceanfrontSuites}
                 alt="Explora Journeys luxury spa and ocean wellness experience"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "33vh" }}
               />
               <div className="adg-info-card">
                 <div className="adg-card-meta">
@@ -1230,6 +1244,14 @@ const WhichExploraShip = () => {
                 { title: "Multiple Pools", icon: <Waves size={20} /> },
                 { title: "Relaxation Lounges", icon: <Heart size={20} /> },
                 { title: "Wellness Programs", icon: <Compass size={20} /> },
+                {
+                  title: "Beauty Salon & Barber",
+                  icon: <Scissors size={20} />,
+                },
+                {
+                  title: "Yoga & Mindfulness Studio",
+                  icon: <Flower2 size={20} />,
+                },
               ].map((item, i) => (
                 <div key={i} className="adg-list-item-card">
                   <div className="adg-list-item-icon">{item.icon}</div>
@@ -1474,7 +1496,11 @@ const WhichExploraShip = () => {
                   </p>
 
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Explora Journey
                       <ArrowRight size={18} />
                     </Link>

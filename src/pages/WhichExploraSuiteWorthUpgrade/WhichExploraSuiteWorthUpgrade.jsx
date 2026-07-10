@@ -492,6 +492,7 @@ function FAQ() {
 const WhichExploraSuiteUpgrade = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreWhy, setReadMoreWhy] = useState(false);
   const [activeSuite, setActiveSuite] = useState("ocean-terrace");
   const currentSuite =
     exploraSuites.find((s) => s.id === activeSuite) || exploraSuites[0];
@@ -748,7 +749,7 @@ const WhichExploraSuiteUpgrade = () => {
 
               <div
                 className="adg-c-overview-image-wrap"
-                style={{ height: "365px" }}
+                style={{ height: "400px" }}
               >
                 <img
                   src={ExpolaSuite}
@@ -1047,15 +1048,26 @@ const WhichExploraSuiteUpgrade = () => {
                   title: "Special Celebrations",
                   desc: "Penthouse or Owner's Residence — perfect for milestone birthdays, anniversaries, or once-in-a-lifetime vacations.",
                 },
-              ].map((feat, i) => (
-                <div key={i} className="luc-why-feature">
-                  <div className="luc-why-feature-num">{feat.num}</div>
-                  <div className="luc-why-feature-body">
-                    <h3 className="luc-why-feature-title">{feat.title}</h3>
-                    <p className="luc-why-feature-desc">{feat.desc}</p>
+              ]
+                .slice(0, readMoreWhy ? 5 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+
+            <div className="Scenic_readmore_wrapper" style={{ marginTop: "25px", textAlign: "left" }}>
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreWhy(!readMoreWhy)}
+              >
+                {readMoreWhy ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1144,7 +1156,7 @@ const WhichExploraSuiteUpgrade = () => {
                 <img
                   src={ExpolaSuite5}
                   alt="Explora Journeys luxury suite and fine dining experience"
-                  className="dmg-media-img"
+                  className="dmg-media-img" style={{height: '80vh'}}
                 />
                 <div className="dmg-media-overlay"></div>
 
