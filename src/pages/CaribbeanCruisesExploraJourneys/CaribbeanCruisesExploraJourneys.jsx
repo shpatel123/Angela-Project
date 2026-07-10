@@ -40,7 +40,7 @@ import HeroImage3 from "../../assets/WhichMediterraneanItineraryIsBest/explora-I
 import ExploraBeach from "../../assets/CaribbeanCruisesExploraJourneys/explora-beaches.jpg";
 import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-serenity-residence-private-whirlpool-suite.jpg";
 import ExploraPool1 from "../../assets/IsExploraGoodForFamilies/Regent-Seven-Seas-Cruises.webp";
-import CaribbeanCoastlineImage from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.jpg";
+import CaribbeanCoastlineImage from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.JPG";
 import LifeOnboardImage from "../../assets/HowAdvanceShouldBookExplora/explora-journeys-luxury-ocean-wellness-spa-relaxation-room.jpg";
 import CTAImage from "../../assets/CaribbeanCruisesExploraJourneys/caribbean-sunset-explora-ship-luxury-travel.jpg";
 
