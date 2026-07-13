@@ -46,6 +46,12 @@ import ExploraDest1 from "../../assets/WhichMediterraneanItineraryIsBest/explora
 import LuxuryOceanfront from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORA-II-Mediterranean2.jpg";
 import ExploraShip from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
 
+import Italian from "../../assets/WhichMediterraneanItineraryIsBest/Italian-Coast.jpg";
+import French from "../../assets/WhichMediterraneanItineraryIsBest/French.jpg";
+import Adriatic from "../../assets/WhichMediterraneanItineraryIsBest/Adriatic.jpg";
+import Greek from "../../assets/WhichMediterraneanItineraryIsBest/Greek-Islands.jpg";
+import Spain from "../../assets/WhichMediterraneanItineraryIsBest/Spain.jpg";
+
 import { Helmet } from "react-helmet-async";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
@@ -472,7 +478,7 @@ const mediterraneanRegions = [
     title: "Italian Coast",
     badge: "Italy",
     icon: Landmark,
-    // image: ExploraDest1,
+    image: Italian,
 
     desc: "Experience world-famous cities, colorful seaside villages, and incredible cuisine along one of the Mediterranean's most celebrated coastlines.",
 
@@ -500,7 +506,7 @@ const mediterraneanRegions = [
     title: "Greek Islands",
     badge: "Greece",
     icon: Sun,
-    // image: ExploraDest2,
+    image: Greek,
 
     desc: "The Greek Islands combine whitewashed villages, crystal-clear waters, and thousands of years of history in one unforgettable region.",
 
@@ -521,7 +527,7 @@ const mediterraneanRegions = [
     title: "French Riviera",
     badge: "France",
     icon: Sparkles,
-    // image: LuxuryOceanfront,
+    image: French,
 
     desc: "Elegant coastal resorts and glamorous seaside towns make this region a favorite among luxury travelers.",
 
@@ -542,7 +548,7 @@ const mediterraneanRegions = [
     title: "Spain",
     badge: "Spain",
     icon: Umbrella,
-    // image: ExploraDest4,
+    image: Spain,
 
     desc: "Explore vibrant cities and beautiful coastlines featuring some of the Mediterranean's most dynamic culture and cuisine.",
 
@@ -563,7 +569,7 @@ const mediterraneanRegions = [
     title: "Adriatic Coast",
     badge: "Adriatic",
     icon: Anchor,
-    // image: LuxuryOceanfront1,
+    image: Adriatic,
 
     desc: "Croatia and neighboring countries offer medieval cities and stunning island landscapes along the Adriatic Coast.",
 

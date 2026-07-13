@@ -42,14 +42,14 @@ import HeroImage3 from "../../assets/WhichMediterraneanItineraryIsBest/explora-I
 import ExploraPool from "../../assets/HowAdvanceShouldBookExplora/explora-III-oceanfront-infinity-pool-luxury-cruise-deck.jpg";
 import ExploraDining from "../../assets/IsExploraGoodForFamilies/EXPLORA-Crema Cafe.webp";
 import NorthernEuropeCoastlineImage from "../../assets/HowAdvanceShouldBookExplora/allinn-estonia-old-town-summer-travel-aerial.jpg";
-import CTAImage from "../../assets/CaribbeanCruisesExploraJourneys/explora-II-mediterranean-coastal-cruise-view.jpg";
+import CTAImage from "../../assets/NorthernEuropeCruisesExploraJourneys/explora-II-mediterranean-coastal-cruise-view.jpg";
 
-// import NorwayImg from "../../assets/NorthernEuropeCruisesExploraJourneys/geirangerfjord-norway.jpg";
-// import CopenhagenImg from "../../assets/NorthernEuropeCruisesExploraJourneys/copenhagen-nyhavn-denmark.jpg";
-// import StockholmImg from "../../assets/NorthernEuropeCruisesExploraJourneys/stockholm-gamla-stan-sweden.jpg";
-// import HelsinkiImg from "../../assets/NorthernEuropeCruisesExploraJourneys/helsinki-cathedral-finland.jpg";
-// import IcelandImg from "../../assets/NorthernEuropeCruisesExploraJourneys/reykjavik-waterfall-iceland.jpg";
-// import ScotlandImg from "../../assets/NorthernEuropeCruisesExploraJourneys/edinburgh-castle-scotland.jpg";
+import NorwayImg from "../../assets/NorthernEuropeCruisesExploraJourneys/geirangerfjord-norway.jpg";
+import CopenhagenImg from "../../assets/NorthernEuropeCruisesExploraJourneys/copenhagen-nyhavn-denmark.jpg";
+import StockholmImg from "../../assets/NorthernEuropeCruisesExploraJourneys/stockholm-gamla-stan-sweden.jpg";
+import HelsinkiImg from "../../assets/NorthernEuropeCruisesExploraJourneys/helsinki-cathedral-finland.jpg";
+import IcelandImg from "../../assets/NorthernEuropeCruisesExploraJourneys/reykjavik-waterfall-iceland.jpg";
+import ScotlandImg from "../../assets/NorthernEuropeCruisesExploraJourneys/edinburgh-castle-scotland.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -476,7 +476,7 @@ const northernEuropeDestinations = [
     title: "Norway",
     badge: "Norway",
     icon: Mountain,
-    // image: NorwayImg,
+    image: NorwayImg,
 
     desc: "Norway is famous for its breathtaking fjords and dramatic natural scenery, creating one of the world's most beautiful cruising experiences.",
 
@@ -504,7 +504,7 @@ const northernEuropeDestinations = [
     title: "Copenhagen",
     badge: "Copenhagen",
     icon: Landmark,
-    // image: CopenhagenImg,
+    image: CopenhagenImg,
 
     desc: "Denmark's capital blends historic charm with modern Scandinavian design.",
 
@@ -532,7 +532,7 @@ const northernEuropeDestinations = [
     title: "Stockholm",
     badge: "Stockholm",
     icon: Building2,
-    // image: StockholmImg,
+    image: StockholmImg,
 
     desc: "Built across numerous islands, Stockholm combines elegant architecture with natural beauty.",
 
@@ -560,7 +560,7 @@ const northernEuropeDestinations = [
     title: "Helsinki",
     badge: "Helsinki",
     icon: Compass,
-    // image: HelsinkiImg,
+    image: HelsinkiImg,
 
     desc: "Helsinki offers a fascinating mix of Nordic design and cultural heritage.",
 
@@ -588,7 +588,7 @@ const northernEuropeDestinations = [
     title: "Iceland",
     badge: "Iceland",
     icon: Snowflake,
-    // image: IcelandImg,
+    image: IcelandImg,
 
     desc: "Select Northern Europe itineraries may include Iceland's extraordinary landscapes, combining dramatic nature with unique cultural experiences.",
 
@@ -616,7 +616,7 @@ const northernEuropeDestinations = [
     title: "Scotland",
     badge: "Scotland",
     icon: Waves,
-    // image: ScotlandImg,
+    image: ScotlandImg,
 
     desc: "Scotland offers rugged coastlines, historic castles, and picturesque villages.",
 

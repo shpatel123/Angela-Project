@@ -41,6 +41,8 @@ import AboutImage from "../../assets/AboutAngela2.jpeg";
 
 import HeroImage1 from "../../assets/JapanCruisesExploraJourneys/explora-japan.jpg";
 import HeroImage2 from "../../assets/JapanCruisesExploraJourneys/Asia-Ship-a-Long-Bay-Vietnam.webp";
+import ThroughoutAsia from "../../assets/AsiaCruisesExploraJourneys/Throughout-Asia.jpg";
+import CulturalExperiences from "../../assets/AsiaCruisesExploraJourneys/Cultural-Experiences.jpg";
 import ExploraPort from "../../assets/IsExploraGoodForFamilies/explora-journeys-oceanfront-infinity-pool-deck.jpg";
 import AegeanDay from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
 import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
@@ -48,7 +50,7 @@ import ExploraPool1 from "../../assets/WhichExploraShipChoose/explora-journeys-a
 import ExploraDining from "../../assets/ExploraIVGuide/explora-journeys-ocean-grand-terrace-suite-balcony.jpg";
 import ExploraDest1 from "../../assets/WhichMediterraneanItineraryIsBest/explora-ii-amalfi-coast-mediterranean-cruise.jpg";
 import LuxuryOceanfront from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORA-II-Mediterranean2.jpg";
-import ExploraShip from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
+import ExploraShip from "../../assets/AsiaCruisesExploraJourneys/ctaimage.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -764,7 +766,7 @@ const AsiaCruisesOnExploraJourneys = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={ExploraPort}
+                    src={ExploraPort}
                     alt="Onboard atmosphere aboard Explora Journeys in Asia"
                     className="ugt-component-image"
                   />
@@ -914,7 +916,7 @@ const AsiaCruisesOnExploraJourneys = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={ExploraPort}
+                    src={ThroughoutAsia}
                   alt="Explora Journeys sailing through Asia's scenic coastlines"
                   className="dmg-media-img"
                   style={{ height: "610px" }}
@@ -949,7 +951,7 @@ const AsiaCruisesOnExploraJourneys = () => {
           <div className="adg-split-layout">
             <div className="adg-content-card-side">
               <img
-                // src={AegeanDay}
+                src={CulturalExperiences}
                 alt="Cultural experiences ashore during an Explora Journeys Asia cruise"
                 className="adg-side-image"
                 style={{ height: "38vh" }}
@@ -1866,7 +1868,7 @@ const AsiaCruisesOnExploraJourneys = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={ExploraShip}
+            src={ExploraShip}
             alt="Explora Journeys sailing through Asia"
             className="Asc-help-bg-img"
           />

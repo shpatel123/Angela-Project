@@ -39,9 +39,19 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-import HeroImage1 from "../../assets/WhichMediterraneanItineraryIsBest/CONSIDERATIO-MED-copia-Summer.jpg";
-import HeroImage2 from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
-import ExploraPort from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORAI-Mediterranean.jpg";
+import HeroImage1 from "../../assets/IcelandGreenlandCruisesExploraJourneys/GreenlandHero.jpg";
+import HeroImage2 from "../../assets/IcelandGreenlandCruisesExploraJourneys/IcelandHero.jpg";
+import HeroImage3 from "../../assets/IcelandGreenlandCruisesExploraJourneys/IcelandHero2.jpg";
+import GreenlandExperience from "../../assets/IcelandGreenlandCruisesExploraJourneys/GreenlandExperience.jpg";
+import Extraordinary from "../../assets/IcelandGreenlandCruisesExploraJourneys/Extraordinary-Scenic.jpg";
+import Wildlife  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Wildlife.jpg";
+import Isafjordur  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Isafjordur.jpg";
+import Akureyri  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Akureyri.jpg";
+import Nuuk  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Nuuk.jpg";
+import Ilulissat  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Ilulissat.jpg";
+import Arctic  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Arctic.jpg";
+import WildernessSea  from "../../assets/IcelandGreenlandCruisesExploraJourneys/WildernessSea.jpg";
+import ArctiCruise  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Arctic-Cruise.jpg";
 import AegeanDay from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
 import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
 import ExploraPool1 from "../../assets/WhichExploraShipChoose/explora-journeys-atoll-pool-luxury-cruise-deck.jpg";
@@ -457,7 +467,7 @@ const arcticDestinations = [
     title: "Reykjavik",
     badge: "Reykjavik",
     icon: Landmark,
-    // image: ExploraDest1,
+    image: HeroImage1,
 
     desc: "Iceland's capital combines Nordic culture with modern design, and serves as the gateway to many of Iceland's natural wonders.",
 
@@ -485,7 +495,7 @@ const arcticDestinations = [
     title: "Isafjordur",
     badge: "Isafjordur",
     icon: Mountain,
-    // image: ExploraPort,
+    image: Isafjordur,
 
     desc: "Located in Iceland's dramatic Westfjords, Isafjordur offers spectacular scenery and authentic Icelandic culture.",
 
@@ -513,7 +523,7 @@ const arcticDestinations = [
     title: "Akureyri",
     badge: "Akureyri",
     icon: Snowflake,
-    // image: LuxuryOceanfront,
+    image: Akureyri,
 
     desc: "Often called the 'Capital of North Iceland,' Akureyri offers easy access to some of the island's most striking natural landmarks.",
 
@@ -540,7 +550,7 @@ const arcticDestinations = [
     title: "Discover Greenland",
     badge: "Greenland",
     icon: Globe,
-    // image: GreenlandLandscape,
+    image: GreenlandExperience,
 
     desc: "Greenland offers one of the world's last truly untouched wilderness experiences, where immense landscapes, Arctic wildlife, and centuries-old Inuit traditions create an unforgettable journey.",
 
@@ -568,7 +578,7 @@ const arcticDestinations = [
     title: "Nuuk",
     badge: "Nuuk",
     icon: Compass,
-    // image: AegeanDay,
+    image: Nuuk,
 
     desc: "Greenland's capital combines modern Arctic life with traditional Inuit culture along a scenic coastal setting.",
 
@@ -596,7 +606,7 @@ const arcticDestinations = [
     title: "Ilulissat",
     badge: "Ilulissat",
     icon: Anchor,
-    // image: ExploraPool,
+    image: Ilulissat,
 
     desc: "One of Greenland's most famous destinations, where few places on Earth offer scenery as dramatic as the surrounding icefjord.",
 
@@ -631,7 +641,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
 
   const ActiveIcon = currentDestination.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -741,7 +751,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={ExploraPool}
+                    src={GreenlandExperience}
                     alt="Onboard atmosphere aboard Explora Journeys in the Arctic"
                     className="ugt-component-image"
                   />
@@ -892,7 +902,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={ExploraPort}
+                    src={Extraordinary}
                   alt="Explora Journeys sailing past glaciers and icebergs"
                   className="dmg-media-img"
                   style={{ height: "610px" }}
@@ -927,7 +937,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
           <div className="adg-split-layout">
             <div className="adg-content-card-side">
               <img
-                // src={AegeanDay}
+                src={Wildlife }
                 alt="Wildlife viewing aboard Explora Journeys in the Arctic"
                 className="adg-side-image"
                 style={{ height: "38vh" }}
@@ -1210,7 +1220,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={ExploraPool1}
+                    src={WildernessSea}
                   alt="Life onboard Explora Journeys between Iceland and Greenland"
                   className="dve-winner-img"
                 />
@@ -1255,7 +1265,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-seabourn-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={ExploraDining}
+                    src={Arctic}
                   alt="A journey through the Arctic with Explora Journeys"
                   className="dve-winner-img"
                 />
@@ -1530,7 +1540,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  //   src={LuxuryOceanfront}
+                    src={ArctiCruise}
                   alt="Planning an Iceland & Greenland cruise with Explora Journeys"
                   className="adg-c-overview-img"
                 />
@@ -1853,7 +1863,7 @@ const IcelandGreenlandCruisesOnExploraJourneys = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={ExploraShip}
+            src={HeroImage2}
             alt="Explora Journeys sailing through Iceland and Greenland"
             className="Asc-help-bg-img"
           />

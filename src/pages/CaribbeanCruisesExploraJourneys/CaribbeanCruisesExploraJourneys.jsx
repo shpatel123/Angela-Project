@@ -37,12 +37,12 @@ import AboutImage from "../../assets/AboutAngela2.jpeg";
 import HeroImage1 from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-turquoise-water.jpg";
 import HeroImage2 from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-beach-aerial.jpg";
 import HeroImage3 from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
-import ExploraBeach from "../../assets/CaribbeanCruisesExploraJourneys/explora-beaches.jpg";
-import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-serenity-residence-private-whirlpool-suite.jpg";
-import ExploraPool1 from "../../assets/IsExploraGoodForFamilies/Regent-Seven-Seas-Cruises.webp";
-import CaribbeanCoastlineImage from "../../assets/IsExploraGoodForFamilies/explora-I-oceanfront-pool-lounge-deck.JPG";
-import LifeOnboardImage from "../../assets/HowAdvanceShouldBookExplora/explora-journeys-luxury-ocean-wellness-spa-relaxation-room.jpg";
-import CTAImage from "../../assets/CaribbeanCruisesExploraJourneys/caribbean-sunset-explora-ship-luxury-travel.jpg";
+import ExploraPool from "../../assets/CaribbeanCruisesExploraJourneys/explora-beaches.jpg";
+import ExploraPool1 from "../../assets/CaribbeanCruisesExploraJourneys/Regent-Seven-Seas-Cruises.jpg";
+import CaribbeanCoastlineImage from "../../assets/CaribbeanCruisesExploraJourneys/Adventure.jpg";
+import LifeOnboardImage from "../../assets/CaribbeanCruisesExploraJourneys/WellnessSea.jpg";
+import BeautifulBeachs from "../../assets/CaribbeanCruisesExploraJourneys/Beautiful-Beachs.jpg";
+import CTAImage from "../../assets/CaribbeanCruisesExploraJourneys/CtaImage.jpg";
 
 import EasternCaribbeanImg from "../../assets/CaribbeanCruisesExploraJourneys/st-thomas-eastern-caribbean.jpg";
 import WesternCaribbeanImg from "../../assets/CaribbeanCruisesExploraJourneys/roatan-western-caribbean-reef.jpg";
@@ -1459,7 +1459,7 @@ const CaribbeanCruisesOnExploraJourneys = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  src={ExploraBeach}
+                  src={BeautifulBeachs}
                   alt="Scenic coastline viewed from an Explora Journeys ship in the Caribbean"
                   className="adg-c-overview-img"
                 />

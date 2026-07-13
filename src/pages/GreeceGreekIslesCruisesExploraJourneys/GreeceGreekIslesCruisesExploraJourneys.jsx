@@ -34,16 +34,23 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 
-import HeroImage1 from "../../assets/WhichMediterraneanItineraryIsBest/CONSIDERATIO-MED-copia-Summer.jpg";
-import HeroImage2 from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
-import ExploraPort from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORAI-Mediterranean.jpg";
+import HeroImage1 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises4.jpg";
+import HeroImage2 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises2.jpg";
+import HeroImage3 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises3.jpg";
+
+import Destination1 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Santorini.jpg";
+import Destination2 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Mykonos.jpg";
+import Destination3 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Crete.jpg";
+import Destination4 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Rhodes.jpg";
+import Destination5 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Corfu.jpg";
+import Destination6 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Longer-Port-Stays.jpg";
+import Destination7 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Boutique-hotel-style-luxury.jpg";
+import Destination8 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises.jpg";
+import Destination9 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/GreenlandExperience.jpg";
+import Destination10 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/GreenlandExperience.jpg";
+import Destination11 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/CTAImage.jpg";
 import AegeanDay from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
-import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
-import ExploraPool1 from "../../assets/WhichExploraShipChoose/explora-journeys-atoll-pool-luxury-cruise-deck.jpg";
-import ExploraDining from "../../assets/ExploraIVGuide/explora-journeys-ocean-grand-terrace-suite-balcony.jpg";
-import ExploraDest1 from "../../assets/WhichMediterraneanItineraryIsBest/explora-ii-amalfi-coast-mediterranean-cruise.jpg";
-import LuxuryOceanfront from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORA-II-Mediterranean2.jpg";
-import ExploraShip from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
+
 
 import { Helmet } from "react-helmet-async";
 
@@ -484,7 +491,7 @@ const greekIslands = [
     title: "Santorini",
     badge: "Santorini",
     icon: Sun,
-    // image: ExploraDest1,
+    image: Destination1,
 
     desc: "One of the world's most photographed islands, Santorini is famous for whitewashed villages, blue-domed churches, and incredible sunsets over the volcanic caldera.",
 
@@ -512,7 +519,7 @@ const greekIslands = [
     title: "Mykonos",
     badge: "Mykonos",
     icon: Landmark,
-    // image: ExploraPort,
+    image: Destination2,
 
     desc: "Known for its vibrant atmosphere and Cycladic architecture, Mykonos blends luxury with tradition in one lively island setting.",
 
@@ -540,7 +547,7 @@ const greekIslands = [
     title: "Crete",
     badge: "Crete",
     icon: Compass,
-    // image: LuxuryOceanfront,
+    image: Destination3,
 
     desc: "As Greece's largest island, Crete combines history, mountains, beaches, and exceptional cuisine into one rewarding destination.",
 
@@ -568,7 +575,7 @@ const greekIslands = [
     title: "Rhodes",
     badge: "Rhodes",
     icon: Anchor,
-    // image: AegeanDay,
+    image: Destination4,
 
     desc: "Rhodes offers one of the Mediterranean's best-preserved medieval old towns, layered with centuries of history.",
 
@@ -596,7 +603,7 @@ const greekIslands = [
     title: "Corfu",
     badge: "Corfu",
     icon: Umbrella,
-    // image: ExploraPool,
+    image: Destination5,
 
     desc: "Located in the Ionian Sea, Corfu offers a unique blend of Greek, Venetian, and British influences found nowhere else in Greece.",
 
@@ -630,7 +637,7 @@ const GreeceGreekIslesCruisesOnExploraJourneys = () => {
 
   const ActiveIcon = currentIsland.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -742,7 +749,7 @@ const GreeceGreekIslesCruisesOnExploraJourneys = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    src={ExploraPool}
+                    src={Destination7}
                     alt="Onboard atmosphere aboard Explora Journeys in Greece"
                     className="ugt-component-image"
                   />
@@ -893,7 +900,7 @@ const GreeceGreekIslesCruisesOnExploraJourneys = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                //   src={ExploraPort}
+                  src={Destination6}
                   alt="Explora Journeys ship docked during an extended Greek port stay"
                   className="dmg-media-img"
                   style={{ height: "610px" }}
@@ -1211,7 +1218,7 @@ const GreeceGreekIslesCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                //   src={ExploraPool1}
+                  src={Destination9}
                   alt="Life onboard Explora Journeys between Greek islands"
                   className="dve-winner-img"
                 />
@@ -1257,7 +1264,7 @@ const GreeceGreekIslesCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-seabourn-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                //   src={ExploraDining}
+                  src={Destination8}
                   alt="Slow luxury travel through the Greek Isles with Explora Journeys"
                   className="dve-winner-img"
                 />
@@ -1498,7 +1505,7 @@ const GreeceGreekIslesCruisesOnExploraJourneys = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                //   src={LuxuryOceanfront}
+                  src={Destination1}
                   alt="Planning a Greek Isles cruise with Explora Journeys"
                   className="adg-c-overview-img"
                 />
@@ -1820,7 +1827,7 @@ const GreeceGreekIslesCruisesOnExploraJourneys = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={ExploraShip}
+            src={Destination11}
             alt="Explora Journeys sailing the Greek Isles"
             className="Asc-help-bg-img"
           />
