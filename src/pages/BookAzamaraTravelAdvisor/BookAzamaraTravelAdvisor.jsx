@@ -204,7 +204,7 @@ const schemaData = {
       "@id": "https://www.tripsandships.com/#organization",
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
-      logo: "https://www.tripsandships.com/PNG image.png",
+      logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
       sameAs: [
         "https://www.facebook.com/tripsandships/",
         "https://www.instagram.com/tripsandshipsluxurytravel",
@@ -254,9 +254,18 @@ const schemaData = {
       "@id": "https://www.tripsandships.com/#travelagency",
       name: "Trips & Ships Luxury Travel",
       url: "https://www.tripsandships.com",
+      logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
+      image: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
       founder: { "@type": "Person", name: "Angela Hughes" },
       areaServed: "Worldwide",
       priceRange: "$$$$",
+      telephone: "+1-603-860-3274",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Orlando",
+        addressRegion: "FL",
+        addressCountry: "US"
+      },
       makesOffer: {
         "@type": "Offer",
         itemOffered: {
