@@ -768,6 +768,22 @@ const Nav = () => {
               >
                 Asia Cruises on explora journeys
               </NavLink>
+
+              <NavLink
+                to="/azamara-vs-oceania-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Azamara vs Oceania Cruises
+              </NavLink>
+
+              <NavLink
+                to="/book-azamara-travel-advisor"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Book Azamara Travel Advisor
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1530,6 +1546,22 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Asia Cruises on explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/azamara-vs-oceania-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Azamara vs Oceania Cruises
+            </NavLink>
+
+            <NavLink
+              to="/book-azamara-travel-advisor"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Book Azamara Travel Advisor
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

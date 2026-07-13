@@ -95,6 +95,8 @@ import CaribbeanCruisesExploraJourneys from "./pages/CaribbeanCruisesExploraJour
 import NorthernEuropeCruisesExploraJourneys from "./pages/NorthernEuropeCruisesExploraJourneys/NorthernEuropeCruisesExploraJourneys";
 import IcelandGreenlandCruisesExploraJourneys from "./pages/IcelandGreenlandCruisesExploraJourneys/IcelandGreenlandCruisesExploraJourneys";
 import AsiaCruisesExploraJourneys from "./pages/AsiaCruisesExploraJourneys/AsiaCruisesExploraJourneys";
+import AzamaravsOceaniaCruises from "./pages/AzamaravsOceaniaCruises/AzamaravsOceaniaCruises";
+import BookAzamaraTravelAdvisor from "./pages/BookAzamaraTravelAdvisor/BookAzamaraTravelAdvisor";
 
 function App() {
   return (
@@ -488,6 +490,8 @@ function App() {
           <Route path="/northern-europe-cruises-on-explora-journeys" element={<NorthernEuropeCruisesExploraJourneys />} />
           <Route path="/iceland-greenland-cruises-on-explora-journeys" element={<IcelandGreenlandCruisesExploraJourneys />} />
           <Route path="/asia-cruises-on-explora-journeys" element={<AsiaCruisesExploraJourneys />} />
+          <Route path="/azamara-vs-oceania-cruises" element={<AzamaravsOceaniaCruises />} />
+          <Route path="/book-azamara-travel-advisor" element={<BookAzamaraTravelAdvisor />} />
 
         </Routes>
       </BrowserRouter>
