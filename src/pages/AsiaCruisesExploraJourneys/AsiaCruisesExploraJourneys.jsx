@@ -41,6 +41,14 @@ import AboutImage from "../../assets/AboutAngela2.jpeg";
 
 import HeroImage1 from "../../assets/JapanCruisesExploraJourneys/explora-japan.jpg";
 import HeroImage2 from "../../assets/JapanCruisesExploraJourneys/Asia-Ship-a-Long-Bay-Vietnam.webp";
+import HeroImage3 from "../../assets/AsiaCruisesExploraJourneys/AsiaHeroimage.jpg";
+import Destination1 from "../../assets/AsiaCruisesExploraJourneys/angela-hughes-kyoto-gion-geisha-street-pagoda-japan-travel-expert.jpg";
+import Destination2 from "../../assets/AsiaCruisesExploraJourneys/Vietnam.jpg";
+import Destination3 from "../../assets/AsiaCruisesExploraJourneys/Thailand.jpg";
+import Destination4 from "../../assets/AsiaCruisesExploraJourneys/South-Korea.jpg";
+import Destination5 from "../../assets/AsiaCruisesExploraJourneys/Indonesia.jpg";
+import Destination6 from "../../assets/AsiaCruisesExploraJourneys/Asia-Cruise.jpg";
+import Destination7 from "../../assets/AsiaCruisesExploraJourneys/One-Voyage.jpg";
 import ThroughoutAsia from "../../assets/AsiaCruisesExploraJourneys/Throughout-Asia.jpg";
 import CulturalExperiences from "../../assets/AsiaCruisesExploraJourneys/Cultural-Experiences.jpg";
 import ExploraPort from "../../assets/IsExploraGoodForFamilies/explora-journeys-oceanfront-infinity-pool-deck.jpg";
@@ -455,7 +463,7 @@ const asiaDestinations = [
     title: "Japan",
     badge: "Japan",
     icon: Landmark,
-    // image: ExploraDest1,
+    image: Destination1,
 
     desc: "Japan offers a captivating blend of ancient traditions and cutting-edge innovation, and remains one of Asia's premier luxury cruise destinations.",
 
@@ -511,7 +519,7 @@ const asiaDestinations = [
     title: "Vietnam",
     badge: "Vietnam",
     icon: Waves,
-    // image: LuxuryOceanfront,
+        image: Destination2,
 
     desc: "Vietnam combines spectacular scenery with rich cultural traditions, offering remarkable diversity throughout every itinerary.",
 
@@ -539,7 +547,7 @@ const asiaDestinations = [
     title: "Thailand",
     badge: "Thailand",
     icon: Palmtree,
-    // image: AegeanDay,
+       image: Destination3,
 
     desc: "Thailand blends tropical beaches, vibrant cities, and remarkable cultural heritage into one unforgettable destination.",
 
@@ -595,7 +603,7 @@ const asiaDestinations = [
     title: "South Korea",
     badge: "South Korea",
     icon: Compass,
-    // image: ExploraDining,
+       image: Destination4,
 
     desc: "South Korea combines contemporary cities with centuries-old traditions along a striking coastline.",
 
@@ -623,7 +631,7 @@ const asiaDestinations = [
     title: "Indonesia",
     badge: "Indonesia",
     icon: Globe,
-    // image: HeroImage2,
+    image: Destination5,
 
     desc: "Indonesia's islands offer spectacular natural beauty, from volcanic landscapes to pristine coral reefs.",
 
@@ -658,7 +666,7 @@ const AsiaCruisesOnExploraJourneys = () => {
 
   const ActiveIcon = currentDestination.icon;
 
-  const images = [HeroImage1, HeroImage2];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -1232,7 +1240,7 @@ const AsiaCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={ExploraPool1}
+                    src={ExploraPool1}
                   alt="Life onboard Explora Journeys during an Asia cruise"
                   className="dve-winner-img"
                 />
@@ -1275,7 +1283,7 @@ const AsiaCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-seabourn-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={ExploraDining}
+                    src={Destination7}
                   alt="Exploring multiple Asian countries aboard Explora Journeys"
                   className="dve-winner-img"
                 />
@@ -1547,7 +1555,7 @@ const AsiaCruisesOnExploraJourneys = () => {
 
               <div className="adg-c-overview-image-wrap" style={{height: '310px'}}>
                 <img
-                  //   src={LuxuryOceanfront}
+                    src={Destination6}
                   alt="Planning an Asia cruise with Explora Journeys"
                   className="adg-c-overview-img"
                 />
