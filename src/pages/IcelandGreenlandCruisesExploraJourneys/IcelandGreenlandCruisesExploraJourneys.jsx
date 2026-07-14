@@ -13,13 +13,11 @@ import {
   Sparkles,
   Ship,
   Sun,
-  Flower2,
   Leaf,
   Compass,
   Anchor,
   Waves,
   Landmark,
-  Umbrella,
   UtensilsCrossed,
   MapPinned,
   Home,
@@ -28,8 +26,6 @@ import {
   BadgePercent,
   ShieldCheck,
   Globe2,
-  MoonStar,
-  Clock,
   Mountain,
   Snowflake,
   Fish,
@@ -40,25 +36,19 @@ import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
 import HeroImage1 from "../../assets/IcelandGreenlandCruisesExploraJourneys/GreenlandHero.jpg";
-import HeroImage2 from "../../assets/IcelandGreenlandCruisesExploraJourneys/IcelandHero.jpg";
-import HeroImage3 from "../../assets/IcelandGreenlandCruisesExploraJourneys/IcelandHero2.jpg";
-import GreenlandExperience from "../../assets/IcelandGreenlandCruisesExploraJourneys/GreenlandExperience.jpg";
-import Extraordinary from "../../assets/IcelandGreenlandCruisesExploraJourneys/Extraordinary-Scenic.jpg";
+import HeroImage2 from "../../assets/IcelandGreenlandCruisesExploraJourneys/IcelandHero.png";
+import HeroImage3 from "../../assets/IcelandGreenlandCruisesExploraJourneys/IcelandHero2.png";
+import GreenlandExperience from "../../assets/IcelandGreenlandCruisesExploraJourneys/GreenlandExperience.png";
+import Extraordinary from "../../assets/IcelandGreenlandCruisesExploraJourneys/Extraordinary-Scenic.png";
 import Wildlife  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Wildlife.jpg";
 import Isafjordur  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Isafjordur.jpg";
 import Akureyri  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Akureyri.jpg";
-import Nuuk  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Nuuk.jpg";
-import Ilulissat  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Ilulissat.jpg";
+import Nuuk  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Nuuk.png";
+import Ilulissat  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Ilulissat.png";
 import Arctic  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Arctic.jpg";
 import WildernessSea  from "../../assets/IcelandGreenlandCruisesExploraJourneys/WildernessSea.jpg";
-import ArctiCruise  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Arctic-Cruise.jpg";
-import AegeanDay from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
-import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
-import ExploraPool1 from "../../assets/WhichExploraShipChoose/explora-journeys-atoll-pool-luxury-cruise-deck.jpg";
-import ExploraDining from "../../assets/ExploraIVGuide/explora-journeys-ocean-grand-terrace-suite-balcony.jpg";
-import ExploraDest1 from "../../assets/WhichMediterraneanItineraryIsBest/explora-ii-amalfi-coast-mediterranean-cruise.jpg";
-import LuxuryOceanfront from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORA-II-Mediterranean2.jpg";
-import ExploraShip from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
+import ArctiCruise  from "../../assets/IcelandGreenlandCruisesExploraJourneys/Arctic-Cruise.png";
+
 
 import { Helmet } from "react-helmet-async";
 

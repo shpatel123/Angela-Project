@@ -34,9 +34,9 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
 
-import HeroImage1 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises4.jpg";
+import HeroImage1 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises4.png";
 import HeroImage2 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises2.jpg";
-import HeroImage3 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises3.jpg";
+import HeroImage3 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises3.png";
 
 import Destination1 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Santorini.jpg";
 import Destination2 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Mykonos.jpg";
@@ -46,9 +46,8 @@ import Destination5 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Co
 import Destination6 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Longer-Port-Stays.jpg";
 import Destination7 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Boutique-hotel-style-luxury.jpg";
 import Destination8 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Greek-Isles-Cruises.jpg";
-import Destination9 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/GreenlandExperience.jpg";
-import Destination10 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/GreenlandExperience.jpg";
-import Destination11 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/CTAImage.jpg";
+import Destination9 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/GreenlandExperience.png";
+import Destination11 from "../../assets/GreeceGreekIslesCruisesExploraJourneys/CTAImage.png";
 import AegeanDay from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
 
 

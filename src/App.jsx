@@ -97,6 +97,10 @@ import IcelandGreenlandCruisesExploraJourneys from "./pages/IcelandGreenlandCrui
 import AsiaCruisesExploraJourneys from "./pages/AsiaCruisesExploraJourneys/AsiaCruisesExploraJourneys";
 import AzamaravsOceaniaCruises from "./pages/AzamaravsOceaniaCruises/AzamaravsOceaniaCruises";
 import BookAzamaraTravelAdvisor from "./pages/BookAzamaraTravelAdvisor/BookAzamaraTravelAdvisor";
+import WhyChooseExploraJourneys from "./pages/WhyChooseExploraJourneys/WhyChooseExploraJourneys";
+import ExploraJourneysItineraries from "./pages/ExploraJourneysItineraries/ExploraJourneysItineraries";
+import ExploraJourneysResourceCenter from "./pages/ExploraJourneysResourceCenter/ExploraJourneysResourceCenter";
+import LuxuryTravelGuideExploraJourneys from "./pages/LuxuryTravelGuideExploraJourneys/LuxuryTravelGuideExploraJourneys";
 
 function App() {
   return (
@@ -492,6 +496,11 @@ function App() {
           <Route path="/asia-cruises-on-explora-journeys" element={<AsiaCruisesExploraJourneys />} />
           <Route path="/azamara-vs-oceania-cruises" element={<AzamaravsOceaniaCruises />} />
           <Route path="/book-azamara-travel-advisor" element={<BookAzamaraTravelAdvisor />} />
+          <Route path="/why-choose-explora-journeys" element={<WhyChooseExploraJourneys />} />
+          <Route path="/explora-journeys-itineraries" element={<ExploraJourneysItineraries />} />
+          <Route path="/explora-journeys-resource-center" element={<ExploraJourneysResourceCenter />} />
+          <Route path="/luxury-travel-guide-explora-journeys" element={<LuxuryTravelGuideExploraJourneys />} />
+
 
         </Routes>
       </BrowserRouter>

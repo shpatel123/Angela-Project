@@ -601,13 +601,13 @@ const Nav = () => {
                 luxury wellness and recovery travel
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/private-jet-concierge-travel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 private jet concierge travel
-              </NavLink> */}
+              </NavLink>
 
               <NavLink
                 to="/explora-journeys-review"
@@ -783,6 +783,38 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Book Azamara Travel Advisor
+              </NavLink>
+
+              <NavLink
+                to="/why-choose-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                why choose explora journeys
+              </NavLink>
+
+              <NavLink
+                to="/explora-journeys-itineraries"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                explora journeys itineraries
+              </NavLink>
+
+              <NavLink
+                to="/explora-journeys-resource-center"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                explora journeys resource center
+              </NavLink>
+
+              <NavLink
+                to="/luxury-travel-guide-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                luxury travel guide explora journeys
               </NavLink>
             </div>
           </div>
@@ -1380,13 +1412,13 @@ const Nav = () => {
               luxury wellness and recovery travel
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/private-jet-concierge-travel"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               private jet concierge travel
-            </NavLink> */}
+            </NavLink>
 
             <NavLink
               to="/explora-journeys-review"
@@ -1562,6 +1594,38 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Book Azamara Travel Advisor
+            </NavLink>
+
+            <NavLink
+              to="/why-choose-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              why choose explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/explora-journeys-itineraries"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              explora journeys itineraries
+            </NavLink>
+
+            <NavLink
+              to="/explora-journeys-resource-center"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              explora journeys resource center
+            </NavLink>
+
+            <NavLink
+              to="/luxury-travel-guide-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              luxury travel guide explora journeys
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

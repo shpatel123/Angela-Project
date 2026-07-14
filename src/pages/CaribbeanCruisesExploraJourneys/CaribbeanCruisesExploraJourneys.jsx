@@ -42,7 +42,7 @@ import ExploraPool1 from "../../assets/CaribbeanCruisesExploraJourneys/Regent-Se
 import CaribbeanCoastlineImage from "../../assets/CaribbeanCruisesExploraJourneys/Adventure.jpg";
 import LifeOnboardImage from "../../assets/CaribbeanCruisesExploraJourneys/WellnessSea.jpg";
 import BeautifulBeachs from "../../assets/CaribbeanCruisesExploraJourneys/Beautiful-Beachs.jpg";
-import CTAImage from "../../assets/CaribbeanCruisesExploraJourneys/CtaImage.jpg";
+import CTAImage from "../../assets/CaribbeanCruisesExploraJourneys/CtaImage.png";
 
 import EasternCaribbeanImg from "../../assets/CaribbeanCruisesExploraJourneys/st-thomas-eastern-caribbean.jpg";
 import WesternCaribbeanImg from "../../assets/CaribbeanCruisesExploraJourneys/roatan-western-caribbean-reef.jpg";

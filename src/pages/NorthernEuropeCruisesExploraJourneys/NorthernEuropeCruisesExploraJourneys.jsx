@@ -42,6 +42,8 @@ import HeroImage3 from "../../assets/WhichMediterraneanItineraryIsBest/explora-I
 import ExploraPool from "../../assets/HowAdvanceShouldBookExplora/explora-III-oceanfront-infinity-pool-luxury-cruise-deck.jpg";
 import ExploraDining from "../../assets/IsExploraGoodForFamilies/EXPLORA-Crema Cafe.webp";
 import NorthernEuropeCoastlineImage from "../../assets/HowAdvanceShouldBookExplora/allinn-estonia-old-town-summer-travel-aerial.jpg";
+import NorthernEuropeCoast from "../../assets/NorthernEuropeCruisesExploraJourneys/Magnificent-Fjords.jpg";
+import NorthernEuropeCapital from "../../assets/NorthernEuropeCruisesExploraJourneys/Baltic-Capitals.jpg";
 import CTAImage from "../../assets/NorthernEuropeCruisesExploraJourneys/explora-II-mediterranean-coastal-cruise-view.jpg";
 
 import NorwayImg from "../../assets/NorthernEuropeCruisesExploraJourneys/geirangerfjord-norway.jpg";
@@ -835,7 +837,7 @@ const NorthernEuropeCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-disney-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={NorthernEuropeCoastlineImage}
+                    src={NorthernEuropeCoast}
                   alt="Sailing past Norway's fjords aboard Explora Journeys"
                   className="dve-winner-img"
                 />
@@ -880,7 +882,7 @@ const NorthernEuropeCruisesOnExploraJourneys = () => {
             <div className="dve-winner-card dve-viking-winner">
               <div className="dve-winner-image-wrap">
                 <img
-                  //   src={LifeOnboardImage}
+                    src={NorthernEuropeCapital}
                   alt="Historic Baltic capitals visited by Explora Journeys"
                   className="dve-winner-img"
                 />
