@@ -1237,7 +1237,7 @@ const LuxurySportsTravelExperiences = () => {
                 interests, and travel preferences.
               </p>
 
-              <div className="dmg-info-features dmg-info-features-scrollable">
+              {/* <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
                     <Check size={16} />
@@ -1297,7 +1297,7 @@ const LuxurySportsTravelExperiences = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="dmg-info-media">
@@ -1847,53 +1847,6 @@ const LuxurySportsTravelExperiences = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── RELATED LUXURY TRAVEL EXPERIENCES ─────────────────────────── */}
-      <section className="adg-section" id="related-luxury-travel-experiences" style={{ backgroundColor: "var(--bg-soft)" }}>
-        <div className="adg-container">
-          <div className="adg-section-header" style={{ marginBottom: "40px" }}>
-            <h2 className="adg-h2">Related Luxury Travel Experiences</h2>
-            <div className="adg-accent-line"></div>
-            <p className="Asc-section-intro">
-              Continue exploring the world of luxury travel with these
-              related guides and experiences.
-            </p>
-          </div>
-
-          <div className="adg-list-side" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "16px" }}>
-            {[
-              { title: "Professional Athlete Travel", slug: "/professional-athlete-travel" },
-              { title: "Professional Athlete Family Travel", slug: "/professional-athlete-family-travel" },
-              { title: "Off-Season Luxury Travel for Professional Athletes", slug: "/off-season-luxury-travel-for-professional-athletes" },
-              { title: "Multigenerational Travel for Professional Athletes", slug: "/multigenerational-travel-for-professional-athletes" },
-              { title: "Championship Celebrations & Milestone Travel", slug: "/championship-celebrations-milestone-travel" },
-              { title: "Private Jet & Concierge Travel", slug: "/private-jet-concierge-travel" },
-              { title: "Privacy & Security Travel Planning", slug: "/privacy-security-travel-planning" },
-              { title: "Luxury Wellness & Recovery Travel", slug: "/luxury-wellness-recovery-travel" },
-              { title: "Safaris, Expeditions & Bucket List Adventures", slug: "/safaris-expeditions-bucket-list-adventures" },
-              { title: "Luxury Travel Experiences", slug: "/luxury-travel-experiences" },
-              { title: "Luxury Cruises", slug: "/luxury-cruises" },
-              { title: "Private Villas, Yachts & Exclusive Resorts", slug: "/private-villas-yachts-exclusive-resorts" },
-              { title: "European Luxury Travel", slug: "/european-luxury-travel" },
-              { title: "Mediterranean Cruises", slug: "/mediterranean-cruises" },
-              { title: "Luxury African Safaris", slug: "/luxury-african-safaris" },
-              { title: "Antarctica Expedition Cruises", slug: "/antarctica-expedition-cruises" },
-            ].map((item, i) => (
-              <Link
-                key={i}
-                to={item.slug}
-                className="adg-list-item-card"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="adg-list-item-icon">
-                  <ArrowRight size={18} />
-                </div>
-                <h4 className="adg-list-item-label">{item.title}</h4>
-              </Link>
-            ))}
           </div>
         </div>
       </section>

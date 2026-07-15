@@ -28,19 +28,19 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-import HeroImage1 from "../../assets/ExploraIVGuide/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg";
-import HeroImage2 from "../../assets/ExploraIVGuide/explora-I-luxury-pool-deck-close-up.JPG";
-import HeroImage3 from "../../assets/ExploraIVGuide/explorajourny.jpg";
-import ExploraPool from "../../assets/ExploraIVGuide/explora-journeys-luxury-sundeck-ocean-loungers-relaxation.jpg";
-import ExploraDining from "../../assets/WhichExploraSuiteWorthUpgrade/explora-luxury-dining.jpg";
-import ExploraAtmosphere from "../../assets/WhichExploraSuiteWorthUpgrade/explora-journeys-oceanfront-infinity-pool-deck.jpg";
-import LuxuryOceanfront from "../../assets/WhichExploraSuiteWorthUpgrade/Regent-Seven-Seas-Cruises.webp";
-import ExploraShip from "../../assets/ExploraJourneysWorth/Explora-Journeys3.webp";
-import ExploraSpa from "../../assets/HowAdvanceShouldBookExplora/explora-journeys-luxury-ocean-wellness-spa-relaxation-room.jpg";
-import ExploraDestination from "../../assets/HowAdvanceShouldBookExplora/allinn-estonia-old-town-summer-travel-aerial.jpg";
-import ExploraSuiteImage from "../../assets/IsExploraGoodForFamilies/explora-journeys-retreat-residence-luxury-suite-living-room.webp";
-import ExploraLifeOnboard from "../../assets/CaribbeanCruisesExploraJourneys/WellnessSea.jpg";
-import ExploraSantorini from "../../assets/GreeceGreekIslesCruisesExploraJourneys/Santorini.jpg";
+import HeroImage1 from "../../assets/ExploraJourneysWorth/Explora-Journeys.webp";
+import HeroImage2 from "../../assets/ExploraJourneysCruises/explora-journeys-canada-new-england-fall-cruise.webp";
+import HeroImage3 from "../../assets/LuxuryExploraJourneysGuide/Luxury-Explora-Journeys3.webp";
+import ExploraPool from "../../assets/ExploraJourneysvsSeabourn/explora-journeys-sunrise-pool-deck-luxury-yacht.webp";
+import ExploraDining from "../../assets/ExploraJourneysCruises/Fine-Dining.webp";
+import ExploraAtmosphere from "../../assets/ExploraJourneysCruises/Meridian-Lounge.webp";
+import LuxuryOceanfront from "../../assets/ExploraIVGuide/greenland-expedition-cruise-arctic-luxury-voyage.jpg";
+import ExploraShip from "../../assets/ExploraJourneysWorth/Explora-Journeys2.webp";
+import ExploraSpa from "../../assets/ExploraJourneysCruises/explora-journeys-luxury-fitness-center-gym.webp";
+import ExploraDestination from "../../assets/ExploraJourneysCruises/amalfi-coast-italy-mediterranean-hero-summer-2025.webp";
+import ExploraSuiteImage from "../../assets/ExploraJourneysWorth/Explora-Suite.webp";
+import ExploraLifeOnboard from "../../assets/ExploraJourneysCruises/onboard-experience.webp";
+import ExploraSantorini from "../../assets/ExploraJourneysWorth/santorini-greece-mediterranean-luxury-cruise-view.jpg";
 
 import { Helmet } from "react-helmet-async";
 
