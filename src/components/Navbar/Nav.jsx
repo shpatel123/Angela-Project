@@ -610,6 +610,30 @@ const Nav = () => {
               </NavLink>
 
               <NavLink
+                to="/professional-athlete-bucket-list-adventures"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                professional athlete bucket list adventures
+              </NavLink>
+
+              <NavLink
+                to="/luxury-sports-travel-experiences"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                luxury sports travel experiences
+              </NavLink>
+
+              {/* <NavLink
+                to="/traveling-during-the-competitive-season"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                traveling during the competitive season
+              </NavLink> */}
+
+              <NavLink
                 to="/explora-journeys-review"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1427,6 +1451,30 @@ const Nav = () => {
             >
               private jet concierge travel
             </NavLink>
+
+            <NavLink
+              to="/professional-athlete-bucket-list-adventures"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              professional athlete bucket list adventures
+            </NavLink>
+
+            <NavLink
+              to="/luxury-sports-travel-experiences"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              luxury sports travel experiences
+            </NavLink>
+
+            {/* <NavLink
+              to="/traveling-during-the-competitive-season"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              traveling during the competitive season
+            </NavLink> */}
 
             <NavLink
               to="/explora-journeys-review"

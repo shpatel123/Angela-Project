@@ -11,51 +11,56 @@ import {
   Star,
   Compass,
   Sparkles,
-  CalendarClock,
   Waves,
   Mountain,
   Headset,
   Map,
   ShieldCheck,
-  Plane,
-  Car,
-  Ship,
   Home,
-  Luggage,
   Clock,
-  Utensils,
   Gem,
   Palmtree,
   Building2,
-  PawPrint,
   Camera,
   HeartHandshake,
+  Ship,
+  Anchor,
+  Leaf,
+  Sun,
+  Wind,
+  Globe,
+  PawPrint,
+  Snowflake,
+  TreePine,
+  CalendarClock,
+  Fish,
+  Tent,
+  Plane,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-import HeroImage1 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
-import HeroImage2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
-import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
-
 import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
 
-import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/private-exclusive-caribbean-island.jpg";
-import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/amalfi-coast-italy-mediterranean-hero-summer-2025.jpg";
-import HawaiiJetImage from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
-import BucketAlaska from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-alaska-luxury-cruise-through-fjords.jpg";
-import PolynesiaJetImage from "../../assets/PrivateJetConciergeTravel/french-polynesia-overwater-villa-luxury-private-aviation.webp";
-import BucketSafari from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import BucketArctic from "../../assets/LuxuryAlumniExpeditionCruises/Arctic.webp";
+import BucketAmazon from "../../assets/DisneyAlaskavsHollandAmerica/disney-cruise-alaska-shore-excursion-rainforest-suspension-bridge.jpg";
+import BucketPatagonia from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-alaska-luxury-cruise-through-fjords.jpg";
+import BucketIceland from "../../assets/LuxuryAlumniExpeditionCruises/Iceland.webp";
+import BucketNewZealand from "../../assets/AzamaraNorwayFjordsCruises/geirangerfjord-norway-scenic-cruise-fjord-mountain-view.jpg";
+import BucketAustralia from "../../assets/CaribbeanCruisesExploraJourneys/roatan-western-caribbean-reef.jpg";
 
-import ConciergeImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
-import AirportLoungeImage from "../../assets/PrivateJetConciergeTravel/vip-private-airport-lounge-luxury-travel-services.webp";
-import AirportMeetGreetImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
-import GroundImage from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-experiences-private-hospitality.webp";
-import FamilyImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
-import VillaImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
-import YachtImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
-import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
-import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
+import SafariLodgeImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import ExpeditionShipImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
+import GalapagosImage from "../../assets/LuxuryAlumniExpeditionCruises/Gal_pagos_Islands.jpg";
+import WildlifeImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import AmenitiesImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-poolside-retreat.webp";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
+
+import HeroBg1 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
+import HeroBg2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
+import HeroBg3 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica.jpg";
+import GalapagosHeroImage from "../../assets/SmallShipAlumniCruises/Galapagos.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -74,7 +79,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://tripsandships.com",
       description:
-        "Luxury travel agency specializing in private jet vacations and concierge luxury travel for professional athletes, executives, and high-profile families, including private aviation coordination, VIP airport services, luxury ground transportation, and personalized concierge planning.",
+        "Luxury travel agency specializing in bucket-list adventures for professional athletes and their families, including African safaris, Antarctica expeditions, Galápagos cruises, and private expedition travel.",
     },
     {
       "@type": "Person",
@@ -85,27 +90,27 @@ const schemaData = {
     },
     {
       "@type": "WebPage",
-      name: "Private Jet & Concierge Travel",
-      url: "https://tripsandships.com/private-jet-concierge-travel",
+      name: "Safaris, Expeditions & Bucket List Adventures",
+      url: "https://tripsandships.com/professional-athlete-bucket-list-adventures",
       description:
-        "Discover private jet vacations and concierge luxury travel for professional athletes, executives, and high-profile families. Learn how private aviation, VIP airport services, luxury transfers, and personalized concierge planning create seamless travel experiences.",
+        "Discover luxury African safaris, Antarctica expeditions, Galápagos cruises, and extraordinary bucket-list adventures designed for professional athletes, their families, and friends. Enjoy private travel planning, exclusive accommodations, and unforgettable experiences.",
     },
     {
       "@type": "Service",
-      serviceType: "Private Jet & Concierge Travel Planning",
+      serviceType: "Safari, Expedition & Bucket List Adventure Planning",
       provider: {
         "@type": "TravelAgency",
         name: "Trips & Ships Luxury Travel",
       },
       areaServed: "Worldwide",
       description:
-        "Concierge-level luxury travel planning built around private aviation, VIP airport services, luxury ground transportation, and personalized itineraries for high-profile travelers and their families.",
+        "Concierge-level planning for luxury safaris, polar expeditions, and bucket-list adventures, including lodge and ship selection, private air arrangements, and personalized itineraries for high-profile travelers and their families.",
     },
     {
       "@type": "Article",
-      headline: "Private Jet & Concierge Travel",
+      headline: "Safaris, Expeditions & Bucket List Adventures",
       description:
-        "A complete guide to private jet vacations and concierge luxury travel, covering private aviation, VIP airport services, luxury transportation, personalized itineraries, and destinations perfect for private jet travel.",
+        "A complete guide to luxury bucket-list adventures for professional athletes, covering African safaris, Antarctica expeditions, Galápagos cruises, and other extraordinary destinations around the world.",
       author: {
         "@type": "Person",
         name: "Angela Hughes",
@@ -114,6 +119,32 @@ const schemaData = {
         "@type": "Organization",
         name: "Trips & Ships Luxury Travel",
       },
+    },
+    {
+      "@type": "TouristTrip",
+      name: "Luxury Safari, Expedition & Bucket List Adventure",
+      provider: {
+        "@type": "Organization",
+        name: "Trips & Ships Luxury Travel",
+      },
+      touristType:
+        "Professional athletes, their families, and friends seeking luxury safaris, polar expeditions, and bucket-list adventure travel",
+    },
+    {
+      "@type": "TravelAction",
+      name: "Plan a Luxury Safari or Expedition",
+      agent: {
+        "@type": "Organization",
+        name: "Trips & Ships Luxury Travel",
+      },
+      description:
+        "Personalized planning for luxury African safaris, Antarctica expeditions, Galápagos cruises, and other bucket-list adventure destinations.",
+    },
+    {
+      "@type": "Place",
+      name: "African Safari Destinations",
+      description:
+        "Kenya, Tanzania, Botswana, South Africa, Namibia, Rwanda, Zambia, and Zimbabwe, offering luxury lodges and exceptional wildlife encounters.",
     },
     {
       "@type": "BreadcrumbList",
@@ -127,174 +158,139 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Luxury Concierge Travel",
-          item: "https://tripsandships.com/luxury-concierge-travel",
+          name: "Professional Athlete Travel",
+          item: "https://tripsandships.com/professional-athlete-travel",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Private Jet & Concierge Travel",
-          item: "https://tripsandships.com/private-jet-concierge-travel",
+          name: "Safaris, Expeditions & Bucket List Adventures",
+          item: "https://tripsandships.com/professional-athlete-bucket-list-adventures",
         },
       ],
     },
     {
       "@type": "ItemList",
-      name: "Services Included in Private Jet & Concierge Travel",
+      name: "Bucket List Adventures for Professional Athletes",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
-          name: "Private Aviation Coordination",
+          name: "Luxury African Safaris",
           description:
-            "Flexible departure times, direct routing, and personalized service tailored around your schedule.",
+            "Five-star lodges, private game vehicles, and thrilling game drives across Kenya, Tanzania, Botswana, and more.",
         },
         {
           "@type": "ListItem",
           position: 2,
-          name: "VIP Airport Services",
+          name: "Antarctica Expeditions",
           description:
-            "Personalized meet and greet, expedited procedures, private lounges, and luggage assistance.",
+            "Zodiac landings, glacier cruising, and penguin colonies aboard luxury expedition ships.",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Luxury Ground Transportation",
+          name: "Galápagos Islands Cruises",
           description:
-            "Chauffeured sedans, executive SUVs, private drivers, and yacht or helicopter transfers.",
+            "Intimate expedition yachts exploring a UNESCO World Heritage Site with expert naturalist guides.",
         },
         {
           "@type": "ListItem",
           position: 4,
-          name: "Personalized Concierge Planning",
+          name: "Private Expeditions for Families & Friends",
           description:
-            "Dedicated advisors coordinate flights, accommodations, dining, and activities into one seamless itinerary.",
+            "Chartered yachts, private safari camps, and exclusive-use lodges for complete flexibility and privacy.",
         },
         {
           "@type": "ListItem",
           position: 5,
-          name: "Family Travel Coordination",
+          name: "Milestone Celebration Travel",
           description:
-            "Multi-generational flight arrivals, transfers, and child-friendly accommodations handled with care.",
+            "Championship victories, retirements, and family reunions celebrated through extraordinary adventure travel.",
         },
       ],
-    },
-    {
-      "@type": "TouristTrip",
-      name: "Private Jet & Concierge Vacation",
-      provider: {
-        "@type": "Organization",
-        name: "Trips & Ships Luxury Travel",
-      },
-      touristType:
-        "Professional athletes, executives, entrepreneurs, entertainers, and families seeking private aviation and concierge-level travel",
-    },
-    {
-      "@type": "LocalBusiness",
-      name: "Trips & Ships Private Jet & Concierge Travel Planning",
-      description:
-        "Personalized planning for private aviation, VIP airport services, luxury ground transportation, and concierge-level vacations for high-profile travelers.",
-    },
-    {
-      "@type": "Review",
-      itemReviewed: {
-        "@type": "Service",
-        name: "Private Jet & Concierge Travel",
-      },
-      author: {
-        "@type": "Person",
-        name: "Angela Hughes",
-      },
-      reviewBody:
-        "True luxury isn't just where you go — it's how effortlessly you get there, and that begins with the very first moment of the journey.",
-    },
-    {
-      "@type": "AboutPage",
-      name: "About Private Jet & Concierge Travel",
-      description:
-        "Learn how private aviation and luxury concierge services transform travel into a seamless, personalized experience for high-profile travelers and their families.",
     },
     {
       "@type": "FAQPage",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is private jet travel?",
+          name: "What are the best bucket-list vacations for professional athletes?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Private jet travel allows travelers to use private aircraft with flexible scheduling, personalized service, and access to private aviation facilities.",
+            text: "African safaris, Antarctica expeditions, Galápagos cruises, Arctic voyages, Patagonia adventures, and private luxury expeditions are among the most popular choices.",
           },
         },
         {
           "@type": "Question",
-          name: "What is luxury concierge travel?",
+          name: "Are African safaris suitable for families?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury concierge travel provides personalized planning and ongoing support for flights, accommodations, transportation, dining, activities, and special requests.",
+            text: "Yes. Many luxury safari lodges offer family-friendly accommodations, private game drives, educational activities, and children's programs.",
           },
         },
         {
           "@type": "Question",
-          name: "Who benefits most from private aviation?",
+          name: "What is the best time to visit Antarctica?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Professional athletes, executives, entrepreneurs, entertainers, and families with demanding schedules often appreciate the flexibility and convenience of private aviation.",
+            text: "Most expedition cruises operate between November and March during the Antarctic summer.",
           },
         },
         {
           "@type": "Question",
-          name: "What are VIP airport services?",
+          name: "Are Galápagos cruises luxury experiences?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "VIP airport services may include personalized assistance, private lounges, luggage coordination, and expedited airport support where available.",
+            text: "Absolutely. Modern expedition yachts provide elegant accommodations, exceptional dining, expert guides, and personalized service.",
           },
         },
         {
           "@type": "Question",
-          name: "Can concierge services arrange family vacations?",
+          name: "Can I charter a private safari or expedition yacht?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Concierge planning often includes multi-generational travel, children's activities, private transportation, dining, and personalized itineraries.",
+            text: "Yes. Private charters provide complete flexibility, privacy, and customized itineraries for families, friends, or small groups.",
           },
         },
         {
           "@type": "Question",
-          name: "Are private jet vacations only for international travel?",
+          name: "Are these trips physically demanding?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Private aviation can be used for domestic trips, island destinations, multi-city itineraries, and shorter regional journeys.",
+            text: "Many itineraries can be customized to your preferred activity level, ranging from relaxed sightseeing to more active adventures.",
           },
         },
         {
           "@type": "Question",
-          name: "Can travel plans change after booking?",
+          name: "How far in advance should I book?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury travel advisors often recommend flexible travel arrangements whenever possible and can assist with itinerary adjustments if needed.",
+            text: "Luxury safaris and expedition cruises often sell out 12–24 months in advance, particularly for peak travel seasons.",
           },
         },
         {
           "@type": "Question",
-          name: "Are private villas and yacht charters included?",
+          name: "Can you arrange private flights?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Concierge travel frequently combines private aviation with luxury villas, yacht charters, wellness resorts, and personalized experiences.",
+            text: "Yes. We coordinate private jet charters, helicopter transfers, and luxury ground transportation when requested.",
           },
         },
         {
           "@type": "Question",
-          name: "How far in advance should private jet vacations be planned?",
+          name: "Is luxury adventure travel safe?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Booking six to twelve months ahead generally provides the best availability, particularly during holidays and peak travel seasons.",
+            text: "Reputable expedition operators and safari companies maintain high safety standards, experienced guides, and carefully planned itineraries.",
           },
         },
         {
           "@type": "Question",
-          name: "Is working with a luxury travel advisor worthwhile?",
+          name: "Why should I book through Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For travelers seeking personalized service, expert coordination, and seamless logistics, professional travel planning often delivers exceptional value.",
+            text: "Our experienced advisors match you with the right destinations, luxury accommodations, and expedition partners while managing every aspect of your journey from planning to your return home.",
           },
         },
       ],
@@ -302,139 +298,139 @@ const schemaData = {
   ],
 };
 
-/* ── Data: Private jet destinations (tabbed panel) ───────────────── */
-const privateJetDestinations = [
+/* ── Data: Bucket list destinations around the world (tabbed panel) */
+const bucketListDestinations = [
   {
-    id: "caribbean",
-    title: "Caribbean",
-    badge: "Caribbean",
-    icon: Palmtree,
-    image: BucketCaribbean,
-    window: "Private island resorts, luxury villas, and yacht charters",
-    desc: "Private island resorts, luxury villas, and yacht charters make the Caribbean effortless to reach and explore by private jet.",
+    id: "arctic",
+    title: "Arctic Expeditions",
+    badge: "Arctic",
+    icon: Snowflake,
+    image: BucketArctic,
+    window: "Dramatic fjords, polar wildlife, glaciers, and remote northern landscapes",
+    desc: "Dramatic fjords, polar wildlife, glaciers, and remote northern landscapes make the Arctic one of the world's last true frontiers.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Private Island Resorts",
-          "Luxury Villa Stays",
-          "Yacht Charter Add-Ons",
+          "Fjord & Glacier Cruising",
+          "Polar Wildlife Viewing",
+          "Remote Landscape Photography",
         ],
       },
     ],
-    themeLabel: "Island Access, Simplified",
+    themeLabel: "The Far North, Up Close",
     themeText:
-      "Private aviation opens up smaller island airports, cutting travel time between resorts, villas, and yachts across the Caribbean.",
+      "Small expedition ships allow travelers to reach remote Arctic landscapes while enjoying luxury accommodations and expert guiding.",
   },
   {
-    id: "mediterranean",
-    title: "Mediterranean",
-    badge: "Mediterranean",
-    icon: Waves,
-    image: BucketMediterranean,
-    window: "Coastal cities, island hopping, and luxury villas",
-    desc: "Coastal cities, island hopping, and luxury villas make the Mediterranean an ideal region for a multi-stop private aviation itinerary.",
+    id: "amazon",
+    title: "Amazon River",
+    badge: "Amazon",
+    icon: TreePine,
+    image: BucketAmazon,
+    window: "Incredible biodiversity, rainforest wildlife, and indigenous cultures",
+    desc: "Incredible biodiversity, rainforest wildlife, and indigenous cultures make Amazon River expeditions a richly immersive adventure.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Coastal City Stopovers",
-          "Island-Hopping Itineraries",
-          "Private Villa Coordination",
+          "River Expedition Cruising",
+          "Rainforest Wildlife Encounters",
+          "Indigenous Cultural Experiences",
         ],
       },
     ],
-    themeLabel: "Multi-Destination, One Journey",
+    themeLabel: "Biodiversity at Its Richest",
     themeText:
-      "Private jet travel makes it easy to move between coastal cities and islands without the constraints of commercial routing.",
+      "Guided river excursions and naturalist-led walks bring the Amazon's extraordinary biodiversity within easy reach.",
   },
   {
-    id: "hawaii",
-    title: "Hawaii",
-    badge: "Hawaii",
-    icon: Palmtree,
-    image: HawaiiJetImage,
-    window: "Oceanfront resorts, wellness retreats, and family adventures",
-    desc: "Oceanfront resorts, wellness retreats, and family adventures make Hawaii a favorite private jet destination for multi-generational trips.",
-    columns: [
-      {
-        label: "Plan Around:",
-        items: [
-          "Oceanfront Resort Stays",
-          "Family-Friendly Adventures",
-          "Wellness Retreat Add-Ons",
-        ],
-      },
-    ],
-    themeLabel: "Effortless Island Arrival",
-    themeText:
-      "Flexible departure times and direct routing make it easier for families to reach Hawaii on their own schedule.",
-  },
-  {
-    id: "alaska",
-    title: "Alaska",
-    badge: "Alaska",
+    id: "patagonia",
+    title: "Patagonia",
+    badge: "Patagonia",
     icon: Mountain,
-    image: BucketAlaska,
-    window: "Luxury expedition cruises and breathtaking wilderness",
-    desc: "Luxury expedition cruises and breathtaking wilderness experiences make Alaska a striking destination reached comfortably by private aviation.",
+    image: BucketPatagonia,
+    window: "Dramatic mountain scenery, glaciers, hiking, and luxury wilderness lodges",
+    desc: "Dramatic mountain scenery, glaciers, hiking, and luxury wilderness lodges make Patagonia a favorite for adventure-minded travelers.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Luxury Expedition Cruise Transfers",
-          "Remote Wilderness Access",
-          "Scenic Regional Routing",
-        ],
-      },
-    ],
-    themeLabel: "Remote Made Reachable",
-    themeText:
-      "Private aviation provides direct access to regional airports near Alaska's most remote and scenic destinations.",
-  },
-  {
-    id: "french-polynesia",
-    title: "French Polynesia",
-    badge: "French Polynesia",
-    icon: Waves,
-    image: PolynesiaJetImage,
-    window: "Exclusive island resorts surrounded by crystal-clear lagoons",
-    desc: "Exclusive island resorts surrounded by crystal-clear lagoons make French Polynesia an ideal setting for a private, uninterrupted escape.",
-    columns: [
-      {
-        label: "Plan Around:",
-        items: [
-          "Overwater Villa Resorts",
-          "Private Lagoon Excursions",
-          "Seamless Inter-Island Transfers",
-        ],
-      },
-    ],
-    themeLabel: "Private, Uninterrupted Escape",
-    themeText:
-      "Private jet access and coordinated inter-island transfers make French Polynesia far easier to enjoy without commercial delays.",
-  },
-  {
-    id: "safari",
-    title: "African Safari",
-    badge: "Safari",
-    icon: PawPrint,
-    image: BucketSafari,
-    window: "Luxury lodges offering extraordinary wildlife experiences",
-    desc: "Luxury lodges offering extraordinary wildlife experiences make African safari destinations a natural fit for private aviation itineraries.",
-    columns: [
-      {
-        label: "Plan Around:",
-        items: [
-          "Luxury Safari Lodge Stays",
-          "Private Bush-Flight Connections",
-          "Multi-Country Itineraries",
+          "Glacier & Mountain Hiking",
+          "Luxury Wilderness Lodges",
+          "Scenic Wildlife Viewing",
         ],
       },
     ],
     themeLabel: "Wilderness Without Compromise",
     themeText:
-      "Private aviation and bush-flight connections make it possible to reach remote safari lodges without sacrificing comfort.",
+      "Luxury lodges positioned near Patagonia's most dramatic scenery make rugged landscapes accessible in comfort.",
+  },
+  {
+    id: "iceland",
+    title: "Iceland",
+    badge: "Iceland",
+    icon: Wind,
+    image: BucketIceland,
+    window: "Volcanoes, waterfalls, geothermal lagoons, glaciers, and the Northern Lights",
+    desc: "Volcanoes, waterfalls, geothermal lagoons, glaciers, and the Northern Lights make Iceland an unforgettable bucket-list destination.",
+    columns: [
+      {
+        label: "Plan Around:",
+        items: [
+          "Geothermal Lagoons",
+          "Waterfalls & Glaciers",
+          "Northern Lights Viewing",
+        ],
+      },
+    ],
+    themeLabel: "Fire, Ice & Light",
+    themeText:
+      "Iceland's compact geography makes it possible to experience volcanoes, glaciers, and the Northern Lights within a single itinerary.",
+  },
+  {
+    id: "new-zealand",
+    title: "New Zealand",
+    badge: "New Zealand",
+    icon: Compass,
+    image: BucketNewZealand,
+    window: "Helicopter tours, wine regions, hiking, and spectacular landscapes",
+    desc: "Helicopter tours, wine regions, hiking, and spectacular landscapes combine adventure with luxury throughout New Zealand.",
+    columns: [
+      {
+        label: "Plan Around:",
+        items: [
+          "Helicopter Scenic Tours",
+          "Wine Region Experiences",
+          "Luxury Lodge Hiking Bases",
+        ],
+      },
+    ],
+    themeLabel: "Adventure Meets Luxury",
+    themeText:
+      "New Zealand pairs thrilling helicopter access to remote scenery with some of the world's most refined wilderness lodges.",
+  },
+  {
+    id: "australia",
+    title: "Australia",
+    badge: "Australia",
+    icon: Fish,
+    image: BucketAustralia,
+    window: "The Great Barrier Reef, luxury outback lodges, and world-famous wildlife",
+    desc: "The Great Barrier Reef, luxury outback lodges, and world-famous wildlife make Australia a destination of striking contrasts.",
+    columns: [
+      {
+        label: "Plan Around:",
+        items: [
+          "Great Barrier Reef Diving",
+          "Luxury Outback Lodges",
+          "Iconic Wildlife Encounters",
+        ],
+      },
+    ],
+    themeLabel: "Reef to Red Center",
+    themeText:
+      "From reef to outback, Australia's contrasting landscapes are best explored with private guides and thoughtfully paced itineraries.",
   },
 ];
 
@@ -444,44 +440,44 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is private jet travel?",
-      a: "Private jet travel allows travelers to use private aircraft with flexible scheduling, personalized service, and access to private aviation facilities.",
+      q: "What are the best bucket-list vacations for professional athletes?",
+      a: "African safaris, Antarctica expeditions, Galápagos cruises, Arctic voyages, Patagonia adventures, and private luxury expeditions are among the most popular choices.",
     },
     {
-      q: "What is luxury concierge travel?",
-      a: "Luxury concierge travel provides personalized planning and ongoing support for flights, accommodations, transportation, dining, activities, and special requests.",
+      q: "Are African safaris suitable for families?",
+      a: "Yes. Many luxury safari lodges offer family-friendly accommodations, private game drives, educational activities, and children's programs.",
     },
     {
-      q: "Who benefits most from private aviation?",
-      a: "Professional athletes, executives, entrepreneurs, entertainers, and families with demanding schedules often appreciate the flexibility and convenience of private aviation.",
+      q: "What is the best time to visit Antarctica?",
+      a: "Most expedition cruises operate between November and March during the Antarctic summer.",
     },
     {
-      q: "What are VIP airport services?",
-      a: "VIP airport services may include personalized assistance, private lounges, luggage coordination, and expedited airport support where available.",
+      q: "Are Galápagos cruises luxury experiences?",
+      a: "Absolutely. Modern expedition yachts provide elegant accommodations, exceptional dining, expert guides, and personalized service.",
     },
     {
-      q: "Can concierge services arrange family vacations?",
-      a: "Yes. Concierge planning often includes multi-generational travel, children's activities, private transportation, dining, and personalized itineraries.",
+      q: "Can I charter a private safari or expedition yacht?",
+      a: "Yes. Private charters provide complete flexibility, privacy, and customized itineraries for families, friends, or small groups.",
     },
     {
-      q: "Are private jet vacations only for international travel?",
-      a: "No. Private aviation can be used for domestic trips, island destinations, multi-city itineraries, and shorter regional journeys.",
+      q: "Are these trips physically demanding?",
+      a: "Many itineraries can be customized to your preferred activity level, ranging from relaxed sightseeing to more active adventures.",
     },
     {
-      q: "Can travel plans change after booking?",
-      a: "Luxury travel advisors often recommend flexible travel arrangements whenever possible and can assist with itinerary adjustments if needed.",
+      q: "How far in advance should I book?",
+      a: "Luxury safaris and expedition cruises often sell out 12–24 months in advance, particularly for peak travel seasons.",
     },
     {
-      q: "Are private villas and yacht charters included?",
-      a: "Yes. Concierge travel frequently combines private aviation with luxury villas, yacht charters, wellness resorts, and personalized experiences.",
+      q: "Can you arrange private flights?",
+      a: "Yes. We coordinate private jet charters, helicopter transfers, and luxury ground transportation when requested.",
     },
     {
-      q: "How far in advance should private jet vacations be planned?",
-      a: "Booking six to twelve months ahead generally provides the best availability, particularly during holidays and peak travel seasons.",
+      q: "Is luxury adventure travel safe?",
+      a: "Reputable expedition operators and safari companies maintain high safety standards, experienced guides, and carefully planned itineraries.",
     },
     {
-      q: "Is working with a luxury travel advisor worthwhile?",
-      a: "For travelers seeking personalized service, expert coordination, and seamless logistics, professional travel planning often delivers exceptional value.",
+      q: "Why should I book through Trips & Ships Luxury Travel?",
+      a: "Our experienced advisors match you with the right destinations, luxury accommodations, and expedition partners while managing every aspect of your journey from planning to your return home.",
     },
   ];
 
@@ -515,18 +511,18 @@ function FAQ() {
 }
 
 /* ── Main Component ──────────────────────────────────────────────── */
-const PrivateJetConciergeTravel = () => {
+const ProfessionalAthleteBucketListAdventures = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const [activeDestination, setActiveDestination] = useState("caribbean");
+  const [activeDestination, setActiveDestination] = useState("arctic");
   const [hovered, setHovered] = useState(null);
 
   const currentDestination =
-    privateJetDestinations.find((d) => d.id === activeDestination) ||
-    privateJetDestinations[0];
+    bucketListDestinations.find((d) => d.id === activeDestination) ||
+    bucketListDestinations[0];
   const ActiveDestinationIcon = currentDestination.icon;
 
-  const images = [HeroImage1, HeroImage2, HeroImage3];
+  const images = [HeroBg1, HeroBg2, HeroBg3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -539,13 +535,16 @@ const PrivateJetConciergeTravel = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Private Jet &amp; Concierge Travel | Luxury Private Aviation &amp;
-          VIP Travel Planning
+          Luxury Safaris, Expeditions &amp; Bucket List Adventures for
+          Professional Athletes
         </title>
-        <meta name="title" content="Private Jet & Concierge Travel" />
+        <meta
+          name="title"
+          content="Safaris, Expeditions & Bucket List Adventures"
+        />
         <meta
           name="description"
-          content="Discover private jet vacations and concierge luxury travel for professional athletes, executives, and high-profile families. Learn how private aviation, VIP airport services, luxury transfers, and personalized concierge planning create seamless travel experiences."
+          content="Discover luxury African safaris, Antarctica expeditions, Galápagos cruises, and extraordinary bucket-list adventures designed for professional athletes, their families, and friends. Enjoy private travel planning, exclusive accommodations, and unforgettable experiences."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -568,37 +567,39 @@ const PrivateJetConciergeTravel = () => {
 
         <div className="Scenic_hero_content">
           <h1>
-            Private Jet <br /> &amp; Concierge Travel
+            Safaris, Expeditions <br /> &amp; Bucket List Adventures
           </h1>
 
           <p>
-            Luxury travel begins long before you arrive at your destination.
-            For professional athletes, executives, entrepreneurs,
-            entertainers, and families with demanding schedules, the journey
-            itself should be as comfortable and effortless as the vacation.
+            For professional athletes, time away from competition is an
+            opportunity to reconnect with family, celebrate achievements,
+            and experience destinations that few people ever have the
+            chance to explore.
           </p>
 
           <p>
-            Private aviation and luxury concierge services transform travel
-            into a seamless experience by reducing stress, maximizing
-            flexibility, and ensuring every detail is professionally managed.
+            Whether it's witnessing the Great Migration in East Africa,
+            sailing among Antarctica's towering icebergs, exploring the
+            wildlife of the Galápagos Islands, or discovering remote corners
+            of the world aboard an expedition yacht, bucket-list adventures
+            combine luxury with unforgettable experiences.
           </p>
 
           {readMore && (
             <>
               <p>
-                Whether you're planning an off-season family vacation,
-                celebrating a championship, attending an international event,
-                or embarking on a once-in-a-lifetime adventure, personalized
-                travel management allows you to focus on enjoying the
-                experience instead of coordinating the logistics.
+                At Trips &amp; Ships Luxury Travel, we create extraordinary
+                journeys that balance adventure, comfort, privacy, and
+                personalized service — allowing athletes and their families
+                to experience the world's most remarkable destinations
+                without compromising on luxury.
               </p>
 
               <p>
-                From private terminals and VIP airport assistance to luxury
-                ground transportation and carefully coordinated itineraries,
-                every detail contributes to a travel experience that feels
-                effortless, comfortable, and tailored to your lifestyle.
+                From luxury safari lodges and polar expedition ships to
+                private charters and dedicated concierge support, every
+                detail is designed for comfort, flexibility, and complete
+                peace of mind.
               </p>
 
               <p>
@@ -606,7 +607,7 @@ const PrivateJetConciergeTravel = () => {
                 spanning over 121 countries, and recognition as the 2024
                 Luxury Travel Influencer of the Year by Travel Leaders
                 Network, Angela Hughes has become one of the most trusted
-                voices in private aviation and concierge-level luxury travel.
+                voices in luxury safari and expedition travel planning.
               </p>
             </>
           )}
@@ -622,31 +623,32 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── WHY HIGH-PROFILE TRAVELERS CHOOSE PRIVATE AVIATION ───────── */}
-      <section className="adg-c-section adg-c-bg-white" id="adg-c-why-private-aviation">
+      {/* ── WHY PROFESSIONAL ATHLETES CHOOSE ADVENTURE TRAVEL ───────── */}
+      <section className="adg-c-section adg-c-bg-white" id="adg-c-why-adventure-travel">
         <div className="adg-c-container">
           <div className="adg-c-section-header">
             <h2 className="adg-c-h2">
-              Why High-Profile Travelers Choose Private Aviation
+              Why Professional Athletes Choose Adventure Travel
             </h2>
             <div className="adg-c-accent-line"></div>
             <p className="Asc-section-intro">
-              Training schedules, competitions, sponsorship commitments,
-              business meetings, and family responsibilities often leave very
-              little room for delays or complicated travel plans.
+              Elite athletes spend much of the year focused on training,
+              competition, and performance. During the off-season, many are
+              looking for experiences that are meaningful rather than
+              ordinary.
             </p>
           </div>
 
           <div className="adg-c-overview-layout">
             <div className="adg-c-overview-icons">
               {[
-                "Flexible departure times",
-                "Greater privacy",
-                "More direct routing",
-                "Comfortable surroundings",
-                "Personalized service",
-                "Efficient boarding processes",
-                "Convenient family travel",
+                "Exclusive destinations",
+                "Privacy away from public attention",
+                "Incredible wildlife encounters",
+                "Family bonding opportunities",
+                "Personalized itineraries",
+                "Luxury accommodations",
+                "Life-changing experiences",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -662,10 +664,9 @@ const PrivateJetConciergeTravel = () => {
                 <div className="adg-c-overview-callout-inner">
                   <Star size={28} className="adg-c-callout-star" />
                   <p className="adg-c-callout-text">
-                    Instead of adapting to airline schedules, your travel
-                    schedule is built around you. Private aviation offers a
-                    more personalized approach to travel from departure to
-                    arrival.
+                    Whether traveling as a couple, with children, or as a
+                    multigenerational family, these journeys create stories
+                    that last far beyond the season.
                   </p>
                 </div>
               </div>
@@ -673,12 +674,12 @@ const PrivateJetConciergeTravel = () => {
               <div className="adg-c-overview-image-wrap">
                 <img
                   src={DifferentApproachImage}
-                  alt="Family boarding a private jet with personalized service"
+                  alt="Family on a private game drive during a luxury African safari"
                   className="adg-c-overview-img"
                 />
                 <div className="adg-c-overview-img-overlay">
                   <span className="adg-c-overview-img-label">
-                    Your Schedule, Your Journey
+                    Meaningful, Not Ordinary
                   </span>
                 </div>
               </div>
@@ -687,52 +688,48 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* MORE THAN JUST FLYING PRIVATE & LUXURY CONCIERGE TRAVEL */}
+      {/* LUXURY AFRICAN SAFARIS & ANTARCTICA EXPEDITIONS */}
       <section
         className="Ejsc-ent-section"
-        id="Ejsc-more-than-flying"
+        id="Ejsc-safaris-and-antarctica"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Ejsc-container">
           <div className="Ejsc-section-header">
             <h2 className="Ejsc-section-title">
-              More Than Just Flying Private
+              Luxury African Safaris &amp; Antarctica Expeditions
             </h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejsc-section-subtitle">
-              Private aviation is about much more than luxury. It provides a
-              smoother and more efficient travel experience from departure to
-              arrival, particularly for families or travelers with limited
-              time.
+              Two of the world's most extraordinary wildlife experiences,
+              paired with five-star comfort from arrival to departure.
             </p>
           </div>
 
           <div className="Ejsc-ent-grid">
-            {/* Private Aviation Advantages Card */}
+            {/* Luxury African Safaris Card */}
             <div className="Ejsc-ent-card Ejsc-explora-card">
               <div className="Ejsc-card-header">
                 <div className="Ejsc-card-icon-wrap">
-                  <Plane size={24} className="Ejsc-card-icon" />
+                  <PawPrint size={24} className="Ejsc-card-icon" />
                 </div>
-                <h3 className="Ejsc-card-title">
-                  Private Aviation Advantages
-                </h3>
+                <h3 className="Ejsc-card-title">Luxury African Safaris</h3>
               </div>
 
               <p className="Ejsc-card-intro">
-                Every stage of the flying experience is designed to be
-                smoother, more efficient, and less stressful than
-                commercial travel.
+                Few experiences compare to seeing Africa's incredible
+                wildlife in its natural habitat. Luxury safaris combine
+                thrilling game drives with five-star accommodations.
               </p>
 
               <ul className="Ejsc-feature-list">
                 {[
-                  "Access to private terminals",
-                  "Reduced airport waiting times",
-                  "Customized flight schedules",
-                  "Spacious cabins",
-                  "Personalized onboard dining",
-                  "Flexible luggage allowances",
+                  "Kenya, Tanzania & Botswana",
+                  "South Africa & Namibia",
+                  "Rwanda, Zambia & Zimbabwe",
+                  "Private plunge pools & butler service",
+                  "Gourmet dining & personal guides",
+                  "Private game vehicles",
                 ].map((item, i) => (
                   <li key={i} className="Ejsc-feature-item">
                     <div className="Ejsc-feature-icon">
@@ -745,34 +742,35 @@ const PrivateJetConciergeTravel = () => {
 
               <div className="Ejsc-card-highlight">
                 <p>
-                  These advantages can make travel less stressful and more
-                  enjoyable, particularly for families or travelers with
-                  limited time.
+                  For athletes seeking privacy and unforgettable wildlife
+                  experiences, Africa remains one of the world's ultimate
+                  luxury destinations.
                 </p>
               </div>
             </div>
 
-            {/* Luxury Concierge Travel Card */}
+            {/* Antarctica Expeditions Card */}
             <div className="Ejsc-ent-card Ejsc-seabourn-card">
               <div className="Ejsc-card-header">
                 <div className="Ejsc-card-icon-wrap">
-                  <Headset size={24} className="Ejsc-card-icon" />
+                  <Snowflake size={24} className="Ejsc-card-icon" />
                 </div>
-                <h3 className="Ejsc-card-title">Luxury Concierge Travel</h3>
+                <h3 className="Ejsc-card-title">Antarctica Expeditions</h3>
               </div>
 
               <p className="Ejsc-card-intro">
-                Exceptional travel doesn't happen by accident. Behind every
-                seamless vacation is thoughtful planning and careful
-                coordination.
+                Antarctica represents one of the last true frontiers on
+                Earth, offering dramatic glaciers, towering icebergs, and
+                incredible wildlife.
               </p>
 
               <ul className="Ejsc-feature-list">
                 {[
-                  "Flights & ground transportation",
-                  "Hotel reservations & private villas",
-                  "Restaurant bookings & excursions",
-                  "Spa appointments & special celebrations",
+                  "Zodiac landings & penguin colonies",
+                  "Whale watching & glacier cruising",
+                  "Iceberg photography",
+                  "Scientific lectures & kayaking",
+                  "Spacious suites & wellness spas",
                 ].map((item, i) => (
                   <li key={i} className="Ejsc-feature-item">
                     <div className="Ejsc-feature-icon">
@@ -785,9 +783,8 @@ const PrivateJetConciergeTravel = () => {
 
               <div className="Ejsc-card-highlight">
                 <p>
-                  Rather than coordinating multiple reservations yourself, a
-                  dedicated advisor ensures everything works together
-                  effortlessly.
+                  For many travelers, Antarctica is the ultimate
+                  once-in-a-lifetime adventure.
                 </p>
               </div>
             </div>
@@ -795,11 +792,11 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── VIP AIRPORT SERVICES ─────────────────────────────────────── */}
-      <section className="wnf-section wnf-bg-white" id="vip-airport-services">
+      {/* ── GALÁPAGOS ISLANDS CRUISES ─────────────────────────────────── */}
+      <section className="wnf-section wnf-bg-white" id="galapagos-islands-cruises">
         <div className="wnf-container">
           <div className="wnf-section-header">
-            <h2 className="wnf-h2">VIP Airport Services</h2>
+            <h2 className="wnf-h2">Galápagos Islands Cruises</h2>
             <div className="wnf-accent-line"></div>
           </div>
 
@@ -808,16 +805,16 @@ const PrivateJetConciergeTravel = () => {
               <div className="wnf-image-stack">
                 <div className="wnf-img-frame wnf-frame-primary">
                   <img
-                    src={AirportLoungeImage}
-                    alt="Private airport terminal lounge"
+                    src={GalapagosImage}
+                    alt="Giant tortoise encounter in the Galápagos Islands"
                     className="wnf-photo"
                   />
                 </div>
 
                 <div className="wnf-img-frame wnf-frame-secondary">
                   <img
-                    src={AirportMeetGreetImage}
-                    alt="Personalized meet and greet service at a private airport lounge"
+                    src={GalapagosHeroImage}
+                    alt="Sea lion resting on a Galápagos beach"
                     className="wnf-photo"
                   />
                 </div>
@@ -827,23 +824,23 @@ const PrivateJetConciergeTravel = () => {
             <div className="wnf-content-column">
               <div className="wnf-block">
                 <p className="wnf-lead-text">
-                  Airports can often be the most stressful part of a luxury
-                  vacation. VIP airport services help simplify the experience
-                  from arrival through departure.
+                  The Galápagos Islands offer one of the world's most
+                  extraordinary wildlife experiences. Luxury expedition
+                  yachts allow guests to explore this UNESCO World Heritage
+                  Site while enjoying personalized service.
                 </p>
 
                 <ul className="wnf-feature-list">
                   {[
-                    "Personalized meet and greet",
-                    "Expedited airport procedures",
-                    "Private airport lounges",
-                    "Professional luggage assistance",
-                    "Support for families traveling with multiple bags",
-                    "A relaxed beginning and end to every trip",
+                    "Giant tortoise encounters",
+                    "Blue-footed boobies & marine iguanas",
+                    "Snorkeling with tropical fish & sea lions",
+                    "Scenic volcanic landscapes",
+                    "Guided nature walks",
                   ].map((feature, i) => (
                     <li key={i} className="wnf-feature-item">
                       <div className="wnf-icon-wrapper">
-                        <Luggage size={14} />
+                        <Fish size={14} />
                       </div>
                       <span className="wnf-feature-text">{feature}</span>
                     </li>
@@ -853,9 +850,9 @@ const PrivateJetConciergeTravel = () => {
 
               <div className="wnf-footer-note">
                 <p className="wnf-highlight-text">
-                  Professional staff assist travelers from arrival through
-                  departure, while streamlined procedures and private lounges
-                  create a calmer, more comfortable start to the journey.
+                  Because visitor numbers are carefully managed, a luxury
+                  Galápagos cruise provides exclusive access while helping
+                  preserve this remarkable ecosystem.
                 </p>
               </div>
             </div>
@@ -863,63 +860,61 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* LUXURY GROUND TRANSPORTATION & PERSONALIZED ITINERARIES */}
-      <section className="azs-suites-section" id="azs-ground-itineraries">
+      {/* PRIVATE EXPEDITIONS & ADVENTURE WITHOUT SACRIFICING LUXURY */}
+      <section className="azs-suites-section" id="azs-private-expeditions">
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-section-title">
-              Luxury Ground Transportation &amp; <br /> Personalized Travel
-              Itineraries
+              Private Expeditions &amp; <br /> Adventure Without Compromise
             </h2>
             <div className="azs-section-accent"></div>
             <p className="azs-section-subtitle">
-              Your experience should remain exceptional after landing — and no
-              two travelers are the same.
+              Luxury adventure travel no longer means giving up comfort, and
+              private options offer complete flexibility for your group.
             </p>
           </div>
 
           <div className="azs-suites-grid">
-            {/* Ground Transportation Card */}
+            {/* Private Expeditions Card */}
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  src={GroundImage}
-                  alt="Chauffeured luxury vehicle arriving at a private resort"
+                  src={ExpeditionShipImage}
+                  alt="Chartered expedition yacht for a private family adventure"
                   className="azs-suites-img"
                 />
                 <span className="azs-suites-image-badge">
-                  Comfortable, Efficient Transfers
+                  Your Group, Your Pace
                 </span>
               </div>
 
               <div className="azs-suites-content">
                 <div className="azs-suites-card-header">
                   <div className="azs-suites-icon-circle">
-                    <Car size={24} className="azs-suites-icon" />
+                    <Tent size={24} className="azs-suites-icon" />
                   </div>
                   <h3 className="azs-suites-title">
-                    Luxury Ground Transportation
+                    Private Expeditions for Families &amp; Friends
                   </h3>
                 </div>
 
                 <p className="azs-suites-intro">
-                  Professional transportation ensures comfortable, efficient
-                  travel throughout your vacation, from the tarmac to your
-                  final destination.
+                  Many professional athletes prefer traveling with extended
+                  family, close friends, teammates, or business partners.
                 </p>
 
                 <div className="azs-suites-body">
                   <h4 className="azs-suites-group-title">
-                    Options may include:
+                    Private options include:
                   </h4>
 
                   <ul className="azs-suites-list">
                     {[
-                      "Chauffeured sedans & executive SUVs",
-                      "Luxury vans for larger families",
-                      "Private drivers & resort transfers",
-                      "Yacht transfers",
-                      "Helicopter transfers in select destinations",
+                      "Chartered expedition yachts",
+                      "Private safari camps & exclusive-use lodges",
+                      "Private guides & helicopter transfers",
+                      "VIP airport services",
+                      "Dedicated concierge support",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-suites-list-item">
                         <div className="azs-suites-list-icon-wrapper">
@@ -934,55 +929,55 @@ const PrivateJetConciergeTravel = () => {
 
                   <div className="azs-suites-highlight-box azs-seabourn-suites-highlight">
                     <p className="azs-suites-highlight-text">
-                      Every transfer is designed to feel like a natural
-                      extension of the flight itself.
+                      Private travel allows your group to enjoy
+                      extraordinary experiences at your own pace while
+                      maintaining complete flexibility.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Personalized Itineraries Card */}
+            {/* Adventure Without Sacrificing Luxury Card */}
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  src={ConciergeImage}
-                  alt="Concierge advisor building a personalized travel itinerary"
+                  src={SafariLodgeImage}
+                  alt="Private plunge pool at a luxury safari lodge"
                   className="azs-suites-img"
                 />
                 <span className="azs-suites-image-badge">
-                  Built Around Your Goals
+                  Comfort Meets Adventure
                 </span>
               </div>
 
               <div className="azs-suites-content">
                 <div className="azs-suites-card-header">
                   <div className="azs-suites-icon-circle">
-                    <Compass size={24} className="azs-suites-icon" />
+                    <Gem size={24} className="azs-suites-icon" />
                   </div>
                   <h3 className="azs-suites-title">
-                    Personalized Travel Itineraries
+                    Adventure Without Sacrificing Luxury
                   </h3>
                 </div>
 
                 <p className="azs-suites-intro">
-                  Luxury concierge planning begins by understanding your
-                  goals, whether that means quiet family time or a
-                  once-in-a-lifetime adventure.
+                  Luxury adventure travel no longer means giving up comfort.
+                  Today's premium expedition experiences include:
                 </p>
 
                 <div className="azs-suites-body">
                   <h4 className="azs-suites-group-title">
-                    Some travelers want:
+                    Every journey includes:
                   </h4>
 
                   <ul className="azs-suites-list">
                     {[
-                      "Quiet family time & wellness experiences",
-                      "Adventure activities & cultural experiences",
-                      "Luxury cruises & private yacht charters",
-                      "Sports events & championship celebrations",
-                      "Multi-generational vacations",
+                      "Five-star accommodations & fine dining",
+                      "Luxury spa treatments",
+                      "Spacious suites & gourmet cuisine",
+                      "Private transportation",
+                      "Expert naturalists & seamless logistics",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-suites-list-item">
                         <div className="azs-suites-list-icon-wrapper">
@@ -997,8 +992,9 @@ const PrivateJetConciergeTravel = () => {
 
                   <div className="azs-suites-highlight-box azs-azamara-suites-highlight">
                     <p className="azs-suites-highlight-text">
-                      Every itinerary is customized around your interests,
-                      schedule, and preferred pace of travel.
+                      Whether you're exploring Antarctica or the African
+                      savannah, every detail is designed for comfort and
+                      convenience.
                     </p>
                   </div>
                 </div>
@@ -1008,19 +1004,20 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── CONCIERGE SERVICES BEYOND TRAVEL ─────────────────────────── */}
+      {/* ── FAMILY-FRIENDLY ADVENTURES & MILESTONE CELEBRATIONS ─────── */}
       <section
         className="Leg-section"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Leg-container">
           <div className="Leg-header">
-            <h2 className="Leg-title">Concierge Services Beyond Travel</h2>
+            <h2 className="Leg-title">
+              Family-Friendly Adventures &amp; Milestone Celebrations
+            </h2>
             <div className="adg-c-accent-line"></div>
             <p className="Leg-subtitle">
-              Luxury concierge support doesn't stop after your arrival. Every
-              detail is coordinated to create a personalized travel
-              experience.
+              Adventure travel creates unforgettable memories, and it's the
+              perfect way to celebrate life's biggest achievements.
             </p>
           </div>
 
@@ -1029,42 +1026,42 @@ const PrivateJetConciergeTravel = () => {
               {
                 id: 1,
                 accent: "gold",
-                icon: Utensils,
-                title: "Dining & Entertainment",
+                icon: Camera,
+                title: "Family-Friendly Adventures",
                 description:
-                  "Private dining reservations, event tickets, and golf tee times arranged around your schedule.",
-                pills: ["Private Dining", "Event Tickets", "Golf Tee Times"],
-                highlight: "Reservations handled before you even arrive.",
+                  "Junior ranger programs, wildlife photography, and cultural encounters create unforgettable memories for families of all ages.",
+                pills: ["Junior Ranger Programs", "Wildlife Photography", "Stargazing"],
+                highlight: "Children gain a deeper appreciation for nature.",
               },
               {
                 id: 2,
                 accent: "navy",
-                icon: HeartHandshake,
-                title: "Wellness & Family",
+                icon: Award,
+                title: "Celebrate Milestones",
                 description:
-                  "Spa scheduling, wellness appointments, and trusted childcare recommendations for the whole family.",
-                pills: ["Spa Scheduling", "Wellness", "Childcare"],
-                highlight: "Every family member is thought of and cared for.",
+                  "Championship victories, retirements, and Hall of Fame inductions are celebrated with unforgettable shared experiences.",
+                pills: ["Championship Victories", "Retirement Trips", "Family Reunions"],
+                highlight: "Every milestone marked with a shared adventure.",
               },
               {
                 id: 3,
                 accent: "teal",
-                icon: Camera,
-                title: "Personalized Experiences",
+                icon: HeartHandshake,
+                title: "Wellness in the Wilderness",
                 description:
-                  "Private guides and photography sessions that capture and elevate every moment of the trip.",
-                pills: ["Private Guides", "Photography", "Local Access"],
-                highlight: "Experiences shaped around your interests.",
+                  "Many luxury lodges and expedition ships feature wellness spas, yoga sessions, and outdoor meditation for recovery and renewal.",
+                pills: ["Wellness Spas", "Yoga Sessions", "Nature Walks"],
+                highlight: "Exploration paired with recovery and renewal.",
               },
               {
                 id: 4,
-                accent: "gold",
-                icon: Gem,
-                title: "Celebrations & Milestones",
+                accent: "coral",
+                icon: Globe,
+                title: "Cultural Immersion Experiences",
                 description:
-                  "Anniversary celebrations and championship celebrations planned down to the smallest detail.",
-                pills: ["Anniversaries", "Championships", "Milestones"],
-                highlight: "Every milestone marked in style.",
+                  "Engage with local communities through private cooking classes, guided market tours, and traditional ceremonies that bring each destination to life.",
+                pills: ["Cooking Classes", "Local Market Tours", "Traditional Ceremonies"],
+                highlight: "Authentic connections that enrich every journey.",
               },
             ].map((card) => {
               const Icon = card.icon;
@@ -1123,80 +1120,80 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── FAMILY TRAVEL WITHOUT THE STRESS ─────────────────────────── */}
+      {/* ── EXTRAORDINARY WILDLIFE ENCOUNTERS ────────────────────────── */}
       <section
         className="dmg-info-section dmg-bg-white"
-        id="family-travel-without-stress"
+        id="extraordinary-wildlife-encounters"
       >
         <div className="dmg-info-container">
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
-              <h2 className="dmg-info-title">Family Travel Without the Stress</h2>
+              <h2 className="dmg-info-title">Extraordinary Wildlife Encounters</h2>
               <div className="dmg-info-accent"></div>
 
               <p className="dmg-info-lead">
-                Traveling with children, grandparents, or extended family
-                requires additional coordination. Every family member enjoys
-                a smoother, more enjoyable vacation.
+                From the African savannah to the Southern Ocean, every
+                journey is built around remarkable wildlife encounters in
+                their natural habitat.
               </p>
 
               <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Check size={16} />
+                    <PawPrint size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Multiple Flight Arrivals &amp; Transfers
+                      African Safari Wildlife
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Coordinated arrivals so every family member lands and
-                      moves together.
+                      Lions, leopards, elephants, rhinos, cheetahs, and
+                      selected gorilla encounters.
                     </p>
                   </div>
                 </div>
 
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Check size={16} />
+                    <Snowflake size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Child-Friendly Accommodations
+                      Polar Wildlife
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Restaurant reservations and stays selected with children
-                      in mind.
+                      Penguin colonies and whale watching amid Antarctica's
+                      towering icebergs.
                     </p>
                   </div>
                 </div>
 
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Check size={16} />
+                    <Fish size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Group Excursions
+                      Galápagos Marine Life
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Activity scheduling that brings the whole family
-                      together.
+                      Giant tortoises, blue-footed boobies, marine iguanas,
+                      and sea lions.
                     </p>
                   </div>
                 </div>
 
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Check size={16} />
+                    <TreePine size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Celebration Planning &amp; Special Requests
+                      Rainforest &amp; Outback Wildlife
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Every detail handled, down to the most personal
-                      requests.
+                      Amazon biodiversity and Australia's world-famous
+                      native species.
                     </p>
                   </div>
                 </div>
@@ -1206,15 +1203,15 @@ const PrivateJetConciergeTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  src={FamilyImage}
-                  alt="Multi-generational family arriving together on a private jet vacation"
+                  src={WildlifeImage}
+                  alt="Lion resting on the African savannah during a luxury safari"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
                 <div className="dmg-media-badge">
-                  <span>Every Generation, One Seamless Trip</span>
+                  <span>Nature's Most Remarkable Moments</span>
                 </div>
               </div>
             </div>
@@ -1222,15 +1219,15 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── PRIVACY & DISCRETION ─────────────────────────────────────── */}
+      {/* ── SIGNATURE LUXURY TOUCHES ─────────────────────────────────── */}
       <section
         className="ugt-components-section"
-        id="privacy-and-discretion"
+        id="signature-luxury-touches"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="ugt-components-container">
           <div className="ugt-components-header">
-            <h2 className="ugt-components-title">Privacy &amp; Discretion</h2>
+            <h2 className="ugt-components-title">Signature Luxury Touches</h2>
 
             <div className="adg-c-accent-line"></div>
           </div>
@@ -1240,8 +1237,8 @@ const PrivateJetConciergeTravel = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    src={VillaImage}
-                    alt="Private villa entrance offering complete discretion"
+                    src={AmenitiesImage}
+                    alt="Private plunge pool and outdoor shower at a luxury safari tent"
                     className="ugt-component-image"
                   />
                 </div>
@@ -1249,24 +1246,24 @@ const PrivateJetConciergeTravel = () => {
 
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
-                  Many professional athletes and public figures value privacy
-                  as much as comfort. The focus is always on creating a
-                  relaxed and enjoyable vacation experience.
+                  Luxury safari lodges and expedition vessels are designed
+                  around the same idea: extraordinary access to nature,
+                  without sacrificing comfort.
                 </p>
 
                 <div className="ugt-questions-box">
                   <span className="ugt-questions-title">
-                    Luxury travel planning can help support discretion by
-                    recommending:
+                    Signature touches often include:
                   </span>
 
                   <ul className="ugt-questions-list">
                     {[
-                      "Private Accommodations",
-                      "Personalized Transportation",
-                      "Quiet Luxury Properties",
-                      "Flexible Itineraries",
-                      "Trusted Local Partners",
+                      "Private Plunge Pools & Outdoor Showers",
+                      "Spa Treatments",
+                      "Butler & Personal Guide Service",
+                      "Observation Lounges",
+                      "Expert Expedition Teams",
+                      "Small Guest Capacity",
                     ].map((item, idx) => (
                       <li key={idx} className="ugt-question-item">
                         <Check size={16} className="ugt-question-icon" />
@@ -1284,8 +1281,8 @@ const PrivateJetConciergeTravel = () => {
                     borderRadius: "6px",
                   }}
                 >
-                  Every itinerary is designed around comfort, privacy, and
-                  long-term peace of mind.
+                  Every detail is designed for comfort and convenience,
+                  wherever the journey leads.
                 </p>
               </div>
             </div>
@@ -1293,130 +1290,29 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── PRIVATE VILLAS, RESORTS & YACHT COORDINATION ─────────────── */}
-      <section
-        className="dmg-info-section dmg-bg-white"
-        id="dmg-villas-resorts-yachts"
-      >
-        <div className="dmg-info-container">
-          <div className="dmg-info-grid">
-            {/* Left Side Image */}
-            <div className="dmg-info-media">
-              <div className="dmg-media-wrapper">
-                <img
-                  src={YachtImage}
-                  alt="Private yacht anchored near a luxury resort"
-                  className="dmg-media-img"
-                  style={{ height: "710px" }}
-                />
-                <div className="dmg-media-overlay"></div>
-
-                <div className="dmg-media-badge">
-                  <span>One Seamless Itinerary</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Side Content */}
-            <div className="dmg-info-content">
-              <h2 className="dmg-info-title">
-                Private Villas, Resorts &amp; Yacht Coordination
-              </h2>
-              <div className="dmg-info-accent"></div>
-
-              <p className="dmg-info-lead">
-                Luxury travel often includes multiple accommodations and
-                experiences. Every part of the journey is carefully connected
-                into one seamless itinerary.
-              </p>
-
-              <div className="dmg-info-features dmg-info-features-scrollable">
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Home size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Private Villas
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Spacious accommodations with personalized service.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Building2 size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Luxury Resorts
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Wellness facilities, family programs, and fine dining.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Ship size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Private Yacht Charters
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Flexible coastal exploration with professional crews.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Award size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Exclusive Residences
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Longer stays supported by dedicated staff and concierge
-                      services.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── DESTINATIONS PERFECT FOR PRIVATE JET TRAVEL (TABBED) ─────── */}
+      {/* ── BUCKET LIST DESTINATIONS AROUND THE WORLD (TABBED) ───────── */}
       <section
         className="luc-destinations-section"
-        id="luc-private-jet-destinations"
+        id="luc-bucket-list-destinations"
       >
         <div className="luc-destinations-container">
           <div className="luc-destinations-header">
             <h2 className="luc-destinations-title">
-              Destinations Perfect for Private Jet Travel
+              Bucket List Destinations Around the World
             </h2>
 
             <div className="adg-c-accent-line"></div>
 
             <p className="luc-destinations-intro">
-              Private aviation makes it easier to reach destinations where
-              convenience and privacy are especially valuable. Private
-              aviation often makes multi-destination itineraries more
-              convenient and efficient.
+              Adventure means different things to different travelers.
+              These additional extraordinary journeys round out the world's
+              most remarkable bucket-list experiences.
             </p>
           </div>
 
           <div className="luc-dest-layout">
             <nav className="luc-dest-nav">
-              {privateJetDestinations.map((item) => {
+              {bucketListDestinations.map((item) => {
                 const NavIcon = item.icon;
                 const isActive = activeDestination === item.id;
 
@@ -1514,7 +1410,7 @@ const PrivateJetConciergeTravel = () => {
             <div className="adg-content-card-side">
               <img
                 src={AdvisorImage}
-                alt="Luxury travel advisor coordinating a private jet itinerary"
+                alt="Luxury travel advisor coordinating a safari and expedition itinerary"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
               />
@@ -1526,17 +1422,17 @@ const PrivateJetConciergeTravel = () => {
                 </div>
 
                 <p className="adg-card-lead">
-                  Managing a luxury vacation involving flights, accommodations,
-                  transportation, and activities can quickly become complex.
-                  Professional planning allows travelers to enjoy the vacation
-                  while every detail is handled behind the scenes.
+                  Planning an expedition or safari requires specialized
+                  expertise. Trips &amp; Ships Luxury Travel manages every
+                  detail so you can focus on the experience — not the
+                  logistics.
                 </p>
 
                 <div className="adg-card-divider"></div>
 
                 <p className="adg-card-subtext">
-                  Because true luxury isn't just where you go — it's how
-                  effortlessly you get there.
+                  Our goal is to create seamless adventures from the first
+                  call to your return home.
                 </p>
               </div>
             </div>
@@ -1544,32 +1440,36 @@ const PrivateJetConciergeTravel = () => {
             <div className="adg-list-side">
               {[
                 {
-                  title: "Personalized Destination Recommendations",
+                  title: "Destination Recommendations",
                   icon: <Compass size={20} />,
                 },
                 {
-                  title: "Private Aviation Coordination",
+                  title: "Expedition Ship Selection",
+                  icon: <Ship size={20} />,
+                },
+                {
+                  title: "Luxury Safari Lodge Reservations",
+                  icon: <Tent size={20} />,
+                },
+                {
+                  title: "Private Air Arrangements",
                   icon: <Plane size={20} />,
                 },
                 {
-                  title: "VIP Airport Assistance",
-                  icon: <Luggage size={20} />,
+                  title: "VIP Airport Services",
+                  icon: <MapPin size={20} />,
                 },
                 {
-                  title: "Luxury Accommodation Selection",
-                  icon: <Home size={20} />,
+                  title: "Travel Insurance & Visa Guidance",
+                  icon: <ShieldCheck size={20} />,
                 },
                 {
-                  title: "Ground Transportation Planning",
-                  icon: <Car size={20} />,
-                },
-                {
-                  title: "Concierge Support Before & During Travel",
-                  icon: <Headset size={20} />,
-                },
-                {
-                  title: "Ongoing Assistance Throughout the Journey",
+                  title: "Private Guides & Customized Itineraries",
                   icon: <Map size={20} />,
+                },
+                {
+                  title: "Family Travel & Concierge Support",
+                  icon: <Headset size={20} />,
                 },
               ].map((item, i) => (
                 <div key={i} className="adg-list-item-card">
@@ -1582,10 +1482,10 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* TIPS FOR PLANNING PRIVATE JET TRAVEL */}
+      {/* TIPS FOR PLANNING YOUR ADVENTURE */}
       <section
         className="Avr-planning-section"
-        id="Asc-private-jet-planning-tips"
+        id="Asc-adventure-planning-tips"
         style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="Asc-container">
@@ -1594,7 +1494,7 @@ const PrivateJetConciergeTravel = () => {
             <span className="Avr-planning-eyebrow">Planning With Purpose</span>
 
             <h2 className="Avr-planning-title">
-              Tips for Planning Private Jet Travel
+              Tips for Planning Your Adventure
             </h2>
 
             <div className="Avr-planning-divider"></div>
@@ -1607,23 +1507,23 @@ const PrivateJetConciergeTravel = () => {
               <div className="Avr-planning-left-deco">&ldquo;</div>
 
               <h3 className="Avr-planning-left-title">
-                Plan Early &amp; Keep Your Schedule Flexible
+                Book Early &amp; Plan Around Your Season
               </h3>
 
               <p className="Avr-planning-left-body">
-                Private aviation and luxury accommodations are often in high
-                demand during peak travel periods. Keeping your schedule
-                flexible allows for easier adjustments if plans change, and
-                choosing destinations carefully ensures each trip matches your
-                travel goals and preferred pace.
+                Luxury safaris and expedition cruises often sell out
+                12–24 months in advance, particularly for peak travel
+                seasons. Coordinating around your competition schedule
+                early ensures the best availability and the widest choice
+                of dates.
               </p>
 
               <div className="Avr-planning-alert">
                 <ShieldCheck size={18} className="Avr-planning-alert-icon" />
 
                 <p className="Avr-planning-alert-text">
-                  Expert planning helps reduce stress while creating a more
-                  personalized experience from start to finish.
+                  Reputable operators maintain high safety standards,
+                  experienced guides, and carefully planned itineraries.
                 </p>
               </div>
             </div>
@@ -1631,7 +1531,7 @@ const PrivateJetConciergeTravel = () => {
             {/* RIGHT PANEL */}
             <div className="Avr-planning-right">
               <p className="Avr-planning-right-intro">
-                A well-planned private jet vacation is built around:
+                A well-planned adventure is built around:
               </p>
 
               <div className="Avr-planning-benefits-grid">
@@ -1639,10 +1539,6 @@ const PrivateJetConciergeTravel = () => {
                   {
                     icon: <CalendarClock size={18} />,
                     label: "Early planning & booking",
-                  },
-                  {
-                    icon: <Clock size={18} />,
-                    label: "Flexible scheduling",
                   },
                   {
                     icon: <Users size={18} />,
@@ -1653,12 +1549,16 @@ const PrivateJetConciergeTravel = () => {
                     label: "Carefully chosen destinations",
                   },
                   {
-                    icon: <Headset size={18} />,
-                    label: "Professional concierge support",
+                    icon: <ShieldCheck size={18} />,
+                    label: "Travel insurance & visa guidance",
                   },
                   {
-                    icon: <ShieldCheck size={18} />,
-                    label: "Privacy & discretion",
+                    icon: <Compass size={18} />,
+                    label: "Customized activity levels",
+                  },
+                  {
+                    icon: <Headset size={18} />,
+                    label: "Concierge support throughout",
                   },
                 ].map((item, i) => (
                   <div key={i} className="Avr-planning-benefit-card">
@@ -1677,112 +1577,109 @@ const PrivateJetConciergeTravel = () => {
                 className="Avr-planning-right-intro"
                 style={{ marginTop: "24px" }}
               >
-                Expert planning ensures flights, transfers, and accommodations
-                work together seamlessly, whatever your schedule requires.
+                Many itineraries can be customized to your preferred
+                activity level, from relaxed sightseeing to more active
+                adventures.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── TRAVEL THAT ADAPTS TO YOUR SCHEDULE ─────────────────── */}
-      <section className="ugt-advantage-section" id="travel-adapts-to-schedule">
+      {/* ── WELLNESS IN THE WILDERNESS ────────────────────────────── */}
+      <section className="ugt-advantage-section" id="wellness-in-the-wilderness">
         <div className="ugt-advantage-container">
           <div className="ugt-advantage-header">
             <span className="ugt-advantage-eyebrow">
-              Private Jet &amp; Concierge Travel
+              Safaris, Expeditions &amp; Bucket List Adventures
             </span>
 
-            <h2 className="ugt-advantage-title">
-              Travel That Adapts to Your Schedule
-            </h2>
+            <h2 className="ugt-advantage-title">Wellness in the Wilderness</h2>
 
             <div className="Asc-accent-line"></div>
 
             <p className="ugt-advantage-intro">
-              Professional athletes and executives often experience changing
-              schedules. Luxury travel planning emphasizes flexibility
-              whenever possible, and thoughtful planning makes adapting to
-              changes much easier.
+              Adventure travel also offers opportunities to disconnect,
+              recharge, and focus on personal well-being.
             </p>
           </div>
 
           <div className="ugt-advantage-grid">
             <div className="ugt-advantage-card">
               <div className="ugt-icon-box">
-                <CalendarClock size={28} strokeWidth={1.5} />
+                <HeartHandshake size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Adjustable Travel Dates</h4>
+              <h4 className="ugt-card-title">Wellness Spas</h4>
 
               <p className="ugt-card-desc">
-                Departure and return dates that move with your schedule
-                rather than against it.
+                Massage therapy and spa treatments available at many luxury
+                lodges and ships.
               </p>
             </div>
 
             <div className="ugt-advantage-card">
               <div className="ugt-icon-box">
-                <Car size={28} strokeWidth={1.5} />
+                <Sun size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Alternative Transportation</h4>
+              <h4 className="ugt-card-title">Yoga Sessions</h4>
 
               <p className="ugt-card-desc">
-                Ground, yacht, and helicopter transfer options ready as your
-                plans evolve.
+                Movement and mindfulness sessions set against extraordinary
+                natural surroundings.
               </p>
             </div>
 
             <div className="ugt-advantage-card">
               <div className="ugt-icon-box">
-                <Home size={28} strokeWidth={1.5} />
+                <Leaf size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Flexible Accommodations</h4>
+              <h4 className="ugt-card-title">Healthy Cuisine</h4>
 
               <p className="ugt-card-desc">
-                Villas, resorts, and residences selected with change in mind
-                from the start.
+                Nourishing, well-prepared meals designed to support active
+                days of exploring.
               </p>
             </div>
 
             <div className="ugt-advantage-card">
               <div className="ugt-icon-box">
-                <Map size={28} strokeWidth={1.5} />
+                <TreePine size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Updated Itineraries</h4>
+              <h4 className="ugt-card-title">Nature Walks</h4>
 
               <p className="ugt-card-desc">
-                Itineraries revised quickly and smoothly whenever your
-                schedule shifts.
+                Guided walks that pair gentle movement with immersive
+                natural surroundings.
               </p>
             </div>
 
             <div className="ugt-advantage-card">
               <div className="ugt-icon-box">
-                <Headset size={28} strokeWidth={1.5} />
+                <Wind size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Concierge Support in Transit</h4>
+              <h4 className="ugt-card-title">Outdoor Meditation</h4>
 
               <p className="ugt-card-desc">
-                Ongoing concierge support during travel keeps every detail on
-                track.
+                Quiet moments designed to help travelers disconnect and
+                recharge.
               </p>
             </div>
 
             <div className="ugt-advantage-card">
               <div className="ugt-icon-box">
-                <ShieldCheck size={28} strokeWidth={1.5} />
+                <Globe size={28} strokeWidth={1.5} />
               </div>
 
-              <h4 className="ugt-card-title">Privacy &amp; Discretion</h4>
+              <h4 className="ugt-card-title">Relaxation Spaces</h4>
 
               <p className="ugt-card-desc">
-                Trusted local partners and quiet properties keep every trip
-                private.
+                Fitness facilities and quiet spaces built into the rhythm of
+                each itinerary.
               </p>
             </div>
           </div>
@@ -1796,8 +1693,8 @@ const PrivateJetConciergeTravel = () => {
               marginInline: "auto",
             }}
           >
-            The result is a vacation that feels effortless from the first
-            call to the final transfer home.
+            These experiences combine exploration with recovery and
+            renewal.
           </p>
         </div>
       </section>
@@ -1891,9 +1788,9 @@ const PrivateJetConciergeTravel = () => {
                       label: "Featured in major travel publications worldwide",
                     },
                     {
-                      icon: <Plane size={16} />,
+                      icon: <PawPrint size={16} />,
                       label:
-                        "Specialist in private aviation and concierge luxury travel for high-profile clients",
+                        "Specialist in luxury safaris, expeditions, and bucket-list adventure travel for professional athletes",
                     },
                   ].map((item, i) => (
                     <div className="Adg-expert-list-item" key={i}>
@@ -1910,9 +1807,9 @@ const PrivateJetConciergeTravel = () => {
                   style={{ marginTop: "24px", lineHeight: "1.8" }}
                 >
                   Angela Hughes and the team at Trips &amp; Ships Luxury Travel
-                  help professional athletes, executives, and high-profile
-                  families plan private jet and concierge travel — from
-                  aviation coordination to flawless on-the-ground execution.
+                  help professional athletes and their families plan
+                  extraordinary safaris, expeditions, and bucket-list
+                  adventures around the world.
                 </p>
               </div>
             </div>
@@ -1927,8 +1824,8 @@ const PrivateJetConciergeTravel = () => {
             <h2 className="Asc-h2">Frequently Asked Questions</h2>
             <div className="Asc-accent-line"></div>
             <p className="Asc-faq-intro">
-              Everything you need to know about planning private jet and
-              concierge luxury travel.
+              Everything you need to know about planning luxury safaris,
+              expeditions, and bucket-list adventures.
             </p>
           </div>
           <FAQ />
@@ -1940,7 +1837,7 @@ const PrivateJetConciergeTravel = () => {
         <div className="Asc-help-bg-wrap">
           <img
             src={CtaImage}
-            alt="Private jet on the tarmac at sunset"
+            alt="Sunset over the African savannah during the Great Migration"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -1951,11 +1848,10 @@ const PrivateJetConciergeTravel = () => {
             <div className="Asc-help-content">
               <div className="Asc-help-header">
                 <span className="Asc-help-eyebrow">
-                  Personalized Luxury Travel Planning
+                  Begin Planning Your Next Great Adventure
                 </span>
                 <h2 className="Asc-help-h2">
-                  Ready for Travel That's as <br /> Effortless as It Is
-                  Exceptional?
+                  Some Journeys Change the Way <br /> You See the World
                 </h2>
                 <div className="Asc-help-accent"></div>
               </div>
@@ -1963,23 +1859,21 @@ const PrivateJetConciergeTravel = () => {
               <div className="Asc-help-grid">
                 <div className="Asc-help-info">
                   <p className="Asc-help-intro">
-                    Connect with Angela Hughes and the expert team at Trips
-                    &amp; Ships Luxury Travel for personalized guidance on
-                    planning private jet and concierge luxury travel.
+                    Watching elephants cross the African plains at sunrise,
+                    standing among towering Antarctic glaciers, snorkeling
+                    with sea lions in the Galápagos, or witnessing the Great
+                    Migration are experiences that remain with you for a
+                    lifetime.
                   </p>
 
                   <p className="Asc-help-intro">
-                    From private aviation and VIP airport services to luxury
-                    transfers, concierge planning, and carefully coordinated
-                    itineraries, expert support helps every journey come
-                    together seamlessly.
-                  </p>
-
-                  <p className="Asc-help-intro">
-                    Whether you're celebrating a championship, planning an
-                    off-season family vacation, organizing a multi-generational
-                    reunion, or embarking on a once-in-a-lifetime adventure,
-                    personalized planning makes all the difference.
+                    At Trips &amp; Ships Luxury Travel, we specialize in
+                    creating extraordinary adventures that combine
+                    world-class exploration with uncompromising luxury.
+                    Whether you're celebrating a championship, enjoying your
+                    off-season, or simply fulfilling a lifelong dream, we'll
+                    design a personalized itinerary that reflects your
+                    travel style, priorities, and sense of adventure.
                   </p>
 
                   <div className="Asc-help-btn-container">
@@ -1988,7 +1882,7 @@ const PrivateJetConciergeTravel = () => {
                       className="Asc-help-cta-btn"
                       style={{ textDecoration: "none" }}
                     >
-                      Start Planning Your Private Jet Journey
+                      Start Planning Your Next Adventure
                       <ArrowRight size={18} />
                     </Link>
                   </div>
@@ -2000,12 +1894,12 @@ const PrivateJetConciergeTravel = () => {
                   </h3>
                   <ul className="Asc-help-bullets">
                     {[
-                      "Private aviation coordination",
-                      "VIP airport & lounge arrangements",
-                      "Luxury ground transportation planning",
-                      "Personalized concierge itineraries",
-                      "Privacy & discretion planning",
-                      "Family-focused travel coordination",
+                      "Destination & itinerary recommendations",
+                      "Expedition ship & safari lodge selection",
+                      "Private air & VIP airport services",
+                      "Travel insurance & visa guidance",
+                      "Private guides & family travel planning",
+                      "Concierge support throughout your journey",
                     ].map((item, i) => (
                       <li key={i}>
                         <div className="Asc-bullet-icon">
@@ -2018,9 +1912,9 @@ const PrivateJetConciergeTravel = () => {
 
                   <p className="Asc-help-intro" style={{ marginTop: "20px" }}>
                     Trips &amp; Ships Luxury Travel specializes in helping
-                    professional athletes, executives, and high-profile
-                    families create highly personalized private jet and
-                    concierge travel experiences worldwide.
+                    professional athletes and their families create highly
+                    personalized safari, expedition, and bucket-list
+                    adventures worldwide.
                   </p>
                 </div>
               </div>
@@ -2032,4 +1926,4 @@ const PrivateJetConciergeTravel = () => {
   );
 };
 
-export default PrivateJetConciergeTravel;
+export default ProfessionalAthleteBucketListAdventures;

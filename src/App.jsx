@@ -75,6 +75,9 @@ import PrivacySecurityTravelPlanning from "./pages/PrivacySecurityTravelPlanning
 import ChampionshipCelebrationsMilestoneTravel from "./pages/ChampionshipCelebrationsMilestoneTravel/ChampionshipCelebrationsMilestoneTravel";
 import LuxuryWellnessRecoveryTravel from "./pages/LuxuryWellnessRecoveryTravel/LuxuryWellnessRecoveryTravel";
 import PrivateJetConciergeTravel from "./pages/PrivateJetConciergeTravel/PrivateJetConciergeTravel";
+import ProfessionalAthleteBucketListAdventures from "./pages/ProfessionalAthleteBucketListAdventures/ProfessionalAthleteBucketListAdventures";
+import LuxurySportsTravelExperiences from "./pages/LuxurySportsTravelExperiences/LuxurySportsTravelExperiences";
+import TravelingDuringTheCompetitiveSeason from "./pages/TravelingDuringTheCompetitiveSeason/TravelingDuringTheCompetitiveSeason";
 import ExploraJourneysReviews from "./pages/ExploraJourneysReviews/ExploraJourneysReviews";
 import WhatMakesExploraDifferent from "./pages/WhatMakesExploraDifferent/WhatMakesExploraDifferent";
 import IsExploraLuxury from "./pages/IsExploraLuxury/IsExploraLuxury";
@@ -453,6 +456,21 @@ function App() {
           <Route
             path="/private-jet-concierge-travel"
             element={<PrivateJetConciergeTravel />}
+          />
+          
+          <Route
+            path="/professional-athlete-bucket-list-adventures"
+            element={<ProfessionalAthleteBucketListAdventures />}
+          />
+
+          <Route
+            path="/luxury-sports-travel-experiences"
+            element={<LuxurySportsTravelExperiences />}
+          />
+
+          <Route
+            path="/traveling-during-the-competitive-season"
+            element={<TravelingDuringTheCompetitiveSeason />}
           />
 
           <Route

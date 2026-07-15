@@ -1165,6 +1165,114 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
         </div>
       </section>
 
+      {/* DESTINATIONS & SERVICE — SIDE BY SIDE */}
+      <section className="azs-dining-section" style={{ background: "var(--bg-white)" }}>
+        <div className="azs-container">
+          <div className="azs-section-header">
+            <h2 className="azs-section-title">Why Luxury Travelers Choose Explora Journeys</h2>
+
+            <div className="azs-section-accent"></div>
+
+            <p className="azs-section-subtitle">
+              Luxury travelers increasingly choose Explora because it offers an
+              experience that is elegant, relaxed, and highly personalized.
+            </p>
+          </div>
+
+          <div className="azs-dining-grid">
+            {/* Destinations */}
+            <div className="azs-dining-card azs-seabourn-dining">
+              <div className="azs-dining-content">
+                <div className="azs-dining-header">
+                  <div className="azs-dining-icon-circle">
+                    <Compass size={24} className="azs-dining-icon" />
+                  </div>
+
+                  <h3 className="azs-dining-title">Destinations Take Center Stage</h3>
+                </div>
+
+                <p className="azs-dining-intro">
+                  Luxury travelers increasingly value immersive travel experiences
+                  over simply collecting passport stamps.
+                </p>
+
+                <div className="azs-dining-body">
+                  <h4 className="azs-dining-group-title">
+                    Explora Journeys designs itineraries that prioritize:
+                  </h4>
+
+                  <ul className="azs-dining-list">
+                    {["Longer port stays", "Overnight visits", "Smaller boutique ports", "Scenic cruising", "Authentic cultural experiences"].map((item, idx) => (
+                      <li key={idx} className="azs-dining-list-item">
+                        <div className="azs-dining-list-icon-wrapper">
+                          <Check size={14} className="azs-dining-list-icon" />
+                        </div>
+
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="azs-dining-divider"></div>
+
+                  <div className="azs-dining-highlight-box azs-seabourn-highlight">
+                    <p className="azs-dining-highlight-text">
+                      This allows guests to truly experience each destination rather than
+                      rushing through a short visit. Whether exploring the Greek Isles,
+                      Alaska, Japan, or the Caribbean, every itinerary encourages deeper
+                      connections with the places you visit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Service */}
+            <div className="azs-dining-card azs-azamara-dining">
+              <div className="azs-dining-content">
+                <div className="azs-dining-header">
+                  <div className="azs-dining-icon-circle">
+                    <HeartHandshake size={24} className="azs-dining-icon" />
+                  </div>
+
+                  <h3 className="azs-dining-title">Personalized Service Without Formality</h3>
+                </div>
+
+                <p className="azs-dining-intro">
+                  Luxury hospitality is about anticipating needs rather than simply
+                  responding to requests. Explora's crew provides warm, attentive
+                  service that feels genuine and approachable.
+                </p>
+
+                <div className="azs-dining-body">
+                  <h4 className="azs-dining-group-title">Guests appreciate:</h4>
+
+                  <ul className="azs-dining-list">
+                    {["Friendly interactions", "Personalized recommendations", "Attention to detail", "Fast, professional service", "A welcoming atmosphere"].map((item, idx) => (
+                      <li key={idx} className="azs-dining-list-item">
+                        <div className="azs-dining-list-icon-wrapper">
+                          <Star size={14} className="azs-dining-list-icon" />
+                        </div>
+
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="azs-dining-divider"></div>
+
+                  <div className="azs-dining-highlight-box azs-azamara-highlight">
+                    <p className="azs-dining-highlight-text">
+                      The result is luxury that feels comfortable rather than intimidating.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WELLNESS AT SEA */}
       <section className="azs-dining-section" id="wellness-is-part-of-the-journey">
         <div className="azs-container">

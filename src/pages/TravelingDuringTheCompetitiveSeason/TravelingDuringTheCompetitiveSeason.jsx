@@ -12,48 +12,41 @@ import {
   Compass,
   Sparkles,
   CalendarClock,
-  Waves,
   Mountain,
   Headset,
   Map,
   ShieldCheck,
   Plane,
   Car,
-  Ship,
   Home,
   Luggage,
   Clock,
-  Utensils,
-  Gem,
   Palmtree,
-  Building2,
-  PawPrint,
   Camera,
   HeartHandshake,
+  Trophy,
+  Wine,
+  Sun,
+  Landmark,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-import HeroImage1 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
-import HeroImage2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
-import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
-
-import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
-
-import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/private-exclusive-caribbean-island.jpg";
-import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/amalfi-coast-italy-mediterranean-hero-summer-2025.jpg";
-import HawaiiJetImage from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
-import BucketAlaska from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-alaska-luxury-cruise-through-fjords.jpg";
-import PolynesiaJetImage from "../../assets/PrivateJetConciergeTravel/french-polynesia-overwater-villa-luxury-private-aviation.webp";
-import BucketSafari from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
-
-import ConciergeImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
-import AirportLoungeImage from "../../assets/PrivateJetConciergeTravel/vip-private-airport-lounge-luxury-travel-services.webp";
-import AirportMeetGreetImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
-import GroundImage from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-experiences-private-hospitality.webp";
-import FamilyImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
-import VillaImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
-import YachtImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/travel-during-the-competitive-season-professional-athlete-luxury-hotel.webp";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete.webp";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
+import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
+import BucketCaribbean from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
+import BucketNapa from "../../assets/PrivateJetConciergeTravel/vip-private-airport-lounge-luxury-travel-services.webp";
+import BucketAspen from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-experiences-private-hospitality.webp";
+import BucketSouthFlorida from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
+import BucketScottsdale from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import BucketEurope from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
+import ConciergeImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import AirportImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
+import GroundImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import FamilyImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
@@ -74,7 +67,7 @@ const schemaData = {
       name: "Trips & Ships Luxury Travel",
       url: "https://tripsandships.com",
       description:
-        "Luxury travel agency specializing in private jet vacations and concierge luxury travel for professional athletes, executives, and high-profile families, including private aviation coordination, VIP airport services, luxury ground transportation, and personalized concierge planning.",
+        "Luxury travel agency specializing in flexible travel planning for professional athletes, including last-minute luxury vacations, private aviation, and concierge coordination built around unpredictable competitive schedules.",
     },
     {
       "@type": "Person",
@@ -85,27 +78,27 @@ const schemaData = {
     },
     {
       "@type": "WebPage",
-      name: "Private Jet & Concierge Travel",
-      url: "https://tripsandships.com/private-jet-concierge-travel",
+      name: "Traveling During the Competitive Season",
+      url: "https://tripsandships.com/traveling-during-the-competitive-season",
       description:
-        "Discover private jet vacations and concierge luxury travel for professional athletes, executives, and high-profile families. Learn how private aviation, VIP airport services, luxury transfers, and personalized concierge planning create seamless travel experiences.",
+        "Discover flexible luxury travel planning for professional athletes. Learn how private travel advisors coordinate last-minute vacations, changing schedules, playoffs, training camps, family commitments, and luxury getaways with complete flexibility.",
     },
     {
       "@type": "Service",
-      serviceType: "Private Jet & Concierge Travel Planning",
+      serviceType: "Flexible Luxury Travel Planning for Professional Athletes",
       provider: {
         "@type": "TravelAgency",
         name: "Trips & Ships Luxury Travel",
       },
       areaServed: "Worldwide",
       description:
-        "Concierge-level luxury travel planning built around private aviation, VIP airport services, luxury ground transportation, and personalized itineraries for high-profile travelers and their families.",
+        "Concierge-level luxury travel planning built around unpredictable competitive schedules, including last-minute bookings, private aviation, flexible accommodations, and personalized itineraries for professional athletes and their families.",
     },
     {
       "@type": "Article",
-      headline: "Private Jet & Concierge Travel",
+      headline: "Traveling During the Competitive Season",
       description:
-        "A complete guide to private jet vacations and concierge luxury travel, covering private aviation, VIP airport services, luxury transportation, personalized itineraries, and destinations perfect for private jet travel.",
+        "A complete guide to flexible luxury travel for professional athletes, covering last-minute travel, private aviation, adaptable accommodations, playoff planning, family travel, and short-getaway destinations.",
       author: {
         "@type": "Person",
         name: "Angela Hughes",
@@ -127,174 +120,174 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Luxury Concierge Travel",
-          item: "https://tripsandships.com/luxury-concierge-travel",
+          name: "Professional Athlete Travel",
+          item: "https://tripsandships.com/professional-athlete-travel",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Private Jet & Concierge Travel",
-          item: "https://tripsandships.com/private-jet-concierge-travel",
+          name: "Traveling During the Competitive Season",
+          item: "https://tripsandships.com/traveling-during-the-competitive-season",
         },
       ],
     },
     {
       "@type": "ItemList",
-      name: "Services Included in Private Jet & Concierge Travel",
+      name: "Services Included in Flexible Athlete Travel Planning",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
-          name: "Private Aviation Coordination",
+          name: "Last-Minute Luxury Travel",
           description:
-            "Flexible departure times, direct routing, and personalized service tailored around your schedule.",
+            "Resort escapes, private villas, yacht charters, and getaways arranged with limited notice at the highest luxury standard.",
         },
         {
           "@type": "ListItem",
           position: 2,
-          name: "VIP Airport Services",
+          name: "Private Aviation Coordination",
           description:
-            "Personalized meet and greet, expedited procedures, private lounges, and luggage assistance.",
+            "Flexible departure times, direct flights, and easy schedule changes built around a changing competitive calendar.",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "Luxury Ground Transportation",
+          name: "Adaptable Accommodations",
           description:
-            "Chauffeured sedans, executive SUVs, private drivers, and yacht or helicopter transfers.",
+            "Properties selected for flexible cancellation policies, late check-in, and extended stay availability.",
         },
         {
           "@type": "ListItem",
           position: 4,
-          name: "Personalized Concierge Planning",
+          name: "Playoff & Championship Planning",
           description:
-            "Dedicated advisors coordinate flights, accommodations, dining, and activities into one seamless itinerary.",
+            "Proactive monitoring of playoff scenarios with flexible arrival dates and protected reservations.",
         },
         {
           "@type": "ListItem",
           position: 5,
           name: "Family Travel Coordination",
           description:
-            "Multi-generational flight arrivals, transfers, and child-friendly accommodations handled with care.",
+            "Weekend escapes, holiday vacations, and multigenerational trips designed around available windows of time.",
         },
       ],
     },
     {
       "@type": "TouristTrip",
-      name: "Private Jet & Concierge Vacation",
+      name: "Flexible Luxury Vacation for Professional Athletes",
       provider: {
         "@type": "Organization",
         name: "Trips & Ships Luxury Travel",
       },
       touristType:
-        "Professional athletes, executives, entrepreneurs, entertainers, and families seeking private aviation and concierge-level travel",
+        "Professional athletes and their families seeking flexible, last-minute, and privacy-focused luxury travel around a competitive schedule",
     },
     {
       "@type": "LocalBusiness",
-      name: "Trips & Ships Private Jet & Concierge Travel Planning",
+      name: "Trips & Ships Flexible Athlete Travel Planning",
       description:
-        "Personalized planning for private aviation, VIP airport services, luxury ground transportation, and concierge-level vacations for high-profile travelers.",
+        "Personalized planning for last-minute luxury travel, private aviation, flexible accommodations, and concierge support for professional athletes.",
     },
     {
       "@type": "Review",
       itemReviewed: {
         "@type": "Service",
-        name: "Private Jet & Concierge Travel",
+        name: "Traveling During the Competitive Season",
       },
       author: {
         "@type": "Person",
         name: "Angela Hughes",
       },
       reviewBody:
-        "True luxury isn't just where you go — it's how effortlessly you get there, and that begins with the very first moment of the journey.",
+        "When your time away is limited, every moment should be extraordinary — and that starts with a travel plan built to move with your schedule.",
     },
     {
       "@type": "AboutPage",
-      name: "About Private Jet & Concierge Travel",
+      name: "About Traveling During the Competitive Season",
       description:
-        "Learn how private aviation and luxury concierge services transform travel into a seamless, personalized experience for high-profile travelers and their families.",
+        "Learn how flexible luxury travel planning helps professional athletes make the most of short breaks, last-minute opportunities, and changing schedules.",
     },
     {
       "@type": "FAQPage",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is private jet travel?",
+          name: "Can you plan travel around my competition schedule?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Private jet travel allows travelers to use private aircraft with flexible scheduling, personalized service, and access to private aviation facilities.",
+            text: "Yes. Every itinerary is customized around your season, tournaments, training camps, and family commitments.",
           },
         },
         {
           "@type": "Question",
-          name: "What is luxury concierge travel?",
+          name: "Do you specialize in last-minute travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury concierge travel provides personalized planning and ongoing support for flights, accommodations, transportation, dining, activities, and special requests.",
+            text: "Absolutely. We frequently arrange luxury vacations with limited notice while maintaining exceptional quality and service.",
           },
         },
         {
           "@type": "Question",
-          name: "Who benefits most from private aviation?",
+          name: "Can you arrange private jet travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Professional athletes, executives, entrepreneurs, entertainers, and families with demanding schedules often appreciate the flexibility and convenience of private aviation.",
+            text: "Yes. We coordinate private aviation, luxury ground transportation, and VIP airport services worldwide.",
           },
         },
         {
           "@type": "Question",
-          name: "What are VIP airport services?",
+          name: "What happens if my schedule changes?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "VIP airport services may include personalized assistance, private lounges, luggage coordination, and expedited airport support where available.",
+            text: "Our team manages changes to flights, accommodations, transportation, and activities whenever possible, minimizing disruption to your plans.",
           },
         },
         {
           "@type": "Question",
-          name: "Can concierge services arrange family vacations?",
+          name: "Can my family join me on short trips?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Concierge planning often includes multi-generational travel, children's activities, private transportation, dining, and personalized itineraries.",
+            text: "Yes. Many itineraries are designed specifically for family travel during brief breaks in the competitive season.",
           },
         },
         {
           "@type": "Question",
-          name: "Are private jet vacations only for international travel?",
+          name: "Do you recommend travel insurance?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Private aviation can be used for domestic trips, island destinations, multi-city itineraries, and shorter regional journeys.",
+            text: "Yes. Flexible travel protection can provide valuable coverage when athletic schedules change unexpectedly.",
           },
         },
         {
           "@type": "Question",
-          name: "Can travel plans change after booking?",
+          name: "How far in advance should I begin planning?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Luxury travel advisors often recommend flexible travel arrangements whenever possible and can assist with itinerary adjustments if needed.",
+            text: "Even if travel dates are uncertain, early planning allows us to secure preferred accommodations while maintaining flexibility.",
           },
         },
         {
           "@type": "Question",
-          name: "Are private villas and yacht charters included?",
+          name: "Can you help with international travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Concierge travel frequently combines private aviation with luxury villas, yacht charters, wellness resorts, and personalized experiences.",
+            text: "Yes. We coordinate passports, visas, transportation, luxury accommodations, and destination logistics around the world.",
           },
         },
         {
           "@type": "Question",
-          name: "How far in advance should private jet vacations be planned?",
+          name: "Do you offer concierge services while I'm traveling?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Booking six to twelve months ahead generally provides the best availability, particularly during holidays and peak travel seasons.",
+            text: "Yes. Our advisors remain available throughout your trip to assist with itinerary adjustments, reservations, and unexpected changes.",
           },
         },
         {
           "@type": "Question",
-          name: "Is working with a luxury travel advisor worthwhile?",
+          name: "Why choose Trips & Ships Luxury Travel?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For travelers seeking personalized service, expert coordination, and seamless logistics, professional travel planning often delivers exceptional value.",
+            text: "We understand the unique demands of professional sports and specialize in flexible luxury travel solutions that adapt to your schedule while delivering exceptional service and unforgettable experiences.",
           },
         },
       ],
@@ -302,139 +295,139 @@ const schemaData = {
   ],
 };
 
-/* ── Data: Private jet destinations (tabbed panel) ───────────────── */
+/* ── Data: Short-getaway destinations (tabbed panel) ─────────────── */
 const privateJetDestinations = [
   {
     id: "caribbean",
-    title: "Caribbean",
+    title: "Caribbean Islands",
     badge: "Caribbean",
     icon: Palmtree,
     image: BucketCaribbean,
-    window: "Private island resorts, luxury villas, and yacht charters",
-    desc: "Private island resorts, luxury villas, and yacht charters make the Caribbean effortless to reach and explore by private jet.",
+    window: "Warm-weather relaxation and beachfront luxury",
+    desc: "Perfect for warm-weather relaxation and beachfront luxury, the Caribbean is an easy reach for a short break between games.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Private Island Resorts",
-          "Luxury Villa Stays",
-          "Yacht Charter Add-Ons",
+          "Beachfront Resort Stays",
+          "Private Villa Escapes",
+          "Short Direct Flights",
         ],
       },
     ],
-    themeLabel: "Island Access, Simplified",
+    themeLabel: "Warm-Weather Reset",
     themeText:
-      "Private aviation opens up smaller island airports, cutting travel time between resorts, villas, and yachts across the Caribbean.",
+      "A few days of sun and beachfront luxury make the Caribbean a favorite quick escape between competitions.",
   },
   {
-    id: "mediterranean",
-    title: "Mediterranean",
-    badge: "Mediterranean",
-    icon: Waves,
-    image: BucketMediterranean,
-    window: "Coastal cities, island hopping, and luxury villas",
-    desc: "Coastal cities, island hopping, and luxury villas make the Mediterranean an ideal region for a multi-stop private aviation itinerary.",
+    id: "napa",
+    title: "Napa Valley",
+    badge: "Napa Valley",
+    icon: Wine,
+    image: BucketNapa,
+    window: "Wine tasting, fine dining, and luxury resorts",
+    desc: "Wine tasting, fine dining, and luxury resorts make Napa Valley an ideal short getaway for relaxing away from the spotlight.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Coastal City Stopovers",
-          "Island-Hopping Itineraries",
-          "Private Villa Coordination",
+          "Private Vineyard Tastings",
+          "Fine Dining Reservations",
+          "Luxury Resort Stays",
         ],
       },
     ],
-    themeLabel: "Multi-Destination, One Journey",
+    themeLabel: "Wine Country, Unwind",
     themeText:
-      "Private jet travel makes it easy to move between coastal cities and islands without the constraints of commercial routing.",
+      "Napa Valley offers a quiet, close-to-home luxury reset that fits neatly into a short break in the schedule.",
   },
   {
-    id: "hawaii",
-    title: "Hawaii",
-    badge: "Hawaii",
-    icon: Palmtree,
-    image: HawaiiJetImage,
-    window: "Oceanfront resorts, wellness retreats, and family adventures",
-    desc: "Oceanfront resorts, wellness retreats, and family adventures make Hawaii a favorite private jet destination for multi-generational trips.",
-    columns: [
-      {
-        label: "Plan Around:",
-        items: [
-          "Oceanfront Resort Stays",
-          "Family-Friendly Adventures",
-          "Wellness Retreat Add-Ons",
-        ],
-      },
-    ],
-    themeLabel: "Effortless Island Arrival",
-    themeText:
-      "Flexible departure times and direct routing make it easier for families to reach Hawaii on their own schedule.",
-  },
-  {
-    id: "alaska",
-    title: "Alaska",
-    badge: "Alaska",
+    id: "aspen",
+    title: "Aspen",
+    badge: "Aspen",
     icon: Mountain,
-    image: BucketAlaska,
-    window: "Luxury expedition cruises and breathtaking wilderness",
-    desc: "Luxury expedition cruises and breathtaking wilderness experiences make Alaska a striking destination reached comfortably by private aviation.",
+    image: BucketAspen,
+    window: "Mountain scenery, wellness, and year-round recreation",
+    desc: "Mountain scenery, wellness, and year-round recreation make Aspen a versatile destination no matter the season.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Luxury Expedition Cruise Transfers",
-          "Remote Wilderness Access",
-          "Scenic Regional Routing",
+          "Mountain Wellness Retreats",
+          "Year-Round Recreation",
+          "Private Chalet Stays",
         ],
       },
     ],
-    themeLabel: "Remote Made Reachable",
+    themeLabel: "Recharge in the Mountains",
     themeText:
-      "Private aviation provides direct access to regional airports near Alaska's most remote and scenic destinations.",
+      "Aspen's mix of scenery and wellness offerings make it an easy fit for a quick recovery-focused getaway.",
   },
   {
-    id: "french-polynesia",
-    title: "French Polynesia",
-    badge: "French Polynesia",
-    icon: Waves,
-    image: PolynesiaJetImage,
-    window: "Exclusive island resorts surrounded by crystal-clear lagoons",
-    desc: "Exclusive island resorts surrounded by crystal-clear lagoons make French Polynesia an ideal setting for a private, uninterrupted escape.",
+    id: "south-florida",
+    title: "South Florida",
+    badge: "S. Florida",
+    icon: Sun,
+    image: BucketSouthFlorida,
+    window: "Luxury beach resorts, golf, and waterfront dining",
+    desc: "Luxury beach resorts, golf, and waterfront dining make South Florida a convenient warm-weather escape close to home.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Overwater Villa Resorts",
-          "Private Lagoon Excursions",
-          "Seamless Inter-Island Transfers",
+          "Luxury Beach Resorts",
+          "Golf & Waterfront Dining",
+          "Convenient Regional Access",
         ],
       },
     ],
-    themeLabel: "Private, Uninterrupted Escape",
+    themeLabel: "Close-to-Home Luxury",
     themeText:
-      "Private jet access and coordinated inter-island transfers make French Polynesia far easier to enjoy without commercial delays.",
+      "South Florida's easy access and warm-weather resorts make it a natural choice for a short, low-hassle break.",
   },
   {
-    id: "safari",
-    title: "African Safari",
-    badge: "Safari",
-    icon: PawPrint,
-    image: BucketSafari,
-    window: "Luxury lodges offering extraordinary wildlife experiences",
-    desc: "Luxury lodges offering extraordinary wildlife experiences make African safari destinations a natural fit for private aviation itineraries.",
+    id: "scottsdale",
+    title: "Scottsdale",
+    badge: "Scottsdale",
+    icon: Landmark,
+    image: BucketScottsdale,
+    window: "Golf, spa experiences, and desert luxury",
+    desc: "Golf, spa experiences, and desert luxury make Scottsdale a relaxing choice for a few days away from competition.",
     columns: [
       {
         label: "Plan Around:",
         items: [
-          "Luxury Safari Lodge Stays",
-          "Private Bush-Flight Connections",
-          "Multi-Country Itineraries",
+          "Desert Spa Experiences",
+          "Golf Course Access",
+          "Luxury Resort Stays",
         ],
       },
     ],
-    themeLabel: "Wilderness Without Compromise",
+    themeLabel: "Desert Luxury, Quick Escape",
     themeText:
-      "Private aviation and bush-flight connections make it possible to reach remote safari lodges without sacrificing comfort.",
+      "Scottsdale's spa and golf resorts offer a relaxed pace that suits even the shortest breaks in the schedule.",
+  },
+  {
+    id: "europe",
+    title: "Europe",
+    badge: "Europe",
+    icon: Landmark,
+    image: BucketEurope,
+    window: "Quick city escapes to London, Paris, or Rome",
+    desc: "Quick city escapes to London, Paris, or Rome are made possible via private aviation, even within a narrow travel window.",
+    columns: [
+      {
+        label: "Plan Around:",
+        items: [
+          "Direct Private Aviation Routing",
+          "Iconic City Stopovers",
+          "Efficient Multi-Day Itineraries",
+        ],
+      },
+    ],
+    themeLabel: "City Escapes, Simplified",
+    themeText:
+      "Private aviation trims travel time to Europe's most iconic cities, making even a brief window feel worthwhile.",
   },
 ];
 
@@ -444,44 +437,44 @@ function FAQ() {
 
   const faqData = [
     {
-      q: "What is private jet travel?",
-      a: "Private jet travel allows travelers to use private aircraft with flexible scheduling, personalized service, and access to private aviation facilities.",
+      q: "Can you plan travel around my competition schedule?",
+      a: "Yes. Every itinerary is customized around your season, tournaments, training camps, and family commitments.",
     },
     {
-      q: "What is luxury concierge travel?",
-      a: "Luxury concierge travel provides personalized planning and ongoing support for flights, accommodations, transportation, dining, activities, and special requests.",
+      q: "Do you specialize in last-minute travel?",
+      a: "Absolutely. We frequently arrange luxury vacations with limited notice while maintaining exceptional quality and service.",
     },
     {
-      q: "Who benefits most from private aviation?",
-      a: "Professional athletes, executives, entrepreneurs, entertainers, and families with demanding schedules often appreciate the flexibility and convenience of private aviation.",
+      q: "Can you arrange private jet travel?",
+      a: "Yes. We coordinate private aviation, luxury ground transportation, and VIP airport services worldwide.",
     },
     {
-      q: "What are VIP airport services?",
-      a: "VIP airport services may include personalized assistance, private lounges, luggage coordination, and expedited airport support where available.",
+      q: "What happens if my schedule changes?",
+      a: "Our team manages changes to flights, accommodations, transportation, and activities whenever possible, minimizing disruption to your plans.",
     },
     {
-      q: "Can concierge services arrange family vacations?",
-      a: "Yes. Concierge planning often includes multi-generational travel, children's activities, private transportation, dining, and personalized itineraries.",
+      q: "Can my family join me on short trips?",
+      a: "Yes. Many itineraries are designed specifically for family travel during brief breaks in the competitive season.",
     },
     {
-      q: "Are private jet vacations only for international travel?",
-      a: "No. Private aviation can be used for domestic trips, island destinations, multi-city itineraries, and shorter regional journeys.",
+      q: "Do you recommend travel insurance?",
+      a: "Yes. Flexible travel protection can provide valuable coverage when athletic schedules change unexpectedly.",
     },
     {
-      q: "Can travel plans change after booking?",
-      a: "Luxury travel advisors often recommend flexible travel arrangements whenever possible and can assist with itinerary adjustments if needed.",
+      q: "How far in advance should I begin planning?",
+      a: "Even if travel dates are uncertain, early planning allows us to secure preferred accommodations while maintaining flexibility.",
     },
     {
-      q: "Are private villas and yacht charters included?",
-      a: "Yes. Concierge travel frequently combines private aviation with luxury villas, yacht charters, wellness resorts, and personalized experiences.",
+      q: "Can you help with international travel?",
+      a: "Yes. We coordinate passports, visas, transportation, luxury accommodations, and destination logistics around the world.",
     },
     {
-      q: "How far in advance should private jet vacations be planned?",
-      a: "Booking six to twelve months ahead generally provides the best availability, particularly during holidays and peak travel seasons.",
+      q: "Do you offer concierge services while I'm traveling?",
+      a: "Yes. Our advisors remain available throughout your trip to assist with itinerary adjustments, reservations, and unexpected changes.",
     },
     {
-      q: "Is working with a luxury travel advisor worthwhile?",
-      a: "For travelers seeking personalized service, expert coordination, and seamless logistics, professional travel planning often delivers exceptional value.",
+      q: "Why choose Trips & Ships Luxury Travel?",
+      a: "We understand the unique demands of professional sports and specialize in flexible luxury travel solutions that adapt to your schedule while delivering exceptional service and unforgettable experiences.",
     },
   ];
 
@@ -515,7 +508,7 @@ function FAQ() {
 }
 
 /* ── Main Component ──────────────────────────────────────────────── */
-const PrivateJetConciergeTravel = () => {
+const TravelingDuringTheCompetitiveSeason = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const [activeDestination, setActiveDestination] = useState("caribbean");
@@ -539,13 +532,13 @@ const PrivateJetConciergeTravel = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Private Jet &amp; Concierge Travel | Luxury Private Aviation &amp;
-          VIP Travel Planning
+          Traveling During the Competitive Season | Flexible Luxury Travel
+          for Professional Athletes
         </title>
-        <meta name="title" content="Private Jet & Concierge Travel" />
+        <meta name="title" content="Traveling During the Competitive Season" />
         <meta
           name="description"
-          content="Discover private jet vacations and concierge luxury travel for professional athletes, executives, and high-profile families. Learn how private aviation, VIP airport services, luxury transfers, and personalized concierge planning create seamless travel experiences."
+          content="Discover flexible luxury travel planning for professional athletes. Learn how private travel advisors coordinate last-minute vacations, changing schedules, playoffs, training camps, family commitments, and luxury getaways with complete flexibility."
         />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -568,37 +561,41 @@ const PrivateJetConciergeTravel = () => {
 
         <div className="Scenic_hero_content">
           <h1>
-            Private Jet <br /> &amp; Concierge Travel
+            Traveling During <br /> the Competitive Season
           </h1>
 
           <p>
-            Luxury travel begins long before you arrive at your destination.
-            For professional athletes, executives, entrepreneurs,
-            entertainers, and families with demanding schedules, the journey
-            itself should be as comfortable and effortless as the vacation.
+            For most travelers, vacations are planned months in advance with
+            fixed dates and confirmed itineraries. Professional athletes,
+            however, live by an entirely different calendar. Game schedules
+            shift, playoff appearances extend seasons, training camps begin
+            unexpectedly, and family commitments often need to fit into
+            narrow windows between competitions.
           </p>
 
           <p>
-            Private aviation and luxury concierge services transform travel
-            into a seamless experience by reducing stress, maximizing
-            flexibility, and ensuring every detail is professionally managed.
+            That's why luxury travel for athletes requires flexibility,
+            precision, and expert coordination. Whether you have a three-day
+            break between games, a week after a road trip, or an unexpected
+            opportunity following a tournament, your travel plans should
+            adapt to your schedule — not the other way around.
           </p>
 
           {readMore && (
             <>
               <p>
-                Whether you're planning an off-season family vacation,
-                celebrating a championship, attending an international event,
-                or embarking on a once-in-a-lifetime adventure, personalized
-                travel management allows you to focus on enjoying the
-                experience instead of coordinating the logistics.
+                At Trips &amp; Ships Luxury Travel, we specialize in
+                designing flexible luxury travel experiences that work around
+                the unpredictable demands of professional sports, ensuring
+                every journey is seamless, stress-free, and ready to adjust
+                whenever your schedule changes.
               </p>
 
               <p>
-                From private terminals and VIP airport assistance to luxury
-                ground transportation and carefully coordinated itineraries,
-                every detail contributes to a travel experience that feels
-                effortless, comfortable, and tailored to your lifestyle.
+                Rather than risking expensive cancellations or complicated
+                rebookings, flexible travel planning allows you to travel
+                with confidence, knowing your itinerary can adapt as needed —
+                whether you have 48 hours or two weeks available.
               </p>
 
               <p>
@@ -606,7 +603,7 @@ const PrivateJetConciergeTravel = () => {
                 spanning over 121 countries, and recognition as the 2024
                 Luxury Travel Influencer of the Year by Travel Leaders
                 Network, Angela Hughes has become one of the most trusted
-                voices in private aviation and concierge-level luxury travel.
+                voices in flexible luxury travel for professional athletes.
               </p>
             </>
           )}
@@ -623,30 +620,30 @@ const PrivateJetConciergeTravel = () => {
       </section>
 
       {/* ── WHY HIGH-PROFILE TRAVELERS CHOOSE PRIVATE AVIATION ───────── */}
-      <section className="adg-c-section adg-c-bg-white" id="adg-c-why-private-aviation">
+      <section className="adg-c-section adg-c-bg-white" id="adg-c-why-flexible-planning">
         <div className="adg-c-container">
           <div className="adg-c-section-header">
             <h2 className="adg-c-h2">
-              Why High-Profile Travelers Choose Private Aviation
+              Why Athletes Need Flexible Travel Planning
             </h2>
             <div className="adg-c-accent-line"></div>
             <p className="Asc-section-intro">
-              Training schedules, competitions, sponsorship commitments,
-              business meetings, and family responsibilities often leave very
-              little room for delays or complicated travel plans.
+              Competitive seasons rarely follow a predictable path. Rather
+              than risking expensive cancellations or complicated rebookings,
+              flexible travel planning allows you to travel with confidence.
             </p>
           </div>
 
           <div className="adg-c-overview-layout">
             <div className="adg-c-overview-icons">
               {[
-                "Flexible departure times",
-                "Greater privacy",
-                "More direct routing",
-                "Comfortable surroundings",
-                "Personalized service",
-                "Efficient boarding processes",
-                "Convenient family travel",
+                "Playoff qualification",
+                "Championship games",
+                "Tournament advancement",
+                "Weather delays",
+                "Schedule adjustments",
+                "Team obligations",
+                "Training camps",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -662,10 +659,10 @@ const PrivateJetConciergeTravel = () => {
                 <div className="adg-c-overview-callout-inner">
                   <Star size={28} className="adg-c-callout-star" />
                   <p className="adg-c-callout-text">
-                    Instead of adapting to airline schedules, your travel
-                    schedule is built around you. Private aviation offers a
-                    more personalized approach to travel from departure to
-                    arrival.
+                    Your schedule may also shift because of media appearances,
+                    sponsorship commitments, or family events. Your travel
+                    plans should adapt as needed, knowing your itinerary can
+                    change whenever your schedule does.
                   </p>
                 </div>
               </div>
@@ -673,12 +670,12 @@ const PrivateJetConciergeTravel = () => {
               <div className="adg-c-overview-image-wrap">
                 <img
                   src={DifferentApproachImage}
-                  alt="Family boarding a private jet with personalized service"
+                  alt="Professional athlete boarding a private jet between games"
                   className="adg-c-overview-img"
                 />
                 <div className="adg-c-overview-img-overlay">
                   <span className="adg-c-overview-img-label">
-                    Your Schedule, Your Journey
+                    Travel Built Around Your Season
                   </span>
                 </div>
               </div>
@@ -687,52 +684,50 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* MORE THAN JUST FLYING PRIVATE & LUXURY CONCIERGE TRAVEL */}
+      {/* TRAVEL BUILT AROUND YOUR SCHEDULE & LAST-MINUTE LUXURY TRAVEL */}
       <section
         className="Ejsc-ent-section"
-        id="Ejsc-more-than-flying"
+        id="Ejsc-schedule-and-last-minute"
         style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="Ejsc-container">
           <div className="Ejsc-section-header">
             <h2 className="Ejsc-section-title">
-              More Than Just Flying Private
+              Travel Built Around Your Schedule
             </h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejsc-section-subtitle">
-              Private aviation is about much more than luxury. It provides a
-              smoother and more efficient travel experience from departure to
-              arrival, particularly for families or travelers with limited
-              time.
+              Every athlete's calendar is unique. Whether you have 48 hours
+              or two weeks available, we'll maximize every moment of your
+              time away.
             </p>
           </div>
 
           <div className="Ejsc-ent-grid">
-            {/* Private Aviation Advantages Card */}
+            {/* Travel Built Around Your Schedule Card */}
             <div className="Ejsc-ent-card Ejsc-explora-card">
               <div className="Ejsc-card-header">
                 <div className="Ejsc-card-icon-wrap">
-                  <Plane size={24} className="Ejsc-card-icon" />
+                  <CalendarClock size={24} className="Ejsc-card-icon" />
                 </div>
                 <h3 className="Ejsc-card-title">
-                  Private Aviation Advantages
+                  Designed Around Your Calendar
                 </h3>
               </div>
 
               <p className="Ejsc-card-intro">
-                Every stage of the flying experience is designed to be
-                smoother, more efficient, and less stressful than
-                commercial travel.
+                Itineraries are built to accommodate however much time you
+                have, from a quick break to an extended window away.
               </p>
 
               <ul className="Ejsc-feature-list">
                 {[
-                  "Access to private terminals",
-                  "Reduced airport waiting times",
-                  "Customized flight schedules",
-                  "Spacious cabins",
-                  "Personalized onboard dining",
-                  "Flexible luggage allowances",
+                  "Short breaks between games",
+                  "Extended road trips",
+                  "Bye weeks & All-Star breaks",
+                  "Tournament windows",
+                  "International competitions",
+                  "Training camps & family holidays",
                 ].map((item, i) => (
                   <li key={i} className="Ejsc-feature-item">
                     <div className="Ejsc-feature-icon">
@@ -745,34 +740,33 @@ const PrivateJetConciergeTravel = () => {
 
               <div className="Ejsc-card-highlight">
                 <p>
-                  These advantages can make travel less stressful and more
-                  enjoyable, particularly for families or travelers with
-                  limited time.
+                  Whatever your available window, we'll maximize every moment
+                  of your time away.
                 </p>
               </div>
             </div>
 
-            {/* Luxury Concierge Travel Card */}
+            {/* Last-Minute Luxury Travel Card */}
             <div className="Ejsc-ent-card Ejsc-seabourn-card">
               <div className="Ejsc-card-header">
                 <div className="Ejsc-card-icon-wrap">
-                  <Headset size={24} className="Ejsc-card-icon" />
+                  <Sparkles size={24} className="Ejsc-card-icon" />
                 </div>
-                <h3 className="Ejsc-card-title">Luxury Concierge Travel</h3>
+                <h3 className="Ejsc-card-title">Last-Minute Luxury Travel</h3>
               </div>
 
               <p className="Ejsc-card-intro">
-                Exceptional travel doesn't happen by accident. Behind every
-                seamless vacation is thoughtful planning and careful
-                coordination.
+                Sometimes the best opportunities happen with very little
+                notice. Even then, every detail is managed to the highest
+                luxury standards.
               </p>
 
               <ul className="Ejsc-feature-list">
                 {[
-                  "Flights & ground transportation",
-                  "Hotel reservations & private villas",
-                  "Restaurant bookings & excursions",
-                  "Spa appointments & special celebrations",
+                  "Luxury resort escapes & private villas",
+                  "Yacht charters & luxury cruises",
+                  "Safari adventures & wellness retreats",
+                  "European city breaks & beach vacations",
                 ].map((item, i) => (
                   <li key={i} className="Ejsc-feature-item">
                     <div className="Ejsc-feature-icon">
@@ -785,9 +779,8 @@ const PrivateJetConciergeTravel = () => {
 
               <div className="Ejsc-card-highlight">
                 <p>
-                  Rather than coordinating multiple reservations yourself, a
-                  dedicated advisor ensures everything works together
-                  effortlessly.
+                  Even when travel plans come together quickly, a dedicated
+                  advisor ensures every detail works together effortlessly.
                 </p>
               </div>
             </div>
@@ -795,11 +788,11 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── VIP AIRPORT SERVICES ─────────────────────────────────────── */}
-      <section className="wnf-section wnf-bg-white" id="vip-airport-services">
+      {/* ── PRIVATE AVIATION FOR MAXIMUM FLEXIBILITY ─────────────────── */}
+      <section className="wnf-section wnf-bg-white" id="private-aviation-flexibility">
         <div className="wnf-container">
           <div className="wnf-section-header">
-            <h2 className="wnf-h2">VIP Airport Services</h2>
+            <h2 className="wnf-h2">Private Aviation for Maximum Flexibility</h2>
             <div className="wnf-accent-line"></div>
           </div>
 
@@ -808,16 +801,16 @@ const PrivateJetConciergeTravel = () => {
               <div className="wnf-image-stack">
                 <div className="wnf-img-frame wnf-frame-primary">
                   <img
-                    src={AirportLoungeImage}
-                    alt="Private airport terminal lounge"
+                    src={HeroImage2}
+                    alt="Private jet ready for a flexible departure"
                     className="wnf-photo"
                   />
                 </div>
 
                 <div className="wnf-img-frame wnf-frame-secondary">
                   <img
-                    src={AirportMeetGreetImage}
-                    alt="Personalized meet and greet service at a private airport lounge"
+                    src={AirportImage}
+                    alt="Athlete boarding a private jet on a tight schedule"
                     className="wnf-photo"
                   />
                 </div>
@@ -827,23 +820,24 @@ const PrivateJetConciergeTravel = () => {
             <div className="wnf-content-column">
               <div className="wnf-block">
                 <p className="wnf-lead-text">
-                  Airports can often be the most stressful part of a luxury
-                  vacation. VIP airport services help simplify the experience
-                  from arrival through departure.
+                  Commercial airline schedules don't always align with the
+                  demands of professional sports. Private charter flights
+                  allow athletes to maximize valuable time with family while
+                  minimizing travel stress.
                 </p>
 
                 <ul className="wnf-feature-list">
                   {[
-                    "Personalized meet and greet",
-                    "Expedited airport procedures",
-                    "Private airport lounges",
-                    "Professional luggage assistance",
-                    "Support for families traveling with multiple bags",
-                    "A relaxed beginning and end to every trip",
+                    "Flexible departure times",
+                    "Direct flights",
+                    "Reduced travel time",
+                    "Greater privacy",
+                    "Personalized service",
+                    "Convenient airport access & easy schedule changes",
                   ].map((feature, i) => (
                     <li key={i} className="wnf-feature-item">
                       <div className="wnf-icon-wrapper">
-                        <Luggage size={14} />
+                        <Plane size={14} />
                       </div>
                       <span className="wnf-feature-text">{feature}</span>
                     </li>
@@ -853,9 +847,9 @@ const PrivateJetConciergeTravel = () => {
 
               <div className="wnf-footer-note">
                 <p className="wnf-highlight-text">
-                  Professional staff assist travelers from arrival through
-                  departure, while streamlined procedures and private lounges
-                  create a calmer, more comfortable start to the journey.
+                  Private charter flights allow athletes to maximize valuable
+                  time with family while minimizing travel stress, no matter
+                  how the schedule shifts.
                 </p>
               </div>
             </div>
@@ -863,63 +857,62 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* LUXURY GROUND TRANSPORTATION & PERSONALIZED ITINERARIES */}
-      <section className="azs-suites-section" id="azs-ground-itineraries">
+      {/* LUXURY ACCOMMODATIONS THAT ADAPT & PLAYOFF PLANNING */}
+      <section className="azs-suites-section" id="azs-accommodations-playoffs">
         <div className="azs-container">
           <div className="azs-section-header">
             <h2 className="azs-section-title">
-              Luxury Ground Transportation &amp; <br /> Personalized Travel
-              Itineraries
+              Luxury Accommodations That <br /> Adapt to Your Season
             </h2>
             <div className="azs-section-accent"></div>
             <p className="azs-section-subtitle">
-              Your experience should remain exceptional after landing — and no
-              two travelers are the same.
+              Choosing the right accommodations is essential when schedules
+              are uncertain — flexibility remains a priority throughout.
             </p>
           </div>
 
           <div className="azs-suites-grid">
-            {/* Ground Transportation Card */}
+            {/* Luxury Accommodations Card */}
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
                   src={GroundImage}
-                  alt="Chauffeured luxury vehicle arriving at a private resort"
+                  alt="Luxury hotel suite with flexible late check-in"
                   className="azs-suites-img"
                 />
                 <span className="azs-suites-image-badge">
-                  Comfortable, Efficient Transfers
+                  Flexibility First
                 </span>
               </div>
 
               <div className="azs-suites-content">
                 <div className="azs-suites-card-header">
                   <div className="azs-suites-icon-circle">
-                    <Car size={24} className="azs-suites-icon" />
+                    <Home size={24} className="azs-suites-icon" />
                   </div>
                   <h3 className="azs-suites-title">
-                    Luxury Ground Transportation
+                    Accommodations That Adapt
                   </h3>
                 </div>
 
                 <p className="azs-suites-intro">
-                  Professional transportation ensures comfortable, efficient
-                  travel throughout your vacation, from the tarmac to your
-                  final destination.
+                  Whether staying in a luxury hotel, private villa, or
+                  exclusive resort, flexibility remains a priority when
+                  schedules are uncertain.
                 </p>
 
                 <div className="azs-suites-body">
                   <h4 className="azs-suites-group-title">
-                    Options may include:
+                    We recommend properties with:
                   </h4>
 
                   <ul className="azs-suites-list">
                     {[
-                      "Chauffeured sedans & executive SUVs",
-                      "Luxury vans for larger families",
-                      "Private drivers & resort transfers",
-                      "Yacht transfers",
-                      "Helicopter transfers in select destinations",
+                      "Flexible cancellation policies",
+                      "Late check-in options",
+                      "Extended stay availability",
+                      "Private entrances & spacious accommodations",
+                      "Concierge & family-friendly amenities",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-suites-list-item">
                         <div className="azs-suites-list-icon-wrapper">
@@ -934,55 +927,54 @@ const PrivateJetConciergeTravel = () => {
 
                   <div className="azs-suites-highlight-box azs-seabourn-suites-highlight">
                     <p className="azs-suites-highlight-text">
-                      Every transfer is designed to feel like a natural
-                      extension of the flight itself.
+                      Every property is chosen with an uncertain schedule in
+                      mind, so change never means disruption.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Personalized Itineraries Card */}
+            {/* Playoff & Championship Planning Card */}
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
                   src={ConciergeImage}
-                  alt="Concierge advisor building a personalized travel itinerary"
+                  alt="Concierge advisor monitoring playoff travel scenarios"
                   className="azs-suites-img"
                 />
                 <span className="azs-suites-image-badge">
-                  Built Around Your Goals
+                  Protecting Every Scenario
                 </span>
               </div>
 
               <div className="azs-suites-content">
                 <div className="azs-suites-card-header">
                   <div className="azs-suites-icon-circle">
-                    <Compass size={24} className="azs-suites-icon" />
+                    <Trophy size={24} className="azs-suites-icon" />
                   </div>
                   <h3 className="azs-suites-title">
-                    Personalized Travel Itineraries
+                    Planning Around Playoffs &amp; Championships
                   </h3>
                 </div>
 
                 <p className="azs-suites-intro">
-                  Luxury concierge planning begins by understanding your
-                  goals, whether that means quiet family time or a
-                  once-in-a-lifetime adventure.
+                  One of the biggest challenges for athletes is planning
+                  travel before knowing exactly when the season will end.
                 </p>
 
                 <div className="azs-suites-body">
                   <h4 className="azs-suites-group-title">
-                    Some travelers want:
+                    We help by:
                   </h4>
 
                   <ul className="azs-suites-list">
                     {[
-                      "Quiet family time & wellness experiences",
-                      "Adventure activities & cultural experiences",
-                      "Luxury cruises & private yacht charters",
-                      "Sports events & championship celebrations",
-                      "Multi-generational vacations",
+                      "Monitoring playoff scenarios",
+                      "Holding preferred reservations when possible",
+                      "Coordinating flexible arrival dates",
+                      "Managing itinerary changes",
+                      "Protecting your investment with travel coverage",
                     ].map((item, idx) => (
                       <li key={idx} className="azs-suites-list-item">
                         <div className="azs-suites-list-icon-wrapper">
@@ -997,8 +989,8 @@ const PrivateJetConciergeTravel = () => {
 
                   <div className="azs-suites-highlight-box azs-azamara-suites-highlight">
                     <p className="azs-suites-highlight-text">
-                      Every itinerary is customized around your interests,
-                      schedule, and preferred pace of travel.
+                      Our proactive planning allows you to focus on
+                      competition while we manage the logistics.
                     </p>
                   </div>
                 </div>
@@ -1015,12 +1007,12 @@ const PrivateJetConciergeTravel = () => {
       >
         <div className="Leg-container">
           <div className="Leg-header">
-            <h2 className="Leg-title">Concierge Services Beyond Travel</h2>
+            <h2 className="Leg-title">Concierge Support Every Step of the Way</h2>
             <div className="adg-c-accent-line"></div>
             <p className="Leg-subtitle">
-              Luxury concierge support doesn't stop after your arrival. Every
-              detail is coordinated to create a personalized travel
-              experience.
+              Changing schedules require responsive service. When plans
+              change, one phone call is all it takes for our team to make the
+              necessary adjustments.
             </p>
           </div>
 
@@ -1029,42 +1021,42 @@ const PrivateJetConciergeTravel = () => {
               {
                 id: 1,
                 accent: "gold",
-                icon: Utensils,
-                title: "Dining & Entertainment",
+                icon: Plane,
+                title: "Flight & Hotel Adjustments",
                 description:
-                  "Private dining reservations, event tickets, and golf tee times arranged around your schedule.",
-                pills: ["Private Dining", "Event Tickets", "Golf Tee Times"],
-                highlight: "Reservations handled before you even arrive.",
+                  "Flight monitoring and hotel adjustments handled quickly whenever your schedule shifts.",
+                pills: ["Flight Monitoring", "Hotel Adjustments"],
+                highlight: "Changes managed before you even have to ask.",
               },
               {
                 id: 2,
                 accent: "navy",
-                icon: HeartHandshake,
-                title: "Wellness & Family",
+                icon: Car,
+                title: "Transportation & Reservations",
                 description:
-                  "Spa scheduling, wellness appointments, and trusted childcare recommendations for the whole family.",
-                pills: ["Spa Scheduling", "Wellness", "Childcare"],
-                highlight: "Every family member is thought of and cared for.",
+                  "Transportation changes and restaurant reservations coordinated around your updated plans.",
+                pills: ["Transportation", "Restaurant Reservations"],
+                highlight: "Every moving piece stays connected.",
               },
               {
                 id: 3,
                 accent: "teal",
                 icon: Camera,
-                title: "Personalized Experiences",
+                title: "Excursions & Celebrations",
                 description:
-                  "Private guides and photography sessions that capture and elevate every moment of the trip.",
-                pills: ["Private Guides", "Photography", "Local Access"],
-                highlight: "Experiences shaped around your interests.",
+                  "Excursion modifications and special celebrations arranged around your available time.",
+                pills: ["Excursion Modifications", "Special Celebrations"],
+                highlight: "Every occasion marked, however short the trip.",
               },
               {
                 id: 4,
                 accent: "gold",
-                icon: Gem,
-                title: "Celebrations & Milestones",
+                icon: Luggage,
+                title: "Luggage & Emergency Support",
                 description:
-                  "Anniversary celebrations and championship celebrations planned down to the smallest detail.",
-                pills: ["Anniversaries", "Championships", "Milestones"],
-                highlight: "Every milestone marked in style.",
+                  "Luggage coordination and emergency assistance available whenever you need them.",
+                pills: ["Luggage Coordination", "Emergency Assistance"],
+                highlight: "One phone call is all it takes.",
               },
             ].map((card) => {
               const Icon = card.icon;
@@ -1131,13 +1123,13 @@ const PrivateJetConciergeTravel = () => {
         <div className="dmg-info-container">
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
-              <h2 className="dmg-info-title">Family Travel Without the Stress</h2>
+              <h2 className="dmg-info-title">Family Travel During the Season</h2>
               <div className="dmg-info-accent"></div>
 
               <p className="dmg-info-lead">
-                Traveling with children, grandparents, or extended family
-                requires additional coordination. Every family member enjoys
-                a smoother, more enjoyable vacation.
+                Balancing professional commitments with family time can be
+                challenging. We create travel experiences that allow athletes
+                to reconnect with loved ones whenever opportunities arise.
               </p>
 
               <div className="dmg-info-features dmg-info-features-scrollable">
@@ -1147,7 +1139,35 @@ const PrivateJetConciergeTravel = () => {
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Multiple Flight Arrivals &amp; Transfers
+                      Weekend Resort Escapes
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Short trips designed to make the most of a quick break.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      School Holiday &amp; Theme Park Vacations
+                    </h3>
+                    <p className="dmg-info-feature-desc">
+                      Family-friendly stays timed around school schedules.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="dmg-info-feature-item">
+                  <div className="dmg-info-icon-box">
+                    <Check size={16} />
+                  </div>
+                  <div className="dmg-info-feature-texts">
+                    <h3 className="dmg-info-feature-title">
+                      Multigenerational Family Trips
                     </h3>
                     <p className="dmg-info-feature-desc">
                       Coordinated arrivals so every family member lands and
@@ -1162,41 +1182,10 @@ const PrivateJetConciergeTravel = () => {
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Child-Friendly Accommodations
+                      Holiday Celebrations &amp; Beach Retreats
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Restaurant reservations and stays selected with children
-                      in mind.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Group Excursions
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Activity scheduling that brings the whole family
-                      together.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Celebration Planning &amp; Special Requests
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Every detail handled, down to the most personal
-                      requests.
+                      Every itinerary customized around your available time.
                     </p>
                   </div>
                 </div>
@@ -1207,14 +1196,14 @@ const PrivateJetConciergeTravel = () => {
               <div className="dmg-media-wrapper">
                 <img
                   src={FamilyImage}
-                  alt="Multi-generational family arriving together on a private jet vacation"
+                  alt="Family reuniting during a short break in the competitive season"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
                 <div className="dmg-media-badge">
-                  <span>Every Generation, One Seamless Trip</span>
+                  <span>Every Family Reunion, Perfectly Timed</span>
                 </div>
               </div>
             </div>
@@ -1256,17 +1245,16 @@ const PrivateJetConciergeTravel = () => {
 
                 <div className="ugt-questions-box">
                   <span className="ugt-questions-title">
-                    Luxury travel planning can help support discretion by
-                    recommending:
+                    We arrange:
                   </span>
 
                   <ul className="ugt-questions-list">
                     {[
-                      "Private Accommodations",
-                      "Personalized Transportation",
-                      "Quiet Luxury Properties",
-                      "Flexible Itineraries",
-                      "Trusted Local Partners",
+                      "Private Airport Services & VIP Terminals",
+                      "Discreet Accommodations & Private Residences",
+                      "Secure Transportation",
+                      "Confidential Itineraries",
+                      "Personal Security Coordination (When Requested)",
                     ].map((item, idx) => (
                       <li key={idx} className="ugt-question-item">
                         <Check size={16} className="ugt-question-icon" />
@@ -1293,10 +1281,10 @@ const PrivateJetConciergeTravel = () => {
         </div>
       </section>
 
-      {/* ── PRIVATE VILLAS, RESORTS & YACHT COORDINATION ─────────────── */}
+      {/* ── TRAVEL INSURANCE AND FLEXIBILITY ──────────────────────────── */}
       <section
         className="dmg-info-section dmg-bg-white"
-        id="dmg-villas-resorts-yachts"
+        id="dmg-travel-insurance-flexibility"
       >
         <div className="dmg-info-container">
           <div className="dmg-info-grid">
@@ -1304,15 +1292,15 @@ const PrivateJetConciergeTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  src={YachtImage}
-                  alt="Private yacht anchored near a luxury resort"
+                  src={VillaImage}
+                  alt="Travel advisor reviewing flexible travel protection options"
                   className="dmg-media-img"
                   style={{ height: "710px" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
                 <div className="dmg-media-badge">
-                  <span>One Seamless Itinerary</span>
+                  <span>Travel With Confidence</span>
                 </div>
               </div>
             </div>
@@ -1320,70 +1308,70 @@ const PrivateJetConciergeTravel = () => {
             {/* Right Side Content */}
             <div className="dmg-info-content">
               <h2 className="dmg-info-title">
-                Private Villas, Resorts &amp; Yacht Coordination
+                Travel Insurance &amp; Flexibility
               </h2>
               <div className="dmg-info-accent"></div>
 
               <p className="dmg-info-lead">
-                Luxury travel often includes multiple accommodations and
-                experiences. Every part of the journey is carefully connected
-                into one seamless itinerary.
+                Because athletic schedules can change unexpectedly,
+                comprehensive travel protection is an important part of every
+                itinerary. Our advisors explain your options so you can
+                travel with confidence.
               </p>
 
               <div className="dmg-info-features dmg-info-features-scrollable">
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Home size={16} />
+                    <ShieldCheck size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Private Villas
+                      Trip Interruption Benefits
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Spacious accommodations with personalized service.
+                      Coverage that accounts for sudden schedule changes.
                     </p>
                   </div>
                 </div>
 
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Building2 size={16} />
+                    <CalendarClock size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Luxury Resorts
+                      Flexible Cancellation Options
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Wellness facilities, family programs, and fine dining.
+                      Coverage designed for an unpredictable season.
                     </p>
                   </div>
                 </div>
 
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Ship size={16} />
+                    <HeartHandshake size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Private Yacht Charters
+                      Medical Coverage
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Flexible coastal exploration with professional crews.
+                      Protection in place wherever your travels take you.
                     </p>
                   </div>
                 </div>
 
                 <div className="dmg-info-feature-item">
                   <div className="dmg-info-icon-box">
-                    <Award size={16} />
+                    <Headset size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
                     <h3 className="dmg-info-feature-title">
-                      Exclusive Residences
+                      International Assistance &amp; Emergency Transportation
                     </h3>
                     <p className="dmg-info-feature-desc">
-                      Longer stays supported by dedicated staff and concierge
-                      services.
+                      Support available if plans need to change quickly.
                     </p>
                   </div>
                 </div>
@@ -1396,21 +1384,20 @@ const PrivateJetConciergeTravel = () => {
       {/* ── DESTINATIONS PERFECT FOR PRIVATE JET TRAVEL (TABBED) ─────── */}
       <section
         className="luc-destinations-section"
-        id="luc-private-jet-destinations"
+        id="luc-short-getaway-destinations"
       >
         <div className="luc-destinations-container">
           <div className="luc-destinations-header">
             <h2 className="luc-destinations-title">
-              Destinations Perfect for Private Jet Travel
+              Luxury Destinations for Short Getaways
             </h2>
 
             <div className="adg-c-accent-line"></div>
 
             <p className="luc-destinations-intro">
-              Private aviation makes it easier to reach destinations where
-              convenience and privacy are especially valuable. Private
-              aviation often makes multi-destination itineraries more
-              convenient and efficient.
+              Even a few days away can provide valuable time to relax and
+              recharge. Every destination is selected based on your
+              available time and travel goals.
             </p>
           </div>
 
@@ -1500,10 +1487,10 @@ const PrivateJetConciergeTravel = () => {
       </section>
 
       {/* ── WHY WORK WITH A LUXURY TRAVEL ADVISOR? ────────────────── */}
-      <section className="adg-section" id="adg-luxury-travel-advisor">
+      <section className="adg-section" id="adg-why-trips-and-ships">
         <div className="adg-container">
           <div className="adg-section-header" style={{ marginBottom: "60px" }}>
-            <h2 className="adg-h2">Why Work With a Luxury Travel Advisor?</h2>
+            <h2 className="adg-h2">Why Work with Trips &amp; Ships Luxury Travel?</h2>
             <div className="adg-accent-line"></div>
           </div>
 
@@ -1514,7 +1501,7 @@ const PrivateJetConciergeTravel = () => {
             <div className="adg-content-card-side">
               <img
                 src={AdvisorImage}
-                alt="Luxury travel advisor coordinating a private jet itinerary"
+                alt="Travel advisor coordinating a flexible itinerary for a professional athlete"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
               />
@@ -1526,17 +1513,16 @@ const PrivateJetConciergeTravel = () => {
                 </div>
 
                 <p className="adg-card-lead">
-                  Managing a luxury vacation involving flights, accommodations,
-                  transportation, and activities can quickly become complex.
-                  Professional planning allows travelers to enjoy the vacation
-                  while every detail is handled behind the scenes.
+                  Professional athletes require more than standard vacation
+                  planning. We become your trusted travel partner, ready to
+                  adapt whenever your schedule changes.
                 </p>
 
                 <div className="adg-card-divider"></div>
 
                 <p className="adg-card-subtext">
-                  Because true luxury isn't just where you go — it's how
-                  effortlessly you get there.
+                  Because when your time away is limited, every moment should
+                  be extraordinary.
                 </p>
               </div>
             </div>
@@ -1544,31 +1530,35 @@ const PrivateJetConciergeTravel = () => {
             <div className="adg-list-side">
               {[
                 {
-                  title: "Personalized Destination Recommendations",
+                  title: "Personalized Travel Planning",
                   icon: <Compass size={20} />,
+                },
+                {
+                  title: "Last-Minute Itinerary Management",
+                  icon: <Sparkles size={20} />,
                 },
                 {
                   title: "Private Aviation Coordination",
                   icon: <Plane size={20} />,
                 },
                 {
-                  title: "VIP Airport Assistance",
-                  icon: <Luggage size={20} />,
-                },
-                {
-                  title: "Luxury Accommodation Selection",
+                  title: "Luxury Accommodations",
                   icon: <Home size={20} />,
                 },
                 {
-                  title: "Ground Transportation Planning",
-                  icon: <Car size={20} />,
+                  title: "Family Travel Expertise",
+                  icon: <HeartHandshake size={20} />,
                 },
                 {
-                  title: "Concierge Support Before & During Travel",
+                  title: "Flexible Booking Strategies",
+                  icon: <CalendarClock size={20} />,
+                },
+                {
+                  title: "Concierge Support & Privacy-Focused Planning",
                   icon: <Headset size={20} />,
                 },
                 {
-                  title: "Ongoing Assistance Throughout the Journey",
+                  title: "Global Destination Expertise",
                   icon: <Map size={20} />,
                 },
               ].map((item, i) => (
@@ -1585,7 +1575,7 @@ const PrivateJetConciergeTravel = () => {
       {/* TIPS FOR PLANNING PRIVATE JET TRAVEL */}
       <section
         className="Avr-planning-section"
-        id="Asc-private-jet-planning-tips"
+        id="Asc-competitive-season-planning-tips"
         style={{ backgroundColor: "var(--bg-white)" }}
       >
         <div className="Asc-container">
@@ -1594,7 +1584,7 @@ const PrivateJetConciergeTravel = () => {
             <span className="Avr-planning-eyebrow">Planning With Purpose</span>
 
             <h2 className="Avr-planning-title">
-              Tips for Planning Private Jet Travel
+              Tips for Planning Travel Around the Season
             </h2>
 
             <div className="Avr-planning-divider"></div>
@@ -1611,11 +1601,11 @@ const PrivateJetConciergeTravel = () => {
               </h3>
 
               <p className="Avr-planning-left-body">
-                Private aviation and luxury accommodations are often in high
-                demand during peak travel periods. Keeping your schedule
-                flexible allows for easier adjustments if plans change, and
-                choosing destinations carefully ensures each trip matches your
-                travel goals and preferred pace.
+                Even if travel dates are uncertain, early planning allows us
+                to secure preferred accommodations while maintaining
+                flexibility. Keeping your schedule flexible allows for easier
+                adjustments if plans change, and choosing destinations
+                carefully ensures each trip matches your available time.
               </p>
 
               <div className="Avr-planning-alert">
@@ -1690,7 +1680,7 @@ const PrivateJetConciergeTravel = () => {
         <div className="ugt-advantage-container">
           <div className="ugt-advantage-header">
             <span className="ugt-advantage-eyebrow">
-              Private Jet &amp; Concierge Travel
+              Travel Without Compromise
             </span>
 
             <h2 className="ugt-advantage-title">
@@ -1700,10 +1690,10 @@ const PrivateJetConciergeTravel = () => {
             <div className="Asc-accent-line"></div>
 
             <p className="ugt-advantage-intro">
-              Professional athletes and executives often experience changing
-              schedules. Luxury travel planning emphasizes flexibility
-              whenever possible, and thoughtful planning makes adapting to
-              changes much easier.
+              A demanding competitive schedule shouldn't prevent you from
+              enjoying exceptional travel experiences. Our experienced
+              advisors create personalized luxury travel experiences that
+              evolve with your schedule.
             </p>
           </div>
 
@@ -1796,8 +1786,8 @@ const PrivateJetConciergeTravel = () => {
               marginInline: "auto",
             }}
           >
-            The result is a vacation that feels effortless from the first
-            call to the final transfer home.
+            Because when your time away is limited, every moment should be
+            extraordinary.
           </p>
         </div>
       </section>
@@ -1893,7 +1883,7 @@ const PrivateJetConciergeTravel = () => {
                     {
                       icon: <Plane size={16} />,
                       label:
-                        "Specialist in private aviation and concierge luxury travel for high-profile clients",
+                        "Specialist in flexible luxury travel planning for professional athletes",
                     },
                   ].map((item, i) => (
                     <div className="Adg-expert-list-item" key={i}>
@@ -1910,9 +1900,9 @@ const PrivateJetConciergeTravel = () => {
                   style={{ marginTop: "24px", lineHeight: "1.8" }}
                 >
                   Angela Hughes and the team at Trips &amp; Ships Luxury Travel
-                  help professional athletes, executives, and high-profile
-                  families plan private jet and concierge travel — from
-                  aviation coordination to flawless on-the-ground execution.
+                  help professional athletes plan flexible luxury travel
+                  around an unpredictable competitive schedule — from
+                  last-minute bookings to flawless on-the-ground execution.
                 </p>
               </div>
             </div>
@@ -1927,8 +1917,8 @@ const PrivateJetConciergeTravel = () => {
             <h2 className="Asc-h2">Frequently Asked Questions</h2>
             <div className="Asc-accent-line"></div>
             <p className="Asc-faq-intro">
-              Everything you need to know about planning private jet and
-              concierge luxury travel.
+              Everything you need to know about planning flexible luxury
+              travel around a professional athlete's competitive season.
             </p>
           </div>
           <FAQ />
@@ -1940,7 +1930,7 @@ const PrivateJetConciergeTravel = () => {
         <div className="Asc-help-bg-wrap">
           <img
             src={CtaImage}
-            alt="Private jet on the tarmac at sunset"
+            alt="Athlete departing on a flexible luxury getaway at sunset"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>
@@ -1951,11 +1941,10 @@ const PrivateJetConciergeTravel = () => {
             <div className="Asc-help-content">
               <div className="Asc-help-header">
                 <span className="Asc-help-eyebrow">
-                  Personalized Luxury Travel Planning
+                  Flexible Luxury Travel Planning
                 </span>
                 <h2 className="Asc-help-h2">
-                  Ready for Travel That's as <br /> Effortless as It Is
-                  Exceptional?
+                  Ready for Travel That Moves <br /> With Your Schedule?
                 </h2>
                 <div className="Asc-help-accent"></div>
               </div>
@@ -1965,21 +1954,22 @@ const PrivateJetConciergeTravel = () => {
                   <p className="Asc-help-intro">
                     Connect with Angela Hughes and the expert team at Trips
                     &amp; Ships Luxury Travel for personalized guidance on
-                    planning private jet and concierge luxury travel.
+                    flexible travel planning built around your competitive
+                    season.
                   </p>
 
                   <p className="Asc-help-intro">
-                    From private aviation and VIP airport services to luxury
-                    transfers, concierge planning, and carefully coordinated
-                    itineraries, expert support helps every journey come
-                    together seamlessly.
+                    From last-minute bookings and private aviation to
+                    adaptable accommodations and concierge planning, expert
+                    support helps every journey come together seamlessly —
+                    no matter how the schedule changes.
                   </p>
 
                   <p className="Asc-help-intro">
-                    Whether you're celebrating a championship, planning an
-                    off-season family vacation, organizing a multi-generational
-                    reunion, or embarking on a once-in-a-lifetime adventure,
-                    personalized planning makes all the difference.
+                    Whether you're planning a quick getaway between games, a
+                    family vacation during a bye week, or a luxury
+                    celebration after the season, personalized planning
+                    makes all the difference.
                   </p>
 
                   <div className="Asc-help-btn-container">
@@ -1988,7 +1978,7 @@ const PrivateJetConciergeTravel = () => {
                       className="Asc-help-cta-btn"
                       style={{ textDecoration: "none" }}
                     >
-                      Start Planning Your Private Jet Journey
+                      Start Planning Your Flexible Getaway
                       <ArrowRight size={18} />
                     </Link>
                   </div>
@@ -2000,11 +1990,11 @@ const PrivateJetConciergeTravel = () => {
                   </h3>
                   <ul className="Asc-help-bullets">
                     {[
+                      "Last-minute itinerary management",
                       "Private aviation coordination",
-                      "VIP airport & lounge arrangements",
-                      "Luxury ground transportation planning",
-                      "Personalized concierge itineraries",
-                      "Privacy & discretion planning",
+                      "Flexible booking strategies",
+                      "Luxury accommodations that adapt",
+                      "Privacy-focused travel planning",
                       "Family-focused travel coordination",
                     ].map((item, i) => (
                       <li key={i}>
@@ -2017,10 +2007,9 @@ const PrivateJetConciergeTravel = () => {
                   </ul>
 
                   <p className="Asc-help-intro" style={{ marginTop: "20px" }}>
-                    Trips &amp; Ships Luxury Travel specializes in helping
-                    professional athletes, executives, and high-profile
-                    families create highly personalized private jet and
-                    concierge travel experiences worldwide.
+                    Trips &amp; Ships Luxury Travel specializes in flexible
+                    luxury travel solutions that adapt to a professional
+                    athlete's schedule while delivering exceptional service.
                   </p>
                 </div>
               </div>
@@ -2032,4 +2021,4 @@ const PrivateJetConciergeTravel = () => {
   );
 };
 
-export default PrivateJetConciergeTravel;
+export default TravelingDuringTheCompetitiveSeason;
