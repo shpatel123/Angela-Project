@@ -816,6 +816,14 @@ const Nav = () => {
               >
                 luxury travel guide explora journeys
               </NavLink>
+
+              <NavLink
+                to="/why-luxury-travelers-are-choosing-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                why luxury travelers are choosing explora journeys
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1626,6 +1634,14 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               luxury travel guide explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/why-luxury-travelers-are-choosing-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              why luxury travelers are choosing explora journeys
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

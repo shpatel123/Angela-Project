@@ -101,6 +101,7 @@ import WhyChooseExploraJourneys from "./pages/WhyChooseExploraJourneys/WhyChoose
 import ExploraJourneysItineraries from "./pages/ExploraJourneysItineraries/ExploraJourneysItineraries";
 import ExploraJourneysResourceCenter from "./pages/ExploraJourneysResourceCenter/ExploraJourneysResourceCenter";
 import LuxuryTravelGuideExploraJourneys from "./pages/LuxuryTravelGuideExploraJourneys/LuxuryTravelGuideExploraJourneys";
+import WhyLuxuryTravelersChoosingExploraJourneys from "./pages/WhyLuxuryTravelersChoosingExploraJourneys/WhyLuxuryTravelersChoosingExploraJourneys";
 
 function App() {
   return (
@@ -500,6 +501,7 @@ function App() {
           <Route path="/explora-journeys-itineraries" element={<ExploraJourneysItineraries />} />
           <Route path="/explora-journeys-resource-center" element={<ExploraJourneysResourceCenter />} />
           <Route path="/luxury-travel-guide-explora-journeys" element={<LuxuryTravelGuideExploraJourneys />} />
+          <Route path="/why-luxury-travelers-are-choosing-explora-journeys" element={<WhyLuxuryTravelersChoosingExploraJourneys />} />
 
 
         </Routes>
