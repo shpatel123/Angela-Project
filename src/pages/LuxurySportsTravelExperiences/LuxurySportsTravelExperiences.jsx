@@ -1237,67 +1237,6 @@ const LuxurySportsTravelExperiences = () => {
                 interests, and travel preferences.
               </p>
 
-              {/* <div className="dmg-info-features dmg-info-features-scrollable">
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Professional Athletes &amp; Families
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Off-season travel built around the sports you love to
-                      watch, not just play.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Corporate Incentive &amp; Client Entertainment
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Executive retreats and client appreciation events built
-                      around premier sporting events.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Friends &amp; Family Vacations
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Championship celebrations, milestone birthdays, and
-                      anniversaries planned around the event.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="dmg-info-feature-item">
-                  <div className="dmg-info-icon-box">
-                    <Check size={16} />
-                  </div>
-                  <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Celebration Planning &amp; Special Requests
-                    </h3>
-                    <p className="dmg-info-feature-desc">
-                      Every detail handled, down to the most personal
-                      requests.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
 
             <div className="dmg-info-media">
@@ -1313,6 +1252,83 @@ const LuxurySportsTravelExperiences = () => {
                 <div className="dmg-media-badge">
                   <span>Every Group, One Seamless Trip</span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── WHO WE SERVE ──────────────────────────────────────────── */}
+      <section className="Asc-section Asc-bg-soft" id="who-we-serve">
+        <div className="Asc-container">
+          <div className="Asc-section-header">
+            <h2 className="Asc-h2">Who We Serve</h2>
+            <div className="Asc-accent-line"></div>
+            <p className="Asc-section-intro">
+              Luxury sports travel is designed for every type of group —
+              from professional athletes to corporate teams, families, and
+              friends.
+            </p>
+          </div>
+
+          <div className="dmg-info-features dmg-info-features-scrollable">
+            <div className="dmg-info-feature-item">
+              <div className="dmg-info-icon-box">
+                <Check size={16} />
+              </div>
+              <div className="dmg-info-feature-texts">
+                <h3 className="dmg-info-feature-title">
+                  Professional Athletes &amp; Families
+                </h3>
+                <p className="dmg-info-feature-desc">
+                  Off-season travel built around the sports you love to
+                  watch, not just play.
+                </p>
+              </div>
+            </div>
+
+            <div className="dmg-info-feature-item">
+              <div className="dmg-info-icon-box">
+                <Check size={16} />
+              </div>
+              <div className="dmg-info-feature-texts">
+                <h3 className="dmg-info-feature-title">
+                  Corporate Incentive &amp; Client Entertainment
+                </h3>
+                <p className="dmg-info-feature-desc">
+                  Executive retreats and client appreciation events built
+                  around premier sporting events.
+                </p>
+              </div>
+            </div>
+
+            <div className="dmg-info-feature-item">
+              <div className="dmg-info-icon-box">
+                <Check size={16} />
+              </div>
+              <div className="dmg-info-feature-texts">
+                <h3 className="dmg-info-feature-title">
+                  Friends &amp; Family Vacations
+                </h3>
+                <p className="dmg-info-feature-desc">
+                  Championship celebrations, milestone birthdays, and
+                  anniversaries planned around the event.
+                </p>
+              </div>
+            </div>
+
+            <div className="dmg-info-feature-item">
+              <div className="dmg-info-icon-box">
+                <Check size={16} />
+              </div>
+              <div className="dmg-info-feature-texts">
+                <h3 className="dmg-info-feature-title">
+                  Celebration Planning &amp; Special Requests
+                </h3>
+                <p className="dmg-info-feature-desc">
+                  Every detail handled, down to the most personal
+                  requests.
+                </p>
               </div>
             </div>
           </div>

@@ -36,17 +36,18 @@ import HeroImage1 from "../../assets/PrivateJetConciergeTravel/travel-during-the
 import HeroImage2 from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete.webp";
 import HeroImage3 from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
 import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
-import BucketCaribbean from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
-import BucketNapa from "../../assets/PrivateJetConciergeTravel/vip-private-airport-lounge-luxury-travel-services.webp";
-import BucketAspen from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-experiences-private-hospitality.webp";
-import BucketSouthFlorida from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
-import BucketScottsdale from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
-import BucketEurope from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
+import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/private-exclusive-caribbean-island.jpg";
+import BucketNapa from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-poolside-retreat.webp";
+import BucketAspen from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-alaska-coastal-mountain-landscape.jpg";
+import BucketSouthFlorida from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-beach-aerial.jpg";
+import BucketScottsdale from "../../assets/WhatIsIncludedDisneyCruise/senses-spa-relaxation-disney-cruise.jpg";
+import BucketEurope from "../../assets/LuxuryAlumniTravel/paris-luxury-travelers-eiffel-tower-riverside-cultural-experience.jpg";
 import ConciergeImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
 import AirportImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
 import GroundImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
 import FamilyImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
 import VillaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import InsuranceImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
@@ -1292,8 +1293,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  src={VillaImage}
-                  alt="Travel advisor reviewing flexible travel protection options"
+                  src={InsuranceImage}
+                  alt="Family arriving for a stress-free luxury vacation with flexible travel protection"
                   className="dmg-media-img"
                   style={{ height: "710px" }}
                 />

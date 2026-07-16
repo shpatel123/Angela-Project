@@ -78,6 +78,8 @@ import PrivateJetConciergeTravel from "./pages/PrivateJetConciergeTravel/Private
 import ProfessionalAthleteBucketListAdventures from "./pages/ProfessionalAthleteBucketListAdventures/ProfessionalAthleteBucketListAdventures";
 import LuxurySportsTravelExperiences from "./pages/LuxurySportsTravelExperiences/LuxurySportsTravelExperiences";
 import TravelingDuringTheCompetitiveSeason from "./pages/TravelingDuringTheCompetitiveSeason/TravelingDuringTheCompetitiveSeason";
+import FamilyConciergeTravelServices from "./pages/FamilyConciergeTravelServices/FamilyConciergeTravelServices";
+import LuxuryCruisesForProfessionalAthletes from "./pages/LuxuryCruisesForProfessionalAthletes/LuxuryCruisesForProfessionalAthletes";
 import ExploraJourneysReviews from "./pages/ExploraJourneysReviews/ExploraJourneysReviews";
 import WhatMakesExploraDifferent from "./pages/WhatMakesExploraDifferent/WhatMakesExploraDifferent";
 import IsExploraLuxury from "./pages/IsExploraLuxury/IsExploraLuxury";
@@ -471,6 +473,16 @@ function App() {
           <Route
             path="/traveling-during-the-competitive-season"
             element={<TravelingDuringTheCompetitiveSeason />}
+          />
+
+          <Route
+            path="/family-concierge-travel-services"
+            element={<FamilyConciergeTravelServices />}
+          />
+
+          <Route
+            path="/luxury-cruises-for-professional-athletes"
+            element={<LuxuryCruisesForProfessionalAthletes />}
           />
 
           <Route

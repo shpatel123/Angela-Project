@@ -625,13 +625,29 @@ const Nav = () => {
                 luxury sports travel experiences
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/traveling-during-the-competitive-season"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 traveling during the competitive season
-              </NavLink> */}
+              </NavLink>
+
+              <NavLink
+                to="/family-concierge-travel-services"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                family concierge travel services
+              </NavLink>
+
+              <NavLink
+                to="/luxury-cruises-for-professional-athletes"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                luxury cruises for professional athletes
+              </NavLink>
 
               <NavLink
                 to="/explora-journeys-review"
@@ -1468,13 +1484,29 @@ const Nav = () => {
               luxury sports travel experiences
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/traveling-during-the-competitive-season"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               traveling during the competitive season
-            </NavLink> */}
+            </NavLink>
+
+            <NavLink
+              to="/family-concierge-travel-services"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              family concierge travel services
+            </NavLink>
+
+            <NavLink
+              to="/luxury-cruises-for-professional-athletes"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              luxury cruises for professional athletes
+            </NavLink>
 
             <NavLink
               to="/explora-journeys-review"
