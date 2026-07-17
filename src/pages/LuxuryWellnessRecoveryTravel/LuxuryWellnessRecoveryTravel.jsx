@@ -32,29 +32,30 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-// import HeroImage1 from "../../assets/LuxuryWellnessRecovery/spa-recovery-treatment.jpg";
-// import HeroImage2 from "../../assets/LuxuryWellnessRecovery/oceanfront-yoga-retreat.jpg";
-// import HeroImage3 from "../../assets/LuxuryWellnessRecovery/mountain-wellness-resort.jpg";
+import HeroImage1 from "../../assets/LuxuryWellnessRecoveryTravel/wellness-resort-luxury-spa-pool.png";
+import HeroImage2 from "../../assets/LuxuryWellnessRecoveryTravel/sunrise-beach-meditation-wellness-retreat-yoga.png";
+import HeroImage3 from "../../assets/LuxuryWellnessRecoveryTravel/luxury-wellness-resort-infinity-pool-mountain-view.png";
 
-// import DifferentApproachImage from "../../assets/LuxuryWellnessRecovery/athlete-family-wellness.jpg";
+import DifferentApproachImage from "../../assets/LuxuryWellnessRecoveryTravel/multi-generational-family-wellness-retreat-luxury-resort.png";
 
-// import BucketHawaii from "../../assets/LuxuryWellnessRecovery/hawaii-oceanfront-wellness.jpg";
-// import BucketBali from "../../assets/LuxuryWellnessRecovery/bali-yoga-retreat.jpg";
-// import BucketMaldives from "../../assets/LuxuryWellnessRecovery/maldives-private-island.jpg";
-// import BucketSwitzerland from "../../assets/LuxuryWellnessRecovery/switzerland-alpine-resort.jpg";
-// import BucketCostaRica from "../../assets/LuxuryWellnessRecovery/costa-rica-eco-luxury.jpg";
-// import BucketPolynesia from "../../assets/LuxuryWellnessRecovery/french-polynesia-overwater-villa.jpg";
+import BucketHawaii from "../../assets/LuxuryWellnessRecoveryTravel/oceanfront-wellness-resort-infinity-pool-coastal-view.png";
+import BucketBali from "../../assets/LuxuryWellnessRecoveryTravel/sunrise-beach-meditation-wellness-retreat-yoga.png";
+import BucketMaldives from "../../assets/LuxuryWellnessRecoveryTravel/maldives-wellness-overwater-spa.png";
+import BucketSwitzerland from "../../assets/LuxuryWellnessRecoveryTravel/luxury-wellness-resort-infinity-pool-mountain-view.png";
+import BucketCostaRica from "../../assets/LuxuryWellnessRecoveryTravel/costa-rica-rainforest-eco-spa.png";
+import BucketPolynesia from "../../assets/LuxuryWellnessRecoveryTravel/french-polynesia-lagoon-spa.png";
 
-// import RecoveryImage from "../../assets/LuxuryWellnessRecovery/recovery-spa-treatment.jpg";
-// import FitnessImage from "../../assets/LuxuryWellnessRecovery/fitness-without-pressure.jpg";
-// import MentalWellnessImage from "../../assets/LuxuryWellnessRecovery/meditation-nature-experience.jpg";
-// import FamilyWellnessImage from "../../assets/LuxuryWellnessRecovery/family-wellness-vacation.jpg";
-// import ResortImage from "../../assets/LuxuryWellnessRecovery/luxury-wellness-resort.jpg";
-// import ConciergeImage from "../../assets/LuxuryWellnessRecovery/concierge-wellness-planning.jpg";
-// import AdvisorImage from "../../assets/LuxuryWellnessRecovery/travel-advisor-planning-session.jpg";
-// import CtaImage from "../../assets/LuxuryWellnessRecovery/sunrise-yoga-ocean.jpg";
+import FitnessImage from "../../assets/LuxuryWellnessRecoveryTravel/wellness-resort-fitness-training.png";
+import NutritionImage from "../../assets/LuxuryWellnessRecoveryTravel/wellness-resort-healthy-nutrition-meal.png";
+import FamilyWellnessImage from "../../assets/LuxuryWellnessRecoveryTravel/wellness-resort-family-yoga-session.png";
+import ResortImage from "../../assets/LuxuryWellnessRecoveryTravel/oceanfront-wellness-resort-infinity-pool-coastal-view.png";
+import ConciergeImage from "../../assets/LuxuryWellnessRecoveryTravel/wellness-consultation-personalized-health-planning.png";
+import AdvisorImage from "../../assets/LuxuryWellnessRecoveryTravel/wellness-travel-planner-luxury-retreat-consultation.png";
+import CtaImage from "../../assets/LuxuryWellnessRecoveryTravel/sunrise-beach-meditation-wellness-retreat-yoga.png";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -346,7 +347,8 @@ const wellnessDestinations = [
     title: "Hawaii",
     badge: "Hawaii",
     icon: Palmtree,
-    // image: BucketHawaii,
+    image: BucketHawaii,
+    objectPosition: "center 50%",
     window: "Volcanic landscapes and oceanfront wellness resorts",
     desc: "Volcanic landscapes, oceanfront wellness resorts, hiking, and healthy island cuisine create a restorative setting for recovery and relaxation.",
     columns: [
@@ -368,7 +370,8 @@ const wellnessDestinations = [
     title: "Bali",
     badge: "Bali",
     icon: Flower2,
-    // image: BucketBali,
+    image: BucketBali,
+    objectPosition: "75% 10%",
     window: "Yoga retreats and holistic wellness in tropical surroundings",
     desc: "Known for yoga retreats, holistic wellness, tropical surroundings, and peaceful luxury resorts, Bali offers a deeply restorative escape.",
     columns: [
@@ -390,7 +393,8 @@ const wellnessDestinations = [
     title: "The Maldives",
     badge: "Maldives",
     icon: Waves,
-    // image: BucketMaldives,
+    image: BucketMaldives,
+    objectPosition: "center",
     window: "Private island resorts and complete relaxation",
     desc: "Private island resorts offer exceptional privacy, spa experiences, and complete relaxation, making the Maldives ideal for uninterrupted recovery.",
     columns: [
@@ -412,7 +416,8 @@ const wellnessDestinations = [
     title: "Switzerland",
     badge: "Switzerland",
     icon: Mountain,
-    // image: BucketSwitzerland,
+    image: BucketSwitzerland,
+    objectPosition: "center",
     window: "Alpine resorts and world-class wellness facilities",
     desc: "Luxury alpine resorts combine dramatic mountain scenery with world-class wellness facilities designed around recovery and relaxation.",
     columns: [
@@ -434,7 +439,8 @@ const wellnessDestinations = [
     title: "Costa Rica",
     badge: "Costa Rica",
     icon: Trees,
-    // image: BucketCostaRica,
+    image: BucketCostaRica,
+    objectPosition: "center",
     window: "Rainforests and eco-luxury wellness resorts",
     desc: "Rainforests, eco-luxury resorts, outdoor adventure, and wellness-focused experiences make Costa Rica ideal for athletes who want to stay active while recovering.",
     columns: [
@@ -456,7 +462,8 @@ const wellnessDestinations = [
     title: "French Polynesia",
     badge: "French Polynesia",
     icon: Waves,
-    // image: BucketPolynesia,
+    image: BucketPolynesia,
+    objectPosition: "center",
     window: "Overwater villas and tranquil lagoon living",
     desc: "Beautiful lagoons, luxury overwater villas, and tranquil island living create a peaceful, private setting for recovery and reconnection.",
     columns: [
@@ -583,7 +590,7 @@ const LuxuryWellnessRecoveryTravel = () => {
     wellnessDestinations[0];
   const ActiveDestinationIcon = currentDestination.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -726,11 +733,12 @@ const LuxuryWellnessRecoveryTravel = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{ height: "320px" }}>
                 <img
-                  //   src={DifferentApproachImage}
+                  src={DifferentApproachImage}
                   alt="Athlete family relaxing at a luxury wellness resort"
                   className="adg-c-overview-img"
+                  style={{ objectPosition: "center" }}
                 />
                 <div className="adg-c-overview-img-overlay">
                   <span className="adg-c-overview-img-label">
@@ -856,23 +864,14 @@ const LuxuryWellnessRecoveryTravel = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    // src={HeroImage1}
-                    alt="Sports massage and spa recovery treatment"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    // src={RecoveryImage}
-                    alt="Hydrotherapy pool at a luxury wellness resort"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={HeroImage1}
+                  alt="Sports massage and spa recovery treatment"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -934,7 +933,7 @@ const LuxuryWellnessRecoveryTravel = () => {
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={FitnessImage}
+                  src={FitnessImage}
                   alt="Athlete enjoying a low-intensity workout at a luxury resort"
                   className="azs-suites-img"
                 />
@@ -996,7 +995,7 @@ const LuxuryWellnessRecoveryTravel = () => {
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={ConciergeImage}
+                  src={NutritionImage}
                   alt="Fresh, performance-focused cuisine at a wellness resort"
                   className="azs-suites-img"
                 />
@@ -1251,7 +1250,7 @@ const LuxuryWellnessRecoveryTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={FamilyWellnessImage}
+                  src={FamilyWellnessImage}
                   alt="Family enjoying yoga together at a luxury wellness resort"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
@@ -1288,7 +1287,7 @@ const LuxuryWellnessRecoveryTravel = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={ConciergeImage}
+                    src={ConciergeImage}
                     alt="Concierge planning a personalized wellness itinerary"
                     className="ugt-component-image"
                   />
@@ -1354,7 +1353,7 @@ const LuxuryWellnessRecoveryTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={ResortImage}
+                  src={ResortImage}
                   alt="Luxury resort wellness center and outdoor pool"
                   className="dmg-media-img"
                   style={{ height: "710px" }}
@@ -1481,6 +1480,7 @@ const LuxuryWellnessRecoveryTravel = () => {
                   src={currentDestination.image}
                   alt={currentDestination.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentDestination.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -1548,10 +1548,10 @@ const LuxuryWellnessRecoveryTravel = () => {
           >
             <div className="adg-content-card-side">
               <img
-                // src={AdvisorImage}
+                src={AdvisorImage}
                 alt="Luxury travel advisor planning a wellness retreat itinerary"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "50vh" }}
               />
 
               <div className="adg-info-card">
@@ -1566,12 +1566,7 @@ const LuxuryWellnessRecoveryTravel = () => {
                   balance, and long-term well-being.
                 </p>
 
-                <div className="adg-card-divider"></div>
-
-                <p className="adg-card-subtext">
-                  Because the strongest performances often begin long before the
-                  next season — they begin with taking the time to recover well.
-                </p>
+               
               </div>
             </div>
 
@@ -1974,7 +1969,7 @@ const LuxuryWellnessRecoveryTravel = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CtaImage}
+            src={CtaImage}
             alt="Sunrise yoga overlooking the ocean at a luxury wellness resort"
             className="Asc-help-bg-img"
           />

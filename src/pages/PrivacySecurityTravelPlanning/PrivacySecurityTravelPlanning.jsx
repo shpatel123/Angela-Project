@@ -31,29 +31,31 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-// import HeroImage1 from "../../assets/PrivacySecurityTravel/private-jet-tarmac.jpg";
-// import HeroImage2 from "../../assets/PrivacySecurityTravel/private-villa-pool.jpg";
-// import HeroImage3 from "../../assets/PrivacySecurityTravel/discreet-chauffeur-arrival.jpg";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-private-jet-tarmac.png";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
 
-// import TogetherImage from "../../assets/PrivacySecurityTravel/family-private-villa-terrace.jpg";
-// import DifferentApproachImage from "../../assets/PrivacySecurityTravel/secure-airport-transfer.jpg";
+import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-private-villa-terrace-family.png";
 
-// import BucketMaldives from "../../assets/PrivacySecurityTravel/maldives-overwater-villa.jpg";
-// import BucketCaribbean from "../../assets/PrivacySecurityTravel/caribbean-private-beach.jpg";
-// import BucketPolynesia from "../../assets/PrivacySecurityTravel/french-polynesia-lagoon.jpg";
-// import BucketMediterranean from "../../assets/PrivacySecurityTravel/mediterranean-private-estate.jpg";
-// import BucketMountain from "../../assets/PrivacySecurityTravel/mountain-lodge-retreat.jpg";
+import BucketMaldives from "../../assets/LuxuryWellnessRecoveryTravel/maldives-wellness-overwater-spa.png";
+import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-turquoise-water.jpg";
+import BucketPolynesia from "../../assets/PrivateJetConciergeTravel/championship-french-polynesia-overwater-celebration.png";
+import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/explora-ii-amalfi-coast-mediterranean-cruise.jpg";
+import BucketMountain from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-haines-alaska-lighthouse-mountain-view.jpg";
 
-// import VillaImage from "../../assets/PrivacySecurityTravel/private-villa-exterior.jpg";
-// import IslandImage from "../../assets/PrivacySecurityTravel/private-island-escape.jpg";
-// import LogisticsImage from "../../assets/PrivacySecurityTravel/concierge-airport-coordination.jpg";
-// import FamilyImage from "../../assets/PrivacySecurityTravel/family-vacation-privacy.jpg";
-// import AdvisorImage from "../../assets/PrivacySecurityTravel/travel-advisor-planning-session.jpg";
-// import CtaImage from "../../assets/PrivacySecurityTravel/private-luxury-final-destination.jpg";
+import PrivateJetImage from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
+import LuxuryTransferImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
+import LogisticsImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
+import SeamlessLogisticsImage from "../../assets/PrivateJetConciergeTravel/travel-during-the-competitive-season-professional-athlete-luxury-hotel.webp";
+import FamilyImage from "../../assets/PrivateJetConciergeTravel/privacy-family-vacation-private-beach.png";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/privacy-luxury-travel-advisor-client-meeting.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-private-jet-tarmac.png";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -341,7 +343,7 @@ const privacyDestinations = [
     title: "The Maldives",
     badge: "Maldives",
     icon: Waves,
-    // image: BucketMaldives,
+    image: BucketMaldives,
     window: "Private island resorts and overwater villas",
     desc: "Private island resorts and overwater villas make the Maldives one of the most naturally secluded luxury destinations in the world, ideal for travelers seeking complete privacy.",
     columns: [
@@ -363,7 +365,7 @@ const privacyDestinations = [
     title: "Caribbean",
     badge: "Caribbean",
     icon: Anchor,
-    // image: BucketCaribbean,
+    image: BucketCaribbean,
     window: "Luxury beachfront villas and yacht charters",
     desc: "Luxury beachfront villas and yacht charters give travelers a relaxed, low-key escape with warm weather and easy access from most major cities.",
     columns: [
@@ -385,7 +387,7 @@ const privacyDestinations = [
     title: "French Polynesia",
     badge: "French Polynesia",
     icon: Compass,
-    // image: BucketPolynesia,
+    image: BucketPolynesia,
     window: "Exceptional privacy in spectacular surroundings",
     desc: "Exceptional privacy in spectacular natural surroundings makes French Polynesia a favorite for travelers who want total seclusion without sacrificing beauty or service.",
     columns: [
@@ -407,7 +409,7 @@ const privacyDestinations = [
     title: "Mediterranean",
     badge: "Mediterranean",
     icon: Landmark,
-    // image: BucketMediterranean,
+    image: BucketMediterranean,
     window: "Private estates, boutique resorts, and yachts",
     desc: "Private estates, boutique resorts, and luxury yachts allow travelers to enjoy the Mediterranean's culture and cuisine while maintaining a discreet, low-profile itinerary.",
     columns: [
@@ -429,7 +431,7 @@ const privacyDestinations = [
     title: "Mountain Retreats",
     badge: "Mountain Retreats",
     icon: Mountain,
-    // image: BucketMountain,
+    image: BucketMountain,
     window: "Tranquility and breathtaking scenery",
     desc: "Exclusive lodges offering tranquility and breathtaking scenery give travelers a quiet, secluded alternative to beach and island destinations.",
     columns: [
@@ -556,7 +558,7 @@ const PrivacySecurityTravelPlanning = () => {
     privacyDestinations[0];
   const ActiveDestinationIcon = currentDestination.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -697,7 +699,7 @@ const PrivacySecurityTravelPlanning = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  //   src={DifferentApproachImage}
+                  src={DifferentApproachImage}
                   alt="Discreet private travel planning for high-profile travelers"
                   className="adg-c-overview-img"
                 />
@@ -872,7 +874,7 @@ const PrivacySecurityTravelPlanning = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
-                    // src={PrivateJetImage}
+                    src={PrivateJetImage}
                     alt="Private jet on the airport runway"
                     className="dac-families-img"
                   />
@@ -883,7 +885,7 @@ const PrivacySecurityTravelPlanning = () => {
 
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
-                    // src={LuxuryTransferImage}
+                    src={LuxuryTransferImage}
                     alt="Luxury SUV providing private transportation"
                     className="dac-families-img"
                   />
@@ -1033,23 +1035,14 @@ const PrivacySecurityTravelPlanning = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    // src={HeroImage3}
-                    alt="Coordinated private airport transfer for a high-profile traveler"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    // src={LogisticsImage}
-                    alt="Trusted local transportation coordinated for a secure arrival"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={LogisticsImage}
+                  alt="Coordinated private airport transfer for a high-profile traveler"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1250,7 +1243,7 @@ const PrivacySecurityTravelPlanning = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={LogisticsImage}
+                  src={SeamlessLogisticsImage}
                   alt="Concierge coordinating seamless private travel logistics"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
@@ -1273,7 +1266,7 @@ const PrivacySecurityTravelPlanning = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={FamilyImage}
+                  src={FamilyImage}
                   alt="Family enjoying a private beach vacation away from public attention"
                   className="dmg-media-img"
                   style={{ height: "700px" }}
@@ -1340,7 +1333,7 @@ const PrivacySecurityTravelPlanning = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={AdvisorImage}
+                    src={AdvisorImage}
                     alt="Travel advisor adjusting a flexible private itinerary"
                     className="ugt-component-image"
                   />
@@ -1512,7 +1505,7 @@ const PrivacySecurityTravelPlanning = () => {
           >
             <div className="adg-content-card-side">
               <img
-                // src={AdvisorImage}
+                src={AdvisorImage}
                 alt="Luxury travel advisor planning a private, secure itinerary"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1920,8 +1913,8 @@ const PrivacySecurityTravelPlanning = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CtaImage}
-            alt="High-profile family arriving at a private luxury travel destination"
+            src={CtaImage}
+            alt="Private luxury travel destination — peace of mind through expert planning"
             className="Asc-help-bg-img"
           />
           <div className="Asc-help-overlay"></div>

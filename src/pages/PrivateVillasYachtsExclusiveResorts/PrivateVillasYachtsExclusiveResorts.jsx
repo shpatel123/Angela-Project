@@ -26,18 +26,25 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-// import HeroImage1 from "../../assets/PrivateVillasYachtsResorts/private-villa-terrace.jpg";
-// import HeroImage2 from "../../assets/PrivateVillasYachtsResorts/luxury-yacht-caribbean.jpg";
-// import HeroImage3 from "../../assets/PrivateVillasYachtsResorts/private-island-resort.jpg";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-poolside-retreat.webp";
 
-// import AccommodationMattersImage from "../../assets/PrivateVillasYachtsResorts/family-villa-poolside.jpg";
-// import VillaImage from "../../assets/PrivateVillasYachtsResorts/private-luxury-villa.jpg";
-// import YachtImage1 from "../../assets/PrivateVillasYachtsResorts/yacht-deck-sunset.jpg";
-// import YachtImage2 from "../../assets/PrivateVillasYachtsResorts/yacht-interior-suite.jpg";
-// import AdvisorImage from "../../assets/PrivateVillasYachtsResorts/travel-advisor-planning.jpg";
-// import CtaImage from "../../assets/PrivateVillasYachtsResorts/villa-family-evening.jpg";
+import AccommodationMattersImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import YachtImage1 from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import PrivateIslandImage from "../../assets/PrivateJetConciergeTravel/championship-french-polynesia-overwater-celebration.png";
+import LuxuryVillaImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import StaffedResidenceImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
+import LuxuryResortImage from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-private-villa-terrace-family.png";
+import LuxuryAdvisorImage from "../../assets/PrivateJetConciergeTravel/privacy-luxury-travel-advisor-client-meeting.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
+import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/amalfi-coast-italy-mediterranean-hero-summer-2025.jpg";
+import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/explora-beaches.jpg";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -323,6 +330,8 @@ const accommodationOptions = [
     title: "Private Villa",
     badge: "Villa",
     icon: Home,
+    image: VillaImage,
+    objectPosition: "center 30%",
     window: "Family vacations and multi-generational travel",
     desc: "Villas provide complete control over your environment while offering many of the comforts of home — multiple bedrooms, private pools, and dedicated staff for everyone to relax comfortably.",
     columns: [
@@ -344,6 +353,8 @@ const accommodationOptions = [
     title: "Private Island",
     badge: "Private Island",
     icon: Palmtree,
+    image: PrivateIslandImage,
+    objectPosition: "center 40%",
     window: "Ultimate seclusion and VIP family vacations",
     desc: "For athletes who spend much of the year in the public eye, private islands provide complete freedom to unwind with private beaches, personalized dining, and dedicated hospitality teams.",
     columns: [
@@ -365,6 +376,8 @@ const accommodationOptions = [
     title: "Yacht Charter",
     badge: "Yacht Charter",
     icon: Sailboat,
+    image: YachtImage1,
+    objectPosition: "center 50%",
     window: "Exploring multiple destinations with total flexibility",
     desc: "Instead of staying in one location, a private yacht becomes both transportation and accommodation — offering flexible itineraries, secluded beaches, and complete privacy.",
     columns: [
@@ -386,6 +399,8 @@ const accommodationOptions = [
     title: "Luxury Resort",
     badge: "Luxury Resort",
     icon: Hotel,
+    image: LuxuryResortImage,
+    objectPosition: "center 60%",
     window: "Wellness and full-service family amenities",
     desc: "The best resorts offer far more than elegant accommodations — fine dining, wellness centers, and family activity programs designed for children, teenagers, and adults alike.",
     columns: [
@@ -407,6 +422,8 @@ const accommodationOptions = [
     title: "Staffed Residence",
     badge: "Staffed Residence",
     icon: Users,
+    image: StaffedResidenceImage,
+    objectPosition: "center 30%",
     window: "Longer stays with personalized, home-like service",
     desc: "For longer stays, many athletes choose fully staffed luxury residences that combine the comfort of a private home with the services of a luxury hotel.",
     columns: [
@@ -421,88 +438,6 @@ const accommodationOptions = [
   },
 ];
 
-const diningData = [
-  {
-    key: "private-villa",
-    icon: <Home size={22} strokeWidth={1.6} />,
-    eyebrow: "Private Villa",
-    title: "Private Villa",
-    // image: PrivateVilla,
-    imageAlt: "Luxury private villa with pool",
-    items: [
-      "Family vacations",
-      "Multi-generational travel",
-      "Complete privacy",
-      "Extended stays",
-      "Special celebrations",
-    ],
-    accent: "adg-accent-rose",
-  },
-
-  {
-    key: "private-island",
-    icon: <Palmtree size={22} strokeWidth={1.6} />,
-    eyebrow: "Private Island",
-    title: "Private Island",
-    // image: PrivateIsland,
-    imageAlt: "Exclusive private island retreat",
-    items: [
-      "Ultimate seclusion",
-      "Romantic escapes",
-      "Championship celebrations",
-      "VIP family vacations",
-    ],
-    accent: "adg-accent-gold",
-  },
-
-  {
-    key: "yacht-charter",
-    icon: <Ship size={22} strokeWidth={1.6} />,
-    eyebrow: "Yacht Charter",
-    title: "Luxury Yacht Charter",
-    // image: YachtCharter,
-    imageAlt: "Private luxury yacht charter",
-    items: [
-      "Explore multiple destinations",
-      "Adventure and discovery",
-      "Coastal cruising",
-      "Flexible itineraries",
-    ],
-    accent: "adg-accent-teal",
-  },
-
-  {
-    key: "luxury-resort",
-    icon: <Hotel size={22} strokeWidth={1.6} />,
-    eyebrow: "Luxury Resort",
-    title: "Luxury Resort",
-    // image: LuxuryResort,
-    imageAlt: "Luxury beachfront resort",
-    items: [
-      "Wellness vacations",
-      "Family-friendly amenities",
-      "Fine dining",
-      "Full-service experiences",
-    ],
-    accent: "adg-accent-navy",
-  },
-
-  {
-    key: "staffed-residence",
-    icon: <Users size={22} strokeWidth={1.6} />,
-    eyebrow: "Staffed Residence",
-    title: "Staffed Residence",
-    // image: StaffedResidence,
-    imageAlt: "Luxury staffed residence",
-    items: [
-      "Longer stays",
-      "Personalized service",
-      "Home-like comfort",
-      "Large family groups",
-    ],
-    accent: "adg-accent-sage",
-  },
-];
 
 /* ── FAQ Component ─────────────────────────────────────────────── */
 function FAQ() {
@@ -611,7 +546,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
 
   const ActiveIcon = currentOption.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -752,7 +687,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  // src={AccommodationMattersImage}
+                  src={AccommodationMattersImage}
                   alt="Professional athlete family relaxing at a private luxury villa"
                   className="adg-c-overview-img"
                 />
@@ -784,7 +719,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={VillaImage}
+                    src={VillaImage}
                     alt="Luxury private villa with spacious indoor and outdoor living areas"
                     className="ugt-component-image"
                   />
@@ -901,23 +836,14 @@ const PrivateVillasYachtsExclusiveResorts = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    // src={YachtImage1}
-                    alt="Luxury yacht charter for professional athlete families"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    // src={YachtImage2}
-                    alt="Private yacht suite with gourmet dining"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={YachtImage1}
+                  alt="Luxury yacht charter for professional athlete families"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -980,7 +906,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={LuxuryVillaImage}
+                  src={LuxuryVillaImage}
                   alt="Spacious luxury villa living room for families"
                   className="azs-suites-img"
                 />
@@ -1041,7 +967,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={StaffedResidenceImage}
+                  src={StaffedResidenceImage}
                   alt="Luxury staffed residence with dedicated hospitality team"
                   className="azs-suites-img"
                 />
@@ -1190,7 +1116,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={LuxuryResortImage}
+                  src={LuxuryResortImage}
                   alt="Exclusive luxury resort with oceanfront accommodations"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
@@ -1400,6 +1326,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
                   src={currentOption.image}
                   alt={currentOption.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentOption.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -1452,69 +1379,6 @@ const PrivateVillasYachtsExclusiveResorts = () => {
         </div>
       </section>
 
-      <section className="adg-section" id="adg-dining">
-        <div className="adg-container">
-          {/* HEADER */}
-          <div className="adg-header">
-            <h2 className="adg-h2">
-              Which Accommodation Is <br /> Right for You?
-            </h2>
-
-            <div className="adg-accent-line"></div>
-
-            <p className="adg-intro">
-              The ideal luxury accommodation depends on your travel style,
-              destination, and vacation goals. Whether you're planning a family
-              getaway, a romantic escape, or an adventure at sea, each option
-              offers a unique luxury experience designed around your lifestyle.
-            </p>
-          </div>
-
-          {/* CARDS GRID */}
-          <div className="adgs-grid">
-            {diningData.map((item) => (
-              <div key={item.key} className={`adg-card ${item.accent}`}>
-                {/* IMAGE */}
-                <div className="adg-card-image-wrap">
-                  <img
-                    src={item.image}
-                    alt={item.imageAlt}
-                    className="adg-card-img"
-                  />
-
-                  <div className="adg-card-image-overlay"></div>
-
-                  {/* FLOATING EYEBROW ON IMAGE */}
-                  <div className="adg-card-eyebrow-wrap">
-                    <span className="adg-card-eyebrow-icon">{item.icon}</span>
-
-                    <span className="adg-card-eyebrow-label">
-                      {item.eyebrow}
-                    </span>
-                  </div>
-                </div>
-
-                {/* BODY */}
-                <div className="adg-card-body">
-                  <h3 className="adg-card-title">{item.title}</h3>
-
-                  <ul className="adg-card-list">
-                    {item.items.map((point, idx) => (
-                      <li key={idx} className="adg-card-list-item">
-                        <span className="adg-card-list-dot"></span>
-                        <span className="adg-card-list-text">{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* BOTTOM ACCENT BAR */}
-                <div className="adg-card-bar"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ══ DESTINATIONS THAT PAIR PERFECTLY WITH LUXURY ACCOMMODATIONS ════════════════════════ */}
       <section className="dac-families-section">
@@ -1577,7 +1441,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
               <div className="dac-families-image-wrapper">
                 <div className="dac-families-img-card dac-families-img-card--primary">
                   <img
-                    //   src={Mediterraneanwest}
+                      src={BucketMediterranean}
                     alt="Luxury coastal villa overlooking the Mediterranean"
                     className="dac-families-img"
                   />
@@ -1588,7 +1452,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
 
                 <div className="dac-families-img-card dac-families-img-card--secondary">
                   <img
-                    //   src={Mediterraneansea}
+                      src={BucketCaribbean}
                     alt="Luxury beachfront resort with crystal-clear waters"
                     className="dac-families-img"
                   />
@@ -1617,7 +1481,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
             {/* Left Side */}
             <div className="adg-content-card-side">
               <img
-                // src={LuxuryAdvisorImage}
+                src={LuxuryAdvisorImage}
                 alt="Luxury travel advisor helping plan a personalized vacation"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1823,7 +1687,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CtaImage}
+            src={CtaImage}
             alt="Private villa family gathering at a luxury destination"
             className="Asc-help-bg-img"
           />

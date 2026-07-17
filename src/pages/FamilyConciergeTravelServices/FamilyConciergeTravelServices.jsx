@@ -63,6 +63,8 @@ import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yach
 
 import { Helmet } from "react-helmet-async";
 
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
+
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
   "@context": "https://schema.org",
@@ -282,6 +284,7 @@ const familyDestinations = [
     badge: "Caribbean",
     icon: Palmtree,
     image: BucketCaribbean,
+    objectPosition: "center 55%",
     window: "Private island resorts, luxury villas, and family-friendly yacht charters",
     desc: "Private island resorts, luxury villas, and family-friendly yacht charters make the Caribbean an easy, relaxed choice for multigenerational getaways.",
     columns: [
@@ -304,6 +307,7 @@ const familyDestinations = [
     badge: "Mediterranean",
     icon: Waves,
     image: BucketMediterranean,
+    objectPosition: "center",
     window: "Coastal cities, island hopping, and villas built for family celebrations",
     desc: "Coastal cities, island hopping, and villas built for family celebrations make the Mediterranean ideal for milestone trips and reunions.",
     columns: [
@@ -326,6 +330,7 @@ const familyDestinations = [
     badge: "Hawaii",
     icon: Palmtree,
     image: HawaiiJetImage,
+    objectPosition: "center",
     window: "Oceanfront resorts, wellness retreats, and family adventures",
     desc: "Oceanfront resorts, wellness retreats, and family adventures make Hawaii a favorite destination for multigenerational family trips.",
     columns: [
@@ -348,6 +353,7 @@ const familyDestinations = [
     badge: "Alaska",
     icon: Mountain,
     image: BucketAlaska,
+    objectPosition: "center 60%",
     window: "Luxury expedition cruises and breathtaking wilderness",
     desc: "Luxury expedition cruises and breathtaking wilderness experiences make Alaska a memorable, adventure-filled family celebration.",
     columns: [
@@ -370,6 +376,7 @@ const familyDestinations = [
     badge: "French Polynesia",
     icon: Waves,
     image: PolynesiaJetImage,
+    objectPosition: "center",
     window: "Overwater villa resorts surrounded by crystal-clear lagoons",
     desc: "Overwater villa resorts surrounded by crystal-clear lagoons make French Polynesia a dreamy setting for anniversaries, honeymoons, and family escapes.",
     columns: [
@@ -392,6 +399,7 @@ const familyDestinations = [
     badge: "Safari",
     icon: PawPrint,
     image: BucketSafari,
+    objectPosition: "center 18%",
     window: "Luxury lodges offering extraordinary family wildlife experiences",
     desc: "Luxury lodges offering extraordinary wildlife experiences make African safari destinations an unforgettable choice for family bucket-list adventures.",
     columns: [
@@ -641,7 +649,7 @@ const FamilyConciergeTravelServices = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: '500px'}}>
                 <img
                   src={DifferentApproachImage}
                   alt="Family arriving at a luxury resort with personalized concierge service"
@@ -766,23 +774,14 @@ const FamilyConciergeTravelServices = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    src={ChildcareImage}
-                    alt="Luxury family villa accommodation"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    src={CruiseImage}
-                    alt="Oceanfront luxury resort suite for families"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={ChildcareImage}
+                  alt="Luxury family villa accommodation"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1486,7 +1485,7 @@ const FamilyConciergeTravelServices = () => {
                 src={ConciergeImage}
                 alt="Luxury family concierge travel planning experience"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "47vh"}}
               />
 
               <div className="adg-info-card">
@@ -1504,13 +1503,8 @@ const FamilyConciergeTravelServices = () => {
                   privacy, and personalized attention.
                 </p>
 
-                <div className="adg-card-divider"></div>
+   
 
-                <p className="adg-card-subtext">
-                  We frequently assist professional athletes, coaches,
-                  executives, entrepreneurs, celebrities, and multigenerational
-                  families.
-                </p>
               </div>
             </div>
 
@@ -1607,6 +1601,7 @@ const FamilyConciergeTravelServices = () => {
                   src={currentDestination.image}
                   alt={currentDestination.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentDestination.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">

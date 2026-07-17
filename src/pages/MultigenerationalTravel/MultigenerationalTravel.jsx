@@ -14,16 +14,12 @@ import {
   Sparkles,
   CalendarClock,
   Snowflake,
-  Gift,
-  Shield,
-  Plane,
   Trophy,
   Flag,
   Waves,
   Mountain,
   Palmtree,
   Headset,
-  HeartPulse,
   Hotel,
   Clock,
   Map,
@@ -34,28 +30,28 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-// import HeroImage1 from "../../assets/MultigenerationalTravel/private-villa-family-gathering.jpg";
-// import HeroImage2 from "../../assets/MultigenerationalTravel/luxury-cruise-alaska.jpg";
-// import HeroImage3 from "../../assets/MultigenerationalTravel/multigenerational-safari-family.jpg";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
 
-// import TogetherImage from "../../assets/MultigenerationalTravel/family-generations-villa-terrace.jpg";
-// import DifferentApproachImage from "../../assets/MultigenerationalTravel/athlete-family-planning-session.jpg";
+import TogetherImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
 
-// import BucketMediterranean from "../../assets/MultigenerationalTravel/mediterranean-riviera-villa.jpg";
-// import BucketCaribbean from "../../assets/MultigenerationalTravel/caribbean-beachfront-resort.jpg";
-// import BucketAlaska from "../../assets/MultigenerationalTravel/alaska-glacier-cruise.jpg";
-// import BucketPolynesia from "../../assets/MultigenerationalTravel/french-polynesia-overwater-villa.jpg";
-// import BucketSafari from "../../assets/MultigenerationalTravel/african-safari-luxury-lodge.jpg";
-// import BucketHawaii from "../../assets/MultigenerationalTravel/hawaii-scenic-coastline.jpg";
+import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/EXPLORAI-Mediterranean.jpg";
+import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/roatan-western-caribbean-reef.jpg";
+import BucketAlaska from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-alaska-luxury-expedition-cruise.jpg";
+import BucketSafari from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import BucketPolynesia from "../../assets/PrivateJetConciergeTravel/championship-french-polynesia-overwater-celebration.png";
+import BucketHawaii from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
 
-// import VillaImage from "../../assets/MultigenerationalTravel/luxury-villa-extended-family.jpg";
-// import IslandImage from "../../assets/MultigenerationalTravel/private-island-family-escape.jpg";
-// import AdventureImage from "../../assets/MultigenerationalTravel/safari-family-adventure.jpg";
-// import CruiseImage from "../../assets/MultigenerationalTravel/luxury-cruise-family-suite.jpg";
-// import AdvisorImage from "../../assets/MultigenerationalTravel/travel-advisor-planning-session.jpg";
-// import CtaImage from "../../assets/MultigenerationalTravel/multigenerational-final-destination.jpg";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import AdventureImage from "../../assets/PrivateJetConciergeTravel/Luxury-African-Safaris.png";
+import CruiseImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/privacy-luxury-travel-advisor-client-meeting.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -302,7 +298,7 @@ const destinationTrips = [
     title: "Mediterranean",
     badge: "Mediterranean",
     icon: Compass,
-    // image: BucketMediterranean,
+    image: BucketMediterranean,
     window: "Elegant coastal towns and world-class dining",
     desc: "Elegant coastal towns, luxury villas, private yachts, and world-class dining make the Mediterranean a favorite for extended families exploring at a relaxed pace.",
     columns: [
@@ -324,7 +320,7 @@ const destinationTrips = [
     title: "Caribbean",
     badge: "Caribbean",
     icon: Anchor,
-    // image: BucketCaribbean,
+    image: BucketCaribbean,
     window: "Relaxed island escapes for every generation",
     desc: "Relaxed island escapes with private beaches and warm weather year-round make the Caribbean an easy, low-stress choice for gathering the whole family.",
     columns: [
@@ -346,7 +342,7 @@ const destinationTrips = [
     title: "Alaska",
     badge: "Alaska",
     icon: Snowflake,
-    // image: BucketAlaska,
+    image: BucketAlaska,
     window: "Glaciers, wildlife, and scenic cruising",
     desc: "An unforgettable destination featuring glaciers, wildlife, and scenic cruising, Alaska delivers glacier cruising, whale watching, and wildlife encounters that create shared memories across generations.",
     columns: [
@@ -368,7 +364,7 @@ const destinationTrips = [
     title: "French Polynesia",
     badge: "French Polynesia",
     icon: Waves,
-    // image: BucketPolynesia,
+    image: BucketPolynesia,
     window: "Exceptional privacy and natural beauty",
     desc: "Exceptional privacy and breathtaking natural beauty make French Polynesia ideal for extended families who want total seclusion together.",
     columns: [
@@ -390,7 +386,7 @@ const destinationTrips = [
     title: "African Safari",
     badge: "Safari",
     icon: Mountain,
-    // image: BucketSafari,
+    image: BucketSafari,
     window: "Luxury lodges and wildlife for every generation",
     desc: "Luxury lodges, wildlife encounters, and educational experiences for every generation make an African safari one of the most memorable multigenerational adventures a family can take.",
     columns: [
@@ -412,7 +408,8 @@ const destinationTrips = [
     title: "Hawaii",
     badge: "Hawaii",
     icon: Palmtree,
-    // image: BucketHawaii,
+    image: BucketHawaii,
+    objectPosition: "center 40%",
     window: "Adventure, relaxation, and culture in one place",
     desc: "Adventure, relaxation, culture, and beautiful beaches in one destination make Hawaii an easy favorite for families spanning multiple generations.",
     columns: [
@@ -518,7 +515,7 @@ const MultigenerationalTravel = () => {
 
   const ActiveIcon = currentTrip.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -662,7 +659,7 @@ const MultigenerationalTravel = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  //   src={TogetherImage}
+                  src={TogetherImage}
                   alt="Multiple generations of an athlete's family gathering at a private villa"
                   className="adg-c-overview-img"
                 />
@@ -770,6 +767,7 @@ const MultigenerationalTravel = () => {
                   src={currentTrip.image}
                   alt={currentTrip.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentTrip.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -837,24 +835,14 @@ const MultigenerationalTravel = () => {
           </div>
 
           <div className="wnf-split">
-            {/* Left Column: Image Stack */}
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    // src={HeroImage3}
-                    alt="Luxury family vacation planning for professional athletes"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    // src={Experience}
-                    alt="Private luxury travel designed around professional athlete schedules"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={HeroImage3}
+                  alt="Luxury family vacation planning for professional athletes"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1062,7 +1050,7 @@ const MultigenerationalTravel = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={VillaImage}
+                    src={VillaImage}
                     alt="Luxury villa for extended athlete families"
                     className="ugt-component-image"
                   />
@@ -1258,7 +1246,7 @@ const MultigenerationalTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={AdventureImage}
+                  src={AdventureImage}
                   alt="Multigenerational family on an African safari adventure"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
@@ -1285,7 +1273,7 @@ const MultigenerationalTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={CruiseImage}
+                  src={CruiseImage}
                   alt="Luxury cruise suite for multigenerational athlete family travel"
                   className="dmg-media-img"
                   style={{ height: "760px" }}
@@ -1581,7 +1569,7 @@ const MultigenerationalTravel = () => {
             {/* Left Side */}
             <div className="adg-content-card-side">
               <img
-                // src={AdvisorImage}
+                src={AdvisorImage}
                 alt="Luxury travel advisor planning a multigenerational family vacation"
                 className="adg-side-image"
                 style={{ height: "30vh", border: "1px solid var(--navy)" }}
@@ -1789,7 +1777,7 @@ const MultigenerationalTravel = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CtaImage}
+            src={CtaImage}
             alt="Multigenerational family gathering at a luxury travel destination"
             className="Asc-help-bg-img"
           />

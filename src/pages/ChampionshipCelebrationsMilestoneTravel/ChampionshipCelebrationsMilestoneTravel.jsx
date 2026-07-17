@@ -31,28 +31,30 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-// import HeroImage1 from "../../assets/ChampionshipCelebrations/championship-yacht-celebration.jpg";
-// import HeroImage2 from "../../assets/ChampionshipCelebrations/private-villa-celebration.jpg";
-// import HeroImage3 from "../../assets/ChampionshipCelebrations/family-toast-sunset.jpg";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
 
-// import TogetherImage from "../../assets/ChampionshipCelebrations/family-milestone-gathering.jpg";
-// import DifferentApproachImage from "../../assets/ChampionshipCelebrations/athlete-family-celebration.jpg";
+import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
 
-// import BucketMediterranean from "../../assets/ChampionshipCelebrations/mediterranean-villa-celebration.jpg";
-// import BucketCaribbean from "../../assets/ChampionshipCelebrations/caribbean-celebration-resort.jpg";
-// import BucketAlaska from "../../assets/ChampionshipCelebrations/alaska-glacier-cruise.jpg";
-// import BucketSafari from "../../assets/ChampionshipCelebrations/african-safari-celebration.jpg";
-// import BucketPolynesia from "../../assets/ChampionshipCelebrations/french-polynesia-overwater-villa.jpg";
-// import BucketJapan from "../../assets/ChampionshipCelebrations/japan-luxury-hospitality.jpg";
+import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
+import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/curacao-southern-caribbean-architecture.jpg";
+import BucketAlaska from "../../assets/AlaskaCruisesExploraJourneys/alaska-glacier-mountain-lake-scenic-wilderness-vacation.jpeg";
+import BucketSafari from "../../assets/PrivateJetConciergeTravel/Luxury-African-Safaris.png";
+import BucketPolynesia from "../../assets/PrivateJetConciergeTravel/championship-french-polynesia-overwater-celebration.png";
+import BucketJapan from "../../assets/JapanCruisesExploraJourneys/angela-hughes-kyoto-gion-geisha-street-pagoda-japan-travel-expert.jpg";
 
-// import RetirementImage from "../../assets/ChampionshipCelebrations/retirement-vacation-couple.jpg";
-// import LuxuryTransferImage from "../../assets/ChampionshipCelebrations/private-yacht-cruise.jpg";
-// import LogisticsImage from "../../assets/ChampionshipCelebrations/concierge-celebration-planning.jpg";
-// import FamilyImage from "../../assets/ChampionshipCelebrations/family-reunion-celebration.jpg";
-// import AdvisorImage from "../../assets/ChampionshipCelebrations/travel-advisor-planning-session.jpg";
-// import CtaImage from "../../assets/ChampionshipCelebrations/championship-final-celebration.jpg";
+import RetirementVacationImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import PersonalizedExperienceImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import LogisticsImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
+import FamilyImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import MultiGenerationalCelebrationImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/championship-luxury-travel-advisor-planning.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -343,7 +345,7 @@ const celebrationDestinations = [
     title: "The Mediterranean",
     badge: "Mediterranean",
     icon: Landmark,
-    // image: BucketMediterranean,
+    image: BucketMediterranean,
     window: "Luxury villas, private yachts, and coastal villages",
     desc: "Luxury villas, private yachts, coastal villages, and exceptional cuisine make the Mediterranean a timeless setting for celebrating any milestone.",
     columns: [
@@ -365,7 +367,7 @@ const celebrationDestinations = [
     title: "Caribbean",
     badge: "Caribbean",
     icon: Anchor,
-    // image: BucketCaribbean,
+    image: BucketCaribbean,
     window: "Private beaches and island-hopping adventures",
     desc: "Private beaches, luxury resorts, and island-hopping adventures create a relaxed, celebratory atmosphere the whole family can enjoy.",
     columns: [
@@ -387,7 +389,7 @@ const celebrationDestinations = [
     title: "Alaska",
     badge: "Alaska",
     icon: Snowflake,
-    // image: BucketAlaska,
+    image: BucketAlaska,
     window: "Spectacular scenery and wildlife encounters",
     desc: "Spectacular scenery, wildlife encounters, and unforgettable family experiences make Alaska a memorable setting for milestone celebrations.",
     columns: [
@@ -409,7 +411,7 @@ const celebrationDestinations = [
     title: "African Safari",
     badge: "Safari",
     icon: Mountain,
-    // image: BucketSafari,
+    image: BucketSafari,
     window: "Some of the world's most extraordinary wildlife",
     desc: "Celebrate surrounded by some of the world's most extraordinary wildlife, with luxury lodges and private guides built for milestone occasions.",
     columns: [
@@ -431,7 +433,8 @@ const celebrationDestinations = [
     title: "French Polynesia",
     badge: "French Polynesia",
     icon: Waves,
-    // image: BucketPolynesia,
+    image: BucketPolynesia,
+    objectPosition: "center 40%",
     window: "Overwater villas and peaceful lagoons",
     desc: "Overwater villas, peaceful lagoons, and unmatched privacy make French Polynesia ideal for couples and families celebrating intimate milestones.",
     columns: [
@@ -453,7 +456,7 @@ const celebrationDestinations = [
     title: "Japan",
     badge: "Japan",
     icon: Flower2,
-    // image: BucketJapan,
+    image: BucketJapan,
     window: "Luxury hospitality and rich cultural traditions",
     desc: "Blend luxury hospitality with rich cultural traditions and unforgettable culinary experiences for a celebration unlike any other.",
     columns: [
@@ -580,7 +583,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
     celebrationDestinations[0];
   const ActiveDestinationIcon = currentDestination.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -700,6 +703,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
                 "Create lifelong memories",
                 "Explore bucket-list destinations",
                 "Begin the next chapter with purpose",
+                "Strengthen relationships through shared experiences",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -723,9 +727,12 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div
+                className="adg-c-overview-image-wrap"
+                style={{ height: "350px" }}
+              >
                 <img
-                  //   src={DifferentApproachImage}
+                  src={DifferentApproachImage}
                   alt="Athlete family celebrating a milestone at a luxury destination"
                   className="adg-c-overview-img"
                 />
@@ -856,23 +863,14 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    // src={HeroImage3}
-                    alt="Sunset dinner celebrating a milestone birthday overlooking the ocean"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    // src={LogisticsImage}
-                    alt="Private yacht cruise celebrating a milestone birthday"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={HeroImage1}
+                  alt="Sunset dinner celebrating a milestone birthday overlooking the ocean"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -930,7 +928,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
             <div className="azs-suites-card azs-seabourn-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={RetirementVacationImage}
+                  src={RetirementVacationImage}
                   alt="Luxury retirement vacation overlooking the ocean"
                   className="azs-suites-img"
                 />
@@ -995,7 +993,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
             <div className="azs-suites-card azs-azamara-suites">
               <div className="azs-suites-image-wrap">
                 <img
-                  // src={PersonalizedExperienceImage}
+                  src={PersonalizedExperienceImage}
                   alt="Luxury personalized vacation experience"
                   className="azs-suites-img"
                 />
@@ -1251,7 +1249,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={FamilyImage}
+                  src={FamilyImage}
                   alt="Family celebrating a milestone reunion at a luxury destination"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
@@ -1359,7 +1357,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={MultiGenerationalCelebrationImage}
+                  src={MultiGenerationalCelebrationImage}
                   alt="Luxury family celebration with multiple generations"
                   className="dmg-media-img"
                   style={{ height: "760px" }}
@@ -1450,7 +1448,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={LogisticsImage}
+                    src={LogisticsImage}
                     alt="Concierge coordinating a milestone celebration"
                     className="ugt-component-image"
                   />
@@ -1557,6 +1555,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
                   src={currentDestination.image}
                   alt={currentDestination.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentDestination.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -1624,10 +1623,10 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
           >
             <div className="adg-content-card-side">
               <img
-                // src={AdvisorImage}
+                src={AdvisorImage}
                 alt="Luxury travel advisor planning a championship celebration itinerary"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "48vh" }}
               />
 
               <div className="adg-info-card">
@@ -1640,14 +1639,6 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
                   Celebrating an important milestone isn't something you want to
                   leave to chance. The result is a vacation that's every bit as
                   memorable as the achievement itself.
-                </p>
-
-                <div className="adg-card-divider"></div>
-
-                <p className="adg-card-subtext">
-                  Because the greatest milestones deserve more than a
-                  celebration — they deserve an unforgettable journey shared
-                  with the people who made every success possible.
                 </p>
               </div>
             </div>
@@ -2024,7 +2015,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CtaImage}
+            src={CtaImage}
             alt="Family celebrating a championship milestone at a luxury travel destination"
             className="Asc-help-bg-img"
           />

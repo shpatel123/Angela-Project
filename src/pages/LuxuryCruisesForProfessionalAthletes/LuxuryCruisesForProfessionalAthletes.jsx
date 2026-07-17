@@ -11,7 +11,6 @@ import {
   Star,
   Compass,
   Sparkles,
-  CalendarClock,
   Waves,
   Mountain,
   Headset,
@@ -22,12 +21,10 @@ import {
   Ship,
   Home,
   Luggage,
-  Clock,
   Utensils,
   Gem,
   Palmtree,
   Building2,
-  PawPrint,
   Camera,
   HeartHandshake,
   Anchor,
@@ -51,20 +48,21 @@ import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/
 import HawaiiJetImage from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
 import BucketAlaska from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-alaska-luxury-cruise-through-fjords.jpg";
 import PolynesiaJetImage from "../../assets/PrivateJetConciergeTravel/french-polynesia-overwater-villa-luxury-private-aviation.webp";
-import BucketSafari from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import BucketSafari from "../../assets/ExploraIVGuide/Iceland.png";
 
 import ExpeditionImage from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica.jpg";
 import RiverCruiseImage from "../../assets/VikingDanubeRiverCruises/budapest-hungary-river-cruise-danube.jpg";
 import YachtCharterImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
 import DiningImage from "../../assets/ExploraJourneysCruises/Fine-Dining.webp";
 import SuiteImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
-import WellnessImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
 import FamilyImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
 import YachtImage from "../../assets/VikingDanubeRiverCruises/vienna-austria-danube-river-cruise.jpg";
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/travel-during-the-competitive-season-professional-athlete-luxury-hotel.webp";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -300,6 +298,7 @@ const cruiseDestinations = [
     badge: "Alaska",
     icon: Mountain,
     image: BucketAlaska,
+    objectPosition: "center 60%",
     window: "Glaciers, wildlife, and breathtaking natural scenery",
     desc: "Glaciers, wildlife, and breathtaking natural scenery make Alaska a favorite expedition-style cruise destination.",
     columns: [
@@ -322,6 +321,7 @@ const cruiseDestinations = [
     badge: "Caribbean",
     icon: Palmtree,
     image: BucketCaribbean,
+    objectPosition: "center 60%",
     window: "Relaxed island escapes and crystal-clear waters",
     desc: "Relaxed island escapes, luxury beaches, and crystal-clear waters make the Caribbean an easy, restorative choice between competitive seasons.",
     columns: [
@@ -344,6 +344,7 @@ const cruiseDestinations = [
     badge: "Antarctica",
     icon: Snowflake,
     image: BucketSafari,
+    objectPosition: "center 18%",
     window: "One of the world's most extraordinary expedition destinations",
     desc: "Antarctica is one of the world's most extraordinary expedition destinations, combining adventure with premium accommodations and expert guidance.",
     columns: [
@@ -666,7 +667,7 @@ const LuxuryCruisesForProfessionalAthletes = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: '360px'}}>
                 <img
                   src={OverviewImage}
                   alt="Guests relaxing aboard a luxury cruise ship veranda"
@@ -792,23 +793,14 @@ const LuxuryCruisesForProfessionalAthletes = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    src={ExpeditionImage}
-                    alt="Luxury expedition ship near a glacier"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    src={BucketAlaska}
-                    alt="Zodiac excursion exploring wildlife on an expedition cruise"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap" style={{height: '550px'}}>
+                <img
+                  src={ExpeditionImage}
+                  alt="Luxury expedition ship near a glacier"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1080,7 +1072,7 @@ const LuxuryCruisesForProfessionalAthletes = () => {
                   src={SuiteImage}
                   alt="Luxury cruise suite with private balcony and ocean view"
                   className="dmg-media-img"
-                  style={{ height: "650px" }}
+                  style={{ height: "90vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1293,7 +1285,7 @@ const LuxuryCruisesForProfessionalAthletes = () => {
                   src={FamilyImage}
                   alt="Multigenerational family enjoying a luxury cruise together"
                   className="dmg-media-img"
-                  style={{ height: "710px" }}
+                  style={{ height: "80vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1430,6 +1422,7 @@ const LuxuryCruisesForProfessionalAthletes = () => {
                   src={currentDestination.image}
                   alt={currentDestination.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentDestination.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -1615,7 +1608,7 @@ const LuxuryCruisesForProfessionalAthletes = () => {
                 src={AdvisorImage}
                 alt="Luxury travel advisor coordinating a cruise itinerary"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "45vh" }}
               />
 
               <div className="adg-info-card">

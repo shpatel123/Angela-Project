@@ -34,7 +34,7 @@ import {
   Wine,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 
 import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
 
@@ -59,6 +59,8 @@ import HeroBg2 from "../../assets/DisneyBahamasCruises/disney-wish-the-rose-loun
 import HeroBg3 from "../../assets/ExploraIVGuide/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -311,6 +313,7 @@ const sportsEvents = [
     badge: "Formula 1",
     icon: Flag,
     image: EventF1,
+    objectPosition: "center 30%",
     window: "Paddock Club access, pit lane walks, and luxury yacht viewing",
     desc: "Formula 1 combines world-class motorsport with luxury travel unlike any other sporting event.",
     columns: [
@@ -351,6 +354,7 @@ const sportsEvents = [
     badge: "Wimbledon",
     icon: Trophy,
     image: EventWimbledon,
+    objectPosition: "center 0%",
     window: "Centre Court tickets, debenture seating, and champagne receptions",
     desc: "The Championships at Wimbledon represent one of the world's most prestigious sporting traditions.",
     columns: [
@@ -378,6 +382,7 @@ const sportsEvents = [
     badge: "The Masters",
     icon: Medal,
     image: EventMasters,
+    objectPosition: "center 10%",
     window: "Premium tournament access and golf experiences at Augusta National",
     desc: "Attending The Masters at Augusta National is a dream for golf enthusiasts around the world.",
     columns: [
@@ -404,6 +409,7 @@ const sportsEvents = [
     badge: "Ryder Cup",
     icon: Flag,
     image: EventRyderCup,
+    objectPosition: "center",
     window: "Premium match tickets and championship dinners",
     desc: "The Ryder Cup combines elite golf with incredible international atmosphere.",
     columns: [
@@ -430,6 +436,7 @@ const sportsEvents = [
     badge: "Super Bowl",
     icon: Trophy,
     image: EventSuperBowl,
+    objectPosition: "center 10%",
     window: "Club-level seating, luxury suites, and VIP pre-game parties",
     desc: "The Super Bowl is one of the world's premier sporting and entertainment events.",
     columns: [
@@ -457,6 +464,7 @@ const sportsEvents = [
     badge: "FIFA World Cup",
     icon: Trophy,
     image: EventWorldCup,
+    objectPosition: "center",
     window: "Premium match tickets and multi-city itineraries",
     desc: "The FIFA World Cup brings together fans from around the globe for the world's most celebrated football tournament.",
     columns: [
@@ -484,6 +492,7 @@ const sportsEvents = [
     badge: "Olympics",
     icon: Medal,
     image: EventOlympics,
+    objectPosition: "center",
     window: "Premium event tickets and VIP hospitality lounges",
     desc: "The Olympic Games offer a unique opportunity to witness the world's greatest athletes competing on the biggest stage.",
     columns: [
@@ -745,7 +754,7 @@ const LuxurySportsTravelExperiences = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: '360px'}}>
                 <img
                   src={DifferentApproachImage}
                   alt="VIP hospitality suite at a luxury sporting event"
@@ -873,23 +882,14 @@ const LuxurySportsTravelExperiences = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    src={TransportImage}
-                    alt="Luxury chauffeur service arriving at a sporting event"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    src={GroundImage}
-                    alt="Private jet on the tarmac ahead of a VIP sporting event"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={GroundImage}
+                  alt="Private jet on the tarmac ahead of a VIP sporting event"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1387,6 +1387,7 @@ const LuxurySportsTravelExperiences = () => {
                   src={currentEvent.image}
                   alt={currentEvent.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentEvent.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -1458,7 +1459,7 @@ const LuxurySportsTravelExperiences = () => {
                 src={AdvisorImage}
                 alt="Luxury travel advisor coordinating VIP hospitality tickets"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "43vh" }}
               />
 
               <div className="adg-info-card">

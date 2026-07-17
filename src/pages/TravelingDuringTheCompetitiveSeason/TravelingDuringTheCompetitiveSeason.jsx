@@ -29,6 +29,7 @@ import {
   Sun,
   Landmark,
 } from "lucide-react";
+
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
@@ -52,6 +53,8 @@ import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-e
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
 import { Helmet } from "react-helmet-async";
+
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -304,6 +307,7 @@ const privateJetDestinations = [
     badge: "Caribbean",
     icon: Palmtree,
     image: BucketCaribbean,
+    objectPosition: "center 55%",
     window: "Warm-weather relaxation and beachfront luxury",
     desc: "Perfect for warm-weather relaxation and beachfront luxury, the Caribbean is an easy reach for a short break between games.",
     columns: [
@@ -326,6 +330,7 @@ const privateJetDestinations = [
     badge: "Napa Valley",
     icon: Wine,
     image: BucketNapa,
+    objectPosition: "center 10%",
     window: "Wine tasting, fine dining, and luxury resorts",
     desc: "Wine tasting, fine dining, and luxury resorts make Napa Valley an ideal short getaway for relaxing away from the spotlight.",
     columns: [
@@ -348,6 +353,7 @@ const privateJetDestinations = [
     badge: "Aspen",
     icon: Mountain,
     image: BucketAspen,
+    objectPosition: "center",
     window: "Mountain scenery, wellness, and year-round recreation",
     desc: "Mountain scenery, wellness, and year-round recreation make Aspen a versatile destination no matter the season.",
     columns: [
@@ -370,6 +376,7 @@ const privateJetDestinations = [
     badge: "S. Florida",
     icon: Sun,
     image: BucketSouthFlorida,
+    objectPosition: "center",
     window: "Luxury beach resorts, golf, and waterfront dining",
     desc: "Luxury beach resorts, golf, and waterfront dining make South Florida a convenient warm-weather escape close to home.",
     columns: [
@@ -392,6 +399,7 @@ const privateJetDestinations = [
     badge: "Scottsdale",
     icon: Landmark,
     image: BucketScottsdale,
+    objectPosition: "center",
     window: "Golf, spa experiences, and desert luxury",
     desc: "Golf, spa experiences, and desert luxury make Scottsdale a relaxing choice for a few days away from competition.",
     columns: [
@@ -414,6 +422,7 @@ const privateJetDestinations = [
     badge: "Europe",
     icon: Landmark,
     image: BucketEurope,
+    objectPosition: "center",
     window: "Quick city escapes to London, Paris, or Rome",
     desc: "Quick city escapes to London, Paris, or Rome are made possible via private aviation, even within a narrow travel window.",
     columns: [
@@ -533,8 +542,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
     <div className="Asc-page-wrapper">
       <Helmet>
         <title>
-          Traveling During the Competitive Season | Flexible Luxury Travel
-          for Professional Athletes
+          Traveling During the Competitive Season | Flexible Luxury Travel for
+          Professional Athletes
         </title>
         <meta name="title" content="Traveling During the Competitive Season" />
         <meta
@@ -570,41 +579,41 @@ const TravelingDuringTheCompetitiveSeason = () => {
             fixed dates and confirmed itineraries. Professional athletes,
             however, live by an entirely different calendar. Game schedules
             shift, playoff appearances extend seasons, training camps begin
-            unexpectedly, and family commitments often need to fit into
-            narrow windows between competitions.
+            unexpectedly, and family commitments often need to fit into narrow
+            windows between competitions.
           </p>
 
           <p>
             That's why luxury travel for athletes requires flexibility,
             precision, and expert coordination. Whether you have a three-day
             break between games, a week after a road trip, or an unexpected
-            opportunity following a tournament, your travel plans should
-            adapt to your schedule — not the other way around.
+            opportunity following a tournament, your travel plans should adapt
+            to your schedule — not the other way around.
           </p>
 
           {readMore && (
             <>
               <p>
-                At Trips &amp; Ships Luxury Travel, we specialize in
-                designing flexible luxury travel experiences that work around
-                the unpredictable demands of professional sports, ensuring
-                every journey is seamless, stress-free, and ready to adjust
-                whenever your schedule changes.
+                At Trips &amp; Ships Luxury Travel, we specialize in designing
+                flexible luxury travel experiences that work around the
+                unpredictable demands of professional sports, ensuring every
+                journey is seamless, stress-free, and ready to adjust whenever
+                your schedule changes.
               </p>
 
               <p>
                 Rather than risking expensive cancellations or complicated
-                rebookings, flexible travel planning allows you to travel
-                with confidence, knowing your itinerary can adapt as needed —
-                whether you have 48 hours or two weeks available.
+                rebookings, flexible travel planning allows you to travel with
+                confidence, knowing your itinerary can adapt as needed — whether
+                you have 48 hours or two weeks available.
               </p>
 
               <p>
                 With more than 40 years in the travel industry, experience
-                spanning over 121 countries, and recognition as the 2024
-                Luxury Travel Influencer of the Year by Travel Leaders
-                Network, Angela Hughes has become one of the most trusted
-                voices in flexible luxury travel for professional athletes.
+                spanning over 121 countries, and recognition as the 2024 Luxury
+                Travel Influencer of the Year by Travel Leaders Network, Angela
+                Hughes has become one of the most trusted voices in flexible
+                luxury travel for professional athletes.
               </p>
             </>
           )}
@@ -621,7 +630,10 @@ const TravelingDuringTheCompetitiveSeason = () => {
       </section>
 
       {/* ── WHY HIGH-PROFILE TRAVELERS CHOOSE PRIVATE AVIATION ───────── */}
-      <section className="adg-c-section adg-c-bg-white" id="adg-c-why-flexible-planning">
+      <section
+        className="adg-c-section adg-c-bg-white"
+        id="adg-c-why-flexible-planning"
+      >
         <div className="adg-c-container">
           <div className="adg-c-section-header">
             <h2 className="adg-c-h2">
@@ -629,8 +641,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
             </h2>
             <div className="adg-c-accent-line"></div>
             <p className="Asc-section-intro">
-              Competitive seasons rarely follow a predictable path. Rather
-              than risking expensive cancellations or complicated rebookings,
+              Competitive seasons rarely follow a predictable path. Rather than
+              risking expensive cancellations or complicated rebookings,
               flexible travel planning allows you to travel with confidence.
             </p>
           </div>
@@ -645,6 +657,7 @@ const TravelingDuringTheCompetitiveSeason = () => {
                 "Schedule adjustments",
                 "Team obligations",
                 "Training camps",
+                "Injury recovery timelines",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -661,18 +674,22 @@ const TravelingDuringTheCompetitiveSeason = () => {
                   <Star size={28} className="adg-c-callout-star" />
                   <p className="adg-c-callout-text">
                     Your schedule may also shift because of media appearances,
-                    sponsorship commitments, or family events. Your travel
-                    plans should adapt as needed, knowing your itinerary can
-                    change whenever your schedule does.
+                    sponsorship commitments, or family events. Your travel plans
+                    should adapt as needed, knowing your itinerary can change
+                    whenever your schedule does.
                   </p>
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div
+                className="adg-c-overview-image-wrap"
+                style={{ height: "320px" }}
+              >
                 <img
                   src={DifferentApproachImage}
                   alt="Professional athlete boarding a private jet between games"
                   className="adg-c-overview-img"
+                  style={{ objectPosition: "top" }}
                 />
                 <div className="adg-c-overview-img-overlay">
                   <span className="adg-c-overview-img-label">
@@ -698,9 +715,9 @@ const TravelingDuringTheCompetitiveSeason = () => {
             </h2>
             <div className="Asc-accent-line"></div>
             <p className="Ejsc-section-subtitle">
-              Every athlete's calendar is unique. Whether you have 48 hours
-              or two weeks available, we'll maximize every moment of your
-              time away.
+              Every athlete's calendar is unique. Whether you have 48 hours or
+              two weeks available, we'll maximize every moment of your time
+              away.
             </p>
           </div>
 
@@ -717,8 +734,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
               </div>
 
               <p className="Ejsc-card-intro">
-                Itineraries are built to accommodate however much time you
-                have, from a quick break to an extended window away.
+                Itineraries are built to accommodate however much time you have,
+                from a quick break to an extended window away.
               </p>
 
               <ul className="Ejsc-feature-list">
@@ -741,8 +758,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
 
               <div className="Ejsc-card-highlight">
                 <p>
-                  Whatever your available window, we'll maximize every moment
-                  of your time away.
+                  Whatever your available window, we'll maximize every moment of
+                  your time away.
                 </p>
               </div>
             </div>
@@ -757,9 +774,9 @@ const TravelingDuringTheCompetitiveSeason = () => {
               </div>
 
               <p className="Ejsc-card-intro">
-                Sometimes the best opportunities happen with very little
-                notice. Even then, every detail is managed to the highest
-                luxury standards.
+                Sometimes the best opportunities happen with very little notice.
+                Even then, every detail is managed to the highest luxury
+                standards.
               </p>
 
               <ul className="Ejsc-feature-list">
@@ -790,7 +807,10 @@ const TravelingDuringTheCompetitiveSeason = () => {
       </section>
 
       {/* ── PRIVATE AVIATION FOR MAXIMUM FLEXIBILITY ─────────────────── */}
-      <section className="wnf-section wnf-bg-white" id="private-aviation-flexibility">
+      <section
+        className="wnf-section wnf-bg-white"
+        id="private-aviation-flexibility"
+      >
         <div className="wnf-container">
           <div className="wnf-section-header">
             <h2 className="wnf-h2">Private Aviation for Maximum Flexibility</h2>
@@ -798,23 +818,14 @@ const TravelingDuringTheCompetitiveSeason = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    src={HeroImage2}
-                    alt="Private jet ready for a flexible departure"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    src={AirportImage}
-                    alt="Athlete boarding a private jet on a tight schedule"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={AirportImage}
+                  alt="Athlete boarding a private jet on a tight schedule"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -822,8 +833,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
               <div className="wnf-block">
                 <p className="wnf-lead-text">
                   Commercial airline schedules don't always align with the
-                  demands of professional sports. Private charter flights
-                  allow athletes to maximize valuable time with family while
+                  demands of professional sports. Private charter flights allow
+                  athletes to maximize valuable time with family while
                   minimizing travel stress.
                 </p>
 
@@ -849,8 +860,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
               <div className="wnf-footer-note">
                 <p className="wnf-highlight-text">
                   Private charter flights allow athletes to maximize valuable
-                  time with family while minimizing travel stress, no matter
-                  how the schedule shifts.
+                  time with family while minimizing travel stress, no matter how
+                  the schedule shifts.
                 </p>
               </div>
             </div>
@@ -867,8 +878,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
             </h2>
             <div className="azs-section-accent"></div>
             <p className="azs-section-subtitle">
-              Choosing the right accommodations is essential when schedules
-              are uncertain — flexibility remains a priority throughout.
+              Choosing the right accommodations is essential when schedules are
+              uncertain — flexibility remains a priority throughout.
             </p>
           </div>
 
@@ -897,9 +908,9 @@ const TravelingDuringTheCompetitiveSeason = () => {
                 </div>
 
                 <p className="azs-suites-intro">
-                  Whether staying in a luxury hotel, private villa, or
-                  exclusive resort, flexibility remains a priority when
-                  schedules are uncertain.
+                  Whether staying in a luxury hotel, private villa, or exclusive
+                  resort, flexibility remains a priority when schedules are
+                  uncertain.
                 </p>
 
                 <div className="azs-suites-body">
@@ -960,14 +971,12 @@ const TravelingDuringTheCompetitiveSeason = () => {
                 </div>
 
                 <p className="azs-suites-intro">
-                  One of the biggest challenges for athletes is planning
-                  travel before knowing exactly when the season will end.
+                  One of the biggest challenges for athletes is planning travel
+                  before knowing exactly when the season will end.
                 </p>
 
                 <div className="azs-suites-body">
-                  <h4 className="azs-suites-group-title">
-                    We help by:
-                  </h4>
+                  <h4 className="azs-suites-group-title">We help by:</h4>
 
                   <ul className="azs-suites-list">
                     {[
@@ -990,8 +999,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
 
                   <div className="azs-suites-highlight-box azs-azamara-suites-highlight">
                     <p className="azs-suites-highlight-text">
-                      Our proactive planning allows you to focus on
-                      competition while we manage the logistics.
+                      Our proactive planning allows you to focus on competition
+                      while we manage the logistics.
                     </p>
                   </div>
                 </div>
@@ -1008,12 +1017,14 @@ const TravelingDuringTheCompetitiveSeason = () => {
       >
         <div className="Leg-container">
           <div className="Leg-header">
-            <h2 className="Leg-title">Concierge Support Every Step of the Way</h2>
+            <h2 className="Leg-title">
+              Concierge Support Every Step of the Way
+            </h2>
             <div className="adg-c-accent-line"></div>
             <p className="Leg-subtitle">
-              Changing schedules require responsive service. When plans
-              change, one phone call is all it takes for our team to make the
-              necessary adjustments.
+              Changing schedules require responsive service. When plans change,
+              one phone call is all it takes for our team to make the necessary
+              adjustments.
             </p>
           </div>
 
@@ -1124,13 +1135,15 @@ const TravelingDuringTheCompetitiveSeason = () => {
         <div className="dmg-info-container">
           <div className="dmg-info-grid">
             <div className="dmg-info-content">
-              <h2 className="dmg-info-title">Family Travel During the Season</h2>
+              <h2 className="dmg-info-title">
+                Family Travel During the Season
+              </h2>
               <div className="dmg-info-accent"></div>
 
               <p className="dmg-info-lead">
                 Balancing professional commitments with family time can be
-                challenging. We create travel experiences that allow athletes
-                to reconnect with loved ones whenever opportunities arise.
+                challenging. We create travel experiences that allow athletes to
+                reconnect with loved ones whenever opportunities arise.
               </p>
 
               <div className="dmg-info-features dmg-info-features-scrollable">
@@ -1199,7 +1212,7 @@ const TravelingDuringTheCompetitiveSeason = () => {
                   src={FamilyImage}
                   alt="Family reuniting during a short break in the competitive season"
                   className="dmg-media-img"
-                  style={{ height: "650px" }}
+                  style={{ height: "86vh", objectPosition: "18% center" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1239,15 +1252,13 @@ const TravelingDuringTheCompetitiveSeason = () => {
 
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
-                  Many professional athletes and public figures value privacy
-                  as much as comfort. The focus is always on creating a
-                  relaxed and enjoyable vacation experience.
+                  Many professional athletes and public figures value privacy as
+                  much as comfort. The focus is always on creating a relaxed and
+                  enjoyable vacation experience.
                 </p>
 
                 <div className="ugt-questions-box">
-                  <span className="ugt-questions-title">
-                    We arrange:
-                  </span>
+                  <span className="ugt-questions-title">We arrange:</span>
 
                   <ul className="ugt-questions-list">
                     {[
@@ -1316,8 +1327,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
               <p className="dmg-info-lead">
                 Because athletic schedules can change unexpectedly,
                 comprehensive travel protection is an important part of every
-                itinerary. Our advisors explain your options so you can
-                travel with confidence.
+                itinerary. Our advisors explain your options so you can travel
+                with confidence.
               </p>
 
               <div className="dmg-info-features dmg-info-features-scrollable">
@@ -1354,9 +1365,7 @@ const TravelingDuringTheCompetitiveSeason = () => {
                     <HeartHandshake size={16} />
                   </div>
                   <div className="dmg-info-feature-texts">
-                    <h3 className="dmg-info-feature-title">
-                      Medical Coverage
-                    </h3>
+                    <h3 className="dmg-info-feature-title">Medical Coverage</h3>
                     <p className="dmg-info-feature-desc">
                       Protection in place wherever your travels take you.
                     </p>
@@ -1397,8 +1406,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
 
             <p className="luc-destinations-intro">
               Even a few days away can provide valuable time to relax and
-              recharge. Every destination is selected based on your
-              available time and travel goals.
+              recharge. Every destination is selected based on your available
+              time and travel goals.
             </p>
           </div>
 
@@ -1434,6 +1443,10 @@ const TravelingDuringTheCompetitiveSeason = () => {
                   src={currentDestination.image}
                   alt={currentDestination.title}
                   className="luc-dest-img"
+                  style={{
+                    objectPosition:
+                      currentDestination.objectPosition || "center",
+                  }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -1491,7 +1504,9 @@ const TravelingDuringTheCompetitiveSeason = () => {
       <section className="adg-section" id="adg-why-trips-and-ships">
         <div className="adg-container">
           <div className="adg-section-header" style={{ marginBottom: "60px" }}>
-            <h2 className="adg-h2">Why Work with Trips &amp; Ships Luxury Travel?</h2>
+            <h2 className="adg-h2">
+              Why Work with Trips &amp; Ships Luxury Travel?
+            </h2>
             <div className="adg-accent-line"></div>
           </div>
 
@@ -1504,7 +1519,7 @@ const TravelingDuringTheCompetitiveSeason = () => {
                 src={AdvisorImage}
                 alt="Travel advisor coordinating a flexible itinerary for a professional athlete"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "46vh" }}
               />
 
               <div className="adg-info-card">
@@ -1522,8 +1537,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
                 <div className="adg-card-divider"></div>
 
                 <p className="adg-card-subtext">
-                  Because when your time away is limited, every moment should
-                  be extraordinary.
+                  Because when your time away is limited, every moment should be
+                  extraordinary.
                 </p>
               </div>
             </div>
@@ -1602,11 +1617,11 @@ const TravelingDuringTheCompetitiveSeason = () => {
               </h3>
 
               <p className="Avr-planning-left-body">
-                Even if travel dates are uncertain, early planning allows us
-                to secure preferred accommodations while maintaining
-                flexibility. Keeping your schedule flexible allows for easier
-                adjustments if plans change, and choosing destinations
-                carefully ensures each trip matches your available time.
+                Even if travel dates are uncertain, early planning allows us to
+                secure preferred accommodations while maintaining flexibility.
+                Keeping your schedule flexible allows for easier adjustments if
+                plans change, and choosing destinations carefully ensures each
+                trip matches your available time.
               </p>
 
               <div className="Avr-planning-alert">
@@ -1692,9 +1707,9 @@ const TravelingDuringTheCompetitiveSeason = () => {
 
             <p className="ugt-advantage-intro">
               A demanding competitive schedule shouldn't prevent you from
-              enjoying exceptional travel experiences. Our experienced
-              advisors create personalized luxury travel experiences that
-              evolve with your schedule.
+              enjoying exceptional travel experiences. Our experienced advisors
+              create personalized luxury travel experiences that evolve with
+              your schedule.
             </p>
           </div>
 
@@ -1707,8 +1722,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
               <h4 className="ugt-card-title">Adjustable Travel Dates</h4>
 
               <p className="ugt-card-desc">
-                Departure and return dates that move with your schedule
-                rather than against it.
+                Departure and return dates that move with your schedule rather
+                than against it.
               </p>
             </div>
 
@@ -1746,8 +1761,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
               <h4 className="ugt-card-title">Updated Itineraries</h4>
 
               <p className="ugt-card-desc">
-                Itineraries revised quickly and smoothly whenever your
-                schedule shifts.
+                Itineraries revised quickly and smoothly whenever your schedule
+                shifts.
               </p>
             </div>
 
@@ -1901,9 +1916,9 @@ const TravelingDuringTheCompetitiveSeason = () => {
                   style={{ marginTop: "24px", lineHeight: "1.8" }}
                 >
                   Angela Hughes and the team at Trips &amp; Ships Luxury Travel
-                  help professional athletes plan flexible luxury travel
-                  around an unpredictable competitive schedule — from
-                  last-minute bookings to flawless on-the-ground execution.
+                  help professional athletes plan flexible luxury travel around
+                  an unpredictable competitive schedule — from last-minute
+                  bookings to flawless on-the-ground execution.
                 </p>
               </div>
             </div>
@@ -1918,8 +1933,8 @@ const TravelingDuringTheCompetitiveSeason = () => {
             <h2 className="Asc-h2">Frequently Asked Questions</h2>
             <div className="Asc-accent-line"></div>
             <p className="Asc-faq-intro">
-              Everything you need to know about planning flexible luxury
-              travel around a professional athlete's competitive season.
+              Everything you need to know about planning flexible luxury travel
+              around a professional athlete's competitive season.
             </p>
           </div>
           <FAQ />
@@ -1960,17 +1975,17 @@ const TravelingDuringTheCompetitiveSeason = () => {
                   </p>
 
                   <p className="Asc-help-intro">
-                    From last-minute bookings and private aviation to
-                    adaptable accommodations and concierge planning, expert
-                    support helps every journey come together seamlessly —
-                    no matter how the schedule changes.
+                    From last-minute bookings and private aviation to adaptable
+                    accommodations and concierge planning, expert support helps
+                    every journey come together seamlessly — no matter how the
+                    schedule changes.
                   </p>
 
                   <p className="Asc-help-intro">
                     Whether you're planning a quick getaway between games, a
-                    family vacation during a bye week, or a luxury
-                    celebration after the season, personalized planning
-                    makes all the difference.
+                    family vacation during a bye week, or a luxury celebration
+                    after the season, personalized planning makes all the
+                    difference.
                   </p>
 
                   <div className="Asc-help-btn-container">

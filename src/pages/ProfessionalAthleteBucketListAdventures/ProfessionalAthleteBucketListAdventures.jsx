@@ -57,6 +57,10 @@ import AmenitiesImage from "../../assets/PrivateJetConciergeTravel/luxury-wellne
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
 
+import SafariImage from "../../assets/PrivateJetConciergeTravel/Luxury-African-Safaris.png";
+import AntarcticaImage from "../../assets/PrivateJetConciergeTravel/Antarctica-Expeditions.png";
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
+
 import HeroBg1 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
 import HeroBg2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
 import HeroBg3 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica.jpg";
@@ -671,11 +675,12 @@ const ProfessionalAthleteBucketListAdventures = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{ height: "320px" }}>
                 <img
                   src={DifferentApproachImage}
                   alt="Family on a private game drive during a luxury African safari"
                   className="adg-c-overview-img"
+                  style={{ objectPosition: "top" }}
                 />
                 <div className="adg-c-overview-img-overlay">
                   <span className="adg-c-overview-img-label">
@@ -690,102 +695,121 @@ const ProfessionalAthleteBucketListAdventures = () => {
 
       {/* LUXURY AFRICAN SAFARIS & ANTARCTICA EXPEDITIONS */}
       <section
-        className="Ejsc-ent-section"
+        className="asa-section"
         id="Ejsc-safaris-and-antarctica"
-        style={{ backgroundColor: "var(--bg-soft)" }}
       >
-        <div className="Ejsc-container">
-          <div className="Ejsc-section-header">
-            <h2 className="Ejsc-section-title">
+        <div className="asa-container">
+          <div className="asa-header">
+            <h2 className="asa-title">
               Luxury African Safaris &amp; Antarctica Expeditions
             </h2>
-            <div className="Asc-accent-line"></div>
-            <p className="Ejsc-section-subtitle">
+            <div className="asa-accent-line"></div>
+            <p className="asa-subtitle">
               Two of the world's most extraordinary wildlife experiences,
               paired with five-star comfort from arrival to departure.
             </p>
           </div>
 
-          <div className="Ejsc-ent-grid">
+          <div className="asa-grid">
             {/* Luxury African Safaris Card */}
-            <div className="Ejsc-ent-card Ejsc-explora-card">
-              <div className="Ejsc-card-header">
-                <div className="Ejsc-card-icon-wrap">
-                  <PawPrint size={24} className="Ejsc-card-icon" />
-                </div>
-                <h3 className="Ejsc-card-title">Luxury African Safaris</h3>
+            <div className="asa-card">
+              <div className="asa-card-image-wrap">
+                <img
+                  src={SafariImage}
+                  alt="Luxury African Safari wildlife adventure"
+                  className="asa-card-image"
+                />
+                <div className="asa-card-overlay"></div>
               </div>
+              <div className="asa-card-content">
+                <div className="asa-card-header">
+                  <div className="asa-card-icon-wrap">
+                    <PawPrint size={22} className="asa-card-icon" />
+                  </div>
+                  <h3 className="asa-card-title">Luxury African Safaris</h3>
+                </div>
 
-              <p className="Ejsc-card-intro">
-                Few experiences compare to seeing Africa's incredible
-                wildlife in its natural habitat. Luxury safaris combine
-                thrilling game drives with five-star accommodations.
-              </p>
-
-              <ul className="Ejsc-feature-list">
-                {[
-                  "Kenya, Tanzania & Botswana",
-                  "South Africa & Namibia",
-                  "Rwanda, Zambia & Zimbabwe",
-                  "Private plunge pools & butler service",
-                  "Gourmet dining & personal guides",
-                  "Private game vehicles",
-                ].map((item, i) => (
-                  <li key={i} className="Ejsc-feature-item">
-                    <div className="Ejsc-feature-icon">
-                      <Check size={14} />
-                    </div>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="Ejsc-card-highlight">
-                <p>
-                  For athletes seeking privacy and unforgettable wildlife
-                  experiences, Africa remains one of the world's ultimate
-                  luxury destinations.
+                <p className="asa-card-intro">
+                  Few experiences compare to seeing Africa's incredible
+                  wildlife in its natural habitat. Luxury safaris combine
+                  thrilling game drives with five-star accommodations.
                 </p>
+
+                <ul className="asa-feature-list">
+                  {[
+                    "Kenya, Tanzania & Botswana",
+                    "South Africa & Namibia",
+                    "Rwanda, Zambia & Zimbabwe",
+                    "Private plunge pools & butler service",
+                    "Gourmet dining & personal guides",
+                    "Private game vehicles",
+                  ].map((item, i) => (
+                    <li key={i} className="asa-feature-item">
+                      <div className="asa-feature-icon">
+                        <Check size={14} />
+                      </div>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="asa-card-highlight">
+                  <p>
+                    For athletes seeking privacy and unforgettable wildlife
+                    experiences, Africa remains one of the world's ultimate
+                    luxury destinations.
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Antarctica Expeditions Card */}
-            <div className="Ejsc-ent-card Ejsc-seabourn-card">
-              <div className="Ejsc-card-header">
-                <div className="Ejsc-card-icon-wrap">
-                  <Snowflake size={24} className="Ejsc-card-icon" />
-                </div>
-                <h3 className="Ejsc-card-title">Antarctica Expeditions</h3>
+            <div className="asa-card">
+              <div className="asa-card-image-wrap">
+                <img
+                  src={AntarcticaImage}
+                  alt="Antarctica Expedition luxury cruise adventure"
+                  className="asa-card-image"
+                />
+                <div className="asa-card-overlay"></div>
               </div>
+              <div className="asa-card-content">
+                <div className="asa-card-header">
+                  <div className="asa-card-icon-wrap">
+                    <Snowflake size={22} className="asa-card-icon" />
+                  </div>
+                  <h3 className="asa-card-title">Antarctica Expeditions</h3>
+                </div>
 
-              <p className="Ejsc-card-intro">
-                Antarctica represents one of the last true frontiers on
-                Earth, offering dramatic glaciers, towering icebergs, and
-                incredible wildlife.
-              </p>
-
-              <ul className="Ejsc-feature-list">
-                {[
-                  "Zodiac landings & penguin colonies",
-                  "Whale watching & glacier cruising",
-                  "Iceberg photography",
-                  "Scientific lectures & kayaking",
-                  "Spacious suites & wellness spas",
-                ].map((item, i) => (
-                  <li key={i} className="Ejsc-feature-item">
-                    <div className="Ejsc-feature-icon">
-                      <Star size={14} />
-                    </div>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="Ejsc-card-highlight">
-                <p>
-                  For many travelers, Antarctica is the ultimate
-                  once-in-a-lifetime adventure.
+                <p className="asa-card-intro">
+                  Antarctica represents one of the last true frontiers on
+                  Earth, offering dramatic glaciers, towering icebergs, and
+                  incredible wildlife.
                 </p>
+
+                <ul className="asa-feature-list">
+                  {[
+                    "Zodiac landings & penguin colonies",
+                    "Whale watching & glacier cruising",
+                    "Iceberg photography",
+                    "Scientific lectures & kayaking",
+                    "Spacious suites & wellness spas",
+                  ].map((item, i) => (
+                    <li key={i} className="asa-feature-item">
+                      <div className="asa-feature-icon">
+                        <Star size={14} />
+                      </div>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="asa-card-highlight">
+                  <p>
+                    For many travelers, Antarctica is the ultimate
+                    once-in-a-lifetime adventure.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -801,23 +825,14 @@ const ProfessionalAthleteBucketListAdventures = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    src={GalapagosImage}
-                    alt="Giant tortoise encounter in the Galápagos Islands"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    src={GalapagosHeroImage}
-                    alt="Sea lion resting on a Galápagos beach"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={GalapagosImage}
+                  alt="Giant tortoise encounter in the Galápagos Islands"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1412,7 +1427,7 @@ const ProfessionalAthleteBucketListAdventures = () => {
                 src={AdvisorImage}
                 alt="Luxury travel advisor coordinating a safari and expedition itinerary"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "46vh" }}
               />
 
               <div className="adg-info-card">

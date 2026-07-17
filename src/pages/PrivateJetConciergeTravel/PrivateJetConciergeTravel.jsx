@@ -59,6 +59,8 @@ import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yach
 
 import { Helmet } from "react-helmet-async";
 
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
+
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
   "@context": "https://schema.org",
@@ -310,6 +312,7 @@ const privateJetDestinations = [
     badge: "Caribbean",
     icon: Palmtree,
     image: BucketCaribbean,
+    objectPosition: "center 55%",
     window: "Private island resorts, luxury villas, and yacht charters",
     desc: "Private island resorts, luxury villas, and yacht charters make the Caribbean effortless to reach and explore by private jet.",
     columns: [
@@ -332,6 +335,7 @@ const privateJetDestinations = [
     badge: "Mediterranean",
     icon: Waves,
     image: BucketMediterranean,
+    objectPosition: "center",
     window: "Coastal cities, island hopping, and luxury villas",
     desc: "Coastal cities, island hopping, and luxury villas make the Mediterranean an ideal region for a multi-stop private aviation itinerary.",
     columns: [
@@ -354,6 +358,7 @@ const privateJetDestinations = [
     badge: "Hawaii",
     icon: Palmtree,
     image: HawaiiJetImage,
+    objectPosition: "center",
     window: "Oceanfront resorts, wellness retreats, and family adventures",
     desc: "Oceanfront resorts, wellness retreats, and family adventures make Hawaii a favorite private jet destination for multi-generational trips.",
     columns: [
@@ -376,6 +381,7 @@ const privateJetDestinations = [
     badge: "Alaska",
     icon: Mountain,
     image: BucketAlaska,
+    objectPosition: "center 60%",
     window: "Luxury expedition cruises and breathtaking wilderness",
     desc: "Luxury expedition cruises and breathtaking wilderness experiences make Alaska a striking destination reached comfortably by private aviation.",
     columns: [
@@ -398,6 +404,7 @@ const privateJetDestinations = [
     badge: "French Polynesia",
     icon: Waves,
     image: PolynesiaJetImage,
+    objectPosition: "center",
     window: "Exclusive island resorts surrounded by crystal-clear lagoons",
     desc: "Exclusive island resorts surrounded by crystal-clear lagoons make French Polynesia an ideal setting for a private, uninterrupted escape.",
     columns: [
@@ -420,6 +427,7 @@ const privateJetDestinations = [
     badge: "Safari",
     icon: PawPrint,
     image: BucketSafari,
+    objectPosition: "center 18%",
     window: "Luxury lodges offering extraordinary wildlife experiences",
     desc: "Luxury lodges offering extraordinary wildlife experiences make African safari destinations a natural fit for private aviation itineraries.",
     columns: [
@@ -670,11 +678,12 @@ const PrivateJetConciergeTravel = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{ height: "320px" }}>
                 <img
                   src={DifferentApproachImage}
                   alt="Family boarding a private jet with personalized service"
                   className="adg-c-overview-img"
+                  style={{ objectPosition: "top" }}
                 />
                 <div className="adg-c-overview-img-overlay">
                   <span className="adg-c-overview-img-label">
@@ -804,23 +813,14 @@ const PrivateJetConciergeTravel = () => {
           </div>
 
           <div className="wnf-split">
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    src={AirportLoungeImage}
-                    alt="Private airport terminal lounge"
-                    className="wnf-photo"
-                  />
-                </div>
-
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    src={AirportMeetGreetImage}
-                    alt="Personalized meet and greet service at a private airport lounge"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={AirportLoungeImage}
+                  alt="Private airport terminal lounge"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1446,6 +1446,7 @@ const PrivateJetConciergeTravel = () => {
                   src={currentDestination.image}
                   alt={currentDestination.title}
                   className="luc-dest-img"
+                  style={{ objectPosition: currentDestination.objectPosition || "center" }}
                 />
 
                 <div className="luc-dest-img-overlay">
@@ -1516,7 +1517,7 @@ const PrivateJetConciergeTravel = () => {
                 src={AdvisorImage}
                 alt="Luxury travel advisor coordinating a private jet itinerary"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "44vh" }}
               />
 
               <div className="adg-info-card">
@@ -1532,12 +1533,7 @@ const PrivateJetConciergeTravel = () => {
                   while every detail is handled behind the scenes.
                 </p>
 
-                <div className="adg-card-divider"></div>
-
-                <p className="adg-card-subtext">
-                  Because true luxury isn't just where you go — it's how
-                  effortlessly you get there.
-                </p>
+                
               </div>
             </div>
 
