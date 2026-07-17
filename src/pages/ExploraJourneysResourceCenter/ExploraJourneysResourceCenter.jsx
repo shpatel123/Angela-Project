@@ -26,9 +26,6 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-import HeroImage1 from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-turquoise-water.jpg";
-import HeroImage2 from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-beach-aerial.jpg";
-import HeroImage3 from "../../assets/WhichMediterraneanItineraryIsBest/explora-II-mediterranean-coastal-cruise-view.jpg";
 import ExploraPool from "../../assets/CaribbeanCruisesExploraJourneys/explora-beaches.jpg";
 import MediterraneanImage from "../../assets/WhichMediterraneanItineraryIsBest/Italian-Coast.jpg";
 import CaribbeanImage from "../../assets/CaribbeanCruisesExploraJourneys/Adventure.jpg";
@@ -36,7 +33,6 @@ import JapanImage from "../../assets/JapanCruisesExploraJourneys/angela-hughes-k
 import ExploraSuite from "../../assets/IsExploraGoodForFamilies/explora-journeys-retreat-residence-luxury-suite-living-room.webp";
 import ExploraDiningImage from "../../assets/WhichExploraShipChoose/EXPLORA-III-IV-Anthology.jpg";
 import ExploraBookingImage from "../../assets/HowAdvanceShouldBookExplora/explora-ship.jpg";
-import OnboardExperience from "../../assets/HowAdvanceShouldBookExplora/onboard-experience.webp";
 import ExploraEpicShip from "../../assets/HowAdvanceShouldBookExplora/ExploraCruise3.webp";
 import ExploraFleetImage from "../../assets/WhichExploraShipChoose/Explora-Journeys2.webp";
 import ExploraShipPanama from "../../assets/WhichExploraShipChoose/EXPLORA-III-PANAMA-CANAL.jpg";
@@ -1086,10 +1082,10 @@ const ExploraJourneysResourceCenter = () => {
           <div className="adg-split-layout">
             <div className="adg-content-card-side">
               <img
-                src={OnboardExperience}
-                alt="Couples, families, and solo travelers enjoying Explora Journeys"
+                src={MediterraneanImage}
+                alt="Beautiful coastal destination in the Mediterranean"
                 className="adg-side-image"
-                style={{ height: "62vh" }}
+                style={{ height: "70vh" }}
               />
 
               <div className="adg-info-card">

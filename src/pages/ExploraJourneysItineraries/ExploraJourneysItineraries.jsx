@@ -27,6 +27,7 @@ import {
   Waves,
   Anchor,
   Globe,
+  Palmtree,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela2.jpeg";
@@ -634,58 +635,83 @@ const worldDestinations = [
       "Expect ancient temples, modern skylines, tropical islands, UNESCO World Heritage Sites, and exceptional cuisine.",
   },
 ];
-
-/* ── Choosing the Right Itinerary ────────────────────────────────── */
-const itineraryChoices = [
+const diningData = [
   {
-    icon: Sun,
-    title: "Mediterranean",
-    subtitle: "If You Love",
+    key: "mediterranean",
+    icon: <Sun size={22} strokeWidth={1.6} />,
+    eyebrow: "If You Love",
+    title: "Mediterranean Cruises",
+    image: Mediterranean,
+    imageAlt: "Explora Mediterranean luxury cruise",
     items: ["History", "Coastal villages", "Food and wine", "Classic Europe"],
+    accent: "adg-accent-rose",
   },
   {
-    icon: Mountain,
-    title: "Alaska",
-    subtitle: "If You Love",
+    key: "alaska",
+    icon: <Mountain size={22} strokeWidth={1.6} />,
+    eyebrow: "If You Love",
+    title: "Alaska Sailings",
+    image: Alaska,
+    imageAlt: "Explora Alaska luxury cruise wilderness",
     items: ["Wildlife", "Glaciers", "Nature", "Photography"],
+    accent: "adg-accent-teal",
   },
   {
-    icon: Landmark,
-    title: "Japan",
-    subtitle: "If You Love",
+    key: "japan",
+    icon: <Landmark size={22} strokeWidth={1.6} />,
+    eyebrow: "If You Love",
+    title: "Japan Voyages",
+    image: Japan,
+    imageAlt: "Explora luxury cruise itinerary Japan",
     items: ["Culture", "Temples", "Gardens", "Modern cities"],
+    accent: "adg-accent-gold",
   },
   {
-    icon: Waves,
-    title: "Caribbean",
-    subtitle: "If You Love",
+    key: "caribbean",
+    icon: <Waves size={22} strokeWidth={1.6} />,
+    eyebrow: "If You Love",
+    title: "Caribbean Sailings",
+    image: Caribbean,
+    imageAlt: "Explora Caribbean luxury cruise beach",
     items: ["Beaches", "Relaxation", "Warm weather", "Water sports"],
+    accent: "adg-accent-gold",
   },
   {
-    icon: Compass,
-    title: "Northern Europe",
-    subtitle: "If You Love",
+    key: "northern-europe",
+    icon: <Compass size={22} strokeWidth={1.6} />,
+    eyebrow: "If You Love",
+    title: "Northern Europe Cruises",
+    image: NorthernEurope,
+    imageAlt: "Explora Northern Europe luxury cruise scenic fjords",
     items: ["Fjords", "Castles", "Scenic cruising", "Historic cities"],
+    accent: "adg-accent-teal",
   },
   {
-    icon: Snowflake,
+    key: "iceland-greenland",
+    icon: <Snowflake size={22} strokeWidth={1.6} />,
+    eyebrow: "If You Love",
     title: "Iceland & Greenland",
-    subtitle: "If You Love",
+    image: IcelandGreenland,
+    imageAlt: "Explora luxury cruise Arctic landscapes",
     items: ["Icebergs", "Adventure", "Remote landscapes", "Arctic wildlife"],
+    accent: "adg-accent-rose",
   },
   {
-    icon: Layers,
-    title: "Asia",
-    subtitle: "If You Love",
+    key: "asia",
+    icon: <Layers size={22} strokeWidth={1.6} />,
+    eyebrow: "If You Love",
+    title: "Asia Journeys",
+    image: Asia,
+    imageAlt: "Explora luxury cruise tropical destinations Asia",
     items: [
       "Diverse cultures",
       "Street food",
       "Ancient history",
       "Tropical destinations",
     ],
+    accent: "adg-accent-gold",
   },
 ];
-
 /* ── Main Component ──────────────────────────────────────────────── */
 const ExploraJourneysItineraries = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -1075,57 +1101,65 @@ const ExploraJourneysItineraries = () => {
         </div>
       </section>
 
-         {/* ── CHOOSING THE RIGHT ITINERARY ────────────────────────── */}
-      <section className="ugt-advantage-section" id="choosing-itinerary">
-        <div className="Asc-container">
-          <div className="ugt-advantage-header">
-            <span className="ugt-advantage-eyebrow">Find Your Fit</span>
+      {/* ── CHOOSING THE RIGHT ITINERARY ────────────────────────── */}
+      <section className="adg-section" id="choosing-itinerary" style={{backgroundColor: 'var(--bg-white)'}}>
+        <div className="adg-container">
+          {/* HEADER */}
+          <div className="adg-header">
+            <h2 className="adg-h2">Choosing the Right Itinerary</h2>
 
-            <h2 className="ugt-advantage-title">
-              Choosing the Right Itinerary
-            </h2>
+            <div className="adg-accent-line"></div>
 
-            <div className="Asc-accent-line"></div>
-
-            <p className="ugt-advantage-intro">
+            <p className="adg-intro">
               The best itinerary depends on your travel style. Use this quick
               guide to narrow down the region that matches what you love most.
             </p>
           </div>
 
-          <div className="ugt-advantage-grid">
-            {itineraryChoices.map((choice, i) => {
-              const ChoiceIcon = choice.icon;
-              return (
-                <div className="ugt-advantage-card" key={i}>
-                  <div className="ugt-icon-box">
-                    <ChoiceIcon size={28} strokeWidth={1.5} />
+          {/* CARDS GRID */}
+          <div className="adgs-grid">
+            {diningData.map((item) => (
+              <div key={item.key} className={`adg-card ${item.accent}`}>
+                {/* IMAGE */}
+                <div className="adg-card-image-wrap">
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt}
+                    className="adg-card-img"
+                  />
+
+                  <div className="adg-card-image-overlay"></div>
+
+                  {/* FLOATING EYEBROW ON IMAGE */}
+                  <div className="adg-card-eyebrow-wrap">
+                    <span className="adg-card-eyebrow-icon">{item.icon}</span>
+                    <span className="adg-card-eyebrow-label">
+                      {item.eyebrow}
+                    </span>
                   </div>
+                </div>
 
-                  <h4 className="ugt-card-title">{choice.title}</h4>
+                {/* BODY */}
+                <div className="adg-card-body">
+                  <h3 className="adg-card-title">{item.title}</h3>
 
-                  <p
-                    className="ugt-card-desc"
-                    style={{ marginBottom: "10px", fontWeight: 600 }}
-                  >
-                    {choice.subtitle}:
-                  </p>
-
-                  <ul className="Asc-who-list" style={{ textAlign: "left" }}>
-                    {choice.items.map((item, idx) => (
-                      <li key={idx}>
-                        <Check size={14} className="Asc-icon-green" />
-                        {item}
+                  <ul className="adg-card-list">
+                    {item.items.map((point, idx) => (
+                      <li key={idx} className="adg-card-list-item">
+                        <span className="adg-card-list-dot"></span>
+                        <span className="adg-card-list-text">{point}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-              );
-            })}
+
+                {/* BOTTOM ACCENT BAR */}
+                <div className="adg-card-bar"></div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-
 
       {/* ── SHORE EXPERIENCES ─────────────────── */}
       <section className="adg-section" id="shore-experiences">
@@ -1194,7 +1228,6 @@ const ExploraJourneysItineraries = () => {
         </div>
       </section>
 
-   
       {/* ── WHEN SHOULD YOU BOOK? ───────────────────────────────────── */}
       <section
         className="adg-c-section adg-c-bg-white"

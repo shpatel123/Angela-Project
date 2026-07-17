@@ -24,6 +24,10 @@ import {
   Rocket,
   Globe,
   Info,
+  Mountain,
+  Cherry,
+  Palmtree,
+  Snowflake,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
@@ -42,7 +46,22 @@ import ExploraSuiteImage from "../../assets/ExploraJourneysWorth/Explora-Suite.w
 import ExploraLifeOnboard from "../../assets/ExploraJourneysCruises/onboard-experience.webp";
 import ExploraSantorini from "../../assets/ExploraJourneysWorth/santorini-greece-mediterranean-luxury-cruise-view.jpg";
 
+import Mediterranean from "../../assets/ExploraIVGuide/Mediterranean.png";
+import Alaska from "../../assets/ExploraIVGuide/Alaska.png";
+import Japan from "../../assets/ExploraIVGuide/Japan.png";
+import Caribbean from "../../assets/ExploraIVGuide/Caribbean.png";
+import NorthernEurope from "../../assets/ExploraIVGuide/NorthernEurope.png";
+import IcelandGreenland from "../../assets/ExploraIVGuide/Iceland.png";
+
+import CouplesImage from "../../assets/ExploraIVGuide/Couples.png";
+import ExperiencedCruisersImage from "../../assets/ExploraIVGuide/Experienced-Luxury-Cruisers.png";
+import SoloTravelersImage from "../../assets/ExploraIVGuide/Solo-Travelers.png";
+import WellnessTravelersImage from "../../assets/ExploraIVGuide/Wellness-Focused-Travelers.png";
+import FoodWineImage from "../../assets/ExploraIVGuide/Food-Wine-Enthusiasts.png";
+import LuxuryHotelGuestsImage from "../../assets/ExploraIVGuide/Luxury-Hotel-Guests.png";
+
 import { Helmet } from "react-helmet-async";
+import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -80,7 +99,7 @@ const schemaData = {
       description:
         "Discover why discerning luxury travelers are choosing Explora Journeys for spacious all-suite accommodations, destination-focused itineraries, exceptional dining, personalized service, wellness experiences, and contemporary European luxury.",
     },
-    {   
+    {
       "@type": "Article",
       "@id":
         "https://tripsandships.com/why-luxury-travelers-are-choosing-explora-journeys/#article",
@@ -160,13 +179,21 @@ const schemaData = {
         "https://tripsandships.com/why-luxury-travelers-are-choosing-explora-journeys/#itemlist",
       name: "Why Luxury Travelers Are Choosing Explora Journeys",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "A New Definition of Luxury" },
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "A New Definition of Luxury",
+        },
         {
           "@type": "ListItem",
           position: 2,
           name: "Spacious Suites Designed Like Luxury Residences",
         },
-        { "@type": "ListItem", position: 3, name: "Boutique Luxury Instead of Mega Ships" },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Boutique Luxury Instead of Mega Ships",
+        },
         {
           "@type": "ListItem",
           position: 4,
@@ -182,14 +209,26 @@ const schemaData = {
           position: 6,
           name: "Wellness Is Part of the Journey",
         },
-        { "@type": "ListItem", position: 7, name: "Personalized Service Without Formality" },
-        { "@type": "ListItem", position: 8, name: "More Time to Enjoy the Journey" },
+        {
+          "@type": "ListItem",
+          position: 7,
+          name: "Personalized Service Without Formality",
+        },
+        {
+          "@type": "ListItem",
+          position: 8,
+          name: "More Time to Enjoy the Journey",
+        },
         {
           "@type": "ListItem",
           position: 9,
           name: "Carefully Curated Destinations",
         },
-        { "@type": "ListItem", position: 10, name: "Luxury Without Pretension" },
+        {
+          "@type": "ListItem",
+          position: 10,
+          name: "Luxury Without Pretension",
+        },
         {
           "@type": "ListItem",
           position: 11,
@@ -368,6 +407,74 @@ function FAQ() {
   );
 }
 
+const diningData = [
+  {
+    key: "mediterranean",
+    icon: <Compass size={22} strokeWidth={1.6} />,
+    eyebrow: "Mediterranean",
+    title: "Mediterranean",
+    image: Mediterranean,
+    imageAlt: "Explora Journeys Mediterranean cruise",
+    items: ["Food and wine", "Historic cities", "Coastal scenery"],
+    accent: "adg-accent-rose",
+  },
+
+  {
+    key: "alaska",
+    icon: <Mountain size={22} strokeWidth={1.6} />,
+    eyebrow: "Alaska",
+    title: "Alaska",
+    image: Alaska,
+    imageAlt: "Explora Journeys Alaska cruise",
+    items: ["Wildlife", "Nature", "Photography"],
+    accent: "adg-accent-blue",
+  },
+
+  {
+    key: "japan",
+    icon: <Cherry size={22} strokeWidth={1.6} />,
+    eyebrow: "Japan",
+    title: "Japan",
+    image: Japan,
+    imageAlt: "Explora Journeys Japan cruise",
+    items: ["Culture", "Gardens", "Temples"],
+    accent: "adg-accent-purple",
+  },
+
+  {
+    key: "caribbean",
+    icon: <Palmtree size={22} strokeWidth={1.6} />,
+    eyebrow: "Caribbean",
+    title: "Caribbean",
+    image: Caribbean,
+    imageAlt: "Explora Journeys Caribbean cruise",
+    items: ["Beaches", "Warm weather", "Relaxation"],
+    accent: "adg-accent-gold",
+  },
+
+  {
+    key: "northern-europe",
+    icon: <Ship size={22} strokeWidth={1.6} />,
+    eyebrow: "Northern Europe",
+    title: "Northern Europe",
+    image: NorthernEurope,
+    imageAlt: "Explora Journeys Northern Europe cruise",
+    items: ["Fjords", "Scandinavian cities", "History"],
+    accent: "adg-accent-teal",
+  },
+
+  {
+    key: "iceland-greenland",
+    icon: <Snowflake size={22} strokeWidth={1.6} />,
+    eyebrow: "Iceland & Greenland",
+    title: "Iceland & Greenland",
+    image: IcelandGreenland,
+    imageAlt: "Explora Journeys Iceland & Greenland cruise",
+    items: ["Adventure", "Icebergs", "Remote landscapes"],
+    accent: "adg-accent-silver",
+  },
+];
+
 /* ── Main Component ──────────────────────────────────────────────── */
 const WhyLuxuryTravelersChooseExploraJourneys = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -433,26 +540,25 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
           <h1>Why Luxury Travelers Are Choosing Explora Journeys</h1>
 
           <p>
-            Luxury travel has evolved. Today's travelers are no longer
-            searching for the biggest ships, the busiest schedules, or
-            endless onboard attractions. Instead, they seek meaningful
-            experiences, exceptional comfort, personalized service, and
-            authentic destinations.
+            Luxury travel has evolved. Today's travelers are no longer searching
+            for the biggest ships, the busiest schedules, or endless onboard
+            attractions. Instead, they seek meaningful experiences, exceptional
+            comfort, personalized service, and authentic destinations.
           </p>
 
           <p>
             Explora Journeys was created with this new generation of luxury
             traveler in mind, combining elegant European design, spacious
-            all-suite accommodations, destination-rich itineraries,
-            world-class dining, and wellness-focused experiences.
+            all-suite accommodations, destination-rich itineraries, world-class
+            dining, and wellness-focused experiences.
           </p>
 
           {readMore && (
             <p>
-              Whether you're celebrating a milestone, exploring a new region,
-              or simply looking for a more refined way to travel, it's easy
-              to understand why more luxury travelers are choosing Explora
-              Journeys over both traditional and mainstream cruise lines.
+              Whether you're celebrating a milestone, exploring a new region, or
+              simply looking for a more refined way to travel, it's easy to
+              understand why more luxury travelers are choosing Explora Journeys
+              over both traditional and mainstream cruise lines.
             </p>
           )}
 
@@ -494,13 +600,15 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
                   Luxury today isn't measured by excess—it's measured by{" "}
-                  <strong>quality, space, personalization, and unforgettable
-                  experiences</strong>. <strong>Explora Journeys</strong>{" "}
-                  embraces this philosophy, offering a sophisticated
-                  alternative to both traditional and mainstream cruise
-                  lines. Instead of trying to impress with size, Explora
-                  focuses on delivering an experience that feels effortless,
-                  refined, and deeply relaxing.
+                  <strong>
+                    quality, space, personalization, and unforgettable
+                    experiences
+                  </strong>
+                  . <strong>Explora Journeys</strong> embraces this philosophy,
+                  offering a sophisticated alternative to both traditional and
+                  mainstream cruise lines. Instead of trying to impress with
+                  size, Explora focuses on delivering an experience that feels
+                  effortless, refined, and deeply relaxing.
                 </p>
 
                 <div className="ugt-questions-box">
@@ -544,7 +652,10 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
       </section>
 
       {/* ── THE EXPLORA FLEET ───────────────────────────────────────── */}
-      <section className="adg-c-section adg-c-bg-soft" id="boutique-luxury-instead-of-mega-ships">
+      <section
+        className="adg-c-section adg-c-bg-soft"
+        id="boutique-luxury-instead-of-mega-ships"
+      >
         <div className="adg-c-container">
           <div className="adg-c-section-header">
             <span className="adg-c-eyebrow">An Intimate Atmosphere</span>
@@ -555,8 +666,8 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
 
             <p className="Asc-section-intro">
               Many luxury travelers have moved away from massive cruise ships
-              carrying thousands of guests. Without overwhelming crowds,
-              every area of an Explora ship feels calm and welcoming.
+              carrying thousands of guests. Without overwhelming crowds, every
+              area of an Explora ship feels calm and welcoming.
             </p>
           </div>
 
@@ -623,21 +734,23 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
               </div>
 
               <ul className="adg-c-venue-list">
-                {["Generous deck space", "Comfortable loungers", "Never overcrowded"].map(
-                  (item, i) => (
-                    <li key={i}>
-                      <span className="adg-c-venue-dot"></span>
-                      <span>{item}</span>
-                    </li>
-                  ),
-                )}
+                {[
+                  "Generous deck space",
+                  "Comfortable loungers",
+                  "Never overcrowded",
+                ].map((item, i) => (
+                  <li key={i}>
+                    <span className="adg-c-venue-dot"></span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
 
               <div className="adg-c-venue-callout">
                 <span className="adg-c-venue-callout-bar"></span>
                 <p>
-                  Generously proportioned pool decks give every guest plenty
-                  of room to relax in the sun without competing for space.
+                  Generously proportioned pool decks give every guest plenty of
+                  room to relax in the sun without competing for space.
                 </p>
               </div>
             </div>
@@ -695,7 +808,9 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
 
                 <h3 className="adg-c-venue-name">Personalized Service</h3>
 
-                <p className="adg-c-venue-highlight">Attentive, Not Intrusive</p>
+                <p className="adg-c-venue-highlight">
+                  Attentive, Not Intrusive
+                </p>
               </div>
 
               <ul className="adg-c-venue-list">
@@ -714,8 +829,8 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
               <div className="adg-c-venue-callout">
                 <span className="adg-c-venue-callout-bar"></span>
                 <p>
-                  With a favorable crew-to-guest ratio, service feels
-                  genuinely personal rather than transactional.
+                  With a favorable crew-to-guest ratio, service feels genuinely
+                  personal rather than transactional.
                 </p>
               </div>
             </div>
@@ -792,8 +907,8 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
               <div className="adg-c-venue-callout">
                 <span className="adg-c-venue-callout-bar"></span>
                 <p>
-                  With fewer guests aboard, restaurants, lounges, and
-                  amenities are always within easy, unhurried reach.
+                  With fewer guests aboard, restaurants, lounges, and amenities
+                  are always within easy, unhurried reach.
                 </p>
               </div>
             </div>
@@ -889,10 +1004,10 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
             <div className="azs-section-accent"></div>
 
             <p className="azs-section-subtitle">
-              Unlike many cruise lines, every guest enjoys an oceanfront
-              suite with a private terrace, creating the feeling of staying
-              in a luxury waterfront residence rather than a traditional
-              cruise cabin.
+              Unlike many cruise lines, every guest enjoys an oceanfront suite
+              with a private terrace, creating the feeling of staying in a
+              luxury waterfront residence rather than a traditional cruise
+              cabin.
             </p>
           </div>
 
@@ -997,24 +1112,15 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
         </div>
       </section>
 
-      {/* CHOOSING THE RIGHT ITINERARY */}
-      <section
-        className="Asc-section Asc-bg-soft"
-        id="destinations-take-center-stage"
-      >
-        <div className="Asc-container">
-          <div className="Asc-section-header">
-            <h2 className="Asc-h2">Destinations Take Center Stage</h2>
-            <div className="Asc-accent-line"></div>
+      <section className="adg-section" id="destinations-take-center-stage">
+        <div className="adg-container">
+          {/* HEADER */}
+          <div className="adg-header">
+            <h2 className="adg-h2">Destinations Take Center Stage</h2>
 
-            <p
-              className="Asc-body-text"
-              style={{
-                maxWidth: "760px",
-                margin: "18px auto 0",
-                textAlign: "center",
-              }}
-            >
+            <div className="adg-accent-line"></div>
+
+            <p className="adg-intro">
               Luxury travelers increasingly value immersive travel experiences
               over simply collecting passport stamps. Explora itineraries
               prioritize longer port stays, overnight visits, smaller boutique
@@ -1023,144 +1129,58 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
             </p>
           </div>
 
-          <div className="Asc-seasons-grid">
-            {/* Mediterranean */}
-            <div className="Asc-season-card">
-              <div className="Asc-season-header-block">
-                <h3 className="Asc-season-title">Mediterranean</h3>
-              </div>
+          {/* CARDS GRID */}
+          <div className="adgs-grid">
+            {diningData.map((item) => (
+              <div key={item.key} className={`adg-card ${item.accent}`}>
+                {/* IMAGE */}
+                <div className="adg-card-image-wrap">
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt}
+                    className="adg-card-img"
+                  />
 
-              <div className="Asc-season-body">
-                <span className="Asc-season-meta">Choose for:</span>
+                  <div className="adg-card-image-overlay"></div>
 
-                <ul className="Asc-season-bullets">
-                  {["Food and wine", "Historic cities", "Coastal scenery"].map(
-                    (item, i) => (
-                      <li key={i}>
-                        <div className="Asc-season-icon">
-                          <Check size={14} />
-                        </div>
-                        <span className="Asc-season-text">{item}</span>
+                  {/* FLOATING LABEL */}
+                  <div className="adg-card-eyebrow-wrap">
+                    <span className="adg-card-eyebrow-icon">{item.icon}</span>
+
+                    <span className="adg-card-eyebrow-label">
+                      {item.eyebrow}
+                    </span>
+                  </div>
+                </div>
+
+                {/* BODY */}
+                <div className="adg-card-body">
+                  <h3 className="adg-card-title">{item.title}</h3>
+
+                  <div
+                    style={{
+                      fontWeight: 600,
+                      marginBottom: "14px",
+                      color: "var(--primary)",
+                    }}
+                  >
+                    Choose for:
+                  </div>
+
+                  <ul className="adg-card-list">
+                    {item.items.map((point, idx) => (
+                      <li key={idx} className="adg-card-list-item">
+                        <span className="adg-card-list-dot"></span>
+                        <span className="adg-card-list-text">{point}</span>
                       </li>
-                    ),
-                  )}
-                </ul>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* BOTTOM ACCENT BAR */}
+                <div className="adg-card-bar"></div>
               </div>
-            </div>
-
-            {/* Alaska */}
-            <div className="Asc-season-card">
-              <div className="Asc-season-header-block">
-                <h3 className="Asc-season-title">Alaska</h3>
-              </div>
-
-              <div className="Asc-season-body">
-                <span className="Asc-season-meta">Choose for:</span>
-
-                <ul className="Asc-season-bullets">
-                  {["Wildlife", "Nature", "Photography"].map((item, i) => (
-                    <li key={i}>
-                      <div className="Asc-season-icon">
-                        <Check size={14} />
-                      </div>
-                      <span className="Asc-season-text">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Japan */}
-            <div className="Asc-season-card">
-              <div className="Asc-season-header-block">
-                <h3 className="Asc-season-title">Japan</h3>
-              </div>
-
-              <div className="Asc-season-body">
-                <span className="Asc-season-meta">Choose for:</span>
-
-                <ul className="Asc-season-bullets">
-                  {["Culture", "Gardens", "Temples"].map((item, i) => (
-                    <li key={i}>
-                      <div className="Asc-season-icon">
-                        <Check size={14} />
-                      </div>
-                      <span className="Asc-season-text">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Caribbean */}
-            <div className="Asc-season-card">
-              <div className="Asc-season-header-block">
-                <h3 className="Asc-season-title">Caribbean</h3>
-              </div>
-
-              <div className="Asc-season-body">
-                <span className="Asc-season-meta">Choose for:</span>
-
-                <ul className="Asc-season-bullets">
-                  {["Beaches", "Warm weather", "Relaxation"].map((item, i) => (
-                    <li key={i}>
-                      <div className="Asc-season-icon">
-                        <Check size={14} />
-                      </div>
-                      <span className="Asc-season-text">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Northern Europe */}
-            <div className="Asc-season-card">
-              <div className="Asc-season-header-block">
-                <h3 className="Asc-season-title">Northern Europe</h3>
-              </div>
-
-              <div className="Asc-season-body">
-                <span className="Asc-season-meta">Choose for:</span>
-
-                <ul className="Asc-season-bullets">
-                  {["Fjords", "Scandinavian cities", "History"].map(
-                    (item, i) => (
-                      <li key={i}>
-                        <div className="Asc-season-icon">
-                          <Check size={14} />
-                        </div>
-                        <span className="Asc-season-text">{item}</span>
-                      </li>
-                    ),
-                  )}
-                </ul>
-              </div>
-            </div>
-
-            {/* Iceland & Greenland */}
-            <div className="Asc-season-card">
-              <div className="Asc-season-header-block">
-                <h3 className="Asc-season-title">Iceland & Greenland</h3>
-              </div>
-
-              <div className="Asc-season-body">
-                <span className="Asc-season-meta">Choose for:</span>
-
-                <ul className="Asc-season-bullets">
-                  {["Adventure", "Icebergs", "Remote landscapes"].map(
-                    (item, i) => (
-                      <li key={i}>
-                        <div className="Asc-season-icon">
-                          <Check size={14} />
-                        </div>
-                        <span className="Asc-season-text">{item}</span>
-                      </li>
-                    ),
-                  )}
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -1274,18 +1294,23 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
       </section>
 
       {/* WELLNESS AT SEA */}
-      <section className="azs-dining-section" id="wellness-is-part-of-the-journey">
+      <section
+        className="azs-dining-section"
+        id="wellness-is-part-of-the-journey"
+      >
         <div className="azs-container">
           <div className="azs-section-header">
-            <h2 className="azs-section-title">Wellness Is Part of the Journey</h2>
+            <h2 className="azs-section-title">
+              Wellness Is Part of the Journey
+            </h2>
 
             <div className="azs-section-accent"></div>
 
             <p className="azs-section-subtitle">
-              Today's luxury travelers want vacations that help them return
-              home feeling refreshed—not exhausted. Explora's Ocean Wellness
-              concept lets guests balance exploration with relaxation while
-              maintaining their personal wellness routines.
+              Today's luxury travelers want vacations that help them return home
+              feeling refreshed—not exhausted. Explora's Ocean Wellness concept
+              lets guests balance exploration with relaxation while maintaining
+              their personal wellness routines.
             </p>
           </div>
 
@@ -1382,7 +1407,9 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
                     <Waves size={24} className="azs-dining-icon" />
                   </div>
 
-                  <h3 className="azs-dining-title">More Time to Enjoy the Journey</h3>
+                  <h3 className="azs-dining-title">
+                    More Time to Enjoy the Journey
+                  </h3>
                 </div>
 
                 <p className="azs-dining-intro">
@@ -1392,7 +1419,9 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
                 </p>
 
                 <div className="azs-dining-body">
-                  <h4 className="azs-dining-group-title">Guests Are Free To:</h4>
+                  <h4 className="azs-dining-group-title">
+                    Guests Are Free To:
+                  </h4>
 
                   <ul className="azs-dining-list">
                     {[
@@ -1467,8 +1496,8 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
 
             <p className="luc-why-intro">
               Explora Journeys sails to some of the world's most remarkable
-              regions, with each itinerary designed to maximize both
-              exploration and relaxation.
+              regions, with each itinerary designed to maximize both exploration
+              and relaxation.
             </p>
 
             <div className="luc-why-features">
@@ -1549,8 +1578,8 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
               style={{ textAlign: "center", marginTop: "15px" }}
             >
               Dining is one of the defining features of the Explora
-              experience—every restaurant reflects the quality expected from
-              a world-class luxury resort.
+              experience—every restaurant reflects the quality expected from a
+              world-class luxury resort.
             </p>
           </div>
 
@@ -1572,9 +1601,9 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
                 </div>
 
                 <p className="adg-card-lead">
-                  Unlike traditional cruises with assigned dining times,
-                  Explora offers flexible dining that allows guests to enjoy
-                  meals whenever they choose.
+                  Unlike traditional cruises with assigned dining times, Explora
+                  offers flexible dining that allows guests to enjoy meals
+                  whenever they choose.
                 </p>
               </div>
             </div>
@@ -1602,115 +1631,174 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
         </div>
       </section>
 
-      {/* ── TIPS FOR FIRST-TIME GUESTS ────────────────────────────────── */}
+      {/* ── WHO IS CHOOSING EXPLORA JOURNEYS? ────────────────────────── */}
       <section
-        className="ugt-advantage-section"
+        className="wc-section"
         id="who-is-choosing-explora-journeys"
       >
-        <div className="ugt-advantage-container">
-          <div className="ugt-advantage-header">
-            <span className="ugt-advantage-eyebrow">A Wide Range of Guests</span>
+        <div className="wc-container">
+          <div className="wc-header">
+            <span className="wc-eyebrow">
+              A Wide Range of Guests
+            </span>
 
-            <h2 className="ugt-advantage-title">Who Is Choosing Explora Journeys?</h2>
+            <h2 className="wc-title">
+              Who Is Choosing Explora Journeys?
+            </h2>
 
-            <div className="Asc-accent-line"></div>
+            <div className="wc-accent-line"></div>
 
-            <p className="ugt-advantage-intro">
+            <p className="wc-intro">
               Explora's relaxed atmosphere and personalized service attract
               guests who appreciate thoughtful luxury rather than large-scale
               entertainment.
             </p>
           </div>
 
-          <div className="ugt-advantage-grid">
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <HeartHandshake size={28} strokeWidth={1.5} />
+          <div className="wc-grid">
+            <div className="wc-card">
+              <div className="wc-card-image-wrap">
+                <img
+                  src={CouplesImage}
+                  alt="Couples choosing Explora Journeys"
+                  className="wc-card-image"
+                />
+                <div className="wc-card-overlay"></div>
               </div>
-
-              <h4 className="ugt-card-title">Couples</h4>
-
-              <p className="ugt-card-desc">
-                Celebrating anniversaries or other special occasions.
-              </p>
+              <div className="wc-card-content">
+                <div className="wc-icon-box">
+                  <HeartHandshake size={24} strokeWidth={1.5} />
+                </div>
+                <h4 className="wc-card-title">Couples</h4>
+                <p className="wc-card-desc">
+                  Celebrating anniversaries or other special occasions.
+                </p>
+              </div>
             </div>
 
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Compass size={28} strokeWidth={1.5} />
+            <div className="wc-card">
+              <div className="wc-card-image-wrap">
+                <img
+                  src={ExperiencedCruisersImage}
+                  alt="Experienced Luxury Cruisers choosing Explora Journeys"
+                  className="wc-card-image"
+                />
+                <div className="wc-card-overlay"></div>
               </div>
-
-              <h4 className="ugt-card-title">Experienced Luxury Cruisers</h4>
-
-              <p className="ugt-card-desc">
-                Seeking something new from a modern luxury cruise line.
-              </p>
+              <div className="wc-card-content">
+                <div className="wc-icon-box">
+                  <Compass size={24} strokeWidth={1.5} />
+                </div>
+                <h4 className="wc-card-title">Experienced Luxury Cruisers</h4>
+                <p className="wc-card-desc">
+                  Seeking something new from a modern luxury cruise line.
+                </p>
+              </div>
             </div>
 
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <ShieldCheck size={28} strokeWidth={1.5} />
+            <div className="wc-card">
+              <div className="wc-card-image-wrap">
+                <img
+                  src={SoloTravelersImage}
+                  alt="Solo Travelers choosing Explora Journeys"
+                  className="wc-card-image"
+                />
+                <div className="wc-card-overlay"></div>
               </div>
-
-              <h4 className="ugt-card-title">Solo Travelers</h4>
-
-              <p className="ugt-card-desc">
-                Looking for comfort and security aboard an intimate ship.
-              </p>
+              <div className="wc-card-content">
+                <div className="wc-icon-box">
+                  <ShieldCheck size={24} strokeWidth={1.5} />
+                </div>
+                <h4 className="wc-card-title">Solo Travelers</h4>
+                <p className="wc-card-desc">
+                  Looking for comfort and security aboard an intimate ship.
+                </p>
+              </div>
             </div>
 
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Sparkles size={28} strokeWidth={1.5} />
+            <div className="wc-card">
+              <div className="wc-card-image-wrap">
+                <img
+                  src={WellnessTravelersImage}
+                  alt="Wellness-Focused Travelers choosing Explora Journeys"
+                  className="wc-card-image"
+                />
+                <div className="wc-card-overlay"></div>
               </div>
-
-              <h4 className="ugt-card-title">Wellness-Focused Travelers</h4>
-
-              <p className="ugt-card-desc">
-                Prioritizing rest, movement, and mindful travel.
-              </p>
+              <div className="wc-card-content">
+                <div className="wc-icon-box">
+                  <Sparkles size={24} strokeWidth={1.5} />
+                </div>
+                <h4 className="wc-card-title">Wellness-Focused Travelers</h4>
+                <p className="wc-card-desc">
+                  Prioritizing rest, movement, and mindful travel.
+                </p>
+              </div>
             </div>
 
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Utensils size={28} strokeWidth={1.5} />
+            <div className="wc-card">
+              <div className="wc-card-image-wrap">
+                <img
+                  src={FoodWineImage}
+                  alt="Food & Wine Enthusiasts choosing Explora Journeys"
+                  className="wc-card-image"
+                />
+                <div className="wc-card-overlay"></div>
               </div>
-
-              <h4 className="ugt-card-title">Food &amp; Wine Enthusiasts</h4>
-
-              <p className="ugt-card-desc">
-                Drawn to world-class dining and regional flavors.
-              </p>
+              <div className="wc-card-content">
+                <div className="wc-icon-box">
+                  <Utensils size={24} strokeWidth={1.5} />
+                </div>
+                <h4 className="wc-card-title">Food &amp; Wine Enthusiasts</h4>
+                <p className="wc-card-desc">
+                  Drawn to world-class dining and regional flavors.
+                </p>
+              </div>
             </div>
 
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Home size={28} strokeWidth={1.5} />
+            <div className="wc-card">
+              <div className="wc-card-image-wrap">
+                <img
+                  src={LuxuryHotelGuestsImage}
+                  alt="Luxury Hotel Guests choosing Explora Journeys"
+                  className="wc-card-image"
+                />
+                <div className="wc-card-overlay"></div>
               </div>
-
-              <h4 className="ugt-card-title">Luxury Hotel Guests</h4>
-
-              <p className="ugt-card-desc">
-                Transitioning to cruising for the first time.
-              </p>
+              <div className="wc-card-content">
+                <div className="wc-icon-box">
+                  <Home size={24} strokeWidth={1.5} />
+                </div>
+                <h4 className="wc-card-title">Luxury Hotel Guests</h4>
+                <p className="wc-card-desc">
+                  Transitioning to cruising for the first time.
+                </p>
+              </div>
             </div>
 
-            <div className="ugt-advantage-card">
-              <div className="ugt-icon-box">
-                <Users size={28} strokeWidth={1.5} />
+            <div className="wc-card">
+              <div className="wc-card-image-wrap">
+                <img
+                  src={Japan}
+                  alt="Cultural Travelers choosing Explora Journeys"
+                  className="wc-card-image"
+                />
+                <div className="wc-card-overlay"></div>
               </div>
-
-              <h4 className="ugt-card-title">Cultural Travelers</h4>
-
-              <p className="ugt-card-desc">
-                Valuing authentic cultural experiences ashore.
-              </p>
+              <div className="wc-card-content">
+                <div className="wc-icon-box">
+                  <Users size={24} strokeWidth={1.5} />
+                </div>
+                <h4 className="wc-card-title">Cultural Travelers</h4>
+                <p className="wc-card-desc">
+                  Valuing authentic cultural experiences ashore.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      
       {/* ── HOW MUCH DOES AN EXPLORA CRUISE COST? ───────────────────── */}
       <section
         className="Ejv-verdict-section"
@@ -1721,9 +1809,7 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
           <div className="Ejv-verdict-header">
             <span className="Ejv-verdict-eyebrow">Refined, Not Rigid</span>
 
-            <h2 className="Ejv-verdict-title">
-              Luxury Without Pretension
-            </h2>
+            <h2 className="Ejv-verdict-title">Luxury Without Pretension</h2>
 
             <div className="Asc-accent-line"></div>
           </div>
@@ -1739,7 +1825,9 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
               />
 
               <div className="Ejv-verdict-img-badge">
-                <span className="Ejv-verdict-badge-label">Casual Sophistication</span>
+                <span className="Ejv-verdict-badge-label">
+                  Casual Sophistication
+                </span>
 
                 <span className="Ejv-verdict-badge-sub">
                   Elegant, Yet Relaxed
@@ -1784,8 +1872,8 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
 
                 <p className="Ejv-verdict-outcome-text">
                   The result is luxury that feels comfortable rather than
-                  intimidating—hospitality built on anticipating needs
-                  rather than simply responding to requests.
+                  intimidating—hospitality built on anticipating needs rather
+                  than simply responding to requests.
                 </p>
               </div>
 
@@ -1810,7 +1898,10 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
       </section>
 
       {/* ── WHAT IS INCLUDED? ─────────────────────────────────────────── */}
-      <section className="adg-c-section adg-c-bg-white" id="sustainability-matters">
+      <section
+        className="adg-c-section adg-c-bg-white"
+        id="sustainability-matters"
+      >
         <div className="adg-c-container">
           <div className="adg-c-section-header">
             <h2 className="adg-c-h2">Sustainability Matters</h2>
@@ -1831,6 +1922,7 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
                 "Advanced wastewater treatment",
                 "Reduced emissions technologies",
                 "Responsible resource management",
+                "Single-use plastic reduction initiatives",
                 "Ongoing sustainability initiatives",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
@@ -1855,10 +1947,7 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
                 </div>
               </div>
 
-              <div
-                className="adg-c-overview-image-wrap"
-                style={{ height: "520px" }}
-              >
+              <div className="adg-c-overview-image-wrap">
                 <img
                   src={LuxuryOceanfront}
                   alt="Luxury oceanfront suite and lounge aboard Explora Journeys"
@@ -1875,7 +1964,6 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
           </div>
         </div>
       </section>
-
 
       {/* WHY BOOK THROUGH TRIPS & SHIPS LUXURY TRAVEL? */}
       <section
@@ -1905,10 +1993,10 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
               </h3>
 
               <p className="Avr-planning-left-body">
-                Planning a luxury cruise involves many important decisions.
-                A knowledgeable travel advisor ensures every detail is
-                tailored to your preferences, from before you book through
-                the day you return home.
+                Planning a luxury cruise involves many important decisions. A
+                knowledgeable travel advisor ensures every detail is tailored to
+                your preferences, from before you book through the day you
+                return home.
               </p>
 
               <div className="Avr-planning-alert">
@@ -2123,8 +2211,8 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
                     Explora Journeys reflects the changing expectations of
                     today's luxury traveler—delivering space, comfort,
                     exceptional service, authentic destinations, outstanding
-                    cuisine, and the freedom to experience the journey at
-                    your own pace.
+                    cuisine, and the freedom to experience the journey at your
+                    own pace.
                     {!readMore && (
                       <button
                         onClick={() => setReadMore(true)}
@@ -2147,13 +2235,12 @@ const WhyLuxuryTravelersChooseExploraJourneys = () => {
                     <>
                       <br />
                       <p className="Asc-help-intro">
-                        From elegant oceanfront suites and world-class
-                        wellness facilities to thoughtfully crafted
-                        itineraries and attentive hospitality, every element
-                        has been designed to create a refined and enriching
-                        travel experience—one that feels less like a
-                        traditional voyage and more like staying at an
-                        exclusive luxury resort.
+                        From elegant oceanfront suites and world-class wellness
+                        facilities to thoughtfully crafted itineraries and
+                        attentive hospitality, every element has been designed
+                        to create a refined and enriching travel experience—one
+                        that feels less like a traditional voyage and more like
+                        staying at an exclusive luxury resort.
                       </p>
                       <br />
                       <p className="Asc-help-intro">

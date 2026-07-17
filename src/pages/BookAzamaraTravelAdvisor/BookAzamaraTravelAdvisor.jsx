@@ -38,6 +38,11 @@ import DistinctiveVoyagesImage from "../../assets/AzamaraCruisesGuide/Cultural_I
 import CabinSelectionImage from "../../assets/AzamaraCabinsGuide/Cruise_balcony_view.webp";
 import AzamaraShipImage from "../../assets/AzamaraCruisesGuide/Small_Ship.webp";
 
+import GlobalExploration1 from "../../assets/AzamaraCruisesGuide/image.png";
+import GlobalExploration2 from "../../assets/AzamaraCruisesGuide/image (1).png";
+import GlobalExploration3 from "../../assets/AzamaraCruisesGuide/image (2).png";
+import GlobalExploration4 from "../../assets/AzamaraCruisesGuide/image (3).png";
+
 import { Helmet } from "react-helmet-async";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
@@ -1084,6 +1089,95 @@ const BookAzamaraTravelAdvisor = () => {
           </div>
         </div>
       </section>
+
+        {/* ===== MODERN BENTO GRID GALLERY SHOWCASE ===== */}
+      <section className="senianta-gallery-section" style={{ backgroundColor: "var(--bg-white)" }}>
+        <div className="senianta-gallery-inner">
+          <div className="senianta-gallery-header">
+            <h2 className="senianta-gallery-h2">Global Explorations</h2>
+            <div className="senianta-gallery-divider"></div>
+            <p className="senianta-gallery-p">
+              From sun-drenched Mediterranean coastlines to the historic charm
+              of Northern Europe, experience the world's most breathtaking
+              destinations in absolute luxury.
+            </p>
+          </div>
+
+          <div className="senianta-gallery-bento-grid">
+            {/* 01: Large Featured Item - Dubrovnik */}
+            <div className="senianta-gallery-item senianta-gallery-feature">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={GlobalExploration4}
+                  alt="Azamara cruise ship sailing past Dubrovnik medieval walls in Croatia"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Adriatic Splendor
+                  </span>
+                  <h3 className="senianta-gallery-h3">Dubrovnik's Historic Walls</h3>
+                  <p className="senianta-gallery-item-p">
+                    Glide past the medieval stone ramparts and orange-tiled roofs of Dubrovnik, where ancient history meets the shimmering blue Adriatic.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 02: Vertical Item - Suite Life */}
+            <div className="senianta-gallery-item senianta-gallery-tall">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={GlobalExploration3}
+                  alt="Luxury cruise stateroom balcony cabin overlooking scenic ocean cliffs"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">Suite Life</span>
+                  <h3 className="senianta-gallery-h3">Luxury Verandas</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 03: Standard Item - Kotor */}
+            <div className="senianta-gallery-item">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={GlobalExploration2}
+                  alt="Azamara cruise ship docked in Kotor Montenegro scenic harbor"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Scenic Fjords
+                  </span>
+                  <h3 className="senianta-gallery-h3">
+                    Kotor &amp; Montenegro
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* 04: Standard Item - Bespoke Planning */}
+            <div className="senianta-gallery-item">
+              <div className="senianta-gallery-image-box">
+                <img
+                  src={GlobalExploration1}
+                  alt="Travel advisor consulting a couple planning a luxury cruise"
+                  className="senianta-gallery-img"
+                />
+                <div className="senianta-gallery-overlay">
+                  <span className="senianta-gallery-badge">
+                    Expert Guidance
+                  </span>
+                  <h3 className="senianta-gallery-h3">Bespoke Cruise Planning</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* ── BEST FOR / NOT BEST FOR ───────────────────────────────────── */}
       <section className="Asc-section Asc-bg-soft" id="Asc-who">
