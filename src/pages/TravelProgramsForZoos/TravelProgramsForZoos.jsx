@@ -20,6 +20,25 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
+import BucketGalapagos from "../../assets/PrivateJetConciergeTravel/galapagos-expedition-wildlife.jpg";
+import BucketAfrica from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import BucketAlaska from "../../assets/AlaskaCruisesExploraJourneys/alaska-glacier-mountain-lake-scenic-wilderness-vacation.jpeg";
+
+import HeroImage1 from "../../assets/TravelProgramsForZoos/zoo-travel-program-safari-expedition-hero.png";
+import HeroImage2 from "../../assets/TravelProgramsForZoos/conservation-travel-wildlife-group-hero.png";
+import HeroImage3 from "../../assets/TravelProgramsForZoos/luxury-educational-travel-zoo-member-hero.jpg";
+
+import RainforestDest from "../../assets/TravelProgramsForZoos/rainforest-exploration-costa-rica-amazon-borneo.jpg";
+
+import ZooSupportersWildlife from "../../assets/TravelProgramsForZoos/zoo-supporters-firsthand-wildlife-experience.png";
+import ZooConservationExpeditionPrimary from "../../assets/TravelProgramsForZoos/zoo-conservation-wildlife-expedition-primary.webp";
+import ExpertLeadershipConservationAccent from "../../assets/TravelProgramsForZoos/expert-leadership-conservation-travel-accent.jpg";
+
+import ConservationTravelPlanningLogistics from "../../assets/TravelProgramsForZoos/conservation-travel-planning-logistics-strategy.png";
+
+import ConservationTravelersExploring from "../../assets/TravelProgramsForZoos/conservation-travelers-exploring-wildlife-destinations.jpg";
+import ZooConservationCtaBackground from "../../assets/TravelProgramsForZoos/zoo-conservation-travel-program-cta-background.jpg";
+
 import { Helmet } from "react-helmet-async";
 
 const zooTravelDestinations = [
@@ -27,6 +46,7 @@ const zooTravelDestinations = [
     id: "african-safaris",
     title: "African Safaris",
     badge: "African Safaris",
+    image: HeroImage1,
     icon: Compass,
     desc: "African safaris remain among the most popular conservation travel experiences for zoo and conservation organization audiences — offering unparalleled opportunities to observe the Big Five and iconic African wildlife in their natural habitats.",
     columns: [
@@ -58,6 +78,7 @@ const zooTravelDestinations = [
     id: "galapagos",
     title: "Galápagos Expeditions",
     badge: "Galápagos",
+    image: BucketGalapagos,
     icon: Anchor,
     desc: "The Galápagos Islands provide extraordinary educational experiences for conservation audiences — serving as a living laboratory for conservation and evolution, with fearless wildlife populations found nowhere else on Earth.",
     columns: [
@@ -80,6 +101,7 @@ const zooTravelDestinations = [
     id: "polar-expeditions",
     title: "Polar Wildlife Expeditions",
     badge: "Polar Expeditions",
+    image: ExpertLeadershipConservationAccent,
     icon: Ship,
     desc: "Arctic and Antarctic voyages appeal strongly to conservation-minded travelers seeking transformational experiences — offering valuable perspectives on climate, biodiversity, and environmental change while encountering iconic polar wildlife.",
     columns: [
@@ -102,6 +124,7 @@ const zooTravelDestinations = [
     id: "rainforest",
     title: "Rainforest Exploration Programs",
     badge: "Rainforests",
+    image: RainforestDest,
     icon: MapPin,
     desc: "Rainforests contain some of the world's greatest biodiversity — and travel programs focused on these ecosystems provide extraordinary opportunities for conservation education, wildlife observation, and environmental awareness.",
     columns: [
@@ -124,6 +147,7 @@ const zooTravelDestinations = [
     id: "alaska-wildlife",
     title: "Alaska Wildlife Cruises",
     badge: "Alaska Wildlife",
+    image: BucketAlaska,
     icon: Waves,
     desc: "Alaska provides exceptional wildlife viewing opportunities for conservation audiences — with small ship cruises offering intimate access to remote natural environments and extraordinary wildlife encounters unavailable through standard tourism.",
     columns: [
@@ -435,8 +459,9 @@ function FAQ() {
 const TravelProgramsForZoosConservationOrganizations = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreSuccessfulProgram, setReadMoreSuccessfulProgram] = useState(false);
   const [hovered, setHovered] = useState(null);
-  const images = [];
+  const images = [BucketAfrica, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("african-safaris");
 
   const currentDest =
@@ -649,6 +674,7 @@ const TravelProgramsForZoosConservationOrganizations = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
+                    src={ZooSupportersWildlife}
                     alt="Zoo and conservation organization supporters experiencing wildlife in natural habitat firsthand"
                     className="ugt-component-image"
                   />
@@ -858,6 +884,7 @@ const TravelProgramsForZoosConservationOrganizations = () => {
                   src={currentDest.image}
                   alt={currentDest.title}
                   className="luc-dest-img"
+                  style={{ objectFit: "cover", objectPosition: "center" }}
                 />
                 <div className="luc-dest-img-overlay">
                   <div className="luc-dest-img-icon">
@@ -903,7 +930,7 @@ const TravelProgramsForZoosConservationOrganizations = () => {
         </div>
       </section>
 
-            {/* ══ BENEFITS OF WILDLIFE TRAVEL PROGRAMS ═══════════════ */}
+      {/* ══ BENEFITS OF WILDLIFE TRAVEL PROGRAMS ═══════════════ */}
       <section
         className="Leg-section"
         style={{ backgroundColor: "var(--bg-soft)" }}
@@ -1051,6 +1078,7 @@ const TravelProgramsForZoosConservationOrganizations = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
+                src={ZooConservationExpeditionPrimary}
                 alt="Zoo and conservation group travel high-quality wildlife expedition experience"
                 className="luc-why-img-main"
               />
@@ -1058,11 +1086,12 @@ const TravelProgramsForZoosConservationOrganizations = () => {
             </div>
             <div className="luc-why-img-accent-wrap">
               <img
+                src={ExpertLeadershipConservationAccent}
                 alt="Premium conservation travel wildlife experience with expert leadership"
                 className="luc-why-img-accent"
               />
               <div className="luc-why-img-badge">
-                <span className="luc-why-badge-num">4</span>
+                <span className="luc-why-badge-num">6</span>
                 <span className="luc-why-badge-text">Key Benefits</span>
               </div>
             </div>
@@ -1084,66 +1113,64 @@ const TravelProgramsForZoosConservationOrganizations = () => {
             </p>
 
             <div className="luc-why-features">
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">01</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Mission Alignment</h3>
-                  <p className="luc-why-feature-desc">
-                    Travel experiences should directly support conservation and
-                    educational goals — bringing species protection, habitat
-                    preservation, and institutional values to life in the field.
-                  </p>
-                </div>
-              </div>
+              {[
+                {
+                  num: "01",
+                  title: "Mission Alignment",
+                  desc: "Travel experiences should directly support conservation and educational goals — bringing species protection, habitat preservation, and institutional values to life in the field.",
+                },
+                {
+                  num: "02",
+                  title: "Expert Leadership",
+                  desc: "Participants value access to knowledgeable zoologists, wildlife biologists, naturalists, and conservation scientists who deepen the educational dimension of every wildlife encounter.",
+                },
+                {
+                  num: "03",
+                  title: "Authentic Wildlife Encounters",
+                  desc: "Travel should go beyond sightseeing to provide genuine and ethical wildlife experiences — safari drives, Zodiac excursions, and expert-led encounters unavailable through standard tourism.",
+                },
+                {
+                  num: "04",
+                  title: "High-Quality Travel Partners",
+                  desc: "Experienced travel providers ensure seamless logistics and exceptional guest experiences — allowing organization staff to focus on mission-driven conservation programming and participant engagement.",
+                },
+                {
+                  num: "05",
+                  title: "Donor Development & Stewardship",
+                  desc: "Itineraries are crafted to offer unique donor cultivation environments, strengthening donor loyalty and fostering future philanthropic support for the organization.",
+                },
+                {
+                  num: "06",
+                  title: "Conservation Impact Funding",
+                  desc: "A portion of travel proceeds or dedicated fundraising excursions directly support local wildlife protection projects, showing travelers the immediate impact of their journey.",
+                },
+              ]
+                .slice(0, readMoreSuccessfulProgram ? 6 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
 
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">02</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Expert Leadership</h3>
-                  <p className="luc-why-feature-desc">
-                    Participants value access to knowledgeable zoologists,
-                    wildlife biologists, naturalists, and conservation
-                    scientists who deepen the educational dimension of every
-                    wildlife encounter.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">03</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Authentic Wildlife Encounters
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Travel should go beyond sightseeing to provide genuine and
-                    ethical wildlife experiences — safari drives, Zodiac
-                    excursions, and expert-led encounters unavailable through
-                    standard tourism.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">04</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    High-Quality Travel Partners
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Experienced travel providers ensure seamless logistics and
-                    exceptional guest experiences — allowing organization staff
-                    to focus on mission-driven conservation programming and
-                    participant engagement.
-                  </p>
-                </div>
-              </div>
+            <div
+              className="Scenic_readmore_wrapper"
+              style={{ marginTop: "25px", textAlign: "left" }}
+            >
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreSuccessfulProgram(!readMoreSuccessfulProgram)}
+              >
+                {readMoreSuccessfulProgram ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
       </section>
-
-
 
       {/* ══ WHY ORGANIZATIONS PARTNER WITH PROFESSIONAL TRAVEL COMPANIES ═════ */}
       <section
@@ -1161,20 +1188,14 @@ const TravelProgramsForZoosConservationOrganizations = () => {
 
           <div className="wnf-split">
             {/* Left Column */}
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    alt="Conservation travel planning and expedition logistics strategy"
-                    className="wnf-photo"
-                  />
-                </div>
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    alt="Wildlife experts and conservation supporters on a high-quality expedition"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={ConservationTravelPlanningLogistics}
+                  alt="Conservation travel planning and expedition logistics strategy"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1286,6 +1307,9 @@ const TravelProgramsForZoosConservationOrganizations = () => {
                 "Deeper Environmental Understanding",
                 "Personal Enrichment",
                 "Lifelong Conservation Memories",
+                "Increased Donor Engagement",
+                "Expanded Community Outreach",
+                "Long-Term Member Loyalty",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1313,6 +1337,7 @@ const TravelProgramsForZoosConservationOrganizations = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
+                  src={ConservationTravelersExploring}
                   alt="Conservation travelers exploring wildlife destinations with expert guides"
                   className="adg-c-overview-img"
                 />
@@ -1439,6 +1464,7 @@ const TravelProgramsForZoosConservationOrganizations = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
+            src={ZooConservationCtaBackground}
             alt="Zoo and conservation organization travel program wildlife expedition experience"
             className="Asc-help-bg-img"
           />
@@ -1531,7 +1557,11 @@ const TravelProgramsForZoosConservationOrganizations = () => {
                     </p>
                   )}
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Conservation Travel Program
                       <ArrowRight size={18} />
                     </Link>

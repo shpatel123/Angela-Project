@@ -16,7 +16,25 @@ import {
   Waves,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
+
+import BucketGalapagos from "../../assets/PrivateJetConciergeTravel/galapagos-expedition-wildlife.jpg";
+import BucketAntarctica from "../../assets/PrivateJetConciergeTravel/antarctica-iceberg-reflection.webp";
+import BucketAlaska from "../../assets/AlaskaCruisesExploraJourneys/alaska-scenic-wetland-mountain-landscape-vacation.jpeg";
+
+import HeroImage1 from "../../assets/TravelProgramsForAquariums/hero-1.png";
+import HeroImage2 from "../../assets/TravelProgramsForAquariums/hero-2.png";
+import HeroImage3 from "../../assets/TravelProgramsForAquariums/hero-3.jpg";
+
+import BajaWhalesDest from "../../assets/TravelProgramsForAquariums/baja-whales.png";
+import CaribbeanReefDest from "../../assets/TravelProgramsForAquariums/caribbean-reef.jpg";
+
+import SupportersConservation from "../../assets/TravelProgramsForAquariums/supporters-conservation.png";
+import ExpeditionExperienceMain from "../../assets/PrivateJetConciergeTravel/Luxury-African-Safaris.png";
+import ConservationWildlifeAccent from "../../assets/TravelProgramsForAquariums/conservation-wildlife-accent.jpg";
+
+import PlanningLogistics from "../../assets/TravelProgramsForAquariums/planning-logistics.png";
+import ConservationTravelers from "../../assets/TravelProgramsForAquariums/conservation-travelers.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -25,6 +43,7 @@ const aquariumTravelDestinations = [
     id: "alaska-cruises",
     title: "Alaska Wildlife Cruises",
     badge: "Alaska Cruises",
+    image: BucketAlaska,
     icon: Waves,
     desc: "Alaska offers extraordinary opportunities for marine wildlife encounters, serving as an exceptional living laboratory for aquarium travelers.",
     columns: [
@@ -41,12 +60,14 @@ const aquariumTravelDestinations = [
       },
     ],
     themeLabel: "The Inside Passage Advantage",
-    themeText: "Small ship cruises provide close access to nature and wildlife that larger ships simply cannot reach.",
+    themeText:
+      "Small ship cruises provide close access to nature and wildlife that larger ships simply cannot reach.",
   },
   {
     id: "antarctica-expeditions",
     title: "Antarctica Expeditions",
     badge: "Antarctica",
+    image: BucketAntarctica,
     icon: Ship,
     desc: "Antarctica is one of the most inspiring destinations for conservation-minded travelers, showcasing unmatched polar landscapes and marine life.",
     columns: [
@@ -63,12 +84,14 @@ const aquariumTravelDestinations = [
       },
     ],
     themeLabel: "Polar Deep Dive",
-    themeText: "These expeditions offer a deeper understanding of one of the world's most fragile environments.",
+    themeText:
+      "These expeditions offer a deeper understanding of one of the world's most fragile environments.",
   },
   {
     id: "galapagos-islands",
     title: "Galápagos Islands",
     badge: "Galápagos",
+    image: BucketGalapagos,
     icon: Compass,
     desc: "The Galápagos remains one of the world's most iconic wildlife destinations, famous for its fearless animal populations and evolutionary history.",
     columns: [
@@ -84,12 +107,14 @@ const aquariumTravelDestinations = [
       },
     ],
     themeLabel: "Living Evolution",
-    themeText: "Educational travel programs here maximize impact by including expert naturalist guides for every excursion.",
+    themeText:
+      "Educational travel programs here maximize impact by including expert naturalist guides for every excursion.",
   },
   {
     id: "baja-expeditions",
     title: "Baja California Whale Expeditions",
     badge: "Baja Whales",
+    image: BajaWhalesDest,
     icon: Anchor,
     desc: "Mexico's Baja Peninsula is globally renowned for intimate whale encounters, making it an ideal destination for passionate marine advocates.",
     columns: [
@@ -104,12 +129,14 @@ const aquariumTravelDestinations = [
       },
     ],
     themeLabel: "Up-Close Encounters",
-    themeText: "These targeted, highly interactive marine sanctuary experiences are exceptionally popular with aquarium audiences.",
+    themeText:
+      "These targeted, highly interactive marine sanctuary experiences are exceptionally popular with aquarium audiences.",
   },
   {
     id: "caribbean-exploration",
     title: "Caribbean & Coral Reef Exploration",
     badge: "Reef Exploration",
+    image: CaribbeanReefDest,
     icon: MapPin,
     desc: "Coral reef-focused programs help travelers directly observe marine biodiversity, highlighting critical reef wellness initiatives.",
     columns: [
@@ -124,7 +151,8 @@ const aquariumTravelDestinations = [
       },
     ],
     themeLabel: "Preserving Biodiversity",
-    themeText: "Participants gain direct, unparalleled insight into the crucial importance of global reef preservation.",
+    themeText:
+      "Participants gain direct, unparalleled insight into the crucial importance of global reef preservation.",
   },
 ];
 
@@ -192,8 +220,7 @@ const schemaData = {
     },
     {
       "@type": "FAQPage",
-      "@id":
-        "https://www.tripsandships.com/travel-programs-for-aquariums#faq",
+      "@id": "https://www.tripsandships.com/travel-programs-for-aquariums#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -418,7 +445,9 @@ function FAQ() {
 const TravelProgramsForAquariums = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const [readMoreSuccessfulProgram, setReadMoreSuccessfulProgram] =
+    useState(false);
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("expedition-cruises");
   const [hovered, setHovered] = useState(null);
 
@@ -631,6 +660,7 @@ const TravelProgramsForAquariums = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
+                    src={SupportersConservation}
                     alt="Aquarium supporters experiencing marine wildlife and ocean conservation firsthand"
                     className="ugt-component-image"
                   />
@@ -678,7 +708,7 @@ const TravelProgramsForAquariums = () => {
           </div>
         </div>
       </section>
-{/* ══ TYPES OF AQUARIUM TRAVEL PROGRAMS — 4-CARD GRID ════════════════ */}
+      {/* ══ TYPES OF AQUARIUM TRAVEL PROGRAMS — 4-CARD GRID ════════════════ */}
       <section
         className="adg-c-section adg-c-bg-soft"
         id="adg-aquarium-programs"
@@ -692,8 +722,8 @@ const TravelProgramsForAquariums = () => {
             <p className="Asc-section-intro">
               Aquariums can offer a wide variety of travel experiences based on
               their mission, marine focus, and audience. Successful programs are
-              designed with specific participant interests and conservation goals
-              in mind.
+              designed with specific participant interests and conservation
+              goals in mind.
             </p>
           </div>
 
@@ -802,8 +832,8 @@ const TravelProgramsForAquariums = () => {
             <p className="luc-destinations-intro">
               From expedition cruises and small ship wildlife voyages to
               conservation-focused whale expeditions and coral reef explorations
-              — these destinations provide exceptional opportunities for aquarium
-              member engagement, educational enrichment, and meaningful
+              — these destinations provide exceptional opportunities for
+              aquarium member engagement, educational enrichment, and meaningful
               community building.
             </p>
           </div>
@@ -1020,9 +1050,9 @@ const TravelProgramsForAquariums = () => {
               style={{ color: "var(--navy)", textAlign: "center" }}
             >
               By offering immersive conservation context, wildlife encounters,
-              and a deeply interactive community environment, experiential travel
-              programs serve as a powerful accelerant for institutional loyalty
-              and long-term patron retention.
+              and a deeply interactive community environment, experiential
+              travel programs serve as a powerful accelerant for institutional
+              loyalty and long-term patron retention.
             </p>
           </div>
         </div>
@@ -1035,6 +1065,7 @@ const TravelProgramsForAquariums = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
+                src={ExpeditionExperienceMain}
                 alt="Aquarium group travel high-quality wildlife expedition experience"
                 className="luc-why-img-main"
               />
@@ -1042,11 +1073,12 @@ const TravelProgramsForAquariums = () => {
             </div>
             <div className="luc-why-img-accent-wrap">
               <img
+                src={ConservationWildlifeAccent}
                 alt="Premium aquarium travel conservation wildlife experience"
                 className="luc-why-img-accent"
               />
               <div className="luc-why-img-badge">
-                <span className="luc-why-badge-num">4</span>
+                <span className="luc-why-badge-num">6</span>
                 <span className="luc-why-badge-text">Key Benefits</span>
               </div>
             </div>
@@ -1068,60 +1100,62 @@ const TravelProgramsForAquariums = () => {
             </p>
 
             <div className="luc-why-features">
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">01</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Mission Alignment</h3>
-                  <p className="luc-why-feature-desc">
-                    Travel experiences should reflect the aquarium's
-                    conservation purpose — bringing marine education themes,
-                    ocean advocacy, and institutional values to life in the
-                    field.
-                  </p>
-                </div>
-              </div>
+              {[
+                {
+                  num: "01",
+                  title: "Mission Alignment",
+                  desc: "Travel experiences should reflect the aquarium's conservation purpose — bringing marine education themes, ocean advocacy, and institutional values to life in the field.",
+                },
+                {
+                  num: "02",
+                  title: "Expert Leadership",
+                  desc: "Participants value access to knowledgeable naturalists, marine biologists, conservation leaders, and scientists who deepen the educational dimension of every wildlife encounter.",
+                },
+                {
+                  num: "03",
+                  title: "Meaningful Wildlife Experiences",
+                  desc: "Travel should go beyond sightseeing to provide deeper conservation understanding — Zodiac excursions, wildlife observation, and expert-led landings unavailable through standard tourism.",
+                },
+                {
+                  num: "04",
+                  title: "High-Quality Travel Partners",
+                  desc: "Experienced travel providers ensure seamless logistics and exceptional guest experiences — allowing aquarium staff to focus on mission-driven conservation programming.",
+                },
+                {
+                  num: "05",
+                  title: "Ocean Advocacy & Stewardship",
+                  desc: "Exclusive educational opportunities foster deep connections between donors and the marine ecosystem, driving continued commitment to global conservation initiatives.",
+                },
+                {
+                  num: "06",
+                  title: "Hands-on Marine Research",
+                  desc: "Giving supporters first-hand exposure to ocean research activities, like fish population tracking or coral reef restoration projects, strengthens institutional trust.",
+                },
+              ]
+                .slice(0, readMoreSuccessfulProgram ? 6 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
 
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">02</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Expert Leadership</h3>
-                  <p className="luc-why-feature-desc">
-                    Participants value access to knowledgeable naturalists,
-                    marine biologists, conservation leaders, and scientists who
-                    deepen the educational dimension of every wildlife
-                    encounter.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">03</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Meaningful Wildlife Experiences
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Travel should go beyond sightseeing to provide deeper
-                    conservation understanding — Zodiac excursions, wildlife
-                    observation, and expert-led landings unavailable through
-                    standard tourism.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">04</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    High-Quality Travel Partners
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Experienced travel providers ensure seamless logistics and
-                    exceptional guest experiences — allowing aquarium staff to
-                    focus on mission-driven conservation programming.
-                  </p>
-                </div>
-              </div>
+            <div
+              className="Scenic_readmore_wrapper"
+              style={{ marginTop: "25px", textAlign: "left" }}
+            >
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() =>
+                  setReadMoreSuccessfulProgram(!readMoreSuccessfulProgram)
+                }
+              >
+                {readMoreSuccessfulProgram ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1141,21 +1175,15 @@ const TravelProgramsForAquariums = () => {
           </div>
 
           <div className="wnf-split">
-            {/* Left Column: Premium Dual Image Stack */}
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    alt="Aquarium travel planning and expedition logistics strategy"
-                    className="wnf-photo"
-                  />
-                </div>
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    alt="Naturalists and aquarium members enjoying a high-quality wildlife expedition"
-                    className="wnf-photo"
-                  />
-                </div>
+            {/* Left Column: Premium Image Stack */}
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={PlanningLogistics}
+                  alt="Aquarium travel planning and expedition logistics strategy"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1253,9 +1281,8 @@ const TravelProgramsForAquariums = () => {
       <section className="adg-c-section adg-c-bg-white" id="adg-overview">
         <div className="adg-c-container">
           <div className="adg-c-section-header">
-    
             <h2 className="adg-c-h2">
-             Revenue & Engagement Benefits for Aquariums
+              Revenue & Engagement Benefits for Aquariums
             </h2>
             <div className="adg-c-accent-line"></div>
           </div>
@@ -1269,6 +1296,8 @@ const TravelProgramsForAquariums = () => {
                 "Deeper Environmental Understanding",
                 "Personal Enrichment",
                 "Lifelong Memories",
+                "Support for Marine Conservation",
+                "Stronger Community Engagement",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1295,6 +1324,7 @@ const TravelProgramsForAquariums = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
+                  src={ConservationTravelers}
                   alt="Conservation travelers exploring marine wildlife destinations"
                   className="adg-c-overview-img"
                 />
@@ -1422,6 +1452,7 @@ const TravelProgramsForAquariums = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
+            src={HeroImage3}
             alt="Aquarium travel program ocean wildlife expedition experience"
             className="Asc-help-bg-img"
           />
@@ -1432,7 +1463,9 @@ const TravelProgramsForAquariums = () => {
           <div className="Asc-help-card">
             <div className="Asc-help-content">
               <div className="Asc-help-header">
-                <span className="Asc-help-eyebrow">Aquarium Travel Programs</span>
+                <span className="Asc-help-eyebrow">
+                  Aquarium Travel Programs
+                </span>
                 <h2 className="Asc-help-h2">
                   Extend Your Aquarium's Mission Through <br /> Extraordinary
                   Ocean Travel Experiences
@@ -1506,7 +1539,11 @@ const TravelProgramsForAquariums = () => {
                     </p>
                   )}
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Aquarium Travel Program
                       <ArrowRight size={18} />
                     </Link>

@@ -23,6 +23,25 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
+import HeroImage1 from "../../assets/TravelProgramsForFoundations/foundation-travel-program-global-mission-hero.png";
+import HeroImage2 from "../../assets/TravelProgramsForFoundations/nonprofit-donor-stewardship-group-travel-hero.png";
+import HeroImage3 from "../../assets/TravelProgramsForFoundations/luxury-educational-travel-philanthropy-hero.png";
+
+import RiverCruisesDest from "../../assets/TravelProgramsForFoundations/river-cruises-nonprofit-groups.png";
+import CulturalJourneysDest from "../../assets/TravelProgramsForFoundations/educational-cultural-journeys-nonprofit.png";
+import ExpeditionTravelDest from "../../assets/TravelProgramsForFoundations/expedition-conservation-travel-nonprofit.png";
+import DonorTravelDest from "../../assets/TravelProgramsForFoundations/donor-travel-programs-stewardship.png";
+import SmallShipCruisesDest from "../../assets/TravelProgramsForFoundations/small-ship-cruises-nonprofit.png";
+
+import SupportersMissionDriven from "../../assets/TravelProgramsForFoundations/supporters-firsthand-mission-driven-travel-experience.png";
+import NonprofitGroupTravelSuccessPrimary from "../../assets/TravelProgramsForFoundations/nonprofit-educational-group-travel-success-primary.webp";
+import ExpertLeadershipNonprofitSuccessAccent from "../../assets/TravelProgramsForFoundations/expert-leadership-nonprofit-travel-success-accent.jpg";
+
+import FoundationPlanningLogisticsStrategy from "../../assets/TravelProgramsForFoundations/foundation-travel-planning-logistics-strategy.png";
+
+import NonprofitSupportersExploringDestinations from "../../assets/TravelProgramsForFoundations/nonprofit-supporters-exploring-mission-destinations.jpg";
+import NonprofitTravelCtaBackground from "../../assets/TravelProgramsForFoundations/nonprofit-travel-program-mission-driven-cta-background.jpg";
+
 import { Helmet } from "react-helmet-async";
 
 const nonprofitTravelDestinations = [
@@ -30,6 +49,7 @@ const nonprofitTravelDestinations = [
     id: "river-cruises",
     title: "River Cruises for Nonprofit Groups",
     badge: "River Cruises",
+    image: RiverCruisesDest,
     icon: Waves,
     desc: "River cruises are among the most popular nonprofit travel products — offering convenient logistics, educational excursions, comfortable accommodations, and a strong community atmosphere that appeals strongly to donor and lifelong learner audiences.",
     columns: [
@@ -63,6 +83,7 @@ const nonprofitTravelDestinations = [
     id: "cultural-journeys",
     title: "Educational & Cultural Journeys",
     badge: "Cultural Journeys",
+    image: CulturalJourneysDest,
     icon: Globe,
     desc: "Many foundations and nonprofits offer cultural travel experiences focused on history, arts, architecture, heritage, global cultures, and lifelong learning — programs that appeal strongly to intellectually curious and philanthropically engaged audiences.",
     columns: [
@@ -86,6 +107,7 @@ const nonprofitTravelDestinations = [
     id: "expedition-travel",
     title: "Expedition & Conservation Travel",
     badge: "Expedition Travel",
+    image: ExpeditionTravelDest,
     icon: Compass,
     desc: "Organizations focused on science, conservation, education, or exploration often find expedition travel especially effective — combining adventure with education and mission awareness in some of the world's most extraordinary destinations.",
     columns: [
@@ -109,6 +131,7 @@ const nonprofitTravelDestinations = [
     id: "donor-travel",
     title: "Donor Travel Programs",
     badge: "Donor Travel",
+    image: DonorTravelDest,
     icon: Anchor,
     desc: "Many foundations use travel as part of donor stewardship and cultivation strategies — creating exclusive journeys for major donors, leadership circles, board members, and planned giving societies that deepen philanthropic relationships.",
     columns: [
@@ -132,6 +155,7 @@ const nonprofitTravelDestinations = [
     id: "small-ship-cruises",
     title: "Small Ship Cruises",
     badge: "Small Ship Cruises",
+    image: SmallShipCruisesDest,
     icon: Ship,
     desc: "Small ship voyages provide immersive travel experiences that align well with nonprofit and foundation audiences — with popular regions spanning the Mediterranean, Alaska, British Isles, Scandinavia, and expedition destinations worldwide.",
     columns: [
@@ -444,8 +468,10 @@ function FAQ() {
 const TravelProgramsForFoundationsNonprofits = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreSuccessfulProgram, setReadMoreSuccessfulProgram] =
+    useState(false);
   const [hovered, setHovered] = useState(null);
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("river-cruises");
 
   const currentDest =
@@ -659,6 +685,7 @@ const TravelProgramsForFoundationsNonprofits = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
+                    src={SupportersMissionDriven}
                     alt="Foundation and nonprofit supporters experiencing mission-driven travel firsthand"
                     className="ugt-component-image"
                   />
@@ -1065,6 +1092,7 @@ const TravelProgramsForFoundationsNonprofits = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
+                src={NonprofitGroupTravelSuccessPrimary}
                 alt="Foundation and nonprofit group travel high-quality educational experience"
                 className="luc-why-img-main"
               />
@@ -1072,11 +1100,12 @@ const TravelProgramsForFoundationsNonprofits = () => {
             </div>
             <div className="luc-why-img-accent-wrap">
               <img
+                src={ExpertLeadershipNonprofitSuccessAccent}
                 alt="Premium nonprofit travel mission-driven experience with expert leadership"
                 className="luc-why-img-accent"
               />
               <div className="luc-why-img-badge">
-                <span className="luc-why-badge-num">4</span>
+                <span className="luc-why-badge-num">6</span>
                 <span className="luc-why-badge-text">Key Benefits</span>
               </div>
             </div>
@@ -1098,58 +1127,62 @@ const TravelProgramsForFoundationsNonprofits = () => {
             </p>
 
             <div className="luc-why-features">
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">01</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Mission Alignment</h3>
-                  <p className="luc-why-feature-desc">
-                    Travel experiences should support and reinforce
-                    organizational goals — bringing the foundation or
-                    nonprofit's cause, values, and impact to life in the field.
-                  </p>
-                </div>
-              </div>
+              {[
+                {
+                  num: "01",
+                  title: "Mission Alignment",
+                  desc: "Travel experiences should support and reinforce organizational goals — bringing the foundation or nonprofit's cause, values, and impact to life in the field.",
+                },
+                {
+                  num: "02",
+                  title: "Expert Leadership",
+                  desc: "Participants value access to knowledgeable guides, curators, lecturers, and subject-matter experts who deepen the educational dimension of every experience.",
+                },
+                {
+                  num: "03",
+                  title: "Exceptional Experiences",
+                  desc: "High-quality travel creates lasting impressions and encourages repeat participation — going beyond sightseeing to provide deeper mission understanding and exclusive experiences unavailable through standard tourism.",
+                },
+                {
+                  num: "04",
+                  title: "Professional Management",
+                  desc: "Experienced travel providers ensure seamless logistics and exceptional guest experiences — allowing nonprofit staff to focus on mission delivery and participant engagement.",
+                },
+                {
+                  num: "05",
+                  title: "Donor Cultivation & Stewardship",
+                  desc: "Itineraries are tailored to offer unique cultivation environments, strengthening donor relationships and fostering future philanthropic support.",
+                },
+                {
+                  num: "06",
+                  title: "Sustainable Revenue Generation",
+                  desc: "Well-structured travel programs are designed to provide a steady, predictable source of unrestricted revenue to support the foundation's core operating needs.",
+                },
+              ]
+                .slice(0, readMoreSuccessfulProgram ? 6 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
 
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">02</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Expert Leadership</h3>
-                  <p className="luc-why-feature-desc">
-                    Participants value access to knowledgeable guides, curators,
-                    lecturers, and subject-matter experts who deepen the
-                    educational dimension of every experience.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">03</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Exceptional Experiences
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    High-quality travel creates lasting impressions and
-                    encourages repeat participation — going beyond sightseeing
-                    to provide deeper mission understanding and exclusive
-                    experiences unavailable through standard tourism.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">04</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Professional Management
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Experienced travel providers ensure seamless logistics and
-                    exceptional guest experiences — allowing nonprofit staff to
-                    focus on mission delivery and participant engagement.
-                  </p>
-                </div>
-              </div>
+            <div
+              className="Scenic_readmore_wrapper"
+              style={{ marginTop: "25px", textAlign: "left" }}
+            >
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() =>
+                  setReadMoreSuccessfulProgram(!readMoreSuccessfulProgram)
+                }
+              >
+                {readMoreSuccessfulProgram ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1235,20 +1268,14 @@ const TravelProgramsForFoundationsNonprofits = () => {
 
           <div className="wnf-split">
             {/* Left Column */}
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    alt="Foundation travel planning and group logistics strategy"
-                    className="wnf-photo"
-                  />
-                </div>
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    alt="Nonprofit donors and supporters on a high-quality educational travel program"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={FoundationPlanningLogisticsStrategy}
+                  alt="Foundation travel planning and group logistics strategy"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1362,6 +1389,9 @@ const TravelProgramsForFoundationsNonprofits = () => {
                 "Educational Value",
                 "Meaningful Impact",
                 "Authentic Experiences",
+                "Stronger Donor Relationships",
+                "Increased Community Engagement",
+                "Sustainable Fundraising Opportunities",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1386,8 +1416,9 @@ const TravelProgramsForFoundationsNonprofits = () => {
                 </div>
               </div>
 
-              <div className="adg-c-overview-image-wrap">
+              <div className="adg-c-overview-image-wrap" style={{height: '320px'}}>
                 <img
+                  src={NonprofitSupportersExploringDestinations}
                   alt="Foundation supporters exploring mission-connected destinations"
                   className="adg-c-overview-img"
                 />
@@ -1517,6 +1548,7 @@ const TravelProgramsForFoundationsNonprofits = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
+            src={NonprofitTravelCtaBackground}
             alt="Foundation and nonprofit travel program mission-driven experience"
             className="Asc-help-bg-img"
           />
@@ -1609,7 +1641,11 @@ const TravelProgramsForFoundationsNonprofits = () => {
                     </p>
                   )}
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Nonprofit Travel Program
                       <ArrowRight size={18} />
                     </Link>

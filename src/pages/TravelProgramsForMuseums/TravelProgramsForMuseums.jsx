@@ -10,25 +10,29 @@ import {
   Star,
   Quote,
   Users,
-  HeartHandshake,
   Compass,
   Anchor,
   Ship,
   Waves,
-  Repeat,
-  TrendingUp,
-  Handshake,
-  BookOpen,
-  Landmark,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-// import Mediterian from "../../assets/TravelProgramsForMuseums/museum-mediterranean-cultural-art-tour-group.jpg";
-// import Danube from "../../assets/TravelProgramsForMuseums/museum-river-cruise-danube-european-heritage.jpg";
-// import Britislen from "../../assets/TravelProgramsForMuseums/museum-british-isles-northern-europe-heritage.jpg";
-// import France from "../../assets/TravelProgramsForMuseums/museum-cultural-land-journey-france-art.jpg";
-// import Antarctica from "../../assets/TravelProgramsForMuseums/museum-expedition-antarctica-science-natural-history.jpg";
+import HeroImage1 from "../../assets/TravelProgramsForMuseums/exclusive-museum-curator-led-tour-global-heritage.png";
+import HeroImage2 from "../../assets/TravelProgramsForMuseums/museum-member-travel-programs-cultural-exploration.png";
+import HeroImage3 from "../../assets/TravelProgramsForMuseums/luxury-educational-travel-trips-and-ships-museum-groups.png";
+import EducationalTravel from "../../assets/TravelProgramsForMuseums/immersive-museum-supporters-crevan-archaeology-tour.png";
+import MuseumTravel1 from "../../assets/TravelProgramsForMuseums/exclusive-museum-behind-the-scenes-art-restoration-tour.png";
+import MuseumTravel2 from "../../assets/TravelProgramsForMuseums/premium-museum-donor-travel-exclusive-cultural-dining.png";
+import CulturalTravel from "../../assets/TravelProgramsForMuseums/educational-cultural-discovery-museum-travel-program.png";
+
+import RiverCruisesDest from "../../assets/TravelProgramsForMuseums/river-cruises.jpg";
+import CulturalCruisesDest from "../../assets/TravelProgramsForMuseums/cultural-cruises.jpg";
+import DonorTravelDest from "../../assets/TravelProgramsForMuseums/donor-travel.jpg";
+import MembershipBenefitsDest from "../../assets/TravelProgramsForMuseums/membership-benefits.jpg";
+import RevenueOpportunitiesDest from "../../assets/TravelProgramsForMuseums/revenue-opportunities.jpg";
+
+import MuseumTourExperience from "../../assets/TravelProgramsForMuseums/museum-tour-experience.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -38,6 +42,7 @@ const museumTravelDestinations = [
     title: "River Cruises for Museum Groups",
     badge: "River Cruises",
     icon: Waves,
+    image: RiverCruisesDest,
     desc: "River cruises have become one of the most popular travel formats for museums, providing comfortable accommodations and smooth transitions between historically significant regions.",
     columns: [
       {
@@ -71,6 +76,7 @@ const museumTravelDestinations = [
     title: "Small Ship Cultural Cruises",
     badge: "Cultural Cruises",
     icon: Ship,
+    image: CulturalCruisesDest,
     desc: "Small ship cruises offer unique access to destinations larger vessels cannot reach, blending comfort with deep local exposure.",
     columns: [
       {
@@ -94,6 +100,7 @@ const museumTravelDestinations = [
     title: "Museum Donor Travel Programs",
     badge: "Donor Travel",
     icon: Compass,
+    image: DonorTravelDest,
     desc: "Travel can play an important role in donor cultivation and stewardship, transforming standard fundraising into memorable real-world connections.",
     columns: [
       {
@@ -116,6 +123,7 @@ const museumTravelDestinations = [
     title: "Educational Travel as a Membership Benefit",
     badge: "Member Benefits",
     icon: Anchor,
+    image: MembershipBenefitsDest,
     desc: "Many museums use high-quality travel programs to drastically increase membership value and boost brand loyalty.",
     columns: [
       {
@@ -138,6 +146,7 @@ const museumTravelDestinations = [
     title: "Revenue Opportunities for Museums",
     badge: "Revenue Ops",
     icon: MapPin,
+    image: RevenueOpportunitiesDest,
     desc: "Beyond educational value, expertly crafted travel programs can contribute immensely to institutional sustainability and financial health.",
     columns: [
       {
@@ -447,7 +456,8 @@ function FAQ() {
 const TravelProgramsForMuseums = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
-  const images = [];
+  const [readMoreSuccessfulProgram, setReadMoreSuccessfulProgram] = useState(false);
+  const images = [HeroImage1, HeroImage2, HeroImage3];
   const [activeDest, setActiveDest] = useState("river-cruises");
   const [hovered, setHovered] = useState(null);
 
@@ -656,7 +666,7 @@ const TravelProgramsForMuseums = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={VikingExp1}
+                    src={EducationalTravel}
                     alt="Museum supporters participating in immersive, expert-led educational travel experiences"
                     className="ugt-component-image"
                   />
@@ -666,10 +676,16 @@ const TravelProgramsForMuseums = () => {
               {/* RIGHT CONTENT */}
               <div className="ugt-component-content">
                 <p className="ugt-component-text">
-                  Modern travelers increasingly seek experiences that prioritize depth and intellectual engagement over superficial sightseeing. 
+                  Modern travelers increasingly seek experiences that prioritize
+                  depth and intellectual engagement over superficial
+                  sightseeing.
                 </p>
                 <p className="ugt-component-text">
-                  Museum supporters are often lifelong learners who appreciate meaningful travel experiences rather than traditional tourism. They want context, expert insight, and deeper access to the destinations they visit—meaning museum-sponsored travel programs are uniquely positioned to meet these expectations.
+                  Museum supporters are often lifelong learners who appreciate
+                  meaningful travel experiences rather than traditional tourism.
+                  They want context, expert insight, and deeper access to the
+                  destinations they visit—meaning museum-sponsored travel
+                  programs are uniquely positioned to meet these expectations.
                 </p>
 
                 <div className="ugt-questions-box">
@@ -1046,6 +1062,7 @@ const TravelProgramsForMuseums = () => {
           <div className="luc-why-images">
             <div className="luc-why-img-main-wrap">
               <img
+                src={MuseumTravel1}
                 alt="Museum group travel high quality cultural experience"
                 className="luc-why-img-main"
               />
@@ -1053,11 +1070,12 @@ const TravelProgramsForMuseums = () => {
             </div>
             <div className="luc-why-img-accent-wrap">
               <img
+                src={MuseumTravel2}
                 alt="Premium museum travel cultural immersion experience"
                 className="luc-why-img-accent"
               />
               <div className="luc-why-img-badge">
-                <span className="luc-why-badge-num">4</span>
+                <span className="luc-why-badge-num">6</span>
                 <span className="luc-why-badge-text">Key Benefits</span>
               </div>
             </div>
@@ -1079,58 +1097,60 @@ const TravelProgramsForMuseums = () => {
             </p>
 
             <div className="luc-why-features">
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">01</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Mission Alignment</h3>
-                  <p className="luc-why-feature-desc">
-                    Travel experiences should reflect the museum's educational
-                    purpose — bringing collection themes, exhibitions, and
-                    institutional values to life in the field.
-                  </p>
-                </div>
-              </div>
+              {[
+                {
+                  num: "01",
+                  title: "Mission Alignment",
+                  desc: "Travel experiences should reflect the museum's educational purpose — bringing collection themes, exhibitions, and institutional values to life in the field.",
+                },
+                {
+                  num: "02",
+                  title: "Expert Leadership",
+                  desc: "Participants value access to knowledgeable guides, curators, lecturers, and subject-matter experts who deepen the educational dimension of every experience.",
+                },
+                {
+                  num: "03",
+                  title: "Meaningful Cultural Experiences",
+                  desc: "Travel should go beyond sightseeing to provide deeper understanding and engagement — private tours, behind-the-scenes access, and exclusive experiences unavailable through standard tourism.",
+                },
+                {
+                  num: "04",
+                  title: "High-Quality Travel Partners",
+                  desc: "Experienced travel providers ensure seamless logistics and exceptional guest experiences — allowing museum staff to focus on mission-driven programming.",
+                },
+                {
+                  num: "05",
+                  title: "Donor Stewardship & Cultivation",
+                  desc: "Carefully designed itineraries provide unique cultivation environments to build donor loyalty, show appreciation, and nurture future philanthropic support.",
+                },
+                {
+                  num: "06",
+                  title: "Flawless Logistics & Safety",
+                  desc: "Meticulous planning, medical protocols, and professional onsite management ensure safety, comfort, and peace of mind for every traveler.",
+                },
+              ]
+                .slice(0, readMoreSuccessfulProgram ? 6 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
 
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">02</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Expert Leadership</h3>
-                  <p className="luc-why-feature-desc">
-                    Participants value access to knowledgeable guides, curators,
-                    lecturers, and subject-matter experts who deepen the
-                    educational dimension of every experience.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">03</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Meaningful Cultural Experiences
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Travel should go beyond sightseeing to provide deeper
-                    understanding and engagement — private tours, behind-the-
-                    scenes access, and exclusive experiences unavailable through
-                    standard tourism.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">04</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    High-Quality Travel Partners
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Experienced travel providers ensure seamless logistics and
-                    exceptional guest experiences — allowing museum staff to
-                    focus on mission-driven programming.
-                  </p>
-                </div>
-              </div>
+            <div
+              className="Scenic_readmore_wrapper"
+              style={{ marginTop: "25px", textAlign: "left" }}
+            >
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreSuccessfulProgram(!readMoreSuccessfulProgram)}
+              >
+                {readMoreSuccessfulProgram ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1150,23 +1170,15 @@ const TravelProgramsForMuseums = () => {
           </div>
 
           <div className="wnf-split">
-            {/* Left Column: Premium Dual Image Stack */}
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    // src={HeroImage3}
-                    alt="Museum travel planning and corporate logistics strategy"
-                    className="wnf-photo"
-                  />
-                </div>
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    // src={Experience}
-                    alt="Curators and museum members enjoying a high-quality educational travel program"
-                    className="wnf-photo"
-                  />
-                </div>
+            {/* Left Column: Premium Image Stack */}
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={MuseumTourExperience}
+                  alt="Curators and museum members enjoying a high-quality educational travel program"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1277,6 +1289,8 @@ const TravelProgramsForMuseums = () => {
                 "Deeper Cultural Understanding",
                 "Personal Enrichment",
                 "Lifelong Memories",
+                "Meaningful Local Connections",
+                "Authentic Historical Insights",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1302,6 +1316,7 @@ const TravelProgramsForMuseums = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
+                  src={CulturalTravel}
                   alt="Cultural travelers exploring historic destinations"
                   className="adg-c-overview-img"
                 />
@@ -1429,6 +1444,7 @@ const TravelProgramsForMuseums = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
+            src={HeroImage2}
             alt="Museum travel program cultural experience"
             className="Asc-help-bg-img"
           />
@@ -1511,7 +1527,11 @@ const TravelProgramsForMuseums = () => {
                     </p>
                   )}
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Museum Travel Program
                       <ArrowRight size={18} />
                     </Link>

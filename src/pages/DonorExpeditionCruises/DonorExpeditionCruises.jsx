@@ -504,6 +504,7 @@ function FAQ() {
 const DonorExpeditionCruises = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
+  const [readMoreSuccessfulProgram, setReadMoreSuccessfulProgram] = useState(false);
   const images = [ExpeditionShip1, ExpeditionShip2, ExpeditionShip3];
   const [activeDest, setActiveDest] = useState("antarctica");
 
@@ -965,12 +966,6 @@ const DonorExpeditionCruises = () => {
                   connections, personal enrichment, and a deeper understanding
                   of the causes they care about.
                 </p>
-
-                <p className="adg-card-subtext" style={{ marginTop: "18px" }}>
-                  Expedition cruises bring these elements together while
-                  reinforcing organizational missions and creating memorable
-                  shared experiences.
-                </p>
               </div>
             </div>
 
@@ -1271,7 +1266,7 @@ const DonorExpeditionCruises = () => {
                 className="luc-why-img-accent"
               />
               <div className="luc-why-img-badge">
-                <span className="luc-why-badge-num">4</span>
+                <span className="luc-why-badge-num">6</span>
                 <span className="luc-why-badge-text">Key Pillars</span>
               </div>
             </div>
@@ -1294,57 +1289,60 @@ const DonorExpeditionCruises = () => {
             </p>
 
             <div className="luc-why-features">
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">01</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Mission Alignment</h3>
-                  <p className="luc-why-feature-desc">
-                    The destination and programming should directly reinforce
-                    the organization's purpose — bringing research, education,
-                    or conservation goals to life in the field.
-                  </p>
-                </div>
-              </div>
+              {[
+                {
+                  num: "01",
+                  title: "Mission Alignment",
+                  desc: "The destination and programming should directly reinforce the organization's purpose — bringing research, education, or conservation goals to life in the field.",
+                },
+                {
+                  num: "02",
+                  title: "Educational Excellence",
+                  desc: "Expert lectures, naturalist presentations, and scientific insight transform the voyage into substantive lifelong learning, not simply a vacation.",
+                },
+                {
+                  num: "03",
+                  title: "Expert Leadership",
+                  desc: "Donors value access to knowledgeable scientists, researchers, curators, and organizational leaders who deepen every excursion and discussion.",
+                },
+                {
+                  num: "04",
+                  title: "Thoughtful Stewardship",
+                  desc: "High-quality service, meaningful donor interaction, and intentional recognition turn the voyage into a lasting stewardship milestone.",
+                },
+                {
+                  num: "05",
+                  title: "Elite Destination Access",
+                  desc: "Unique itineraries to hard-to-reach places like Antarctica or remote islands provide a bucket-list draw that appeals to ultra-high-net-worth supporters.",
+                },
+                {
+                  num: "06",
+                  title: "Exclusive On-Board Branding",
+                  desc: "Branded daily newsletters, private receptions, and dedicated gathering areas keep the organization's presence central and premium throughout the cruise.",
+                },
+              ]
+                .slice(0, readMoreSuccessfulProgram ? 6 : 3)
+                .map((feat, i) => (
+                  <div key={i} className="luc-why-feature">
+                    <div className="luc-why-feature-num">{feat.num}</div>
+                    <div className="luc-why-feature-body">
+                      <h3 className="luc-why-feature-title">{feat.title}</h3>
+                      <p className="luc-why-feature-desc">{feat.desc}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
 
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">02</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Educational Excellence
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    Expert lectures, naturalist presentations, and scientific
-                    insight transform the voyage into substantive lifelong
-                    learning, not simply a vacation.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">03</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">Expert Leadership</h3>
-                  <p className="luc-why-feature-desc">
-                    Donors value access to knowledgeable scientists,
-                    researchers, curators, and organizational leaders who deepen
-                    every excursion and discussion.
-                  </p>
-                </div>
-              </div>
-
-              <div className="luc-why-feature">
-                <div className="luc-why-feature-num">04</div>
-                <div className="luc-why-feature-body">
-                  <h3 className="luc-why-feature-title">
-                    Thoughtful Stewardship
-                  </h3>
-                  <p className="luc-why-feature-desc">
-                    High-quality service, meaningful donor interaction, and
-                    intentional recognition turn the voyage into a lasting
-                    stewardship milestone.
-                  </p>
-                </div>
-              </div>
+            <div
+              className="Scenic_readmore_wrapper"
+              style={{ marginTop: "25px", textAlign: "left" }}
+            >
+              <button
+                className="Scenic_readmore_btn"
+                onClick={() => setReadMoreSuccessfulProgram(!readMoreSuccessfulProgram)}
+              >
+                {readMoreSuccessfulProgram ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
@@ -1364,22 +1362,14 @@ const DonorExpeditionCruises = () => {
 
           <div className="wnf-split">
             {/* Left Column */}
-            <div className="wnf-image-column">
-              <div className="wnf-image-stack">
-                <div className="wnf-img-frame wnf-frame-primary">
-                  <img
-                    src={ExpeditionShip3}
-                    alt="Donor expedition cruise planning and logistics strategy"
-                    className="wnf-photo"
-                  />
-                </div>
-                <div className="wnf-img-frame wnf-frame-secondary">
-                  <img
-                    src={GuestsAntarctica2}
-                    alt="Major donors enjoying a high-quality expedition cruise experience"
-                    className="wnf-photo"
-                  />
-                </div>
+            <div className="la-image-column">
+              <div className="la-image-wrap">
+                <img
+                  src={ExpeditionShip3}
+                  alt="Donor expedition cruise planning and logistics strategy"
+                  className="la-image"
+                />
+                <div className="la-image-overlay"></div>
               </div>
             </div>
 
@@ -1490,6 +1480,8 @@ const DonorExpeditionCruises = () => {
                 "Enhanced Fundraising Opportunities",
                 "Board Engagement",
                 "Membership Growth",
+                "Stronger Community Partnerships",
+                "Long-Term Donor Retention",
               ].map((label, i) => (
                 <div key={i} className="adg-c-overview-item">
                   <span className="adg-c-overview-icon">
@@ -1738,7 +1730,11 @@ const DonorExpeditionCruises = () => {
                     </p>
                   )}
                   <div className="Asc-help-btn-container">
-                    <Link to="/contact" className="Asc-help-cta-btn" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/contact"
+                      className="Asc-help-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
                       Start Planning Your Donor Expedition Cruise
                       <ArrowRight size={18} />
                     </Link>

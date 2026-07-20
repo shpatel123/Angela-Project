@@ -18,10 +18,7 @@ import {
   Sun,
   Gift,
   Shield,
-  Plane,
-  Heart,
   Trophy,
-  Home,
   PartyPopper,
   FileSignature,
   Flag,
@@ -29,25 +26,24 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-// import HeroImage1 from "../../assets/ProfessionalAthleteFamilyTravel/athlete-family-private-villa-pool.jpg";
-// import HeroImage2 from "../../assets/ProfessionalAthleteFamilyTravel/athlete-family-yacht-charter.jpg";
-// import HeroImage4 from "../../assets/ProfessionalAthleteFamilyTravel/athlete-family-private-jet.jpg";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
+import HeroImage4 from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-private-jet-tarmac.png";
 
-// import PrivacyImage from "../../assets/ProfessionalAthleteFamilyTravel/private-villa-terrace-ocean-view.jpg";
-// import OffSeasonImage from "../../assets/ProfessionalAthleteFamilyTravel/off-season-caribbean-escape.jpg";
+import PrivacyImage from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-private-villa-terrace-family.png";
 
-// import BucketAfrica from "../../assets/ProfessionalAthleteFamilyTravel/african-safari-luxury-lodge.jpg";
-// import BucketGalapagos from "../../assets/ProfessionalAthleteFamilyTravel/galapagos-expedition-wildlife.jpg";
-// import BucketAntarctica from "../../assets/ProfessionalAthleteFamilyTravel/antarctica-expedition-luxury.jpg";
-// import BucketNorthernLights from "../../assets/ProfessionalAthleteFamilyTravel/northern-lights-scandinavia.jpg";
-// import BucketSouthPacific from "../../assets/ProfessionalAthleteFamilyTravel/south-pacific-overwater-villa.jpg";
+import BucketAfrica from "../../assets/PrivateJetConciergeTravel/Luxury-African-Safaris.png";
+import BucketGalapagos from "../../assets/PrivateJetConciergeTravel/galapagos-expedition-wildlife.jpg";
+import BucketAntarctica from "../../assets/PrivateJetConciergeTravel/antarctica-iceberg-reflection.webp";
+import BucketNorthernLights from "../../assets/IcelandGreenlandCruisesExploraJourneys/GreenlandHero.jpg";
+import BucketSouthPacific from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-beach-aerial.jpg";
 
-// import VillaImage from "../../assets/ProfessionalAthleteFamilyTravel/luxury-villa-private-chef.jpg";
-// import WellnessImage from "../../assets/ProfessionalAthleteFamilyTravel/wellness-retreat-spa.jpg";
-// import ConciergeImage from "../../assets/ProfessionalAthleteFamilyTravel/family-concierge-service.jpg";
-// import CruiseImage from "../../assets/ProfessionalAthleteFamilyTravel/luxury-cruise-athlete-family.jpg";
-// import AdvisorImage from "../../assets/ProfessionalAthleteFamilyTravel/travel-advisor-planning-session.jpg";
-// import CtaImage from "../../assets/ProfessionalAthleteFamilyTravel/athlete-family-final-destination.jpg";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import WellnessImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete.webp";
+import ConciergeImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
+import CruiseImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-luxury-advisor-planning.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/french-polynesia-overwater-villa-luxury-private-aviation.webp";
 
 import { Helmet } from "react-helmet-async";
 
@@ -335,7 +331,7 @@ const bucketListTrips = [
     title: "African Safari",
     badge: "Safari",
     icon: Compass,
-    // image: BucketAfrica,
+    image: BucketAfrica,
     window: "Witness the Big Five in complete comfort",
     desc: "Luxury safari lodges pair front-row wildlife encounters with the privacy and service athlete families expect, far from crowded tourist routes.",
     columns: [
@@ -357,7 +353,7 @@ const bucketListTrips = [
     title: "Galápagos Expedition",
     badge: "Galápagos",
     icon: Anchor,
-    // image: BucketGalapagos,
+    image: BucketGalapagos,
     window: "Extraordinary wildlife encounters, up close",
     desc: "Small expedition ships and expert naturalist guides make the Galápagos one of the most unique and educational family adventures available.",
     columns: [
@@ -379,7 +375,7 @@ const bucketListTrips = [
     title: "Antarctica Expedition",
     badge: "Antarctica",
     icon: Snowflake,
-    // image: BucketAntarctica,
+    image: BucketAntarctica,
     window: "One of the world's most remote destinations",
     desc: "Antarctica delivers a genuine sense of discovery, with ice landings, wildlife encounters, and expert expedition teams supporting every step.",
     columns: [
@@ -401,7 +397,7 @@ const bucketListTrips = [
     title: "Northern Lights Journey",
     badge: "Northern Lights",
     icon: Sparkles,
-    // image: BucketNorthernLights,
+    image: BucketNorthernLights,
     window: "Watch the Aurora Borealis in luxury",
     desc: "Luxury lodges across Scandinavia and Iceland pair guided aurora viewing with rich cultural experiences the whole family can enjoy.",
     columns: [
@@ -423,7 +419,7 @@ const bucketListTrips = [
     title: "South Pacific Escape",
     badge: "South Pacific",
     icon: Sun,
-    // image: BucketSouthPacific,
+    image: BucketSouthPacific,
     window: "Relax in overwater luxury",
     desc: "Overwater villas surrounded by crystal-clear lagoons offer total privacy and relaxation, ideal for unwinding after a demanding season.",
     columns: [
@@ -548,7 +544,7 @@ const ProfessionalAthleteFamilyTravel = () => {
 
   const ActiveIcon = currentTrip.icon;
 
-  const images = [];
+  const images = [HeroImage2, HeroImage3, HeroImage4];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -768,7 +764,7 @@ const ProfessionalAthleteFamilyTravel = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  //   src={PrivacyImage}
+                  src={PrivacyImage}
                   alt="Private villa terrace with ocean view for athlete family travel"
                   className="adg-c-overview-img"
                 />
@@ -1021,7 +1017,7 @@ const ProfessionalAthleteFamilyTravel = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={VillaImage}
+                    src={VillaImage}
                     alt="Luxury villa with private chef and pool for athlete family travel"
                     className="ugt-component-image"
                   />
@@ -1204,7 +1200,7 @@ const ProfessionalAthleteFamilyTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={WellnessImage}
+                  src={WellnessImage}
                   alt="Wellness retreat spa for professional athlete recovery"
                   className="dmg-media-img"
                       style={{ height: "700px" }}
@@ -1228,7 +1224,7 @@ const ProfessionalAthleteFamilyTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={ConciergeImage}
+                  src={ConciergeImage}
                   alt="Family concierge service for professional athlete travel"
                   className="dmg-media-img"
                       style={{ height: "650px" }}
@@ -1511,7 +1507,7 @@ const ProfessionalAthleteFamilyTravel = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  //   src={CruiseImage}
+                  src={CruiseImage}
                   alt="Luxury cruise suite for professional athlete family vacation"
                   className="adg-c-overview-img"
                 />
@@ -1539,10 +1535,10 @@ const ProfessionalAthleteFamilyTravel = () => {
           >
             <div className="adg-content-card-side">
               <img
-                // src={AdvisorImage}
+                src={AdvisorImage}
                 alt="Luxury travel advisor planning an athlete family vacation"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "40vh"}}
               />
               <div className="adg-info-card">
                 <div className="adg-card-meta">
@@ -1554,12 +1550,7 @@ const ProfessionalAthleteFamilyTravel = () => {
                   nutritionists, agents, and financial advisors. Travel should
                   be no different.
                 </p>
-                <div className="adg-card-divider"></div>
-                <p className="adg-card-subtext">
-                  Rather than spending hours researching online, athletes
-                  receive carefully curated vacations tailored to their
-                  lifestyle and goals.
-                </p>
+                
               </div>
             </div>
             <div className="adg-list-side">
@@ -1840,7 +1831,7 @@ const ProfessionalAthleteFamilyTravel = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CtaImage}
+            src={CtaImage}
             alt="Professional athlete family luxury travel destination"
             className="Asc-help-bg-img"
           />

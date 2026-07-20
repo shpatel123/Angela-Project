@@ -30,29 +30,26 @@ import {
   FileSignature,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela2.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-// import HeroImage1 from "../../assets/OffSeasonLuxuryTravel/private-villa-mediterranean-coast.jpg";
-// import HeroImage2 from "../../assets/OffSeasonLuxuryTravel/caribbean-yacht-charter.jpg";
-// import HeroImage3 from "../../assets/OffSeasonLuxuryTravel/overwater-villa-french-polynesia.jpg";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
 
-// import PrivacyImage from "../../assets/OffSeasonLuxuryTravel/private-villa-flexible-schedule.jpg";
-// import DestinationHero from "../../assets/OffSeasonLuxuryTravel/mediterranean-cruise-coastline.jpg";
+import PrivacyImage from "../../assets/PrivateJetConciergeTravel/privacy-family-vacation-private-beach.png";
 
-// import BucketMediterranean from "../../assets/OffSeasonLuxuryTravel/mediterranean-riviera-villa.jpg";
-// import BucketCaribbean from "../../assets/OffSeasonLuxuryTravel/caribbean-beachfront-resort.jpg";
-// import BucketHawaii from "../../assets/OffSeasonLuxuryTravel/hawaii-scenic-coastline.jpg";
-// import BucketPolynesia from "../../assets/OffSeasonLuxuryTravel/french-polynesia-overwater-villa.jpg";
-// import BucketSafari from "../../assets/OffSeasonLuxuryTravel/african-safari-luxury-lodge.jpg";
-// import BucketNorthernEurope from "../../assets/OffSeasonLuxuryTravel/northern-europe-fjord-cruise.jpg";
+import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/explora-ii-amalfi-coast-mediterranean-cruise.jpg";
+import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/roatan-western-caribbean-reef.jpg";
+import BucketHawaii from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
+import BucketPolynesia from "../../assets/PrivateJetConciergeTravel/french-polynesia-overwater-villa-luxury-private-aviation.webp";
+import BucketSafari from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
+import BucketNorthernEurope from "../../assets/NorthernEuropeCruisesExploraJourneys/edinburgh-castle-scotland.jpg";
 
-// import VillaImage from "../../assets/OffSeasonLuxuryTravel/luxury-villa-private-pool.jpg";
-// import IslandImage from "../../assets/OffSeasonLuxuryTravel/private-island-escape.jpg";
-// import CruiseImage from "../../assets/OffSeasonLuxuryTravel/luxury-cruise-suite.jpg";
-// import AdventureImage from "../../assets/OffSeasonLuxuryTravel/mountain-hiking-adventure.jpg";
-// import WellnessImage from "../../assets/OffSeasonLuxuryTravel/wellness-retreat-spa.jpg";
-// import AdvisorImage from "../../assets/OffSeasonLuxuryTravel/travel-advisor-planning-session.jpg";
-// import CtaImage from "../../assets/OffSeasonLuxuryTravel/off-season-final-destination.jpg";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import AdventureImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
+import LuxuryCruiseImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import LuxuryAdvisorImage from "../../assets/PrivateJetConciergeTravel/privacy-luxury-travel-advisor-client-meeting.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
 import { Helmet } from "react-helmet-async";
 
@@ -341,7 +338,7 @@ const destinationTrips = [
     title: "Mediterranean",
     badge: "Mediterranean",
     icon: Compass,
-    // image: BucketMediterranean,
+    image: BucketMediterranean,
     window: "Coastal cities, fine dining, and cruising in style",
     desc: "Perfect for luxury cruising, private villas, historic cities, fine dining, and coastal relaxation along the Italian Riviera, French Riviera, Greek Islands, Amalfi Coast, and Balearic Islands.",
     columns: [
@@ -363,7 +360,7 @@ const destinationTrips = [
     title: "Caribbean",
     badge: "Caribbean",
     icon: Anchor,
-    // image: BucketCaribbean,
+    image: BucketCaribbean,
     window: "Warm weather, turquoise waters, and total privacy",
     desc: "Warm weather, turquoise waters, and luxury beachfront resorts make the Caribbean one of the most popular off-season destinations — ideal for family vacations, private villas, yacht charters, island hopping, and water sports.",
     columns: [
@@ -385,7 +382,7 @@ const destinationTrips = [
     title: "Hawaii",
     badge: "Hawaii",
     icon: Palmtree,
-    // image: BucketHawaii,
+    image: BucketHawaii,
     window: "Adventure, relaxation, and spectacular scenery",
     desc: "Combining adventure, relaxation, and spectacular scenery, Hawaii is a favorite for athletes seeking an active yet peaceful escape without leaving U.S. soil.",
     columns: [
@@ -407,7 +404,7 @@ const destinationTrips = [
     title: "French Polynesia",
     badge: "French Polynesia",
     icon: Waves,
-    // image: BucketPolynesia,
+    image: BucketPolynesia,
     window: "Overwater villas and unmatched privacy",
     desc: "Overwater villas, crystal-clear lagoons, and unmatched privacy create an unforgettable luxury experience for families craving total seclusion.",
     columns: [
@@ -429,7 +426,7 @@ const destinationTrips = [
     title: "African Safari",
     badge: "Safari",
     icon: Mountain,
-    // image: BucketSafari,
+    image: BucketSafari,
     window: "Extraordinary wildlife encounters in complete comfort",
     desc: "Luxury safari lodges offer extraordinary wildlife encounters alongside exceptional hospitality, pairing front-row wildlife viewing with the privacy and service athlete families expect.",
     columns: [
@@ -451,7 +448,7 @@ const destinationTrips = [
     title: "Northern Europe",
     badge: "N. Europe",
     icon: Snowflake,
-    // image: BucketNorthernEurope,
+    image: BucketNorthernEurope,
     window: "Scenic cruising and cultural discovery",
     desc: "Perfect for scenic cruising, fjord exploration, and cultural experiences during the summer months, Northern Europe blends natural beauty with rich history.",
     columns: [
@@ -577,7 +574,7 @@ const OffSeasonLuxuryTravel = () => {
 
   const ActiveIcon = currentTrip.icon;
 
-  const images = [];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -761,7 +758,7 @@ const OffSeasonLuxuryTravel = () => {
 
               <div className="adg-c-overview-image-wrap">
                 <img
-                  //   src={PrivacyImage}
+                  src={PrivacyImage}
                   alt="Flexible off-season villa travel for professional athletes"
                   className="adg-c-overview-img"
                 />
@@ -1030,7 +1027,7 @@ const OffSeasonLuxuryTravel = () => {
               <div className="ugt-component-image-wrapper">
                 <div className="ugt-component-image-container">
                   <img
-                    // src={VillaImage}
+                    src={VillaImage}
                     alt="Luxury private villa retreat for professional athletes"
                     className="ugt-component-image"
                   />
@@ -1223,7 +1220,7 @@ const OffSeasonLuxuryTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  //   src={AdventureImage}
+                  src={AdventureImage}
                   alt="Mountain hiking adventure travel for professional athletes"
                   className="dmg-media-img"
                   style={{ height: "650px" }}
@@ -1250,7 +1247,7 @@ const OffSeasonLuxuryTravel = () => {
             <div className="dmg-info-media">
               <div className="dmg-media-wrapper">
                 <img
-                  // src={LuxuryCruiseImage}
+                  src={LuxuryCruiseImage}
                   alt="Luxury cruise vacation for professional athletes and families"
                   className="dmg-media-img"
                   style={{ height: "760px" }}
@@ -1498,10 +1495,10 @@ const OffSeasonLuxuryTravel = () => {
             {/* Left Side */}
             <div className="adg-content-card-side">
               <img
-                // src={LuxuryAdvisorImage}
+                src={LuxuryAdvisorImage}
                 alt="Luxury travel advisor planning personalized vacations for professional athletes"
                 className="adg-side-image"
-                style={{ height: "30vh", border: "1px solid var(--navy)" }}
+                style={{ height: "43vh" }}
               />
 
               <div className="adg-info-card">
@@ -1518,13 +1515,7 @@ const OffSeasonLuxuryTravel = () => {
                   preferences.
                 </p>
 
-                <div className="adg-card-divider"></div>
-
-                <p className="adg-card-subtext">
-                  With every detail professionally managed, athletes can focus
-                  entirely on relaxing, reconnecting with family, and enjoying
-                  their time away.
-                </p>
+              
               </div>
             </div>
 
@@ -1801,7 +1792,7 @@ const OffSeasonLuxuryTravel = () => {
       <section className="Asc-help-section">
         <div className="Asc-help-bg-wrap">
           <img
-            // src={CtaImage}
+            src={CtaImage}
             alt="Off-season luxury travel destination for professional athletes"
             className="Asc-help-bg-img"
           />
