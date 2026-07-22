@@ -454,6 +454,7 @@ const DonorTravelPrograms = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [readMore, setReadMore] = useState(false);
   const images = [HeroImage1, HeroImage2, HeroImage3];
+  const heroPositions = ["center center", "center center", "center top"];
   const [activeDest, setActiveDest] = useState("antarctica");
   const currentDest =
     donorTravelDestinations.find((d) => d.id === activeDest) ||
@@ -494,7 +495,10 @@ const DonorTravelPrograms = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
 

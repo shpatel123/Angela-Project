@@ -331,7 +331,7 @@ const accommodationOptions = [
     badge: "Villa",
     icon: Home,
     image: VillaImage,
-    objectPosition: "center 30%",
+    objectPosition: "center 25%",
     window: "Family vacations and multi-generational travel",
     desc: "Villas provide complete control over your environment while offering many of the comforts of home — multiple bedrooms, private pools, and dedicated staff for everyone to relax comfortably.",
     columns: [
@@ -354,7 +354,7 @@ const accommodationOptions = [
     badge: "Private Island",
     icon: Palmtree,
     image: PrivateIslandImage,
-    objectPosition: "center 40%",
+    objectPosition: "center 30%",
     window: "Ultimate seclusion and VIP family vacations",
     desc: "For athletes who spend much of the year in the public eye, private islands provide complete freedom to unwind with private beaches, personalized dining, and dedicated hospitality teams.",
     columns: [
@@ -547,6 +547,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
   const ActiveIcon = currentOption.icon;
 
   const images = [HeroImage1, HeroImage2, HeroImage3];
+  const heroPositions = ["center center", "center center", "center top"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -583,7 +584,10 @@ const PrivateVillasYachtsExclusiveResorts = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
 
@@ -722,6 +726,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
                     src={VillaImage}
                     alt="Luxury private villa with spacious indoor and outdoor living areas"
                     className="ugt-component-image"
+                    style={{ objectPosition: "center 25%" }}
                   />
                 </div>
               </div>
@@ -1119,7 +1124,7 @@ const PrivateVillasYachtsExclusiveResorts = () => {
                   src={LuxuryResortImage}
                   alt="Exclusive luxury resort with oceanfront accommodations"
                   className="dmg-media-img"
-                  style={{ height: "650px" }}
+                  style={{ height: "85vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 

@@ -34,7 +34,7 @@ import AboutImage from "../../assets/AboutAngela3.jpeg";
 
 import HeroImage1 from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
 import HeroImage2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
-import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.jpg";
 
 import PrivacyImage from "../../assets/PrivateJetConciergeTravel/privacy-family-vacation-private-beach.png";
 

@@ -462,6 +462,7 @@ const TravelProgramsForZoosConservationOrganizations = () => {
   const [readMoreSuccessfulProgram, setReadMoreSuccessfulProgram] = useState(false);
   const [hovered, setHovered] = useState(null);
   const images = [BucketAfrica, HeroImage2, HeroImage3];
+  const heroPositions = ["center center", "center top", "center center"];
   const [activeDest, setActiveDest] = useState("african-safaris");
 
   const currentDest =
@@ -503,7 +504,10 @@ const TravelProgramsForZoosConservationOrganizations = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
         <div className="Scenic_hero_overlay"></div>

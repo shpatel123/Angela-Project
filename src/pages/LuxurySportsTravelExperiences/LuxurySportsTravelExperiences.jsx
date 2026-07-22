@@ -48,15 +48,15 @@ import EventOlympics from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfr
 
 import TransportImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
 import GroundImage from "../../assets/PrivateJetConciergeTravel/vip-private-airport-lounge-luxury-travel-services.webp";
-import AccommodationImage from "../../assets/PrivateJetConciergeTravel/travel-during-the-competitive-season-professional-athlete-luxury-hotel.webp";
-import ConciergeImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
+import AccommodationImage from "../../assets/PrivateJetConciergeTravel/luxury-accommodations-five-star-hotel-suite.jpg";
+import ConciergeImage from "../../assets/PrivateJetConciergeTravel/personalized-sports-travel-itinerary-planning.jpg";
 import FamilyImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
-import AdvisorImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/trips-and-ships-luxury-sports-travel-advisor.jpg";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
 
-import HeroBg1 from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-experiences-private-hospitality.webp";
-import HeroBg2 from "../../assets/DisneyBahamasCruises/disney-wish-the-rose-lounge-adults-only-luxury-booths.jpg";
-import HeroBg3 from "../../assets/ExploraIVGuide/explora-journeys-sky-lounge-outdoor-ocean-view-deck.jpg";
+import HeroBg1 from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-hospitality-hero-1.jpg";
+import HeroBg2 from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-vip-jet-hero-2.jpg";
+import HeroBg3 from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-athlete-hero-3.jpg";
 
 import { Helmet } from "react-helmet-async";
 

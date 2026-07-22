@@ -388,6 +388,7 @@ const privacyDestinations = [
     badge: "French Polynesia",
     icon: Compass,
     image: BucketPolynesia,
+    objectPosition: "center 40%",
     window: "Exceptional privacy in spectacular surroundings",
     desc: "Exceptional privacy in spectacular natural surroundings makes French Polynesia a favorite for travelers who want total seclusion without sacrificing beauty or service.",
     columns: [
@@ -559,6 +560,7 @@ const PrivacySecurityTravelPlanning = () => {
   const ActiveDestinationIcon = currentDestination.icon;
 
   const images = [HeroImage1, HeroImage2, HeroImage3];
+  const heroPositions = ["center center", "center center", "center top"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -592,7 +594,10 @@ const PrivacySecurityTravelPlanning = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
 
@@ -1438,6 +1443,9 @@ const PrivacySecurityTravelPlanning = () => {
                   src={currentDestination.image}
                   alt={currentDestination.title}
                   className="luc-dest-img"
+                  style={{
+                    objectPosition: currentDestination.objectPosition || "center center",
+                  }}
                 />
 
                 <div className="luc-dest-img-overlay">

@@ -51,9 +51,9 @@ import ConciergeImage from "../../assets/PrivateJetConciergeTravel/luxury-wellne
 import AirportLoungeImage from "../../assets/PrivateJetConciergeTravel/vip-private-airport-lounge-luxury-travel-services.webp";
 import AirportMeetGreetImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
 import GroundImage from "../../assets/PrivateJetConciergeTravel/luxury-sports-travel-experiences-private-hospitality.webp";
-import FamilyImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
-import VillaImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
-import YachtImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import FamilyImage from "../../assets/PrivateJetConciergeTravel/family-travel-without-stress-private-jet.jpg";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/privacy-and-discretion-luxury-villa-retreat.jpg";
+import YachtImage from "../../assets/PrivateJetConciergeTravel/private-villas-resorts-yacht-coordination.jpg";
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
@@ -535,6 +535,7 @@ const PrivateJetConciergeTravel = () => {
   const ActiveDestinationIcon = currentDestination.icon;
 
   const images = [HeroImage1, HeroImage2, HeroImage3];
+    const heroPositions = ["center top", "center top", "center top"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -568,7 +569,10 @@ const PrivateJetConciergeTravel = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
 
@@ -1209,7 +1213,7 @@ const PrivateJetConciergeTravel = () => {
                   src={FamilyImage}
                   alt="Multi-generational family arriving together on a private jet vacation"
                   className="dmg-media-img"
-                  style={{ height: "650px" }}
+                  style={{ height: "84vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 

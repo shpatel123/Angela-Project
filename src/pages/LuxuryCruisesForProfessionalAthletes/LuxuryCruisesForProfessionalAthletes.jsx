@@ -41,7 +41,7 @@ import HeroImage1 from "../../assets/ExploraIVGuide/EXPLORA-III-Exterior.jpg";
 import HeroImage2 from "../../assets/WhichExploraShipChoose/explora-journeys-atoll-pool-luxury-cruise-deck.jpg";
 import HeroImage3 from "../../assets/CaribbeanCruisesExploraJourneys/caribbean-sunset-explora-ship-luxury-travel.jpg";
 
-import OverviewImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
+import OverviewImage from "../../assets/PrivateJetConciergeTravel/athlete-cruise-why-athletes-choose.jpg";
 
 import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/private-exclusive-caribbean-island.jpg";
 import BucketMediterranean from "../../assets/WhichMediterraneanItineraryIsBest/amalfi-coast-italy-mediterranean-hero-summer-2025.jpg";
@@ -53,11 +53,11 @@ import BucketSafari from "../../assets/ExploraIVGuide/Iceland.png";
 import ExpeditionImage from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica.jpg";
 import RiverCruiseImage from "../../assets/VikingDanubeRiverCruises/budapest-hungary-river-cruise-danube.jpg";
 import YachtCharterImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
-import DiningImage from "../../assets/ExploraJourneysCruises/Fine-Dining.webp";
-import SuiteImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
-import FamilyImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import DiningImage from "../../assets/PrivateJetConciergeTravel/athlete-cruise-exceptional-dining.jpg";
+import SuiteImage from "../../assets/PrivateJetConciergeTravel/athlete-cruise-luxury-suite.jpg";
+import FamilyImage from "../../assets/PrivateJetConciergeTravel/athlete-cruise-perfect-for-families.jpg";
 import YachtImage from "../../assets/VikingDanubeRiverCruises/vienna-austria-danube-river-cruise.jpg";
-import AdvisorImage from "../../assets/PrivateJetConciergeTravel/travel-during-the-competitive-season-professional-athlete-luxury-hotel.webp";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/athlete-cruise-trips-and-ships-advisor.jpg";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
 import { Helmet } from "react-helmet-async";

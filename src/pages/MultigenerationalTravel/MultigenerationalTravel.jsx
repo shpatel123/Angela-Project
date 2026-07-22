@@ -43,11 +43,11 @@ import BucketSafari from "../../assets/PrivateJetConciergeTravel/luxury-safari-e
 import BucketPolynesia from "../../assets/PrivateJetConciergeTravel/championship-french-polynesia-overwater-celebration.png";
 import BucketHawaii from "../../assets/PrivateJetConciergeTravel/hawaii-oceanfront-luxury-resort-private-jet-travel.webp";
 
-import VillaImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/privacy-security-travel-private-villa-terrace-family.png";
 import AdventureImage from "../../assets/PrivateJetConciergeTravel/Luxury-African-Safaris.png";
 import CruiseImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/privacy-luxury-travel-advisor-client-meeting.png";
-import CtaImage from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -365,6 +365,7 @@ const destinationTrips = [
     badge: "French Polynesia",
     icon: Waves,
     image: BucketPolynesia,
+    objectPosition: "center 40%",
     window: "Exceptional privacy and natural beauty",
     desc: "Exceptional privacy and breathtaking natural beauty make French Polynesia ideal for extended families who want total seclusion together.",
     columns: [
@@ -387,6 +388,7 @@ const destinationTrips = [
     badge: "Safari",
     icon: Mountain,
     image: BucketSafari,
+    objectPosition: "center 20%",
     window: "Luxury lodges and wildlife for every generation",
     desc: "Luxury lodges, wildlife encounters, and educational experiences for every generation make an African safari one of the most memorable multigenerational adventures a family can take.",
     columns: [
@@ -516,6 +518,7 @@ const MultigenerationalTravel = () => {
   const ActiveIcon = currentTrip.icon;
 
   const images = [HeroImage1, HeroImage2, HeroImage3];
+  const heroPositions = ["center center", "center center", "center top"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -552,7 +555,10 @@ const MultigenerationalTravel = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
 
@@ -1249,7 +1255,7 @@ const MultigenerationalTravel = () => {
                   src={AdventureImage}
                   alt="Multigenerational family on an African safari adventure"
                   className="dmg-media-img"
-                  style={{ height: "650px" }}
+                  style={{ height: "82vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1276,7 +1282,7 @@ const MultigenerationalTravel = () => {
                   src={CruiseImage}
                   alt="Luxury cruise suite for multigenerational athlete family travel"
                   className="dmg-media-img"
-                  style={{ height: "760px" }}
+                  style={{ height: "86vh" }}
                 />
                 <div className="dmg-media-overlay"></div>
 
@@ -1359,19 +1365,12 @@ const MultigenerationalTravel = () => {
                   </div>
                 </div>
               </div>
-
-              <p className="dmg-info-lead" style={{ marginTop: "2rem" }}>
-                Grandparents can enjoy scenic cruising, parents can unwind at
-                the spa, teenagers can explore onboard activities, and children
-                can join age-appropriate programs — all before gathering
-                together for dinner.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ══ WELLNESS & CONCIERGE PLANNING ═══════════════════════ */}
+      {/* ══ WELLNESS & CONCIERGE PLANNING ══════════════════════ */}
       <section
         className="adg-c-section adg-c-bg-soft"
         id="wellness-family-concierge"

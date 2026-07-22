@@ -49,20 +49,20 @@ import BucketIceland from "../../assets/LuxuryAlumniExpeditionCruises/Iceland.we
 import BucketNewZealand from "../../assets/AzamaraNorwayFjordsCruises/geirangerfjord-norway-scenic-cruise-fjord-mountain-view.jpg";
 import BucketAustralia from "../../assets/CaribbeanCruisesExploraJourneys/roatan-western-caribbean-reef.jpg";
 
-import SafariLodgeImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
-import ExpeditionShipImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
+import SafariLodgeImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-lodge-plunge-pool.jpg";
+import ExpeditionShipImage from "../../assets/PrivateJetConciergeTravel/chartered-expedition-yacht-private-adventure.jpg";
 import GalapagosImage from "../../assets/LuxuryAlumniExpeditionCruises/Gal_pagos_Islands.jpg";
 import WildlifeImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-group.webp";
 import AmenitiesImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-poolside-retreat.webp";
-import AdvisorImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-travel-advisor-planning-safari.jpg";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
 
 import SafariImage from "../../assets/PrivateJetConciergeTravel/Luxury-African-Safaris.png";
 import AntarcticaImage from "../../assets/PrivateJetConciergeTravel/Antarctica-Expeditions.png";
 import "../LuxuryExploraJourneysGuide/LuxuryExploraJourneysGuide.css";
 
-import HeroBg1 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
-import HeroBg2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
+import HeroBg1 from "../../assets/PrivateJetConciergeTravel/african-safari-expedition-hero.png";
+import HeroBg2 from "../../assets/PrivateJetConciergeTravel/private-villas-resorts-yacht-coordination.jpg";
 import HeroBg3 from "../../assets/VikingExpeditionCruises/Expedition-Ship-Antarctica.jpg";
 import GalapagosHeroImage from "../../assets/SmallShipAlumniCruises/Galapagos.jpg";
 

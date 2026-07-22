@@ -38,9 +38,9 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
-import HeroImage1 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
-import HeroImage2 from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-professional-athletes.webp";
-import HeroImage3 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/family-concierge-hero-1.jpg";
+import HeroImage2 from "../../assets/PrivateJetConciergeTravel/family-concierge-hero-2.jpg";
+import HeroImage3 from "../../assets/PrivateJetConciergeTravel/family-concierge-hero-3.jpg";
 
 import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
 
@@ -55,9 +55,10 @@ import ConciergeImage from "../../assets/PrivateJetConciergeTravel/luxury-wellne
 import DiningImage from "../../assets/ExploraJourneysCruises/Fine-Dining.webp";
 import GuidesImage from "../../assets/MultiGenerationalAlumniTravel/machu-picchu-group-tour-peru-luxury-cultural-travel-experience.jpg";
 import TransportationImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
-import ChildcareImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
+import ChildcareImage from "../../assets/PrivateJetConciergeTravel/family-concierge-childcare-support.jpg";
+import SuiteImage from "../../assets/PrivateJetConciergeTravel/competitive-season-luxury-hotel-suite-flexibility.jpg";
 import EventTicketsImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
-import CruiseImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
+import CruiseImage from "../../assets/PrivateJetConciergeTravel/family-concierge-luxury-cruise-suite.jpg";
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
 import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 
@@ -777,7 +778,7 @@ const FamilyConciergeTravelServices = () => {
             <div className="la-image-column">
               <div className="la-image-wrap">
                 <img
-                  src={ChildcareImage}
+                  src={SuiteImage}
                   alt="Luxury family villa accommodation"
                   className="la-image"
                 />
@@ -1265,7 +1266,7 @@ const FamilyConciergeTravelServices = () => {
                   src={CruiseImage}
                   alt="Luxury cruise suite arranged through concierge service"
                   className="dmg-media-img"
-                  style={{ height: "710px" }}
+                  style={{ height: "80vh", objectPosition: 'right'}}
                 />
                 <div className="dmg-media-overlay"></div>
 

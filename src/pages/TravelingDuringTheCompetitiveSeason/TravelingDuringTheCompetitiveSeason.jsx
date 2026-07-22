@@ -33,24 +33,28 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-import HeroImage1 from "../../assets/PrivateJetConciergeTravel/travel-during-the-competitive-season-professional-athlete-luxury-hotel.webp";
-import HeroImage2 from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete.webp";
-import HeroImage3 from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
-import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/private-jet-concierge-travel-luxury-professional-athlete.webp";
+
 import BucketCaribbean from "../../assets/CaribbeanCruisesExploraJourneys/private-exclusive-caribbean-island.jpg";
 import BucketNapa from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-poolside-retreat.webp";
 import BucketAspen from "../../assets/AlaskaCruisesExploraJourneys/explora-journeys-alaska-coastal-mountain-landscape.jpg";
 import BucketSouthFlorida from "../../assets/CaribbeanCruisesExploraJourneys/explora-caribbean-beach-aerial.jpg";
 import BucketScottsdale from "../../assets/WhatIsIncludedDisneyCruise/senses-spa-relaxation-disney-cruise.jpg";
 import BucketEurope from "../../assets/LuxuryAlumniTravel/paris-luxury-travelers-eiffel-tower-riverside-cultural-experience.jpg";
-import ConciergeImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
-import AirportImage from "../../assets/PrivateJetConciergeTravel/vip-airport-meet-and-greet-concierge-service.webp";
-import GroundImage from "../../assets/PrivateJetConciergeTravel/off-season-luxury-travel-professional-athletes-private-villa-retreat.webp";
-import FamilyImage from "../../assets/PrivateJetConciergeTravel/luxury-wellness-recovery-travel-professional-athlete-family.webp";
-import VillaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-superyacht.webp";
-import InsuranceImage from "../../assets/PrivateJetConciergeTravel/family-concierge-travel-services-luxury-family-arrival.webp";
-import AdvisorImage from "../../assets/PrivateJetConciergeTravel/luxury-safari-expeditions-bucket-list-adventures-professional-athlete.webp";
-import CtaImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
+
+import DifferentApproachImage from "../../assets/PrivateJetConciergeTravel/competitive-season-athlete-private-jet-departure.jpg";
+import AirportImage from "../../assets/PrivateJetConciergeTravel/competitive-season-vip-private-terminal.jpg";
+import GroundImage from "../../assets/PrivateJetConciergeTravel/competitive-season-luxury-hotel-suite-flexibility.jpg";
+import ConciergeImage from "../../assets/PrivateJetConciergeTravel/competitive-season-playoff-itinerary-planning.jpg";
+import FamilyImage from "../../assets/PrivateJetConciergeTravel/competitive-season-family-reunion-vacation.jpg";
+import VillaImage from "../../assets/PrivateJetConciergeTravel/competitive-season-private-villa-discretion.jpg";
+import InsuranceImage from "../../assets/PrivateJetConciergeTravel/competitive-season-flexible-travel-protection.jpg";
+import AdvisorImage from "../../assets/PrivateJetConciergeTravel/competitive-season-trusted-travel-advisor.jpg";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/competitive-season-sunset-jet-departure-cta.jpg";
+
+import HeroBg1 from "../../assets/PrivateJetConciergeTravel/competitive-season-hero-1.jpg";
+import HeroBg2 from "../../assets/PrivateJetConciergeTravel/competitive-season-hero-2.jpg";
+import HeroBg3 from "../../assets/PrivateJetConciergeTravel/competitive-season-hero-3.jpg";
+
 
 import { Helmet } from "react-helmet-async";
 
@@ -529,7 +533,7 @@ const TravelingDuringTheCompetitiveSeason = () => {
     privateJetDestinations[0];
   const ActiveDestinationIcon = currentDestination.icon;
 
-  const images = [HeroImage1, HeroImage2, HeroImage3];
+  const images = [HeroBg1, HeroBg2, HeroBg3];
 
   useEffect(() => {
     const timer = setInterval(() => {

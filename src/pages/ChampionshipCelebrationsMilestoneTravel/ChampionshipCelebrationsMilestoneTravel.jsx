@@ -31,7 +31,7 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-import HeroImage1 from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
+import HeroImage1 from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.jpg";
 import HeroImage2 from "../../assets/PrivateJetConciergeTravel/championship-celebrations-milestone-travel-luxury-family..webp";
 import HeroImage3 from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
 
@@ -50,7 +50,7 @@ import LogisticsImage from "../../assets/PrivateJetConciergeTravel/vip-airport-m
 import FamilyImage from "../../assets/PrivateJetConciergeTravel/multigenerational-travel-professional-athletes-luxury-family-villa.webp";
 import MultiGenerationalCelebrationImage from "../../assets/PrivateJetConciergeTravel/private-villas-yachts-exclusive-resorts-luxury-yacht-group..webp";
 import AdvisorImage from "../../assets/PrivateJetConciergeTravel/championship-luxury-travel-advisor-planning.png";
-import CtaImage from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.png";
+import CtaImage from "../../assets/PrivateJetConciergeTravel/championship-hero-villa-celebration-sunset.jpg";
 
 import { Helmet } from "react-helmet-async";
 
@@ -584,6 +584,7 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
   const ActiveDestinationIcon = currentDestination.icon;
 
   const images = [HeroImage1, HeroImage2, HeroImage3];
+    const heroPositions = ["center center", "center top", "center top"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -620,7 +621,10 @@ const ChampionshipCelebrationsMilestoneTravel = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
 

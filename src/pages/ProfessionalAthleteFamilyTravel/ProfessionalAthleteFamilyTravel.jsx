@@ -545,6 +545,7 @@ const ProfessionalAthleteFamilyTravel = () => {
   const ActiveIcon = currentTrip.icon;
 
   const images = [HeroImage2, HeroImage3, HeroImage4];
+  const heroPositions = ["center top", "center top", "center center"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -578,7 +579,10 @@ const ProfessionalAthleteFamilyTravel = () => {
             className={`Scenic_hero_bg ${
               index === currentSlide ? "active" : ""
             }`}
-            style={{ backgroundImage: `url(${img})` }}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: heroPositions[index] || "center center",
+            }}
           ></div>
         ))}
 
