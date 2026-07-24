@@ -107,6 +107,10 @@ import ExploraJourneysItineraries from "./pages/ExploraJourneysItineraries/Explo
 import ExploraJourneysResourceCenter from "./pages/ExploraJourneysResourceCenter/ExploraJourneysResourceCenter";
 import LuxuryTravelGuideExploraJourneys from "./pages/LuxuryTravelGuideExploraJourneys/LuxuryTravelGuideExploraJourneys";
 import WhyLuxuryTravelersChoosingExploraJourneys from "./pages/WhyLuxuryTravelersChoosingExploraJourneys/WhyLuxuryTravelersChoosingExploraJourneys";
+import RiversideLuxuryCruisesReviews from "./pages/RiversideLuxuryCruisesReviews/RiversideLuxuryCruisesReviews";
+import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxuryCruises";
+import RiversideVsScenicRiverCruises from "./pages/RiversideVsScenicRiverCruises/RiversideVsScenicRiverCruises";
+import RiversideVsUniworldRiverCruises from "./pages/RiversideVsUniworldRiverCruises/RiversideVsUniworldRiverCruises";
 
 function App() {
   return (
@@ -532,6 +536,10 @@ function App() {
           <Route path="/explora-journeys-resource-center" element={<ExploraJourneysResourceCenter />} />
           <Route path="/luxury-travel-guide-explora-journeys" element={<LuxuryTravelGuideExploraJourneys />} />
           <Route path="/why-luxury-travelers-are-choosing-explora-journeys" element={<WhyLuxuryTravelersChoosingExploraJourneys />} />
+          <Route path="/riverside-luxury-cruises-reviews" element={<RiversideLuxuryCruisesReviews />} />
+          <Route path="/riverside-luxury-cruises" element={<RiversideLuxuryCruises />} />
+          <Route path="/riverside-vs-scenic-river-cruises" element={<RiversideVsScenicRiverCruises />} />
+          <Route path="/riverside-vs-uniworld-river-cruises" element={<RiversideVsUniworldRiverCruises />} />
 
 
         </Routes>

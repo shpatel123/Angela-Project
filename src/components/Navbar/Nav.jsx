@@ -864,6 +864,41 @@ const Nav = () => {
               >
                 why luxury travelers are choosing explora journeys
               </NavLink>
+
+              <NavLink
+                to="/riverside-luxury-cruises-reviews"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Luxury Cruises Reviews
+              </NavLink>
+
+              <NavLink
+                to="/riverside-luxury-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Luxury Cruises
+              </NavLink>
+
+              <NavLink
+                to="/riverside-vs-scenic-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside vs Scenic River Cruises
+              </NavLink>
+
+
+              <NavLink
+                to="/riverside-vs-uniworld-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside vs Uniworld River Cruises
+              </NavLink>
+
+
             </div>
           </div>
         </div>
@@ -1722,6 +1757,40 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               why luxury travelers are choosing explora journeys
+            </NavLink>
+
+            <NavLink
+              to="/riverside-luxury-cruises-reviews"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Luxury Cruises Reviews
+            </NavLink>
+
+            <NavLink
+              to="/riverside-luxury-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Luxury Cruises
+            </NavLink>
+
+
+            <NavLink
+              to="/riverside-vs-scenic-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside vs Scenic River Cruises
+            </NavLink>
+
+
+            <NavLink
+              to="/riverside-vs-uniworld-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside vs Uniworld River Cruises
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

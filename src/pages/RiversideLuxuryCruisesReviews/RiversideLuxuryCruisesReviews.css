@@ -1,0 +1,1333 @@
+.rlc-compare-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.rlc-compare-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rlc-compare-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rlc-compare-eyebrow {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.rlc-compare-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.rlc-compare-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 24px auto;
+    border-radius: 2px;
+}
+
+.rlc-compare-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.rlc-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.rlc-compare-card {
+    background: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Subtle top border highlight */
+.rlc-compare-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--navy), var(--navy-light));
+    transition: var(--transition);
+}
+
+.rlc-compare-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy-light);
+}
+
+.rlc-compare-card:hover::before {
+    height: 6px;
+}
+
+.rlc-compare-card-header {
+    margin-bottom: 20px;
+}
+
+.rlc-compare-badge-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.rlc-compare-ship-icon {
+    color: var(--navy);
+    background: var(--navy-soft);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.rlc-compare-card:hover .rlc-compare-ship-icon {
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.rlc-compare-card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-family: var(--font-display);
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.rlc-compare-brand-primary {
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.rlc-compare-vs-badge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--bg-soft);
+    color: var(--navy);
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid var(--navy-border);
+    letter-spacing: 1px;
+}
+
+.rlc-compare-brand-secondary {
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.rlc-compare-card-body {
+    flex-grow: 1;
+}
+
+.rlc-compare-card-text {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .rlc-worth-title, .rlc-compare-title{
+        font-size: 24px !important;
+    }
+    .rlc-compare-intro{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rlc-worth-title, .rlc-compare-title{
+        font-size: 28px !important;
+    }
+    .rlc-compare-intro{
+        font-size: 17px;
+    }
+}
+
+/* ── IS RIVERSIDE WORTH THE PRICE SECTION ──────────────────────── */
+.rlc-worth-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.rlc-worth-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rlc-worth-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .rlc-worth-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.rlc-worth-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rlc-worth-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.rlc-worth-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+.rlc-worth-lead {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.rlc-worth-emphasis-title {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.rlc-worth-emphasis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.rlc-worth-emphasis-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--bg-soft);
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--navy-border);
+    transition: var(--transition);
+}
+
+.rlc-worth-emphasis-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--navy);
+    box-shadow: var(--shadow);
+}
+
+.rlc-worth-emphasis-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e7d32;
+    background-color: rgba(46, 125, 50, 0.1);
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.rlc-worth-emphasis-label {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-body);
+}
+
+.rlc-worth-conclusion-box {
+    background-color: var(--navy-soft);
+    border-left: 4px solid var(--navy);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.rlc-worth-conclusion-text {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.rlc-worth-media {
+    width: 100%;
+    height: 100%;
+}
+
+.rlc-worth-media-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 100%;
+    min-height: 400px;
+}
+
+.rlc-worth-media-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rlc-worth-media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 50%, rgba(15, 28, 46, 0.7) 100%);
+}
+
+.rlc-worth-media-badge {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--navy);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ── PAGE CTA BUTTONS ─────────────────────────────────────────── */
+.rlc-page-cta-container {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 16px;
+    width: 100%;
+}
+
+.rlc-page-cta-container.rlc-align-left {
+    justify-content: flex-start;
+}
+
+.rlc-page-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none !important;
+    transition: var(--transition);
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: var(--navy);
+    color: var(--bg-white) !important;
+    border: 2px solid var(--navy);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.15);
+}
+
+.rlc-page-cta-btn:hover {
+    background-color: transparent;
+    color: var(--navy) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(39, 68, 114, 0.25);
+}
+
+/* Light / Hero variation */
+.rlc-page-cta-btn.rlc-btn-light {
+    background-color: var(--bg-white);
+    color: var(--navy) !important;
+    border: 2px solid var(--bg-white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rlc-page-cta-btn.rlc-btn-light:hover {
+    background-color: transparent;
+    color: var(--bg-white) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Rules for all CTA Buttons */
+@media (max-width: 768px) {
+    .rlc-page-cta-btn {
+        font-size: 14px;
+        padding: 12px 24px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rlc-page-cta-btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 12px 16px;
+        letter-spacing: 0.5px;
+        gap: 6px;
+    }
+}
+
+/* ── WHAT'S INCLUDED SECTION ───────────────────────────────────── */
+.rlc-inc-section {
+    padding: 85px 20px;
+    background-color: var(--bg-soft);
+}
+
+.rlc-inc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rlc-inc-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rlc-inc-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.rlc-inc-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+.rlc-inc-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.rlc-inc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+    .rlc-inc-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .rlc-inc-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rlc-inc-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.rlc-inc-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--navy-light);
+    box-shadow: var(--shadow);
+    background-color: var(--bg-white);
+}
+
+.rlc-inc-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    background-color: var(--navy-soft);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    transition: var(--transition);
+}
+
+.rlc-inc-card:hover .rlc-inc-icon-box {
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.rlc-inc-label {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-body);
+    line-height: 1.4;
+}
+
+.rlc-inc-callout {
+    background-color: var(--bg-white);
+    border: 1px dashed var(--navy-light);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rlc-inc-callout-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width: 575px) {
+    .rlc-inc-callout-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.rlc-inc-callout-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.rlc-inc-callout-text {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── RIVERSIDE VS SCENIC COMPARISON SECTION ───────────────────── */
+.rlc-rvs-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.rlc-rvs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rlc-rvs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+@media (max-width: 991px) {
+    .rlc-rvs-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+.rlc-rvs-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.rlc-rvs-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--navy);
+}
+
+.rlc-rvs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--navy-light);
+}
+
+.rlc-rvs-card-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.rlc-rvs-card-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.rlc-rvs-list-title {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--navy-light);
+    margin-bottom: 16px;
+}
+
+.rlc-rvs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rlc-rvs-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.rlc-rvs-icon {
+    color: var(--navy);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.rlc-rvs-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.5;
+}
+
+.rlc-rvs-footer-quote {
+    margin-top: auto;
+    font-family: var(--font-body);
+    font-style: italic;
+    font-weight: 600;
+    color: var(--navy);
+    padding: 16px;
+    background-color: var(--bg-soft);
+    border-left: 3px solid var(--navy);
+    border-radius: 0/var(--radius);
+    line-height: 1.5;
+}
+
+.rlc-rvs-image-wrap {
+    width: 100%;
+    height: 240px;
+    border-radius: calc(var(--radius) - 4px);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.rlc-rvs-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.rlc-rvs-card:hover .rlc-rvs-card-img {
+    transform: scale(1.05);
+}
+
+/* ── SHIPS & FLEET COMPARISON SECTION ────────────────────────── */
+.rlc-flt-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+    position: relative;
+}
+
+.rlc-flt-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rlc-flt-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rlc-flt-eyebrow {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--navy-light);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.rlc-flt-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.rlc-flt-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.rlc-flt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.rlc-flt-best-text{
+    color: var(--navy);
+    font-weight: 400;
+}
+
+@media (max-width: 991px) {
+    .rlc-flt-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.rlc-flt-card {
+    background-color: var(--bg-soft);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.rlc-flt-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: var(--navy);
+    transition: var(--transition);
+}
+
+.rlc-flt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--navy-light);
+    background-color: var(--bg-white);
+}
+
+.rlc-flt-card:hover::before {
+    background-color: var(--navy-light);
+}
+
+.rlc-flt-brand {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--navy-border);
+    padding-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.rlc-flt-sub-title {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navy-light);
+    margin-bottom: 16px;
+}
+
+.rlc-flt-ship-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.rlc-flt-tag {
+    background-color: var(--bg-white);
+    color: var(--navy);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid var(--navy-border);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: var(--transition);
+}
+
+.rlc-flt-card:hover .rlc-flt-tag {
+    background-color: var(--navy-soft);
+    border-color: var(--navy-soft);
+}
+
+.rlc-flt-desc {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.rlc-flt-best-for {
+    margin-top: auto;
+    background-color: var(--navy-soft);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: var(--transition);
+}
+
+.rlc-flt-card:hover .rlc-flt-best-for {
+    background-color: var(--bg-soft);
+    border-color: var(--navy-border);
+}
+
+.rlc-flt-best-icon-box {
+    background-color: var(--bg-white);
+    color: var(--navy);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.rlc-flt-best-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rlc-flt-best-title {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navy);
+}
+
+/* ── EDITORIAL PREMIUM COMPARISON ROW ────────────────────────── */
+.rlc-prem-section {
+    padding: 95px 20px;
+    background-color: var(--bg-soft);
+}
+
+.rlc-prem-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.rlc-prem-row {
+    display: grid;
+    grid-template-columns: 320px 1fr 1fr;
+    gap: 24px;
+    background-color: transparent;
+    align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+    .rlc-prem-row {
+        grid-template-columns: 280px 1fr 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .rlc-prem-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Meta Column (Dark theme) */
+.rlc-prem-meta {
+    background-color: var(--navy);
+    color: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+}
+
+.rlc-prem-meta::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.rlc-prem-num {
+    font-family: var(--font-display);
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.15);
+    margin-bottom: 20px;
+}
+
+.rlc-prem-label-wrap {
+    margin-bottom: auto;
+}
+
+.rlc-prem-eyebrow {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--bg-soft); /* Root variable accent */
+    display: block;
+    margin-bottom: 8px;
+}
+
+.rlc-prem-title {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+    color: var(--bg-white);
+}
+
+.rlc-prem-intro {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+.rlc-prem-winner-tag {
+    align-self: flex-start;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--bg-white);
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+@media (max-width: 991px) {
+    .rlc-prem-meta {
+        min-height: auto;
+    }
+    .rlc-prem-winner-tag {
+        margin-top: 16px;
+    }
+}
+
+/* Brand Columns (Light cards) */
+.rlc-prem-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: var(--transition);
+}
+
+.rlc-prem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--navy-light);
+}
+
+/* Highlight Scenic as the Winner card */
+.rlc-prem-card.rlc-winner-card {
+    border-color: var(--navy-border);
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+}
+
+.rlc-prem-card.rlc-winner-card:hover {
+    border-color: var(--navy);
+    box-shadow: var(--shadow-lg);
+}
+
+.rlc-prem-card.rlc-winner-card::after {
+    content: "WINNER";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid var(--navy-border);
+}
+
+.rlc-prem-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--navy-border);
+    padding-bottom: 12px;
+}
+
+.rlc-prem-brand-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.rlc-prem-brand-name {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.rlc-prem-list-title {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--navy-light);
+    margin-bottom: 16px;
+}
+
+.rlc-prem-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rlc-prem-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rlc-prem-item-icon {
+    color: var(--navy); /* Root variable navy */
+    flex-shrink: 0;
+}
+
+.rlc-prem-item-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.4;
+}
+
+.rlc-prem-desc {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px dashed var(--navy-border);
+    font-style: italic;
+}
+
+@media (max-width: 575px) {
+    .rlc-prem-card {
+        padding: 30px 24px;
+    }
+}
+
+/* ── DARK LUXURY PROS & CONS SECTION ────────────────────────── */
+.rlc-pc-section {
+    padding: 60px 20px;
+    background-color: var(--bg-dark);
+    color: var(--bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.rlc-pc-section::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.15) 0%, transparent 80%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.rlc-pc-section::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.15) 0%, transparent 80%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.rlc-pc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.rlc-pc-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rlc-pc-title {
+    font-family: var(--font-display);
+    color: var(--bg-white);
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+.rlc-pc-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--bg-soft);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.rlc-pc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+@media (max-width: 991px) {
+    .rlc-pc-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.rlc-pc-card {
+    background-color: var(--bg-dark2);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.rlc-pc-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--navy-light);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.rlc-pc-brand {
+    font-family: var(--font-display);
+    color: var(--bg-white);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--navy-border);
+    padding-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.rlc-pc-lists-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+@media (max-width: 575px) {
+    .rlc-pc-lists-wrap {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+.rlc-pc-list-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.rlc-pc-col-title {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rlc-pc-col-title.rlc-pro {
+    color: var(--bg-soft);
+}
+
+.rlc-pc-col-title.rlc-con {
+    color: var(--text-muted);
+}
+
+.rlc-pc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.rlc-pc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.rlc-pc-icon {
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.rlc-pc-icon.rlc-pro {
+    color: var(--bg-soft);
+}
+
+.rlc-pc-icon.rlc-con {
+    color: var(--text-muted);
+}
+
+.rlc-pc-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
