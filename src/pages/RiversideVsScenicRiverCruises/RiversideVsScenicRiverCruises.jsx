@@ -450,7 +450,7 @@ const RiversideVsScenic = () => {
       </section>
 
       {/* QUICK COMPARISON TABLE */}
-      <section className="Asc-section Asc-bg-white" id="Asc-fleet">
+      <section className="Asc-section Asc-bg-soft" id="Asc-fleet">
         <div className="Asc-container">
           <div className="Asc-section-header">
             <h2 className="Asc-h2">Riverside vs Scenic Quick Comparison</h2>
@@ -610,6 +610,62 @@ const RiversideVsScenic = () => {
             <Link to="/contact" className="rlc-page-cta-btn">
               Start Planning Your Riverside Cruise
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PRICING COMPARISON SECTION ───────────────────────────────── */}
+      <section className="rlc-pricing-section" id="riverside-vs-scenic-pricing">
+        <div className="rlc-pricing-container">
+          <div className="rlc-pricing-header">
+            <span className="rlc-pricing-eyebrow">Cost &amp; Value</span>
+            <h2 className="rlc-pricing-title">Pricing Comparison</h2>
+            <div className="rlc-pricing-accent"></div>
+            <p className="rlc-pricing-intro">
+              Riverside and Scenic both compete in the luxury segment. Generally:
+            </p>
+          </div>
+
+          <div className="rlc-pricing-grid">
+            {/* Riverside Pricing Card */}
+            <div className="rlc-pricing-card">
+              <h3 className="rlc-pricing-brand">Riverside</h3>
+              <ul className="rlc-pricing-list">
+                {[
+                  "Luxury pricing",
+                  "Excellent suite value",
+                  "Boutique experience",
+                ].map((item, i) => (
+                  <li key={i} className="rlc-pricing-item">
+                    <Check size={18} className="rlc-pricing-icon" />
+                    <span className="rlc-pricing-text">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Scenic Pricing Card */}
+            <div className="rlc-pricing-card">
+              <h3 className="rlc-pricing-brand">Scenic</h3>
+              <ul className="rlc-pricing-list">
+                {[
+                  "Higher pricing",
+                  "More inclusions",
+                  "Truly all-inclusive luxury",
+                ].map((item, i) => (
+                  <li key={i} className="rlc-pricing-item">
+                    <Check size={18} className="rlc-pricing-icon" />
+                    <span className="rlc-pricing-text">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="rlc-pricing-conclusion">
+            <p>
+              Neither cruise line is inexpensive, but both deliver excellent value within the premium market.
+            </p>
           </div>
         </div>
       </section>

@@ -889,7 +889,6 @@ const Nav = () => {
                 Riverside vs Scenic River Cruises
               </NavLink>
 
-
               <NavLink
                 to="/riverside-vs-uniworld-river-cruises"
                 className="nav-dropdown-single"
@@ -898,7 +897,37 @@ const Nav = () => {
                 Riverside vs Uniworld River Cruises
               </NavLink>
 
+              <NavLink
+                to="/riverside-vs-tauck-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside vs Tauck River Cruises
+              </NavLink>
 
+              <NavLink
+                to="/riverside-vs-avalon-waterways"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside vs Avalon Waterways
+              </NavLink>
+
+              <NavLink
+                to="/riverside-mozart-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Mozart Review
+              </NavLink>
+
+               <NavLink
+                  to="/riverside-debussy-review"
+                  className="nav-dropdown-single"
+                  onClick={toggleMenu}
+                >
+                  Riverside Debussy Review
+                </NavLink>
             </div>
           </div>
         </div>
@@ -1775,7 +1804,6 @@ const Nav = () => {
               Riverside Luxury Cruises
             </NavLink>
 
-
             <NavLink
               to="/riverside-vs-scenic-river-cruises"
               className="nav-dropdown-single"
@@ -1784,7 +1812,6 @@ const Nav = () => {
               Riverside vs Scenic River Cruises
             </NavLink>
 
-
             <NavLink
               to="/riverside-vs-uniworld-river-cruises"
               className="nav-dropdown-single"
@@ -1792,6 +1819,38 @@ const Nav = () => {
             >
               Riverside vs Uniworld River Cruises
             </NavLink>
+
+            <NavLink
+              to="/riverside-vs-tauck-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside vs Tauck River Cruises
+            </NavLink>
+
+            <NavLink
+              to="/riverside-vs-avalon-waterways"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside vs Avalon Waterways
+            </NavLink>
+
+             <NavLink
+                to="/riverside-mozart-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Mozart Review
+              </NavLink>
+
+                <NavLink
+                  to="/riverside-debussy-review"
+                  className="nav-dropdown-single"
+                  onClick={toggleMenu}
+                >
+                  Riverside Debussy Review
+                </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>

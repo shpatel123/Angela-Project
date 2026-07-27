@@ -111,6 +111,10 @@ import RiversideLuxuryCruisesReviews from "./pages/RiversideLuxuryCruisesReviews
 import RiversideLuxuryCruises from "./pages/RiversideLuxuryCruises/RiversideLuxuryCruises";
 import RiversideVsScenicRiverCruises from "./pages/RiversideVsScenicRiverCruises/RiversideVsScenicRiverCruises";
 import RiversideVsUniworldRiverCruises from "./pages/RiversideVsUniworldRiverCruises/RiversideVsUniworldRiverCruises";
+import RiversideVsTauckRiverCruises from "./pages/RiversideVsTauckRiverCruises/RiversideVsTauckRiverCruises";
+import RiversideVsAvalonWaterways from "./pages/RiversideVsAvalonWaterways/RiversideVsAvalonWaterways";
+import RiversideMozartReview from "./pages/RiversideMozartReview/RiversideMozartReview";
+import RiversideDebussyReview from "./pages/RiversideDebussyReview/RiversideDebussyReview";
 
 function App() {
   return (
@@ -540,8 +544,10 @@ function App() {
           <Route path="/riverside-luxury-cruises" element={<RiversideLuxuryCruises />} />
           <Route path="/riverside-vs-scenic-river-cruises" element={<RiversideVsScenicRiverCruises />} />
           <Route path="/riverside-vs-uniworld-river-cruises" element={<RiversideVsUniworldRiverCruises />} />
-
-
+          <Route path="/riverside-vs-tauck-river-cruises" element={<RiversideVsTauckRiverCruises />} />
+          <Route path="/riverside-vs-avalon-waterways" element={<RiversideVsAvalonWaterways />} />
+          <Route path="/riverside-mozart-review" element={<RiversideMozartReview />} />
+          <Route path="/riverside-debussy-review" element={<RiversideDebussyReview />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

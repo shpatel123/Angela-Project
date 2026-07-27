@@ -24,24 +24,24 @@ import {
     Bike,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
-// NOTE: Replace these with your own Riverside vs. Uniworld images once available.
-// Folder suggestion: src/assets/RiversidevsUniworld/
-// import HeroImage1 from "../../assets/RiversidevsUniworld/riverside-ship.jpg";
-// import HeroImage2 from "../../assets/RiversidevsUniworld/uniworld-ship.jpg";
-// import HeroImage3 from "../../assets/RiversidevsUniworld/riverside-ship2.jpg";
-// import RiversideOverviewImage from "../../assets/RiversidevsUniworld/riverside-overview.jpg";
-// import UniworldOverviewImage from "../../assets/RiversidevsUniworld/uniworld-overview.jpg";
-// import RiversideAtmosphereImage from "../../assets/RiversidevsUniworld/riverside-atmosphere.jpg";
-// import UniworldAtmosphereImage from "../../assets/RiversidevsUniworld/uniworld-atmosphere.jpg";
-// import RiversideFleetImage from "../../assets/RiversidevsUniworld/riverside-fleet.jpg";
-// import UniworldFleetImage from "../../assets/RiversidevsUniworld/uniworld-fleet.jpg";
-// import RiversideDiningImage from "../../assets/RiversidevsUniworld/riverside-dining.jpg";
-// import UniworldDiningImage from "../../assets/RiversidevsUniworld/uniworld-dining.jpg";
-// import RiversideSuiteImage from "../../assets/RiversidevsUniworld/riverside-suite.jpg";
-// import UniworldSuiteImage from "../../assets/RiversidevsUniworld/uniworld-suite.jpg";
-// import RiversideVsUniworldCtaImage from "../../assets/RiversidevsUniworld/riverside-uniworld-cta.jpg";
+// NOTE: Replace these with your own Riverside vs. Tauck images once available.
+// Folder suggestion: src/assets/RiversidevsTauck/
+// import HeroImage1 from "../../assets/RiversidevsTauck/riverside-ship.jpg";
+// import HeroImage2 from "../../assets/RiversidevsTauck/tauck-ship.jpg";
+// import HeroImage3 from "../../assets/RiversidevsTauck/riverside-ship2.jpg";
+// import RiversideOverviewImage from "../../assets/RiversidevsTauck/riverside-overview.jpg";
+// import TauckOverviewImage from "../../assets/RiversidevsTauck/tauck-overview.jpg";
+// import RiversideAtmosphereImage from "../../assets/RiversidevsTauck/riverside-atmosphere.jpg";
+// import TauckAtmosphereImage from "../../assets/RiversidevsTauck/tauck-atmosphere.jpg";
+// import RiversideFleetImage from "../../assets/RiversidevsTauck/riverside-fleet.jpg";
+// import TauckFleetImage from "../../assets/RiversidevsTauck/tauck-fleet.jpg";
+// import RiversideDiningImage from "../../assets/RiversidevsTauck/riverside-dining.jpg";
+// import TauckDiningImage from "../../assets/RiversidevsTauck/tauck-dining.jpg";
+// import RiversideSuiteImage from "../../assets/RiversidevsTauck/riverside-suite.jpg";
+// import TauckSuiteImage from "../../assets/RiversidevsTauck/tauck-suite.jpg";
+// import RiversideVsTauckCtaImage from "../../assets/RiversidevsTauck/riverside-tauck-cta.jpg";
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -49,7 +49,7 @@ import "../RiversideLuxuryCruisesReviews/RiversideLuxuryCruisesReviews.css";
 
 // Commented out images for comparison sections
 // import RiversideImage from "../../assets/VikingDanubeRiverCruises/AmaSonata_Budapest_Parliment_building.webp";
-// import UniworldImage from "../../assets/VikingRiverCruises/DE_Passau_Danube.webp";
+// import TauckImage from "../../assets/VikingRiverCruises/DE_Passau_Danube.webp";
 
 const schemaData = {
     "@context": "https://schema.org",
@@ -105,10 +105,10 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            name: "Riverside vs. Uniworld River Cruises | Which Luxury River Cruise Is Better?",
+            name: "Riverside vs. Tauck River Cruises | Which Luxury River Cruise Is Better?",
             description:
-                "Compare Riverside and Uniworld River Cruises. Discover differences in ships, suites, dining, service, itineraries, inclusions, pricing, excursions, and which luxury river cruise line is the best fit for your travel style.",
-            url: "https://www.tripsandships.com/riverside-vs-uniworld-river-cruises",
+                "Compare Riverside and Tauck River Cruises. Discover differences in ships, suites, dining, service, itineraries, inclusions, pricing, excursions, and which luxury river cruise line is the best fit for your travel style.",
+            url: "https://www.tripsandships.com/riverside-vs-tauck-river-cruises",
             author: { "@type": "Person", name: "Angela Hughes" },
             publisher: {
                 "@type": "Organization",
@@ -141,8 +141,8 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 4,
-                    name: "Riverside vs. Uniworld",
-                    item: "https://www.tripsandships.com/riverside-vs-uniworld-river-cruises",
+                    name: "Riverside vs. Tauck",
+                    item: "https://www.tripsandships.com/riverside-vs-tauck-river-cruises",
                 },
             ],
         },
@@ -151,10 +151,10 @@ const schemaData = {
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Is Riverside more luxurious than Uniworld?",
+                    name: "Is Riverside more luxurious than Tauck?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are luxury river cruise lines. Riverside focuses on spacious suites and boutique elegance, while Uniworld emphasizes lavish interiors and an all-inclusive luxury experience.",
+                        text: "Both offer luxury experiences. Riverside emphasizes boutique elegance and spacious accommodations, while Tauck focuses on guided travel and destination immersion.",
                     },
                 },
                 {
@@ -162,23 +162,15 @@ const schemaData = {
                     name: "Which cruise line has larger suites?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Riverside generally offers larger suite accommodations.",
+                        text: "Riverside generally offers significantly larger suites.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which has better service?",
+                    name: "Which includes more excursions?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both provide exceptional service, though Uniworld is widely recognized for its consistently outstanding hospitality.",
-                    },
-                },
-                {
-                    "@type": "Question",
-                    name: "Which offers more destinations?",
-                    acceptedAnswer: {
-                        "@type": "Answer",
-                        text: "Uniworld operates a much larger worldwide fleet with itineraries beyond Europe.",
+                        text: "Tauck includes a broader range of guided and exclusive shore experiences.",
                     },
                 },
                 {
@@ -186,39 +178,39 @@ const schemaData = {
                     name: "Which is better for first-time river cruisers?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are excellent choices. Riverside offers a relaxed introduction to luxury river cruising, while Uniworld provides a more inclusive experience.",
+                        text: "Both are excellent. Riverside offers a relaxed luxury introduction, while Tauck provides more structured guidance.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which cruise line includes more excursions?",
+                    name: "Which cruise line is better for couples?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Uniworld generally includes a wider variety of guided experiences.",
+                        text: "Both appeal to couples, though Riverside's intimate atmosphere is especially popular for romantic vacations.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which is better for couples?",
+                    name: "Does Tauck include gratuities?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are ideal for couples, anniversaries, and special celebrations.",
+                        text: "Tauck includes many items that other cruise lines charge separately for, though inclusions vary by itinerary.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Riverside worth considering over Uniworld?",
+                    name: "Which cruise line offers better value?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Absolutely. Travelers who prioritize spacious accommodations and boutique luxury often prefer Riverside.",
+                        text: "If you prioritize accommodations, Riverside offers outstanding value. If you value comprehensive experiences and guided travel, Tauck may provide greater overall value.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which cruise line costs more?",
+                    name: "Which has more personalized service?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Pricing is similar, though Uniworld's more inclusive model can result in slightly higher fares.",
+                        text: "Both offer exceptional service, though Riverside's smaller fleet creates an especially intimate onboard atmosphere.",
                     },
                 },
                 {
@@ -226,23 +218,23 @@ const schemaData = {
                     name: "Should I use a travel advisor?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. A luxury travel advisor can help compare both cruise lines, identify promotions, and recommend the itinerary that best suits your travel goals.",
+                        text: "Yes. A luxury travel advisor can compare both brands, identify the best itinerary, and help you choose the cruise that fits your travel style.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "How do the design and onboard atmospheres compare?",
+                    name: "Do Riverside and Tauck sail the same rivers in Europe?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Uniworld features opulent, classic European designs with unique regional antiques and custom fabrics on every ship. Riverside features a contemporary, clean boutique hotel aesthetic with modern layouts and minimalist design.",
+                        text: "Yes, both cruise lines sail major European rivers like the Danube and the Rhine. However, Tauck also has a broader presence across other global itineraries and destination packages, whereas Riverside focuses specifically on premium European riverways with its boutique ships.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Are premium drinks included in the fare for both lines?",
+                    name: "How do the dining packages compare between Riverside and Tauck?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Uniworld includes all premium wine, spirits, and craft beers in their base fare. Riverside offers a choice between a cruise-only fare (where drinks are paid individually) and an all-inclusive package that covers premium beverage packages.",
+                        text: "Tauck features fully all-inclusive dining and beverages included in the upfront cruise fare. Riverside offers a flexible approach, allowing guests to choose between all-inclusive packages or cruise-only rates where dining is included but premium alcoholic beverages and specific excursions can be purchased separately.",
                     },
                 },
             ],
@@ -255,52 +247,48 @@ function FAQ() {
 
     const faqData = [
         {
-            q: "Is Riverside more luxurious than Uniworld?",
-            a: "Both are luxury river cruise lines. Riverside focuses on spacious suites and boutique elegance, while Uniworld emphasizes lavish interiors and an all-inclusive luxury experience.",
+            q: "Is Riverside more luxurious than Tauck?",
+            a: "Both offer luxury experiences. Riverside emphasizes boutique elegance and spacious accommodations, while Tauck focuses on guided travel and destination immersion.",
         },
         {
             q: "Which cruise line has larger suites?",
-            a: "Riverside generally offers larger suite accommodations.",
+            a: "Riverside generally offers significantly larger suites.",
         },
         {
-            q: "Which has better service?",
-            a: "Both provide exceptional service, though Uniworld is widely recognized for its consistently outstanding hospitality.",
-        },
-        {
-            q: "Which offers more destinations?",
-            a: "Uniworld operates a much larger worldwide fleet with itineraries beyond Europe.",
+            q: "Which includes more excursions?",
+            a: "Tauck includes a broader range of guided and exclusive shore experiences.",
         },
         {
             q: "Which is better for first-time river cruisers?",
-            a: "Both are excellent choices. Riverside offers a relaxed introduction to luxury river cruising, while Uniworld provides a more inclusive experience.",
+            a: "Both are excellent. Riverside offers a relaxed luxury introduction, while Tauck provides more structured guidance.",
         },
         {
-            q: "Which cruise line includes more excursions?",
-            a: "Uniworld generally includes a wider variety of guided experiences.",
+            q: "Which cruise line is better for couples?",
+            a: "Both appeal to couples, though Riverside's intimate atmosphere is especially popular for romantic vacations.",
         },
         {
-            q: "Which is better for couples?",
-            a: "Both are ideal for couples, anniversaries, and special celebrations.",
+            q: "Does Tauck include gratuities?",
+            a: "Tauck includes many items that other cruise lines charge separately for, though inclusions vary by itinerary.",
         },
         {
-            q: "Is Riverside worth considering over Uniworld?",
-            a: "Absolutely. Travelers who prioritize spacious accommodations and boutique luxury often prefer Riverside.",
+            q: "Which cruise line offers better value?",
+            a: "If you prioritize accommodations, Riverside offers outstanding value. If you value comprehensive experiences and guided travel, Tauck may provide greater overall value.",
         },
         {
-            q: "Which cruise line costs more?",
-            a: "Pricing is similar, though Uniworld's more inclusive model can result in slightly higher fares.",
+            q: "Which has more personalized service?",
+            a: "Both offer exceptional service, though Riverside's smaller fleet creates an especially intimate onboard atmosphere.",
         },
         {
             q: "Should I use a travel advisor?",
-            a: "Yes. A luxury travel advisor can help compare both cruise lines, identify promotions, and recommend the itinerary that best suits your travel goals.",
+            a: "Yes. A luxury travel advisor can compare both brands, identify the best itinerary, and help you choose the cruise that fits your travel style.",
         },
         {
-            q: "How do the design and onboard atmospheres compare?",
-            a: "Uniworld features opulent, classic European designs with unique regional antiques and custom fabrics on every ship. Riverside features a contemporary, clean boutique hotel aesthetic with modern layouts and minimalist design.",
+            q: "Do Riverside and Tauck sail the same rivers in Europe?",
+            a: "Yes, both cruise lines sail major European rivers like the Danube and the Rhine. However, Tauck also has a broader presence across other global itineraries and destination packages, whereas Riverside focuses specifically on premium European riverways with its boutique ships.",
         },
         {
-            q: "Are premium drinks included in the fare for both lines?",
-            a: "Uniworld includes all premium wine, spirits, and craft beers in their base fare. Riverside offers a choice between a cruise-only fare (where drinks are paid individually) and an all-inclusive package that covers premium beverage packages.",
+            q: "How do the dining packages compare between Riverside and Tauck?",
+            a: "Tauck features fully all-inclusive dining and beverages included in the upfront cruise fare. Riverside offers a flexible approach, allowing guests to choose between all-inclusive packages or cruise-only rates where dining is included but premium alcoholic beverages and specific excursions can be purchased separately.",
         },
     ];
 
@@ -333,7 +321,7 @@ function FAQ() {
     );
 }
 
-const RiversideVsUniworld = () => {
+const RiversideVsTauck = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [ctaReadMore, setCtaReadMore] = useState(false);
     const [readMore, setReadMore] = useState(false);
@@ -350,16 +338,16 @@ const RiversideVsUniworld = () => {
         <div className="Asc-page-wrapper">
             <Helmet>
                 <title>
-                    Riverside vs. Uniworld River Cruises | Which Luxury River Cruise Is
+                    Riverside vs. Tauck River Cruises | Which Luxury River Cruise Is
                     Better?
                 </title>
                 <meta
                     name="title"
-                    content="Riverside vs. Uniworld | Luxury River Cruise Comparison"
+                    content="Riverside vs. Tauck | Luxury River Cruise Comparison"
                 />
                 <meta
                     name="description"
-                    content="Compare Riverside and Uniworld River Cruises. Discover differences in ships, suites, dining, service, itineraries, inclusions, pricing, excursions, and which luxury river cruise line is the best fit for your travel style."
+                    content="Compare Riverside and Tauck River Cruises. Discover differences in ships, suites, dining, service, itineraries, inclusions, pricing, excursions, and which luxury river cruise line is the best fit for your travel style."
                 />
                 <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
             </Helmet>
@@ -380,13 +368,13 @@ const RiversideVsUniworld = () => {
 
                 <div className="Scenic_hero_content">
                     <h1>
-                        Riverside vs. Uniworld River Cruises: <br /> Which Luxury River
+                        Riverside vs. Tauck River Cruises: <br /> Which Luxury River
                         Cruise Is Better?
                     </h1>
 
                     <p>
-                        Choosing between Riverside Luxury Cruises and Uniworld Boutique
-                        River Cruises comes down to one question: what kind of luxury
+                        Choosing between Riverside Luxury Cruises and Tauck River
+                        Cruises comes down to one question: what kind of luxury
                         experience are you looking for? Both cruise lines deliver
                         exceptional European river cruises, outstanding dining, and
                         beautiful itineraries.
@@ -397,10 +385,10 @@ const RiversideVsUniworld = () => {
                         <>
                             <p>
                                 However, they appeal to different travelers. Riverside focuses
-                                on spacious suites, boutique hospitality, and a relaxed
-                                onboard atmosphere, while Uniworld emphasizes lavish,
-                                individually designed interiors, a high staff-to-guest ratio,
-                                and one of the most inclusive experiences on Europe's rivers.
+                                on boutique luxury, spacious suites, and a relaxed onboard
+                                atmosphere, while Tauck is known for highly curated land
+                                experiences, nearly all-inclusive pricing, and exclusive
+                                cultural access that extends beyond the ship.
                             </p>
 
                             <p
@@ -453,7 +441,7 @@ const RiversideVsUniworld = () => {
             <section className="Asc-section Asc-bg-soft" id="Asc-fleet">
                 <div className="Asc-container">
                     <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Riverside vs Uniworld Quick Comparison</h2>
+                        <h2 className="Asc-h2">Riverside vs Tauck Quick Comparison</h2>
                         <div className="Asc-accent-line"></div>
                     </div>
 
@@ -463,7 +451,7 @@ const RiversideVsUniworld = () => {
                                 <tr>
                                     <th>Feature</th>
                                     <th>Riverside</th>
-                                    <th>Uniworld</th>
+                                    <th>Tauck</th>
                                 </tr>
                             </thead>
 
@@ -473,7 +461,7 @@ const RiversideVsUniworld = () => {
                                         <strong>Atmosphere</strong>
                                     </td>
                                     <td>Boutique &amp; relaxed</td>
-                                    <td>Elegant &amp; opulent</td>
+                                    <td>Guided &amp; enriching</td>
                                 </tr>
 
                                 <tr>
@@ -481,7 +469,7 @@ const RiversideVsUniworld = () => {
                                         <strong>Fleet Size</strong>
                                     </td>
                                     <td>3 ships</td>
-                                    <td>15+ ships</td>
+                                    <td>European fleet</td>
                                 </tr>
 
                                 <tr>
@@ -489,7 +477,7 @@ const RiversideVsUniworld = () => {
                                         <strong>Suites</strong>
                                     </td>
                                     <td>Large all-suite focus</td>
-                                    <td>Wide variety of suites</td>
+                                    <td>Elegant staterooms &amp; suites</td>
                                 </tr>
 
                                 <tr>
@@ -497,7 +485,7 @@ const RiversideVsUniworld = () => {
                                         <strong>Dining</strong>
                                     </td>
                                     <td>Gourmet regional cuisine</td>
-                                    <td>Award-winning dining</td>
+                                    <td>Fine dining with local influence</td>
                                 </tr>
 
                                 <tr>
@@ -505,23 +493,23 @@ const RiversideVsUniworld = () => {
                                         <strong>Excursions</strong>
                                     </td>
                                     <td>Included highlights</td>
-                                    <td>Extensive included excursions</td>
+                                    <td>Extensive included experiences</td>
                                 </tr>
 
                                 <tr>
                                     <td>
-                                        <strong>Butler Service</strong>
+                                        <strong>Transfers</strong>
                                     </td>
-                                    <td>Select suites</td>
-                                    <td>Included in higher categories</td>
+                                    <td>Varies by sailing</td>
+                                    <td>Often included</td>
                                 </tr>
 
                                 <tr>
                                     <td>
                                         <strong>Best For</strong>
                                     </td>
-                                    <td>Relaxed luxury</td>
-                                    <td>All-inclusive boutique luxury</td>
+                                    <td>Boutique luxury</td>
+                                    <td>Guided cultural exploration</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -530,7 +518,7 @@ const RiversideVsUniworld = () => {
             </section>
 
             {/* ── RIVERSIDE VS SCENIC COMPARISON SECTION ───────────────────── */}
-            <section className="rlc-rvs-section" id="riverside-vs-uniworld-comparison">
+            <section className="rlc-rvs-section" id="riverside-vs-tauck-comparison">
                 <div className="rlc-rvs-container">
                     <div className="rlc-rvs-grid">
                         {/* Riverside Card */}
@@ -544,18 +532,18 @@ const RiversideVsUniworld = () => {
                             </div>
                             <h2 className="rlc-rvs-card-title">About Riverside Luxury Cruises</h2>
                             <p className="rlc-rvs-card-intro">
-                                Riverside operates an intimate fleet of luxury river ships designed around comfort, personalized service, and elegant European travel.
+                                Riverside was created for travelers seeking refined luxury with a boutique hotel feel.
                             </p>
 
                             <h3 className="rlc-rvs-list-title">Highlights include:</h3>
                             <ul className="rlc-rvs-list">
                                 {[
                                     "Spacious all-suite accommodations",
-                                    "Relaxed luxury",
-                                    "Exceptional cuisine",
-                                    "Boutique atmosphere",
-                                    "Personalized service",
-                                    "Classic European itineraries",
+                                    "Personalized hospitality",
+                                    "Elegant contemporary design",
+                                    "Relaxed pace",
+                                    "Gourmet dining",
+                                    "Scenic European itineraries",
                                 ].map((item, i) => (
                                     <li key={i} className="rlc-rvs-item">
                                         <Check size={16} className="rlc-rvs-icon" />
@@ -565,33 +553,33 @@ const RiversideVsUniworld = () => {
                             </ul>
 
                             <p className="rlc-rvs-footer-quote">
-                                Riverside feels like a luxury boutique hotel floating through Europe.
+                                The experience emphasizes comfort, privacy, and exceptional service.
                             </p>
                         </div>
 
-                        {/* Uniworld Card */}
+                        {/* Tauck Card */}
                         <div className="rlc-rvs-card">
                             <div className="rlc-rvs-image-wrap">
                                 <img
-                                    //   src={UniworldImage}
-                                    alt="Uniworld Luxury River Cruise Ship sailing in Germany"
+                                    //   src={TauckImage}
+                                    alt="Tauck Luxury River Cruise Ship sailing in Germany"
                                     className="rlc-rvs-card-img"
                                 />
                             </div>
-                            <h2 className="rlc-rvs-card-title">About Uniworld Boutique River Cruises</h2>
+                            <h2 className="rlc-rvs-card-title">About Tauck River Cruises</h2>
                             <p className="rlc-rvs-card-intro">
-                                Uniworld is one of the most recognized names in luxury river cruising.
+                                Tauck has been creating guided travel experiences for over a century and brings that expertise to its river cruises.
                             </p>
 
                             <h3 className="rlc-rvs-list-title">The cruise line is known for:</h3>
                             <ul className="rlc-rvs-list">
                                 {[
-                                    "Individually designed ships",
-                                    "Boutique hotel atmosphere",
-                                    "Lavish interiors",
-                                    "High staff-to-guest ratio",
-                                    "Award-winning cuisine",
-                                    "Extensive all-inclusive offerings",
+                                    "Comprehensive itineraries",
+                                    "Exclusive shore experiences",
+                                    "Guided cultural immersion",
+                                    "Premium hotels before and after select cruises",
+                                    "Nearly all-inclusive pricing",
+                                    "Exceptional tour directors",
                                 ].map((item, i) => (
                                     <li key={i} className="rlc-rvs-item">
                                         <Check size={16} className="rlc-rvs-icon" />
@@ -601,7 +589,7 @@ const RiversideVsUniworld = () => {
                             </ul>
 
                             <p className="rlc-rvs-footer-quote">
-                                Every Uniworld ship features unique décor inspired by the regions it sails.
+                                Tauck blends luxury cruising with expertly guided travel.
                             </p>
                         </div>
                     </div>
@@ -614,14 +602,14 @@ const RiversideVsUniworld = () => {
             </section>
 
             {/* ── PRICING COMPARISON SECTION ───────────────────────────────── */}
-            <section className="rlc-pricing-section" id="riverside-vs-uniworld-pricing">
+            <section className="rlc-pricing-section" id="riverside-vs-tauck-pricing">
                 <div className="rlc-pricing-container">
                     <div className="rlc-pricing-header">
                         <span className="rlc-pricing-eyebrow">Cost &amp; Value</span>
                         <h2 className="rlc-pricing-title">Pricing Comparison</h2>
                         <div className="rlc-pricing-accent"></div>
                         <p className="rlc-pricing-intro">
-                            Both cruise lines compete within the luxury river cruise market.
+                            Both cruise lines compete in the premium luxury segment.
                         </p>
                     </div>
 
@@ -632,7 +620,7 @@ const RiversideVsUniworld = () => {
                             <ul className="rlc-pricing-list">
                                 {[
                                     "Luxury pricing",
-                                    "Excellent suite value",
+                                    "Excellent value for spacious suites",
                                     "Boutique experience",
                                 ].map((item, i) => (
                                     <li key={i} className="rlc-pricing-item">
@@ -643,14 +631,15 @@ const RiversideVsUniworld = () => {
                             </ul>
                         </div>
 
-                        {/* Uniworld Pricing Card */}
+                        {/* Tauck Pricing Card */}
                         <div className="rlc-pricing-card">
-                            <h3 className="rlc-pricing-brand">Uniworld</h3>
+                            <h3 className="rlc-pricing-brand">Tauck</h3>
                             <ul className="rlc-pricing-list">
                                 {[
                                     "Premium pricing",
-                                    "More inclusive experience",
-                                    "Extensive amenities",
+                                    "Nearly all-inclusive",
+                                    "Extensive excursions",
+                                    "More land experiences included",
                                 ].map((item, i) => (
                                     <li key={i} className="rlc-pricing-item">
                                         <Check size={18} className="rlc-pricing-icon" />
@@ -663,14 +652,14 @@ const RiversideVsUniworld = () => {
 
                     <div className="rlc-pricing-conclusion">
                         <p>
-                            Both provide excellent value depending on your travel priorities.
+                            While Tauck often costs more, many travelers appreciate the additional inclusions.
                         </p>
                     </div>
                 </div>
             </section>
 
             {/* ── SHIPS & FLEET SECTION ───────────────────────────────────── */}
-            <section className="rlc-flt-section" id="riverside-vs-uniworld-fleet">
+            <section className="rlc-flt-section" id="riverside-vs-tauck-fleet">
                 <div className="rlc-flt-container">
                     <div className="rlc-flt-header">
                         <span className="rlc-flt-eyebrow">Vessels &amp; Capacity</span>
@@ -698,7 +687,7 @@ const RiversideVsUniworld = () => {
                             </div>
 
                             <p className="rlc-flt-desc">
-                                Its smaller fleet allows Riverside to focus on highly personalized service and carefully curated European itineraries.
+                                Each ship offers an intimate atmosphere with fewer guests and spacious accommodations.
                             </p>
 
                             <div className="rlc-flt-best-for">
@@ -714,37 +703,36 @@ const RiversideVsUniworld = () => {
                             </div>
                         </div>
 
-                        {/* Uniworld Card */}
+                        {/* Tauck Card */}
                         <div className="rlc-flt-card">
                             <div className="rlc-rvs-image-wrap">
                                 <img
-                                    //   src={UniworldFleetImage}
-                                    alt="Uniworld Luxury River Cruise Fleet"
+                                    //   src={TauckFleetImage}
+                                    alt="Tauck Luxury River Cruise Fleet"
                                     className="rlc-rvs-card-img"
                                 />
                             </div>
-                            <h3 className="rlc-flt-brand">Uniworld</h3>
+                            <h3 className="rlc-flt-brand">Tauck</h3>
 
                             <p className="rlc-flt-desc" style={{ marginBottom: "20px" }}>
-                                Uniworld operates a much larger fleet throughout Europe, Egypt, India, Peru, and Southeast Asia.
+                                Tauck operates a fleet of elegant river ships throughout Europe.
                             </p>
 
-                            <h4 className="rlc-flt-sub-title">Popular Ships Include:</h4>
+                            <h4 className="rlc-flt-sub-title">Popular Itineraries Sail On:</h4>
                             <div className="rlc-flt-ship-tags">
                                 {[
-                                    "S.S. Beatrice",
-                                    "S.S. Maria Theresa",
-                                    "S.S. Joie de Vivre",
-                                    "S.S. Bon Voyage",
-                                    "River Queen",
-                                    "River Princess",
+                                    "Danube",
+                                    "Rhine",
+                                    "Rhône",
+                                    "Seine",
+                                    "Douro",
                                 ].map((ship, idx) => (
                                     <span key={idx} className="rlc-flt-tag">{ship}</span>
                                 ))}
                             </div>
 
                             <p className="rlc-flt-desc">
-                                Uniworld's 15+ ship fleet also sails the Venice Lagoon, the Mekong, and destinations well beyond Europe.
+                                Tauck's ships are intentionally designed with fewer passengers to maximize comfort.
                             </p>
 
                             <div className="rlc-flt-best-for">
@@ -754,13 +742,15 @@ const RiversideVsUniworld = () => {
                                 <div className="rlc-flt-best-content">
                                     <span className="rlc-flt-best-title">Best For:</span>
                                     <p className="rlc-flt-best-text">
-                                        Travelers seeking the widest variety of destinations.
+                                        Travelers who want an intimate ship paired with expertly guided journeys ashore.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <p style={{ textAlign: "center", marginTop: "24px", fontStyle: "italic" }}>
+                        Winner: Tie — both offer intimate ships with exceptional service.
+                    </p>
                 </div>
             </section>
 
@@ -772,7 +762,7 @@ const RiversideVsUniworld = () => {
                         <h2 className="azs-section-title">Dining Experience</h2>
                         <div className="azs-section-accent"></div>
                         <p className="azs-section-subtitle">
-                            Seasonal Regional Cuisine vs. Farm-to-Table Culinary Experiences
+                            Gourmet Regional Cuisine vs. Fine Dining with Local Influence
                         </p>
                     </div>
 
@@ -831,18 +821,18 @@ const RiversideVsUniworld = () => {
                             </div>
                         </div>
 
-                        {/* Uniworld Card */}
+                        {/* Tauck Card */}
                         <div className="azs-dining-card azs-seabourn-dining">
                             <div className="azs-dining-image-wrap">
                                 <img
-                                    //   src={UniworldDiningImage}
-                                    alt="Uniworld multiple fine dining venues"
+                                    //   src={TauckDiningImage}
+                                    alt="Tauck multiple fine dining venues"
                                     className="azs-dining-img"
                                 />
 
                                 <div className="azs-dining-badge-wrapper">
                                     <span className="azs-dining-badge azs-azamara-badge">
-                                        Farm-to-Table Regional Cuisine
+                                        Fine Dining with Local Influence
                                     </span>
                                 </div>
                             </div>
@@ -851,22 +841,22 @@ const RiversideVsUniworld = () => {
                                     <div className="azs-dining-icon-circle">
                                         <ChefHat size={24} className="azs-dining-icon" />
                                     </div>
-                                    <h3 className="azs-dining-title">Uniworld Dining</h3>
+                                    <h3 className="azs-dining-title">Tauck Dining</h3>
                                 </div>
                                 <p className="azs-dining-intro">
-                                    Uniworld places a strong emphasis on authentic regional
-                                    flavors, sourced locally and served with a refined,
-                                    destination-driven touch.
+                                    Tauck's culinary program extends beyond the ship into
+                                    local restaurants and unique venues, pairing fine dining
+                                    with authentic regional flavor.
                                 </p>
                                 <div className="azs-dining-body">
-                                    <h4 className="azs-dining-group-title">Uniworld offers:</h4>
+                                    <h4 className="azs-dining-group-title">Tauck offers:</h4>
                                     <ul className="azs-dining-list">
                                         {[
-                                            "Farm-to-table cuisine",
-                                            "Regional dishes",
-                                            "Premium wines",
-                                            "Specialty dining events",
-                                            "Local culinary experiences",
+                                            "Fine dining",
+                                            "Regional specialties",
+                                            "Local wines",
+                                            "Carefully curated menus",
+                                            "Special culinary experiences ashore",
                                         ].map((item, idx) => (
                                             <li key={idx} className="azs-dining-list-item">
                                                 <div className="azs-dining-list-icon-wrapper">
@@ -891,7 +881,7 @@ const RiversideVsUniworld = () => {
             </section>
 
             {/* ── EDITORIAL PREMIUM COMPARISON ROWS (SERVICE & ATMOSPHERE) ───── */}
-            <section className="rlc-prem-section" id="riverside-vs-uniworld-service-atmosphere">
+            <section className="rlc-prem-section" id="riverside-vs-tauck-service-atmosphere">
                 <div className="rlc-prem-container">
 
                     {/* Row 1: Service */}
@@ -908,7 +898,7 @@ const RiversideVsUniworld = () => {
                             </div>
                             <div className="rlc-prem-winner-tag">
                                 <Star size={14} fill="var(--bg-white)" />
-                                <span>Winner: Uniworld</span>
+                                <span>Winner: Tauck</span>
                             </div>
                         </div>
 
@@ -937,19 +927,19 @@ const RiversideVsUniworld = () => {
                             </p>
                         </div>
 
-                        {/* Uniworld Column */}
+                        {/* Tauck Column */}
                         <div className="rlc-prem-card rlc-winner-card">
                             <div className="rlc-prem-card-header">
                                 <Award size={24} className="rlc-prem-brand-icon" />
-                                <h4 className="rlc-prem-brand-name">Uniworld</h4>
+                                <h4 className="rlc-prem-brand-name">Tauck</h4>
                             </div>
-                            <h5 className="rlc-prem-list-title">Uniworld Offers:</h5>
+                            <h5 className="rlc-prem-list-title">Tauck Offers:</h5>
                             <ul className="rlc-prem-list">
                                 {[
-                                    "High crew-to-guest ratio",
-                                    "Butler service (select suites)",
-                                    "Exceptional concierge service",
-                                    "Personalized attention",
+                                    "Seamless logistics",
+                                    "Personalized guidance",
+                                    "Outstanding customer service",
+                                    "Expert destination knowledge",
                                 ].map((item, idx) => (
                                     <li key={idx} className="rlc-prem-item">
                                         <Check size={16} className="rlc-prem-item-icon" />
@@ -958,7 +948,7 @@ const RiversideVsUniworld = () => {
                                 ))}
                             </ul>
                             <p className="rlc-prem-desc">
-                                Service consistently ranks among the best in luxury river cruising.
+                                Its combination of onboard hospitality and destination expertise is difficult to match.
                             </p>
                         </div>
                     </div>
@@ -1006,19 +996,19 @@ const RiversideVsUniworld = () => {
                             </p>
                         </div>
 
-                        {/* Uniworld Column */}
+                        {/* Tauck Column */}
                         <div className="rlc-prem-card rlc-winner-card">
                             <div className="rlc-prem-card-header">
                                 <Bike size={24} className="rlc-prem-brand-icon" />
-                                <h4 className="rlc-prem-brand-name">Uniworld</h4>
+                                <h4 className="rlc-prem-brand-name">Tauck</h4>
                             </div>
                             <h5 className="rlc-prem-list-title">Atmosphere:</h5>
                             <ul className="rlc-prem-list">
                                 {[
-                                    "Elegant",
                                     "Sophisticated",
-                                    "Artistic",
                                     "Social",
+                                    "Educational",
+                                    "Destination-focused",
                                 ].map((item, idx) => (
                                     <li key={idx} className="rlc-prem-item">
                                         <Check size={16} className="rlc-prem-item-icon" />
@@ -1027,7 +1017,7 @@ const RiversideVsUniworld = () => {
                                 ))}
                             </ul>
                             <p className="rlc-prem-desc">
-                                Ships feature luxurious interiors filled with artwork, antiques, and custom furnishings.
+                                Many guests enjoy learning from onboard lectures and destination experts.
                             </p>
                         </div>
                     </div>
@@ -1041,12 +1031,12 @@ const RiversideVsUniworld = () => {
                                 <span className="rlc-prem-eyebrow">Rivers &amp; Waterways</span>
                                 <h3 className="rlc-prem-title">Destinations</h3>
                                 <p className="rlc-prem-intro">
-                                    Comparing the geographic reach of both fleets.
+                                    Comparing the itineraries and land experiences of both lines.
                                 </p>
                             </div>
                             <div className="rlc-prem-winner-tag">
                                 <Star size={14} fill="var(--bg-white)" />
-                                <span>Winner: Uniworld</span>
+                                <span>Winner: Tauck</span>
                             </div>
                         </div>
 
@@ -1076,20 +1066,20 @@ const RiversideVsUniworld = () => {
                             </p>
                         </div>
 
-                        {/* Uniworld Column */}
+                        {/* Tauck Column */}
                         <div className="rlc-prem-card rlc-winner-card">
                             <div className="rlc-prem-card-header">
                                 <MapPinned size={24} className="rlc-prem-brand-icon" />
-                                <h4 className="rlc-prem-brand-name">Uniworld</h4>
+                                <h4 className="rlc-prem-brand-name">Tauck</h4>
                             </div>
-                            <h5 className="rlc-prem-list-title">Sails Throughout:</h5>
+                            <h5 className="rlc-prem-list-title">Offers Itineraries On:</h5>
                             <ul className="rlc-prem-list">
                                 {[
-                                    "Danube, Rhine & Rhône",
-                                    "Seine & Douro",
-                                    "Venice Lagoon",
-                                    "Egypt, India & Peru",
-                                    "Mekong",
+                                    "Danube",
+                                    "Rhine",
+                                    "Rhône",
+                                    "Seine",
+                                    "Douro",
                                 ].map((item, idx) => (
                                     <li key={idx} className="rlc-prem-item">
                                         <Check size={16} className="rlc-prem-item-icon" />
@@ -1097,6 +1087,9 @@ const RiversideVsUniworld = () => {
                                     </li>
                                 ))}
                             </ul>
+                            <p className="rlc-prem-desc">
+                                Many journeys also include luxury land stays before or after the cruise.
+                            </p>
                         </div>
                     </div>
                     <div className="rlc-cta-btn-wrapper" style={{ display: "flex", justifyContent: "center", width: "100%" }}>
@@ -1115,8 +1108,8 @@ const RiversideVsUniworld = () => {
                         <h2 className="azs-section-title">Suites &amp; Accommodations</h2>
                         <div className="azs-section-accent"></div>
                         <p className="azs-section-subtitle">
-                            Some of the Largest Suites on European Rivers vs. Distinctive
-                            Boutique Décor on Every Ship
+                            Some of the Largest Suites on European Rivers vs. Elegant,
+                            Journey-Focused Staterooms
                         </p>
                     </div>
 
@@ -1174,15 +1167,15 @@ const RiversideVsUniworld = () => {
                             </div>
                         </div>
 
-                        {/* Uniworld Card */}
+                        {/* Tauck Card */}
                         <div className="azs-suites-card azs-azamara-suites">
                             <div className="azs-suites-image-wrap">
                                 <img
-                                    //   src={UniworldSuiteImage}
-                                    alt="Uniworld suite with butler service"
+                                    //   src={TauckSuiteImage}
+                                    alt="Tauck suite with butler service"
                                     className="azs-suites-img"
                                 />
-                                <span className="azs-suites-image-badge">Distinctive Décor on Every Ship</span>
+                                <span className="azs-suites-image-badge">Elegant, Well-Designed Comfort</span>
                             </div>
 
                             <div className="azs-suites-content">
@@ -1190,23 +1183,22 @@ const RiversideVsUniworld = () => {
                                     <div className="azs-suites-icon-circle">
                                         <Ship size={24} className="azs-suites-icon" />
                                     </div>
-                                    <h3 className="azs-suites-title">Uniworld Suites</h3>
+                                    <h3 className="azs-suites-title">Tauck Suites</h3>
                                 </div>
                                 <p className="azs-suites-intro">
-                                    Each Uniworld ship features a distinctive interior design
-                                    unlike any other river cruise line, with handcrafted
-                                    furnishings throughout.
+                                    While luxurious, Tauck generally focuses more on the
+                                    overall journey than oversized accommodations.
                                 </p>
                                 <div className="azs-suites-body">
-                                    <h4 className="azs-suites-group-title">Suites include:</h4>
+                                    <h4 className="azs-suites-group-title">Tauck offers:</h4>
                                     <ul className="azs-suites-list">
                                         {[
-                                            "Boutique décor",
-                                            "Handcrafted furnishings",
-                                            "Luxury bedding",
-                                            "Premium bath amenities",
-                                            "Butler service in select suites",
-                                            "River-view rooms",
+                                            "Comfortable suites",
+                                            "Elegant décor",
+                                            "Premium bedding",
+                                            "Well-designed bathrooms",
+                                            "Thoughtful storage",
+                                            "Panoramic windows",
                                         ].map((item, idx) => (
                                             <li key={idx} className="azs-suites-list-item">
                                                 <div className="azs-suites-list-icon-wrapper">
@@ -1219,7 +1211,7 @@ const RiversideVsUniworld = () => {
                                     <div className="azs-suites-divider"></div>
                                     <div className="azs-suites-highlight-box azs-azamara-suites-highlight">
                                         <p className="azs-suites-highlight-text">
-                                            Winner for décor and unique design.
+                                            Travelers seeking spacious accommodations will likely prefer Riverside.
                                         </p>
                                     </div>
                                 </div>
@@ -1238,7 +1230,7 @@ const RiversideVsUniworld = () => {
                         <h2 className="azs-section-title">Shore Excursions</h2>
                         <div className="azs-section-accent"></div>
                         <p className="azs-section-subtitle">
-                            Included Highlights vs. Multiple Daily Included Excursions
+                            Included Highlights vs. Exclusive Access You Can't Arrange on Your Own
                         </p>
                     </div>
 
@@ -1281,28 +1273,29 @@ const RiversideVsUniworld = () => {
                             </div>
                         </div>
 
-                        {/* Uniworld Card */}
+                        {/* Tauck Card */}
                         <div className="azs-entertainment-card azs-seabourn-ent">
                             <div className="azs-ent-header">
                                 <div className="azs-ent-icon-circle">
                                     <Bike size={24} className="azs-ent-icon" />
                                 </div>
-                                <h3 className="azs-ent-title">Uniworld Excursions</h3>
+                                <h3 className="azs-ent-title">Tauck Excursions</h3>
                             </div>
                             <p className="azs-ent-intro">
-                                Excursion variety is one of Uniworld's strongest advantages,
-                                with multiple daily tour options on nearly every itinerary.
+                                Shore excursions are one of Tauck's greatest strengths,
+                                widely recognized for exclusive access many travelers
+                                cannot arrange independently.
                             </p>
                             <div className="azs-ent-body">
-                                <h4 className="azs-ent-group-title">Uniworld includes:</h4>
+                                <h4 className="azs-ent-group-title">Included experiences often feature:</h4>
                                 <ul className="azs-ent-list">
                                     {[
-                                        "Multiple daily tour options",
-                                        "Local experts",
+                                        "Private palace visits",
+                                        "After-hours museum access",
+                                        "Local cultural performances",
+                                        "Castle tours",
                                         "Culinary experiences",
-                                        "Walking tours",
-                                        "Active excursions",
-                                        "Exclusive cultural events",
+                                        "Expert local guides",
                                     ].map((item, idx) => (
                                         <li key={idx} className="azs-ent-list-item">
                                             <div className="azs-ent-list-icon-wrapper">
@@ -1325,84 +1318,123 @@ const RiversideVsUniworld = () => {
             </section>
 
             {/* ===== MODERN BENTO GRID GALLERY SHOWCASE ===== */}
-            <section className="senianta-gallery-section" style={{ backgroundColor: "var(--bg-soft)" }}>
-                <div className="senianta-gallery-inner">
-                    <div className="senianta-gallery-header">
-                        <h2 className="senianta-gallery-h2">Global Explorations</h2>
-                        <div className="senianta-gallery-divider"></div>
-                        <p className="senianta-gallery-p">
-                            From classic European rivers to exotic global waterways and luxury expeditions, discover the regions where Riverside and Uniworld sail.
+            <section className="rvt-gallery-section" style={{ backgroundColor: "var(--bg-soft)" }}>
+                <div className="rvt-gallery-inner">
+                    <div className="rvt-gallery-header">
+                        <h2 className="rvt-gallery-h2">Global Explorations</h2>
+                        <div className="rvt-gallery-divider"></div>
+                        <p className="rvt-gallery-p">
+                            From the Danube's imperial capitals to Portugal's Douro Valley, discover the classic European rivers where Riverside and Tauck sail.
                         </p>
                     </div>
 
-                    <div className="senianta-gallery-bento-grid">
+                    <div className="rvt-gallery-bento-grid">
                         {/* 01: Large Featured Item - The Danube River */}
-                        <div className="senianta-gallery-item senianta-gallery-feature">
-                            <div className="senianta-gallery-image-box">
+                        <div className="rvt-gallery-item rvt-gallery-feature">
+                            <div className="rvt-gallery-image-box">
                                 <img
                                     //   src={RiversideOverviewImage}
-                                    alt="Danube River Budapest Parliament Uniworld views"
-                                    className="senianta-gallery-img"
+                                    alt="Danube River Budapest Parliament Tauck views"
+                                    className="rvt-gallery-img"
                                 />
-                                <div className="senianta-gallery-overlay">
-                                    <span className="senianta-gallery-badge">
-                                        Classic Europe
-                                    </span>
-                                    <h3 className="senianta-gallery-h3">The Danube River</h3>
-                                    <p className="senianta-gallery-item-p">
-                                        Sailing through the heart of Europe past castles, vineyards, and historic capitals like Vienna and Budapest. Both Riverside and Uniworld offer premier Danube itineraries.
+                                <div className="rvt-gallery-overlay">
+
+                                    <h3 className="rvt-gallery-h3">The Danube River</h3>
+                                    <p className="rvt-gallery-item-p">
+                                        Sailing through the heart of Europe past castles, vineyards, and historic capitals like Vienna and Budapest. Both Riverside and Tauck offer premier Danube itineraries.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* 02: Vertical Item - The Mekong River */}
-                        <div className="senianta-gallery-item senianta-gallery-tall">
-                            <div className="senianta-gallery-image-box">
+                        {/* 02: Vertical Item - The Seine River */}
+                        <div className="rvt-gallery-item rvt-gallery-tall">
+                            <div className="rvt-gallery-image-box">
                                 <img
-                                    //   src={UniworldOverviewImage}
-                                    alt="Uniworld luxury ship on Mekong River Vietnam Cambodia"
-                                    className="senianta-gallery-img"
+                                    //   src={TauckOverviewImage}
+                                    alt="Tauck luxury ship on the Seine River France"
+                                    className="rvt-gallery-img"
                                 />
-                                <div className="senianta-gallery-overlay">
-                                    <span className="senianta-gallery-badge">Southeast Asia</span>
-                                    <h3 className="senianta-gallery-h3">The Mekong River</h3>
+                                <div className="rvt-gallery-overlay">
+
+                                    <h3 className="rvt-gallery-h3">The Seine River</h3>
+                                    <p className="rvt-gallery-item-p">
+                                        Sailing from Paris to the historical landing beaches of Normandy. Tauck operates active, fully-inclusive cruises along this scenic French waterway.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         {/* 03: Standard Item - The Douro Valley */}
-                        <div className="senianta-gallery-item">
-                            <div className="senianta-gallery-image-box">
+                        <div className="rvt-gallery-item">
+                            <div className="rvt-gallery-image-box">
                                 <img
-                                    //   src={UniworldAtmosphereImage}
-                                    alt="Douro River Portugal Uniworld cruises vineyards"
-                                    className="senianta-gallery-img"
+                                    //   src={TauckAtmosphereImage}
+                                    alt="Douro River Portugal Tauck cruises vineyards"
+                                    className="rvt-gallery-img"
                                 />
-                                <div className="senianta-gallery-overlay">
-                                    <span className="senianta-gallery-badge">
-                                        Portugal's Gold
-                                    </span>
-                                    <h3 className="senianta-gallery-h3">
+                                <div className="rvt-gallery-overlay">
+
+                                    <h3 className="rvt-gallery-h3">
                                         The Douro Valley
                                     </h3>
+                                    <p className="rvt-gallery-item-p">
+                                        Experiencing Portugal's stunning terraced vineyards and historic wine estates. Tauck offers exceptional Douro itineraries on dedicated vessels.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         {/* 04: Standard Item - The Rhine & Moselle */}
-                        <div className="senianta-gallery-item">
-                            <div className="senianta-gallery-image-box">
+                        <div className="rvt-gallery-item">
+                            <div className="rvt-gallery-image-box">
                                 <img
                                     //   src={RiversideAtmosphereImage}
                                     alt="Rhine river castle medieval towns Riverside cruises"
-                                    className="senianta-gallery-img"
+                                    className="rvt-gallery-img"
                                 />
-                                <div className="senianta-gallery-overlay">
-                                    <span className="senianta-gallery-badge">
-                                        Castles &amp; Vineyards
-                                    </span>
-                                    <h3 className="senianta-gallery-h3">The Rhine &amp; Moselle</h3>
+                                <div className="rvt-gallery-overlay">
+
+                                    <h3 className="rvt-gallery-h3">The Rhine &amp; Moselle</h3>
+                                    <p className="rvt-gallery-item-p">
+                                        Passing medieval castles, dramatic cliffs, and legendary vineyards. Both Riverside and Tauck offer diverse itineraries on the Rhine, Moselle, and Main.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 05: Wide Feature Item - The Rhône River */}
+                        <div className="rvt-gallery-item rvt-gallery-feature">
+                            <div className="rvt-gallery-image-box">
+                                <img
+                                    //   src={RiversideRavelImage}
+                                    alt="Rhone River Southern France scenery"
+                                    className="rvt-gallery-img"
+                                />
+                                <div className="rvt-gallery-overlay">
+
+                                    <h3 className="rvt-gallery-h3">The Rhône River</h3>
+                                    <p className="rvt-gallery-item-p">
+                                        Exploring Avignon, Lyon, and the rich gastronomy of Southern France. Riverside Ravel and Tauck vessels sail these world-famous French wine regions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 06: Standard Item - The Moselle Valley */}
+                        <div className="rvt-gallery-item">
+                            <div className="rvt-gallery-image-box">
+                                <img
+                                    //   src={RiversideMoselleImage}
+                                    alt="Moselle River vineyards and castles"
+                                    className="rvt-gallery-img"
+                                />
+                                <div className="rvt-gallery-overlay">
+
+                                    <h3 className="rvt-gallery-h3">The Moselle Valley</h3>
+                                    <p className="rvt-gallery-item-p">
+                                        Sailing past the steepest vineyards in Europe and fairytale villages. Both lines offer stunning cruises along this peaceful tributary of the Rhine.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1427,12 +1459,12 @@ const RiversideVsUniworld = () => {
                             </p>
                             <ul className="Asc-who-list">
                                 {[
-                                    "Spacious suites",
+                                    "Spacious luxury suites",
+                                    "Relaxed cruising",
                                     "Boutique atmosphere",
-                                    "Relaxed luxury",
-                                    "Quiet ships",
                                     "Personalized service",
-                                    "Modern elegance",
+                                    "Contemporary ship design",
+                                    "Quiet European vacations",
                                 ].map((item, i) => (
                                     <li key={i} className="Asc-who-list-item">
                                         <Check
@@ -1445,20 +1477,20 @@ const RiversideVsUniworld = () => {
                             </ul>
                         </div>
 
-                        {/* Uniworld Card */}
+                        {/* Tauck Card */}
                         <div className="Asc-who-card Asc-who-no">
-                            <h3 className="Asc-who-title">Who Should Choose Uniworld?</h3>
+                            <h3 className="Asc-who-title">Who Should Choose Tauck?</h3>
                             <p className="Asc-who-card-intro">
-                                Uniworld is an excellent choice if you prefer:
+                                Tauck is perfect if you prefer:
                             </p>
                             <ul className="Asc-who-list">
                                 {[
-                                    "Lavish interiors",
-                                    "Highly inclusive luxury",
-                                    "More destinations",
-                                    "Rich cultural experiences",
-                                    "Boutique hotel ambiance",
-                                    "Artistic ship design",
+                                    "Guided cultural experiences",
+                                    "Comprehensive itineraries",
+                                    "More included excursions",
+                                    "Exclusive destination access",
+                                    "Educational travel",
+                                    "Seamless logistics",
                                 ].map((item, i) => (
                                     <li key={i} className="Asc-who-list-item">
                                         <Check
@@ -1475,7 +1507,7 @@ const RiversideVsUniworld = () => {
             </section>
 
             {/* ── PROS & CONS SECTION ────────────────────────────────────── */}
-            <section className="rlc-pc-section" id="riverside-vs-uniworld-pros-cons">
+            <section className="rlc-pc-section" id="riverside-vs-tauck-pros-cons">
                 <div className="rlc-pc-container">
                     <div className="rlc-pc-header">
                         <h2 className="rlc-pc-title">Pros &amp; Cons</h2>
@@ -1495,12 +1527,12 @@ const RiversideVsUniworld = () => {
                                     </h4>
                                     <ul className="rlc-pc-list">
                                         {[
-                                            "Spacious accommodations",
+                                            "Spacious suites",
                                             "Boutique atmosphere",
-                                            "Personalized hospitality",
-                                            "Elegant ships",
-                                            "Relaxed experience",
-                                            "Excellent cuisine",
+                                            "Exceptional personalized service",
+                                            "Elegant dining",
+                                            "Relaxed pace",
+                                            "Modern luxury",
                                         ].map((item, idx) => (
                                             <li key={idx} className="rlc-pc-item">
                                                 <Check size={14} className="rlc-pc-icon rlc-pro" />
@@ -1519,8 +1551,7 @@ const RiversideVsUniworld = () => {
                                         {[
                                             "Smaller fleet",
                                             "Fewer itineraries",
-                                            "Fewer excursions",
-                                            "Limited global destinations",
+                                            "Fewer included excursions",
                                         ].map((item, idx) => (
                                             <li key={idx} className="rlc-pc-item">
                                                 <Minus size={14} className="rlc-pc-icon rlc-con" />
@@ -1532,9 +1563,9 @@ const RiversideVsUniworld = () => {
                             </div>
                         </div>
 
-                        {/* Uniworld Card */}
+                        {/* Tauck Card */}
                         <div className="rlc-pc-card">
-                            <h3 className="rlc-pc-brand">Uniworld</h3>
+                            <h3 className="rlc-pc-brand">Tauck</h3>
 
                             <div className="rlc-pc-lists-wrap">
                                 {/* Pros */}
@@ -1544,12 +1575,12 @@ const RiversideVsUniworld = () => {
                                     </h4>
                                     <ul className="rlc-pc-list">
                                         {[
-                                            "Extensive itineraries",
-                                            "Beautifully designed ships",
-                                            "Excellent service",
-                                            "More included excursions",
-                                            "Strong cultural experiences",
-                                            "Highly inclusive",
+                                            "Excellent guided experiences",
+                                            "Outstanding destination access",
+                                            "Nearly all-inclusive pricing",
+                                            "Expert tour directors",
+                                            "High-quality excursions",
+                                            "Exceptional planning",
                                         ].map((item, idx) => (
                                             <li key={idx} className="rlc-pc-item">
                                                 <Check size={14} className="rlc-pc-icon rlc-pro" />
@@ -1566,9 +1597,9 @@ const RiversideVsUniworld = () => {
                                     </h4>
                                     <ul className="rlc-pc-list">
                                         {[
-                                            "Higher pricing",
-                                            "Some travelers may find the décor more traditional",
-                                            "Smaller standard cabins compared to Riverside suites",
+                                            "Higher fares",
+                                            "More structured daily schedules",
+                                            "Smaller suite sizes compared to Riverside",
                                         ].map((item, idx) => (
                                             <li key={idx} className="rlc-pc-item">
                                                 <Minus size={14} className="rlc-pc-icon rlc-con" />
@@ -1612,10 +1643,9 @@ const RiversideVsUniworld = () => {
                             <ul className="Asc-verdict-list">
                                 {[
                                     "Spacious accommodations",
-                                    "Modern boutique luxury",
-                                    "Quiet atmosphere",
-                                    "Personalized service",
-                                    "Elegant simplicity",
+                                    "Boutique hospitality",
+                                    "Relaxation",
+                                    "Elegant onboard living",
                                 ].map((item, i) => (
                                     <li key={i} className="Asc-verdict-item">
                                         <Check size={18} className="Asc-verdict-icon" />
@@ -1625,19 +1655,18 @@ const RiversideVsUniworld = () => {
                             </ul>
                         </div>
 
-                        {/* Uniworld Column */}
+                        {/* Tauck Column */}
                         <div className="Asc-verdict-card Asc-verdict-regent">
                             <h3 className="Asc-verdict-card-title">
-                                Choose Uniworld if you want:
+                                Choose Tauck if you want:
                             </h3>
 
                             <ul className="Asc-verdict-list">
                                 {[
-                                    "Rich interior design",
-                                    "More destinations",
-                                    "Highly inclusive travel",
+                                    "Exclusive excursions",
                                     "Cultural immersion",
-                                    "Extensive excursions",
+                                    "Guided experiences",
+                                    "Comprehensive travel planning",
                                 ].map((item, i) => (
                                     <li key={i} className="Asc-verdict-item">
                                         <Check size={18} className="Asc-verdict-icon" />
@@ -1714,15 +1743,15 @@ const RiversideVsUniworld = () => {
                                 {[
                                     {
                                         icon: <MapPinned size={18} />,
-                                        label: "Compare itineraries",
+                                        label: "Compare cruise lines",
+                                    },
+                                    {
+                                        icon: <Compass size={18} />,
+                                        label: "Recommend the right itinerary",
                                     },
                                     {
                                         icon: <Ship size={18} />,
-                                        label: "Choose the right suite",
-                                    },
-                                    {
-                                        icon: <Sparkles size={18} />,
-                                        label: "Understand inclusions",
+                                        label: "Select the best suite",
                                     },
                                     {
                                         icon: <Plane size={18} />,
@@ -1730,20 +1759,19 @@ const RiversideVsUniworld = () => {
                                     },
                                     {
                                         icon: <Home size={18} />,
-                                        label: "Arrange hotels and transfers",
+                                        label: "Arrange hotels",
                                     },
                                     {
-                                        icon: <Compass size={18} />,
-                                        label: "Recommend excursions",
+                                        icon: <MapPin size={18} />,
+                                        label: "Organize transfers",
+                                    },
+                                    {
+                                        icon: <Sparkles size={18} />,
+                                        label: "Explain inclusions",
                                     },
                                     {
                                         icon: <BadgePercent size={18} />,
-                                        label: "Identify exclusive promotions",
-                                    },
-                                    {
-                                        icon: <HeartHandshake size={18} />,
-                                        label:
-                                            "Provide ongoing support before and during your vacation",
+                                        label: "Access available promotions",
                                     },
                                 ].map((item, i) => (
                                     <div key={i} className="Avr-planning-benefit-card">
@@ -1884,7 +1912,7 @@ const RiversideVsUniworld = () => {
                         <div className="Asc-accent-line"></div>
                         <p className="Asc-faq-intro">
                             Everything you need to know about choosing between Riverside
-                            and Uniworld River Cruises.
+                            and Tauck River Cruises.
                         </p>
                     </div>
                     <FAQ />
@@ -1895,8 +1923,8 @@ const RiversideVsUniworld = () => {
             <section className="Asc-help-section">
                 <div className="Asc-help-bg-wrap">
                     <img
-                        // src={RiversideVsUniworldCtaImage}
-                        alt="Riverside and Uniworld river cruises sailing through Europe"
+                        // src={RiversideVsTauckCtaImage}
+                        alt="Riverside and Tauck river cruises sailing through Europe"
                         className="Asc-help-bg-img"
                     />
                     <div className="Asc-help-overlay"></div>
@@ -1910,7 +1938,7 @@ const RiversideVsUniworld = () => {
                                     Personalized Luxury River Cruise Planning
                                 </span>
                                 <h2 className="Asc-help-h2">
-                                    Final Thoughts: <br /> Riverside vs. Uniworld River Cruises
+                                    Final Thoughts: <br /> Riverside vs. Tauck River Cruises
                                 </h2>
                                 <div className="Asc-help-accent"></div>
                             </div>
@@ -1918,7 +1946,7 @@ const RiversideVsUniworld = () => {
                             <div className="Asc-help-grid">
                                 <div className="Asc-help-info">
                                     <p className="Asc-help-intro">
-                                        Both Riverside and Uniworld rank among Europe's finest
+                                        Both Riverside and Tauck rank among Europe's finest
                                         luxury river cruise experiences, but they excel in
                                         different areas.
                                         {!ctaReadMore && (
@@ -1944,16 +1972,16 @@ const RiversideVsUniworld = () => {
                                             <br />
                                             <p className="Asc-help-intro">
                                                 Choose Riverside Luxury Cruises if you want spacious
-                                                suites, contemporary boutique luxury, personalized
-                                                service, a relaxed onboard atmosphere, and elegant
-                                                simplicity.
+                                                all-suite accommodations, boutique luxury,
+                                                personalized hospitality, a relaxed onboard
+                                                atmosphere, and elegant European cruising.
                                             </p>
                                             <br />
                                             <p className="Asc-help-intro">
-                                                Choose Uniworld Boutique River Cruises if you want
-                                                lavish interiors, highly inclusive luxury, rich
-                                                cultural experiences, and boutique hotel styling
-                                                across a wider range of destinations.
+                                                Choose Tauck River Cruises if you want
+                                                exceptional guided experiences, exclusive
+                                                cultural access, nearly all-inclusive travel,
+                                                and seamless land-and-cruise journeys.
                                             </p>
                                             <br />
                                             <p className="Asc-help-intro">
@@ -1997,7 +2025,7 @@ const RiversideVsUniworld = () => {
 
                                     <ul className="Asc-help-bullets">
                                         {[
-                                            "Compare Riverside and Uniworld itineraries side by side",
+                                            "Compare Riverside and Tauck itineraries side by side",
                                             "Recommend the ship and suite category that fits your travel style",
                                             "Coordinate pre- and post-cruise hotel stays",
                                             "Access exclusive promotions and amenities",
@@ -2058,6 +2086,10 @@ const RiversideVsUniworld = () => {
                                             path: "/is-riverside-worth-it",
                                         },
                                         {
+                                            label: "What Is Included on Riverside?",
+                                            path: "/what-is-included-on-riverside",
+                                        },
+                                        {
                                             label: "Riverside Mozart Review",
                                             path: "/riverside-mozart-review",
                                         },
@@ -2066,8 +2098,16 @@ const RiversideVsUniworld = () => {
                                             path: "/riverside-vs-scenic-river-cruises",
                                         },
                                         {
+                                            label: "Riverside vs. Uniworld",
+                                            path: "/riverside-vs-uniworld-river-cruises",
+                                        },
+                                        {
                                             label: "Riverside vs. AmaWaterways",
                                             path: "/riverside-vs-amawaterways",
+                                        },
+                                        {
+                                            label: "Riverside vs. Avalon",
+                                            path: "/riverside-vs-avalon",
                                         },
                                     ].map((link, idx) => (
                                         <Link
@@ -2101,4 +2141,4 @@ const RiversideVsUniworld = () => {
     );
 };
 
-export default RiversideVsUniworld;
+export default RiversideVsTauck;
