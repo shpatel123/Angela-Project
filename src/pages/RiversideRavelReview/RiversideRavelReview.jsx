@@ -25,22 +25,22 @@ import {
     X,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
 /* ── Placeholder image imports ────────────────────────────────────
-   Replace these with real Riverside Debussy photography once
-   available. Paths assume a new /assets/RiversideDebussyReview folder. */
-// import HeroImage1 from "../../assets/RiversideDebussyReview/riverside-debussy-rhone-sunset.jpg";
-// import HeroImage2 from "../../assets/RiversideDebussyReview/riverside-debussy-suite-balcony.jpg";
-// import HeroImage3 from "../../assets/RiversideDebussyReview/riverside-debussy-avignon-view.jpg";
-// import RiversideDebussySuite from "../../assets/RiversideDebussyReview/riverside-debussy-suite-living-area.jpg";
-// import RiversideDebussyLounge from "../../assets/RiversideDebussyReview/riverside-debussy-observation-lounge.jpg";
-// import RiversideDebussyEvening from "../../assets/RiversideDebussyReview/riverside-debussy-evening-lounge.jpg";
-// import RiversideDebussyDining from "../../assets/RiversideDebussyReview/riverside-debussy-gourmet-dining.jpg";
-// import RiversideDebussyRhone from "../../assets/RiversideDebussyReview/riverside-debussy-rhone-lyon.jpg";
-// import RiversideDebussyArles from "../../assets/RiversideDebussyReview/riverside-debussy-arles.jpg";
-// import RiversideDebussyCrew from "../../assets/RiversideDebussyReview/riverside-debussy-crew-service.jpg";
-// import RiversideDebussyShip from "../../assets/RiversideDebussyReview/riverside-debussy-ship-exterior.jpg";
+   Replace these with real Riverside Ravel photography once
+   available. Paths assume a new /assets/RiversideRavelReview folder. */
+// import HeroImage1 from "../../assets/RiversideRavelReview/riverside-ravel-rhine-sunset.jpg";
+// import HeroImage2 from "../../assets/RiversideRavelReview/riverside-ravel-suite-balcony.jpg";
+// import HeroImage3 from "../../assets/RiversideRavelReview/riverside-ravel-cologne-view.jpg";
+// import RiversideRavelSuite from "../../assets/RiversideRavelReview/riverside-ravel-suite-living-area.jpg";
+// import RiversideRavelLounge from "../../assets/RiversideRavelReview/riverside-ravel-observation-lounge.jpg";
+// import RiversideRavelEvening from "../../assets/RiversideRavelReview/riverside-ravel-evening-lounge.jpg";
+// import RiversideRavelDining from "../../assets/RiversideRavelReview/riverside-ravel-gourmet-dining.jpg";
+// import RiversideRavelRhine from "../../assets/RiversideRavelReview/riverside-ravel-rhine-cologne.jpg";
+// import RiversideRavelStrasbourg from "../../assets/RiversideRavelReview/riverside-ravel-strasbourg.jpg";
+// import RiversideRavelCrew from "../../assets/RiversideRavelReview/riverside-ravel-crew-service.jpg";
+// import RiversideRavelShip from "../../assets/RiversideRavelReview/riverside-ravel-ship-exterior.jpg";
 
 import { Helmet } from "react-helmet-async";
 import "../RiversideLuxuryCruisesReviews/RiversideLuxuryCruisesReviews.css";
@@ -74,18 +74,18 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#webpage",
-            name: "Riverside Debussy Review | Is Europe's Largest Luxury River Ship Worth It?",
-            url: "https://tripsandships.com/riverside-debussy-review",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#webpage",
+            name: "Riverside Ravel Review | Is Riverside Ravel Worth It?",
+            url: "https://tripsandships.com/riverside-ravel-review",
             description:
-                "Read our Riverside Debussy review covering suites, dining, service, itineraries, onboard experience, pricing, and who should sail this luxury Rhône river ship before you book.",
+                "Read our Riverside Ravel review covering suites, dining, service, itineraries, onboard experience, pricing, and who should sail this luxury Rhine river ship before you book.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#article",
-            headline: "Riverside Debussy Review | Luxury Rhône River Cruise Guide",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#article",
+            headline: "Riverside Ravel Review | Luxury Rhine River Cruise Guide",
             description:
-                "A complete guide to Riverside Debussy, covering spacious suites, gourmet dining, personalized service, Rhône itineraries, shore excursions, wellness, and more.",
+                "A complete guide to Riverside Ravel, covering spacious suites, gourmet dining, personalized service, Rhine itineraries, shore excursions, wellness, and more.",
             author: {
                 "@type": "Person",
                 name: "Angela Hughes",
@@ -98,10 +98,10 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#review",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#review",
             itemReviewed: {
                 "@type": "TouristTrip",
-                name: "Riverside Debussy",
+                name: "Riverside Ravel",
             },
             reviewRating: {
                 "@type": "Rating",
@@ -119,7 +119,7 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#breadcrumb",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
@@ -142,17 +142,17 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 4,
-                    name: "Riverside Debussy Review",
-                    item: "https://tripsandships.com/riverside-debussy-review",
+                    name: "Riverside Ravel Review",
+                    item: "https://tripsandships.com/riverside-ravel-review",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#trip",
-            name: "Riverside Debussy Rhône River Cruise Experience",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#trip",
+            name: "Riverside Ravel Rhine River Cruise Experience",
             description:
-                "Boutique luxury river cruising aboard Riverside Debussy, an elegant and intimate ship featuring spacious accommodations, gourmet dining, personalized service, and immersive Rhône River itineraries through southern France.",
+                "Boutique luxury river cruising aboard Riverside Ravel, an elegant and intimate ship featuring spacious accommodations, gourmet dining, personalized service, and immersive Rhine River itineraries through Germany, France, Switzerland, and the Netherlands.",
             provider: {
                 "@type": "Organization",
                 name: "Riverside Luxury Cruises",
@@ -160,7 +160,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#service",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#service",
             serviceType: "Luxury River Cruise Vacation Planning",
             provider: {
                 "@type": "TravelAgency",
@@ -168,34 +168,34 @@ const schemaData = {
             },
             areaServed: "Worldwide",
             description:
-                "Personalized planning for Riverside Debussy sailings, including itinerary selection, suite recommendations, and exclusive promotions.",
+                "Personalized planning for Riverside Ravel sailings, including itinerary selection, suite recommendations, and exclusive promotions.",
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#itemlist",
-            name: "Riverside Debussy Review — What This Guide Covers",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#itemlist",
+            name: "Riverside Ravel Review — What This Guide Covers",
             itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Overview of Riverside Debussy" },
+                { "@type": "ListItem", position: 1, name: "Overview of Riverside Ravel" },
                 { "@type": "ListItem", position: 2, name: "Suites & Accommodations" },
                 { "@type": "ListItem", position: 3, name: "Dining Experience" },
                 { "@type": "ListItem", position: 4, name: "Service & Hospitality" },
-                { "@type": "ListItem", position: 5, name: "Rhône Itineraries" },
+                { "@type": "ListItem", position: 5, name: "Rhine Itineraries" },
                 { "@type": "ListItem", position: 6, name: "Life Onboard" },
                 { "@type": "ListItem", position: 7, name: "Shore Excursions" },
                 { "@type": "ListItem", position: 8, name: "Public Spaces" },
                 { "@type": "ListItem", position: 9, name: "Fitness & Wellness" },
-                { "@type": "ListItem", position: 10, name: "Who Should Sail Riverside Debussy?" },
-                { "@type": "ListItem", position: 11, name: "Is Riverside Debussy Worth It?" },
+                { "@type": "ListItem", position: 10, name: "Who Should Sail Riverside Ravel?" },
+                { "@type": "ListItem", position: 11, name: "Is Riverside Ravel Worth It?" },
                 { "@type": "ListItem", position: 12, name: "Why Book Through a Luxury Travel Advisor?" },
             ],
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-debussy-review/#faq",
+            "@id": "https://tripsandships.com/riverside-ravel-review/#faq",
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Is Riverside Debussy an all-suite ship?",
+                    name: "Is Riverside Ravel an all-suite ship?",
                     acceptedAnswer: {
                         "@type": "Answer",
                         text: "The ship focuses on spacious luxury accommodations designed for comfort and relaxation.",
@@ -203,23 +203,23 @@ const schemaData = {
                 },
                 {
                     "@type": "Question",
-                    name: "Where does Riverside Debussy sail?",
+                    name: "Where does Riverside Ravel sail?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Riverside Debussy primarily sails the Rhône River through southern France.",
+                        text: "Riverside Ravel primarily sails the Rhine River through Germany, France, Switzerland, and the Netherlands.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "What destinations does Riverside Debussy visit?",
+                    name: "What destinations does Riverside Ravel visit?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Popular ports include Lyon, Avignon, Arles, Viviers, Tournon-sur-Rhône, and Chalon-sur-Saône.",
+                        text: "Popular ports include Amsterdam, Cologne, Koblenz, Rüdesheim, Strasbourg, and Basel.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Riverside Debussy all-inclusive?",
+                    name: "Is Riverside Ravel all-inclusive?",
                     acceptedAnswer: {
                         "@type": "Answer",
                         text: "Most cruises include luxury accommodations, gourmet dining, beverages with meals, Wi-Fi, and selected excursions. Inclusions may vary by itinerary.",
@@ -227,7 +227,7 @@ const schemaData = {
                 },
                 {
                     "@type": "Question",
-                    name: "Is Riverside Debussy suitable for first-time river cruisers?",
+                    name: "Is Riverside Ravel suitable for first-time river cruisers?",
                     acceptedAnswer: {
                         "@type": "Answer",
                         text: "Absolutely. Its relaxed atmosphere and exceptional service make it an excellent introduction to luxury river cruising.",
@@ -243,7 +243,7 @@ const schemaData = {
                 },
                 {
                     "@type": "Question",
-                    name: "Does Riverside Debussy have a spa?",
+                    name: "Does Riverside Ravel have a spa?",
                     acceptedAnswer: {
                         "@type": "Answer",
                         text: "The ship offers wellness facilities and spa treatments designed for relaxation during your voyage.",
@@ -259,7 +259,7 @@ const schemaData = {
                 },
                 {
                     "@type": "Question",
-                    name: "Who is Riverside Debussy best suited for?",
+                    name: "Who is Riverside Ravel best suited for?",
                     acceptedAnswer: {
                         "@type": "Answer",
                         text: "The ship is ideal for couples, luxury travelers, food lovers, and anyone seeking a peaceful, refined European river cruise.",
@@ -275,15 +275,15 @@ const schemaData = {
                 },
                 {
                     "@type": "Question",
-                    name: "Does Riverside Debussy offer wine experiences?",
+                    name: "Does Riverside Ravel offer wine experiences?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Rhône River itineraries frequently include wine tastings and visits to renowned vineyards.",
+                        text: "Yes. Rhine River itineraries frequently include wine tastings and visits to renowned vineyards.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Are excursions included in the price on Riverside Debussy?",
+                    name: "Are excursions included in the price on Riverside Ravel?",
                     acceptedAnswer: {
                         "@type": "Answer",
                         text: "Excursions can be included depending on the fare package you book. Riverside offers a 'Full Board with Excursions' option that includes daily guided excursions, as well as a 'Full Board' option if you prefer to explore independently or book excursions à la carte.",
@@ -291,10 +291,10 @@ const schemaData = {
                 },
                 {
                     "@type": "Question",
-                    name: "Does Riverside Debussy have a swimming pool?",
+                    name: "Does Riverside Ravel have wellness facilities?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes, Riverside Debussy features an indoor swimming pool located in the wellness area at the stern of the ship, which is a rare and premium feature for European river cruise ships.",
+                        text: "Yes, Riverside Ravel offers a fitness center, comfortable lounges, and optional spa treatments on select sailings, giving guests plenty of ways to relax during the voyage.",
                     },
                 },
             ],
@@ -308,23 +308,23 @@ function FAQ() {
 
     const faqData = [
         {
-            q: "Where does Riverside Debussy sail?",
-            a: "Riverside Debussy primarily sails the Rhône River through southern France.",
+            q: "Where does Riverside Ravel sail?",
+            a: "Riverside Ravel primarily sails the Rhine River through Germany, France, Switzerland, and the Netherlands.",
         },
         {
-            q: "Is Riverside Debussy an all-suite ship?",
+            q: "Is Riverside Ravel an all-suite ship?",
             a: "The ship focuses on spacious luxury accommodations designed for comfort and relaxation.",
         },
         {
-            q: "What destinations does Riverside Debussy visit?",
-            a: "Popular ports include Lyon, Avignon, Arles, Viviers, Tournon-sur-Rhône, and Chalon-sur-Saône.",
+            q: "What destinations does Riverside Ravel visit?",
+            a: "Popular ports include Amsterdam, Cologne, Koblenz, Rüdesheim, Strasbourg, and Basel.",
         },
         {
-            q: "Is Riverside Debussy all-inclusive?",
+            q: "Is Riverside Ravel all-inclusive?",
             a: "Most cruises include luxury accommodations, gourmet dining, beverages with meals, Wi-Fi, and selected excursions. Specific inclusions vary by itinerary.",
         },
         {
-            q: "Is Riverside Debussy suitable for first-time river cruisers?",
+            q: "Is Riverside Ravel suitable for first-time river cruisers?",
             a: "Yes. Its relaxed atmosphere and attentive service make it an excellent introduction to luxury river cruising.",
         },
         {
@@ -332,28 +332,28 @@ function FAQ() {
             a: "Smart casual during the day and elegant casual in the evenings.",
         },
         {
-            q: "Does Riverside Debussy offer wine experiences?",
-            a: "Yes. Rhône River itineraries frequently include wine tastings and visits to renowned vineyards.",
+            q: "Does Riverside Ravel offer wine experiences?",
+            a: "Yes. Rhine River itineraries frequently include wine tastings and visits to renowned vineyards.",
         },
         {
             q: "Is Wi-Fi included?",
             a: "Complimentary Wi-Fi is typically included throughout the voyage.",
         },
         {
-            q: "Who is Riverside Debussy best suited for?",
+            q: "Who is Riverside Ravel best suited for?",
             a: "Couples, food and wine enthusiasts, luxury travelers, and guests seeking a peaceful European vacation.",
         },
         {
             q: "Should I book through a travel advisor?",
-            a: "Yes. A luxury travel advisor can recommend the best itinerary, help you select the right suite, and coordinate every aspect of your Rhône River cruise.",
+            a: "Yes. A luxury travel advisor can recommend the best itinerary, help you select the right suite, and coordinate every aspect of your Rhine River cruise.",
         },
         {
-            q: "Are excursions included in the price on Riverside Debussy?",
+            q: "Are excursions included in the price on Riverside Ravel?",
             a: "Excursions can be included depending on the fare package you book. Riverside offers a 'Full Board with Excursions' option that includes daily guided excursions, as well as a 'Full Board' option if you prefer to explore independently or book excursions à la carte.",
         },
         {
-            q: "Does Riverside Debussy have a swimming pool?",
-            a: "Yes, Riverside Debussy features an indoor swimming pool located in the wellness area at the stern of the ship, which is a rare and premium feature for European river cruise ships.",
+            q: "Does Riverside Ravel have wellness facilities?",
+            a: "Yes, Riverside Ravel offers a fitness center, comfortable lounges, and optional spa treatments on select sailings.",
         },
     ];
 
@@ -387,7 +387,7 @@ function FAQ() {
 }
 
 /* ── Main Component ──────────────────────────────────────────────── */
-const RiversideDebussyReview = () => {
+const RiversideRavelReview = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [readMore, setReadMore] = useState(false);
     const [readMoreDestination, setReadMoreDestination] = useState(false);
@@ -405,15 +405,15 @@ const RiversideDebussyReview = () => {
         <div className="Asc-page-wrapper">
             <Helmet>
                 <title>
-                    Riverside Debussy Review | Is Riverside Debussy Worth It?
+                    Riverside Ravel Review | Is Riverside Ravel Worth It?
                 </title>
                 <meta
                     name="title"
-                    content="Riverside Debussy Review | Luxury Rhône River Cruise Guide"
+                    content="Riverside Ravel Review | Luxury Rhine River Cruise Guide"
                 />
                 <meta
                     name="description"
-                    content="Read our Riverside Debussy review covering suites, dining, service, itineraries, onboard experience, pricing, and who should sail this luxury Rhône river ship before you book."
+                    content="Read our Riverside Ravel review covering suites, dining, service, itineraries, onboard experience, pricing, and who should sail this luxury Rhine river ship before you book."
                 />
                 <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
             </Helmet>
@@ -433,21 +433,22 @@ const RiversideDebussyReview = () => {
                 <div className="Scenic_hero_overlay"></div>
 
                 <div className="Scenic_hero_content">
-                    <h1>Riverside Debussy Review</h1>
+                    <h1>Riverside Ravel Review</h1>
 
                     <p>
-                        Elegant, intimate, and beautifully designed, Riverside Debussy
+                        Elegant, intimate, and beautifully designed, Riverside Ravel
                         delivers one of the finest luxury river cruise experiences on
-                        the Rhône River. Combining spacious accommodations, attentive
+                        the Rhine River. Combining spacious accommodations, attentive
                         service, gourmet cuisine, and immersive itineraries through
-                        southern France, this boutique ship is an excellent choice for
-                        travelers seeking a relaxed and sophisticated European vacation.
+                        Germany, France, Switzerland, and the Netherlands, this boutique
+                        ship is an excellent choice for travelers seeking a relaxed and
+                        sophisticated European vacation.
                     </p>
 
                     {readMore && (
                         <>
                             <p>
-                                Unlike larger cruise ships, Riverside Debussy focuses on
+                                Unlike larger cruise ships, Riverside Ravel focuses on
                                 personalized hospitality and destination-rich travel.
                                 Guests can spend their days exploring historic villages,
                                 renowned wine regions, and cultural landmarks before
@@ -455,11 +456,11 @@ const RiversideDebussyReview = () => {
                             </p>
 
                             <p>
-                                If you're considering a luxury Rhône River cruise, this
+                                If you're considering a luxury Rhine River cruise, this
                                 review covers everything you need to know before booking,
                                 including accommodations, dining, service, onboard
                                 amenities, itineraries, and who will enjoy Riverside
-                                Debussy the most.
+                                Ravel the most.
                             </p>
                         </>
                     )}
@@ -560,16 +561,16 @@ const RiversideDebussyReview = () => {
                 </div>
             </section>
 
-            {/* ── OVERVIEW OF RIVERSIDE DEBUSSY ─────────────────────────────── */}
+            {/* ── OVERVIEW OF RIVERSIDE RAVEL ─────────────────────────────── */}
             <section
                 className="ugt-components-section"
-                id="what-is-riverside-debussy"
+                id="what-is-riverside-ravel"
                 style={{ backgroundColor: "var(--bg-white)" }}
             >
                 <div className="ugt-components-container">
                     <div className="ugt-components-header">
                         <h2 className="ugt-components-title">
-                            Overview of Riverside Debussy
+                            Overview of Riverside Ravel
                         </h2>
                         <div className="adg-c-accent-line"></div>
                     </div>
@@ -579,8 +580,8 @@ const RiversideDebussyReview = () => {
                             <div className="ugt-component-image-wrapper">
                                 <div className="ugt-component-image-container">
                                     <img
-                                        // src={RiversideDebussyLounge}
-                                        alt="Riverside Debussy sailing the Rhône River"
+                                        // src={RiversideRavelLounge}
+                                        alt="Riverside Ravel sailing the Rhine River"
                                         className="ugt-component-image"
                                     />
                                 </div>
@@ -588,7 +589,7 @@ const RiversideDebussyReview = () => {
 
                             <div className="ugt-component-content">
                                 <p className="ugt-component-text">
-                                    <strong>Riverside Debussy</strong> was designed for
+                                    <strong>Riverside Ravel</strong> was designed for
                                     travelers who appreciate understated luxury, personalized
                                     service, and immersive European travel. Unlike larger
                                     cruise ships, it focuses on personalized hospitality and
@@ -610,7 +611,7 @@ const RiversideDebussyReview = () => {
                                             "Personalized hospitality",
                                             "Elegant contemporary décor",
                                             "Relaxed onboard atmosphere",
-                                            "Rhône River wine country itineraries",
+                                            "Rhine River wine country itineraries",
                                             "Boutique luxury experience",
                                         ].map((item, idx) => (
                                             <li key={idx} className="ugt-question-item">
@@ -661,7 +662,7 @@ const RiversideDebussyReview = () => {
                         </h2>
                         <div className="Asc-accent-line"></div>
                         <p className="Ejvs-section-subtitle">
-                            Unlike large ocean ships, Riverside Debussy emphasizes a
+                            Unlike large ocean ships, Riverside Ravel emphasizes a
                             peaceful and intimate atmosphere, while included excursions
                             bring each destination to life.
                         </p>
@@ -729,7 +730,7 @@ const RiversideDebussyReview = () => {
                                     "Walking tours",
                                     "Historic landmarks",
                                     "Wine tastings",
-                                    "Roman archaeological sites",
+                                    "Castle visits",
                                     "Culinary experiences",
                                     "Local markets & museum visits",
                                 ].map((item, i) => (
@@ -760,8 +761,8 @@ const RiversideDebussyReview = () => {
                     {/* Header Image */}
                     <div className="rdd-dining-image-wrap">
                         <img
-                            //   src={RiversideDebussyDining}
-                            alt="Gourmet dining aboard Riverside Debussy"
+                            //   src={RiversideRavelDining}
+                            alt="Gourmet dining aboard Riverside Ravel"
                             className="rdd-dining-img"
                         />
                         <div className="rdd-dining-image-overlay"></div>
@@ -778,19 +779,19 @@ const RiversideDebussyReview = () => {
                             <h2 className="rdd-dining-title">Dining Experience</h2>
 
                             <p className="rdd-dining-lead">
-                                Southern France is celebrated for its culinary traditions,
-                                and Riverside Debussy reflects that heritage in every meal.
+                                The Rhine Valley is celebrated for its culinary traditions,
+                                and Riverside Ravel reflects that heritage in every meal.
                             </p>
 
                             <h3 className="rdd-dining-list-title">Guests can expect:</h3>
                             <ul className="rdd-dining-list">
                                 {[
                                     "Fresh seasonal ingredients",
-                                    "French regional specialties",
+                                    "German and French regional specialties",
                                     "Multi-course dinners",
                                     "Artisan cheeses",
                                     "Fresh pastries",
-                                    "Local wines",
+                                    "Local Rieslings and European wines",
                                     "Gourmet desserts",
                                     "Elegant presentation",
                                 ].map((item, idx) => (
@@ -816,16 +817,17 @@ const RiversideDebussyReview = () => {
                             <h2 className="rdd-dining-title">Dining &amp; Wine Experience</h2>
 
                             <p className="rdd-dining-lead">
-                                The Rhône Valley is one of France's premier wine regions,
-                                making food and wine an important part of every itinerary.
+                                The Rhine Valley is internationally known for its wine
+                                culture, making food and wine an important part of every
+                                itinerary.
                             </p>
 
                             <h3 className="rdd-dining-list-title">Guests enjoy:</h3>
                             <ul className="rdd-dining-list">
                                 {[
-                                    "Regional French cuisine",
-                                    "Rhône Valley wines",
-                                    "Local cheeses",
+                                    "Regional German and French cuisine",
+                                    "Local Rieslings and European wines",
+                                    "Artisan cheeses",
                                     "Seasonal produce",
                                     "Gourmet desserts",
                                     "Elegant dining service",
@@ -875,8 +877,8 @@ const RiversideDebussyReview = () => {
                             <div className="ugt-component-image-wrapper">
                                 <div className="ugt-component-image-container">
                                     <img
-                                        // src={RiversideDebussyCrew}
-                                        alt="Attentive crew service aboard Riverside Debussy"
+                                        // src={RiversideRavelCrew}
+                                        alt="Attentive crew service aboard Riverside Ravel"
                                         className="ugt-component-image"
                                     />
                                 </div>
@@ -931,13 +933,13 @@ const RiversideDebussyReview = () => {
 
 
             {/* ── RHÔNE ITINERARIES ──────────────────────────────────────── */}
-            <section className="luc-why-section" id="rhone-itineraries">
+            <section className="luc-why-section" id="rhine-itineraries">
                 <div className="luc-why-container">
                     <div className="luc-why-images">
                         <div className="luc-why-img-main-wrap" style={{ color: "#fff" }}>
                             <img
-                                // src={RiversideDebussyRhone}
-                                alt="Riverside Debussy sailing the Rhône River past Avignon"
+                                // src={RiversideRavelRhine}
+                                alt="Riverside Ravel sailing the Rhine River past Cologne"
                                 className="luc-why-img-main"
                             />
                             <div className="luc-why-img-overlay"></div>
@@ -945,8 +947,8 @@ const RiversideDebussyReview = () => {
 
                         <div className="luc-why-img-accent-wrap" style={{ color: "#fff" }}>
                             <img
-                                // src={RiversideDebussyArles}
-                                alt="Arles France along the Rhône River"
+                                // src={RiversideRavelStrasbourg}
+                                alt="Strasbourg France along the Rhine River"
                                 className="luc-why-img-accent"
                             />
 
@@ -958,48 +960,48 @@ const RiversideDebussyReview = () => {
                     </div>
 
                     <div className="luc-why-content">
-                        <h2 className="luc-why-title">Rhône River Itineraries</h2>
+                        <h2 className="luc-why-title">Rhine River Itineraries</h2>
 
                         <div className="aac-accent-line aac-accent-white"></div>
 
                         <p className="luc-why-intro">
-                            Riverside Debussy primarily sails through southern France on
-                            the Rhône River. Guests experience medieval towns, Roman ruins,
-                            Provençal villages, vineyards, and world-famous culinary
-                            regions.
+                            Riverside Ravel primarily explores the beautiful Rhine River,
+                            one of Europe's most scenic waterways. Guests experience
+                            medieval towns, historic castles, world-famous vineyards, and
+                            vibrant European cities.
                         </p>
 
                         <div className="luc-why-features">
                             {[
                                 {
                                     num: "01",
-                                    title: "Lyon",
-                                    desc: "Discover France's culinary capital, with its Renaissance old town and celebrated gastronomy.",
+                                    title: "Amsterdam",
+                                    desc: "Cruise the historic canals of the Netherlands' capital, framed by centuries-old townhouses.",
                                 },
                                 {
                                     num: "02",
-                                    title: "Avignon",
-                                    desc: "Explore the medieval Palace of the Popes and the storied ramparts of this Provençal city.",
+                                    title: "Cologne",
+                                    desc: "Marvel at the twin spires of Cologne Cathedral rising above the Rhine's riverbanks.",
                                 },
                                 {
                                     num: "03",
-                                    title: "Arles",
-                                    desc: "Wander Roman ruins and the sunlit streets that once inspired Van Gogh.",
+                                    title: "Koblenz",
+                                    desc: "Explore the meeting point of the Rhine and Moselle rivers, framed by hilltop fortresses.",
                                 },
                                 {
                                     num: "04",
-                                    title: "Viviers",
-                                    desc: "Stroll a beautifully preserved medieval village overlooking the Rhône Valley.",
+                                    title: "Rüdesheim",
+                                    desc: "Wander the vineyard-covered hills of this charming Rhine wine village.",
                                 },
                                 {
                                     num: "05",
-                                    title: "Tournon-sur-Rhône",
-                                    desc: "Visit the heart of Rhône Valley wine country, framed by terraced vineyards.",
+                                    title: "Strasbourg",
+                                    desc: "Discover the fairy-tale half-timbered houses and Gothic cathedral of this Franco-German city.",
                                 },
                                 {
                                     num: "06",
-                                    title: "Chalon-sur-Saône",
-                                    desc: "Experience a charming riverside town rich in history and local markets.",
+                                    title: "Basel",
+                                    desc: "Experience Switzerland's cultured riverside city, known for its museums and Old Town.",
                                 },
                             ]
                                 .slice(0, readMoreDestination ? 6 : 2)
@@ -1053,7 +1055,7 @@ const RiversideDebussyReview = () => {
                         <div className="rlc-compare-accent"></div>
 
                         <p className="rlc-compare-intro">
-                            Riverside Debussy offers beautifully designed spaces for
+                            Riverside Ravel offers beautifully designed spaces for
                             relaxation throughout the ship.
                         </p>
                     </div>
@@ -1106,7 +1108,7 @@ const RiversideDebussyReview = () => {
                         <div className="adg-c-accent-line"></div>
 
                         <p className="Asc-section-intro">
-                            Accommodations aboard Riverside Debussy are among the ship's
+                            Accommodations aboard Riverside Ravel are among the ship's
                             greatest strengths. The generous suite sizes make longer
                             European journeys especially comfortable.
                         </p>
@@ -1146,10 +1148,10 @@ const RiversideDebussyReview = () => {
                                 </div>
                             </div>
 
-                            <div className="adg-c-overview-image-wrap" style={{ height: '350px' }}>
+                            <div className="adg-c-overview-image-wrap" style={{ height: '380px' }}>
                                 <img
-                                    //   src={RiversideDebussySuite}
-                                    alt="Spacious suite aboard Riverside Debussy"
+                                    //   src={RiversideRavelSuite}
+                                    alt="Spacious suite aboard Riverside Ravel"
                                     className="adg-c-overview-img"
                                 />
 
@@ -1164,23 +1166,23 @@ const RiversideDebussyReview = () => {
                 </div>
             </section>
 
-            {/* ── WHO SHOULD SAIL RIVERSIDE DEBUSSY ─────────────────────────── */}
+            {/* ── WHO SHOULD SAIL RIVERSIDE RAVEL ─────────────────────────── */}
             <section className="Asc-section" id="who-should-sail" style={{ backgroundColor: "var(--bg-white)" }}>
                 <div className="Asc-container">
                     <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Who Should Sail Riverside Debussy?</h2>
+                        <h2 className="Asc-h2">Who Should Sail Riverside Ravel?</h2>
                         <div className="Asc-accent-line"></div>
 
                         <p className="Asc-section-intro">
                             Its spacious accommodations and relaxed atmosphere make
-                            Riverside Debussy particularly appealing to guests who
+                            Riverside Ravel particularly appealing to guests who
                             prioritize comfort over onboard entertainment.
                         </p>
                     </div>
 
                     <div className="Asc-who-grid">
                         <div className="Asc-who-card Asc-who-yes">
-                            <h3 className="Asc-who-title">Riverside Debussy Is an Excellent Choice For:</h3>
+                            <h3 className="Asc-who-title">Riverside Ravel Is an Excellent Choice For:</h3>
 
                             <ul className="Asc-who-list">
                                 {[
@@ -1223,16 +1225,16 @@ const RiversideDebussyReview = () => {
                 </div>
             </section>
 
-            {/* ── IS RIVERSIDE DEBUSSY WORTH IT ─────────────────────────────── */}
+            {/* ── IS RIVERSIDE RAVEL WORTH IT ─────────────────────────────── */}
             <section
                 className="rlc-worth-section"
-                id="is-riverside-debussy-worth-it"
+                id="is-riverside-ravel-worth-it"
             >
                 <div className="rlc-worth-container">
                     {/* Header Block */}
                     <div className="rlc-worth-header">
                         <span className="rlc-worth-eyebrow">Expert Verdict</span>
-                        <h2 className="rlc-worth-title">Is Riverside Debussy Worth It?</h2>
+                        <h2 className="rlc-worth-title">Is Riverside Ravel Worth It?</h2>
                         <div className="rlc-worth-accent"></div>
                     </div>
 
@@ -1240,20 +1242,20 @@ const RiversideDebussyReview = () => {
                     <div className="rlc-worth-intro-grid">
                         <div className="rlc-worth-lead-box">
                             <p className="rlc-worth-lead">
-                                Absolutely. Travelers seeking an elegant Rhône River
+                                Absolutely. Travelers seeking an elegant Rhine River
                                 cruise with spacious accommodations, refined cuisine, and
-                                highly personalized service will find Riverside Debussy to
+                                highly personalized service will find Riverside Ravel to
                                 be an outstanding choice. Its intimate atmosphere,
                                 exceptional hospitality, and thoughtfully designed
                                 itineraries make it one of the finest boutique luxury
-                                river cruise experiences in France.
+                                river cruise experiences on the Rhine.
                             </p>
                         </div>
                         <div className="rlc-worth-media-new">
                             <div className="rlc-worth-media-wrapper-new">
                                 <img
-                                    //   src={RiversideDebussyEvening}
-                                    alt="Elegant evening lounge aboard Riverside Debussy"
+                                    //   src={RiversideRavelEvening}
+                                    alt="Elegant evening lounge aboard Riverside Ravel"
                                     className="rlc-worth-media-img-new"
                                 />
                                 <div className="rlc-worth-media-overlay-new"></div>
@@ -1280,7 +1282,7 @@ const RiversideDebussyReview = () => {
                                     "Elegant contemporary interiors",
                                     "Outstanding personalized service",
                                     "Gourmet dining",
-                                    "Beautiful Rhône itineraries",
+                                    "Beautiful Rhine itineraries",
                                     "Relaxed onboard atmosphere",
                                     "Excellent public spaces",
                                     "Boutique luxury experience",
@@ -1324,7 +1326,7 @@ const RiversideDebussyReview = () => {
                                 <div className="rlc-worth-verdict-badge">Final Verdict</div>
                                 <p className="rlc-worth-conclusion-text-new">
                                     If your priorities include relaxation, gourmet cuisine,
-                                    and beautifully curated itineraries, Riverside Debussy is
+                                    and beautifully curated itineraries, Riverside Ravel is
                                     well worth considering.
                                 </p>
                             </div>
@@ -1363,7 +1365,7 @@ const RiversideDebussyReview = () => {
                             <div className="Avr-planning-left-deco">&ldquo;</div>
 
                             <h3 className="Avr-planning-left-title">
-                                Choose the Riverside Debussy Suite That Fits You
+                                Choose the Riverside Ravel Suite That Fits You
                             </h3>
 
                             <p className="Avr-planning-left-body">
@@ -1534,7 +1536,7 @@ const RiversideDebussyReview = () => {
                         <h2 className="Asc-h2">Frequently Asked Questions</h2>
                         <div className="Asc-accent-line"></div>
                         <p className="Asc-faq-intro">
-                            Everything travelers need to know about Riverside Debussy
+                            Everything travelers need to know about Riverside Ravel
                             before booking their next European river cruise.
                         </p>
                     </div>
@@ -1546,8 +1548,8 @@ const RiversideDebussyReview = () => {
             <section className="Asc-help-section">
                 <div className="Asc-help-bg-wrap">
                     <img
-                        // src={RiversideDebussyShip}
-                        alt="Riverside Debussy sailing the Rhône River"
+                        // src={RiversideRavelShip}
+                        alt="Riverside Ravel sailing the Rhine River"
                         className="Asc-help-bg-img"
                     />
                     <div className="Asc-help-overlay"></div>
@@ -1561,7 +1563,7 @@ const RiversideDebussyReview = () => {
                                     Personalized Luxury River Cruise Planning
                                 </span>
                                 <h2 className="Asc-help-h2">
-                                    Final Verdict: Riverside Debussy
+                                    Final Verdict: Riverside Ravel
                                 </h2>
                                 <div className="Asc-help-accent"></div>
                             </div>
@@ -1569,9 +1571,9 @@ const RiversideDebussyReview = () => {
                             <div className="Asc-help-grid">
                                 <div className="Asc-help-info">
                                     <p className="Asc-help-intro">
-                                        Riverside Debussy combines elegant accommodations,
+                                        Riverside Ravel combines elegant accommodations,
                                         exceptional cuisine, attentive service, and immersive
-                                        Rhône River itineraries into one refined luxury
+                                        Rhine River itineraries into one refined luxury
                                         experience.
                                         {!readMore && (
                                             <button
@@ -1596,16 +1598,16 @@ const RiversideDebussyReview = () => {
                                             <br />
                                             <p className="Asc-help-intro">
                                                 For travelers who value boutique hospitality,
-                                                gourmet dining, French wine culture, and relaxed
-                                                European travel, Riverside Debussy offers an
-                                                unforgettable journey through one of France's most
-                                                beautiful regions.
+                                                gourmet dining, Rhine wine culture, and relaxed
+                                                European travel, Riverside Ravel offers an
+                                                unforgettable journey through one of Europe's most
+                                                beautiful waterways.
                                             </p>
                                             <br />
                                             <p className="Asc-help-intro">
                                                 At Trips &amp; Ships Luxury Travel, we'll help you
                                                 compare itineraries, select the ideal suite, and
-                                                create a personalized Riverside Debussy vacation
+                                                create a personalized Riverside Ravel vacation
                                                 tailored to your travel style.
                                                 <button
                                                     onClick={() => setReadMore(false)}
@@ -1661,6 +1663,8 @@ const RiversideDebussyReview = () => {
                                     </ul>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -1669,4 +1673,4 @@ const RiversideDebussyReview = () => {
     );
 };
 
-export default RiversideDebussyReview;
+export default RiversideRavelReview;

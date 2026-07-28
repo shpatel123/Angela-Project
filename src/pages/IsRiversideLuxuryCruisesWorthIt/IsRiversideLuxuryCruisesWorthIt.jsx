@@ -27,23 +27,27 @@ import {
 import Nav from "../../components/Navbar/Nav";
 import AboutImage from "../../assets/AboutAngela.jpeg";
 
+// import FleetMozart from "../../assets/RiversideLuxuryCruises/riverside-mozart-danube.jpg";
+// import FleetDebussy from "../../assets/RiversideLuxuryCruises/riverside-debussy-rhine.jpg";
+// import FleetRavel from "../../assets/RiversideLuxuryCruises/riverside-ravel-rhone.jpg";
+
 /* ── Placeholder image imports ────────────────────────────────────
    Replace these with real Riverside Luxury Cruises photography once
-   available. Paths assume a new /assets/RiversideLuxuryCruises folder. */
-// import HeroImage1 from "../../assets/RiversideLuxuryCruises/riverside-ship-danube-sunset.jpg";
-// import HeroImage2 from "../../assets/RiversideLuxuryCruises/riverside-suite-balcony.jpg";
-// import HeroImage3 from "../../assets/RiversideLuxuryCruises/riverside-rhine-castle-view.jpg";
-// import RiversideSuite from "../../assets/RiversideLuxuryCruises/riverside-suite-living-area.jpg";
-// import RiversideLounge from "../../assets/RiversideLuxuryCruises/riverside-lounge-deck.jpg";
-// import RiversideEvening from "../../assets/RiversideLuxuryCruises/riverside-evening-lounge.jpg";
-// import RiversideDining from "../../assets/RiversideLuxuryCruises/riverside-gourmet-dining.jpg";
-// import RiversideDanube from "../../assets/RiversideLuxuryCruises/riverside-danube-vienna.jpg";
-// import RiversideRhine from "../../assets/RiversideLuxuryCruises/riverside-rhine-vineyards.jpg";
-// import RiversideCrew from "../../assets/RiversideLuxuryCruises/riverside-crew-service.jpg";
-// import RiversideShip from "../../assets/RiversideLuxuryCruises/riverside-ship-exterior.jpg";
+   available. Paths assume a new /assets/IsRiversideWorthIt folder. */
+// import HeroImage1 from "../../assets/IsRiversideWorthIt/riverside-ship-danube-sunset.jpg";
+// import HeroImage2 from "../../assets/IsRiversideWorthIt/riverside-suite-balcony.jpg";
+// import HeroImage3 from "../../assets/IsRiversideWorthIt/riverside-rhine-castle-view.jpg";
+// import RiversideSuite from "../../assets/IsRiversideWorthIt/riverside-suite-living-area.jpg";
+// import RiversideLounge from "../../assets/IsRiversideWorthIt/riverside-lounge-deck.jpg";
+// import RiversideEvening from "../../assets/IsRiversideWorthIt/riverside-evening-lounge.jpg";
+// import RiversideDining from "../../assets/IsRiversideWorthIt/riverside-gourmet-dining.jpg";
+// import RiversideDanube from "../../assets/IsRiversideWorthIt/riverside-danube-vienna.jpg";
+// import RiversideRhine from "../../assets/IsRiversideWorthIt/riverside-rhine-vineyards.jpg";
+// import RiversideCrew from "../../assets/IsRiversideWorthIt/riverside-crew-service.jpg";
+// import RiversideShip from "../../assets/IsRiversideWorthIt/riverside-ship-exterior.jpg";
 
 import { Helmet } from "react-helmet-async";
-import "./RiversideLuxuryCruisesReviews.css";
+import "../RiversideLuxuryCruisesReviews/RiversideLuxuryCruisesReviews.css";
 import "../RiversideLuxuryCruises/RiversideLuxuryCruises.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
@@ -75,18 +79,18 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-review/#webpage",
-            name: "Riverside Luxury Cruises Review (2026) | Is Riverside Worth It?",
-            url: "https://tripsandships.com/riverside-luxury-cruises-review",
+            "@id": "https://tripsandships.com/is-riverside-worth-it/#webpage",
+            name: "Is Riverside Luxury Cruises Worth It? | Honest Luxury River Cruise Review",
+            url: "https://tripsandships.com/is-riverside-worth-it",
             description:
-                "Read our Riverside Luxury Cruises review covering ships, suites, dining, itineraries, service, inclusions, pricing, and who should sail. Discover if Riverside Luxury Cruises is the right luxury river cruise for your next European vacation.",
+                "Is Riverside Luxury Cruises worth the price? Discover what makes Riverside different, what's included, who should sail, pricing, pros and cons, and whether it's the right luxury river cruise for you.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-review/#article",
-            headline: "Riverside Luxury Cruises Review | Luxury River Cruise Guide",
+            "@id": "https://tripsandships.com/is-riverside-worth-it/#article",
+            headline: "Is Riverside Luxury Cruises Worth It? | Riverside Luxury Cruises Review",
             description:
-                "A complete guide to Riverside Luxury Cruises, covering spacious all-suite accommodations, gourmet dining, personalized service, European itineraries, shore excursions, wellness, and more.",
+                "An honest look at Riverside Luxury Cruises, covering spacious suites, gourmet dining, personalized service, European itineraries, pros and cons, and how it compares to other luxury river cruise lines.",
             author: {
                 "@type": "Person",
                 name: "Angela Hughes",
@@ -99,7 +103,7 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-review/#review",
+            "@id": "https://tripsandships.com/is-riverside-worth-it/#review",
             itemReviewed: {
                 "@type": "TouristTrip",
                 name: "Riverside Luxury Cruises",
@@ -121,7 +125,7 @@ const schemaData = {
         {
             "@type": "BreadcrumbList",
             "@id":
-                "https://tripsandships.com/riverside-luxury-cruises-review/#breadcrumb",
+                "https://tripsandships.com/is-riverside-worth-it/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
@@ -141,14 +145,20 @@ const schemaData = {
                     name: "Riverside Luxury Cruises Reviews",
                     item: "https://tripsandships.com/riverside-luxury-cruises-review",
                 },
+                {
+                    "@type": "ListItem",
+                    position: 4,
+                    name: "Is Riverside Worth It?",
+                    item: "https://tripsandships.com/is-riverside-worth-it",
+                },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-review/#trip",
+            "@id": "https://tripsandships.com/is-riverside-worth-it/#trip",
             name: "Riverside Luxury Cruises European River Cruise Experience",
             description:
-                "Boutique luxury river cruising with spacious all-suite accommodations, gourmet dining, personalized service, and immersive European itineraries on the Danube, Rhine, Main, and Moselle Rivers.",
+                "Boutique luxury river cruising with spacious suite accommodations, gourmet dining, personalized service, and immersive European itineraries on the Danube, Rhine, Rhône, Main, and Moselle Rivers.",
             provider: {
                 "@type": "Organization",
                 name: "Riverside Luxury Cruises",
@@ -156,7 +166,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-review/#service",
+            "@id": "https://tripsandships.com/is-riverside-worth-it/#service",
             serviceType: "Luxury River Cruise Vacation Planning",
             provider: {
                 "@type": "TravelAgency",
@@ -168,17 +178,17 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-review/#itemlist",
-            name: "Riverside Luxury Cruises Review — What This Guide Covers",
+            "@id": "https://tripsandships.com/is-riverside-worth-it/#itemlist",
+            name: "Is Riverside Luxury Cruises Worth It? — What This Guide Covers",
             itemListElement: [
-                { "@type": "ListItem", position: 1, name: "What Is Riverside Luxury Cruises?" },
-                { "@type": "ListItem", position: 2, name: "Elegant All-Suite Accommodations" },
-                { "@type": "ListItem", position: 3, name: "Dining Experience" },
-                { "@type": "ListItem", position: 4, name: "Personalized Service" },
-                { "@type": "ListItem", position: 5, name: "Destinations & Itineraries" },
-                { "@type": "ListItem", position: 6, name: "Life Onboard" },
-                { "@type": "ListItem", position: 7, name: "Shore Excursions" },
-                { "@type": "ListItem", position: 8, name: "Wellness & Relaxation" },
+                { "@type": "ListItem", position: 1, name: "Quick Answer" },
+                { "@type": "ListItem", position: 2, name: "What Makes Riverside Different?" },
+                { "@type": "ListItem", position: 3, name: "What Is Included?" },
+                { "@type": "ListItem", position: 4, name: "Exceptional Dining" },
+                { "@type": "ListItem", position: 5, name: "Personalized Service" },
+                { "@type": "ListItem", position: 6, name: "Beautiful European Itineraries" },
+                { "@type": "ListItem", position: 7, name: "Pros & Cons of Riverside Luxury Cruises" },
+                { "@type": "ListItem", position: 8, name: "Spacious Suites That Stand Out" },
                 { "@type": "ListItem", position: 9, name: "Who Should Sail Riverside?" },
                 { "@type": "ListItem", position: 10, name: "Riverside vs. Other Luxury River Cruise Lines" },
                 { "@type": "ListItem", position: 11, name: "Is Riverside Worth the Price?" },
@@ -187,30 +197,30 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-review/#faq",
+            "@id": "https://tripsandships.com/is-riverside-worth-it/#faq",
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Is Riverside Luxury Cruises truly luxury?",
+                    name: "Is Riverside Luxury Cruises really worth the money?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Riverside offers spacious suites, exceptional service, gourmet dining, and elegant ships designed for travelers seeking a premium river cruise experience.",
+                        text: "Yes, particularly for travelers who value spacious accommodations, personalized service, and boutique luxury over large-scale entertainment.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "What rivers does Riverside sail?",
+                    name: "What makes Riverside different from other river cruise lines?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Riverside primarily operates on the Danube, Rhine, Main, and Moselle Rivers throughout Europe.",
+                        text: "Its focus on spacious suites, boutique hospitality, and a highly personalized guest experience across a small fleet of three ships.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Are all accommodations suites?",
+                    name: "Does Riverside include excursions?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Most accommodations are spacious suites featuring premium furnishings and luxury amenities.",
+                        text: "Most itineraries include selected guided shore excursions, with additional optional experiences available.",
                     },
                 },
                 {
@@ -218,7 +228,15 @@ const schemaData = {
                     name: "Is Riverside all-inclusive?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Most sailings include accommodations, gourmet dining, beverages with meals, Wi-Fi, and selected shore excursions. Specific inclusions vary by itinerary.",
+                        text: "Most cruises include accommodations, gourmet dining, beverages with meals, Wi-Fi, and selected excursions. Specific inclusions vary by itinerary.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which rivers does Riverside sail?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "The cruise line primarily sails the Danube, Rhine, Rhône, Main, and Moselle rivers.",
                     },
                 },
                 {
@@ -226,31 +244,31 @@ const schemaData = {
                     name: "Is Riverside good for first-time river cruisers?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Absolutely. Its relaxed atmosphere, attentive service, and thoughtfully planned itineraries make it an excellent introduction to luxury river cruising.",
+                        text: "Yes. Its relaxed atmosphere and exceptional service make it an excellent introduction to luxury river cruising.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is there a dress code?",
+                    name: "Is Riverside suitable for families?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "The atmosphere is elegant but relaxed. Smart casual attire is appropriate throughout most of the voyage.",
+                        text: "While families are welcome, Riverside is designed primarily for adult travelers seeking a peaceful luxury experience.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Are children allowed?",
+                    name: "Which Riverside ship is best?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "While families are welcome, Riverside is primarily designed for adults seeking a peaceful luxury travel experience.",
+                        text: "Each ship offers a similar luxury standard. The best choice depends on the itinerary and destinations you want to explore.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "How far in advance should I book?",
+                    name: "How does Riverside compare with Scenic or Uniworld?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Luxury suites on popular European itineraries often sell out 9-18 months in advance, especially during spring, summer, and Christmas Market sailings.",
+                        text: "Riverside offers a more boutique experience with larger suites, while Scenic and Uniworld provide larger fleets and different all-inclusive features.",
                     },
                 },
                 {
@@ -258,31 +276,23 @@ const schemaData = {
                     name: "Should I book through a travel advisor?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. A luxury travel advisor can help you compare itineraries, select the best suite, coordinate flights, and identify exclusive offers.",
+                        text: "Yes. A luxury travel advisor can help compare itineraries, recommend the right ship, coordinate travel arrangements, and identify available promotions.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Riverside Luxury Cruises worth it?",
+                    name: "Does Riverside offer butler service in all suites?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "If you value spacious accommodations, exceptional dining, personalized service, and immersive European travel, Riverside is one of the finest luxury river cruise experiences available.",
+                        text: "Yes, Riverside Luxury Cruises provides butler service for all guests across every suite category, ensuring personalized attention, packing assistance, and customized room service.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "What dining options are available onboard Riverside, and are dietary restrictions accommodated?",
+                    name: "What is the dress code onboard Riverside Luxury Cruises?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Riverside offers gourmet multi-course dinners, breakfast and lunch buffets, and premium regional wine pairings. Culinary teams are highly trained to accommodate various dietary requirements, including vegetarian, vegan, gluten-free, and allergies, when notified in advance.",
-                    },
-                },
-                {
-                    "@type": "Question",
-                    name: "Does Riverside Luxury Cruises provide butler service for all suites?",
-                    acceptedAnswer: {
-                        "@type": "Answer",
-                        text: "Yes. Riverside offers personalized butler service for all guests, regardless of the suite category booked, to assist with unpacking, dining reservations, custom excursions, and daily needs.",
+                        text: "The onboard dress code is resort casual by day and elegant casual in the evening (no formal wear required). This fits the relaxed yet upscale boutique hotel atmosphere.",
                     },
                 },
             ],
@@ -296,52 +306,52 @@ function FAQ() {
 
     const faqData = [
         {
-            q: "Is Riverside Luxury Cruises truly luxury?",
-            a: "Yes. Riverside offers spacious suites, exceptional service, gourmet dining, and elegant ships designed for travelers seeking a premium river cruise experience.",
+            q: "Is Riverside Luxury Cruises really worth the money?",
+            a: "Yes, particularly for travelers who value spacious accommodations, personalized service, and boutique luxury over large-scale entertainment.",
         },
         {
-            q: "What rivers does Riverside sail?",
-            a: "Riverside primarily operates on the Danube, Rhine, Main, and Moselle Rivers throughout Europe.",
+            q: "What makes Riverside different from other river cruise lines?",
+            a: "Its focus on spacious suites, boutique hospitality, and a highly personalized guest experience across a small fleet of three ships.",
         },
         {
-            q: "Are all accommodations suites?",
-            a: "Most accommodations are spacious suites featuring premium furnishings and luxury amenities.",
+            q: "Does Riverside include excursions?",
+            a: "Most itineraries include selected guided shore excursions, with additional optional experiences available.",
         },
         {
             q: "Is Riverside all-inclusive?",
-            a: "Most sailings include accommodations, gourmet dining, beverages with meals, Wi-Fi, and selected shore excursions. Specific inclusions vary by itinerary.",
+            a: "Most cruises include accommodations, gourmet dining, beverages with meals, Wi-Fi, and selected excursions. Specific inclusions vary by itinerary.",
+        },
+        {
+            q: "Which rivers does Riverside sail?",
+            a: "The cruise line primarily sails the Danube, Rhine, Rhône, Main, and Moselle rivers.",
         },
         {
             q: "Is Riverside good for first-time river cruisers?",
-            a: "Absolutely. Its relaxed atmosphere, attentive service, and thoughtfully planned itineraries make it an excellent introduction to luxury river cruising.",
+            a: "Yes. Its relaxed atmosphere and exceptional service make it an excellent introduction to luxury river cruising.",
         },
         {
-            q: "Is there a dress code?",
-            a: "The atmosphere is elegant but relaxed. Smart casual attire is appropriate throughout most of the voyage.",
+            q: "Is Riverside suitable for families?",
+            a: "While families are welcome, Riverside is designed primarily for adult travelers seeking a peaceful luxury experience.",
         },
         {
-            q: "Are children allowed?",
-            a: "While families are welcome, Riverside is primarily designed for adults seeking a peaceful luxury travel experience.",
+            q: "Which Riverside ship is best?",
+            a: "Each ship offers a similar luxury standard. The best choice depends on the itinerary and destinations you want to explore.",
         },
         {
-            q: "How far in advance should I book?",
-            a: "Luxury suites on popular European itineraries often sell out 9-18 months in advance, especially during spring, summer, and Christmas Market sailings.",
+            q: "How does Riverside compare with Scenic or Uniworld?",
+            a: "Riverside offers a more boutique experience with larger suites, while Scenic and Uniworld provide larger fleets and different all-inclusive features.",
         },
         {
             q: "Should I book through a travel advisor?",
-            a: "Yes. A luxury travel advisor can help you compare itineraries, select the best suite, coordinate flights, and identify exclusive offers.",
+            a: "Yes. A luxury travel advisor can help compare itineraries, recommend the right ship, coordinate travel arrangements, and identify available promotions.",
         },
         {
-            q: "Is Riverside Luxury Cruises worth it?",
-            a: "If you value spacious accommodations, exceptional dining, personalized service, and immersive European travel, Riverside is one of the finest luxury river cruise experiences available.",
+            q: "Does Riverside offer butler service in all suites?",
+            a: "Yes, Riverside Luxury Cruises provides butler service for all guests across every suite category, ensuring personalized attention, packing assistance, and customized room service.",
         },
         {
-            q: "What dining options are available onboard Riverside, and are dietary restrictions accommodated?",
-            a: "Riverside offers gourmet multi-course dinners, breakfast and lunch buffets, and premium regional wine pairings. Culinary teams are highly trained to accommodate various dietary requirements, including vegetarian, vegan, gluten-free, and allergies, when notified in advance.",
-        },
-        {
-            q: "Does Riverside Luxury Cruises provide butler service for all suites?",
-            a: "Yes. Riverside offers personalized butler service for all guests, regardless of the suite category booked, to assist with unpacking, dining reservations, custom excursions, and daily needs.",
+            q: "What is the dress code onboard Riverside Luxury Cruises?",
+            a: "The onboard dress code is resort casual by day and elegant casual in the evening (no formal wear required). This fits the relaxed yet upscale boutique hotel atmosphere.",
         },
     ];
 
@@ -375,7 +385,7 @@ function FAQ() {
 }
 
 /* ── Main Component ──────────────────────────────────────────────── */
-const RiversideLuxuryCruisesReviews = () => {
+const IsRiversideWorthIt = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [readMore, setReadMore] = useState(false);
     const [readMoreDestination, setReadMoreDestination] = useState(false);
@@ -393,15 +403,15 @@ const RiversideLuxuryCruisesReviews = () => {
         <div className="Asc-page-wrapper">
             <Helmet>
                 <title>
-                    Riverside Luxury Cruises Review (2026) | Is Riverside Worth It?
+                    Is Riverside Luxury Cruises Worth It? | Honest Luxury River Cruise Review
                 </title>
                 <meta
                     name="title"
-                    content="Riverside Luxury Cruises Review | Luxury River Cruise Guide"
+                    content="Is Riverside Worth It? | Riverside Luxury Cruises Review"
                 />
                 <meta
                     name="description"
-                    content="Read our Riverside Luxury Cruises review covering ships, suites, dining, itineraries, service, inclusions, pricing, and who should sail. Discover if Riverside Luxury Cruises is the right luxury river cruise for your next European vacation."
+                    content="Is Riverside Luxury Cruises worth the price? Discover what makes Riverside different, what's included, who should sail, pricing, pros and cons, and whether it's the right luxury river cruise for you."
                 />
                 <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
             </Helmet>
@@ -421,35 +431,37 @@ const RiversideLuxuryCruisesReviews = () => {
                 <div className="Scenic_hero_overlay"></div>
 
                 <div className="Scenic_hero_content">
-                    <h1>Riverside Luxury Cruises Reviews</h1>
+                    <h1>Is Riverside Luxury Cruises Worth It?</h1>
 
                     <p>
-                        Riverside Luxury Cruises has quickly become one of Europe's most
-                        talked-about luxury river cruise lines, offering spacious
-                        all-suite accommodations, personalized service, and exceptional
-                        dining.
+                        If you're considering a luxury European river cruise, one of the
+                        biggest questions you'll ask is: is Riverside Luxury Cruises
+                        really worth the premium price?
                     </p>
 
                     <p>
-                        Unlike larger river cruise brands that emphasize active
-                        excursions and busy daily schedules, Riverside focuses on
-                        spacious living, fine hospitality, and a boutique hotel
-                        atmosphere while sailing Europe's most iconic rivers.
+                        For many travelers, the answer is yes—especially if you value
+                        spacious suites, personalized service, exceptional dining, and an
+                        intimate onboard atmosphere over large ships and nonstop
+                        entertainment.
                     </p>
 
                     {readMore && (
                         <>
                             <p>
-                                The experience feels more like staying at an elegant European
-                                hotel than taking a traditional cruise—every detail, from the
-                                oversized suites to the destination-driven itineraries, is
-                                designed around comfort and quality rather than crowded
-                                schedules.
+                                Riverside has quickly established itself as one of Europe's
+                                premier luxury river cruise brands by offering boutique
+                                hospitality aboard beautifully restored ships. Rather than
+                                focusing on quantity, Riverside emphasizes comfort, elegance,
+                                and unforgettable experiences along the continent's most
+                                iconic rivers.
                             </p>
 
                             <p>
-                                If you're considering a luxury river cruise, here's everything
-                                you should know about Riverside Luxury Cruises.
+                                This guide explores who Riverside is best suited for, what's
+                                included, how it compares with other luxury river cruise
+                                lines, and whether it's the right investment for your next
+                                vacation.
                             </p>
                         </>
                     )}
@@ -474,261 +486,173 @@ const RiversideLuxuryCruisesReviews = () => {
 
             {/* ── QUICK REVIEW ─────────────────────────────────────────────── */}
             <section
-                className="Asc-section"
+                className="rlc-qa-section"
                 id="quick-review"
-                style={{ backgroundColor: "var(--bg-soft)" }}
             >
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Quick Review</h2>
-                        <div className="Asc-accent-line"></div>
+                <div className="rlc-qa-container">
+                    <div className="rlc-qa-card-wrapper">
+                        <h2 className="rlc-qa-title">Quick Answer</h2>
+                        <div className="rlc-qa-accent"></div>
 
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                gap: "8px",
-                                margin: "20px 0 20px",
-                            }}
-                        >
-                            {[...Array(5)].map((_, i) => (
-                                <Star
-                                    key={i}
-                                    size={22}
-                                    fill="var(--accent, #c9a45c)"
-                                    color="var(--accent, #c9a45c)"
-                                />
-                            ))}
-                            <span style={{ fontWeight: 600, marginLeft: "6px" }}>
-                                4.9 / 5 Overall Rating
-                            </span>
-                        </div>
-                    </div>
+                        <p className="rlc-qa-intro">
+                            Yes—Riverside Luxury Cruises is worth it if you prioritize:
+                        </p>
 
-                    <div className="Asc-who-grid">
-                        <div className="Asc-who-card Asc-who-yes">
-                            <h3 className="Asc-who-title">Best For</h3>
-
-                            <ul className="Asc-who-list">
-                                {[
-                                    "Luxury travelers",
-                                    "Couples",
-                                    "Food & wine enthusiasts",
-                                    "Experienced river cruisers",
-                                    "Celebrations and anniversaries",
-                                    "Travelers seeking spacious suites",
-                                ].map((item, i) => (
-                                    <li key={i}>
-                                        <Check size={16} className="Asc-icon-green" />
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div className="Asc-who-card Asc-who-no">
-                            <h3 className="Asc-who-title">May Not Be Ideal For</h3>
-
-                            <ul className="Asc-who-list">
-                                {[
-                                    "Families with young children",
-                                    "Travelers seeking large onboard entertainment",
-                                    "Budget-conscious travelers",
-                                    "Guests looking for highly active itineraries",
-                                ].map((item, i) => (
-                                    <li key={i}>
-                                        <X size={16} className="Asc-icon-red" />
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* ── WHAT IS RIVERSIDE LUXURY CRUISES ───────────────────────── */}
-            <section
-                className="ugt-components-section"
-                id="what-is-riverside"
-                style={{ backgroundColor: "var(--bg-white)" }}
-            >
-                <div className="ugt-components-container">
-                    <div className="ugt-components-header">
-                        <h2 className="ugt-components-title">
-                            What Is Riverside Luxury Cruises?
-                        </h2>
-                        <div className="adg-c-accent-line"></div>
-                    </div>
-
-                    <div className="ugt-components-list">
-                        <div className="ugt-component-row">
-                            <div className="ugt-component-image-wrapper">
-                                <div className="ugt-component-image-container">
-                                    <img
-                                        // src={RiversideLounge}
-                                        alt="Riverside Luxury Cruises ship sailing a European river"
-                                        className="ugt-component-image"
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="ugt-component-content">
-                                <p className="ugt-component-text">
-                                    <strong>Riverside Luxury Cruises</strong> is a premium
-                                    European river cruise line operating elegant ships on some
-                                    of Europe's most famous waterways. The experience feels more
-                                    like staying at an elegant European hotel than taking a
-                                    traditional cruise.
-                                </p>
-
-                                <div className="ugt-questions-box">
-                                    <span className="ugt-questions-title">
-                                        The brand combines:
+                        <ul className="rlc-qa-list">
+                            {[
+                                "Spacious luxury suites",
+                                "Boutique hotel-style service",
+                                "Gourmet dining",
+                                "Elegant ship design",
+                                "Personalized hospitality",
+                                "Relaxed European travel",
+                            ].map((item, i) => (
+                                <li key={i} className="rlc-qa-item">
+                                    <span className="rlc-qa-icon-wrap">
+                                        <Check size={16} strokeWidth={3} className="rlc-qa-check-icon" />
                                     </span>
+                                    <span className="rlc-qa-text">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
 
-                                    <ul className="ugt-questions-list">
-                                        {[
-                                            "Spacious all-suite accommodations",
-                                            "Gourmet dining",
-                                            "Personalized service",
-                                            "Relaxed luxury",
-                                            "Destination immersion",
-                                            "Boutique hotel ambiance",
-                                        ].map((item, idx) => (
-                                            <li key={idx} className="ugt-question-item">
-                                                <Check size={16} className="ugt-question-icon" />
-                                                <span>{item}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-
-                                <p
-                                    className="ugt-component-footer"
-                                    style={{
-                                        backgroundColor: "var(--bg-white)",
-                                        padding: "12px",
-                                        borderRadius: "6px",
-                                    }}
-                                >
-                                    Every voyage emphasizes comfort rather than crowded
-                                    schedules—luxury travelers increasingly appreciate quality
-                                    over quantity.
-                                </p>
-
-                                <div className="rlc-page-cta-container rlc-align-left">
-                                    <Link to="/contact" className="rlc-page-cta-btn" style={{ textDecoration: "none" }}>
-                                        Start Planning Your Riverside Cruise
-                                        <ArrowRight size={18} />
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            {/* ── LIFE ONBOARD & SHORE EXCURSIONS ─────────────────────────── */}
-            <section
-                className="Ejvs-pricing-section"
-                id="life-onboard-shore-excursions"
-                style={{ backgroundColor: "var(--bg-soft)" }}
-            >
-                <div className="Ejvs-container">
-                    <div className="Ejvs-section-header">
-                        <h2 className="Ejvs-section-title">
-                            Life Onboard &amp; <br /> Shore Excursions
-                        </h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Ejvs-section-subtitle">
-                            The onboard atmosphere is peaceful and sophisticated, while
-                            included excursions bring each destination to life.
+                        <p className="rlc-qa-outro">
+                            It may not be the best choice if you're looking for family entertainment, budget pricing, or action-packed onboard activities.
                         </p>
                     </div>
+                </div>
+            </section>
 
-                    <div className="Ejvs-pricing-grid">
-                        {/* Life Onboard */}
-                        <div className="Ejvs-pricing-card Ejvs-explora-card">
-                            <div className="Ejvs-card-header">
-                                <div className="Ejvs-card-icon-wrap">
-                                    <Sparkles size={24} className="Ejvs-card-icon" />
-                                </div>
+            {/* ── WHAT MAKES RIVERSIDE DIFFERENT ───────────────────────── */}
+            <section
+                className="rlc-diff-section"
+                id="what-is-riverside"
+            >
+                <div className="rlc-diff-container">
+                    <h2 className="rlc-diff-title">
+                        What Makes Riverside Different?
+                    </h2>
+                    <div className="rlc-diff-accent"></div>
 
-                                <h3 className="Ejvs-card-title">Life Onboard</h3>
+                    <p className="rlc-diff-intro">
+                        Unlike many river cruise companies that operate large fleets, Riverside currently focuses on just three luxury ships:
+                    </p>
+
+                    <div className="rlc-diff-ships-grid">
+                        <div className="rlc-diff-ship-card">
+                            <div className="rlc-diff-ship-img-wrap">
+                                <img
+                                    // src={FleetMozart}
+                                    alt="Riverside Mozart"
+                                    className="rlc-diff-ship-img"
+                                />
                             </div>
+                            <h3 className="rlc-diff-ship-name">Riverside Mozart</h3>
+                        </div>
 
-                            <p className="Ejvs-card-intro">
-                                Unlike ocean cruises, river cruises emphasize conversation,
-                                culture, and relaxation in elegant, intimate surroundings.
+                        <div className="rlc-diff-ship-card">
+                            <div className="rlc-diff-ship-img-wrap">
+                                <img
+                                    // src={FleetDebussy}
+                                    alt="Riverside Debussy"
+                                    className="rlc-diff-ship-img"
+                                />
+                            </div>
+                            <h3 className="rlc-diff-ship-name">Riverside Debussy</h3>
+                        </div>
+
+                        <div className="rlc-diff-ship-card">
+                            <div className="rlc-diff-ship-img-wrap">
+                                <img
+                                    // src={FleetRavel}
+                                    alt="Riverside Ravel"
+                                    className="rlc-diff-ship-img"
+                                />
+                            </div>
+                            <h3 className="rlc-diff-ship-name">Riverside Ravel</h3>
+                        </div>
+                    </div>
+
+                    <p className="rlc-diff-mid">
+                        This smaller fleet allows the company to deliver a highly personalized guest experience with exceptional attention to detail.
+                    </p>
+
+                    <div className="rlc-diff-outro">
+                        <p className="rlc-diff-outro-text">
+                            Instead of feeling like a traditional cruise ship, Riverside feels more like staying at a luxury boutique hotel that happens to travel through Europe's most beautiful waterways.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* ── WHAT IS INCLUDED ─────────────────────────────────────────── */}
+            <section
+                className="rlc-inc-section"
+                id="what-is-included"
+            >
+                <div className="rlc-inc-container">
+                    <div className="rlc-inc-grid-split">
+                        <div className="rlc-inc-left">
+                            <h2 className="rlc-inc-title">What Is Included?</h2>
+                            <div className="rlc-inc-accent" style={{marginLeft: '15px'}}></div>
+
+                            <p className="rlc-inc-intro">
+                                Depending on your itinerary, Riverside cruises typically include:
                             </p>
 
-                            <ul className="Ejvs-feature-list">
+                            <ul className="rlc-inc-list">
                                 {[
-                                    "Elegant lounges",
-                                    "Panoramic observation areas",
-                                    "Sun deck",
-                                    "Fitness room",
-                                    "Library",
-                                    "Live music & wine tastings",
+                                    "Luxury suite accommodations",
+                                    "Gourmet breakfast, lunch, and dinner",
+                                    "Wine, beer, and soft drinks with meals",
+                                    "Complimentary Wi-Fi",
+                                    "Selected guided shore excursions",
+                                    "Onboard entertainment",
+                                    "Fitness facilities",
+                                    "Personalized concierge service",
                                 ].map((item, i) => (
-                                    <li key={i} className="Ejvs-feature-item">
-                                        <div className="Ejvs-feature-icon">
-                                            <Check size={14} />
-                                        </div>
-                                        <span>{item}</span>
+                                    <li key={i} className="rlc-inc-item">
+                                        <span className="rlc-inc-icon-wrap">
+                                            <Check size={16} strokeWidth={3} className="rlc-inc-check-icon" />
+                                        </span>
+                                        <span className="rlc-inc-item-text">{item}</span>
                                     </li>
                                 ))}
                             </ul>
 
-                            <div className="Ejvs-card-highlight">
-                                <p>
-                                    The intimate ship size creates space to relax and connect
-                                    rather than compete for a quiet corner.
+                            <div className="rlc-inc-outro-box">
+                                <p className="rlc-inc-outro-text">
+                                    Some premium experiences and specialty excursions may be available for an additional cost.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Shore Excursions */}
-                        <div className="Ejvs-pricing-card Ejvs-seabourn-card">
-                            <div className="Ejvs-card-header">
-                                <div className="Ejvs-card-icon-wrap">
-                                    <Compass size={24} className="Ejvs-card-icon" />
+                        <div className="rlc-inc-right">
+                            <div className="rlc-inc-image-collage">
+                                <div className="rlc-inc-img-main-wrap">
+                                    <img
+                                        // src={HeroImage1}
+                                        alt="Riverside Ship"
+                                        className="rlc-inc-collage-img"
+                                    />
                                 </div>
-
-                                <h3 className="Ejvs-card-title">Shore Excursions</h3>
-                            </div>
-
-                            <p className="Ejvs-card-intro">
-                                Included excursions provide an authentic look at each port,
-                                with optional experiences for even deeper exploration.
-                            </p>
-
-                            <ul className="Ejvs-feature-list">
-                                {[
-                                    "Guided walking tours",
-                                    "Historic landmarks",
-                                    "Museums",
-                                    "Wine tastings",
-                                    "Local culinary experiences",
-                                    "Scenic countryside tours",
-                                ].map((item, i) => (
-                                    <li key={i} className="Ejvs-feature-item">
-                                        <div className="Ejvs-feature-icon">
-                                            <Star size={14} />
-                                        </div>
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <div className="Ejvs-card-highlight">
-                                <p>
-                                    Optional excursions offer even deeper exploration of each
-                                    destination visited.
-                                </p>
+                                <div className="rlc-inc-img-sub-grid">
+                                    <div className="rlc-inc-img-sub-wrap">
+                                        <img
+                                            // src={HeroImage2}
+                                            alt="Riverside Suite Balcony"
+                                            className="rlc-inc-collage-img"
+                                        />
+                                    </div>
+                                    <div className="rlc-inc-img-sub-wrap">
+                                        <img
+                                            // src={HeroImage3}
+                                            alt="Rhine Castle View"
+                                            className="rlc-inc-collage-img"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -757,14 +681,15 @@ const RiversideLuxuryCruisesReviews = () => {
                         </div>
 
                         <div className="dmg-info-content">
-                            <h2 className="dmg-info-title">Dining Experience</h2>
+                            <h2 className="dmg-info-title">Exceptional Dining</h2>
 
                             <div className="dmg-info-accent"></div>
 
                             <p className="dmg-info-lead">
-                                Dining aboard Riverside emphasizes fresh regional ingredients
-                                and sophisticated European cuisine. Menus often reflect the
-                                destinations visited during the cruise.
+                                Dining is consistently one of Riverside's highest-rated
+                                experiences. Meals reflect the destinations visited during
+                                the cruise, creating an authentic culinary journey through
+                                Europe.
                             </p>
 
                             <div className="dmg-info-features dmg-info-features-scrollable">
@@ -791,11 +716,11 @@ const RiversideLuxuryCruisesReviews = () => {
                                     </div>
 
                                     <div className="dmg-info-feature-texts">
-                                        <h3 className="dmg-info-feature-title">Premium Wines</h3>
+                                        <h3 className="dmg-info-feature-title">Local Wines</h3>
 
                                         <p className="dmg-info-feature-desc">
-                                            Thoughtfully paired wines complement each destination's
-                                            culinary traditions.
+                                            Thoughtfully selected local wines complement each
+                                            destination's culinary traditions.
                                         </p>
                                     </div>
                                 </div>
@@ -807,11 +732,11 @@ const RiversideLuxuryCruisesReviews = () => {
 
                                     <div className="dmg-info-feature-texts">
                                         <h3 className="dmg-info-feature-title">
-                                            Breakfast &amp; Lunch Buffets
+                                            Fresh Pastries &amp; Artisan Desserts
                                         </h3>
 
                                         <p className="dmg-info-feature-desc">
-                                            Elegant desserts and a flexible dining atmosphere
+                                            Seasonal ingredients and a flexible dining atmosphere
                                             throughout the day.
                                         </p>
                                     </div>
@@ -855,24 +780,24 @@ const RiversideLuxuryCruisesReviews = () => {
 
                             <div className="ugt-component-content">
                                 <p className="ugt-component-text">
-                                    Exceptional hospitality is one of <strong>Riverside's</strong>{" "}
-                                    greatest strengths. Crew members quickly learn guest
-                                    preferences and provide attentive, friendly service
+                                    Luxury isn't just about beautiful ships—it's about how
+                                    you're treated. <strong>Riverside's</strong> crew-to-guest
+                                    ratio allows staff to provide individualized attention
                                     throughout the voyage.
                                 </p>
 
                                 <div className="ugt-questions-box">
                                     <span className="ugt-questions-title">
-                                        Guests often praise:
+                                        Riverside excels at:
                                     </span>
 
                                     <ul className="ugt-questions-list">
                                         {[
-                                            "Personalized attention",
-                                            "Warm hospitality",
-                                            "Professional staff",
-                                            "Efficient service",
-                                            "Attention to detail",
+                                            "Learning guest preferences",
+                                            "Providing attentive service",
+                                            "Creating a relaxed atmosphere",
+                                            "Offering thoughtful personal touches",
+                                            "Delivering boutique hospitality",
                                         ].map((item, idx) => (
                                             <li key={idx} className="ugt-question-item">
                                                 <Check size={16} className="ugt-question-icon" />
@@ -922,21 +847,23 @@ const RiversideLuxuryCruisesReviews = () => {
                             />
 
                             <div className="luc-why-img-badge">
-                                <span className="luc-why-badge-num">4</span>
+                                <span className="luc-why-badge-num">5</span>
                                 <span className="luc-why-badge-text">European Rivers</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="luc-why-content">
-                        <h2 className="luc-why-title">Destinations &amp; Itineraries</h2>
+                        <h2 className="luc-why-title">Beautiful European Itineraries</h2>
 
                         <div className="aac-accent-line aac-accent-white"></div>
 
                         <p className="luc-why-intro">
-                            Riverside sails some of Europe's most beautiful rivers. Many
-                            itineraries include overnight stays and extended time in port
-                            for a more immersive experience.
+                            Riverside focuses on Europe's most iconic rivers. Guests visit
+                            destinations such as Budapest, Vienna, Amsterdam, Strasbourg,
+                            Cologne, Lyon, Avignon, Basel, and Passau, combining scenic
+                            cruising with rich history, culture, architecture, and regional
+                            cuisine.
                         </p>
 
                         <div className="luc-why-features">
@@ -953,16 +880,21 @@ const RiversideLuxuryCruisesReviews = () => {
                                 },
                                 {
                                     num: "03",
+                                    title: "Rhône River",
+                                    desc: "Sail through southern France, from Lyon's gastronomy to the Provençal charm of Avignon.",
+                                },
+                                {
+                                    num: "04",
                                     title: "Main River",
                                     desc: "Experience historic cities and scenic countryside.",
                                 },
                                 {
-                                    num: "04",
+                                    num: "05",
                                     title: "Moselle River",
                                     desc: "Discover wine villages, rolling vineyards, and peaceful river scenery.",
                                 },
                             ]
-                                .slice(0, readMoreDestination ? 4 : 2)
+                                .slice(0, readMoreDestination ? 5 : 2)
                                 .map((feat, i) => (
                                     <div key={i} className="luc-why-feature">
                                         <div className="luc-why-feature-num">{feat.num}</div>
@@ -1022,20 +954,20 @@ const RiversideLuxuryCruisesReviews = () => {
                     <div className="rlc-compare-grid">
                         {[
                             {
-                                title: "Riverside vs. Viking",
-                                text: "Riverside generally offers larger suites and a more boutique luxury atmosphere, while Viking provides a broader selection of itineraries and a more contemporary Scandinavian design.",
-                            },
-                            {
-                                title: "Riverside vs. AmaWaterways",
-                                text: "AmaWaterways appeals to active travelers with biking and wellness programs, while Riverside emphasizes spacious accommodations and relaxed elegance.",
+                                title: "Riverside vs. Scenic",
+                                text: "Scenic includes more all-inclusive amenities and extensive excursions, while Riverside focuses on spacious accommodations and boutique hospitality.",
                             },
                             {
                                 title: "Riverside vs. Uniworld",
-                                text: "Uniworld is known for its highly decorative interiors and all-inclusive luxury, whereas Riverside offers understated European sophistication.",
+                                text: "Uniworld features distinctive ship décor and a larger fleet, while Riverside emphasizes contemporary elegance and larger suites.",
                             },
                             {
-                                title: "Riverside vs. Scenic",
-                                text: "Scenic includes more luxury amenities and excursions, while Riverside focuses on intimate hospitality and exceptional accommodations.",
+                                title: "Riverside vs. Tauck",
+                                text: "Tauck excels in guided cultural experiences and exclusive land programs. Riverside prioritizes onboard comfort and relaxation.",
+                            },
+                            {
+                                title: "Riverside vs. Avalon Waterways",
+                                text: "Avalon is known for active excursions and Panorama Suites®, while Riverside offers a more premium boutique luxury experience.",
                             },
                         ].map((item, i) => {
                             const [brand1, brand2] = item.title.split(" vs. ");
@@ -1063,31 +995,30 @@ const RiversideLuxuryCruisesReviews = () => {
                 </div>
             </section>
 
-            {/* ── ELEGANT ALL-SUITE ACCOMMODATIONS ────────────────────────── */}
+            {/* ── SPACIOUS SUITES THAT STAND OUT ────────────────────────── */}
             <section className="adg-c-section adg-c-bg-soft" id="all-suite-accommodations">
                 <div className="adg-c-container">
                     <div className="adg-c-section-header">
-                        <h2 className="adg-c-h2">Elegant All-Suite Accommodations</h2>
+                        <h2 className="adg-c-h2">Spacious Suites That Stand Out</h2>
 
                         <div className="adg-c-accent-line"></div>
 
                         <p className="Asc-section-intro">
-                            One of Riverside's defining features is its spacious suite
-                            accommodations—many are significantly larger than those found
-                            on many traditional river cruise ships.
+                            One of Riverside's biggest advantages is its accommodations.
+                            Compared with many other river cruise lines, Riverside offers
+                            some of the largest suites available on European waterways.
                         </p>
                     </div>
 
                     <div className="adg-c-overview-layout">
                         <div className="adg-c-overview-icons">
                             {[
-                                "Floor-to-ceiling windows",
-                                "French balconies or full balconies",
                                 "King-size beds",
                                 "Marble bathrooms",
-                                "Walk-in closets (select suites)",
+                                "Spacious living areas",
                                 "Luxury linens",
                                 "Premium bath amenities",
+                                "Beautiful river views",
                             ].map((label, i) => (
                                 <div key={i} className="adg-c-overview-item">
                                     <span className="adg-c-overview-icon">
@@ -1105,17 +1036,16 @@ const RiversideLuxuryCruisesReviews = () => {
                                     <Star size={28} className="adg-c-callout-star" />
 
                                     <p className="adg-c-callout-text">
-                                        Many suites feature sitting areas and walk-in closets,
-                                        creating a true home-away-from-home experience on the
-                                        river.
+                                        If having extra space is important to you, Riverside
+                                        delivers exceptional value on the river.
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="adg-c-overview-image-wrap">
+                            <div className="adg-c-overview-image-wrap" style={{height: ''}}>
                                 <img
                                     //   src={RiversideSuite}
-                                    alt="Spacious all-suite accommodation aboard Riverside Luxury Cruises"
+                                    alt="Spacious suite aboard Riverside Luxury Cruises"
                                     className="adg-c-overview-img"
                                 />
 
@@ -1133,18 +1063,17 @@ const RiversideLuxuryCruisesReviews = () => {
 
 
 
-            {/* ── WELLNESS & RELAXATION ────────────────────────────────────── */}
-            <section className="azs-entertainment-section" id="wellness-relaxation">
+            {/* ── PROS & CONS OF RIVERSIDE LUXURY CRUISES ──────────────────── */}
+            <section className="azs-entertainment-section" id="pros-and-cons">
                 <div className="azs-container">
                     <div className="azs-section-header">
-                        <h2 className="azs-section-title">Wellness &amp; Relaxation</h2>
+                        <h2 className="azs-section-title">Pros &amp; Cons of Riverside Luxury Cruises</h2>
 
                         <div className="azs-section-accent"></div>
 
                         <p className="azs-section-subtitle">
-                            Riverside recognizes that luxury travel should also be
-                            restorative—the slower pace of river cruising makes wellness a
-                            natural part of the experience.
+                            While Riverside offers exceptional luxury, it may not be ideal
+                            for everyone. Here's an honest look at both sides.
                         </p>
                     </div>
 
@@ -1152,26 +1081,28 @@ const RiversideLuxuryCruisesReviews = () => {
                         <div className="azs-entertainment-card azs-azamara-ent">
                             <div className="azs-ent-header">
                                 <div className="azs-ent-icon-circle">
-                                    <HeartPulse size={24} className="azs-ent-icon" />
+                                    <Check size={24} className="azs-ent-icon" />
                                 </div>
 
-                                <h3 className="azs-ent-title">Spa &amp; Fitness</h3>
+                                <h3 className="azs-ent-title">Pros</h3>
                             </div>
 
                             <p className="azs-ent-intro">
-                                Spa treatments, massage services, and fitness equipment help
-                                guests stay refreshed throughout the voyage.
+                                Riverside earns strong marks for the fundamentals that
+                                matter most in luxury river cruising.
                             </p>
 
                             <div className="azs-ent-body">
-                                <h4 className="azs-ent-group-title">Guests Can Enjoy:</h4>
+                                <h4 className="azs-ent-group-title">What Guests Love:</h4>
 
                                 <ul className="azs-ent-list">
                                     {[
-                                        "Spa treatments",
-                                        "Massage services",
-                                        "Fitness equipment",
-                                        "Healthy dining choices",
+                                        "Spacious Accommodations — among the largest suites in European river cruising",
+                                        "Boutique Atmosphere — smaller guest numbers create a more intimate experience",
+                                        "Outstanding Service — highly personalized hospitality from a dedicated crew",
+                                        "Excellent Cuisine — fresh regional menus paired with local wines",
+                                        "Elegant Ships — beautiful contemporary interiors designed for comfort",
+                                        "Relaxed Pace — perfect for enjoying the scenery rather than nonstop activities",
                                     ].map((item, idx) => (
                                         <li key={idx} className="azs-ent-list-item">
                                             <div className="azs-ent-list-icon-wrapper">
@@ -1187,8 +1118,8 @@ const RiversideLuxuryCruisesReviews = () => {
 
                                 <div className="azs-ent-highlight-box azs-azamara-ent-highlight">
                                     <p className="azs-ent-highlight-text">
-                                        Wellness is woven throughout the journey rather than
-                                        confined to a single space.
+                                        Rather than focusing on quantity, Riverside emphasizes
+                                        comfort, elegance, and unforgettable experiences.
                                     </p>
                                 </div>
                             </div>
@@ -1197,29 +1128,31 @@ const RiversideLuxuryCruisesReviews = () => {
                         <div className="azs-entertainment-card azs-seabourn-ent">
                             <div className="azs-ent-header">
                                 <div className="azs-ent-icon-circle">
-                                    <Waves size={24} className="azs-ent-icon" />
+                                    <X size={24} className="azs-ent-icon" />
                                 </div>
 
-                                <h3 className="azs-ent-title">Scenic Relaxation</h3>
+                                <h3 className="azs-ent-title">Cons</h3>
                             </div>
 
                             <p className="azs-ent-intro">
-                                Walking tracks on the sun deck and scenic relaxation spaces
-                                make the most of river cruising's slower pace.
+                                These are not necessarily negatives—they simply reflect
+                                Riverside's boutique luxury philosophy.
                             </p>
 
                             <div className="azs-ent-body">
-                                <h4 className="azs-ent-group-title">Also Available:</h4>
+                                <h4 className="azs-ent-group-title">Potential Drawbacks:</h4>
 
                                 <ul className="azs-ent-list">
                                     {[
-                                        "Walking tracks (sun deck)",
-                                        "Scenic relaxation spaces",
-                                        "Quiet reading areas",
+                                        "Premium pricing",
+                                        "Smaller fleet with fewer itinerary options",
+                                        "Limited nightlife",
+                                        "Less onboard entertainment than ocean cruises",
+                                        "Not designed for young families",
                                     ].map((item, idx) => (
                                         <li key={idx} className="azs-ent-list-item">
                                             <div className="azs-ent-list-icon-wrapper">
-                                                <Star size={14} className="azs-ent-list-icon" />
+                                                <X size={14} className="azs-ent-list-icon" />
                                             </div>
 
                                             <span>{item}</span>
@@ -1231,8 +1164,8 @@ const RiversideLuxuryCruisesReviews = () => {
 
                                 <div className="azs-ent-highlight-box azs-seabourn-ent-highlight">
                                     <p className="azs-ent-highlight-text">
-                                        The slower pace of river cruising makes wellness a
-                                        natural part of every day.
+                                        Travelers who prioritize these factors may prefer a
+                                        different cruise line.
                                     </p>
                                 </div>
                             </div>
@@ -1245,7 +1178,7 @@ const RiversideLuxuryCruisesReviews = () => {
             <section className="Asc-section" id="who-should-sail" style={{ backgroundColor: "var(--bg-soft)" }}>
                 <div className="Asc-container">
                     <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Who Should Sail Riverside?</h2>
+                        <h2 className="Asc-h2">Who Will Love Riverside?</h2>
                         <div className="Asc-accent-line"></div>
 
                         <p className="Asc-section-intro">
@@ -1263,12 +1196,12 @@ const RiversideLuxuryCruisesReviews = () => {
                                 {[
                                     "Couples",
                                     "Luxury travelers",
+                                    "Food and wine enthusiasts",
                                     "Retired travelers",
-                                    "Anniversary celebrations",
                                     "Honeymooners",
-                                    "Food and wine lovers",
+                                    "Anniversary celebrations",
                                     "Experienced cruisers",
-                                    "Travelers seeking European culture",
+                                    "Travelers seeking relaxation",
                                 ].map((item, i) => (
                                     <li key={i}>
                                         <Check size={16} className="Asc-icon-green" />
@@ -1283,11 +1216,11 @@ const RiversideLuxuryCruisesReviews = () => {
 
                             <ul className="Asc-who-list">
                                 {[
-                                    "Want lower pricing",
-                                    "Prefer family-focused activities",
-                                    "Desire larger onboard entertainment venues",
-                                    "Want extensive active excursion programs",
-                                    "Travel primarily with young children",
+                                    "Prefer highly active vacations",
+                                    "Need extensive family entertainment",
+                                    "Want the widest range of destinations",
+                                    "Are focused primarily on finding the lowest fare",
+                                    "Enjoy large-scale onboard productions",
                                 ].map((item, i) => (
                                     <li key={i}>
                                         <X size={16} className="Asc-icon-red" />
@@ -1315,9 +1248,10 @@ const RiversideLuxuryCruisesReviews = () => {
                             <div className="rlc-lc-worth-accent"></div>
 
                             <p className="rlc-lc-worth-lead">
-                                For travelers seeking premium accommodations, personalized
-                                service, and a refined onboard experience, many guests
-                                consider Riverside to offer excellent value.
+                                If your definition of luxury includes personalized service,
+                                spacious accommodations, fine dining, elegant surroundings,
+                                quiet relaxation, and scenic European travel, then Riverside
+                                offers excellent value.
                             </p>
 
                             <h3 className="rlc-lc-worth-emphasis-title">The experience emphasizes:</h3>
@@ -1342,7 +1276,7 @@ const RiversideLuxuryCruisesReviews = () => {
 
                             <div className="rlc-lc-worth-conclusion-box">
                                 <p className="rlc-lc-worth-conclusion-text">
-                                    Rather than offering endless onboard activities, Riverside invests in the quality of the guest experience.
+                                    Rather than packing ships with entertainment venues, Riverside invests in guest comfort, attentive service, and thoughtfully designed experiences.
                                 </p>
                             </div>
 
@@ -1400,10 +1334,10 @@ const RiversideLuxuryCruisesReviews = () => {
                             </h3>
 
                             <p className="Avr-planning-left-body">
-                                Choosing the right itinerary, suite, and sailing date can
-                                significantly enhance your river cruise experience. A luxury
-                                travel advisor can help you compare itineraries, recommend
-                                the best suite, and explain current promotions.
+                                Booking a luxury river cruise involves more than selecting a
+                                departure date. A luxury travel advisor can help you compare
+                                itineraries, recommend the right ship, select the best suite,
+                                and coordinate every detail of your trip.
                             </p>
 
                             <div className="Avr-planning-alert">
@@ -1594,7 +1528,7 @@ const RiversideLuxuryCruisesReviews = () => {
                                     Personalized Luxury River Cruise Planning
                                 </span>
                                 <h2 className="Asc-help-h2">
-                                    Begin Your Riverside Journey Today
+                                    Is Riverside Luxury Cruises <br /> Worth It?
                                 </h2>
                                 <div className="Asc-help-accent"></div>
                             </div>
@@ -1602,9 +1536,14 @@ const RiversideLuxuryCruisesReviews = () => {
                             <div className="Asc-help-grid">
                                 <div className="Asc-help-info">
                                     <p className="Asc-help-intro">
-                                        Riverside Luxury Cruises offers a sophisticated
-                                        alternative for travelers seeking an intimate and refined
-                                        river cruise experience.
+                                        Riverside Luxury Cruises is absolutely worth
+                                        considering for travelers seeking an elegant, boutique
+                                        river cruise experience. <br /><br />
+
+                                         Its spacious accommodations, attentive service,
+                                                gourmet dining, and thoughtfully designed European
+                                                itineraries create a luxury vacation focused on
+                                                comfort rather than crowds.
                                         {!readMore && (
                                             <button
                                                 onClick={() => setReadMore(true)}
@@ -1627,18 +1566,17 @@ const RiversideLuxuryCruisesReviews = () => {
                                         <>
                                             <br />
                                             <p className="Asc-help-intro">
-                                                With elegant all-suite accommodations, attentive
-                                                service, outstanding cuisine, and thoughtfully
-                                                curated European itineraries, the cruise line appeals
-                                                to those who value quality, comfort, and personalized
-                                                hospitality over large-scale entertainment.
+                                                If you're looking for an
+                                                intimate river cruise where exceptional hospitality
+                                                and beautiful destinations take center stage,
+                                                Riverside delivers outstanding value.
                                             </p>
                                             <br />
                                             <p className="Asc-help-intro">
-                                                Whether you're exploring the castles of the Rhine, the
-                                                vineyards of the Moselle, or the grand capitals along
-                                                the Danube, Riverside provides a luxurious way to
-                                                discover Europe at a relaxed pace.
+                                                At Trips &amp; Ships Luxury Travel, we'll help you
+                                                compare Riverside itineraries, choose the ideal
+                                                suite, and create a personalized luxury river cruise
+                                                tailored to your travel style.
                                                 <button
                                                     onClick={() => setReadMore(false)}
                                                     style={{
@@ -1677,11 +1615,13 @@ const RiversideLuxuryCruisesReviews = () => {
                                     <ul className="Asc-help-bullets">
                                         {[
                                             "Compare itineraries",
-                                            "Choose the ideal suite",
-                                            "Explain fare options",
-                                            "Arrange flights and hotels",
-                                            "Coordinate transfers and shore experiences",
-                                            "Secure exclusive promotions",
+                                            "Recommend the right ship",
+                                            "Select the best suite",
+                                            "Coordinate flights",
+                                            "Arrange hotels",
+                                            "Organize transfers",
+                                            "Recommend shore excursions",
+                                            "Explain promotions and special offers",
                                         ].map((item, i) => (
                                             <li key={i}>
                                                 <div className="Asc-bullet-icon">
@@ -1693,6 +1633,7 @@ const RiversideLuxuryCruisesReviews = () => {
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -1701,4 +1642,4 @@ const RiversideLuxuryCruisesReviews = () => {
     );
 };
 
-export default RiversideLuxuryCruisesReviews;
+export default IsRiversideWorthIt;

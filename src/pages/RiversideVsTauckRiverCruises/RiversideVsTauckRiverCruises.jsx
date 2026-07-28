@@ -1701,7 +1701,7 @@ const RiversideVsTauck = () => {
                         </span>
 
                         <h2 className="Avr-planning-title">
-                            Why Book Through a Luxury Travel Advisor?
+                            Why Book Through a <br /> Luxury Travel Advisor?
                         </h2>
 
                         <div className="Avr-planning-divider"></div>
@@ -2043,96 +2043,6 @@ const RiversideVsTauck = () => {
                                 </div>
                             </div>
 
-                            {/* Suggested Internal Links */}
-                            <div
-                                className="Asc-internal-links-section"
-                                style={{
-                                    marginTop: "60px",
-                                    borderTop: "1px solid rgba(255, 255, 255, 0.2)",
-                                    paddingTop: "40px",
-                                }}
-                            >
-                                <h3
-                                    style={{
-                                        color: "#fff",
-                                        fontFamily: "var(--font-display)",
-                                        fontSize: "24px",
-                                        fontWeight: "400",
-                                        marginBottom: "20px",
-                                    }}
-                                >
-                                    Explore More Luxury River Cruise Guides
-                                </h3>
-                                <div
-                                    className="Asc-internal-links-grid"
-                                    style={{
-                                        display: "grid",
-                                        gridTemplateColumns:
-                                            "repeat(auto-fill, minmax(280px, 1fr))",
-                                        gap: "15px",
-                                    }}
-                                >
-                                    {[
-                                        {
-                                            label: "Riverside Luxury Cruises",
-                                            path: "/riverside-luxury-cruises",
-                                        },
-                                        {
-                                            label: "Riverside Luxury Cruises Reviews",
-                                            path: "/riverside-luxury-cruises-reviews",
-                                        },
-                                        {
-                                            label: "Is Riverside Worth It?",
-                                            path: "/is-riverside-worth-it",
-                                        },
-                                        {
-                                            label: "What Is Included on Riverside?",
-                                            path: "/what-is-included-on-riverside",
-                                        },
-                                        {
-                                            label: "Riverside Mozart Review",
-                                            path: "/riverside-mozart-review",
-                                        },
-                                        {
-                                            label: "Riverside vs. Scenic",
-                                            path: "/riverside-vs-scenic-river-cruises",
-                                        },
-                                        {
-                                            label: "Riverside vs. Uniworld",
-                                            path: "/riverside-vs-uniworld-river-cruises",
-                                        },
-                                        {
-                                            label: "Riverside vs. AmaWaterways",
-                                            path: "/riverside-vs-amawaterways",
-                                        },
-                                        {
-                                            label: "Riverside vs. Avalon",
-                                            path: "/riverside-vs-avalon",
-                                        },
-                                    ].map((link, idx) => (
-                                        <Link
-                                            key={idx}
-                                            to={link.path}
-                                            style={{
-                                                color: "rgba(255, 255, 255, 0.8)",
-                                                fontSize: "16px",
-                                                textDecoration: "none",
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "8px",
-                                                transition: "color 0.2s ease",
-                                            }}
-                                            onMouseEnter={(e) => (e.target.style.color = "#fff")}
-                                            onMouseLeave={(e) =>
-                                                (e.target.style.color = "rgba(255, 255, 255, 0.8)")
-                                            }
-                                        >
-                                            <ArrowRight size={14} style={{ flexShrink: 0 }} />
-                                            <span>{link.label}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

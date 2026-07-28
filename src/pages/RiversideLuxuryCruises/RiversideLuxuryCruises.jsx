@@ -63,6 +63,7 @@ import AboutImage from "../../assets/AboutAngela3.jpeg";
 
 import { Helmet } from "react-helmet-async";
 import "../RiversideLuxuryCruisesReviews/RiversideLuxuryCruisesReviews.css";
+import "./RiversideLuxuryCruises.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -1463,29 +1464,29 @@ const RiversideLuxuryCruises = () => {
             {/* ── IS RIVERSIDE WORTH IT ─────────────────────────────── */}
 
             <section
-                className="rlc-worth-section"
+                className="rlc-lc-worth-section"
                 id="is-riverside-worth-it"
             >
-                <div className="rlc-worth-container">
-                    <div className="rlc-worth-grid">
-                        <div className="rlc-worth-content">
-                            <h2 className="rlc-worth-title">
+                <div className="rlc-lc-worth-container">
+                    <div className="rlc-lc-worth-grid">
+                        <div className="rlc-lc-worth-content">
+                            <h2 className="rlc-lc-worth-title">
                                 Is Riverside Worth It?
                             </h2>
 
-                            <div className="rlc-worth-accent"></div>
+                            <div className="rlc-lc-worth-accent"></div>
 
-                            <p className="rlc-worth-lead">
+                            <p className="rlc-lc-worth-lead">
                                 For travelers who prioritize spacious accommodations,
                                 exceptional hospitality, and elegant European travel,
                                 Riverside represents excellent value.
                             </p>
 
-                            <h3 className="rlc-worth-emphasis-title">
+                            <h3 className="rlc-lc-worth-emphasis-title">
                                 Guests consistently praise:
                             </h3>
 
-                            <div className="rlc-worth-emphasis-grid">
+                            <div className="rlc-lc-worth-emphasis-grid">
                                 {[
                                     "Spacious suites",
                                     "Outstanding dining",
@@ -1493,19 +1494,19 @@ const RiversideLuxuryCruises = () => {
                                     "Personalized service",
                                     "Beautiful itineraries",
                                 ].map((item, idx) => (
-                                    <div key={idx} className="rlc-worth-emphasis-item">
-                                        <span className="rlc-worth-emphasis-icon">
+                                    <div key={idx} className="rlc-lc-worth-emphasis-item">
+                                        <span className="rlc-lc-worth-emphasis-icon">
                                             <Check size={16} strokeWidth={3} />
                                         </span>
-                                        <span className="rlc-worth-emphasis-label">
+                                        <span className="rlc-lc-worth-emphasis-label">
                                             {item}
                                         </span>
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="rlc-worth-conclusion-box">
-                                <p className="rlc-worth-conclusion-text">
+                            <div className="rlc-lc-worth-conclusion-box">
+                                <p className="rlc-lc-worth-conclusion-text">
                                     Rather than focusing on onboard attractions,
                                     Riverside invests in the overall quality of the
                                     guest experience.
@@ -1527,16 +1528,16 @@ const RiversideLuxuryCruises = () => {
                             </div>
                         </div>
 
-                        <div className="rlc-worth-media">
-                            <div className="rlc-worth-media-wrapper">
+                        <div className="rlc-lc-worth-media">
+                            <div className="rlc-lc-worth-media-wrapper">
                                 <img
                                     // src={RiversideEvening}
                                     alt="Elegant evening lounge aboard Riverside Luxury Cruises"
-                                    className="rlc-worth-media-img"
+                                    className="rlc-lc-worth-media-img"
                                 />
-                                <div className="rlc-worth-media-overlay"></div>
+                                <div className="rlc-lc-worth-media-overlay"></div>
 
-                                <div className="rlc-worth-media-badge">
+                                <div className="rlc-lc-worth-media-badge">
                                     <span>Understated • Elegant</span>
                                 </div>
                             </div>
@@ -1558,7 +1559,7 @@ const RiversideLuxuryCruises = () => {
                         </span>
 
                         <h2 className="Avr-planning-title">
-                            Why Book Through a Luxury Travel Advisor?
+                            Why Book Through a <br /> Luxury Travel Advisor?
                         </h2>
 
                         <div className="Avr-planning-divider"></div>
@@ -1872,218 +1873,6 @@ const RiversideLuxuryCruises = () => {
                                 </div>
                             </div>
 
-                            {/* Suggested Internal Links */}
-                            <div
-                                className="Asc-internal-links-section"
-                                style={{
-                                    marginTop: "60px",
-                                    borderTop: "1px solid rgba(255, 255, 255, 0.2)",
-                                    paddingTop: "40px",
-                                }}
-                            >
-                                <h3
-                                    style={{
-                                        color: "#fff",
-                                        fontFamily: "var(--font-display)",
-                                        fontSize: "24px",
-                                        fontWeight: "400",
-                                        marginBottom: "10px",
-                                    }}
-                                >
-                                    Reviews &amp; Planning
-                                </h3>
-                                <div
-                                    className="Asc-internal-links-grid"
-                                    style={{
-                                        display: "grid",
-                                        gridTemplateColumns:
-                                            "repeat(auto-fill, minmax(280px, 1fr))",
-                                        gap: "15px",
-                                        marginBottom: "30px",
-                                    }}
-                                >
-                                    {[
-                                        { label: "Riverside Luxury Cruises Reviews", path: "/riverside-luxury-cruises-review" },
-                                        { label: "Is Riverside Luxury Cruises Worth It?", path: "/is-riverside-luxury-cruises-worth-it" },
-                                        { label: "Riverside Luxury Cruises Pros and Cons", path: "/riverside-luxury-cruises-pros-and-cons" },
-                                        { label: "Honest Riverside Cruise Review", path: "/honest-riverside-cruise-review" },
-                                        { label: "Who Should Sail Riverside?", path: "/who-should-sail-riverside" },
-                                        { label: "What Is Included on Riverside?", path: "/what-is-included-on-riverside" },
-                                        { label: "Best Riverside Cruises", path: "/best-riverside-cruises" },
-                                    ].map((link, idx) => (
-                                        <Link
-                                            key={idx}
-                                            to={link.path}
-                                            style={{
-                                                color: "rgba(255, 255, 255, 0.8)",
-                                                fontSize: "16px",
-                                                textDecoration: "none",
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "8px",
-                                                transition: "color 0.2s ease",
-                                            }}
-                                            onMouseEnter={(e) => (e.target.style.color = "#fff")}
-                                            onMouseLeave={(e) =>
-                                                (e.target.style.color = "rgba(255, 255, 255, 0.8)")
-                                            }
-                                        >
-                                            <ArrowRight size={14} style={{ flexShrink: 0 }} />
-                                            <span>{link.label}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-
-                                <h3
-                                    style={{
-                                        color: "#fff",
-                                        fontFamily: "var(--font-display)",
-                                        fontSize: "24px",
-                                        fontWeight: "400",
-                                        marginBottom: "10px",
-                                    }}
-                                >
-                                    Ship Reviews
-                                </h3>
-                                <div
-                                    className="Asc-internal-links-grid"
-                                    style={{
-                                        display: "grid",
-                                        gridTemplateColumns:
-                                            "repeat(auto-fill, minmax(280px, 1fr))",
-                                        gap: "15px",
-                                        marginBottom: "30px",
-                                    }}
-                                >
-                                    {[
-                                        { label: "Riverside Mozart Review", path: "/riverside-mozart-review" },
-                                        { label: "Riverside Debussy Review", path: "/riverside-debussy-review" },
-                                        { label: "Riverside Ravel Review", path: "/riverside-ravel-review" },
-                                    ].map((link, idx) => (
-                                        <Link
-                                            key={idx}
-                                            to={link.path}
-                                            style={{
-                                                color: "rgba(255, 255, 255, 0.8)",
-                                                fontSize: "16px",
-                                                textDecoration: "none",
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "8px",
-                                                transition: "color 0.2s ease",
-                                            }}
-                                            onMouseEnter={(e) => (e.target.style.color = "#fff")}
-                                            onMouseLeave={(e) =>
-                                                (e.target.style.color = "rgba(255, 255, 255, 0.8)")
-                                            }
-                                        >
-                                            <ArrowRight size={14} style={{ flexShrink: 0 }} />
-                                            <span>{link.label}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-
-                                <h3
-                                    style={{
-                                        color: "#fff",
-                                        fontFamily: "var(--font-display)",
-                                        fontSize: "24px",
-                                        fontWeight: "400",
-                                        marginBottom: "10px",
-                                    }}
-                                >
-                                    Destinations
-                                </h3>
-                                <div
-                                    className="Asc-internal-links-grid"
-                                    style={{
-                                        display: "grid",
-                                        gridTemplateColumns:
-                                            "repeat(auto-fill, minmax(280px, 1fr))",
-                                        gap: "15px",
-                                        marginBottom: "30px",
-                                    }}
-                                >
-                                    {[
-                                        { label: "Riverside Danube Cruises", path: "/riverside-danube-cruises" },
-                                        { label: "Riverside Rhine Cruises", path: "/riverside-rhine-cruises" },
-                                        { label: "Riverside Rhône Cruises", path: "/riverside-rhone-cruises" },
-                                        { label: "Riverside Christmas Market Cruises", path: "/riverside-christmas-market-cruises" },
-                                        { label: "Riverside Tulip Cruises", path: "/riverside-tulip-cruises" },
-                                    ].map((link, idx) => (
-                                        <Link
-                                            key={idx}
-                                            to={link.path}
-                                            style={{
-                                                color: "rgba(255, 255, 255, 0.8)",
-                                                fontSize: "16px",
-                                                textDecoration: "none",
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "8px",
-                                                transition: "color 0.2s ease",
-                                            }}
-                                            onMouseEnter={(e) => (e.target.style.color = "#fff")}
-                                            onMouseLeave={(e) =>
-                                                (e.target.style.color = "rgba(255, 255, 255, 0.8)")
-                                            }
-                                        >
-                                            <ArrowRight size={14} style={{ flexShrink: 0 }} />
-                                            <span>{link.label}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-
-                                <h3
-                                    style={{
-                                        color: "#fff",
-                                        fontFamily: "var(--font-display)",
-                                        fontSize: "24px",
-                                        fontWeight: "400",
-                                        marginBottom: "10px",
-                                    }}
-                                >
-                                    Comparisons
-                                </h3>
-                                <div
-                                    className="Asc-internal-links-grid"
-                                    style={{
-                                        display: "grid",
-                                        gridTemplateColumns:
-                                            "repeat(auto-fill, minmax(280px, 1fr))",
-                                        gap: "15px",
-                                    }}
-                                >
-                                    {[
-                                        { label: "Riverside vs Scenic", path: "/riverside-vs-scenic" },
-                                        { label: "Riverside vs Uniworld", path: "/riverside-vs-uniworld" },
-                                        { label: "Riverside vs Tauck", path: "/riverside-vs-tauck" },
-                                        { label: "Riverside vs AmaWaterways", path: "/riverside-vs-amawaterways" },
-                                        { label: "Riverside vs Avalon", path: "/riverside-vs-avalon" },
-                                    ].map((link, idx) => (
-                                        <Link
-                                            key={idx}
-                                            to={link.path}
-                                            style={{
-                                                color: "rgba(255, 255, 255, 0.8)",
-                                                fontSize: "16px",
-                                                textDecoration: "none",
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "8px",
-                                                transition: "color 0.2s ease",
-                                            }}
-                                            onMouseEnter={(e) => (e.target.style.color = "#fff")}
-                                            onMouseLeave={(e) =>
-                                                (e.target.style.color = "rgba(255, 255, 255, 0.8)")
-                                            }
-                                        >
-                                            <ArrowRight size={14} style={{ flexShrink: 0 }} />
-                                            <span>{link.label}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -921,13 +921,48 @@ const Nav = () => {
                 Riverside Mozart Review
               </NavLink>
 
-               <NavLink
-                  to="/riverside-debussy-review"
-                  className="nav-dropdown-single"
-                  onClick={toggleMenu}
-                >
-                  Riverside Debussy Review
-                </NavLink>
+              <NavLink
+                to="/riverside-debussy-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Debussy Review
+              </NavLink>
+
+              <NavLink
+                to="/riverside-ravel-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Ravel Review
+              </NavLink>
+
+              <NavLink
+                to="/is-riverside-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Riverside Worth It?
+              </NavLink>
+
+
+              <NavLink
+                to="/what-is-included-on-riverside"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included On Riverside Luxury Cruises
+              </NavLink>
+
+              <NavLink
+                to="/best-riverside-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Riverside Luxury Cruises
+              </NavLink>
+
+
             </div>
           </div>
         </div>
@@ -1836,21 +1871,54 @@ const Nav = () => {
               Riverside vs Avalon Waterways
             </NavLink>
 
-             <NavLink
-                to="/riverside-mozart-review"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Riverside Mozart Review
-              </NavLink>
+            <NavLink
+              to="/riverside-mozart-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Mozart Review
+            </NavLink>
 
-                <NavLink
-                  to="/riverside-debussy-review"
-                  className="nav-dropdown-single"
-                  onClick={toggleMenu}
-                >
-                  Riverside Debussy Review
-                </NavLink>
+            <NavLink
+              to="/riverside-debussy-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Debussy Review
+            </NavLink>
+
+            <NavLink
+              to="/riverside-ravel-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Ravel Review
+            </NavLink>
+
+            <NavLink
+              to="/is-riverside-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Riverside Worth It?
+            </NavLink>
+
+            <NavLink
+              to="/what-is-included-on-riverside"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What Is Included On Riverside Luxury Cruises
+            </NavLink>
+
+            <NavLink
+              to="/best-riverside-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Riverside Luxury Cruises
+            </NavLink>
+
 
             <span className="mobile-dropdown-divider"></span>
           </div>

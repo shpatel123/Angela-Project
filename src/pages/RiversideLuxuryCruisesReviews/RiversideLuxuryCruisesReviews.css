@@ -669,7 +669,7 @@
 .rlc-inc-title {
     font-family: var(--font-display);
     color: var(--navy);
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 500;
     margin-bottom: 16px;
     line-height: 1.2;
@@ -1585,7 +1585,7 @@
 .rlc-pricing-title {
     font-family: var(--font-display);
     color: var(--navy);
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 500;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -1718,7 +1718,7 @@
     }
     
     .rlc-pricing-title {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .rlc-pricing-grid {
@@ -1733,7 +1733,7 @@
 
 @media (max-width: 480px) {
     .rlc-pricing-title {
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .rlc-pricing-intro {
@@ -2278,4 +2278,969 @@
 .rvt-gallery-item:hover .rvt-gallery-h3,
 .rvt-gallery-item:hover .rvt-gallery-item-p {
     transform: translateY(-2px);
+}
+
+/* ── RIVERSIDE QUICK ANSWER SECTION ───────────────────────────── */
+.rlc-qa-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.rlc-qa-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rlc-qa-card-wrapper {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 50px 60px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.rlc-qa-card-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--navy), var(--navy-light));
+}
+
+.rlc-qa-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.rlc-qa-accent {
+    width: 50px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+.rlc-qa-intro {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.rlc-qa-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rlc-qa-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.rlc-qa-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgba(46, 125, 50, 0.1);
+    flex-shrink: 0;
+}
+
+.rlc-qa-check-icon {
+    color: #2e7d32;
+}
+
+.rlc-qa-text {
+    font-family: var(--font-body);
+    font-size: 16.5px;
+    color: var(--text-body);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.rlc-qa-outro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16.5px;
+    line-height: 1.7;
+    margin: 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--navy-border);
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+    .rlc-qa-section {
+        padding: 60px 16px;
+    }
+
+    .rlc-qa-card-wrapper {
+        padding: 40px 30px;
+    }
+
+    .rlc-qa-title {
+        font-size: 28px;
+    }
+
+    .rlc-qa-intro {
+        font-size: 16.5px;
+    }
+
+    .rlc-qa-text {
+        font-size: 15.5px;
+    }
+
+    .rlc-qa-outro {
+        font-size: 15.5px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rlc-qa-card-wrapper {
+        padding: 30px 20px;
+    }
+
+    .rlc-qa-title {
+        font-size: 24px;
+    }
+}
+
+/* ── WHAT MAKES RIVERSIDE DIFFERENT SECTION ───────────────────── */
+.rlc-diff-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.rlc-diff-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rlc-diff-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.rlc-diff-accent {
+    width: 50px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+.rlc-diff-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17.5px;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.rlc-diff-ships-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.rlc-diff-ship-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.rlc-diff-ship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy-light);
+}
+
+.rlc-diff-ship-img-wrap {
+    width: 100%;
+    height: 220px;
+    background-color: var(--bg-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+.rlc-diff-ship-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.rlc-diff-ship-card:hover .rlc-diff-ship-img {
+    transform: scale(1.04);
+}
+
+.rlc-diff-ship-name {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid var(--navy-border);
+}
+
+.rlc-diff-mid {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.rlc-diff-outro {
+    background-color: var(--navy-soft);
+    border-left: 4px solid var(--navy);
+    padding: 24px 30px;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+}
+
+.rlc-diff-outro-text {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 16.5px;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Responsive Rules */
+@media (max-width: 991px) {
+    .rlc-diff-ships-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .rlc-diff-ship-img-wrap {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rlc-diff-section {
+        padding: 60px 16px;
+    }
+    
+    .rlc-diff-title {
+        font-size: 32px;
+    }
+    
+    .rlc-diff-intro, .rlc-diff-mid {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .rlc-diff-ships-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto 35px auto;
+    }
+    
+    .rlc-diff-outro {
+        padding: 20px 24px;
+    }
+    
+    .rlc-diff-outro-text {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rlc-diff-title {
+        font-size: 28px;
+    }
+}
+
+/* ── RIVERSIDE WHAT IS INCLUDED SECTION (SPLIT LAYOUT) ───────── */
+.rlc-inc-section {
+    padding: 80px 20px;
+    background-color: var(--bg-soft);
+}
+
+.rlc-inc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rlc-inc-grid-split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: stretch; /* Stretch columns to match height */
+}
+
+.rlc-inc-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.rlc-inc-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.rlc-inc-accent {
+    width: 50px;
+    height: 3px;
+    background-color: var(--navy);
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+.rlc-inc-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17.5px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.rlc-inc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rlc-inc-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.rlc-inc-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgba(46, 125, 50, 0.1);
+    flex-shrink: 0;
+}
+
+.rlc-inc-check-icon {
+    color: #2e7d32;
+}
+
+.rlc-inc-item-text {
+    font-family: var(--font-body);
+    font-size: 16.5px;
+    color: var(--text-body);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.rlc-inc-outro-box {
+    background-color: var(--bg-white);
+    border-left: 4px solid var(--navy);
+    padding: 20px 24px;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    box-shadow: var(--shadow);
+}
+
+.rlc-inc-outro-text {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Right Side Image Collage */
+.rlc-inc-right {
+    width: 100%;
+    height: 100%;
+}
+
+.rlc-inc-image-collage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.rlc-inc-img-main-wrap {
+    width: 100%;
+    flex: 1; /* Stretch top image to fill space and align with left side */
+    min-height: 260px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background-color: var(--bg-white);
+}
+
+.rlc-inc-img-sub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 200px; /* Fixed height for bottom two sub-images */
+    flex-shrink: 0;
+}
+
+.rlc-inc-img-sub-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background-color: var(--bg-white);
+}
+
+.rlc-inc-collage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.rlc-inc-img-main-wrap:hover .rlc-inc-collage-img,
+.rlc-inc-img-sub-wrap:hover .rlc-inc-collage-img {
+    transform: scale(1.04);
+}
+
+/* Responsive Rules */
+@media (max-width: 991px) {
+    .rlc-inc-grid-split {
+        gap: 40px;
+    }
+    
+    .rlc-inc-img-sub-grid {
+        height: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rlc-inc-section {
+        padding: 60px 16px;
+    }
+    
+    .rlc-inc-grid-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .rlc-inc-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .rlc-inc-accent {
+        margin: 0 auto 24px auto;
+    }
+    
+    .rlc-inc-intro {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .rlc-inc-list {
+        max-width: 500px;
+        margin: 0 auto 30px auto;
+    }
+    
+    .rlc-inc-outro-box {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .rlc-inc-right {
+        max-width: 500px;
+        margin: 0 auto;
+        height: auto;
+    }
+    
+    .rlc-inc-image-collage {
+        height: auto;
+    }
+    
+    .rlc-inc-img-main-wrap {
+        height: 280px;
+        flex: none;
+    }
+    
+    .rlc-inc-img-sub-grid {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .rlc-inc-img-sub-wrap {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rlc-inc-title {
+        font-size: 24px;
+    }
+    
+    .rlc-inc-img-main-wrap {
+        height: 200px;
+    }
+    
+    .rlc-inc-img-sub-wrap {
+        height: 200px;
+    }
+}
+
+/* ── RIVERSIDE GOURMET DINING SECTION (3-CARDS GRID) ─────────── */
+.rlc-dine-section {
+    padding: 80px 20px;
+    background-color: var(--bg-white);
+}
+
+.rlc-dine-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rlc-dine-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.rlc-dine-accent {
+    width: 50px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+.rlc-dine-lead {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.rlc-dine-sub {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16.5px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.rlc-dine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: stretch;
+}
+
+.rlc-dine-card {
+    background-color: var(--bg-soft);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.rlc-dine-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy-light);
+}
+
+.rlc-dine-card-img-wrap {
+    width: 100%;
+    height: 200px;
+    background-color: var(--navy-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+.rlc-dine-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.rlc-dine-card:hover .rlc-dine-card-img {
+    transform: scale(1.04);
+}
+
+.rlc-dine-card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.rlc-dine-card-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--navy-border);
+    padding-bottom: 8px;
+}
+
+.rlc-dine-card-subtitle {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.rlc-dine-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rlc-dine-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.rlc-dine-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: var(--navy-light);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 7px;
+}
+
+.rlc-dine-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.rlc-dine-outro-box {
+    background-color: var(--navy-soft);
+    border-left: 4px solid var(--navy);
+    padding: 20px 24px;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+}
+
+.rlc-dine-outro-text {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Responsive Rules */
+@media (max-width: 991px) {
+    .rlc-dine-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rlc-dine-section {
+        padding: 60px 16px;
+    }
+    
+    .rlc-dine-title {
+        font-size: 28px;
+    }
+    
+    .rlc-dine-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto 35px auto;
+    }
+    
+    .rlc-dine-card-img-wrap {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rlc-dine-title {
+        font-size: 24px;
+    }
+    .rlc-dine-lead{
+        font-size: 16px;
+    }
+}
+
+/* ── RIVERSIDE DESTINATIONS SECTION ──────────────────────────── */
+.rlc-dest-section {
+    padding: 80px 20px;
+    background-color: var(--bg-white);
+}
+
+.rlc-dest-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rlc-dest-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.rlc-dest-accent {
+    width: 50px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+.rlc-dest-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17.5px;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.rlc-dest-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.rlc-dest-card {
+    background-color: var(--bg-soft);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.rlc-dest-card-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--navy-border);
+    padding-bottom: 10px;
+}
+
+.rlc-dest-subtitle {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.rlc-dest-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rlc-dest-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.rlc-dest-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgba(26, 54, 93, 0.08);
+    flex-shrink: 0;
+}
+
+.rlc-dest-ship-icon {
+    color: var(--navy-light);
+}
+
+.rlc-dest-text {
+    font-family: var(--font-body);
+    font-size: 16.5px;
+    color: var(--text-body);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.rlc-dest-cities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 20px;
+}
+
+.rlc-dest-city-tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    padding: 10px 16px;
+    border-radius: 30px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.rlc-dest-city-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--navy-light);
+}
+
+.rlc-dest-pin-icon {
+    color: #c53030; /* nice soft red for map pins */
+    flex-shrink: 0;
+}
+
+.rlc-dest-city-tag span {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    font-weight: 500;
+}
+
+/* Responsive Rules */
+@media (max-width: 991px) {
+    .rlc-dest-grid {
+        gap: 30px;
+    }
+    
+    .rlc-dest-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rlc-dest-section {
+        padding: 60px 16px;
+    }
+    
+    .rlc-dest-title {
+        font-size: 32px;
+    }
+    
+    .rlc-dest-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .rlc-dest-cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .rlc-dest-cities-grid {
+        grid-template-columns: 1fr;
+    }
+        .rlc-dest-title {
+            font-size: 24px;
+        }
+        .rlc-dest-intro{
+            font-size: 16px;
+        }
+        .rlc-dest-card-title {
+            font-size: 20px;
+        }
+        .rlc-inc-accent{
+            margin-left: 30vw !important;
+        }
+
 }
