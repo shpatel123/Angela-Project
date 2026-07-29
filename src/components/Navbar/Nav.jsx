@@ -962,6 +962,40 @@ const Nav = () => {
                 Best Riverside Luxury Cruises
               </NavLink>
 
+              <NavLink
+                to="/riverside-danube-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Danube Cruises
+              </NavLink>
+
+              <NavLink
+                to="/riverside-rhine-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Rhine Cruises
+              </NavLink>
+
+              <NavLink
+                to="/riverside-rhone-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Rhone Cruises
+              </NavLink>
+
+
+              <NavLink
+                to="/riverside-christmas-market-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Christmas Market Cruises
+              </NavLink>
+
+
 
             </div>
           </div>
@@ -1918,6 +1952,41 @@ const Nav = () => {
             >
               Best Riverside Luxury Cruises
             </NavLink>
+
+            <NavLink
+              to="/riverside-danube-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Danube Cruises
+            </NavLink>
+
+
+            <NavLink
+              to="/riverside-rhine-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Rhine Cruises
+            </NavLink>
+
+            <NavLink
+              to="/riverside-rhone-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Rhone Cruises
+            </NavLink>
+
+            <NavLink
+              to="/riverside-christmas-market-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Christmas Market Cruises
+            </NavLink>
+
+
 
 
             <span className="mobile-dropdown-divider"></span>

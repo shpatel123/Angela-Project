@@ -119,6 +119,11 @@ import RiversideRavelReview from "./pages/RiversideRavelReview/RiversideRavelRev
 import IsRiversideLuxuryCruisesWorthIt from "./pages/IsRiversideLuxuryCruisesWorthIt/IsRiversideLuxuryCruisesWorthIt";
 import WhatIsIncludedRiversideLuxuryCruises from "./pages/WhatIsIncludedRiversideLuxuryCruises/WhatIsIncludedRiversideLuxuryCruises";
 import BestRiversideCruises from "./pages/BestRiversideCruises/BestRiversideCruises";
+import RiversideDanubeCruises from "./pages/RiversideDanubeCruises/RiversideDanubeCruises";
+import RiversideRhineCruises from "./pages/RiversideRhineCruises/RiversideRhineCruises";
+import RiversideRhoneCruises from "./pages/RiversideRhoneCruises/RiversideRhoneCruises";
+import RiversideChristmasMarketCruises from "./pages/RiversideChristmasMarketCruises/RiversideChristmasMarketCruises";
+
 
 function App() {
   return (
@@ -556,6 +561,11 @@ function App() {
           <Route path="/is-riverside-worth-it" element={<IsRiversideLuxuryCruisesWorthIt />} />
           <Route path="/what-is-included-on-riverside" element={<WhatIsIncludedRiversideLuxuryCruises />} />
           <Route path="/best-riverside-cruises" element={<BestRiversideCruises />} />
+          <Route path="/riverside-danube-cruises" element={<RiversideDanubeCruises />} />
+          <Route path="/riverside-rhine-cruises" element={<RiversideRhineCruises />} />
+          <Route path="/riverside-rhone-cruises" element={<RiversideRhoneCruises />} />
+          <Route path="/riverside-christmas-market-cruises" element={<RiversideChristmasMarketCruises />} />
+
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

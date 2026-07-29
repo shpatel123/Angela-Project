@@ -3244,3 +3244,500 @@
         }
 
 }
+
+/* ── RIVERSIDE DANUBE DINING SECTION (rdd-dining-) ── */
+.rdd-dining-section {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-soft) 100%);
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.rdd-dining-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rdd-dining-header {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rdd-dining-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    margin: 0 0 16px 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.rdd-dining-accent {
+    width: 65px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 24px auto;
+    border-radius: 2px;
+}
+
+.rdd-dining-subtitle {
+    font-family: var(--font-body);
+    font-size: 17px;
+    color: var(--text-body);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.rdd-dining-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.rdd-dining-image-col {
+    position: relative;
+}
+
+.rdd-dining-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.12);
+    aspect-ratio: 4 / 3;
+}
+
+.rdd-dining-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.rdd-dining-image-wrapper:hover .rdd-dining-img {
+    transform: scale(1.05);
+}
+
+.rdd-dining-img-overlay {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 16px 24px;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.rdd-dining-img-label {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.rdd-dining-content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rdd-dining-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.rdd-dining-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rdd-dining-card {
+    background: var(--bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.02);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.3s ease;
+}
+
+.rdd-dining-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+.rdd-dining-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--bg-soft);
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.rdd-dining-card:hover .rdd-dining-icon-wrap {
+    background-color: var(--navy);
+    color: var(--bg-white);
+    transform: scale(1.08);
+}
+
+.rdd-dining-card-label {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .rdd-dining-section {
+        padding: 70px 16px;
+    }
+    
+    .rdd-dining-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .rdd-dining-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rdd-dining-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    
+    .rdd-dining-card {
+        padding: 14px 16px;
+    }
+     .rdd-dining-title {
+        font-size: 24px;
+    }
+}
+
+/* ── Custom responsive overrides for Luxury Accommodations layout ── */
+@media (max-width: 1024px) {
+  .luc-why-img-main-wrap-custom {
+    margin-top: 0 !important;
+    height: 100% !important;
+  }
+  .luc-why-images-custom {
+    height: 400px !important;
+  }
+}
+@media (max-width: 480px) {
+  .luc-why-images-custom {
+    height: 290px !important;
+  }
+}
+
+/* ── Best Time to Cruise (Seasons) Section ── */
+.rdd-seasons-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.rdd-seasons-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rdd-seasons-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rdd-seasons-title {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.rdd-seasons-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 20px;
+}
+
+.rdd-seasons-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.rdd-seasons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.rdd-seasons-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform var(--transition), box-shadow var(--transition);
+    border: 1px solid var(--navy-border);
+}
+
+.rdd-seasons-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.rdd-seasons-card-body {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rdd-seasons-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    margin-bottom: 20px;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.rdd-seasons-card:hover .rdd-seasons-icon-wrap {
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.rdd-seasons-card-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.rdd-seasons-card-range {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.rdd-seasons-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rdd-seasons-card-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-body);
+    line-height: 1.4;
+}
+
+.rdd-seasons-card-list-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    margin-top: 7px;
+    flex-shrink: 0;
+}
+
+.rdd-seasons-card-bar {
+    height: 4px;
+    background-color: transparent;
+    transition: background-color var(--transition);
+}
+
+.rdd-seasons-card:hover .rdd-seasons-card-bar {
+    background-color: var(--navy);
+}
+
+/* Responsive Overrides */
+@media (max-width: 1024px) {
+    .rdd-seasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .rdd-seasons-section {
+        padding: 60px 16px;
+    }
+    
+    .rdd-seasons-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .rdd-seasons-title {
+        font-size: 28px;
+    }
+    
+    .rdd-seasons-card-body {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rdd-seasons-title {
+        font-size: 24px;
+    }
+    .rdd-seasons-card-title{
+        font-size: 20px;
+    }
+}
+
+/* ── Provence Section (Rhône Guide) ── */
+.rrd-provence-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.rrd-provence-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rrd-provence-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rrd-provence-title {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.rrd-provence-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 20px;
+}
+
+.rrd-provence-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.rrd-provence-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rrd-provence-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 24px;
+    flex: 1 1 200px;
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--navy-border);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.rrd-provence-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy);
+}
+
+.rrd-provence-icon-wrap {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.rrd-provence-card:hover .rrd-provence-icon-wrap {
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.rrd-provence-label {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-body);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .rrd-provence-section {
+        padding: 50px 16px;
+    }
+    .rrd-provence-title {
+        font-size: 28px;
+    }
+    .rrd-provence-card {
+        flex: 1 1 150px;
+        max-width: 100%;
+        padding: 16px;
+    }
+}
