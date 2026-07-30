@@ -3741,3 +3741,499 @@
         padding: 16px;
     }
 }
+
+/* ── POTENTIAL DRAWBACKS UNIQUE UI ────────────────────────────── */
+.rlc-drawbacks-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.rlc-drawbacks-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.rlc-drawbacks-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rlc-drawbacks-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.rlc-drawbacks-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 24px auto;
+    border-radius: 2px;
+}
+
+.rlc-drawbacks-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.rlc-drawbacks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.rlc-drawback-card {
+    background: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.rlc-drawback-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--navy);
+}
+
+.rlc-drawback-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy);
+}
+
+.rlc-drawback-icon-wrap {
+    color: var(--navy);
+    background: var(--navy-soft);
+    padding: 12px;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.rlc-drawback-card:hover .rlc-drawback-icon-wrap {
+    background: var(--navy);
+    color: var(--bg-white);
+}
+
+.rlc-drawback-content {
+    flex-grow: 1;
+}
+
+.rlc-drawback-badge {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navy);
+    background: var(--navy-soft);
+    padding: 4px 10px;
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+}
+
+.rlc-drawback-card-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+.rlc-drawback-card-desc {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.rlc-drawback-details {
+    border-top: 1px solid var(--navy-border);
+    padding-top: 16px;
+}
+
+.rlc-drawback-col-label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-body);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.rlc-drawback-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rlc-drawback-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.rlc-drawback-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.rlc-drawback-bullet-text {
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .rlc-drawbacks-section {
+        padding: 60px 16px;
+    }
+    .rlc-drawbacks-title {
+        font-size: 28px;
+    }
+    .rlc-drawback-card {
+        padding: 24px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .rlc-drawbacks-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:480px) {
+    .rlc-drawbacks-title {
+        font-size: 24px;
+    }
+}
+
+/* ── HONEST REVIEW PROS & CONS SECTION ───────────────────────── */
+.hrc-pros-cons-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.hrc-pros-cons-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.hrc-pros-cons-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hrc-pros-cons-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hrc-pros-cons-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 24px auto;
+    border-radius: 2px;
+}
+
+.hrc-pros-cons-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 17px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.hrc-pros-cons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.hrc-column {
+    background-color: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--navy-border);
+}
+
+.hrc-column-title {
+    font-family: var(--font-display);
+    font-size: 28px;
+    color: var(--navy);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid var(--navy-border);
+    padding-bottom: 12px;
+}
+
+.hrc-title-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.hrc-pro-icon {
+    background-color: var(--navy-soft);
+    color: var(--navy);
+}
+
+.hrc-con-icon {
+    background-color: var(--navy-soft);
+    color: var(--text-muted);
+}
+
+.hrc-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hrc-item-card {
+    padding-left: 15px;
+    border-left: 3px solid var(--navy-border);
+    transition: var(--transition);
+}
+
+.hrc-item-card:hover {
+    border-left-color: var(--navy);
+    padding-left: 20px;
+}
+
+.hrc-item-title {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0 0 6px 0;
+}
+
+.hrc-item-desc {
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: var(--text-body);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .hrc-pros-cons-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hrc-pros-cons-section {
+        padding: 60px 16px;
+    }
+    .hrc-pros-cons-title {
+        font-size: 28px;
+    }
+    .hrc-column {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hrc-pros-cons-title {
+        font-size: 24px;
+    }
+}
+
+/* ── WHO SHOULD SAIL RIVERSIDE CELEBRATIONS SECTION ───────────── */
+.wssr-celebrations-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.wssr-celebrations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.wssr-celebrations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.wssr-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--navy-border);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.wssr-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy);
+}
+
+.wssr-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.wssr-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.wssr-card:hover .wssr-icon-wrap {
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.wssr-card-title {
+    font-family: var(--font-display);
+    font-size: 24px;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.wssr-card-desc {
+    font-family: var(--font-body);
+    font-size: 18px;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+    flex-grow: 1;
+}
+
+.wssr-list-wrap {
+    border-top: 1px solid var(--navy-border);
+    padding-top: 24px;
+}
+
+.wssr-list-title {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-body);
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.wssr-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+}
+
+.wssr-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-muted);
+}
+
+.wssr-check-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .wssr-celebrations-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wssr-celebrations-section {
+        padding: 60px 16px;
+    }
+    .wssr-card {
+        padding: 24px;
+    }
+    .wssr-card-title {
+        font-size: 20px;
+    }
+    .wssr-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .wssr-card-desc{
+        font-size: 16px;
+    }
+    
+}

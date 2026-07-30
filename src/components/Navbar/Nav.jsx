@@ -995,6 +995,41 @@ const Nav = () => {
                 Riverside Christmas Market Cruises
               </NavLink>
 
+              <NavLink
+                to="/riverside-tulip-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Tulip Cruises
+              </NavLink>
+
+
+              <NavLink
+                to="/riverside-luxury-cruises-pros-and-cons"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Riverside Luxury Cruises Pros and Cons
+              </NavLink>
+
+
+              <NavLink
+                to="/honest-riverside-cruise-review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Honest riverside cruise review
+              </NavLink>
+
+              <NavLink
+                to="/who-should-sail-riverside"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Who Should Sail Riverside
+              </NavLink>
+
+
 
 
             </div>
@@ -1986,6 +2021,39 @@ const Nav = () => {
               Riverside Christmas Market Cruises
             </NavLink>
 
+            <NavLink
+              to="/riverside-tulip-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Tulip Cruises
+            </NavLink>
+
+
+            <NavLink
+              to="/riverside-luxury-cruises-pros-and-cons"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Riverside Luxury Cruises Pros and Cons
+            </NavLink>
+
+
+            <NavLink
+              to="/honest-riverside-cruise-review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Honest riverside cruise review
+            </NavLink>
+
+            <NavLink
+              to="/who-should-sail-riverside"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Who Should Sail Riverside
+            </NavLink>
 
 
 

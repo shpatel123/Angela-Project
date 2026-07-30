@@ -123,6 +123,10 @@ import RiversideDanubeCruises from "./pages/RiversideDanubeCruises/RiversideDanu
 import RiversideRhineCruises from "./pages/RiversideRhineCruises/RiversideRhineCruises";
 import RiversideRhoneCruises from "./pages/RiversideRhoneCruises/RiversideRhoneCruises";
 import RiversideChristmasMarketCruises from "./pages/RiversideChristmasMarketCruises/RiversideChristmasMarketCruises";
+import RiversideTulipCruises from "./pages/RiversideTulipCruises/RiversideTulipCruises";
+import RiversideLuxuryCruisesProsandCons from "./pages/RiversideLuxuryCruisesProsandCons/RiversideLuxuryCruisesProsandCons";
+import HonestRiversideCruiseReview from "./pages/HonestRiversideCruiseReview/HonestRiversideCruiseReview";
+import WhoShouldSailRiverside from "./pages/WhoShouldSailRiverside/WhoShouldSailRiverside";
 
 
 function App() {
@@ -565,6 +569,10 @@ function App() {
           <Route path="/riverside-rhine-cruises" element={<RiversideRhineCruises />} />
           <Route path="/riverside-rhone-cruises" element={<RiversideRhoneCruises />} />
           <Route path="/riverside-christmas-market-cruises" element={<RiversideChristmasMarketCruises />} />
+          <Route path="/riverside-tulip-cruises" element={<RiversideTulipCruises />} />
+          <Route path="/riverside-luxury-cruises-pros-and-cons" element={<RiversideLuxuryCruisesProsandCons />} />
+          <Route path="/honest-riverside-cruise-review" element={<HonestRiversideCruiseReview />} />
+          <Route path="/who-should-sail-riverside" element={<WhoShouldSailRiverside />} />
 
         </Routes>
       </BrowserRouter>
