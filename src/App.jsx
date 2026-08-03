@@ -127,6 +127,8 @@ import RiversideTulipCruises from "./pages/RiversideTulipCruises/RiversideTulipC
 import RiversideLuxuryCruisesProsandCons from "./pages/RiversideLuxuryCruisesProsandCons/RiversideLuxuryCruisesProsandCons";
 import HonestRiversideCruiseReview from "./pages/HonestRiversideCruiseReview/HonestRiversideCruiseReview";
 import WhoShouldSailRiverside from "./pages/WhoShouldSailRiverside/WhoShouldSailRiverside";
+import ScenicRiverCruises from "./pages/ScenicRiverCruises/ScenicRiverCruises";
+import ScenicRiverCruisesReview from "./pages/ScenicRiverCruisesReview/ScenicRiverCruisesReview";
 
 
 function App() {
@@ -573,6 +575,8 @@ function App() {
           <Route path="/riverside-luxury-cruises-pros-and-cons" element={<RiversideLuxuryCruisesProsandCons />} />
           <Route path="/honest-riverside-cruise-review" element={<HonestRiversideCruiseReview />} />
           <Route path="/who-should-sail-riverside" element={<WhoShouldSailRiverside />} />
+          <Route path="/scenic-river-cruises" element={<ScenicRiverCruises />} />
+          <Route path="/scenic-river-cruises/review" element={<ScenicRiverCruisesReview />} />
 
         </Routes>
       </BrowserRouter>

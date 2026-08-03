@@ -1030,6 +1030,24 @@ const Nav = () => {
               </NavLink>
 
 
+              <NavLink
+                to="/scenic-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises
+              </NavLink>
+
+
+              <NavLink
+                to="/scenic-river-cruises/review"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Review
+              </NavLink>
+
+
 
 
             </div>
@@ -2054,6 +2072,24 @@ const Nav = () => {
             >
               Who Should Sail Riverside
             </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/review"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Review
+            </NavLink>
+
 
 
 

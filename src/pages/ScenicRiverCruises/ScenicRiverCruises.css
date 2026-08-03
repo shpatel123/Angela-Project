@@ -1,0 +1,784 @@
+/* Scenic Destinations Section Styles */
+.scenic-destinations-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scenic-destinations-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scenic-destinations-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    /* Responsive Font Sizes */
+    font-size: 48px; /* Desktop default */
+}
+
+.scenic-destinations-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 24px auto;
+    border-radius: var(--radius);
+}
+
+.scenic-destinations-subtitle {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 48px auto;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.scenic-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.scenic-destinations-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    padding: 40px;
+    border: 1px solid var(--navy-border);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.scenic-destinations-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy);
+}
+
+.scenic-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 2px solid var(--bg-soft);
+    padding-bottom: 16px;
+}
+
+.scenic-card-icon {
+    color: var(--navy);
+    width: 32px;
+    height: 32px;
+}
+
+.scenic-card-header h3 {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 28px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.scenic-card-image-container {
+    width: 100%;
+    height: 240px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-top: 8px;
+    border: 1px solid var(--navy-border);
+}
+
+.scenic-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.scenic-destinations-card:hover .scenic-card-img {
+    transform: scale(1.05);
+}
+
+.scenic-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.scenic-card-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.scenic-card-subgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scenic-card-subgroup h4 {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.scenic-river-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.scenic-river-list li {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.scenic-list-icon {
+    color: var(--navy-light);
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.scenic-destinations-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.scenic-dest-badge {
+    background-color: var(--bg-soft);
+    color: var(--navy);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid var(--navy-border);
+    transition: var(--transition);
+}
+
+.scenic-dest-badge:hover {
+    background-color: var(--navy);
+    color: var(--bg-white);
+    border-color: var(--navy);
+}
+
+.scenic-badge-icon {
+    flex-shrink: 0;
+}
+
+.scenic-card-outro {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: auto;
+    border-top: 1px dashed var(--navy-border);
+    padding-top: 16px;
+    font-style: italic;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .scenic-destinations-title {
+        font-size: 28px; /* Tablet font size */
+    }
+    
+    .scenic-destinations-grid {
+        gap: 24px;
+    }
+    
+    .scenic-destinations-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-destinations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .scenic-destinations-title {
+        font-size: 24px; /* Mobile font size */
+    }
+    
+    .scenic-destinations-card {
+        padding: 20px;
+    }
+
+    .scenic-river-list {
+        grid-template-columns: 1fr;
+    }
+    .scenic-card-header h3{
+        font-size: 22px;
+    }
+}
+
+/* Scenic Dining Section Styles */
+.scenic-dining-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scenic-dining-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scenic-dining-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.scenic-dining-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scenic-dining-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.scenic-dining-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    border-radius: var(--radius);
+}
+
+.scenic-dining-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.scenic-dining-highlights {
+    background-color: var(--bg-white);
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--navy-border);
+}
+
+.scenic-dining-highlights h3 {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.scenic-dining-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.scenic-dining-item {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.scenic-dining-item-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.scenic-dining-outro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+    border-left: 3px solid var(--navy);
+    padding-left: 16px;
+}
+
+.scenic-dining-image-wrap {
+    width: 100%;
+}
+
+.scenic-dining-image-frame {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 400px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--navy-border);
+}
+
+.scenic-dining-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--bg-soft);
+}
+
+.scenic-dining-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(15, 28, 46, 0.8));
+    padding: 24px;
+    color: var(--bg-white);
+    display: flex;
+    align-items: flex-end;
+}
+
+.scenic-dining-image-overlay span {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Media Queries for Dining Section */
+@media (max-width: 1024px) {
+    .scenic-dining-title {
+        font-size: 28px;
+    }
+    
+    .scenic-dining-grid {
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-dining-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .scenic-dining-image-frame {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scenic-dining-title {
+        font-size: 24px;
+    }
+    
+    .scenic-dining-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Scenic Comparison Section Styles */
+.scenic-comparison-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scenic-comparison-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scenic-comparison-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.scenic-comparison-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 24px auto;
+    border-radius: var(--radius);
+}
+
+.scenic-comparison-subtitle {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 48px auto;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.scenic-comparison-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.scenic-comp-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    border: 1px solid var(--navy-border);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 calc(33.333% - 24px);
+    min-width: 300px;
+    max-width: calc(33.333% - 24px);
+}
+
+.scenic-comp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy);
+}
+
+.scenic-comp-card-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--bg-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--navy);
+}
+
+.scenic-comp-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.scenic-comp-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scenic-comp-card-info h3 {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.scenic-comp-card-info p {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Media Queries for Comparison Section */
+@media (max-width: 1024px) {
+    .scenic-comparison-title {
+        font-size: 28px;
+    }
+    
+    .scenic-comp-card {
+        flex: 1 1 calc(50% - 24px);
+        max-width: calc(50% - 24px);
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-comp-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .scenic-comparison-title {
+        font-size: 24px;
+    }
+}
+
+/* Scenic Gallery Section Styles */
+.scenic-gallery-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scenic-gallery-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scenic-gallery-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.scenic-gallery-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    margin: 0 auto 24px auto;
+    border-radius: var(--radius);
+}
+
+.scenic-gallery-subtitle {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 48px auto;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.scenic-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 240px);
+    gap: 16px;
+}
+
+.scenic-gallery-item {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--navy-border);
+    background-color: var(--bg-white);
+    transition: var(--transition);
+}
+
+.scenic-gallery-item-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.scenic-gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy);
+}
+
+.scenic-gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--navy-soft);
+    transition: var(--transition);
+}
+
+.scenic-gallery-item:hover .scenic-gallery-img {
+    transform: scale(1.04);
+}
+
+.scenic-gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(15, 28, 46, 0.75));
+    padding: 20px;
+    color: var(--bg-white);
+    opacity: 0.85;
+    transition: var(--transition);
+}
+
+.scenic-gallery-item:hover .scenic-gallery-overlay {
+    opacity: 1;
+}
+
+.scenic-gallery-overlay span {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Media Queries for Gallery Section */
+@media (max-width: 1024px) {
+    .scenic-gallery-title {
+        font-size: 28px;
+    }
+    
+    .scenic-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+    
+    .scenic-gallery-item-1 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    
+    .scenic-gallery-item {
+        height: 250px;
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .scenic-gallery-title {
+        font-size: 24px;
+    }
+}
+
+/* Scenic Inline CTA Section Styles */
+.scenic-inline-cta-section {
+    padding: 40px 20px;
+    background-color: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scenic-inline-cta-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bg-soft);
+    border-radius: var(--radius-lg);
+    padding: 32px 40px;
+    text-align: center;
+    border: 1px solid var(--navy-border);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.scenic-inline-cta-container h3 {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.scenic-inline-cta-container p {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.scenic-inline-cta-btn-wrap {
+    margin-top: 8px;
+}
+
+.scenic-inline-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--navy);
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid var(--navy);
+    box-shadow: var(--shadow);
+}
+
+.scenic-inline-cta-btn:hover {
+    background-color: var(--bg-white);
+    color: var(--navy);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Media Queries for Inline CTA */
+@media (max-width: 768px) {
+    .scenic-inline-cta-container {
+        padding: 24px;
+    }
+    
+    .scenic-inline-cta-container h3 {
+        font-size: 20px;
+    }
+    
+    .scenic-inline-cta-container p {
+        font-size: 15px;
+    }
+    
+    .scenic-inline-cta-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
