@@ -129,6 +129,10 @@ import HonestRiversideCruiseReview from "./pages/HonestRiversideCruiseReview/Hon
 import WhoShouldSailRiverside from "./pages/WhoShouldSailRiverside/WhoShouldSailRiverside";
 import ScenicRiverCruises from "./pages/ScenicRiverCruises/ScenicRiverCruises";
 import ScenicRiverCruisesReview from "./pages/ScenicRiverCruisesReview/ScenicRiverCruisesReview";
+import WhatIsIncludedScenicRiverCruise from "./pages/WhatIsIncludedScenicRiverCruise/WhatIsIncludedScenicRiverCruise";
+import HowMuchDoesScenicRiverCruiseCost from "./pages/HowMuchDoesScenicRiverCruiseCost/HowMuchDoesScenicRiverCruiseCost";
+import IsScenicRiverCruiseWorthMoney from "./pages/IsScenicRiverCruiseWorthMoney/IsScenicRiverCruiseWorthMoney";
+import ScenicRiverCruiseShipsAndSuitesGuide from "./pages/ScenicRiverCruiseShipsAndSuitesGuide/ScenicRiverCruiseShipsAndSuitesGuide";
 
 
 function App() {
@@ -577,6 +581,10 @@ function App() {
           <Route path="/who-should-sail-riverside" element={<WhoShouldSailRiverside />} />
           <Route path="/scenic-river-cruises" element={<ScenicRiverCruises />} />
           <Route path="/scenic-river-cruises/review" element={<ScenicRiverCruisesReview />} />
+          <Route path="/scenic-river-cruises/what-is-included" element={<WhatIsIncludedScenicRiverCruise />} />
+          <Route path="/scenic-river-cruises/cost" element={<HowMuchDoesScenicRiverCruiseCost />} />
+          <Route path="/scenic-river-cruises/is-scenic-worth-it" element={<IsScenicRiverCruiseWorthMoney />} />
+          <Route path="/scenic-river-cruises/ships-suites" element={<ScenicRiverCruiseShipsAndSuitesGuide />} />
 
         </Routes>
       </BrowserRouter>

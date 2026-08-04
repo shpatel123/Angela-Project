@@ -42,7 +42,7 @@
 .rlc-lc-worth-lead {
     font-family: var(--font-body);
     color: var(--text-body);
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.7;
     margin-bottom: 28px;
 }
@@ -82,7 +82,7 @@
 
 .rlc-lc-worth-emphasis-label {
     font-family: var(--font-body);
-    font-size: 15px;
+    font-size: 16px;
     color: var(--text-body);
     font-weight: 500;
 }

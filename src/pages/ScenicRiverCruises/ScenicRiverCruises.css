@@ -782,3 +782,1083 @@
         font-size: 14px;
     }
 }
+
+/* ── Exclusions / What's Usually Not Included ── */
+.scenic-exclusions-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.scenic-exclusions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.scenic-exclusions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.scenic-exclusion-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.scenic-exclusion-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    border-color: rgba(176, 65, 62, 0.3); /* subtle red highlight on hover */
+}
+
+.scenic-exclusion-icon-wrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(176, 65, 62, 0.08); /* light red tint */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+}
+
+.scenic-exclusion-card:hover .scenic-exclusion-icon-wrap {
+    background-color: rgba(176, 65, 62, 0.15);
+}
+
+.scenic-exclusion-icon {
+    color: #b0413e;
+}
+
+.scenic-exclusion-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-body);
+    line-height: 1.4;
+}
+
+/* ── Is Scenic Expensive? Layout ── */
+.scenic-expensive-comparison-section {
+    padding: 80px 20px;
+    background: var(--bg-soft);
+}
+
+.scenic-expensive-comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.scenic-expensive-card-wrapper {
+    background: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 48px;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.scenic-expensive-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.scenic-expensive-card-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.scenic-expensive-card-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy);
+    border-radius: 2px;
+}
+
+.scenic-expensive-card-intro {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.scenic-expensive-card-desc {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.scenic-expensive-card-sidebar {
+    background: var(--bg-soft);
+    padding: 36px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--navy-border);
+}
+
+.scenic-expensive-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.scenic-expensive-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.scenic-expensive-list-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.scenic-expensive-item-icon {
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.scenic-expensive-item-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-body);
+}
+
+.scenic-expensive-image-wrap {
+    position: relative;
+    height: 240px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-top: 40px;
+    border: 1px solid var(--navy-border);
+}
+
+.scenic-expensive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.65);
+    transition: transform 0.6s ease;
+}
+
+.scenic-expensive-image-wrap:hover .scenic-expensive-image {
+    transform: scale(1.03);
+}
+
+.scenic-expensive-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 24px;
+    background: linear-gradient(to top, var(--bg-dark) 0%, transparent 100%);
+}
+
+.scenic-expensive-image-label {
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .scenic-expensive-card-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-expensive-comparison-section {
+        padding: 60px 16px;
+    }
+    
+    .scenic-expensive-card-wrapper {
+        padding: 24px;
+    }
+    
+    .scenic-expensive-card-title {
+        font-size: 28px;
+    }
+    
+    .scenic-expensive-card-intro {
+        font-size: 15px;
+    }
+    
+    .scenic-expensive-card-desc {
+        font-size: 14px;
+    }
+}
+
+/* ── Inline CTA Section (Dark Variant) ── */
+.scenic-inline-cta-section-dark {
+    padding: 60px 20px;
+    background-color: var(--navy);
+    border-top: 1px solid var(--navy-border);
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.scenic-inline-cta-container-dark {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.scenic-inline-cta-content-dark {
+    max-width: 760px;
+}
+
+.scenic-inline-cta-title-dark {
+    font-family: var(--font-display);
+    color: var(--bg-white);
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+}
+
+.scenic-inline-cta-text-dark {
+    font-family: var(--font-body);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.scenic-inline-cta-action-dark {
+    flex-shrink: 0;
+}
+
+.scenic-inline-cta-btn-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-white);
+    color: var(--navy);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid var(--bg-white);
+}
+
+.scenic-inline-cta-btn-dark:hover {
+    background-color: transparent;
+    color: var(--bg-white);
+    border-color: var(--bg-white);
+    transform: translateY(-2px);
+}
+
+/* ── Inline CTA Section (Light Card Variant) ── */
+.scenic-inline-cta-section-light {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.scenic-inline-cta-container-light {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.scenic-inline-cta-card-light {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.scenic-inline-cta-content-light {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.scenic-inline-cta-eyebrow-light {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.scenic-inline-cta-title-light {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    line-height: 1.25;
+}
+
+.scenic-inline-cta-text-light {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 28px 0;
+}
+
+.scenic-inline-cta-btn-light {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--navy);
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid var(--navy);
+}
+
+.scenic-inline-cta-btn-light:hover {
+    background-color: transparent;
+    color: var(--navy);
+    border-color: var(--navy);
+    transform: translateY(-2px);
+}
+
+.scenic-inline-cta-visual-light {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--bg-dark2) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px;
+}
+
+.scenic-inline-cta-visual-light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, var(--navy-soft) 0%, transparent 80%);
+    pointer-events: none;
+}
+
+.scenic-inline-cta-badge-light {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--navy-border);
+    color: var(--bg-white);
+    padding: 16px 24px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .scenic-inline-cta-card-light {
+        grid-template-columns: 1fr;
+    }
+    
+    .scenic-inline-cta-content-light {
+        padding: 40px;
+    }
+    
+    .scenic-inline-cta-visual-light {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-inline-cta-container-dark {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+    .scenic-inline-cta-title-dark, .scenic-inline-cta-title-light{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px){
+    .scenic-inline-cta-title-dark, .scenic-expensive-card-title, .scenic-inline-cta-title-light{
+        font-size: 24px;
+    }
+
+}
+
+/* ── Is Scenic Better Than Viking Section ── */
+.scenic-viking-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.scenic-viking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.scenic-viking-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.scenic-viking-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.scenic-viking-subtitle {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.scenic-viking-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.scenic-viking-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scenic-viking-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.scenic-viking-card-accent {
+    background-color: var(--bg-white);
+    border-color: var(--navy-border);
+}
+
+.scenic-viking-card-accent:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--navy);
+}
+
+.scenic-viking-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.scenic-viking-card-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.scenic-viking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.scenic-viking-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.scenic-viking-icon-wrap {
+    color: var(--navy);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scenic-viking-item-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    font-weight: 500;
+}
+
+.scenic-viking-conclusion {
+    text-align: center;
+    margin-top: 50px;
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+    border-top: 1px solid var(--navy-border);
+    padding-top: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+    .scenic-viking-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .scenic-viking-section {
+        padding: 60px 16px;
+    }
+    
+    .scenic-viking-title {
+        font-size: 28px;
+    }
+    
+    .scenic-viking-card {
+        padding: 30px 24px;
+    }
+}
+
+@media (max-width: 480px){
+    .scenic-viking-title {
+        font-size: 24px;
+    }
+}
+
+/* ── Scenic Worth Gallery Section ── */
+.scenic-worth-gallery-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.scenic-worth-gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.scenic-worth-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.scenic-worth-gallery-item {
+    position: relative;
+    height: 280px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--navy-border);
+    background-color: var(--bg-dark);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scenic-worth-gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.scenic-worth-gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+    transition: transform 0.6s ease;
+}
+
+.scenic-worth-gallery-item:hover .scenic-worth-gallery-image {
+    transform: scale(1.05);
+}
+
+.scenic-worth-gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, var(--bg-dark) 0%, transparent 100%);
+}
+
+.scenic-worth-gallery-caption {
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 992px) {
+    .scenic-worth-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .scenic-worth-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+/* ── Scenic Worth Auto Slider Section ── */
+.scenic-worth-slider-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid var(--navy-border);
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.scenic-worth-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scenic-worth-slider-track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: scenic-scroll-left-to-right 35s linear infinite;
+}
+
+.scenic-worth-slider-track:hover {
+    animation-play-state: paused;
+}
+
+.scenic-worth-slider-item {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--navy-border);
+    background-color: var(--bg-dark);
+    flex-shrink: 0;
+}
+
+.scenic-worth-slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+}
+
+.scenic-worth-slider-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    background: linear-gradient(to top, var(--bg-dark) 0%, transparent 100%);
+}
+
+.scenic-worth-slider-label {
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Keyframes for left-to-right scrolling */
+@keyframes scenic-scroll-left-to-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* ── Scenic Fleet at a Glance Section ── */
+.scenic-fleet-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.scenic-fleet-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.scenic-fleet-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.scenic-fleet-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.scenic-fleet-divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy-light);
+    margin: 0 auto 24px auto;
+}
+
+.scenic-fleet-intro {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.scenic-fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.scenic-fleet-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.scenic-fleet-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: var(--navy-light);
+}
+
+.scenic-fleet-icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.scenic-fleet-card:hover .scenic-fleet-icon-box {
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.scenic-fleet-name {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-body);
+    line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+    .scenic-fleet-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-fleet-section {
+        padding: 60px 16px;
+    }
+    .scenic-fleet-title {
+        font-size: 28px;
+    }
+    .scenic-fleet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scenic-fleet-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .scenic-fleet-title {
+        font-size: 24px;
+    }
+}
+
+/* ── Best for First-Time Cruisers Section ── */
+.scenic-firsttime-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.scenic-firsttime-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.scenic-firsttime-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.scenic-firsttime-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.scenic-firsttime-divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--navy-light);
+    margin-bottom: 24px;
+}
+
+.scenic-firsttime-intro {
+    font-family: var(--font-body);
+    font-size: 18px;
+    color: var(--text-body);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.scenic-firsttime-grid-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.scenic-firsttime-card-item {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.scenic-firsttime-card-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: var(--navy-light);
+}
+
+.scenic-firsttime-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.scenic-firsttime-card-item:hover .scenic-firsttime-card-icon {
+    background-color: var(--navy);
+    color: var(--bg-white);
+}
+
+.scenic-firsttime-card-text {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    font-weight: 600;
+}
+
+.scenic-firsttime-outro {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.scenic-firsttime-media {
+    position: relative;
+}
+
+.scenic-firsttime-image-wrapper {
+    position: relative;
+    height: 420px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--navy-border);
+    background: radial-gradient(circle at center, var(--bg-dark2) 0%, var(--bg-dark) 100%);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.scenic-firsttime-placeholder-icon {
+    color: var(--navy-light);
+    opacity: 0.7;
+    margin-bottom: 16px;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.scenic-firsttime-placeholder-text {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    max-width: 220px;
+    line-height: 1.4;
+}
+
+.scenic-firsttime-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.9);
+}
+
+.scenic-firsttime-badge {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background-color: var(--navy);
+    border: 1px solid var(--navy-light);
+    color: var(--bg-white);
+    padding: 10px 18px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.03); }
+}
+
+
+@media (max-width: 768px) {
+    .scenic-firsttime-section {
+        padding: 60px 16px;
+    }
+     .scenic-firsttime-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .scenic-firsttime-image-wrapper {
+        height: 350px;
+    }
+    
+    .scenic-firsttime-title {
+        font-size: 28px;
+    }
+    
+    .scenic-firsttime-grid-items {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .scenic-firsttime-grid-items {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+     
+    .scenic-firsttime-title {
+        font-size: 24px;
+    }
+}
+
+

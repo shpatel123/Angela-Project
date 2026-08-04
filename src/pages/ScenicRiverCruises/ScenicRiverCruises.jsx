@@ -148,14 +148,14 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 2,
-                    name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    name: "Riverside Luxury Cruises",
+                    item: "https://tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
-                    name: "Scenic Luxury Cruises",
-                    item: "https://tripsandships.com/scenic-luxury-cruises",
+                    name: "Scenic River Cruises",
+                    item: "https://tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",

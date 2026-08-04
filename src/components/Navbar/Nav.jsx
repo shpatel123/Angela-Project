@@ -1047,6 +1047,38 @@ const Nav = () => {
                 Scenic River Cruises Review
               </NavLink>
 
+              <NavLink
+                to="/scenic-river-cruises/what-is-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included Scenic River Cruise
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                How Much Does Scenic River Cruise Cost
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/is-scenic-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Scenic River Cruise Worth Money
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/ships-suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruise Ships and Suites Guide
+              </NavLink>
+
 
 
 
@@ -2089,6 +2121,40 @@ const Nav = () => {
             >
               Scenic River Cruises Review
             </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/what-is-included"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What Is Included Scenic River Cruise
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/cost"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              How Much Does Scenic River Cruise Cost
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/is-scenic-worth-it"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Scenic River Cruise Worth Money
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/ships-suites"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruise Ships and Suites Guide
+            </NavLink>
+
 
 
 
