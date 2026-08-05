@@ -691,7 +691,7 @@ const ScenicRiverCruiseCabinCategories = () => {
             </section>
 
             {/* ── QUICK CABIN COMPARISON ────────────────────────────────────── */}
-            <section className="adg-section" id="quick-cabin-comparison" style={{ backgroundColor: "var(--bg-white)" }}>
+            <section className="adg-section" id="quick-cabin-comparison" style={{ backgroundColor: "var(--bg-soft)" }}>
                 <div className="adg-container">
                     <div className="adg-header">
                         <h2 className="adg-h2">Quick Cabin Comparison</h2>
