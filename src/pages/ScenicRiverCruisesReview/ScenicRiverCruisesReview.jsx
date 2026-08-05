@@ -365,7 +365,7 @@ const ScenicRiverCruisesReview = () => {
     return (
         <div className="Asc-page-wrapper">
             <Helmet>
-                <title>Scenic River Cruises Review: Pros, Cons & Best Fit (2026 Guide)</title>
+                <title>Scenic River Cruises Review: Pros, Cons & Best Fit</title>
                 <meta name="title" content="Scenic River Cruises Review | Pros, Cons, Pricing & Is It Worth It?" />
                 <meta
                     name="description"

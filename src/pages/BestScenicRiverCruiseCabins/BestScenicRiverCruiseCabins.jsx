@@ -75,18 +75,18 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#webpage",
-            name: "Scenic River Cruise Ships & Suites Guide (2026) | Compare Every Ship & Suite",
-            url: "https://tripsandships.com/scenic-river-cruises/ships-suites",
+            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#webpage",
+            name: "Best Scenic River Cruise Cabins (and Cabins to Avoid) | 2026 Guide",
+            url: "https://tripsandships.com/scenic-river-cruises/best-cabins",
             description:
-                "Explore every Scenic River Cruise ship and suite category. Compare Scenic's Space-Ships, Royal Suites, balcony suites, amenities, deck plans, and find the best cabin for your luxury river cruise.",
+                "Discover the best Scenic River Cruise cabins for couples, first-time cruisers, luxury travelers, and milestone trips. Learn which cabins offer the best value, which to avoid, and how to choose the perfect suite.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#article",
-            headline: "Scenic River Cruise Ships & Suites | Complete Luxury Guide",
+            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#article",
+            headline: "Best Scenic River Cruise Cabins (and Cabins to Avoid)",
             description:
-                "A complete guide to the Scenic Space-Ship fleet and suite categories, covering itineraries by river, suite features, the Scenic Sun Lounge, and how to choose the right ship and cabin.",
+                "A complete comparison of every Scenic River Cruise cabin category, including which suites offer the best value, the best cabins for couples and first-timers, and which cabins to avoid.",
             author: {
                 "@type": "Person",
                 name: "Angela Hughes",
@@ -99,7 +99,7 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#breadcrumb",
+            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
@@ -122,129 +122,127 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 4,
-                    name: "Scenic River Cruise Ships & Suites Guide",
-                    item: "https://tripsandships.com/scenic-river-cruises/ships-suites",
+                    name: "Best Scenic River Cruise Cabins",
+                    item: "https://tripsandships.com/scenic-river-cruises/best-cabins",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#itemlist",
-            name: "Scenic River Cruise Ships & Suites Guide — What This Guide Covers",
+            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#itemlist",
+            name: "Best Scenic River Cruise Cabins Guide — What This Guide Covers",
             itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Scenic Ships & Suites: The Quick Answer" },
-                { "@type": "ListItem", position: 2, name: "Scenic Fleet at a Glance" },
-                { "@type": "ListItem", position: 3, name: "Which Scenic Ship Is Best?" },
-                { "@type": "ListItem", position: 4, name: "Scenic Ships by Destination" },
-                { "@type": "ListItem", position: 5, name: "Scenic Suite Categories Explained" },
-                { "@type": "ListItem", position: 6, name: "What Is the Scenic Sun Lounge?" },
-                { "@type": "ListItem", position: 7, name: "Which Suite Offers the Best Value?" },
-                { "@type": "ListItem", position: 8, name: "Which Suite Should You Choose?" },
-                { "@type": "ListItem", position: 9, name: "Scenic Ships vs. Other Luxury River Cruise Lines" },
-                { "@type": "ListItem", position: 10, name: "Common Mistakes When Choosing a Suite" },
-                { "@type": "ListItem", position: 11, name: "Which Scenic Ship Is Best for First-Time Cruisers?" },
-                { "@type": "ListItem", position: 12, name: "Why Book Through a Luxury Travel Advisor?" },
-                { "@type": "ListItem", position: 13, name: "Final Verdict" },
+                { "@type": "ListItem", position: 1, name: "Best Scenic River Cruise Cabins: The Quick Answer" },
+                { "@type": "ListItem", position: 2, name: "Quick Cabin Comparison" },
+                { "@type": "ListItem", position: 3, name: "What Makes a Great Scenic Cabin?" },
+                { "@type": "ListItem", position: 4, name: "Best Scenic Cabin For Every Traveler" },
+                { "@type": "ListItem", position: 5, name: "Are There Any Scenic Cabins to Avoid?" },
+                { "@type": "ListItem", position: 6, name: "Which Deck Is Best?" },
+                { "@type": "ListItem", position: 7, name: "Scenic Sun Lounge: Worth It?" },
+                { "@type": "ListItem", position: 8, name: "Common Cabin Booking Mistakes" },
+                { "@type": "ListItem", position: 9, name: "Scenic vs. Other Luxury River Cruise Cabins" },
+                { "@type": "ListItem", position: 10, name: "Why Book Through a Luxury Travel Advisor?" },
+                { "@type": "ListItem", position: 11, name: "Final Verdict" },
             ],
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#faq",
+            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#faq",
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Which Scenic River Cruise ship is the best?",
+                    name: "What is the best cabin on a Scenic River Cruise?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "There isn't a single \"best\" ship. Scenic maintains a consistent luxury standard across its fleet, so your itinerary and destination are usually more important than the specific vessel.",
+                        text: "The Deluxe Balcony Suite is widely regarded as the best overall choice thanks to its combination of space, Scenic Sun Lounge, premium location, and value.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "What is the Scenic Sun Lounge?",
+                    name: "Which Scenic cabin offers the best value?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "It's Scenic's signature enclosed balcony featuring floor-to-ceiling windows that can be lowered electronically, allowing guests to enjoy river views in any weather.",
+                        text: "The Balcony Suite provides the best balance of comfort, luxury, and price for most travelers.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Does every Scenic suite include butler service?",
+                    name: "Are there any cabins to avoid on Scenic River Cruises?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Personalized butler service is available for every suite category.",
+                        text: "There are no truly bad cabins. However, travelers who prioritize expansive views may prefer Balcony Suites over lower-deck Standard Suites.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which Scenic suite offers the best value?",
+                    name: "Is the Scenic Sun Lounge worth paying for?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Many travelers consider the Balcony Suite with Scenic Sun Lounge to offer the best balance of luxury, views, and price.",
+                        text: "Yes. Many guests consider it one of Scenic's signature features, providing panoramic river views and additional living space in all weather conditions.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "What is the most luxurious suite on Scenic?",
+                    name: "Which cabin is best for first-time Scenic guests?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "The Royal Owner's Suite is typically the largest and most luxurious accommodation available onboard.",
+                        text: "A Balcony Suite is an excellent choice for first-time cruisers because it offers the classic Scenic experience at a reasonable upgrade.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Are Scenic ships all the same?",
+                    name: "Which cabin is best for couples?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "While the overall luxury experience is consistent, ships vary slightly in décor, artwork, and itineraries.",
+                        text: "The Deluxe Balcony Suite is a favorite among couples seeking comfort, privacy, and beautiful river views.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which Scenic ship sails the Danube?",
+                    name: "Which Scenic suite is the most luxurious?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Several Scenic Space-Ships operate Danube itineraries, depending on the season and schedule.",
+                        text: "The Royal Owner's Suite is the largest and most luxurious accommodation onboard, offering premium amenities and personalized service.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which Scenic ship sails the Rhine?",
+                    name: "Which deck is best on a Scenic River Cruise?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Multiple Scenic ships cruise the Rhine throughout the year, especially during spring, summer, and Christmas Market seasons.",
+                        text: "Many travelers prefer the middle or upper decks for convenient access to public areas and excellent views, though the best deck depends on your cabin category and preferences.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Should I choose my ship or my itinerary first?",
+                    name: "Is it worth upgrading from a Standard Suite?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "For Scenic, choosing the right itinerary usually has a greater impact on your vacation than selecting a specific ship.",
+                        text: "If you enjoy relaxing in your cabin and want Scenic's signature Sun Lounge, many travelers find the upgrade worthwhile.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Are Scenic ships adults-only?",
+                    name: "How early should I book the best Scenic cabins?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Scenic primarily caters to adult travelers, though age policies may vary by itinerary.",
+                        text: "Booking 9 to 18 months before departure usually provides the widest choice of cabin categories and deck locations.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "How far in advance should I book the best suites?",
+                    name: "Can a travel advisor help me choose the best cabin?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Booking 9–18 months in advance typically provides the best selection, especially for Balcony Suites and Royal Suites on popular departures.",
+                        text: "Yes. A luxury travel advisor can recommend the best cabin based on your itinerary, budget, travel style, and current promotions.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Should I book a Scenic River Cruise through a travel advisor?",
+                    name: "What should I consider before choosing a Scenic cabin?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. A luxury travel advisor can recommend the best ship, compare suite categories, explain promotions, and help you choose the itinerary that best fits your travel style.",
+                        text: "Think about your budget, preferred views, cruise length, deck location, and how much time you expect to spend relaxing in your suite.",
                     },
                 },
             ],
@@ -258,52 +256,52 @@ function FAQ() {
 
     const faqData = [
         {
-            q: "Which Scenic River Cruise ship is the best?",
-            a: "There isn't a single \"best\" ship. Scenic maintains a consistent luxury standard across its fleet, so your itinerary and destination are usually more important than the specific vessel.",
+            q: "What is the best cabin on a Scenic River Cruise?",
+            a: "The Deluxe Balcony Suite is widely regarded as the best overall choice thanks to its combination of space, Scenic Sun Lounge, premium location, and value.",
         },
         {
-            q: "What is the Scenic Sun Lounge?",
-            a: "It's Scenic's signature enclosed balcony featuring floor-to-ceiling windows that can be lowered electronically, allowing guests to enjoy river views in any weather.",
+            q: "Which Scenic cabin offers the best value?",
+            a: "The Balcony Suite provides the best balance of comfort, luxury, and price for most travelers.",
         },
         {
-            q: "Does every Scenic suite include butler service?",
-            a: "Yes. Personalized butler service is available for every suite category.",
+            q: "Are there any cabins to avoid on Scenic River Cruises?",
+            a: "There are no truly bad cabins. However, travelers who prioritize expansive views may prefer Balcony Suites over lower-deck Standard Suites.",
         },
         {
-            q: "Which Scenic suite offers the best value?",
-            a: "Many travelers consider the Balcony Suite with Scenic Sun Lounge to offer the best balance of luxury, views, and price.",
+            q: "Is the Scenic Sun Lounge worth paying for?",
+            a: "Yes. Many guests consider it one of Scenic's signature features, providing panoramic river views and additional living space in all weather conditions.",
         },
         {
-            q: "What is the most luxurious suite on Scenic?",
-            a: "The Royal Owner's Suite is typically the largest and most luxurious accommodation available onboard.",
+            q: "Which cabin is best for first-time Scenic guests?",
+            a: "A Balcony Suite is an excellent choice for first-time cruisers because it offers the classic Scenic experience at a reasonable upgrade.",
         },
         {
-            q: "Are Scenic ships all the same?",
-            a: "While the overall luxury experience is consistent, ships vary slightly in décor, artwork, and itineraries.",
+            q: "Which cabin is best for couples?",
+            a: "The Deluxe Balcony Suite is a favorite among couples seeking comfort, privacy, and beautiful river views.",
         },
         {
-            q: "Which Scenic ship sails the Danube?",
-            a: "Several Scenic Space-Ships operate Danube itineraries, depending on the season and schedule.",
+            q: "Which Scenic suite is the most luxurious?",
+            a: "The Royal Owner's Suite is the largest and most luxurious accommodation onboard, offering premium amenities and personalized service.",
         },
         {
-            q: "Which Scenic ship sails the Rhine?",
-            a: "Multiple Scenic ships cruise the Rhine throughout the year, especially during spring, summer, and Christmas Market seasons.",
+            q: "Which deck is best on a Scenic River Cruise?",
+            a: "Many travelers prefer the middle or upper decks for convenient access to public areas and excellent views, though the best deck depends on your cabin category and preferences.",
         },
         {
-            q: "Should I choose my ship or my itinerary first?",
-            a: "For Scenic, choosing the right itinerary usually has a greater impact on your vacation than selecting a specific ship.",
+            q: "Is it worth upgrading from a Standard Suite?",
+            a: "If you enjoy relaxing in your cabin and want Scenic's signature Sun Lounge, many travelers find the upgrade worthwhile.",
         },
         {
-            q: "Are Scenic ships adults-only?",
-            a: "Scenic primarily caters to adult travelers, though age policies may vary by itinerary.",
+            q: "How early should I book the best Scenic cabins?",
+            a: "Booking 9 to 18 months before departure usually provides the widest choice of cabin categories and deck locations.",
         },
         {
-            q: "How far in advance should I book the best suites?",
-            a: "Booking 9–18 months in advance typically provides the best selection, especially for Balcony Suites and Royal Suites on popular departures.",
+            q: "Can a travel advisor help me choose the best cabin?",
+            a: "Yes. A luxury travel advisor can recommend the best cabin based on your itinerary, budget, travel style, and current promotions.",
         },
         {
-            q: "Should I book a Scenic River Cruise through a travel advisor?",
-            a: "Yes. A luxury travel advisor can recommend the best ship, compare suite categories, explain promotions, and help you choose the itinerary that best fits your travel style.",
+            q: "What should I consider before choosing a Scenic cabin?",
+            a: "Think about your budget, preferred views, cruise length, deck location, and how much time you expect to spend relaxing in your suite.",
         },
     ];
 
@@ -325,7 +323,7 @@ function FAQ() {
                             )}
                         </span>
                     </div>
-                    {open === i && (
+                 {open === i && (
                         <div className="Asc-faq-a">
                             <div className="Asc-faq-a-inner">{item.a}</div>
                         </div>
@@ -336,98 +334,16 @@ function FAQ() {
     );
 }
 
-/* ── Scenic Fleet Data ─────────────────────────────────────────────── */
-const fleetShips = [
-    "Scenic Jasper",
-    "Scenic Opal",
-    "Scenic Amber",
-    "Scenic Crystal",
-    "Scenic Diamond",
-    "Scenic Sapphire",
-    "Scenic Pearl",
-    "Scenic Ruby",
-    "Scenic Jewel",
-    "Scenic Azure",
-    "Scenic Gem",
-    "Scenic Jade",
-];
-
-/* ── What Makes Ships Different Data ──────────────────────────────── */
-const shipDifferences = [
-    "River itinerary",
-    "Sailing region",
-    "Seasonal experiences",
-    "Deck layout",
-    "Public space décor",
-];
-
-/* ── Scenic Ships by Destination Data ─────────────────────────────── */
-const destinationFactors = [
-    {
-        id: "rhine",
-        title: "Rhine River",
-        badge: "Rhine River",
-        icon: MapPinned,
-        desc: "Ideal for first-time river cruisers who want castles, vineyards, Christmas Markets, and a Switzerland & Netherlands itinerary.",
-        columns: [
-            {
-                label: "Popular ports include:",
-                items: ["Amsterdam", "Cologne", "Strasbourg", "Basel"],
-            },
-        ],
-    },
-    {
-        id: "danube",
-        title: "Danube River",
-        badge: "Danube River",
-        icon: Landmark,
-        desc: "Perfect for travelers interested in historic cities, imperial architecture, music, and UNESCO World Heritage sites.",
-        columns: [
-            {
-                label: "Popular ports:",
-                items: ["Budapest", "Vienna", "Bratislava", "Passau"],
-            },
-        ],
-    },
-    {
-        id: "rhone",
-        title: "Rhône River",
-        badge: "Rhône River",
-        icon: Wine,
-        desc: "Known for wine regions, Provence, French cuisine, and lavender landscapes.",
-        columns: [
-            {
-                label: "Known for:",
-                items: ["Wine regions", "Provence", "French cuisine", "Lavender landscapes"],
-            },
-        ],
-    },
-    {
-        id: "douro",
-        title: "Douro River",
-        badge: "Douro River",
-        icon: Compass,
-        desc: "Best for Portugal, wine lovers, scenic vineyards, and boutique experiences.",
-        columns: [
-            {
-                label: "Best for:",
-                items: ["Portugal", "Wine lovers", "Scenic vineyards", "Boutique experiences"],
-            },
-        ],
-    },
-    {
-        id: "seine",
-        title: "Seine River",
-        badge: "Seine River",
-        icon: Sparkles,
-        desc: "Ideal for Paris, Normandy, history, and art lovers.",
-        columns: [
-            {
-                label: "Ideal for:",
-                items: ["Paris", "Normandy", "History", "Art lovers"],
-            },
-        ],
-    },
+/* ── What Makes a Great Scenic Cabin? Data ─────────────────────────── */
+const cabinFactorItems = [
+    "River views",
+    "Natural light",
+    "Living space",
+    "Privacy",
+    "Deck location",
+    "Budget",
+    "Cruise length",
+    "Time spent in your suite",
 ];
 
 /* ── Scenic Suite Categories Data ─────────────────────────────────── */
@@ -453,19 +369,40 @@ const suiteFactors = [
     },
     {
         id: "balcony",
-        title: "Balcony Suite (Scenic Sun Lounge)",
+        title: "Balcony Suite — Best Value",
         badge: "Balcony Suite",
         icon: Sparkles,
-        desc: "One of Scenic's signature accommodations, and the most popular suite category on the fleet.",
+        desc: "If you're looking for the highest value without upgrading to premium suites, the Balcony Suite is difficult to beat. It introduces Scenic's signature Sun Lounge, replacing a traditional balcony with a private enclosed space featuring floor-to-ceiling windows.",
         columns: [
             {
-                label: "Features:",
+                label: "Why travelers love it:",
                 items: [
                     "Scenic Sun Lounge",
-                    "Floor-to-ceiling windows",
-                    "Private sitting area",
-                    "Luxury bathroom",
+                    "Plenty of natural light",
+                    "Comfortable living space",
+                    "Elegant design",
                     "Butler service",
+                    "Excellent price-to-value ratio",
+                ],
+            },
+        ],
+    },
+    {
+        id: "deluxebalcony",
+        title: "Deluxe Balcony Suite — Best Overall",
+        badge: "Deluxe Balcony",
+        icon: Award,
+        desc: "For most guests, the Deluxe Balcony Suite offers the ideal combination of comfort, space, and value. It's especially well suited to couples taking 7–14-night European river cruises.",
+        columns: [
+            {
+                label: "Why we recommend it:",
+                items: [
+                    "Scenic Sun Lounge",
+                    "Butler service",
+                    "Excellent river views",
+                    "Comfortable seating area",
+                    "Premium deck location",
+                    "Spacious layout",
                 ],
             },
         ],
@@ -475,152 +412,232 @@ const suiteFactors = [
         title: "Junior Suite",
         badge: "Junior Suite",
         icon: Gem,
-        desc: "Offers additional living space—ideal for longer cruises, couples, and anniversary trips.",
-        columns: [
-            {
-                label: "Additional benefits often include:",
-                items: ["Larger seating area", "More storage", "Premium location"],
-            },
-        ],
-    },
-    {
-        id: "royalbalcony",
-        title: "Royal Balcony Suite",
-        badge: "Royal Balcony",
-        icon: Award,
-        desc: "A premium luxury option, excellent for milestone celebrations.",
+        desc: "For 10–15-night itineraries, the additional living space of a Junior Suite becomes more valuable—perfect for anniversary trips, retirement celebrations, and longer voyages.",
         columns: [
             {
                 label: "Features:",
                 items: [
-                    "Larger suite",
-                    "Expanded living area",
-                    "Enhanced butler service",
+                    "Spacious living area",
+                    "Larger bathroom",
+                    "Scenic Sun Lounge",
+                    "Butler service",
+                    "Additional storage",
                     "Premium furnishings",
-                    "Additional amenities",
+                ],
+            },
+        ],
+    },
+    {
+        id: "royal",
+        title: "Royal Suite",
+        badge: "Royal Suite",
+        icon: Crown,
+        desc: "Travelers seeking a more exclusive experience—and extra room on longer cruises—often choose the Royal Suite, which provides a boutique hotel atmosphere while cruising Europe's rivers.",
+        columns: [
+            {
+                label: "Highlights include:",
+                items: [
+                    "Separate sitting area",
+                    "Luxury furnishings",
+                    "Prime ship location",
+                    "Enhanced butler attention",
+                    "Spacious bathroom",
+                    "Premium amenities",
                 ],
             },
         ],
     },
     {
         id: "royalowners",
-        title: "Royal Owner's Suite",
+        title: "Royal Owner's Suite — Best Luxury",
         badge: "Royal Owner's",
         icon: Star,
-        desc: "The most luxurious accommodation onboard—perfect for travelers who want the highest level of comfort.",
+        desc: "The Royal Owner's Suite represents the highest level of Scenic luxury—ideal for milestone celebrations and once-in-a-lifetime vacations.",
         columns: [
             {
-                label: "Features may include:",
+                label: "Features:",
                 items: [
+                    "Largest accommodation onboard",
                     "Separate living room",
-                    "Spacious bedroom",
-                    "Luxury bathroom",
-                    "Premium location",
-                    "Personalized service",
-                    "Butler assistance",
+                    "Premium furnishings",
                     "Panoramic river views",
+                    "Luxury bathroom",
+                    "Personalized butler service",
                 ],
             },
         ],
     },
 ];
 
-/* ── Sun Lounge Benefits Data ─────────────────────────────────────── */
+/* ── Scenic Sun Lounge Benefits Data ───────────────────────────────── */
 const sunLoungeBenefits = [
-    "Comfortable in all weather",
-    "Larger usable living space",
-    "Better privacy",
-    "Excellent river views",
-    "Climate-controlled environment",
+    "Floor-to-ceiling windows",
+    "Comfortable seating",
+    "River views in all weather",
+    "More usable living space",
+    "Privacy",
 ];
 
+/* ── Best Cabin For Every Traveler Data ────────────────────────────── */
 const ShipData = [
     {
-        key: "standard-suite",
-        icon: <Wallet size={22} strokeWidth={1.6} />,
-        eyebrow: "Choose If",
-        title: "Standard Suite",
-        // image: StandardSuite,
-        imageAlt: "Scenic Standard Suite",
+        key: "best-overall",
+        icon: <Award size={22} strokeWidth={1.6} />,
+        eyebrow: "🏆 Best Overall",
+        title: "Deluxe Balcony Suite",
+        // image: DeluxeBalconySuite,
+        imageAlt: "Scenic Deluxe Balcony Suite",
         items: [
-            "Budget matters most",
-            "You're rarely in your cabin",
-            "This is your first river cruise",
-        ],
-        accent: "adg-accent-rose",
-    },
-    {
-        key: "balcony-suite",
-        icon: <Eye size={22} strokeWidth={1.6} />,
-        eyebrow: "Choose If",
-        title: "Balcony Suite",
-        // image: BalconySuite,
-        imageAlt: "Scenic Balcony Suite",
-        items: [
-            "You enjoy relaxing in your room",
-            "You want river views",
-            "You appreciate natural light",
-        ],
-        accent: "adg-accent-teal",
-    },
-    {
-        key: "junior-suite",
-        icon: <Sparkles size={22} strokeWidth={1.6} />,
-        eyebrow: "Choose If",
-        title: "Junior Suite",
-        // image: JuniorSuite,
-        imageAlt: "Scenic Junior Suite",
-        items: [
-            "You're celebrating a special occasion",
-            "You're sailing for 10+ nights",
-            "You prefer additional space",
+            "Ideal combination of comfort, space, and value",
+            "Scenic Sun Lounge and butler service",
+            "Best for 7–14 night European cruises",
         ],
         accent: "adg-accent-gold",
     },
     {
-        key: "royal-suite",
-        icon: <Crown size={22} strokeWidth={1.6} />,
-        eyebrow: "Choose If",
-        title: "Royal Suite",
-        // image: RoyalSuite,
-        imageAlt: "Scenic Royal Suite",
+        key: "best-value",
+        icon: <Wallet size={22} strokeWidth={1.6} />,
+        eyebrow: "💰 Best Value",
+        title: "Balcony Suite with Sun Lounge",
+        // image: BalconySuite,
+        imageAlt: "Scenic Balcony Suite",
         items: [
-            "Luxury is your priority",
-            "You're celebrating a milestone",
-            "You enjoy premium accommodations",
+            "Highest value without a premium upgrade",
+            "Scenic Sun Lounge and natural light",
+            "The 'sweet spot' of Scenic's lineup",
+        ],
+        accent: "adg-accent-teal",
+    },
+    {
+        key: "best-luxury",
+        icon: <Crown size={22} strokeWidth={1.6} />,
+        eyebrow: "👑 Best Luxury Cabin",
+        title: "Royal Owner's Suite",
+        // image: RoyalOwnersSuite,
+        imageAlt: "Scenic Royal Owner's Suite",
+        items: [
+            "Largest accommodation onboard",
+            "Separate living room and panoramic views",
+            "Ideal for milestone celebrations",
+        ],
+        accent: "adg-accent-rose",
+    },
+    {
+        key: "best-couples",
+        icon: <Users size={22} strokeWidth={1.6} />,
+        eyebrow: "❤️ Best for Couples",
+        title: "Deluxe Balcony Suite",
+        // image: DeluxeBalconySuite,
+        imageAlt: "Scenic Deluxe Balcony Suite for couples",
+        items: [
+            "Quiet atmosphere and scenic river views",
+            "Romantic sunsets from the Sun Lounge",
+            "Popular for anniversaries and honeymoon-style trips",
+        ],
+        accent: "adg-accent-gold",
+    },
+    {
+        key: "best-first-time",
+        icon: <Compass size={22} strokeWidth={1.6} />,
+        eyebrow: "🌍 Best for First-Timers",
+        title: "Balcony Suite",
+        // image: BalconySuite,
+        imageAlt: "Scenic Balcony Suite for first-time cruisers",
+        items: [
+            "Introduces the signature Sun Lounge experience",
+            "No need for the premium cost of larger suites",
+            "The classic Scenic experience",
+        ],
+        accent: "adg-accent-teal",
+    },
+    {
+        key: "best-longer-cruises",
+        icon: <Gem size={22} strokeWidth={1.6} />,
+        eyebrow: "🛳️ Best for Longer Cruises",
+        title: "Junior Suite or Royal Suite",
+        // image: JuniorSuite,
+        imageAlt: "Scenic Junior Suite for longer cruises",
+        items: [
+            "Best for 10–15 night itineraries",
+            "Additional living space becomes more valuable",
+            "Great for extended voyages",
         ],
         accent: "adg-accent-rose",
     },
 ];
-/* ── Scenic Ships vs Other Luxury River Cruise Lines Data ─────────── */
-const comparisonData = [
-    { key: "scenic", line: "Scenic", strength: "Butler service & Sun Lounge suites" },
-    { key: "riverside", line: "Riverside", strength: "Larger suites & boutique feel" },
-    { key: "viking", line: "Viking", strength: "Scandinavian simplicity" },
-    { key: "ama", line: "AmaWaterways", strength: "Active excursions" },
-    { key: "uniworld", line: "Uniworld", strength: "Unique décor" },
-    { key: "tauck", line: "Tauck", strength: "Guided land experiences" },
+
+/* ── Cabins to Avoid Data ───────────────────────────────────────────── */
+const cabinsToAvoid = [
+    "Lower-deck Standard Suites, if you want panoramic river views, spend significant time in your cabin, or prefer abundant natural light",
+    "Cabins near reception, lounge entrances, elevators, or dining venues, if you're sensitive to noise",
+    "Last-minute cabin assignments, since booking late may limit your choice of deck, location, and suite category",
 ];
 
-/* ── Common Mistakes Data ─────────────────────────────────────────── */
+/* ── Which Deck Is Best Data ────────────────────────────────────────── */
+const deckData = [
+    {
+        key: "upper-deck",
+        icon: <Star size={22} strokeWidth={1.6} />,
+        eyebrow: "Great For",
+        title: "Upper Deck",
+        imageAlt: "Upper deck of a Scenic river cruise ship",
+        items: ["Premium suites", "Easy access to lounges", "Excellent views"],
+        accent: "adg-accent-gold",
+    },
+    {
+        key: "middle-deck",
+        icon: <Compass size={22} strokeWidth={1.6} />,
+        eyebrow: "Best For",
+        title: "Middle Deck",
+        imageAlt: "Middle deck of a Scenic river cruise ship",
+        items: ["Central location", "Convenient access throughout the ship", "Balanced experience"],
+        accent: "adg-accent-teal",
+    },
+    {
+        key: "lower-deck",
+        icon: <Wallet size={22} strokeWidth={1.6} />,
+        eyebrow: "Ideal If",
+        title: "Lower Deck",
+        imageAlt: "Lower deck of a Scenic river cruise ship",
+        items: ["Budget matters most", "You're rarely in your cabin", "You prefer the most affordable option"],
+        accent: "adg-accent-rose",
+    },
+];
+
+/* ── Quick Cabin Comparison Data ───────────────────────────────────── */
+const cabinComparison = [
+    { key: "standard", cabin: "Standard Suite", bestFor: "Budget-conscious luxury", rating: 4 },
+    { key: "balcony", cabin: "Balcony Suite", bestFor: "Most travelers", rating: 5 },
+    { key: "deluxebalcony", cabin: "Deluxe Balcony Suite", bestFor: "Couples", rating: 5 },
+    { key: "junior", cabin: "Junior Suite", bestFor: "Longer cruises", rating: 5 },
+    { key: "royal", cabin: "Royal Suite", bestFor: "Luxury vacations", rating: 5 },
+    { key: "royalowners", cabin: "Royal Owner's Suite", bestFor: "Ultimate luxury", rating: 5 },
+];
+
+/* ── Scenic vs Other Luxury River Cruise Cabins Data ──────────────── */
+const comparisonData = [
+    { key: "scenic", line: "Scenic", strength: "Sun Lounge & Butler Service" },
+    { key: "riverside", line: "Riverside", strength: "Residential-style luxury suites" },
+    { key: "viking", line: "Viking", strength: "Scandinavian simplicity" },
+    { key: "ama", line: "AmaWaterways", strength: "Twin-balcony cabins" },
+    { key: "uniworld", line: "Uniworld", strength: "Individually designed suites" },
+    { key: "tauck", line: "Tauck", strength: "Elegant all-inclusive accommodations" },
+];
+
+/* ── Common Cabin Booking Mistakes Data ───────────────────────────── */
 const commonMistakes = [
-    "Choose based only on price",
-    "Ignore itinerary",
-    "Book late and lose the best suite selection",
-    "Don't compare deck locations",
-    "Overlook current promotions",
+    "Choosing the cheapest cabin without considering how much time they'll spend onboard",
+    "Booking too late and missing premium cabin availability",
+    "Upgrading beyond what they actually need",
+    "Ignoring deck location",
+    "Not comparing promotions between suite categories",
 ];
 
 /* ── Main Component ──────────────────────────────────────────────── */
-const ScenicRiverCruiseShipsSuites = () => {
+const BestScenicRiverCruiseCabins = () => {
     const [readMore, setReadMore] = useState(false);
     const [readMoreVerdict, setReadMoreVerdict] = useState(false);
-    const [activeDestination, setActiveDestination] = useState("rhine");
     const [activeSuite, setActiveSuite] = useState("standard");
-
-    const currentDestination =
-        destinationFactors.find((f) => f.id === activeDestination) || destinationFactors[0];
-    const ActiveDestinationIcon = currentDestination.icon;
 
     const currentSuite =
         suiteFactors.find((f) => f.id === activeSuite) || suiteFactors[0];
@@ -629,11 +646,11 @@ const ScenicRiverCruiseShipsSuites = () => {
     return (
         <div className="Asc-page-wrapper">
             <Helmet>
-                <title>Scenic River Cruise Ships & Suites Guide | Compare Every Ship & Suite</title>
-                <meta name="title" content="Scenic River Cruise Ships & Suites | Complete Luxury Guide" />
+                <title>Best Scenic River Cruise Cabins</title>
+                <meta name="title" content="Best Scenic River Cruise Cabins | Which Cabin Should You Book?" />
                 <meta
                     name="description"
-                    content="Explore every Scenic River Cruise ship and suite category. Compare Scenic's Space-Ships, Royal Suites, balcony suites, amenities, deck plans, and find the best cabin for your luxury river cruise."
+                    content="Discover the best Scenic River Cruise cabins for couples, first-time cruisers, luxury travelers, and milestone trips. Learn which cabins offer the best value, which to avoid, and how to choose the perfect suite."
                 />
                 <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
             </Helmet>
@@ -644,25 +661,31 @@ const ScenicRiverCruiseShipsSuites = () => {
                 <div className="Scenic_hero_overlay"></div>
 
                 <div className="Scenic_hero_content">
-                    <h1>Scenic River Cruise <br /> Ships & Suites Guide</h1>
+                    <h1>Best Scenic River Cruise Cabins <br /> (and Cabins to Avoid)</h1>
 
                     <p>
-                        Choosing the right Scenic River Cruise ship and
-                        suite is one of the biggest decisions you'll make
-                        when planning your vacation. While Scenic's fleet
-                        shares the same commitment to luxury, each ship has
-                        its own atmosphere, itinerary, and suite options
-                        that can shape your overall experience.
+                        Choosing the right cabin is one of the most
+                        important decisions you'll make when booking a
+                        Scenic River Cruise. Unlike large ocean ships with
+                        thousands of cabins, Scenic's intimate Space-Ships
+                        offer a smaller selection of luxury suites—but your
+                        choice can still have a significant impact on your
+                        comfort, views, and overall experience.
                     </p>
 
                     {readMore && (
                         <p>
-                            Whether you're planning a Danube, Rhine, Rhône,
-                            Douro, or Seine cruise, this guide explains the
-                            Scenic fleet, compares suite categories,
-                            highlights the best cabins, and helps you decide
-                            which ship is the right fit for your travel
-                            style.
+                            The good news is that there are no "bad" cabins
+                            on Scenic River Cruises. Every suite includes
+                            personalized butler service, elegant
+                            furnishings, and premium amenities. However,
+                            some cabins provide better value, more privacy,
+                            quieter locations, or larger living spaces
+                            depending on your travel style. This guide
+                            explains the best Scenic cabins, highlights
+                            situations where certain cabin locations may
+                            not be ideal, and helps you choose the perfect
+                            suite for your next luxury river cruise.
                         </p>
                     )}
 
@@ -684,25 +707,25 @@ const ScenicRiverCruiseShipsSuites = () => {
                 </div>
             </section>
 
-            {/* ── 60-SECOND ANSWER ─────────────────────────────────────────── */}
+            {/* ── BEST SCENIC RIVER CRUISE CABINS: THE QUICK ANSWER ─────────── */}
             <section className="rlc-qa-section" id="quick-answer" style={{ backgroundColor: "var(--bg-white)" }}>
                 <div className="rlc-qa-container">
                     <div className="rlc-qa-card-wrapper">
-                        <h2 className="rlc-qa-title">Scenic Ships & Suites: The Quick Answer</h2>
+                        <h2 className="rlc-qa-title">Best Scenic River Cruise Cabins: The Quick Answer</h2>
                         <div className="rlc-qa-accent"></div>
 
                         <p className="rlc-qa-intro">
-                            If you're looking for the quick answer:
+                            If you're looking for the short answer:
                         </p>
 
                         <ul className="rlc-qa-list">
                             {[
-                                "Best Overall Ship: Depends on the itinerary rather than the ship itself—Scenic maintains a consistent luxury standard across the fleet",
-                                "Best Suite: Royal Owner's Suite for maximum space and exclusive amenities",
-                                "Best Value: Balcony Suites offer an excellent balance of comfort and price",
-                                "Best for First-Time Guests: Any Scenic Space-Ship on the Rhine or Danube",
-                                "Luxury Level: Five-star",
-                                "Service: Butler service included for every suite",
+                                "Best Overall Cabin: Deluxe Balcony Suite",
+                                "Best Value: Balcony Suite with Scenic Sun Lounge",
+                                "Best Luxury Cabin: Royal Owner's Suite",
+                                "Best for Couples: Deluxe Balcony Suite",
+                                "Best for First-Time River Cruisers: Balcony Suite",
+                                "Cabins to Avoid: There are no truly bad cabins, but lower-deck Standard Suites may have smaller windows and less natural light than Balcony Suites.",
                             ].map((item, i) => (
                                 <li key={i} className="rlc-qa-item">
                                     <span className="rlc-qa-icon-wrap">
@@ -714,61 +737,66 @@ const ScenicRiverCruiseShipsSuites = () => {
                         </ul>
 
                         <p className="rlc-qa-outro">
-                            For most travelers, choosing the right itinerary
-                            matters more than choosing a specific ship—but
-                            your suite category can make just as big a
-                            difference to your experience onboard.
+                            Our Recommendation: For most travelers, the
+                            Balcony Suite offers the best balance of
+                            luxury, comfort, views, and price.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* ── SCENIC FLEET AT A GLANCE ─────────────────────────────────── */}
-            <section className="scenic-fleet-section" id="scenic-fleet-at-a-glance">
-                <div className="scenic-fleet-container">
-                    <div className="scenic-fleet-header">
-                        <h2 className="scenic-fleet-title">Scenic Fleet at a Glance</h2>
-                        <div className="scenic-fleet-divider"></div>
-                        <p className="scenic-fleet-intro">
-                            Scenic's modern Space-Ships sail some of
-                            Europe's most iconic rivers. Although the décor
-                            and artwork vary slightly, guests enjoy a
-                            consistent luxury experience across the fleet.
+            {/* ── QUICK CABIN COMPARISON ────────────────────────────────────── */}
+            <section className="adg-section" id="quick-cabin-comparison" style={{ backgroundColor: "var(--bg-soft)" }}>
+                <div className="adg-container">
+                    <div className="adg-header">
+                        <h2 className="adg-h2">Quick Cabin Comparison</h2>
+                        <div className="adg-accent-line"></div>
+                        <p className="Asc-section-intro">
+                            A side-by-side look at every Scenic suite
+                            category before you dive into the details.
                         </p>
                     </div>
 
-                    <div className="scenic-fleet-grid">
-                        {fleetShips.map((ship, i) => (
-                            <div key={i} className="scenic-fleet-card">
-                                <div className="scenic-fleet-icon-box">
-                                    <Ship size={18} strokeWidth={2} />
-                                </div>
-                                <span className="scenic-fleet-name">{ship}</span>
-                            </div>
-                        ))}
+                    <div className="Asc-table-wrapper">
+                        <table className="Asc-fleet-table">
+                            <thead>
+                                <tr>
+                                    <th>Cabin Type</th>
+                                    <th>Best For</th>
+                                    <th>Our Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {cabinComparison.map((row) => (
+                                    <tr key={row.key}>
+                                        <td><strong>{row.cabin}</strong></td>
+                                        <td>{row.bestFor}</td>
+                                        <td>{"⭐".repeat(row.rating)}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
 
-            {/* ── WHICH SCENIC SHIP IS BEST? ───────────────────────────────── */}
-            <section className="rlc-lc-worth-section" id="which-ship-is-best">
+            {/* ── WHAT MAKES A GREAT SCENIC CABIN? ─────────────────────────── */}
+            <section className="rlc-lc-worth-section" id="what-makes-a-great-cabin">
                 <div className="rlc-lc-worth-container">
                     <div className="rlc-lc-worth-grid">
                         <div className="rlc-lc-worth-content">
-                            <h2 className="rlc-lc-worth-title">Which Scenic Ship Is Best?</h2>
+                            <h2 className="rlc-lc-worth-title">What Makes a Great Scenic Cabin?</h2>
 
                             <div className="rlc-lc-worth-accent"></div>
 
                             <p className="rlc-lc-worth-lead">
-                                Unlike many ocean cruise lines where ships
-                                vary significantly, Scenic focuses on
-                                delivering the same luxury standard
-                                throughout its river fleet. The biggest
-                                differences are usually:
+                                The best cabin isn't always the most
+                                expensive one. When comparing cabins,
+                                consider:
                             </p>
 
                             <div className="rlc-lc-worth-emphasis-grid">
-                                {shipDifferences.map((item, idx) => (
+                                {cabinFactorItems.map((item, idx) => (
                                     <div key={idx} className="rlc-lc-worth-emphasis-item">
                                         <span className="rlc-lc-worth-emphasis-icon">
                                             <Check size={16} strokeWidth={3} />
@@ -780,9 +808,9 @@ const ScenicRiverCruiseShipsSuites = () => {
 
                             <div className="rlc-lc-worth-conclusion-box">
                                 <p className="rlc-lc-worth-conclusion-text">
-                                    For most travelers, choosing the right
-                                    itinerary is more important than
-                                    choosing a specific ship.
+                                    For many travelers, paying a little more
+                                    for a Balcony Suite provides a
+                                    significantly better onboard experience.
                                 </p>
                             </div>
 
@@ -791,82 +819,15 @@ const ScenicRiverCruiseShipsSuites = () => {
                         <div className="rlc-lc-worth-media">
                             <div className="rlc-lc-worth-media-wrapper">
                                 <img
-                                    // src={ShipExteriorImage}
-                                    alt="Scenic Space-Ship sailing along a European river"
+                                    // src={SuiteImage}
+                                    alt="Scenic river cruise suite interior with river views"
                                     className="rlc-lc-worth-media-img"
                                 />
                                 <div className="rlc-lc-worth-media-overlay"></div>
 
                                 <div className="rlc-lc-worth-media-badge">
-                                    <span>Consistent Luxury • Across the Fleet</span>
+                                    <span>Your Private Retreat • Onboard</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* ── SCENIC SHIPS BY DESTINATION ──────────────────────────────── */}
-            <section className="luc-destinations-section" id="ships-by-destination">
-                <div className="luc-destinations-container">
-                    <div className="luc-destinations-header">
-                        <h2 className="luc-destinations-title">Scenic River Cruise Ships by Destination</h2>
-                        <div className="adg-c-accent-line"></div>
-                        <p className="luc-destinations-intro">
-                            Each river offers a distinct atmosphere and set
-                            of experiences. Here's what to expect from
-                            Scenic's most popular itineraries.
-                        </p>
-                    </div>
-
-                    <div className="luc-dest-layout">
-                        <nav className="luc-dest-nav">
-                            {destinationFactors.map((item) => {
-                                const NavIcon = item.icon;
-                                const isActive = activeDestination === item.id;
-
-                                return (
-                                    <button
-                                        key={item.id}
-                                        className={`luc-dest-nav-btn ${isActive ? "luc-dest-nav-btn--active" : ""}`}
-                                        onClick={() => setActiveDestination(item.id)}
-                                    >
-                                        <div className="luc-dest-nav-icon-wrap">
-                                            <NavIcon size={16} strokeWidth={1.8} />
-                                        </div>
-                                        <span className="luc-dest-nav-label">{item.badge}</span>
-                                        {isActive && <div className="luc-dest-nav-pip"></div>}
-                                    </button>
-                                );
-                            })}
-                        </nav>
-
-                        <div className="luc-dest-panel" key={activeDestination}>
-                            <div className="luc-dest-img-wrap">
-                                <div className="luc-dest-img-overlay">
-                                    <div className="luc-dest-img-icon">
-                                        <ActiveDestinationIcon size={22} strokeWidth={1.6} />
-                                    </div>
-                                    <span className="luc-dest-img-title">{currentDestination.title}</span>
-                                </div>
-                            </div>
-
-                            <p className="luc-dest-panel-desc">{currentDestination.desc}</p>
-
-                            <div className="luc-dest-columns">
-                                {currentDestination.columns.map((col, cIdx) => (
-                                    <div key={cIdx} className="luc-dest-info-col">
-                                        <span className="luc-dest-info-label">{col.label}</span>
-                                        <div className="luc-dest-items-grid">
-                                            {col.items.map((item) => (
-                                                <div key={item} className="luc-dest-item">
-                                                    <div className="luc-dest-item-dot"></div>
-                                                    <span className="luc-dest-item-text">{item}</span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                ))}
                             </div>
                         </div>
                     </div>
@@ -877,9 +838,9 @@ const ScenicRiverCruiseShipsSuites = () => {
             <section className="scenic-inline-cta-section-dark">
                 <div className="scenic-inline-cta-container-dark">
                     <div className="scenic-inline-cta-content-dark">
-                        <h3 className="scenic-inline-cta-title-dark">Not Sure Which Itinerary Fits You Best?</h3>
+                        <h3 className="scenic-inline-cta-title-dark">Not Sure Which Cabin Fits You Best?</h3>
                         <p className="scenic-inline-cta-text-dark">
-                            Let us help you compare Scenic's rivers, ships, and suite categories to plan the ideal cruise.
+                            Let us help you compare Scenic's suite categories to plan the ideal cabin for your cruise.
                         </p>
                     </div>
                     <div className="scenic-inline-cta-action-dark">
@@ -891,19 +852,21 @@ const ScenicRiverCruiseShipsSuites = () => {
                 </div>
             </section>
 
-            {/* ── SCENIC SUITE CATEGORIES EXPLAINED ────────────────────────── */}
-            <section className="dac-reasons-section" id="suite-categories-explained" style={{ backgroundColor: "var(--bg-soft)" }}>
+            {/* ── SCENIC CABIN CATEGORIES EXPLAINED ────────────────────────── */}
+            <section className="dac-reasons-section" id="cabin-categories-explained" style={{ backgroundColor: "var(--bg-soft)" }}>
                 <div className="dac-reasons-container">
                     <div className="dac-reasons-header">
                         <span className="dac-reasons-eyebrow">
-                            Scenic Suite Categories Explained
+                            Scenic Cabin Categories Explained
                         </span>
                         <h2 className="dac-reasons-title">
-                            Scenic Suite Categories Explained
+                            Scenic Cabin Categories Explained
                         </h2>
                         <div className="dac-reasons-accent"></div>
                         <p className="dac-reasons-lead">
-                            Choosing the right suite is often more important than choosing the ship.
+                            Every suite includes personalized butler
+                            service, elegant furnishings, and premium
+                            amenities—here's how each category differs.
                         </p>
                     </div>
 
@@ -981,132 +944,148 @@ const ScenicRiverCruiseShipsSuites = () => {
                 </div>
             </section>
 
-            {/* ── WHAT IS THE SCENIC SUN LOUNGE? ───────────────────────────── */}
-            <section className="rlc-lc-worth-section" id="what-is-the-sun-lounge">
-                <div className="rlc-lc-worth-container">
-                    <div className="rlc-lc-worth-grid">
-                        <div className="rlc-lc-worth-content">
-                            <h2 className="rlc-lc-worth-title">What Is the Scenic Sun Lounge?</h2>
+   
 
-                            <div className="rlc-lc-worth-accent"></div>
 
-                            <p className="rlc-lc-worth-lead">
-                                Unlike a traditional balcony, Scenic's
-                                signature Sun Lounge uses floor-to-ceiling
-                                windows that can be lowered at the touch of
-                                a button. It's one of Scenic's most
-                                recognizable design features. Benefits
-                                include:
-                            </p>
 
-                            <div className="rlc-lc-worth-emphasis-grid">
-                                {sunLoungeBenefits.map((item, idx) => (
-                                    <div key={idx} className="rlc-lc-worth-emphasis-item">
-                                        <span className="rlc-lc-worth-emphasis-icon">
-                                            <Check size={16} strokeWidth={3} />
-                                        </span>
-                                        <span className="rlc-lc-worth-emphasis-label">{item}</span>
-                                    </div>
-                                ))}
-                            </div>
+            {/* ── ARE THERE ANY SCENIC CABINS TO AVOID? ─────────────────────────── */}
+            <section className="scenic-avoid-section" id="cabins-to-avoid">
+                <div className="scenic-avoid-container">
+                    <div className="adg-header">
+                        <h2 className="adg-h2">Are There Any Scenic Cabins <br /> to Avoid?</h2>
+                        <div className="adg-accent-line"></div>
+                        <p className="Asc-section-intro">
+                            This is one of the most common questions prospective guests ask.
+                        </p>
+                    </div>
 
-                        </div>
+                    <div className="scenic-avoid-intro-box">
+                        <p className="scenic-avoid-intro-text">
+                            <strong>The honest answer:</strong> Scenic doesn't have "bad" cabins.
+                            However, some travelers may wish to avoid certain options based on their preferences.
+                        </p>
+                    </div>
 
-                        <div className="rlc-lc-worth-media">
-                            <div className="rlc-lc-worth-media-wrapper">
-                                <img
-                                    // src={SunLoungeImage}
-                                    alt="Scenic Sun Lounge floor-to-ceiling windows in a suite"
-                                    className="rlc-lc-worth-media-img"
-                                />
-                                <div className="rlc-lc-worth-media-overlay"></div>
-
-                                <div className="rlc-lc-worth-media-badge">
-                                    <span>Signature Feature • Scenic Sun Lounge</span>
+                    <div className="scenic-avoid-grid">
+                        {/* Group 1: Lower-Deck Standard Suites */}
+                        <div className="scenic-avoid-card">
+                            <div className="scenic-avoid-card-header">
+                                <div className="scenic-avoid-icon-wrap">
+                                    <X size={20} className="scenic-avoid-card-icon" />
                                 </div>
+                                <h3 className="scenic-avoid-card-title">Lower-Deck Standard Suites</h3>
+                            </div>
+                            <div className="scenic-avoid-card-body">
+                                <p className="scenic-avoid-card-subtitle">May not be ideal if you:</p>
+                                <ul className="scenic-avoid-list">
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Want panoramic river views</span>
+                                    </li>
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Spend significant time in your cabin</span>
+                                    </li>
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Prefer abundant natural light</span>
+                                    </li>
+                                </ul>
+                                <p className="scenic-avoid-card-conclusion">
+                                    They're still beautifully appointed but offer a different viewing experience than Balcony Suites.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Group 2: Cabins Near Public Areas */}
+                        <div className="scenic-avoid-card">
+                            <div className="scenic-avoid-card-header">
+                                <div className="scenic-avoid-icon-wrap">
+                                    <X size={20} className="scenic-avoid-card-icon" />
+                                </div>
+                                <h3 className="scenic-avoid-card-title">Cabins Near Public Areas</h3>
+                            </div>
+                            <div className="scenic-avoid-card-body">
+                                <p className="scenic-avoid-card-subtitle">If you're sensitive to noise, you may prefer cabins farther from:</p>
+                                <ul className="scenic-avoid-list">
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Reception</span>
+                                    </li>
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Lounge entrances</span>
+                                    </li>
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Elevators</span>
+                                    </li>
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Dining venues</span>
+                                    </li>
+                                </ul>
+                                <p className="scenic-avoid-card-conclusion">
+                                    While Scenic ships are generally quiet, choosing a mid-ship location can enhance comfort.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Group 3: Last-Minute Cabin Assignments */}
+                        <div className="scenic-avoid-card">
+                            <div className="scenic-avoid-card-header">
+                                <div className="scenic-avoid-icon-wrap">
+                                    <X size={20} className="scenic-avoid-card-icon" />
+                                </div>
+                                <h3 className="scenic-avoid-card-title">Last-Minute Cabin Assignments</h3>
+                            </div>
+                            <div className="scenic-avoid-card-body">
+                                <p className="scenic-avoid-card-subtitle">Booking late may limit your choice of:</p>
+                                <ul className="scenic-avoid-list">
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Deck</span>
+                                    </li>
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Location</span>
+                                    </li>
+                                    <li>
+                                        <X size={14} className="Asc-icon-red" />
+                                        <span>Suite category</span>
+                                    </li>
+                                </ul>
+                                <p className="scenic-avoid-card-conclusion">
+                                    Booking early typically provides the best selection.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* ── WHICH SUITE OFFERS THE BEST VALUE? ───────────────────────── */}
-            <section className="scenic-expensive-comparison-section" id="best-value-suite">
-                <div className="scenic-expensive-comparison-container">
-                    <div className="scenic-expensive-card-wrapper">
-                        <div className="scenic-expensive-card-content">
-                            <h2 className="scenic-expensive-card-title">Which Suite Offers the Best Value?</h2>
-                            <div className="scenic-expensive-card-accent"></div>
-
-                            <p className="scenic-expensive-card-intro">
-                                Best Overall Value: the Balcony Suite.
-                            </p>
-
-                            <p className="scenic-expensive-card-desc">
-                                Most travelers feel this category provides
-                                the best balance between luxury and price,
-                                thanks to the combination of the Scenic Sun
-                                Lounge, butler service, and spacious layout.
-                            </p>
-                        </div>
-
-                        <div className="scenic-expensive-card-sidebar">
-                            <h4 style={{ marginBottom: "12px" }}>Why?</h4>
-                            <div className="scenic-expensive-list">
-                                {[
-                                    "Scenic Sun Lounge",
-                                    "Butler service",
-                                    "Spacious layout",
-                                    "Luxury amenities",
-                                    "Excellent river views",
-                                ].map((item, i) => (
-                                    <div key={i} className="scenic-expensive-list-item">
-                                        <Check size={14} className="scenic-expensive-item-icon" />
-                                        <span className="scenic-expensive-item-text">{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="scenic-expensive-image-wrap">
-                        <img
-                            // src={SuiteImage}
-                            alt="Scenic Balcony Suite with Sun Lounge"
-                            className="scenic-expensive-image"
-                        />
-                        <div className="scenic-expensive-image-overlay">
-                            <span className="scenic-expensive-image-label">Balcony Suite</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* ── WHICH SUITE SHOULD YOU CHOOSE? ────────────────────────── */}
+            {/* ── WHICH DECK IS BEST? ───────────────────────────────────────── */}
             <section
                 className="adg-section"
-                id="choosing-itinerary"
-                style={{ backgroundColor: "var(--bg-white)" }}
+                id="which-deck-is-best"
+                style={{ backgroundColor: "var(--bg-soft)" }}
             >
                 <div className="adg-container">
-                    {/* HEADER */}
                     <div className="adg-header">
-                        <h2 className="adg-h2">Which Suite Should You Choose?</h2>
+                        <h2 className="adg-h2">Which Deck Is Best?</h2>
 
                         <div className="adg-accent-line"></div>
 
                         <p className="adg-intro">
-                            Scenic offers a variety of suite categories to suit different travel
-                            styles, budgets, and occasions. Use this guide to find the best option
-                            for your next luxury river cruise.
+                            Many travelers ask, "What is the best deck on
+                            Scenic?" Rather than one "best" deck, the ideal
+                            location depends on your preferences.
                         </p>
                     </div>
 
-                    {/* CARDS GRID */}
                     <div className="adgs-grid">
-                        {ShipData.map((item) => (
+                        {deckData.map((item) => (
                             <div key={item.key} className={`adg-card ${item.accent}`}>
-                                {/* IMAGE */}
                                 <div className="adg-card-image-wrap">
                                     <img
                                         src={item.image}
@@ -1116,7 +1095,6 @@ const ScenicRiverCruiseShipsSuites = () => {
 
                                     <div className="adg-card-image-overlay"></div>
 
-                                    {/* FLOATING EYEBROW ON IMAGE */}
                                     <div className="adg-card-eyebrow-wrap">
                                         <span className="adg-card-eyebrow-icon">{item.icon}</span>
                                         <span className="adg-card-eyebrow-label">
@@ -1125,7 +1103,6 @@ const ScenicRiverCruiseShipsSuites = () => {
                                     </div>
                                 </div>
 
-                                {/* BODY */}
                                 <div className="adg-card-body">
                                     <h3 className="adg-card-title">{item.title}</h3>
 
@@ -1139,7 +1116,6 @@ const ScenicRiverCruiseShipsSuites = () => {
                                     </ul>
                                 </div>
 
-                                {/* BOTTOM ACCENT BAR */}
                                 <div className="adg-card-bar"></div>
                             </div>
                         ))}
@@ -1147,13 +1123,13 @@ const ScenicRiverCruiseShipsSuites = () => {
                 </div>
             </section>
 
-            {/* ── INLINE CTA 2 ────────────────────────────────────────────── */}
-            <section className="scenic-inline-cta-section-light">
+                        {/* ── INLINE CTA 2 ────────────────────────────────────────────── */}
+            <section className="scenic-inline-cta-section-light" style={{backgroundColor: 'var(--bg-white)'}}>
                 <div className="scenic-inline-cta-container-light">
                     <div className="scenic-inline-cta-card-light">
                         <div className="scenic-inline-cta-content-light">
                             <span className="scenic-inline-cta-eyebrow-light">Exclusive Promotions</span>
-                            <h3 className="scenic-inline-cta-title-light">Ready to Choose Your Ship and Suite?</h3>
+                            <h3 className="scenic-inline-cta-title-light">Ready to Choose Your Suite?</h3>
                             <p className="scenic-inline-cta-text-light">
                                 Take advantage of exclusive travel advisor promotions, complimentary cabin upgrades, and expert itinerary advice today.
                             </p>
@@ -1169,15 +1145,62 @@ const ScenicRiverCruiseShipsSuites = () => {
                 </div>
             </section>
 
-            {/* ── SCENIC SHIPS VS OTHER LUXURY RIVER CRUISE LINES ──────────── */}
-            <section className="adg-section" style={{ backgroundColor: "var(--bg-white)" }} id="ships-comparison">
+            {/* ── SCENIC SUN LOUNGE: WORTH IT? ─────────────────────────────── */}
+            <section className="scenic-expensive-comparison-section" id="sun-lounge-worth-it">
+                <div className="scenic-expensive-comparison-container">
+                    <div className="scenic-expensive-card-wrapper">
+                        <div className="scenic-expensive-card-content">
+                            <h2 className="scenic-expensive-card-title">Scenic Sun Lounge: Worth It?</h2>
+                            <div className="scenic-expensive-card-accent"></div>
+
+                            <p className="scenic-expensive-card-intro">
+                                Absolutely.
+                            </p>
+
+                            <p className="scenic-expensive-card-desc">
+                                The Scenic Sun Lounge is one of the biggest
+                                reasons travelers upgrade from a Standard
+                                Suite. Many repeat Scenic guests
+                                specifically request Balcony Suites because
+                                of this feature.
+                            </p>
+                        </div>
+
+                        <div className="scenic-expensive-card-sidebar">
+                            <h4 style={{ marginBottom: "12px" }}>Benefits Include</h4>
+                            <div className="scenic-expensive-list">
+                                {sunLoungeBenefits.map((item, i) => (
+                                    <div key={i} className="scenic-expensive-list-item">
+                                        <Check size={14} className="scenic-expensive-item-icon" />
+                                        <span className="scenic-expensive-item-text">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="scenic-expensive-image-wrap">
+                        <img
+                            // src={SuiteImage}
+                            alt="Scenic Sun Lounge with floor-to-ceiling windows"
+                            className="scenic-expensive-image"
+                        />
+                        <div className="scenic-expensive-image-overlay">
+                            <span className="scenic-expensive-image-label">Scenic Sun Lounge</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── SCENIC VS OTHER LUXURY RIVER CRUISE CABINS ───────────────── */}
+            <section className="adg-section" style={{ backgroundColor: "var(--bg-white)" }} id="cabins-comparison">
                 <div className="adg-container">
                     <div className="adg-header">
-                        <h2 className="adg-h2">Scenic Ships vs. Other Luxury River Cruise Lines</h2>
+                        <h2 className="adg-h2">Scenic vs. Other Luxury River Cruise Cabins</h2>
                         <div className="adg-accent-line"></div>
                         <p className="Asc-section-intro">
-                            Each cruise line brings a different strength to
-                            the table—here's how Scenic compares.
+                            Each cruise line brings a different cabin
+                            strength to the table—here's how Scenic compares.
                         </p>
                     </div>
 
@@ -1186,7 +1209,7 @@ const ScenicRiverCruiseShipsSuites = () => {
                             <thead>
                                 <tr>
                                     <th>Cruise Line</th>
-                                    <th>Strength</th>
+                                    <th>Cabin Strength</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1204,11 +1227,11 @@ const ScenicRiverCruiseShipsSuites = () => {
                 </div>
             </section>
 
-            {/* ── COMMON MISTAKES WHEN CHOOSING A SUITE ────────────────────── */}
+            {/* ── COMMON CABIN BOOKING MISTAKES ────────────────────────────── */}
             <section className="scenic-exclusions-section" id="common-mistakes" style={{backgroundColor: 'var(--bg-soft)'}}>
                 <div className="scenic-exclusions-container">
                     <div className="adg-header">
-                        <h2 className="adg-h2">Common Mistakes When <br /> Choosing a Suite</h2>
+                        <h2 className="adg-h2">Common Cabin <br /> Booking Mistakes</h2>
                         <div className="adg-accent-line"></div>
                         <p className="Asc-section-intro">
                             Many first-time guests run into the same
@@ -1231,70 +1254,15 @@ const ScenicRiverCruiseShipsSuites = () => {
                 </div>
             </section>
 
-            {/* ── BEST FOR FIRST-TIME CRUISERS ─────────────────────────────── */}
-            <section className="scenic-firsttime-section" id="best-for-first-time-cruisers">
-                <div className="scenic-firsttime-container">
-                    <div className="scenic-firsttime-grid">
-                        <div className="scenic-firsttime-content">
-                            <h2 className="scenic-firsttime-title">Which Scenic Ship Is Best for First-Time Cruisers?</h2>
-                            <div className="scenic-firsttime-divider"></div>
-
-                            <p className="scenic-firsttime-intro">
-                                Most first-time guests love:
-                            </p>
-
-                            <div className="scenic-firsttime-grid-items">
-                                {[
-                                    { text: "Rhine itineraries", icon: <MapPin size={20} /> },
-                                    { text: "Danube itineraries", icon: <Compass size={20} /> },
-                                    { text: "Balcony Suites", icon: <Home size={20} /> },
-                                    { text: "7–10 night cruises", icon: <Calendar size={20} /> },
-                                ].map((item, i) => (
-                                    <div key={i} className="scenic-firsttime-card-item">
-                                        <div className="scenic-firsttime-card-icon">
-                                            {item.icon}
-                                        </div>
-                                        <span className="scenic-firsttime-card-text">{item.text}</span>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <p className="scenic-firsttime-outro">
-                                These itineraries offer iconic European
-                                destinations and a comfortable introduction to
-                                river cruising.
-                            </p>
-                        </div>
-
-                        <div className="scenic-firsttime-media">
-                            <div className="scenic-firsttime-image-wrapper">
-                                <Ship size={48} className="scenic-firsttime-placeholder-icon" strokeWidth={1.2} />
-                                <span className="scenic-firsttime-placeholder-text">
-                                    Scenic Space-Ship exterior
-                                </span>
-                                <img
-                                    // src={ShipExteriorImage}
-                                    alt="Scenic Space-Ship exterior sailing down a European river"
-                                    style={{ display: "none" }}
-                                />
-                                <div className="scenic-firsttime-badge">Recommended for Beginners</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
             {/* ── WHY BOOK THROUGH A LUXURY TRAVEL ADVISOR? ────────────────── */}
             <section
                 className="Avr-planning-section"
                 id="why-book-through-advisor"
-                style={{ backgroundColor: "var(--bg-soft)" }}
+                style={{ backgroundColor: "var(--bg-white)" }}
             >
                 <div className="Asc-container">
                     <div className="Avr-planning-heading">
-                        <span className="Avr-planning-eyebrow">Personalized Ship & Suite Guidance</span>
+                        <span className="Avr-planning-eyebrow">Personalized Cabin Guidance</span>
                         <h2 className="Avr-planning-title">
                             Why Book Through a <br /> Luxury Travel Advisor?
                         </h2>
@@ -1305,24 +1273,26 @@ const ScenicRiverCruiseShipsSuites = () => {
                         <div className="Avr-planning-left">
                             <div className="Avr-planning-left-deco">&ldquo;</div>
                             <h3 className="Avr-planning-left-title">
-                                Choosing the Right Ship Is Only Part of Planning
+                                Choosing the Right Cabin Is About More Than a Room Number
                             </h3>
                             <p className="Avr-planning-left-body">
-                                Expert advice can help you maximize the
-                                value of your vacation. A luxury travel
-                                advisor can compare Scenic ships, recommend
-                                the best suite, explain promotions, compare
-                                Scenic with Viking, Riverside,
-                                AmaWaterways, and Uniworld, coordinate
-                                flights and hotels, and match your cruise
-                                to your travel style and budget.
+                                Working with a luxury travel advisor can
+                                help you select the right cabin for your
+                                travel style and budget. An advisor can
+                                recommend the best cabin category, compare
+                                available promotions, explain deck
+                                locations, match your cabin to your
+                                itinerary, coordinate flights and hotels,
+                                and compare Scenic with Riverside, Viking,
+                                AmaWaterways, and Uniworld.
                             </p>
 
                             <div className="Avr-planning-alert">
                                 <ShieldCheck size={18} className="Avr-planning-alert-icon" />
                                 <p className="Avr-planning-alert-text">
-                                    Professional guidance often saves both
-                                    time and money.
+                                    Professional guidance helps ensure you
+                                    receive the best value for your
+                                    investment.
                                 </p>
                             </div>
                         </div>
@@ -1334,12 +1304,12 @@ const ScenicRiverCruiseShipsSuites = () => {
 
                             <div className="Avr-planning-benefits-grid">
                                 {[
-                                    { icon: <Ship size={18} />, label: "Compare Scenic ships" },
-                                    { icon: <Home size={18} />, label: "Recommend the best suite" },
-                                    { icon: <BadgePercent size={18} />, label: "Explain promotions" },
-                                    { icon: <Gem size={18} />, label: "Compare Scenic with Viking, Riverside, AmaWaterways, and Uniworld" },
+                                    { icon: <Award size={18} />, label: "Recommend the best cabin category" },
+                                    { icon: <BadgePercent size={18} />, label: "Compare available promotions" },
+                                    { icon: <MapPin size={18} />, label: "Explain deck locations" },
+                                    { icon: <Compass size={18} />, label: "Match your cabin to your itinerary" },
                                     { icon: <Plane size={18} />, label: "Coordinate flights and hotels" },
-                                    { icon: <Wallet size={18} />, label: "Match your cruise to your travel style and budget" },
+                                    { icon: <Gem size={18} />, label: "Compare Scenic with Riverside, Viking, AmaWaterways, and Uniworld" },
                                 ].map((item, i) => (
                                     <div key={i} className="Avr-planning-benefit-card">
                                         <span className="Avr-planning-benefit-icon">{item.icon}</span>
@@ -1432,8 +1402,8 @@ const ScenicRiverCruiseShipsSuites = () => {
                         <h2 className="Asc-h2">Frequently Asked Questions</h2>
                         <div className="Asc-accent-line"></div>
                         <p className="Asc-faq-intro">
-                            Everything travelers need to know about Scenic's
-                            ships and suites before booking.
+                            Everything travelers need to know before
+                            choosing a Scenic River Cruise cabin.
                         </p>
                     </div>
                     <FAQ />
@@ -1457,7 +1427,7 @@ const ScenicRiverCruiseShipsSuites = () => {
                             <div className="Asc-help-header">
                                 <span className="Asc-help-eyebrow">Final Verdict</span>
                                 <h2 className="Asc-help-h2">
-                                    Consistent Luxury, <br /> Personalized to You
+                                    One of the Strongest <br /> Cabin Offerings Afloat
                                 </h2>
                                 <div className="Asc-help-accent"></div>
                             </div>
@@ -1465,14 +1435,14 @@ const ScenicRiverCruiseShipsSuites = () => {
                             <div className="Asc-help-grid">
                                 <div className="Asc-help-info">
                                     <p className="Asc-help-intro">
-                                        Scenic's fleet is designed around
-                                        consistency, luxury, and
-                                        personalized service. Rather than
-                                        focusing on one "best" ship, Scenic
-                                        delivers a similar high-end
-                                        experience across its Space-Ships,
-                                        allowing travelers to choose based
-                                        on destination and itinerary.
+                                        Scenic has one of the strongest
+                                        cabin offerings in luxury river
+                                        cruising. While every suite delivers
+                                        excellent service and premium
+                                        amenities, the Balcony Suite and
+                                        Deluxe Balcony Suite consistently
+                                        provide the best overall value for
+                                        most travelers.
 
                                         {!readMoreVerdict && (
                                             <button
@@ -1496,24 +1466,27 @@ const ScenicRiverCruiseShipsSuites = () => {
                                         <>
                                             <br />
                                             <p className="Asc-help-intro">
-                                                For most guests, the Balcony
-                                                Suite provides the best
-                                                combination of comfort,
-                                                river views, and value,
-                                                while those seeking the
-                                                ultimate luxury experience
-                                                will appreciate the
-                                                spacious Royal Owner's
-                                                Suite.
+                                                If you're celebrating a
+                                                milestone, traveling on a
+                                                longer itinerary, or simply
+                                                want the most luxurious
+                                                experience available,
+                                                upgrading to a Junior Suite
+                                                or Royal Owner's Suite may
+                                                be worthwhile.
                                             </p>
                                             <br />
                                             <p className="Asc-help-intro">
-                                                At Trips &amp; Ships Luxury
-                                                Travel, we'll help you
-                                                compare ships, itineraries,
-                                                and suite categories to find
-                                                the best option for your
-                                                travel style and budget.
+                                                Ultimately, the best cabin
+                                                is the one that matches your
+                                                travel style, budget, and
+                                                how you plan to enjoy your
+                                                time onboard. At Trips
+                                                &amp; Ships Luxury Travel,
+                                                we'll help you compare
+                                                cabin categories to find the
+                                                best option for your travel
+                                                style and budget.
                                                 <button
                                                     onClick={() => setReadMoreVerdict(false)}
                                                     style={{
@@ -1551,13 +1524,13 @@ const ScenicRiverCruiseShipsSuites = () => {
 
                                     <ul className="Asc-help-bullets">
                                         {[
-                                            "Compare Scenic ships and itineraries",
+                                            "Compare cabin categories and suites",
                                             "Recommend the best suite for your budget",
                                             "Explain promotions and limited-time offers",
+                                            "Match your cabin to your itinerary",
                                             "Arrange flights and hotels",
                                             "Coordinate private transfers",
                                             "Compare Scenic with other luxury lines",
-                                            "Identify available promotions",
                                             "Help you avoid common booking mistakes",
                                         ].map((item, i) => (
                                             <li key={i}>
@@ -1578,4 +1551,4 @@ const ScenicRiverCruiseShipsSuites = () => {
     );
 };
 
-export default ScenicRiverCruiseShipsSuites;
+export default BestScenicRiverCruiseCabins;

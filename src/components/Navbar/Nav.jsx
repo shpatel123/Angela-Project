@@ -1079,6 +1079,39 @@ const Nav = () => {
                 Scenic River Cruise Ships and Suites Guide
               </NavLink>
 
+              <NavLink
+                to="/scenic-river-cruises/cabin-categories"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruise Cabin Categories Explained
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/best-cabins"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Best Cabins
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/best-itineraries"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Best Itineraries
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/first-time-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises First Time Guide
+              </NavLink>
+
+
 
 
 
@@ -2153,6 +2186,41 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Scenic River Cruise Ships and Suites Guide
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/cabin-categories"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruise Cabin Categories Explained
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/best-cabins"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Best Cabins
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/best-itineraries"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Best Itineraries
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/first-time-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises First Time Guide
             </NavLink>
 
 

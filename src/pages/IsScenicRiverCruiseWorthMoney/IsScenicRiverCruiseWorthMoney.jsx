@@ -526,7 +526,7 @@ const IsScenicRiverCruiseWorthTheMoney = () => {
     return (
         <div className="Asc-page-wrapper">
             <Helmet>
-                <title>Is a Scenic River Cruise Worth the Money? Honest Review (2026)</title>
+                <title>Is a Scenic River Cruise Worth the Money? Honest Review</title>
                 <meta name="title" content="Is Scenic River Cruises Worth It? | Honest Luxury Cruise Review" />
                 <meta
                     name="description"

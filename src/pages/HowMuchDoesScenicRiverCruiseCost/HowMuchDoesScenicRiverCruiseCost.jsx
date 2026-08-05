@@ -462,7 +462,7 @@ const ScenicRiverCruiseCost = () => {
     return (
         <div className="Asc-page-wrapper">
             <Helmet>
-                <title>How Much Does a Scenic River Cruise Cost? (2026 Pricing Guide)</title>
+                <title>How Much Does a Scenic River Cruise Cost?</title>
                 <meta name="title" content="Scenic River Cruise Cost | Prices, What's Included & Value Guide" />
                 <meta
                     name="description"

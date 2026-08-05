@@ -379,7 +379,7 @@ const WhatsIncludedScenicRiverCruise = () => {
     return (
         <div className="Asc-page-wrapper">
             <Helmet>
-                <title>What Is Included on a Scenic River Cruise? | Complete Guide (2026)</title>
+                <title>What Is Included on a Scenic River Cruise? | Complete Guide</title>
                 <meta name="title" content="What Is Included on Scenic River Cruises? | All-Inclusive Luxury Guide" />
                 <meta
                     name="description"
