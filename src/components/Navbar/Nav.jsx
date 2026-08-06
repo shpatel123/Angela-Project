@@ -1111,9 +1111,56 @@ const Nav = () => {
                 Scenic River Cruises First Time Guide
               </NavLink>
 
+              <NavLink
+                to="/scenic-river-cruises/food-dining"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Food & Dining Review
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/dress-code-packing"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Dress Code & Packing Guide
+              </NavLink>
 
 
+              <NavLink
+                to="/scenic-river-cruises/airfare-transfers"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Airfare & Transfers
+              </NavLink>
 
+
+              <NavLink
+                to="/scenic-river-cruises/solo-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Solo Travel
+              </NavLink>
+
+
+              {/* <NavLink
+                to="/scenic-river-cruises/family-multigenerational"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises for Families
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/christmas-markets"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Christmas Market River Cruises
+              </NavLink> */}
 
             </div>
           </div>
@@ -2222,6 +2269,56 @@ const Nav = () => {
             >
               Scenic River Cruises First Time Guide
             </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/food-dining"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Food & Dining Review
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/dress-code-packing"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Dress Code & Packing Guide
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/airfare-transfers"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Airfare & Transfers
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/solo-travel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Solo Travel
+            </NavLink>
+
+
+            {/* <NavLink
+              to="/scenic-river-cruises/family-multigenerational"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises for Families
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/christmas-markets"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Christmas Market River Cruises
+            </NavLink> */}
 
 
 

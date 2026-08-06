@@ -137,6 +137,12 @@ import ScenicRiverCruiseCabinCategoriesExplained from "./pages/ScenicRiverCruise
 import BestScenicRiverCruiseCabins from "./pages/BestScenicRiverCruiseCabins/BestScenicRiverCruiseCabins";
 import BestScenicRiverCruiseItineraries from "./pages/BestScenicRiverCruiseItineraries/BestScenicRiverCruiseItineraries";
 import FirstTimeScenicRiverCruiseGuide from "./pages/FirstTimeScenicRiverCruiseGuide/FirstTimeScenicRiverCruiseGuide";
+import ScenicRiverCruiseFoodDiningReview from "./pages/ScenicRiverCruiseFoodDiningReview/ScenicRiverCruiseFoodDiningReview";
+import ScenicRiverCruiseDressCodePackingGuide from "./pages/ScenicRiverCruiseDressCodePackingGuide/ScenicRiverCruiseDressCodePackingGuide";
+import ScenicRiverCruiseArrivalGuide from "./pages/ScenicRiverCruiseArrivalGuide/ScenicRiverCruiseArrivalGuide";
+import ScenicSoloRiverCruises from "./pages/ScenicSoloRiverCruises/ScenicSoloRiverCruises";
+import ScenicRiverCruisesForFamilies from "./pages/ScenicRiverCruisesForFamilies/ScenicRiverCruisesForFamilies";
+import ScenicChristmasMarketRiverCruises from "./pages/ScenicChristmasMarketRiverCruises/ScenicChristmasMarketRiverCruises";
 
 
 function App() {
@@ -593,6 +599,12 @@ function App() {
           <Route path="/scenic-river-cruises/best-cabins" element={<BestScenicRiverCruiseCabins />} />
           <Route path="/scenic-river-cruises/best-itineraries" element={<BestScenicRiverCruiseItineraries />} />
           <Route path="/scenic-river-cruises/first-time-guide" element={<FirstTimeScenicRiverCruiseGuide />} />
+          <Route path="/scenic-river-cruises/food-dining" element={<ScenicRiverCruiseFoodDiningReview />} />
+          <Route path="/scenic-river-cruises/dress-code-packing" element={<ScenicRiverCruiseDressCodePackingGuide />} />
+          <Route path="/scenic-river-cruises/airfare-transfers" element={<ScenicRiverCruiseArrivalGuide />} />
+          <Route path="/scenic-river-cruises/solo-travel" element={<ScenicSoloRiverCruises />} />
+          <Route path="/scenic-river-cruises/family-multigenerational" element={<ScenicRiverCruisesForFamilies />} />
+          <Route path="/scenic-river-cruises/christmas-markets" element={<ScenicChristmasMarketRiverCruises />} />
 
         </Routes>
       </BrowserRouter>

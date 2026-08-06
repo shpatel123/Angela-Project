@@ -1901,6 +1901,13 @@
     gap: 32px;
 }
 
+.scenic-avoid-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+
 .scenic-avoid-card {
     background-color: var(--bg-white);
     border-radius: var(--radius-lg);
@@ -2006,6 +2013,11 @@
 
 @media (max-width: 992px) {
     .scenic-avoid-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+      .scenic-avoid-grid1 {
         grid-template-columns: 1fr;
         gap: 24px;
     }
@@ -2542,7 +2554,1069 @@
         padding: 30px;
     }
     
-    .scenic-bento-bottom-card {
-        padding: 24px 30px;
+}
+
+/* ── DRINKS INCLUDED SECTION ───────────────────────────────────── */
+.scenic-drinks-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.scenic-drinks-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scenic-drinks-eyebrow {
+    font-family: var(--font-body);
+    color: var(--navy-light);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.scenic-drinks-grid-premium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 48px auto;
+    max-width: 900px;
+}
+
+.scenic-drink-card-premium {
+    background-color: var(--bg-soft);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.scenic-drink-card-premium:hover {
+    transform: translateY(-3px);
+    border-color: var(--navy);
+    box-shadow: var(--shadow);
+    background-color: var(--bg-white);
+}
+
+.scenic-drink-card-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--navy-soft);
+    border-radius: 50%;
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.scenic-drink-card-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.scenic-drink-card-name {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+.scenic-drinks-banner-premium {
+    background: linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    color: var(--bg-white);
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--navy-border);
+}
+
+.scenic-drinks-banner-premium::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, var(--navy-soft) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.scenic-drinks-banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.scenic-drinks-banner-badge {
+    display: inline-block;
+    background-color: var(--navy-soft);
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    border: 1px solid var(--navy-border);
+}
+
+.scenic-drinks-banner-content h3 {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+    color: var(--bg-white);
+}
+
+.scenic-drinks-banner-content p {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ── DIETARY REQUIREMENTS SECTION ───────────────────────────────── */
+.scenic-dietary-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.scenic-dietary-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scenic-dietary-eyebrow {
+    font-family: var(--font-body);
+    color: var(--navy-light);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.scenic-dietary-grid-premium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.scenic-dietary-card-premium {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.scenic-dietary-card-premium:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--navy);
+}
+
+.scenic-dietary-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.scenic-dietary-check-premium {
+    color: var(--bg-white);
+    background-color: var(--navy);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.scenic-dietary-card-header h3 {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.scenic-dietary-card-premium p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.55;
+    margin: 0;
+}
+
+.scenic-dietary-banner-premium {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--bg-white);
+    border-left: 4px solid var(--navy);
+    border-radius: var(--radius);
+    padding: 24px 32px;
+    margin-top: 48px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--navy-border);
+    border-left-width: 4px;
+}
+
+.scenic-dietary-banner-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--navy-soft);
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.scenic-dietary-banner-premium p {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── SERVICE SECTION ────────────────────────────────────────────── */
+.scenic-service-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.scenic-service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scenic-service-grid-2col {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.scenic-service-content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.scenic-service-eyebrow {
+    font-family: var(--font-body);
+    color: var(--navy-light);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.scenic-service-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.scenic-service-accent {
+    width: 50px;
+    height: 3px;
+    background-color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.scenic-service-lead {
+    font-family: var(--font-body);
+    font-size: 17px;
+    color: var(--navy);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.scenic-service-learn-box {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+    margin-top: 8px;
+}
+
+.scenic-service-learn-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 22px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--navy-border);
+    padding-bottom: 12px;
+}
+
+.scenic-service-items-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scenic-service-item-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed var(--navy-border);
+}
+
+.scenic-service-item-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.scenic-service-item-num-wrap {
+    flex-shrink: 0;
+}
+
+.scenic-service-item-num {
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.scenic-service-item-content h4 {
+    font-family: var(--font-body);
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+.scenic-service-item-content p {
+    font-family: var(--font-body);
+    color: var(--text-body);
+    font-size: 14.5px;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.scenic-service-quote-box-premium {
+    margin-top: 8px;
+    padding: 24px;
+    background-color: var(--bg-soft);
+    border-left: 3px solid var(--navy);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    position: relative;
+}
+
+.scenic-service-quote-mark {
+    font-family: var(--font-display);
+    font-size: 48px;
+    color: var(--navy-border);
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    line-height: 1;
+}
+
+.scenic-service-quote-text {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    font-style: italic;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    padding-left: 12px;
+}
+
+/* Right Image Placeholder Card */
+.scenic-service-image-col {
+    display: flex;
+    align-items: stretch;
+}
+
+.scenic-service-placeholder-card-premium {
+    background: linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.scenic-service-placeholder-card-premium::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--navy-soft) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.scenic-service-placeholder-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(27, 54, 93, 0.1);
+    pointer-events: none;
+}
+
+.scenic-service-placeholder-card-premium:hover {
+    transform: translateY(-5px);
+    border-color: var(--navy);
+    box-shadow: var(--shadow-lg);
+}
+
+.scenic-service-placeholder-badge {
+    position: absolute;
+    top: 24px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 14px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.scenic-service-placeholder-content-wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.scenic-service-placeholder-gold-icon {
+    color: var(--bg-soft);
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 10px var(--navy-soft));
+    transition: var(--transition);
+}
+
+.scenic-service-placeholder-card-premium:hover .scenic-service-placeholder-gold-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.scenic-service-placeholder-content-wrap h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    color: var(--bg-white);
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.scenic-service-placeholder-content-wrap p {
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+/* ── WHAT WE LOVED SECTION ───────────────────────────────────────── */
+.scenic-loved-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.scenic-loved-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scenic-loved-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.scenic-loved-image-col {
+    display: flex;
+    align-items: stretch;
+}
+
+.scenic-loved-placeholder-card-premium {
+    background: linear-gradient(135deg, var(--bg-dark2) 0%, var(--bg-dark) 100%);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.scenic-loved-placeholder-card-premium::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--navy-soft) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.scenic-loved-placeholder-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(27, 54, 93, 0.1);
+    pointer-events: none;
+}
+
+.scenic-loved-placeholder-card-premium:hover {
+    transform: translateY(-5px);
+    border-color: var(--navy);
+    box-shadow: var(--shadow-lg);
+}
+
+.scenic-loved-placeholder-badge {
+    position: absolute;
+    top: 24px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 14px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.scenic-loved-placeholder-content-wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.scenic-loved-placeholder-icon {
+    color: var(--bg-soft);
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 10px var(--navy-soft));
+    transition: var(--transition);
+}
+
+.scenic-loved-placeholder-card-premium:hover .scenic-loved-placeholder-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.scenic-loved-placeholder-content-wrap h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    color: var(--bg-white);
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.scenic-loved-placeholder-content-wrap p {
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.scenic-loved-content-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.scenic-loved-eyebrow {
+    font-family: var(--font-body);
+    color: var(--navy-light);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.scenic-loved-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 40px;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.scenic-loved-accent {
+    width: 50px;
+    height: 3px;
+    background-color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.scenic-loved-intro {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.scenic-loved-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.scenic-loved-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--bg-white);
+    padding: 16px 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--navy-border);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.scenic-loved-list-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--navy);
+    box-shadow: var(--shadow);
+}
+
+.scenic-loved-item-check-wrap {
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.scenic-loved-item-text {
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: var(--text-body);
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+/* ── LAUNDRY & LUGGAGE TIPS SECTION ─────────────────────────────── */
+.scenic-laundry-luggage-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.scenic-laundry-luggage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scenic-laundry-luggage-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.scenic-laundry-card,
+.scenic-luggage-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.scenic-laundry-card:hover,
+.scenic-luggage-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--navy);
+    box-shadow: var(--shadow);
+}
+
+.scenic-laundry-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.scenic-laundry-card-icon {
+    color: var(--navy);
+}
+
+.scenic-laundry-card-header h3 {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.scenic-laundry-card-intro {
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: var(--text-body);
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+}
+
+.scenic-laundry-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scenic-laundry-list li {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-body);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.4;
+}
+
+.scenic-laundry-list-check {
+    color: var(--navy);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.scenic-laundry-card-footer {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px dashed var(--navy-border);
+}
+
+/* ── PRE-CRUISE GUIDE & TRANSIT SECTIONS ─────────────────────────── */
+.scenic-prep-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.scenic-prep-section.bg-soft {
+    background-color: var(--bg-soft);
+}
+
+.scenic-prep-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scenic-prep-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: stretch;
+}
+
+.scenic-prep-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.scenic-prep-section.bg-soft .scenic-prep-card {
+    background-color: var(--bg-white);
+}
+
+.scenic-prep-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--navy);
+    box-shadow: var(--shadow);
+}
+
+.scenic-prep-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.scenic-prep-card-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.scenic-prep-card-header h3 {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 22px;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.scenic-prep-card-lead {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+
+.scenic-prep-card-subtitle {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--navy-light);
+    margin-bottom: 14px;
+}
+
+.scenic-prep-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.scenic-prep-list li {
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: var(--text-body);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.45;
+}
+
+.scenic-prep-list-check {
+    color: var(--navy);
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+.scenic-prep-card-footer {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px dashed var(--navy-border);
+}
+
+.scenic-prep-card-footer.accent-footer {
+    background-color: var(--navy-soft);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-top: auto;
+}
+
+.scenic-prep-card-footer.accent-footer p {
+    margin: 0;
+    color: var(--navy);
+    font-size: 13.5px;
+}
+
+/* ── AIRFARE & TRANSFER TIPS SECTION ────────────────────────────── */
+.scenic-tips-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+}
+
+.scenic-tips-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.scenic-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.scenic-tips-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: var(--transition);
+}
+
+.scenic-tips-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--navy-light);
+    box-shadow: var(--shadow-sm);
+    background-color: var(--bg-white);
+}
+
+.scenic-tips-icon-wrap {
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.scenic-tips-text {
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: var(--text-body);
+    line-height: 1.5;
+}
+
+/* ── RESPONSIVE MEDIA QUERIES ───────────────────────────────────── */
+@media (max-width: 1024px) {
+    .scenic-drinks-grid-premium {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+    
+    .scenic-dietary-grid-premium {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .scenic-service-grid-2col,
+    .scenic-loved-grid-2col,
+    .scenic-prep-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .scenic-service-placeholder-card-premium,
+    .scenic-loved-placeholder-card-premium {
+        height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scenic-laundry-luggage-cards,
+    .scenic-tips-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .scenic-drinks-grid-premium {
+        grid-template-columns: 1fr;
+    }
+    
+    .scenic-dietary-grid-premium {
+        grid-template-columns: 1fr;
+    }
+    
+    .scenic-drinks-banner-premium,
+    .scenic-dietary-card-premium,
+    .scenic-service-learn-box,
+    .scenic-loved-placeholder-card-premium,
+    .scenic-laundry-card,
+    .scenic-luggage-card,
+    .scenic-prep-card,
+    .scenic-tips-item {
+        padding: 24px;
+    }
+    
+    .scenic-loved-list-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .scenic-loved-section,
+    .scenic-laundry-luggage-section,
+    .scenic-prep-section,
+    .scenic-tips-section {
+        padding: 40px 16px;
+    }
+    
+    .scenic-service-title,
+    .scenic-loved-title {
+        font-size: 24px;
+    }
+    
+    .scenic-drinks-banner-content h3 {
+        font-size: 22px;
+    }
+    
+    .scenic-dietary-banner-premium {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .scenic-prep-card-header h3 {
+        font-size: 19px;
     }
 }
