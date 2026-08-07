@@ -143,6 +143,11 @@ import ScenicRiverCruiseArrivalGuide from "./pages/ScenicRiverCruiseArrivalGuide
 import ScenicSoloRiverCruises from "./pages/ScenicSoloRiverCruises/ScenicSoloRiverCruises";
 import ScenicRiverCruisesForFamilies from "./pages/ScenicRiverCruisesForFamilies/ScenicRiverCruisesForFamilies";
 import ScenicChristmasMarketRiverCruises from "./pages/ScenicChristmasMarketRiverCruises/ScenicChristmasMarketRiverCruises";
+import ScenicFreechoiceExcursions from "./pages/ScenicFreechoiceExcursions/ScenicFreechoiceExcursions";
+import ScenicRiverCruiseButlerService from "./pages/ScenicRiverCruiseButlerService/ScenicRiverCruiseButlerService";
+import ScenicSpaceShips from "./pages/ScenicSpaceShips/ScenicSpaceShips";
+import ScenicRhineRiverCruises from "./pages/ScenicRhineRiverCruises/ScenicRhineRiverCruises";
+import ScenicDanubeRiverCruises from "./pages/ScenicDanubeRiverCruises/ScenicDanubeRiverCruises";
 
 
 function App() {
@@ -605,6 +610,11 @@ function App() {
           <Route path="/scenic-river-cruises/solo-travel" element={<ScenicSoloRiverCruises />} />
           <Route path="/scenic-river-cruises/family-multigenerational" element={<ScenicRiverCruisesForFamilies />} />
           <Route path="/scenic-river-cruises/christmas-markets" element={<ScenicChristmasMarketRiverCruises />} />
+          <Route path="/scenic-river-cruises/freechoice-enrich" element={<ScenicFreechoiceExcursions />} />
+          <Route path="/scenic-river-cruises/butler-service" element={<ScenicRiverCruiseButlerService />} />
+          <Route path="/scenic-river-cruises/space-ships-sun-lounges" element={<ScenicSpaceShips />} />
+          <Route path="/scenic-river-cruises/rhine" element={<ScenicRhineRiverCruises />} />
+          <Route path="/scenic-river-cruises/danube" element={<ScenicDanubeRiverCruises />} />
 
         </Routes>
       </BrowserRouter>

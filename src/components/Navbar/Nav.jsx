@@ -1146,7 +1146,7 @@ const Nav = () => {
               </NavLink>
 
 
-              {/* <NavLink
+              <NavLink
                 to="/scenic-river-cruises/family-multigenerational"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1160,7 +1160,49 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Scenic Christmas Market River Cruises
+              </NavLink>
+
+
+              <NavLink
+                to="/scenic-river-cruises/freechoice-enrich"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Freechoice & Enrich
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/butler-service"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Butler Service
+              </NavLink>
+
+              {/* <NavLink
+                to="/scenic-river-cruises/space-ships-sun-lounges"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic River Cruises Space Ships & Sun Lounges
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/rhine"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Rhine River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/danube"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Danube River Cruises
               </NavLink> */}
+
 
             </div>
           </div>
@@ -2303,7 +2345,7 @@ const Nav = () => {
             </NavLink>
 
 
-            {/* <NavLink
+            <NavLink
               to="/scenic-river-cruises/family-multigenerational"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2318,7 +2360,52 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Scenic Christmas Market River Cruises
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/freechoice-enrich"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Freechoice & Enrich
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/butler-service"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Butler Service
+            </NavLink>
+
+
+            {/* <NavLink
+              to="/scenic-river-cruises/space-ships-sun-lounges"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic River Cruises Space Ships & Sun Lounges
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/rhine"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Rhine River Cruises
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/danube"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Danube River Cruises
             </NavLink> */}
+
+
 
 
 
