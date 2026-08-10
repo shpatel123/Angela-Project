@@ -148,6 +148,12 @@ import ScenicRiverCruiseButlerService from "./pages/ScenicRiverCruiseButlerServi
 import ScenicSpaceShips from "./pages/ScenicSpaceShips/ScenicSpaceShips";
 import ScenicRhineRiverCruises from "./pages/ScenicRhineRiverCruises/ScenicRhineRiverCruises";
 import ScenicDanubeRiverCruises from "./pages/ScenicDanubeRiverCruises/ScenicDanubeRiverCruises";
+import ScenicSeineRiverCruises from "./pages/ScenicSeineRiverCruises/ScenicSeineRiverCruises";
+import ScenicRhoneSaoneRiverCruises from "./pages/ScenicRhoneSaoneRiverCruises/ScenicRhoneSaoneRiverCruises";
+import ScenicBordeauxRiverCruises from "./pages/ScenicBordeauxRiverCruises/ScenicBordeauxRiverCruises";
+import ScenicDouroRiverCruisesPortugal from "./pages/ScenicDouroRiverCruisesPortugal/ScenicDouroRiverCruisesPortugal";
+import ScenicMekongRiverCruises from "./pages/ScenicMekongRiverCruises/ScenicMekongRiverCruises";
+// import ScenicVsAvalonWaterways from "./pages/ScenicVsAvalonWaterways/ScenicVsAvalonWaterways";
 
 
 function App() {
@@ -615,6 +621,12 @@ function App() {
           <Route path="/scenic-river-cruises/space-ships-sun-lounges" element={<ScenicSpaceShips />} />
           <Route path="/scenic-river-cruises/rhine" element={<ScenicRhineRiverCruises />} />
           <Route path="/scenic-river-cruises/danube" element={<ScenicDanubeRiverCruises />} />
+          <Route path="/scenic-river-cruises/seine" element={<ScenicSeineRiverCruises />} />
+          <Route path="/scenic-river-cruises/rhone-saone" element={<ScenicRhoneSaoneRiverCruises />} />
+          <Route path="/scenic-river-cruises/bordeaux" element={<ScenicBordeauxRiverCruises />} />
+          <Route path="/scenic-river-cruises/douro" element={<ScenicDouroRiverCruisesPortugal />} />
+          <Route path="/scenic-river-cruises/mekong" element={<ScenicMekongRiverCruises />} />
+          {/* <Route path="/scenic-river-cruises/scenic-vs-avalon" element={<ScenicVsAvalonWaterways />} /> */}
 
         </Routes>
       </BrowserRouter>

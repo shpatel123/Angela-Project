@@ -1179,7 +1179,7 @@ const Nav = () => {
                 Scenic River Cruises Butler Service
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/scenic-river-cruises/space-ships-sun-lounges"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1201,7 +1201,57 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Scenic Danube River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/seine"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Seine River Cruises
+              </NavLink>
+{/* 
+              <NavLink
+                to="/scenic-river-cruises/rhone-saone"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Rhone & Saône River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/bordeaux"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Bordeaux River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/douro"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Douro River Cruises
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/mekong"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Mekong River Cruises
+              </NavLink>
+
+               <NavLink
+                to="/scenic-river-cruises/scenic-vs-avalon"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Avalon Waterways
               </NavLink> */}
+
+
 
 
             </div>
@@ -2380,7 +2430,7 @@ const Nav = () => {
             </NavLink>
 
 
-            {/* <NavLink
+            <NavLink
               to="/scenic-river-cruises/space-ships-sun-lounges"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2403,13 +2453,55 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Scenic Danube River Cruises
-            </NavLink> */}
+            </NavLink>
 
+            <NavLink
+              to="/scenic-river-cruises/seine"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Seine River Cruises
+            </NavLink>
 
+            {/* <NavLink
+              to="/scenic-river-cruises/rhone-saone"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Rhone & Saône River Cruises
+            </NavLink>
 
+            <NavLink
+              to="/scenic-river-cruises/bordeaux"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Bordeaux River Cruises
+            </NavLink>
 
+            <NavLink
+              to="/scenic-river-cruises/douro"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Douro River Cruises
+            </NavLink>
 
+             <NavLink
+                to="/scenic-river-cruises/mekong"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Mekong River Cruises
+              </NavLink>
 
+              <NavLink
+                to="/scenic-river-cruises/scenic-vs-avalon"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Avalon Waterways
+              </NavLink> */}
 
             <span className="mobile-dropdown-divider"></span>
           </div>

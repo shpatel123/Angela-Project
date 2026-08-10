@@ -6219,7 +6219,7 @@
 
 .sfe-family-quote-text {
     font-family: var(--font-body);
-    font-size: 15.5px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--text-body);
     font-style: italic;
@@ -6248,6 +6248,550 @@
     }
     .sfe-family-gen-card {
         padding: 22px 20px;
+    }
+}
+
+/* ── Premium Separate Wine Section ───────────────────────────────── */
+.sfe-wine-section {
+    padding: 60px 20px;
+    background-color: var(--bg-white);
+}
+
+.sfe-wine-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sfe-wine-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sfe-wine-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sfe-wine-eyebrow {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.sfe-wine-title {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.15;
+}
+
+.sfe-wine-lead {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-body);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.sfe-wine-desc {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-body);
+    margin-bottom: 20px;
+}
+
+.sfe-wine-callout {
+    border-left: 4px solid var(--navy);
+    background-color: var(--navy-soft);
+    padding: 20px 24px;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin-bottom: 24px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.5;
+}
+
+.sfe-wine-context-title {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--navy);
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Luxury visual timeline flow */
+.sfe-wine-timeline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding: 10px 0;
+}
+
+.sfe-wine-timeline-node {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    background-color: var(--bg-soft);
+    border: 1px solid var(--navy-border);
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.sfe-wine-timeline-node:hover {
+    background-color: var(--navy);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+}
+
+.sfe-wine-timeline-arrow {
+    color: var(--navy-light);
+    font-weight: bold;
+    font-size: 16px;
+    animation: flowPulse 2s infinite ease-in-out;
+}
+
+@keyframes flowPulse {
+    0%, 100% { opacity: 0.4; transform: translateX(0); }
+    50% { opacity: 1; transform: translateX(2px); }
+}
+
+.sfe-wine-conclusion {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Visual Media Container */
+.sfe-wine-media {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    border-radius: var(--radius-lg);
+    background: radial-gradient(circle at center, var(--bg-dark2) 0%, var(--bg-dark) 100%);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--navy-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sfe-wine-media::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.05) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.sfe-wine-media-icon {
+    color: var(--bg-white);
+    opacity: 0.85;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
+    animation: mediaFloat 6s infinite ease-in-out;
+}
+
+@keyframes mediaFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.sfe-wine-media-label {
+    font-family: var(--font-display);
+    color: var(--bg-white);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+
+/* ── Premium Separate Lounge Section ──────────────────────────────── */
+.sfe-lounge-section {
+    padding: 100px 20px;
+    background-color: var(--bg-soft);
+}
+
+.sfe-lounge-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sfe-lounge-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sfe-lounge-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sfe-lounge-eyebrow {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.sfe-lounge-title {
+    font-family: var(--font-display);
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.sfe-lounge-lead {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-body);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sfe-lounge-list-title {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--navy);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Premium Checklist Cards Grid */
+.sfe-lounge-checklist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.sfe-lounge-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    background: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.sfe-lounge-item:hover {
+    border-color: var(--navy);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.sfe-lounge-icon {
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.sfe-lounge-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-body);
+    font-weight: 600;
+}
+
+.sfe-lounge-desc {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-body);
+    margin-bottom: 16px;
+}
+
+.sfe-lounge-outro {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+/* Visual Media Container */
+.sfe-lounge-media {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    border-radius: var(--radius-lg);
+    background: radial-gradient(circle at center, var(--bg-dark2) 0%, var(--bg-dark) 100%);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--navy-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sfe-lounge-media::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.05) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.sfe-lounge-media-icon {
+    color: var(--bg-white);
+    opacity: 0.85;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
+    animation: mediaFloat 6s infinite ease-in-out;
+}
+
+.sfe-lounge-media-label {
+    font-family: var(--font-display);
+    color: var(--bg-white);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+    .sfe-wine-section, .sfe-lounge-section {
+        padding: 60px 20px;
+    }
+    
+    .sfe-wine-grid, .sfe-lounge-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .sfe-wine-media, .sfe-lounge-media {
+        height: 320px;
+    }
+    
+    .sfe-lounge-checklist {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+/* ── Premium Centered First-Time Cruisers Section ────────────────── */
+.sfe-firsttime-section {
+    padding: 60px 20px;
+    background-color: var(--bg-soft);
+    position: relative;
+    border-top: 1px solid var(--navy-border);
+    border-bottom: 1px solid var(--navy-border);
+}
+
+.sfe-firsttime-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sfe-firsttime-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 48px auto;
+}
+
+.sfe-firsttime-title {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.15;
+}
+
+.sfe-firsttime-lead {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-body);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.sfe-firsttime-desc {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-body);
+}
+
+.sfe-firsttime-progression-title {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* 3-Step Progression Grid */
+.sfe-firsttime-progression-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+/* Connecting timeline line behind cards */
+.sfe-firsttime-progression-grid::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background-color: var(--navy-border);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sfe-firsttime-step-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.sfe-firsttime-step-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--navy);
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-lg);
+}
+
+.sfe-firsttime-step-number {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    color: var(--bg-white);
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    border: 3px solid var(--bg-soft);
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.15);
+    transition: var(--transition);
+}
+
+.sfe-firsttime-step-card:hover .sfe-firsttime-step-number {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(39, 68, 114, 0.25);
+}
+
+.sfe-firsttime-step-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.sfe-firsttime-step-subtitle {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Premium footer box */
+.sfe-firsttime-footer-box {
+    background-color: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-lg);
+    padding: 32px 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sfe-firsttime-callout-text {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--navy);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.sfe-firsttime-conclusion {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .sfe-firsttime-section {
+        padding: 60px 20px;
+    }
+    
+    .sfe-firsttime-progression-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .sfe-firsttime-progression-grid::before {
+        display: none;
+    }
+    
+    .sfe-firsttime-title {
+        font-size: 32px;
+    }
+    
+    .sfe-firsttime-footer-box {
+        padding: 24px;
     }
 }
 
