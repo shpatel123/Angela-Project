@@ -1847,7 +1847,7 @@ const ScenicRhoneSaoneRiverCruises = () => {
                     <div className="Avr-planning-heading">
                         <span className="Avr-planning-eyebrow">Personalized Trip Preparation</span>
                         <h2 className="Avr-planning-title">
-                            Why Book a Scenic Rhône & Saône Cruise <br /> Through a Luxury Travel Advisor?
+                            Why Book a Scenic Rhône & Saône Cruise Through a Luxury Travel Advisor?
                         </h2>
 
                         <div className="Avr-planning-divider"></div>

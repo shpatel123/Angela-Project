@@ -1,11 +1,23 @@
-import { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Nav = () => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [homeDropdownOpen, setHomeDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    // Scroll active link into view inside its scrollable parent dropdown
+    const timer = setTimeout(() => {
+      const activeLink = document.querySelector(".nav-dropdown-menu .active, .offcanvas-menu .active");
+      if (activeLink) {
+        activeLink.scrollIntoView({ block: "center", inline: "nearest" });
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [pathname]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -875,6 +887,7 @@ const Nav = () => {
 
               <NavLink
                 to="/riverside-luxury-cruises"
+                end
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
@@ -1032,6 +1045,7 @@ const Nav = () => {
 
               <NavLink
                 to="/scenic-river-cruises"
+                end
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
@@ -1210,7 +1224,7 @@ const Nav = () => {
               >
                 Scenic Seine River Cruises
               </NavLink>
-{/* 
+
               <NavLink
                 to="/scenic-river-cruises/rhone-saone"
                 className="nav-dropdown-single"
@@ -1243,12 +1257,28 @@ const Nav = () => {
                 Scenic Mekong River Cruises
               </NavLink>
 
-               <NavLink
+              {/* <NavLink
                 to="/scenic-river-cruises/scenic-vs-avalon"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Scenic Vs Avalon Waterways
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/scenic-vs-riverside"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Riverside
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/scenic-vs-tauck"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Tauck
               </NavLink> */}
 
 
@@ -2124,6 +2154,7 @@ const Nav = () => {
 
             <NavLink
               to="/riverside-luxury-cruises"
+              end
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
@@ -2280,6 +2311,7 @@ const Nav = () => {
 
             <NavLink
               to="/scenic-river-cruises"
+              end
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
@@ -2463,7 +2495,7 @@ const Nav = () => {
               Scenic Seine River Cruises
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/scenic-river-cruises/rhone-saone"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2487,21 +2519,40 @@ const Nav = () => {
               Scenic Douro River Cruises
             </NavLink>
 
-             <NavLink
-                to="/scenic-river-cruises/mekong"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Scenic Mekong River Cruises
-              </NavLink>
+            <NavLink
+              to="/scenic-river-cruises/mekong"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Mekong River Cruises
+            </NavLink>
 
-              <NavLink
-                to="/scenic-river-cruises/scenic-vs-avalon"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Scenic Vs Avalon Waterways
-              </NavLink> */}
+            {/* <NavLink
+              to="/scenic-river-cruises/scenic-vs-avalon"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Vs Avalon Waterways
+            </NavLink>
+
+
+            <NavLink
+              to="/scenic-river-cruises/scenic-vs-riverside"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Vs Riverside
+            </NavLink>
+
+            <NavLink
+              to="/scenic-river-cruises/scenic-vs-tauck"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Vs Tauck
+            </NavLink> */}
+
+
 
             <span className="mobile-dropdown-divider"></span>
           </div>

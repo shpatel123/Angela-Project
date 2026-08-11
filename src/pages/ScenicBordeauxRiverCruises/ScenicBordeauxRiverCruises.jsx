@@ -1801,7 +1801,7 @@ const ScenicBordeauxRiverCruises = () => {
                     <div className="Avr-planning-heading">
                         <span className="Avr-planning-eyebrow">Personalized Trip Preparation</span>
                         <h2 className="Avr-planning-title">
-                            Why Book a Scenic Bordeaux Cruise <br /> Through a Luxury Travel Advisor?
+                            Why Book a Scenic Bordeaux Cruise Through a Luxury Travel Advisor?
                         </h2>
 
                         <div className="Avr-planning-divider"></div>

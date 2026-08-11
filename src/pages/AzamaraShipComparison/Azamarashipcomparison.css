@@ -2078,7 +2078,7 @@
 }
 
 .Asc-faq-q {
-  font-size: 17px !important;
+  font-size: 18px !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2104,7 +2104,7 @@
 }
 
 .Asc-faq-a-inner {
-  font-size: 16px !important;
+  font-size: 17px !important;
   line-height: 1.75 !important;
   color: rgba(39, 68, 114, 0.8) !important;
   font-weight: 300 !important;
