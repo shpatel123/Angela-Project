@@ -428,36 +428,34 @@ export default function ScenicVsRiverside() {
                 <div className="Scenic_hero_overlay"></div>
 
                 <div className="Scenic_hero_content">
-                    <h1>Scenic vs Riverside Luxury Cruises</h1>
+                    <h1>Scenic vs Riverside Luxury Cruises: Which River Cruise Is Better?</h1>
 
                     <p>
-                        Scenic and Riverside Luxury Cruises are both
-                        compelling choices for travelers looking for an
-                        upscale European river cruise, but they deliver
-                        luxury in different ways. Scenic has built its
-                        river-cruise identity around an ultra-luxury,
-                        highly inclusive experience, while Riverside takes
-                        a different approach, with a particularly strong
-                        emphasis on large accommodations, elevated dining,
-                        and a more intimate luxury-ship feel.
+                        Scenic and Riverside Luxury Cruises are both compelling choices for travelers looking for an upscale European river cruise, but they deliver luxury in different ways.
                     </p>
+                    <p>
+                        Scenic has built its river-cruise identity around an ultra-luxury, highly inclusive experience, with purpose-built Space-Ships, personalized service, spacious suites, and included experiences. Scenic's European Space-Ships accommodate up to 163 guests, while Scenic emphasizes all-inclusive dining, beverages, excursions and personalized service.
+                    </p>
+                   
 
                     {readMore && (
-                        <p>
-                            That makes this a particularly interesting
-                            comparison for travelers who have already
-                            narrowed their choices to the luxury end of
-                            river cruising. The right question isn't simply
-                            "which cruise line is better" — it's which
-                            luxury river cruise gives you the experience
-                            you value most. Choose Scenic if you want a
-                            highly inclusive ultra-luxury experience with a
-                            strong focus on included experiences and
-                            personalized service. Choose Riverside if you
-                            place exceptional importance on spacious
-                            accommodations, intimate luxury, dining, and
-                            personalized attention.
-                        </p>
+                        <>
+                         <p>
+                        Riverside takes a different approach, with a particularly strong emphasis on large accommodations, elevated dining, personalized service, and a more intimate luxury-ship feel.
+                    </p>
+                            <p>
+                                That makes this a particularly interesting comparison for travelers who have already narrowed their choices to the luxury end of river cruising.
+                            </p>
+                            <p>
+                                The right question isn't simply:
+                                <br />
+                                Which cruise line is better?
+                                <br />
+                                It's:
+                                <br />
+                                Which luxury river cruise gives you the experience you value most?
+                            </p>
+                        </>
                     )}
 
                     <div className="Scenic_readmore_wrapper">
@@ -1059,18 +1057,7 @@ export default function ScenicVsRiverside() {
                         </div>
                     </div>
 
-                    <div className="sva-verdict-box">
-                        <h4 className="sva-verdict-title">Best for food-focused travelers?</h4>
-                        <div className="sva-verdict-grid">
-                            <div className="sva-verdict-item">
-                                <strong>Scenic</strong> may be better for dining variety, included beverages, and multiple dining settings.
-                            </div>
-                            <div className="sva-verdict-item">
-                                <strong>Riverside</strong> may be better for a boutique dining atmosphere and personalized service.
-                            </div>
-                        </div>
-                        <p className="sva-winner-text" style={{ marginTop: "12px" }}><strong>Verdict:</strong> Tie — with different strengths.</p>
-                    </div>
+                    
                 </div>
             </section>
 
@@ -1770,13 +1757,14 @@ export default function ScenicVsRiverside() {
                             <h3 className="sfe-dining-noimg-title">Scenic Pros</h3>
                             <ul className="sfe-dining-noimg-list">
                                 {[
-                                    "Luxury positioning",
+                                    "Ultra-luxury positioning",
                                     "Highly inclusive experience",
                                     "Personalized service",
-                                    "Butler Service on eligible suites",
-                                    "Premium accommodations",
-                                    "Strong dining experience",
-                                    "Curated excursions",
+                                    "Butler service on applicable suites",
+                                    "Scenic Sun Lounge",
+                                    "Included premium beverages",
+                                    "Strong excursion program",
+                                    "Contemporary Space-Ships",
                                 ].map((item, idx) => (
                                     <li key={idx} className="sfe-dining-noimg-list-item">
                                         <span className="sfe-dining-noimg-list-icon">
@@ -1792,13 +1780,12 @@ export default function ScenicVsRiverside() {
                             <h3 className="sfe-dining-noimg-title">Riverside Pros</h3>
                             <ul className="sfe-dining-noimg-list">
                                 {[
-                                    "Spacious Panorama Suites",
-                                    "Open-Air Balcony concept",
-                                    "Strong destination focus",
-                                    "Active excursion options",
-                                    "Relaxed atmosphere",
-                                    "Excellent river views",
-                                    "Strong value proposition",
+                                    "Spacious suites",
+                                    "Intimate luxury atmosphere",
+                                    "Strong dining proposition",
+                                    "Personalized service",
+                                    "Small, easy-to-research fleet",
+                                    "Excellent option for luxury travelers",
                                 ].map((item, idx) => (
                                     <li key={idx} className="sfe-dining-noimg-list-item">
                                         <span className="sfe-dining-noimg-list-icon">
@@ -1813,9 +1800,9 @@ export default function ScenicVsRiverside() {
 
                     <div className="scenic-exclusions-grid" style={{ marginBottom: "12px" }}>
                         {[
-                            "Scenic is usually positioned at a higher price point",
-                            "Scenic may be more luxury-focused than some travelers need",
-                            "Travelers who prioritize active exploration may prefer Riverside's approach",
+                            "Can command a premium fare",
+                            "Its larger Space-Ships may not feel as intimate as smaller luxury vessels",
+                            "Travelers who prioritize maximum suite space may prefer Riverside",
                         ].map((item, i) => (
                             <div key={i} className="scenic-exclusion-card">
                                 <div className="scenic-exclusion-icon-wrap">
@@ -1828,9 +1815,9 @@ export default function ScenicVsRiverside() {
 
                     <div className="scenic-exclusions-grid">
                         {[
-                            "Riverside is less traditionally luxury-focused than Scenic",
-                            "Some premium services may not be included in the same way",
-                            "Travelers seeking Butler Service and a highly inclusive luxury model may prefer Scenic",
+                            "Smaller fleet means fewer ship choices",
+                            "Exact itinerary and inclusion comparisons are especially important",
+                            "Travelers seeking the most clearly defined all-inclusive model may prefer Scenic",
                         ].map((item, i) => (
                             <div key={i} className="scenic-exclusion-card">
                                 <div className="scenic-exclusion-icon-wrap">
@@ -1899,62 +1886,25 @@ export default function ScenicVsRiverside() {
             <section className="sfe-firsttime-section" id="who-should-choose">
                 <div className="sfe-firsttime-container">
                     <div className="sfe-firsttime-header">
-                        <h2 className="sfe-firsttime-title">Who Should Choose Scenic? Who Should Choose Riverside?</h2>
+                        <h2 className="sfe-firsttime-title">Scenic vs Riverside: Which Should You Choose?</h2>
                         <div className="adg-accent-line"></div>
+                        <p className="sfe-firsttime-lead" style={{ marginTop: "16px" }}>
+                            Here's the simplest way to decide:
+                        </p>
                     </div>
 
                     <div className="sfe-dining-noimg-grid">
                         <div className="sfe-dining-noimg-card">
-                            <h3 className="sfe-dining-noimg-title">Choose Scenic If You:</h3>
-                            <ul className="sfe-dining-noimg-list">
-                                {[
-                                    "Want luxury",
-                                    "Prefer all-inclusive travel",
-                                    "Value personalized service",
-                                    "Want premium dining",
-                                    "Appreciate curated excursions",
-                                    "Are celebrating a special occasion",
-                                    "Prefer a luxury-resort atmosphere",
-                                ].map((item, idx) => (
-                                    <li key={idx} className="sfe-dining-noimg-list-item">
-                                        <span className="sfe-dining-noimg-list-icon">
-                                            <CheckCircle size={16} />
-                                        </span>
-                                        <span className="sfe-dining-noimg-list-text">{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <p className="sfe-dining-noimg-outro">
-                                Best match: luxury travelers who want the
-                                cruise itself to feel like part of the
-                                luxury experience.
+                            <h3 className="sfe-dining-noimg-title">Choose Scenic if you want:</h3>
+                            <p className="sfe-dining-noimg-list-text" style={{ fontSize: "16px", lineHeight: "1.6", color: "var(--text-body)", margin: "8px 0 0 0" }}>
+                                Ultra-luxury + all-inclusive + curated experiences + personalized service
                             </p>
                         </div>
 
                         <div className="sfe-dining-noimg-card">
-                            <h3 className="sfe-dining-noimg-title">Choose Riverside If You:</h3>
-                            <ul className="sfe-dining-noimg-list">
-                                {[
-                                    "Prioritize spacious cabins",
-                                    "Want an open-air balcony",
-                                    "Enjoy active excursions",
-                                    "Prefer a relaxed atmosphere",
-                                    "Want destination-focused travel",
-                                    "Value flexibility",
-                                ].map((item, idx) => (
-                                    <li key={idx} className="sfe-dining-noimg-list-item">
-                                        <span className="sfe-dining-noimg-list-icon">
-                                            <CheckCircle size={16} />
-                                        </span>
-                                        <span className="sfe-dining-noimg-list-text">{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <p className="sfe-dining-noimg-outro">
-                                Best match: travelers who want a
-                                comfortable premium cruise with
-                                exceptional cabin space and strong
-                                destination experiences.
+                            <h3 className="sfe-dining-noimg-title">Choose Riverside if you want:</h3>
+                            <p className="sfe-dining-noimg-list-text" style={{ fontSize: "16px", lineHeight: "1.6", color: "var(--text-body)", margin: "8px 0 0 0" }}>
+                                Spacious suites + intimate luxury + dining + personalized service
                             </p>
                         </div>
                     </div>

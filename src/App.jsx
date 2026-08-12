@@ -155,7 +155,8 @@ import ScenicDouroRiverCruisesPortugal from "./pages/ScenicDouroRiverCruisesPort
 import ScenicMekongRiverCruises from "./pages/ScenicMekongRiverCruises/ScenicMekongRiverCruises";
 import ScenicVsAvalonWaterways from "./pages/ScenicVsAvalonWaterways/ScenicVsAvalonWaterways";
 import ScenicVsRiversideLuxuryCruises from "./pages/ScenicVsRiversideLuxuryCruises/ScenicVsRiversideLuxuryCruises";
-// import ScenicVsTauckRiverCruises from "./pages/ScenicVsTauckRiverCruises/ScenicVsTauckRiverCruises";
+import ScenicVsTauckRiverCruises from "./pages/ScenicVsTauckRiverCruises/ScenicVsTauckRiverCruises";
+import Scenicvscelebrity from "./pages/Scenicvscelebrity/Scenicvscelebrity";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 
@@ -175,7 +176,7 @@ function App() {
           <Route
             path="/azamara-vs-regent-seven-seas"
             element={<AzamaravsRegentSevenSeas />}
-          />
+          />  
 
           <Route path="/azamara-vs-seabourn" element={<AzamaraVsSeabourn />} />
 
@@ -632,7 +633,8 @@ function App() {
           <Route path="/scenic-river-cruises/mekong" element={<ScenicMekongRiverCruises />} />
           <Route path="/scenic-river-cruises/scenic-vs-avalon" element={<ScenicVsAvalonWaterways />} />
           <Route path="/scenic-river-cruises/scenic-vs-riverside" element={<ScenicVsRiversideLuxuryCruises />} />
-          {/* <Route path="/scenic-river-cruises/scenic-vs-tauck" element={<ScenicVsTauckRiverCruises />} /> */}
+          <Route path="/scenic-river-cruises/scenic-vs-tauck" element={<ScenicVsTauckRiverCruises />} />
+          <Route path="/scenic-river-cruises/scenic-vs-celebrity" element={<Scenicvscelebrity  />} />
 
         </Routes>
       </BrowserRouter>

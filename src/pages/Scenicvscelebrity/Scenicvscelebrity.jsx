@@ -34,7 +34,7 @@ import {
     HeartHandshake,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela3.jpeg";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 
 import { Helmet } from "react-helmet-async";
 import "../ScenicRiverCruises/ScenicRiverCruises.css";
@@ -71,18 +71,18 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#webpage",
-            name: "Scenic vs Tauck River Cruises (2026): Which Is Better?",
-            url: "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/",
+            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#webpage",
+            name: "Scenic vs Celebrity River Cruises (2026): Which Is Better?",
+            url: "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/",
             description:
-                "Compare Scenic vs Tauck River Cruises for 2026. Explore luxury, suites, service, dining, inclusions, excursions, ships, pricing, families, and who each cruise line is best for.",
+                "Compare Scenic vs Celebrity River Cruises for 2026. Explore luxury, suites, service, dining, inclusions, excursions, ships, pricing, families, and who each cruise line is best for.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#article",
-            headline: "Scenic vs Tauck: Which Luxury River Cruise Is Better?",
+            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#article",
+            headline: "Scenic vs Celebrity: Which Luxury River Cruise Is Better?",
             description:
-                "A complete comparison of Scenic and Tauck, including suites, balconies, dining, service, excursions, inclusions, ships, price, and who each line is best for.",
+                "A complete comparison of Scenic and Celebrity, including suites, balconies, dining, service, excursions, inclusions, ships, price, and who each line is best for.",
             author: {
                 "@type": "Person",
                 name: "Angela Hughes",
@@ -95,14 +95,14 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#breadcrumb",
+            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#breadcrumb",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: "https://tripsandships.com" },
                 {
                     "@type": "ListItem",
                     position: 2,
-                    name: "Tauck",
-                    item: "https://tripsandships.com/tauck-river-cruises",
+                    name: "Celebrity",
+                    item: "https://tripsandships.com/celebrity-river-cruises",
                 },
                 {
                     "@type": "ListItem",
@@ -113,15 +113,15 @@ const schemaData = {
                 {
                     "@type": "ListItem",
                     position: 4,
-                    name: "Scenic vs Tauck",
-                    item: "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/",
+                    name: "Scenic vs Celebrity",
+                    item: "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#itemlist",
-            name: "Scenic vs Tauck — What This Guide Covers",
+            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#itemlist",
+            name: "Scenic vs Celebrity — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
                 { "@type": "ListItem", position: 2, name: "The Biggest Difference" },
@@ -140,62 +140,70 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#faq",
+            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#faq",
             mainEntity: [
                 {
                     "@type": "Question",
-                    name: "Is Scenic better than Tauck?",
+                    name: "Is Scenic better than Celebrity River Cruises?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Scenic may be better for travelers who prioritize luxury suites, Butler Service, onboard amenities and flexibility. Tauck may be better for travelers who prioritize destination experiences, guided touring and seamless logistics.",
+                        text: "Scenic is currently the stronger choice for travelers seeking an established ultra-luxury river cruise program and comprehensive all-inclusive experience. Celebrity may be better for travelers who prioritize new ships and contemporary design.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Tauck more luxurious than Scenic?",
+                    name: "Is Celebrity River Cruises really luxury?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are luxury river cruise options. Scenic emphasizes an ultra-luxury ship experience, while Tauck focuses heavily on an all-inclusive journey with destination experiences, guides and exclusive access.",
+                        text: "Yes. Celebrity's current river ships include suite-level butler service, modern accommodations, premium amenities, innovative public spaces and luxury-oriented design.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which is more all-inclusive, Scenic or Tauck?",
+                    name: "Which has better ships, Scenic or Celebrity?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are highly inclusive. Tauck currently describes its river cruises as \"Distinctively Inclusive,\" with excursions, meals, beverages, gratuities, transfers and other components included in one upfront price.",
+                        text: "Scenic has the advantage in established river-cruise experience. Celebrity has the advantage in newness and innovative ship design.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which has better suites, Scenic or Tauck?",
+                    name: "Which has better suites?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Scenic is particularly strong for travelers who want Sun Lounge suites and Butler Service. Tauck also offers spacious luxury accommodations, with the exact configuration depending on the ship and cabin category.",
+                        text: "Both offer luxury suites. Scenic is known for its Sun Lounge concept, while Celebrity offers innovative Infinite Balcony and Skylight Infinite Balcony designs on its newer river ships.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Does Scenic have Butler Service?",
+                    name: "Does Celebrity River Cruises have butler service?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Yes. Butler Service is one of Scenic's major differentiators, with services varying by suite category.",
+                        text: "Yes. Celebrity's current river-ship information states that butler service is available in every suite.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which has better excursions, Scenic or Tauck?",
+                    name: "Is Scenic more all-inclusive than Celebrity?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Tauck may have an advantage for travelers who prioritize guided destination experiences and exclusive cultural access. Scenic may be preferable for travelers who want more choice among different activities.",
+                        text: "Scenic has a particularly clear all-inclusive positioning and describes its river cruises as truly all-inclusive. Celebrity also includes many services and amenities, but travelers should compare the exact fare and sailing inclusions.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which has better food?",
+                    name: "Which has better dining?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are strong. Scenic emphasizes onboard dining variety, while Tauck places considerable emphasis on regionally inspired dining and local dining experiences ashore.",
+                        text: "Scenic has a more established luxury river dining program. Celebrity brings its contemporary culinary approach to new ships and includes innovative spaces such as the Magic Edge on Celebrity Seeker.",
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: "Which has better excursions?",
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Scenic currently has the advantage in established excursion experience and program breadth. Celebrity's river program is focused on immersive European experiences and continues to develop.",
                     },
                 },
                 {
@@ -203,7 +211,7 @@ const schemaData = {
                     name: "Which is better for couples?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are excellent. Scenic may appeal more to couples who prioritize the ship, suite and onboard luxury. Tauck may appeal to couples who prioritize destination experiences and seamless touring.",
+                        text: "Both are excellent. Scenic is ideal for couples who want established ultra-luxury, while Celebrity is appealing to couples who want a modern and new river-cruise experience.",
                     },
                 },
                 {
@@ -211,7 +219,7 @@ const schemaData = {
                     name: "Which is better for families?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Tauck has the advantage because its Tauck Bridges program is specifically designed around family and multigenerational travel.",
+                        text: "Celebrity may be attractive for families and multigenerational groups seeking a contemporary product. Scenic is stronger for travelers who prioritize a traditional ultra-luxury river experience.",
                     },
                 },
                 {
@@ -219,71 +227,63 @@ const schemaData = {
                     name: "Which is better for solo travelers?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both can work well. Tauck is particularly worth investigating because its current river-cruise program offers no single supplement in Category 1 on all river cruise departures.",
+                        text: "Both can work well. Compare single supplements, cabin categories, excursion structure and dining arrangements for your specific sailing.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which is better for first-time river cruisers?",
+                    name: "Is Celebrity River Cruises good for someone who already cruises Celebrity?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are excellent. Scenic is ideal if you want a luxury ship experience with choices, while Tauck is excellent if you want highly structured, seamless touring.",
+                        text: "Yes. Brand familiarity is one of Celebrity River Cruises' strongest advantages for existing Celebrity ocean guests.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Tauck more expensive than Scenic?",
+                    name: "Which is better for a Danube river cruise?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Pricing varies by itinerary, ship, cabin, season and departure date. Compare total trip cost and inclusions rather than headline fares.",
+                        text: "Scenic currently has the advantage in established Danube river-cruise experience. Celebrity offers a compelling alternative for travelers attracted to its new ships and contemporary design.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which has smaller river cruise ships?",
+                    name: "Which is better for a Rhine river cruise?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both operate relatively intimate river vessels compared with ocean cruise ships. Exact passenger capacity varies by ship and itinerary.",
+                        text: "Both can be considered, but compare the exact itinerary, ship, suite and included excursions. Scenic has extensive experience on Europe's major rivers.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which is better for active travelers?",
+                    name: "Is Scenic more expensive than Celebrity?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Scenic can be particularly attractive to active travelers who want choices among walking, cycling and other experiences. Tauck also offers active experiences but is particularly strong in guided touring.",
+                        text: "There is no universal answer. Prices vary by departure, suite, itinerary and inclusions. Compare the total trip cost rather than the headline cruise fare.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Should I choose Scenic or Tauck for the Danube?",
+                    name: "Which has the newest river ships?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both are excellent options. Choose Scenic if the ship and suite are major priorities. Choose Tauck if destination experiences, guides and seamless touring are more important.",
+                        text: "Celebrity's current river program is built around a new generation of purpose-built ships, including Celebrity Compass and Celebrity Seeker.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Which has better European river cruise itineraries?",
+                    name: "Which has better balcony cabins?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Neither universally wins. Compare the exact route, ports, duration, pre/post-cruise stays and excursion program for your travel dates.",
+                        text: "Scenic's Sun Lounge is an established and distinctive feature. Celebrity's Infinite Balcony and Skylight Infinite Balcony concepts provide a more technologically innovative approach.",
                     },
                 },
                 {
                     "@type": "Question",
-                    name: "Is Scenic or Tauck better for a luxury Christmas market cruise?",
+                    name: "Should I choose Scenic or Celebrity River Cruises?",
                     acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Both can be excellent. Compare the specific Christmas-market itinerary, included excursions, hotel stays and holiday programming rather than choosing purely by brand.",
-                    },
-                },
-                {
-                    "@type": "Question",
-                    name: "Can a luxury travel advisor help compare Scenic and Tauck?",
-                    acceptedAnswer: {
-                        "@type": "Answer",
-                        text: "Yes. A knowledgeable luxury travel advisor can compare the exact ship, suite category, itinerary, inclusions, promotions, transfers and pre/post-cruise arrangements to determine which experience best matches your priorities.",
+                        text: "Choose Scenic for established ultra-luxury river cruising and comprehensive inclusions. Choose Celebrity if you prefer modern design, new ships and the familiar Celebrity brand.",
                     },
                 },
             ],
@@ -297,76 +297,76 @@ function FAQ() {
 
     const faqData = [
         {
-            q: "Is Scenic better than Tauck?",
-            a: "Scenic may be better for travelers who prioritize luxury suites, Butler Service, onboard amenities and flexibility. Tauck may be better for travelers who prioritize destination experiences, guided touring and seamless logistics.",
+            q: "Is Scenic better than Celebrity River Cruises?",
+            a: "Scenic is currently the stronger choice for travelers seeking an established ultra-luxury river cruise program and comprehensive all-inclusive experience. Celebrity may be better for travelers who prioritize new ships and contemporary design.",
         },
         {
-            q: "Is Tauck more luxurious than Scenic?",
-            a: "Both are luxury river cruise options. Scenic emphasizes an ultra-luxury ship experience, while Tauck focuses heavily on an all-inclusive journey with destination experiences, guides and exclusive access.",
+            q: "Is Celebrity River Cruises really luxury?",
+            a: "Yes. Celebrity's current river ships include suite-level butler service, modern accommodations, premium amenities, innovative public spaces and luxury-oriented design.",
         },
         {
-            q: "Which is more all-inclusive, Scenic or Tauck?",
-            a: "Both are highly inclusive. Tauck currently describes its river cruises as \"Distinctively Inclusive,\" with excursions, meals, beverages, gratuities, transfers and other components included in one upfront price.",
+            q: "Which has better ships, Scenic or Celebrity?",
+            a: "Scenic has the advantage in established river-cruise experience. Celebrity has the advantage in newness and innovative ship design.",
         },
         {
-            q: "Which has better suites, Scenic or Tauck?",
-            a: "Scenic is particularly strong for travelers who want Sun Lounge suites and Butler Service. Tauck also offers spacious luxury accommodations, with the exact configuration depending on the ship and cabin category.",
+            q: "Which has better suites?",
+            a: "Both offer luxury suites. Scenic is known for its Sun Lounge concept, while Celebrity offers innovative Infinite Balcony and Skylight Infinite Balcony designs on its newer river ships.",
         },
         {
-            q: "Does Scenic have Butler Service?",
-            a: "Yes. Butler Service is one of Scenic's major differentiators, with services varying by suite category.",
+            q: "Does Celebrity River Cruises have butler service?",
+            a: "Yes. Celebrity's current river-ship information states that butler service is available in every suite.",
         },
         {
-            q: "Which has better excursions, Scenic or Tauck?",
-            a: "Tauck may have an advantage for travelers who prioritize guided destination experiences and exclusive cultural access. Scenic may be preferable for travelers who want more choice among different activities.",
+            q: "Is Scenic more all-inclusive than Celebrity?",
+            a: "Scenic has a particularly clear all-inclusive positioning and describes its river cruises as truly all-inclusive. Celebrity also includes many services and amenities, but travelers should compare the exact fare and sailing inclusions.",
         },
         {
-            q: "Which has better food?",
-            a: "Both are strong. Scenic emphasizes onboard dining variety, while Tauck places considerable emphasis on regionally inspired dining and local dining experiences ashore.",
+            q: "Which has better dining?",
+            a: "Scenic has a more established luxury river dining program. Celebrity brings its contemporary culinary approach to new ships and includes innovative spaces such as the Magic Edge on Celebrity Seeker.",
+        },
+        {
+            q: "Which has better excursions?",
+            a: "Scenic currently has the advantage in established excursion experience and program breadth. Celebrity's river program is focused on immersive European experiences and continues to develop.",
         },
         {
             q: "Which is better for couples?",
-            a: "Both are excellent. Scenic may appeal more to couples who prioritize the ship, suite and onboard luxury. Tauck may appeal to couples who prioritize destination experiences and seamless touring.",
+            a: "Both are excellent. Scenic is ideal for couples who want established ultra-luxury, while Celebrity is appealing to couples who want a modern and new river-cruise experience.",
         },
         {
             q: "Which is better for families?",
-            a: "Tauck has the advantage because its Tauck Bridges program is specifically designed around family and multigenerational travel.",
+            a: "Celebrity may be attractive for families and multigenerational groups seeking a contemporary product. Scenic is stronger for travelers who prioritize a traditional ultra-luxury river experience.",
         },
         {
             q: "Which is better for solo travelers?",
-            a: "Both can work well. Tauck is particularly worth investigating because its current river-cruise program offers no single supplement in Category 1 on all river cruise departures.",
+            a: "Both can work well. Compare single supplements, cabin categories, excursion structure and dining arrangements for your specific sailing.",
         },
         {
-            q: "Which is better for first-time river cruisers?",
-            a: "Both are excellent. Scenic is ideal if you want a luxury ship experience with choices, while Tauck is excellent if you want highly structured, seamless touring.",
+            q: "Is Celebrity River Cruises good for someone who already cruises Celebrity?",
+            a: "Yes. Brand familiarity is one of Celebrity River Cruises' strongest advantages for existing Celebrity ocean guests.",
         },
         {
-            q: "Is Tauck more expensive than Scenic?",
-            a: "Pricing varies by itinerary, ship, cabin, season and departure date. Compare total trip cost and inclusions rather than headline fares.",
+            q: "Which is better for a Danube river cruise?",
+            a: "Scenic currently has the advantage in established Danube river-cruise experience. Celebrity offers a compelling alternative for travelers attracted to its new ships and contemporary design.",
         },
         {
-            q: "Which has smaller river cruise ships?",
-            a: "Both operate relatively intimate river vessels compared with ocean cruise ships. Exact passenger capacity varies by ship and itinerary.",
+            q: "Which is better for a Rhine river cruise?",
+            a: "Both can be considered, but compare the exact itinerary, ship, suite and included excursions. Scenic has extensive experience on Europe's major rivers.",
         },
         {
-            q: "Which is better for active travelers?",
-            a: "Scenic can be particularly attractive to active travelers who want choices among walking, cycling and other experiences. Tauck also offers active experiences but is particularly strong in guided touring.",
+            q: "Is Scenic more expensive than Celebrity?",
+            a: "There is no universal answer. Prices vary by departure, suite, itinerary and inclusions. Compare the total trip cost rather than the headline cruise fare.",
         },
         {
-            q: "Should I choose Scenic or Tauck for the Danube?",
-            a: "Both are excellent options. Choose Scenic if the ship and suite are major priorities. Choose Tauck if destination experiences, guides and seamless touring are more important.",
+            q: "Which has the newest river ships?",
+            a: "Celebrity's current river program is built around a new generation of purpose-built ships, including Celebrity Compass and Celebrity Seeker.",
         },
         {
-            q: "Which has better European river cruise itineraries?",
-            a: "Neither universally wins. Compare the exact route, ports, duration, pre/post-cruise stays and excursion program for your travel dates.",
+            q: "Which has better balcony cabins?",
+            a: "Scenic's Sun Lounge is an established and distinctive feature. Celebrity's Infinite Balcony and Skylight Infinite Balcony concepts provide a more technologically innovative approach.",
         },
         {
-            q: "Is Scenic or Tauck better for a luxury Christmas market cruise?",
-            a: "Both can be excellent. Compare the specific Christmas-market itinerary, included excursions, hotel stays and holiday programming rather than choosing purely by brand.",
-        },
-        {
-            q: "Can a luxury travel advisor help compare Scenic and Tauck?",
-            a: "Yes. A knowledgeable luxury travel advisor can compare the exact ship, suite category, itinerary, inclusions, promotions, transfers and pre/post-cruise arrangements to determine which experience best matches your priorities.",
+            q: "Should I choose Scenic or Celebrity River Cruises?",
+            a: "Choose Scenic for established ultra-luxury river cruising and comprehensive inclusions. Choose Celebrity if you prefer modern design, new ships and the familiar Celebrity brand.",
         },
     ];
 
@@ -401,35 +401,35 @@ function FAQ() {
 
 /* ── Quick Answer Comparison Table Data ────────────────────────── */
 const quickAnswerRows = [
-    { key: "positioning", cat: "Overall positioning", scenic: "Ultra-luxury", avalon: "Luxury / premium" },
-    { key: "allinclusive", cat: "All-inclusive experience", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
-    { key: "suites", cat: "Suites", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
-    { key: "balcony", cat: "Balcony concept", scenic: "Sun Lounge", avalon: "French balconies / suite options" },
-    { key: "butler", cat: "Butler Service", scenic: "⭐⭐⭐⭐⭐", avalon: "Not the same model" },
-    { key: "destination", cat: "Destination experiences", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
-    { key: "leadership", cat: "Tour leadership", scenic: "Strong", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "positioning", cat: "Overall positioning", scenic: "Ultra-luxury", avalon: "Contemporary premium/luxury" },
+    { key: "experience", cat: "River-cruise experience", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐" },
+    { key: "shipdesign", cat: "Ship design", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "suites", cat: "Suite experience", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "butler", cat: "Butler service", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "allinclusive", cat: "All-inclusive approach", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐" },
     { key: "dining", cat: "Dining", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
-    { key: "entertainment", cat: "Onboard entertainment", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐" },
-    { key: "families", cat: "Families", scenic: "Good", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "excursions", cat: "Excursions", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐" },
+    { key: "wellness", cat: "Wellness", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "destination", cat: "Destination experience", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "fleet", cat: "Fleet experience", scenic: "⭐⭐⭐⭐⭐", avalon: "Developing" },
     { key: "couples", cat: "Couples", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
-    { key: "solo", cat: "Solo travelers", scenic: "Excellent", avalon: "⭐⭐⭐⭐⭐" },
-    { key: "luxury", cat: "Luxury travelers", scenic: "⭐⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
-    { key: "bestfor", cat: "Best for", scenic: "Ship + suite luxury", avalon: "Touring + destination depth" },
+    { key: "families", cat: "Families", scenic: "⭐⭐⭐⭐", avalon: "⭐⭐⭐⭐⭐" },
+    { key: "bestfor", cat: "Best for", scenic: "Established ultra-luxury", avalon: "Modern Celebrity-style river cruising" },
 ];
 
 
-export default function ScenicVsTauck() {
+export default function ScenicVsCelebrity() {
     const [readMore, setReadMore] = useState(false);
     const [readMoreVerdict, setReadMoreVerdict] = useState(false);
 
     return (
         <div className="Asc-page-wrapper">
             <Helmet>
-                <title>Scenic vs Tauck River Cruises (2026): Which Is Better?</title>
-                <meta name="title" content="Scenic vs Tauck River Cruises | Luxury River Cruise Comparison" />
+                <title>Scenic vs Celebrity River Cruises (2026): Which Is Better?</title>
+                <meta name="title" content="Scenic vs Celebrity River Cruises | Luxury Comparison" />
                 <meta
                     name="description"
-                    content="Compare Scenic vs Tauck River Cruises for 2026. Explore luxury, suites, service, dining, inclusions, excursions, ships, pricing, families, and who each cruise line is best for."
+                    content="Compare Scenic vs Celebrity River Cruises for 2026. Explore ships, suites, balconies, dining, service, inclusions, excursions, pricing, itineraries, families, and who each brand is best for."
                 />
                 <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
             </Helmet>
@@ -440,48 +440,46 @@ export default function ScenicVsTauck() {
                 <div className="Scenic_hero_overlay"></div>
 
                 <div className="Scenic_hero_content">
-                    <h1>Scenic vs Tauck: Which Luxury River Cruise Is Better?</h1>
+                    <h1>Scenic vs Celebrity River Cruises <br /> Which Is Better?</h1>
 
                     <p>
-                        Scenic and Tauck are two of the strongest choices
-                        for travelers comparing luxury river cruises in
-                        Europe. Both emphasize high levels of inclusion,
-                        premium accommodations, attentive service,
-                        destination experiences, and a relatively intimate
-                        river-cruise environment. But they are not
-                        identical.
+                        Scenic and Celebrity River C ruises represent two
+                        different approaches to luxury river cruising.
                     </p>
 
                     {readMore && (
                         <>
                             <p>
-                                Scenic stands out for its ultra-luxury
-                                ship experience, signature Sun Lounge
-                                suites, Butler Service, extensive onboard
-                                amenities, and choice of included
-                                experiences.
+                                Scenic is an established ultra-luxury river
+                                cruise brand with a mature European and
+                                Southeast Asian river program. It describes
+                                its river cruises as a truly all-inclusive,
+                                5-star experience, with personalized
+                                service, luxury suites and curated
+                                destination experiences.
+                            </p> 
+                            <p>
+                                Celebrity River Cruises is a newer entrant
+                                bringing the Celebrity Cruises design
+                                philosophy to Europe's rivers. Its current
+                                river program emphasizes modern ship
+                                design, spacious accommodations, open-air
+                                spaces, technology, wellness and immersive
+                                European experiences. Celebrity's river
+                                fleet currently includes ships such as
+                                Celebrity Compass and Celebrity Seeker,
+                                with additional vessels planned in its
+                                expanding program.
                             </p>
                             <p>
-                                Tauck stands out for its highly inclusive
-                                approach to touring, strong destination
-                                programming, Tauck Directors, exclusive
-                                cultural experiences, and a philosophy of
-                                taking care of virtually every detail from
-                                ship to shore. Tauck currently describes
-                                its river cruises as "Distinctively
-                                Inclusive," with all-included excursions,
-                                dining, beverages, gratuities, transfers
-                                and other components covered in one
-                                upfront price.
-                            </p>
-                            <p>
-                                So which is better? Scenic may be the
-                                better fit for travelers who want the ship
-                                and suite to be a major part of the
-                                luxury experience. Tauck may be the
-                                better fit for travelers who place
-                                exceptional importance on destination
-                                experiences, guiding and seamless touring.
+                                That creates an interesting choice: Scenic
+                                is the stronger option for travelers
+                                seeking established ultra-luxury river
+                                cruising and a highly inclusive experience.
+                                Celebrity may appeal more to travelers who
+                                want a fresh, contemporary river experience
+                                built around modern design and the
+                                familiar Celebrity brand.
                             </p>
                         </>
                     )}
@@ -508,7 +506,7 @@ export default function ScenicVsTauck() {
             <section className="adg-section" style={{ backgroundColor: "var(--bg-white)" }} id="quick-answer">
                 <div className="adg-container">
                     <div className="adg-header">
-                        <h2 className="adg-h2">Quick Answer: Scenic vs Tauck</h2>
+                        <h2 className="adg-h2">Quick Answer: Scenic vs Celebrity</h2>
                         <div className="adg-accent-line"></div>
 
                     </div>
@@ -519,7 +517,7 @@ export default function ScenicVsTauck() {
                                 <tr>
                                     <th>Category</th>
                                     <th>Scenic</th>
-                                    <th>Tauck</th>
+                                    <th>Celebrity</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -539,15 +537,14 @@ export default function ScenicVsTauck() {
                     <div className="sfe-firsttime-footer-box" style={{ marginTop: "32px" }}>
                         <p className="sfe-firsttime-callout-text">Bottom line</p>
                         <p className="sfe-firsttime-conclusion">
-                            Choose Scenic if you want: Ultra-luxury
-                            accommodations, Butler Service, a highly
-                            inclusive experience, extensive onboard
-                            amenities, and flexible included experiences.
-                            Choose Tauck if you want: Exceptional
-                            destination programming, highly guided
-                            touring, exclusive cultural experiences, and a
-                            seamless all-inclusive land-and-river
-                            experience.
+                            Choose Scenic if you want: A proven
+                            ultra-luxury river cruise with extensive
+                            inclusions, mature itineraries, personalized
+                            service and signature Scenic experiences.
+                            Choose Celebrity if you want: A newer, modern
+                            river cruise experience with contemporary ship
+                            design, innovative suites, wellness and the
+                            Celebrity brand.
                         </p>
                     </div>
                 </div>
@@ -558,13 +555,13 @@ export default function ScenicVsTauck() {
             <section className="sva-ships-section" id="biggest-difference" style={{ backgroundColor: "var(--bg-soft)" }}>
                 <div className="sva-ships-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck: The Biggest Difference</h2>
+                        <h2 className="sva-section-title">The Biggest Difference Between Scenic and Celebrity</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sva-section-lead" style={{ marginTop: "16px" }}>
-                            Both brands can appear remarkably similar when you compare their headline features. Both offer luxury river ships, included excursions, premium dining, complimentary beverages, Wi-Fi, transfers, gratuities, personalized service, and destination experiences.
+                            The biggest difference is experience and positioning. Scenic has been developing its river-cruise product for decades. Its current European and Southeast Asian programs include established itineraries across the Rhine, Main, Danube, Moselle, Seine, Rhône, Saône, Bordeaux and Douro, among others.
                         </p>
                         <p className="sva-section-lead" style={{ marginTop: "8px", fontWeight: "500", color: "var(--navy)" }}>
-                            The difference becomes clearer when you ask: Where do you want the luxury to be concentrated?
+                            Celebrity is entering river cruising with a new generation of purpose-built ships.
                         </p>
                     </div>
 
@@ -572,10 +569,10 @@ export default function ScenicVsTauck() {
                         <div className="sva-ships-card">
                             <div className="sva-ships-img-placeholder">
                                 <Sparkles size={48} className="sva-ships-img-icon" strokeWidth={1.2} />
-                                <span className="sva-ships-img-label">Scenic: The Ship Experience</span>
+                                <span className="sva-ships-img-label">Scenic: Established Ultra-Luxury</span>
                             </div>
                             <div className="sva-ships-content">
-                                <h3 className="sva-ships-card-title">Scenic Emphasizes the Ship Experience</h3>
+                                <h3 className="sva-ships-card-title">Scenic = Established Ultra-Luxury River Cruising</h3>
                                 <ul className="sva-ships-list" style={{ marginBottom: "24px" }}>
                                     {[
                                         "Suite",
@@ -598,19 +595,20 @@ export default function ScenicVsTauck() {
                         <div className="sva-ships-card">
                             <div className="sva-ships-img-placeholder">
                                 <Gem size={48} className="sva-ships-img-icon" strokeWidth={1.2} />
-                                <span className="sva-ships-img-label">Tauck: The Complete Journey</span>
+                                <span className="sva-ships-img-label">Celebrity: Modern, New-Generation Cruising</span>
                             </div>
                             <div className="sva-ships-content">
-                                <h3 className="sva-ships-card-title">Tauck Emphasizes the Complete Journey</h3>
+                                <h3 className="sva-ships-card-title">Celebrity = Modern, New-Generation River Cruising</h3>
                                 <ul className="sva-ships-list" style={{ marginBottom: "24px" }}>
                                     {[
-                                        "Ship",
-                                        "Tour Director",
-                                        "Local Guides",
-                                        "Exclusive Experiences",
-                                        "Dining Ashore",
-                                        "Hotels",
-                                        "Transfers",
+                                        "Modern interiors",
+                                        "Open-air lounges",
+                                        "Fewer guests",
+                                        "Spacious accommodations",
+                                        "Innovative balcony concepts",
+                                        "Wellness",
+                                        "Personalized service",
+                                        "Contemporary design",
                                     ].map((item, idx) => (
                                         <li key={idx} className="sva-ships-item">
                                             <CheckCircle size={16} className="sva-ships-icon" />
@@ -619,14 +617,11 @@ export default function ScenicVsTauck() {
                                     ))}
                                 </ul>
                                 <p className="sva-ships-card-text" style={{ fontSize: "15px", color: "var(--text-muted)", fontStyle: "italic", marginTop: "auto" }}>
-                                    Tauck's current materials specifically emphasize all-included excursions, exclusive cultural experiences, local dining, multiple Tauck Directors and local experts, airport transfers, gratuities and selected hotel stays.
+                                    Celebrity Compass, for example, features the brand's Skylight Infinite Balcony Suites, while Celebrity Seeker introduces features including its Magic Edge dining pods.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <p className="sva-section-lead" style={{ marginTop: "24px", textAlign: "center" }}>
-                        That distinction is extremely useful when choosing between the two.
-                    </p>
                 </div>
             </section>
 
@@ -638,7 +633,7 @@ export default function ScenicVsTauck() {
             >
                 <div className="adg-container">
                     <div className="adg-header">
-                        <h2 className="adg-h2">What Are Scenic and Tauck Best Known For?</h2>
+                        <h2 className="adg-h2">What Are Scenic and Celebrity Best Known For?</h2>
                         <div className="adg-accent-line"></div>
                     </div>
 
@@ -662,29 +657,29 @@ export default function ScenicVsTauck() {
                                 </div>
                             </div>
                             <div className="adg-card-body">
-                                <h3 className="adg-card-title1">What Is Scenic Best Known For?</h3>
+                                <h3 className="adg-card-title1">Scenic River Cruises: What Makes Them Different?</h3>
 
                                 <p className="sfe-cabins-text">
-                                    Scenic's European river product is positioned around an ultra-luxury, highly inclusive experience.
+                                    Scenic's river product is built around a comprehensive luxury experience.
                                 </p>
 
                                 <p className="sfe-cabins-text" style={{ fontWeight: "600", marginBottom: "12px", color: "var(--navy)" }}>
-                                    Its strengths include:
+                                    Its current positioning emphasizes:
                                 </p>
 
                                 <ul className="adg-card-list">
                                     {[
-                                        "Scenic Space-Ships",
-                                        "Spacious suites",
-                                        "Sun Lounge balconies",
-                                        "Butler Service",
-                                        "Premium beverages",
+                                        "Ultra-luxury",
+                                        "Truly all-inclusive travel",
+                                        "Personalized service",
+                                        "Luxury suites",
+                                        "Butler service",
                                         "Multiple dining venues",
                                         "Scenic Freechoice",
                                         "Scenic Enrich",
-                                        "Wellness facilities",
-                                        "Included excursions",
-                                        "Personalized service",
+                                        "Wellness",
+                                        "Included beverages",
+                                        "Curated excursions",
                                     ].map((point, idx) => (
                                         <li key={idx} className="adg-card-list-item">
                                             <span className="adg-card-list-dot"></span>
@@ -693,10 +688,14 @@ export default function ScenicVsTauck() {
                                     ))}
                                 </ul>
 
+                                <p className="sfe-cabins-text" style={{ fontStyle: "italic", fontSize: "16px", color: "var(--text-muted)", marginTop: "12px" }}>
+                                    Scenic describes its river journeys as being designed so that travelers can enjoy a seamless experience with details handled "to the Nth Degree."
+                                </p>
+
                                 <p className="sfe-cabins-outro" style={{ marginTop: "auto" }}>
-                                    <strong>Scenic is especially attractive to:</strong>
+                                    <strong>Scenic is particularly attractive to travelers who want:</strong>
                                     <br />
-                                    Travelers who consider the ship itself part of the destination.
+                                    Luxury without constantly thinking about what costs extra.
                                 </p>
                             </div>
                             <div className="adg-card-bar"></div>
@@ -717,34 +716,35 @@ export default function ScenicVsTauck() {
                                     <span className="adg-card-eyebrow-icon">
                                         <Home size={20} strokeWidth={1.6} />
                                     </span>
-                                    <span className="adg-card-eyebrow-label">Tauck</span>
+                                    <span className="adg-card-eyebrow-label">Celebrity</span>
                                 </div>
                             </div>
                             <div className="adg-card-body">
-                                <h3 className="adg-card-title1">What Is Tauck Best Known For?</h3>
+                                <h3 className="adg-card-title1">Celebrity River Cruises: What Makes Them Different?</h3>
 
                                 <p className="sfe-cabins-text">
-                                    Tauck's greatest strength is arguably the quality and depth of its destination experience.
+                                    Celebrity is approaching river cruising from a different direction.
                                 </p>
 
                                 <p className="sfe-cabins-text" style={{ fontWeight: "600", marginBottom: "12px", color: "var(--navy)" }}>
-                                    Its current "Distinctively Inclusive" river cruise model includes:
+                                    Its current river ships are designed around modern architecture, technology and open spaces:
                                 </p>
 
                                 <ul className="adg-card-list">
                                     {[
-                                        "All shore excursions",
-                                        "Exclusive cultural experiences",
-                                        "All meals",
-                                        "Local dining",
-                                        "Complimentary beverages",
-                                        "Gratuities",
-                                        "Airport transfers",
-                                        "On-tour transportation",
-                                        "Tauck Directors",
-                                        "Local guides",
-                                        "Selected hotel stays",
-                                        "Special access experiences",
+                                        "Modern interiors",
+                                        "Open-air lounges",
+                                        "Innovative Skylight Infinite Balcony Suites",
+                                        "Contemporary interiors",
+                                        "Personalized service",
+                                        "Wellness facilities",
+                                        "Magic Edge dining pods",
+                                        "Top-deck bar and grill",
+                                        "Hybrid propulsion",
+                                        "Spacious staterooms",
+                                        "Butler service in suites",
+                                        "Complimentary minibar",
+                                        "In-room continental breakfast",
                                     ].map((point, idx) => (
                                         <li key={idx} className="adg-card-list-item">
                                             <span className="adg-card-list-dot"></span>
@@ -754,13 +754,13 @@ export default function ScenicVsTauck() {
                                 </ul>
 
                                 <p className="sfe-cabins-text" style={{ fontStyle: "italic", fontSize: "16px", color: "var(--text-muted)", marginTop: "12px" }}>
-                                    Tauck also states that it does not sell optional excursions on its river cruises—the experiences are incorporated into the upfront price.
+                                    Celebrity Compass is described as having spacious interiors, open-air lounges and innovative Skylight Infinite Balcony Suites. Celebrity Seeker adds Magic Edge dining pods and hybrid propulsion.
                                 </p>
 
                                 <p className="sfe-cabins-outro" style={{ marginTop: "auto" }}>
-                                    <strong>Tauck is especially attractive to:</strong>
+                                    <strong>Celebrity is particularly attractive to:</strong>
                                     <br />
-                                    Travelers who want someone else to handle the details.
+                                    Travelers who want river cruising to feel contemporary, stylish and distinctly different from traditional river cruise design.
                                 </p>
                             </div>
                             <div className="adg-card-bar"></div>
@@ -775,7 +775,7 @@ export default function ScenicVsTauck() {
                     <div className="scenic-inline-cta-content-dark">
                         <h3 className="scenic-inline-cta-title-dark">Not Sure Which Line Fits Your Travel Style?</h3>
                         <p className="scenic-inline-cta-text-dark">
-                            Let us help you compare Scenic and Tauck sailings and find the perfect fit for your trip.
+                            Let us help you compare Scenic and Celebrity sailings and find the perfect fit for your trip.
                         </p>
                         <Link to="/contact" className="scenic-inline-cta-btn-dark" style={{ textDecoration: "none" }}>
                             Contact Angela Hughes
@@ -789,7 +789,7 @@ export default function ScenicVsTauck() {
             <section className="sfe-cabins-section" id="cabins">
                 <div className="sfe-cabins-container">
                     <div className="sfe-firsttime-header" style={{ marginBottom: "32px" }}>
-                        <h2 className="sfe-firsttime-title">Scenic vs Tauck Suites</h2>
+                        <h2 className="sfe-firsttime-title">Scenic vs Celebrity Suites</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sfe-firsttime-lead">
                             For many luxury travelers, the suite is one of
@@ -829,11 +829,9 @@ export default function ScenicVsTauck() {
                                     ))}
                                 </ul>
                                 <p className="sfe-cabins-outro">
-                                    The signature Sun Lounge is
-                                    particularly distinctive because it
-                                    allows travelers to enjoy the river
-                                    view from a flexible indoor/outdoor-
-                                    style space.
+                                    Best for travelers who want a mature
+                                    luxury suite product with flexible
+                                    indoor/outdoor river viewing.
                                 </p>
                             </div>
                         </div>
@@ -841,24 +839,41 @@ export default function ScenicVsTauck() {
                         <div className="sfe-cabins-card">
                             <div className="sfe-cabins-img-wrap">
                                 <Home size={48} className="sfe-cabins-img-icon" strokeWidth={1.2} />
-                                <span className="sfe-cabins-img-label">Tauck Suites</span>
+                                <span className="sfe-cabins-img-label">Celebrity Suites</span>
                             </div>
                             <div className="sfe-cabins-body">
-                                <h3 className="sfe-cabins-title">Tauck Suites</h3>
+                                <h3 className="sfe-cabins-title">Celebrity Suites</h3>
                                 <p className="sfe-cabins-text">
-                                    Tauck also offers spacious
-                                    accommodations, with different
-                                    categories depending on the ship. Its
-                                    newer riverboats have been designed
-                                    around generous living space,
-                                    contemporary amenities and a
-                                    relatively intimate guest experience.
+                                    Celebrity is bringing some familiar
+                                    ideas from its ocean fleet into river
+                                    cruising. Its current river product
+                                    includes:
                                 </p>
+                                <ul className="sfe-cabins-list">
+                                    {[
+                                        "King-size beds",
+                                        "River-facing accommodations",
+                                        "Infinite Balcony-style suites",
+                                        "Skylight Infinite Balcony Suites",
+                                        "Butler service in suites",
+                                        "Premium amenities",
+                                        "Complimentary minibar",
+                                        "In-room breakfast",
+                                    ].map((item, idx) => (
+                                        <li key={idx} className="sfe-cabins-list-item">
+                                            <CheckCircle size={16} strokeWidth={2.5} className="sfe-cabins-list-icon" />
+                                            <span className="sfe-cabins-list-text">{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                                 <p className="sfe-cabins-outro">
-                                    Tauck's current river-cruise
-                                    philosophy emphasizes comfort,
-                                    spaciousness, elegance and personal
-                                    service.
+                                    Celebrity's river-cruise information
+                                    confirms that suite guests receive
+                                    butler service, upgraded amenities and
+                                    additional dining and service
+                                    benefits. Best for travelers who want
+                                    modern suite design and innovative
+                                    approaches to river views.
                                 </p>
                             </div>
                         </div>
@@ -870,17 +885,17 @@ export default function ScenicVsTauck() {
             <section className="sva-info-section" id="better-suites" style={{ backgroundColor: "var(--bg-soft)" }}>
                 <div className="sva-info-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Which Has Better Suites?</h2>
+                        <h2 className="sva-section-title">Best For</h2>
                         <div className="adg-accent-line"></div>
                     </div>
 
                     <div className="sfe-dining-noimg-card" style={{ maxWidth: "800px", margin: "0 auto" }}>
                         <div className="sva-choice-grid" style={{ marginBottom: "24px" }}>
                             <div className="sva-choice-item">
-                                <strong>Scenic</strong> has the edge for travelers who specifically want Butler Service and the Sun Lounge concept.
+                                <strong>Scenic</strong> — Travelers who want a mature luxury suite product with flexible indoor/outdoor river viewing.
                             </div>
                             <div className="sva-choice-item">
-                                <strong>Tauck</strong> is excellent for travelers who prioritize spacious, comfortable accommodation as part of a destination-focused luxury journey.
+                                <strong>Celebrity</strong> — Travelers who want modern suite design and innovative approaches to river views.
                             </div>
                         </div>
                     </div>
@@ -891,10 +906,10 @@ export default function ScenicVsTauck() {
             <section className="sva-balcony-section" id="balconies">
                 <div className="sva-balcony-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck: Balcony Comparison</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity Balcony Experience</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sva-section-lead">
-                            This is another important difference.
+                            This may be one of the closest comparisons.
                         </p>
                     </div>
 
@@ -902,44 +917,35 @@ export default function ScenicVsTauck() {
                         <div className="sva-balcony-card">
                             <div className="sva-balcony-img-placeholder">
                                 <Sun size={48} className="sva-balcony-img-icon" strokeWidth={1.2} />
-                                <span className="sva-balcony-img-label">Scenic Sun Lounge</span>
+                                <span className="sva-balcony-img-label">Scenic — Sun Lounge</span>
                             </div>
                             <div className="sva-balcony-content">
-                                <h3 className="sva-balcony-card-title">Scenic Sun Lounge</h3>
+                                <h3 className="sva-balcony-card-title">Scenic: Sun Lounge</h3>
                                 <p className="sva-balcony-card-text">
-                                    Scenic's Sun Lounge is one of the
-                                    brand's signature features. It allows
-                                    guests to enjoy river views while
-                                    maintaining protection from weather
-                                    and providing additional usable
-                                    living space.
+                                    Scenic's signature balcony concept
+                                    creates a flexible space where
+                                    travelers can enjoy river views while
+                                    remaining protected from changing
+                                    weather.
                                 </p>
-                                <p className="sva-balcony-card-text" style={{ marginTop: "12px", fontWeight: 500 }}>Best for:</p>
-                                <ul className="sva-ships-list">
-                                    {["River viewing", "Relaxing in your suite", "Cooler weather", "Rainy days", "Travelers who spend considerable time in their cabin"].map((item, idx) => (
-                                        <li key={idx} className="sva-ships-item">
-                                            <CheckCircle size={16} className="sva-ships-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
                             </div>
                         </div>
 
                         <div className="sva-balcony-card">
                             <div className="sva-balcony-img-placeholder">
                                 <Home size={48} className="sva-balcony-img-icon" strokeWidth={1.2} />
-                                <span className="sva-balcony-img-label">Tauck Balcony Options</span>
+                                <span className="sva-balcony-img-label">Celebrity — Infinite Balcony / Skylight Infinite Balcony</span>
                             </div>
                             <div className="sva-balcony-content">
-                                <h3 className="sva-balcony-card-title">Tauck Balcony Options</h3>
+                                <h3 className="sva-balcony-card-title">Celebrity: Infinite Balcony / Skylight Infinite Balcony</h3>
                                 <p className="sva-balcony-card-text">
-                                    Tauck's ships use different balcony
-                                    configurations depending on the
-                                    vessel and cabin category. Some
-                                    cabins emphasize French-balcony-style
-                                    access and views rather than
-                                    Scenic's enclosed Sun Lounge concept.
+                                    Celebrity is applying its modern
+                                    balcony technology to river cruising.
+                                    Celebrity describes its Skylight
+                                    Infinite Balcony Suites as a new
+                                    river-cruise accommodation concept
+                                    that incorporates a large ceiling
+                                    window and separate living area.
                                 </p>
                             </div>
                         </div>
@@ -949,7 +955,10 @@ export default function ScenicVsTauck() {
                         <h4 className="sva-choice-title">Winner:</h4>
                         <div className="sva-choice-grid">
                             <div className="sva-choice-item">
-                                <strong>Scenic</strong> for balcony innovation and flexibility.
+                                <strong>Scenic</strong> for the established Sun Lounge concept.
+                            </div>
+                            <div className="sva-choice-item">
+                                <strong>Celebrity</strong> for innovative new balcony technology.
                             </div>
                         </div>
                     </div>
@@ -961,9 +970,47 @@ export default function ScenicVsTauck() {
             <section className="sva-info-section" id="first-time-cruisers" style={{ backgroundColor: 'var(--bg-soft)' }}>
                 <div className="sva-info-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck for First-Time River Cruisers</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity for First-Time River Cruisers</h2>
                         <div className="adg-accent-line"></div>
-                        <p className="sva-section-lead">Both are excellent choices for first-time river cruisers.</p>
+                    </div>
+
+                    <div className="sva-info-grid">
+                        <div className="sva-info-card border-scenic">
+                            <div className="sva-info-content">
+                                <h3 className="sva-info-card-title text-scenic">Choose Scenic if you want:</h3>
+                                <p className="sva-info-card-text">
+                                    A well-established luxury river cruise experience with a proven operating model.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="sva-info-card border-avalon">
+                            <div className="sva-info-content">
+                                <h3 className="sva-info-card-title text-avalon">Choose Celebrity if you want:</h3>
+                                <p className="sva-info-card-text">
+                                    You have sailed Celebrity Ocean Cruises and want to experience the brand's approach on European rivers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="sva-notes-box">
+                        <p className="sva-notes-text">
+                            This is one of Celebrity's biggest potential advantages: Brand familiarity. A traveler who already enjoys Celebrity's ocean experience may find the move to Celebrity River Cruises particularly appealing.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            {/* ── SERVICE (GENERAL) ────────────────────────────────────────── */}
+            <section className="sva-info-section bg-white" id="food-lovers">
+                <div className="sva-info-container">
+                    <div className="sva-section-header">
+                        <h2 className="sva-section-title">Scenic vs Celebrity: Service</h2>
+                        <div className="adg-accent-line"></div>
+                        <p className="sva-section-lead">Luxury river cruising depends heavily on service.</p>
                     </div>
 
                     <div className="sva-info-grid">
@@ -971,57 +1018,16 @@ export default function ScenicVsTauck() {
                             <div className="sva-info-content">
                                 <h3 className="sva-info-card-title text-scenic">Scenic</h3>
                                 <p className="sva-info-card-text">
-                                    Best for travelers who want: "Everything is taken care of, but I still want choices."
+                                    Scenic has an established service culture and emphasizes its "Nth Degree" approach to personalized service.
                                 </p>
                             </div>
                         </div>
 
                         <div className="sva-info-card border-avalon">
                             <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-avalon">Tauck</h3>
-                                <p className="sva-info-card-text">
-                                    Best for travelers who want: "Everything is taken care of, and I don't want to think about logistics."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="sva-notes-box">
-                        <p className="sva-notes-text">Winner: Tie.</p>
-                    </div>
-                </div>
-            </section>
-
-
-
-            {/* ── FOOD LOVERS ────────────────────────────────────────── */}
-            <section className="sva-info-section bg-white" id="food-lovers">
-                <div className="sva-info-container">
-                    <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck for Food Lovers</h2>
-                        <div className="adg-accent-line"></div>
-                    </div>
-
-                    <div className="sva-info-grid">
-                        <div className="sva-info-card border-scenic">
-                            <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-scenic">Scenic: Best for travelers who want:</h3>
+                                <h3 className="sva-info-card-title text-avalon">Celebrity: Its current river ships emphasize:</h3>
                                 <ul className="sva-info-list">
-                                    {["Multiple onboard dining options", "Premium beverages", "Fine dining", "Variety"].map((item, idx) => (
-                                        <li key={idx} className="sva-info-item">
-                                            <CheckCircle size={16} className="sva-info-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="sva-info-card border-avalon">
-                            <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-avalon">Tauck: Best for travelers who want:</h3>
-                                <ul className="sva-info-list">
-                                    {["Regional cuisine", "Dining ashore", "Destination-based culinary experiences", "Local restaurants"].map((item, idx) => (
+                                    {["Personalized service", "Butler service", "Daily housekeeping", "Turndown", "In-room amenities"].map((item, idx) => (
                                         <li key={idx} className="sva-info-item">
                                             <CheckCircle size={16} className="sva-info-icon" />
                                             <span>{item}</span>
@@ -1033,8 +1039,8 @@ export default function ScenicVsTauck() {
                     </div>
 
                     <div className="sva-winner-box border-winner">
-                        <h4 className="sva-winner-title">Winner:</h4>
-                        <p className="sva-winner-text">Scenic for onboard variety. Tauck for destination dining.</p>
+                        <h4 className="sva-winner-title">Verdict:</h4>
+                        <p className="sva-winner-text">Scenic has the advantage in established river-cruise service experience. Celebrity has a strong foundation, particularly in suite service.</p>
                     </div>
                 </div>
             </section>
@@ -1050,7 +1056,7 @@ export default function ScenicVsTauck() {
                                 Compare cruise fare + included experiences
                                 + beverages + excursions + transfers +
                                 hotel nights + suite + other costs before
-                                deciding between Scenic and Tauck.
+                                deciding between Scenic and Celebrity.
                             </p>
                             <Link to="/contact" className="scenic-inline-cta-btn-light" style={{ textDecoration: "none" }}>
                                 Contact Angela Hughes
@@ -1070,10 +1076,10 @@ export default function ScenicVsTauck() {
             <section className="sva-dining-section" id="dining">
                 <div className="sva-dining-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck Dining</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity Dining</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sva-section-lead">
-                            Both brands take dining seriously.
+                            Dining is another major part of the comparison.
                         </p>
                     </div>
 
@@ -1084,12 +1090,12 @@ export default function ScenicVsTauck() {
                                 <span className="sva-dining-img-label">Scenic Dining</span>
                             </div>
                             <div className="sva-dining-content">
-                                <h3 className="sva-dining-card-title">Scenic Dining</h3>
+                                <h3 className="sva-dining-card-title">Scenic</h3>
                                 <p className="sva-dining-card-text">
-                                    Scenic offers multiple dining environments depending on the ship, with a focus on fine dining, regional cuisine, variety, premium beverages and flexible dining experiences.
+                                    Scenic offers a mature luxury dining program with multiple venues and destination-inspired cuisine. Its all-inclusive model makes dining one of the central components of the experience.
                                 </p>
                                 <p className="sva-dining-card-text" style={{ marginTop: "12px" }}>
-                                    Scenic can be particularly appealing to travelers who want variety onboard.
+                                    Best for: Travelers who want variety and an established luxury river dining program.
                                 </p>
                             </div>
                         </div>
@@ -1097,28 +1103,30 @@ export default function ScenicVsTauck() {
                         <div className="sva-dining-card">
                             <div className="sva-dining-img-placeholder">
                                 <Wine size={48} className="sva-dining-img-icon" strokeWidth={1.2} />
-                                <span className="sva-dining-img-label">Tauck Dining</span>
+                                <span className="sva-dining-img-label">Celebrity Dining</span>
                             </div>
                             <div className="sva-dining-content">
-                                <h3 className="sva-dining-card-title">Tauck Dining</h3>
+                                <h3 className="sva-dining-card-title">Celebrity</h3>
                                 <p className="sva-dining-card-text">
-                                    Tauck emphasizes both onboard and destination dining. Its current river cruise materials highlight regionally inspired meals onboard as well as locally inspired dining ashore.
+                                    Celebrity is bringing its established culinary identity into the river environment. Celebrity's current ships include innovative dining spaces, including the Magic Edge dining pods aboard Celebrity Seeker.
+                                </p>
+                                <p className="sva-dining-card-text" style={{ marginTop: "12px" }}>
+                                    Best for: Travelers who want modern dining environments and a contemporary culinary experience.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div className="sva-verdict-box">
-                        <h4 className="sva-verdict-title">The difference:</h4>
+                        <h4 className="sva-verdict-title">Verdict:</h4>
                         <div className="sva-verdict-grid">
                             <div className="sva-verdict-item">
-                                <strong>Scenic:</strong> More emphasis on onboard dining variety.
+                                <strong>Scenic</strong> has the advantage in established river-cruise dining experience.
                             </div>
                             <div className="sva-verdict-item">
-                                <strong>Tauck:</strong> Strong emphasis on connecting dining to the destination.
+                                <strong>Celebrity</strong> has the advantage in new design concepts.
                             </div>
                         </div>
-                        <p className="sva-winner-text" style={{ marginTop: "12px" }}><strong>Winner:</strong> Tie—with different strengths.</p>
                     </div>
                 </div>
             </section>
@@ -1129,9 +1137,9 @@ export default function ScenicVsTauck() {
             <section className="sva-service-section" id="service">
                 <div className="sva-service-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck Butler Service</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity Butler Service</h2>
                         <div className="adg-accent-line"></div>
-                        <p className="sva-section-lead">This is a major differentiator.</p>
+                        <p className="sva-section-lead">Both brands can appeal to travelers who want elevated personal service.</p>
                     </div>
 
                     <div className="sva-service-grid">
@@ -1143,10 +1151,7 @@ export default function ScenicVsTauck() {
                             <div className="sva-service-content">
                                 <h3 className="sva-service-card-title">Scenic</h3>
                                 <p className="sva-service-card-text">
-                                    Scenic provides Butler Service across its suite categories, with the specific services varying according to accommodation level. Services can include things such as concierge assistance, packing and unpacking, shoe polishing, in-suite drinks, minibar service, and assistance with special requests.
-                                </p>
-                                <p className="sva-service-card-text" style={{ marginTop: "12px", fontWeight: 500 }}>
-                                    If Butler Service matters to you: Scenic has a clear advantage.
+                                    Scenic is well known for its Butler Service as part of its ultra-luxury positioning.
                                 </p>
                             </div>
                         </div>
@@ -1154,37 +1159,43 @@ export default function ScenicVsTauck() {
                         <div className="sva-service-card">
                             <div className="sva-service-img-placeholder">
                                 <Users size={48} className="sva-service-img-icon" strokeWidth={1.2} />
-                                <span className="sva-service-img-label">Tauck Team-Based Service</span>
+                                <span className="sva-service-img-label">Celebrity Butler Service</span>
                             </div>
                             <div className="sva-service-content">
-                                <h3 className="sva-service-card-title">Tauck</h3>
+                                <h3 className="sva-service-card-title">Celebrity</h3>
                                 <p className="sva-service-card-text">
-                                    Tauck's strength is different: instead of emphasizing a personal butler model, it emphasizes a comprehensive team-based service experience involving Tauck Directors, local guides and ship staff.
+                                    Celebrity's river product also includes butler service in every suite on its current ships.
                                 </p>
                             </div>
                         </div>
                     </div>
+
+                    <div className="sva-notes-box" style={{ marginTop: "24px" }}>
+                        <p className="sva-notes-text" style={{ fontWeight: 600, marginBottom: "8px" }}>Why this matters</p>
+                        <p className="sva-notes-text">Butler service can be especially valuable for: Special occasions, Suite guests, Travelers with complex requests, Couples celebrating milestones, Travelers who prefer highly personalized service.</p>
+                    </div>
+
+                    <div className="sva-notes-box" style={{ marginTop: "16px" }}>
+                        <p className="sva-notes-text">Verdict: Very close. Celebrity's inclusion of butler service in every suite is a particularly important point for travelers comparing the two brands.</p>
+                    </div>
                 </div>
             </section>
 
-            {/* ── TOUR DIRECTORS AND GUIDES ─────────────────────────────────── */}
+            {/* ── EXCURSIONS (FIRST) ─────────────────────────────────── */}
             <section className="sva-info-section bg-soft" id="tour-directors">
                 <div className="sva-info-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck: Tour Directors and Guides</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity: Excursions</h2>
                         <div className="adg-accent-line"></div>
-                        <p className="sva-section-lead">Tauck has a particularly distinctive model.</p>
+                        <p className="sva-section-lead">A river cruise is ultimately about the destinations.</p>
                     </div>
 
                     <div className="sva-info-grid">
-                        <div className="sva-info-card border-avalon">
+                        <div className="sva-info-card border-scenic">
                             <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-avalon">Tauck</h3>
-                                <p className="sva-info-card-text" style={{ marginBottom: "16px" }}>
-                                    Tauck states that its river cruises can include up to four Tauck Director-level staff, working with local guides and experts. That can be valuable for travelers who want:
-                                </p>
+                                <h3 className="sva-info-card-title text-scenic">Scenic has a mature excursion model built around:</h3>
                                 <ul className="sva-info-list">
-                                    {["More personal assistance", "Strong logistical support", "Deeper destination context", "A consistent point of contact"].map((item, idx) => (
+                                    {["Included excursions", "Scenic Freechoice", "Scenic Enrich", "Cultural experiences", "Active experiences", "Local exploration"].map((item, idx) => (
                                         <li key={idx} className="sva-info-item">
                                             <CheckCircle size={16} className="sva-info-icon" />
                                             <span>{item}</span>
@@ -1194,18 +1205,19 @@ export default function ScenicVsTauck() {
                             </div>
                         </div>
 
-                        <div className="sva-info-card border-scenic">
+                        <div className="sva-info-card border-avalon">
                             <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-scenic">Scenic</h3>
+                                <h3 className="sva-info-card-title text-avalon">Celebrity</h3>
                                 <p className="sva-info-card-text">
-                                    Scenic also provides dedicated cruise staff and local guides.
+                                    Celebrity's new river program focuses on immersive European experiences and bringing travelers closer to local culture, history and destinations.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div className="sva-notes-box">
-                        <p className="sva-notes-text">Winner: Tauck for its tour-director-led destination model.</p>
+                        <p className="sva-notes-text"><strong>Scenic advantage:</strong> More established excursion infrastructure.</p>
+                        <p className="sva-notes-text" style={{ marginTop: "8px" }}><strong>Celebrity advantage:</strong> Fresh approach to European destination experiences.</p>
                     </div>
                 </div>
             </section>
@@ -1216,61 +1228,20 @@ export default function ScenicVsTauck() {
             <section className="sva-info-section bg-white" id="excursions">
                 <div className="sva-info-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck: Which Has Better Excursions?</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity: Which Has Better Excursions?</h2>
                         <div className="adg-accent-line"></div>
                     </div>
 
-                    <div className="sva-info-grid">
-                        <div className="sva-info-card border-scenic">
-                            <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-scenic">Choose Scenic if you want:</h3>
-                                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
-                                    {[
-                                        "More activity choices",
-                                        "Flexibility",
-                                        "A mix of active and cultural experiences",
-                                        "More control over how you spend your port days",
-                                    ].map((point, idx) => (
-                                        <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                                            <span style={{ color: "var(--navy)", fontWeight: "bold" }}>✔</span>
-                                            <span className="sva-info-card-text">{point}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="sva-info-card border-avalon">
-                            <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-avalon">Choose Tauck if you want:</h3>
-                                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
-                                    {[
-                                        "Highly guided touring",
-                                        "Strong destination storytelling",
-                                        "Exclusive experiences",
-                                        "More support ashore",
-                                        "A seamless group experience",
-                                    ].map((point, idx) => (
-                                        <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                                            <span style={{ color: "var(--navy)", fontWeight: "bold" }}>✔</span>
-                                            <span className="sva-info-card-text">{point}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="sva-choice-box" style={{ marginTop: "32px" }}>
-                        <h4 className="sva-choice-title">Verdict:</h4>
-                        <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-                            <p className="sva-info-card-text">
-                                Tauck has an edge for travelers who consider touring the most important part of the vacation.
-                            </p>
-                            <p className="sva-info-card-text">
-                                Scenic has an edge for travelers who want more choice.
-                            </p>
-                        </div>
+                    <div className="sfe-dining-noimg-card" style={{ maxWidth: "800px", margin: "0 auto" }}>
+                        <p className="sfe-dining-noimg-text" style={{ marginBottom: "12px" }}>
+                            At this point, Scenic has the advantage in experience and breadth because it has a much more established river program.
+                        </p>
+                        <p className="sfe-dining-noimg-text" style={{ marginBottom: "12px" }}>
+                            Celebrity is the more interesting choice for travelers who want to experience a new generation of river cruising.
+                        </p>
+                        <p className="sfe-dining-noimg-text">
+                            For a specific departure, however, compare the actual daily excursion schedule.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -1281,7 +1252,7 @@ export default function ScenicVsTauck() {
             <section className="sva-included-section" id="whats-included">
                 <div className="sva-included-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck: Is One More All-Inclusive?</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity: Is One More All-Inclusive?</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sva-section-lead">This is one of the most important questions—and the answer is both are highly inclusive.</p>
                     </div>
@@ -1295,7 +1266,7 @@ export default function ScenicVsTauck() {
                             <div className="sva-included-content">
                                 <h3 className="sva-included-card-title">Scenic</h3>
                                 <p className="sva-included-card-text">
-                                    Scenic describes its river experience as all-inclusive, incorporating dining, beverages, excursions, entertainment and other elements into the experience.
+                                    Scenic explicitly markets its river cruises as truly all-inclusive. Its current river program emphasizes an inclusive experience covering major elements of the journey.
                                 </p>
                             </div>
                         </div>
@@ -1303,28 +1274,19 @@ export default function ScenicVsTauck() {
                         <div className="sva-included-card">
                             <div className="sva-included-img-placeholder">
                                 <Wallet size={48} className="sva-included-img-icon" strokeWidth={1.2} />
-                                <span className="sva-included-img-label">Tauck Inclusions</span>
+                                <span className="sva-included-img-label">Celebrity Inclusions</span>
                             </div>
                             <div className="sva-included-content">
-                                <h3 className="sva-included-card-title">Tauck</h3>
+                                <h3 className="sva-included-card-title">Celebrity</h3>
                                 <p className="sva-included-card-text">
-                                    Tauck takes an equally strong approach. Its current river cruise materials state that all shore excursions, accommodations, meals, gratuities, transportation, transfers and selected exclusive experiences are included.
+                                    Celebrity also includes substantial elements in the river fare, but travelers should carefully review the exact inclusions attached to their itinerary and cabin. Celebrity's current river information includes accommodations, dining, selected beverages and other services, with additional benefits attached to suite categories.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="sva-important-box">
-                        <div className="sva-important-header">
-                            <AlertCircle size={24} className="sva-important-header-icon" />
-                            <h4 className="sva-important-title">The difference</h4>
-                        </div>
-                        <div className="sva-important-content">
-                            <p className="sva-important-lead-text">Scenic: Luxury ship experience + inclusions. Tauck: Complete land-and-river journey + inclusions.</p>
-                        </div>
-                    </div>
                     <div className="sva-notes-box" style={{ marginTop: "24px" }}>
-                        <p className="sva-notes-text">Winner: It's essentially a tie—but the inclusions are structured differently.</p>
+                        <p className="sva-notes-text">Winner: Scenic for the clearest established all-inclusive positioning.</p>
                     </div>
                 </div>
             </section>
@@ -1335,7 +1297,7 @@ export default function ScenicVsTauck() {
             <section className="sfe-family-section" id="couples" style={{ backgroundColor: "var(--bg-white)" }}>
                 <div className="sfe-cabins-container">
                     <div className="sfe-firsttime-header" style={{ marginBottom: "8px" }}>
-                        <h2 className="sfe-firsttime-title">Scenic vs Tauck for Couples</h2>
+                        <h2 className="sfe-firsttime-title">Scenic vs Celebrity for Couples</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sfe-firsttime-lead">Both are excellent for couples.</p>
                     </div>
@@ -1350,11 +1312,11 @@ export default function ScenicVsTauck() {
                             </div>
                             <ul className="sfe-dining-noimg-list">
                                 {[
-                                    "Luxury ship experience",
-                                    "Butler Service",
+                                    "Established ultra-luxury",
                                     "Romantic suites",
+                                    "Butler service",
                                     "Premium dining",
-                                    "Flexible excursions",
+                                    "Curated excursions",
                                     "Special occasions",
                                 ].map((item, idx) => (
                                     <li key={idx} className="sfe-dining-noimg-list-item">
@@ -1372,15 +1334,15 @@ export default function ScenicVsTauck() {
                                 <div className="sfe-dining-noimg-icon-box">
                                     <HeartHandshake size={32} strokeWidth={1.5} />
                                 </div>
-                                <h3 className="sfe-dining-noimg-title">Choose Tauck for:</h3>
+                                <h3 className="sfe-dining-noimg-title">Choose Celebrity for:</h3>
                             </div>
                             <ul className="sfe-dining-noimg-list">
                                 {[
-                                    "Destination immersion",
-                                    "Exclusive experiences",
-                                    "Seamless touring",
-                                    "Luxury land extensions",
-                                    "Less logistical planning",
+                                    "Contemporary design",
+                                    "Innovative suites",
+                                    "Modern river experience",
+                                    "Wellness",
+                                    "New ships",
                                 ].map((item, idx) => (
                                     <li key={idx} className="sfe-dining-noimg-list-item">
                                         <span className="sfe-dining-noimg-list-icon">
@@ -1394,9 +1356,68 @@ export default function ScenicVsTauck() {
                     </div>
 
                     <p className="sfe-cabins-outro" style={{ textAlign: "center", marginTop: "24px" }}>
-                        Winner: Tie. For an anniversary or honeymoon,
-                        choose based on the itinerary and suite first.
+                        Winner: Tie—based on travel style.
                     </p>
+                </div>
+            </section>
+
+            {/* ── HONEYMOONS AND ANNIVERSARIES ─────────────────────────── */}
+            <section className="sfe-firsttime-section" id="honeymoons-anniversaries" style={{ backgroundColor: "var(--bg-soft)" }}>
+                <div className="sfe-firsttime-container">
+                    <div className="sfe-firsttime-header">
+                        <h2 className="sfe-firsttime-title">Scenic vs Celebrity for Honeymoons and Anniversaries</h2>
+                        <div className="adg-accent-line"></div>
+                        <p className="sfe-firsttime-lead" style={{ marginTop: "16px" }}>
+                            For a milestone trip, the ship is only one part of the equation.
+                        </p>
+                    </div>
+
+                    <div className="sfe-dining-noimg-card" style={{ maxWidth: "800px", margin: "0 auto 32px auto" }}>
+                        <p style={{ fontWeight: 600, fontSize: "16px", color: "var(--navy)", marginBottom: "16px" }}>Consider:</p>
+                        <ul style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px 24px", listStyle: "none", padding: 0, margin: 0 }}>
+                            {[
+                                "Suite category",
+                                "Balcony",
+                                "Dining",
+                                "Excursions",
+                                "Pre-cruise hotel",
+                                "Transfers",
+                                "Romantic experiences",
+                                "Time in port"
+                            ].map((item, idx) => (
+                                <li key={idx} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                    <CheckCircle size={16} style={{ color: "var(--navy)" }} />
+                                    <span className="sfe-dining-noimg-list-text" style={{ fontSize: "15px", color: "var(--text-body)" }}>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className="sfe-dining-noimg-grid">
+                        <div className="sfe-dining-noimg-card">
+                            <div className="sfe-dining-noimg-header-row" style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
+                                <div className="sfe-dining-noimg-icon-box" style={{ width: "40px", height: "40px", borderRadius: "50%", background: "var(--navy-light)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--navy)" }}>
+                                    <Sparkles size={20} />
+                                </div>
+                                <h3 className="sfe-dining-noimg-title" style={{ margin: 0 }}>Scenic</h3>
+                            </div>
+                            <p className="sfe-dining-noimg-list-text" style={{ fontSize: "16px", lineHeight: "1.6", color: "var(--text-body)", margin: 0 }}>
+                                Better for travelers who want a fully established ultra-luxury experience.
+                            </p>
+                        </div>
+
+                        <div className="sfe-dining-noimg-card">
+                            <div className="sfe-dining-noimg-header-row" style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
+                                <div className="sfe-dining-noimg-icon-box" style={{ width: "40px", height: "40px", borderRadius: "50%", background: "var(--navy-light)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--navy)" }}>
+                                    <Gem size={20} />
+                                </div>
+                                <h3 className="sfe-dining-noimg-title" style={{ margin: 0 }}>Celebrity</h3>
+                            </div>
+                            <p className="sfe-dining-noimg-list-text" style={{ fontSize: "16px", lineHeight: "1.6", color: "var(--text-body)", margin: 0 }}>
+                                Interesting for travelers who want something new and contemporary.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1429,10 +1450,10 @@ export default function ScenicVsTauck() {
             <section className="sva-ships-section" id="ships" style={{ backgroundColor: 'var(--bg-white)' }}>
                 <div className="sva-ships-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck: Ships</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity: Which Has Better Ships?</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sva-section-lead">
-                            Both brands use purpose-built river ships designed for luxury travelers.
+                            This is one of the most interesting categories.
                         </p>
                     </div>
 
@@ -1445,16 +1466,16 @@ export default function ScenicVsTauck() {
                             <div className="sva-ships-content">
                                 <h3 className="sva-ships-card-title">Scenic Space-Ships</h3>
                                 <p className="sva-ships-card-text" style={{ fontSize: "16px", marginBottom: "16px" }}>
-                                    Scenic's Space-Ships are designed around:
+                                    Scenic's Space-Ships are designed around a proven luxury-river concept. Key characteristics include:
                                 </p>
                                 <ul className="sva-ships-list" style={{ marginBottom: "16px" }}>
                                     {[
-                                        "Contemporary luxury",
                                         "Spacious suites",
-                                        "Sun Lounges",
+                                        "Sun Lounge balconies",
                                         "Multiple dining venues",
-                                        "Wellness",
-                                        "Entertainment",
+                                        "Wellness spaces",
+                                        "Observation areas",
+                                        "Contemporary interiors",
                                         "Personalized service",
                                     ].map((item, idx) => (
                                         <li key={idx} className="sva-ships-item">
@@ -1464,7 +1485,7 @@ export default function ScenicVsTauck() {
                                     ))}
                                 </ul>
                                 <p className="sva-ships-card-text" style={{ fontSize: "14px", color: "var(--text-muted)", fontStyle: "italic", marginTop: "auto" }}>
-                                    Scenic's ships are particularly recognizable because of the distinctive Sun Lounge suite concept.
+                                    Scenic's ships are particularly recognizable for their Sun Lounge suite concept.
                                 </p>
                             </div>
                         </div>
@@ -1472,20 +1493,20 @@ export default function ScenicVsTauck() {
                         <div className="sva-ships-card">
                             <div className="sva-ships-img-placeholder">
                                 <Ship size={48} className="sva-ships-img-icon" strokeWidth={1.2} />
-                                <span className="sva-ships-img-label">Tauck Riverboats</span>
+                                <span className="sva-ships-img-label">Celebrity River Ships</span>
                             </div>
                             <div className="sva-ships-content">
-                                <h3 className="sva-ships-card-title">Tauck Riverboats</h3>
+                                <h3 className="sva-ships-card-title">Celebrity River Ships</h3>
                                 <p className="sva-ships-card-text" style={{ fontSize: "16px", marginBottom: "16px" }}>
-                                    Tauck's riverboats emphasize:
+                                    Celebrity is taking a more experimental approach to river-ship design. Celebrity Compass features:
                                 </p>
                                 <ul className="sva-ships-list" style={{ marginBottom: "16px" }}>
                                     {[
-                                        "Elegant design",
-                                        "Spacious accommodations",
-                                        "Smaller guest numbers",
-                                        "Comfortable public areas",
+                                        "Open-air lounges",
+                                        "Skylight Infinite Balcony Suites",
+                                        "Contemporary interiors",
                                         "Personalized service",
+                                        "Wellness facilities",
                                     ].map((item, idx) => (
                                         <li key={idx} className="sva-ships-item">
                                             <CheckCircle size={16} className="sva-ships-icon" />
@@ -1494,20 +1515,20 @@ export default function ScenicVsTauck() {
                                     ))}
                                 </ul>
                                 <p className="sva-ships-card-text" style={{ fontSize: "14px", color: "var(--text-muted)", fontStyle: "italic", marginTop: "auto" }}>
-                                    Tauck's current materials describe its riverboats as custom-crafted around comfort, spaciousness and elegance.
+                                    Celebrity Seeker adds its Magic Edge dining pods and hybrid propulsion system.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div className="sva-choice-box" style={{ marginTop: "32px" }}>
-                        <h4 className="sva-choice-title">Which ships are better?</h4>
+                        <h4 className="sva-choice-title">Verdict</h4>
                         <div className="sva-choice-grid">
                             <div className="sva-choice-item">
-                                <strong>Scenic</strong> if onboard amenities and suite innovation are your priority.
+                                <strong>Scenic</strong> wins for proven river-cruise design and experience.
                             </div>
                             <div className="sva-choice-item">
-                                <strong>Tauck</strong> if intimacy and destination-focused service are more important.
+                                <strong>Celebrity</strong> wins for newness and design innovation.
                             </div>
                         </div>
                     </div>
@@ -1518,27 +1539,41 @@ export default function ScenicVsTauck() {
             <section className="sva-info-section bg-soft" id="families">
                 <div className="sva-info-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck for Families</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity for Families</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sva-section-lead">
-                            This is one category where Tauck deserves special attention. Tauck operates Tauck Bridges, its family travel program, making it particularly relevant to multigenerational travelers and families. Scenic is primarily oriented toward adults and luxury travelers rather than family-focused programming.
+                            This comparison is more nuanced. Scenic's river product is traditionally associated with luxury adult travel. Celebrity's new river program has positioned itself as an experience that can appeal to a broader range of travelers, and current Celebrity river materials highlight a more flexible approach to modern river cruising.
                         </p>
                     </div>
 
-                    <div className="sfe-dining-noimg-card" style={{ maxWidth: "800px", margin: "0 auto" }}>
-                        <p className="sfe-dining-noimg-text" style={{ fontWeight: 500, marginBottom: "12px" }}>Choose Tauck if:</p>
-                        <ul className="sva-info-list">
-                            {["You're traveling with children", "You're traveling with multiple generations", "Family activities matter", "You want structured family experiences"].map((item, idx) => (
-                                <li key={idx} className="sva-info-item">
-                                    <CheckCircle size={16} className="sva-info-icon" />
-                                    <span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    <div className="sva-info-grid">
+                        <div className="sva-info-card border-avalon">
+                            <div className="sva-info-content">
+                                <h3 className="sva-info-card-title text-avalon">Choose Celebrity if:</h3>
+                                <ul className="sva-info-list">
+                                    {["You want a newer product", "You are traveling with different generations", "Modern design appeals to your group"].map((item, idx) => (
+                                        <li key={idx} className="sva-info-item">
+                                            <CheckCircle size={16} className="sva-info-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
 
-                    <div className="sva-notes-box" style={{ marginTop: "24px" }}>
-                        <p className="sva-notes-text">Winner: Tauck for family and multigenerational travel.</p>
+                        <div className="sva-info-card border-scenic">
+                            <div className="sva-info-content">
+                                <h3 className="sva-info-card-title text-scenic">Choose Scenic if:</h3>
+                                <ul className="sva-info-list">
+                                    {["Luxury service is the priority", "Adults are the primary travelers", "You want a mature river-cruise program"].map((item, idx) => (
+                                        <li key={idx} className="sva-info-item">
+                                            <CheckCircle size={16} className="sva-info-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1566,10 +1601,10 @@ export default function ScenicVsTauck() {
                                     {[
                                         "Included excursions",
                                         "Premium beverages",
-                                        "Butler Service",
+                                        "Butler service",
                                         "Specialty dining",
                                         "Enrich experiences",
-                                        "Onboard amenities"
+                                        "Pre/post-cruise inclusions where applicable"
                                     ].map((item, idx) => (
                                         <li key={idx} className="sva-info-item">
                                             <CheckCircle size={16} className="sva-info-icon" />
@@ -1583,22 +1618,21 @@ export default function ScenicVsTauck() {
                         <div className="sva-info-card border-avalon">
                             <div className="sva-luxury-img-placeholder">
                                 <Wallet size={48} className="sva-luxury-img-icon" strokeWidth={1.2} />
-                                <span className="sva-luxury-img-label">Tauck Value</span>
+                                <span className="sva-luxury-img-label">Celebrity Value</span>
                             </div>
                             <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-avalon">Tauck</h3>
+                                <h3 className="sva-info-card-title text-avalon">Celebrity</h3>
                                 <p className="sva-info-card-text" style={{ marginBottom: "16px" }}>
-                                    Can offer excellent value if you will take advantage of:
+                                    May offer strong value for travelers who want:
                                 </p>
                                 <ul className="sva-info-list">
                                     {[
-                                        "Guided excursions",
-                                        "Exclusive experiences",
-                                        "Dining ashore",
-                                        "Transfers",
-                                        "Tour Directors",
-                                        "Included hotels",
-                                        "Comprehensive logistics"
+                                        "New ships",
+                                        "Modern design",
+                                        "Suite benefits",
+                                        "Butler service",
+                                        "Celebrity's brand experience",
+                                        "Innovative accommodations"
                                     ].map((item, idx) => (
                                         <li key={idx} className="sva-info-item">
                                             <CheckCircle size={16} className="sva-info-icon" />
@@ -1611,8 +1645,8 @@ export default function ScenicVsTauck() {
                     </div>
 
                     <div className="sva-winner-box border-winner" style={{ marginTop: "32px" }}>
-                        <h4 className="sva-winner-title">Winner:</h4>
-                        <p className="sva-winner-text">Depends on your travel style.</p>
+                        <h4 className="sva-winner-title">Verdict:</h4>
+                        <p className="sva-winner-text">Scenic for comprehensive inclusions. Celebrity for travelers attracted to the new-ship experience.</p>
                     </div>
                 </div>
             </section>
@@ -1621,60 +1655,65 @@ export default function ScenicVsTauck() {
             <section className="sva-info-section bg-soft" id="solo-travelers">
                 <div className="sva-info-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck for Solo Travelers</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity for Solo Travelers</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sva-section-lead">Both can work very well for solo travelers.</p>
                     </div>
 
                     <div className="sva-solo-layout">
                         <div className="sva-info-card" style={{ padding: "40px" }}>
-                            <p className="sva-info-card-text" style={{ marginBottom: "20px" }}>
-                                Tauck currently highlights no single supplement in Category 1 on all river cruise departures, with additional solo savings available on selected cabins and departures. That can make Tauck particularly interesting for solo travelers.
+                            <p className="sva-info-card-text" style={{ marginBottom: "16px", fontWeight: 500 }}>
+                                Look closely at:
                             </p>
+                            <ul className="sva-info-list" style={{ marginBottom: "20px" }}>
+                                {["Single supplement", "Solo cabin options", "Dining arrangements", "Excursion groups", "Suite pricing", "Ship size"].map((item, idx) => (
+                                    <li key={idx} className="sva-info-item">
+                                        <CheckCircle size={16} className="sva-info-icon" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
 
                             <div className="sva-solo-highlights">
-                                <div className="sva-highlight-item border-scenic-left">
-                                    <strong>Choose Scenic if:</strong> You value Butler Service and a luxury ship environment.
-                                </div>
                                 <div className="sva-highlight-item border-avalon-left">
-                                    <strong>Choose Tauck if:</strong> You value guided touring, strong support and potentially favorable solo pricing.
+                                    Celebrity's newer ships may be attractive to solo travelers who prefer modern social spaces.
+                                </div>
+                                <div className="sva-highlight-item border-scenic-left">
+                                    Scenic's personalized service can be valuable to travelers who want a more established luxury environment.
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="sva-notes-box" style={{ marginTop: "32px" }}>
-                        <p className="sva-notes-text">Winner: Tauck deserves a close look for solo travelers.</p>
-                    </div>
                 </div>
             </section>
 
-            {/* ── ACTIVE TRAVELERS ────────────────────────── */}
+            {/* ── CELEBRITY OCEAN CRUISE FANS ────────────────────────── */}
             <section className="sva-info-section bg-white" id="active-travelers">
                 <div className="sva-info-container">
                     <div className="sva-section-header">
-                        <h2 className="sva-section-title">Scenic vs Tauck for Active Travelers</h2>
+                        <h2 className="sva-section-title">Scenic vs Celebrity for Celebrity Ocean Cruise Fans</h2>
                         <div className="adg-accent-line"></div>
-                        <p className="sva-section-lead">Scenic can be attractive for travelers who want to mix sightseeing with activity.</p>
+                        <p className="sva-section-lead">
+                            This deserves its own section because it represents a major search opportunity. If you already enjoy Celebrity Cruises, you may naturally ask: Should I try Celebrity River Cruises instead of Scenic? The answer depends on what you want.
+                        </p>
                     </div>
 
                     <div className="sva-info-grid">
-                        <div className="sva-info-card border-scenic">
+                        <div className="sva-info-card border-avalon">
                             <div className="sva-luxury-img-placeholder">
-                                <Bike size={48} className="sva-luxury-img-icon" strokeWidth={1.2} />
-                                <span className="sva-luxury-img-label">Scenic Active Experiences</span>
+                                <Compass size={48} className="sva-luxury-img-icon" strokeWidth={1.2} />
+                                <span className="sva-luxury-img-label">Choose Celebrity River</span>
                             </div>
                             <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-scenic">Scenic</h3>
-                                <p className="sva-info-card-text" style={{ marginBottom: "16px" }}>
-                                    Depending on itinerary, its experiences can include:
-                                </p>
+                                <h3 className="sva-info-card-title text-avalon">Choose Celebrity River if:</h3>
                                 <ul className="sva-info-list">
                                     {[
-                                        "Hiking",
-                                        "Cycling",
-                                        "Walking",
-                                        "Cultural activities"
+                                        "You already love the Celebrity brand",
+                                        "You want modern design",
+                                        "You like contemporary ship interiors",
+                                        "You want a new river experience",
+                                        "You value suite-level butler service",
+                                        "You want to stay within a familiar cruise family",
                                     ].map((item, idx) => (
                                         <li key={idx} className="sva-info-item">
                                             <CheckCircle size={16} className="sva-info-icon" />
@@ -1685,16 +1724,26 @@ export default function ScenicVsTauck() {
                             </div>
                         </div>
 
-                        <div className="sva-info-card border-avalon">
+                        <div className="sva-info-card border-scenic">
                             <div className="sva-luxury-img-placeholder">
-                                <Compass size={48} className="sva-luxury-img-icon" strokeWidth={1.2} />
-                                <span className="sva-luxury-img-label">Tauck Guided Exploration</span>
+                                <Bike size={48} className="sva-luxury-img-icon" strokeWidth={1.2} />
+                                <span className="sva-luxury-img-label">Choose Scenic</span>
                             </div>
                             <div className="sva-info-content">
-                                <h3 className="sva-info-card-title text-avalon">Tauck</h3>
-                                <p className="sva-info-card-text">
-                                    Tauck also offers active experiences, but its strength is more strongly associated with guided destination exploration.
-                                </p>
+                                <h3 className="sva-info-card-title text-scenic">Choose Scenic if:</h3>
+                                <ul className="sva-info-list">
+                                    {[
+                                        "You want dedicated river-cruise expertise",
+                                        "You want a mature ultra-luxury river program",
+                                        "You want extensive all-inclusive inclusions",
+                                        "You want established river itineraries",
+                                    ].map((item, idx) => (
+                                        <li key={idx} className="sva-info-item">
+                                            <CheckCircle size={16} className="sva-info-icon" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1709,13 +1758,10 @@ export default function ScenicVsTauck() {
             <section className="sfe-cost-section" id="price" style={{ backgroundColor: "var(--bg-soft)" }}>
                 <div className="sfe-cabins-container">
                     <div className="sfe-firsttime-header" style={{ marginBottom: "24px" }}>
-                        <h2 className="sfe-firsttime-title">Scenic vs Tauck: Price</h2>
+                        <h2 className="sfe-firsttime-title">Scenic vs Celebrity: Price</h2>
                         <div className="adg-accent-line"></div>
-                        <p className="sfe-firsttime-lead" style={{ marginTop: "16px" }}>
-                            Both brands occupy the premium end of river cruising, so neither should be compared with mainstream river cruise pricing without accounting for inclusions.
-                        </p>
-                        <p className="sfe-firsttime-lead" style={{ marginTop: "8px" }}>
-                            The headline fare can look expensive.
+                        <p className="sfe-firsttime-lead">
+                            This is one of the hardest categories to answer with a simple winner.
                         </p>
                     </div>
 
@@ -1724,21 +1770,25 @@ export default function ScenicVsTauck() {
                             <div className="sfe-dining-noimg-icon-box">
                                 <Wallet size={32} strokeWidth={1.5} />
                             </div>
-                            <h3 className="sfe-dining-noimg-title">But a meaningful comparison should include:</h3>
+                            <h3 className="sfe-dining-noimg-title">Price Considerations</h3>
                         </div>
+
+                        <p className="sfe-dining-noimg-text" style={{ fontSize: "18px", marginBottom: "24px" }}>
+                            Luxury river cruise pricing changes based on:
+                        </p>
 
                         <ul className="sfe-dining-noimg-list" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px 24px", marginBottom: "32px" }}>
                             {[
-                                "Cruise",
-                                "Hotel nights",
-                                "Transfers",
-                                "Excursions",
-                                "Beverages",
-                                "Dining ashore",
-                                "Gratuities",
-                                "Wi-Fi",
-                                "Transportation",
-                                "Special experiences"
+                                "River",
+                                "Ship",
+                                "Suite",
+                                "Season",
+                                "Departure date",
+                                "Length",
+                                "Availability",
+                                "Promotions",
+                                "Pre/post-cruise stays",
+                                "Included services"
                             ].map((item, idx) => (
                                 <li key={idx} className="sfe-dining-noimg-list-item" style={{ margin: 0 }}>
                                     <span className="sfe-dining-noimg-list-icon">
@@ -1750,14 +1800,17 @@ export default function ScenicVsTauck() {
                         </ul>
 
                         <p className="sfe-dining-noimg-text" style={{ fontStyle: "italic", marginBottom: "28px", color: "var(--text-muted)", borderLeft: "3px solid var(--navy-light)", paddingLeft: "16px" }}>
-                            Tauck explicitly builds virtually all of these components into its upfront pricing on applicable river itineraries.
+                            A higher advertised fare can sometimes represent better value if substantially more is included.
                         </p>
 
                         <div className="sva-choice-box" style={{ padding: "24px 32px", borderLeft: "4px solid var(--navy)" }}>
-                            <h4 className="sva-choice-title" style={{ fontSize: "18px", marginBottom: "16px" }}>The right comparison:</h4>
+                            <h4 className="sva-choice-title" style={{ fontSize: "18px", marginBottom: "16px" }}>How to Compare Price</h4>
                             <div className="sva-choice-grid">
                                 <div className="sva-choice-item">
-                                    <strong>Total vacation cost</strong>—not cruise fare alone.
+                                    <strong>Compare:</strong> Total trip cost ÷ total inclusions
+                                </div>
+                                <div className="sva-choice-item">
+                                    <strong>Rather than simply:</strong> Advertised cruise fare
                                 </div>
                             </div>
                         </div>
@@ -1785,7 +1838,7 @@ export default function ScenicVsTauck() {
             <section className="scenic-exclusions-section" id="pros-and-cons" style={{ backgroundColor: "var(--bg-soft)" }}>
                 <div className="scenic-exclusions-container">
                     <div className="adg-header">
-                        <h2 className="adg-h2">Scenic vs Tauck: Pros &amp; Cons</h2>
+                        <h2 className="adg-h2">Scenic vs Celebrity: Pros &amp; Cons</h2>
                         <div className="adg-accent-line"></div>
                     </div>
 
@@ -1794,15 +1847,16 @@ export default function ScenicVsTauck() {
                             <h3 className="sfe-dining-noimg-title">Scenic Pros</h3>
                             <ul className="sfe-dining-noimg-list">
                                 {[
+                                    "Established luxury river cruise brand",
                                     "Ultra-luxury positioning",
-                                    "Highly inclusive",
-                                    "Butler Service",
+                                    "Truly all-inclusive philosophy",
+                                    "Extensive European itineraries",
+                                    "Southeast Asian river cruises",
                                     "Sun Lounge suites",
-                                    "Strong dining variety",
+                                    "Butler service",
+                                    "Strong excursion program",
                                     "Scenic Freechoice",
-                                    "Scenic Enrich",
-                                    "Excellent onboard amenities",
-                                    "Strong choice for couples"
+                                    "Scenic Enrich"
                                 ].map((item, idx) => (
                                     <li key={idx} className="sfe-dining-noimg-list-item">
                                         <span className="sfe-dining-noimg-list-icon">
@@ -1815,18 +1869,18 @@ export default function ScenicVsTauck() {
                         </div>
 
                         <div className="sfe-dining-noimg-card">
-                            <h3 className="sfe-dining-noimg-title">Tauck Pros</h3>
+                            <h3 className="sfe-dining-noimg-title">Celebrity River Cruises Pros</h3>
                             <ul className="sfe-dining-noimg-list">
                                 {[
-                                    "Highly inclusive pricing",
-                                    "All-inclusive excursions",
-                                    "Strong Tauck Director support",
-                                    "Exclusive cultural experiences",
-                                    "Excellent destination programming",
-                                    "Dining ashore",
-                                    "Strong family offering",
-                                    "Excellent land extensions",
-                                    "Strong solo-traveler policies on qualifying categories"
+                                    "Brand-new river ships",
+                                    "Contemporary design",
+                                    "Innovative balcony concepts",
+                                    "Butler service in suites",
+                                    "Modern wellness spaces",
+                                    "New culinary concepts",
+                                    "Familiar Celebrity brand",
+                                    "European destination focus",
+                                    "Smaller river-ship environment"
                                 ].map((item, idx) => (
                                     <li key={idx} className="sfe-dining-noimg-list-item">
                                         <span className="sfe-dining-noimg-list-icon">
@@ -1849,7 +1903,7 @@ export default function ScenicVsTauck() {
                                 borderLeft: "3px solid var(--navy-light)",
                                 border: "1px solid var(--navy-border)"
                             }}>
-                                Tauck's current materials explicitly state that no options are sold on its river cruises and that virtually every river-cruise expense is included in one upfront price.
+                                Celebrity's current fleet pages emphasize fewer guests, more space and new technology as core elements of the river product.
                             </p>
                         </div>
                     </div>
@@ -1857,8 +1911,8 @@ export default function ScenicVsTauck() {
                     <div className="scenic-exclusions-grid" style={{ marginBottom: "12px" }}>
                         {[
                             "Premium pricing",
-                            "May be more ship-focused than travelers who prioritize touring",
-                            "Families may find Tauck more specifically designed for multigenerational travel"
+                            "Less \"new\" feeling than Celebrity's new river ships",
+                            "Travelers seeking the newest ship technology may prefer Celebrity"
                         ].map((item, i) => (
                             <div key={i} className="scenic-exclusion-card">
                                 <div className="scenic-exclusion-icon-wrap">
@@ -1871,9 +1925,10 @@ export default function ScenicVsTauck() {
 
                     <div className="scenic-exclusions-grid">
                         {[
-                            "Travelers who want more onboard activity choices may prefer Scenic",
-                            "Travelers specifically seeking Butler Service may prefer Scenic",
-                            "The highly structured touring style may not appeal to travelers who prefer maximum independence"
+                            "Newer river program with less operating history",
+                            "Smaller established river itinerary portfolio",
+                            "Travelers wanting a long-established river-cruise brand may prefer Scenic",
+                            "Exact inclusions should be checked carefully by sailing"
                         ].map((item, i) => (
                             <div key={i} className="scenic-exclusion-card">
                                 <div className="scenic-exclusion-icon-wrap">
@@ -1892,10 +1947,10 @@ export default function ScenicVsTauck() {
             <section className="sfe-firsttime-section" id="who-should-choose" style={{backgroundColor: 'var(--bg-white)'}}>
                 <div className="sfe-firsttime-container">
                     <div className="sfe-firsttime-header">
-                        <h2 className="sfe-firsttime-title">Scenic vs Tauck <br /> Which Should You Choose?</h2>
+                        <h2 className="sfe-firsttime-title">Scenic vs Celebrity <br /> Which Should You Choose?</h2>
                         <div className="adg-accent-line"></div>
                         <p className="sfe-firsttime-lead" style={{ marginTop: "16px" }}>
-                            Here's the simplest way to decide.
+                            Here's the easiest way to decide.
                         </p>
                     </div>
 
@@ -1903,14 +1958,14 @@ export default function ScenicVsTauck() {
                         <div className="sfe-dining-noimg-card">
                             <h3 className="sfe-dining-noimg-title">Choose Scenic if you want:</h3>
                             <p className="sfe-dining-noimg-list-text" style={{ fontSize: "16px", lineHeight: "1.6", color: "var(--text-body)", margin: "8px 0 0 0" }}>
-                                Ultra-luxury ship + Butler Service + Sun Lounge + choice + onboard amenities
+                                Established ultra-luxury + all-inclusive travel + mature river expertise + extensive destination experiences.
                             </p>
                         </div>
 
                         <div className="sfe-dining-noimg-card">
-                            <h3 className="sfe-dining-noimg-title">Choose Tauck if you want:</h3>
+                            <h3 className="sfe-dining-noimg-title">Choose Celebrity if you want:</h3>
                             <p className="sfe-dining-noimg-list-text" style={{ fontSize: "16px", lineHeight: "1.6", color: "var(--text-body)", margin: "8px 0 0 0" }}>
-                                Exceptional touring + exclusive experiences + Tour Directors + seamless logistics
+                                New ships + modern design + innovative suites + contemporary luxury + the Celebrity brand.
                             </p>
                         </div>
                     </div>
@@ -2000,7 +2055,7 @@ export default function ScenicVsTauck() {
                         <div className="Asc-accent-line"></div>
                         <p className="Asc-faq-intro">
                             Everything you need to know about Scenic vs
-                            Tauck before booking.
+                            Celebrity before booking.
                         </p>
                     </div>
                     <FAQ />
@@ -2011,7 +2066,7 @@ export default function ScenicVsTauck() {
             <section className="Asc-help-section">
                 <div className="Asc-help-bg-wrap">
                     <img
-                        alt="A Scenic Space-Ship and an Tauck Panorama-class river ship sailing a European river"
+                        alt="A Scenic Space-Ship and an Celebrity Panorama-class river ship sailing a European river"
                         className="Asc-help-bg-img"
                     />
                     <div className="Asc-help-overlay"></div>
@@ -2023,7 +2078,7 @@ export default function ScenicVsTauck() {
                             <div className="Asc-help-header">
                                 <span className="Asc-help-eyebrow">Final Verdict</span>
                                 <h2 className="Asc-help-h2">
-                                    Scenic vs Tauck — <br /> There Isn't a Universal Winner
+                                    Scenic vs Celebrity — <br /> There Isn't a Universal Winner
                                 </h2>
                                 <div className="Asc-help-accent"></div>
                             </div>
@@ -2033,7 +2088,7 @@ export default function ScenicVsTauck() {
                                     <p className="Asc-help-intro">
                                         Choose Scenic for luxury,
                                         inclusions, and personalized
-                                        service. Choose Tauck for space,
+                                        service. Choose Celebrity for space,
                                         balconies, flexibility, and active
                                         exploration.
 
@@ -2068,7 +2123,7 @@ export default function ScenicVsTauck() {
                                                 the most spacious and
                                                 thoughtfully designed
                                                 river cruise cabins,
-                                                Tauck deserves serious
+                                                Celebrity deserves serious
                                                 consideration.
                                             </p>
                                             <br />
@@ -2122,14 +2177,14 @@ export default function ScenicVsTauck() {
 
                                     <ul className="Asc-help-bullets">
                                         {[
-                                            "Compare Scenic and Tauck itineraries and ships",
+                                            "Compare Scenic and Celebrity itineraries and ships",
                                             "Secure preferred suite categories",
                                             "Coordinate airfare and transfers",
                                             "Arrange pre- and post-cruise hotel stays",
                                             "Communicate special occasions to the cruise line",
-                                            "Explain current Scenic and Tauck promotions",
+                                            "Explain current Scenic and Celebrity promotions",
                                             "Handle travel logistics from start to finish",
-                                            "Compare Scenic and Tauck with other luxury river cruise lines",
+                                            "Compare Scenic and Celebrity with other luxury river cruise lines",
                                         ].map((item, i) => (
                                             <li key={i}>
                                                 <div className="Asc-bullet-icon">

@@ -433,35 +433,36 @@ export default function ScenicVsAvalonWaterways() {
                 <div className="Scenic_hero_overlay"></div>
 
                 <div className="Scenic_hero_content">
-                    <h1>Scenic vs Avalon Waterways</h1>
+                    <h1>Scenic vs Avalon Waterways: Which River Cruise Is Better?</h1>
 
                     <p>
-                        Scenic and Avalon Waterways are both excellent
-                        choices for European river cruising, but they
-                        appeal to somewhat different travelers. Scenic is
-                        positioned toward travelers seeking a more
-                        all-inclusive luxury experience, personalized
-                        service, and a strong emphasis on included
-                        experiences.
+                        Scenic and Avalon Waterways are both excellent choices for European river cruising, <br /> but they appeal to somewhat different travelers.
+                    </p>
+                    <p>
+                        Scenic is positioned toward travelers seeking a more all-inclusive luxury experience, personalized service, and a strong emphasis on included experiences.
                     </p>
 
                     {readMore && (
-                        <p>
-                            Avalon Waterways is particularly known for its
-                            spacious Panorama Suites, open-air balconies,
-                            relaxed atmosphere, and destination-focused
-                            river cruising. So the better question isn't
-                            simply "which is better," but which cruise
-                            line better matches the way you want to travel.
-                            For travelers who prioritize luxury, included
-                            experiences, personalized service, and a
-                            highly inclusive experience, Scenic can have
-                            the advantage. For travelers who prioritize
-                            spacious cabins, open-air balconies,
-                            flexibility, and a more relaxed river-cruise
-                            experience, Avalon can be especially
-                            appealing.
-                        </p>
+                        <>
+                            <p>
+                                Avalon Waterways is particularly known for its spacious Panorama Suites, open-air balconies, relaxed atmosphere, and destination-focused river cruising.
+                            </p>
+                            <p>
+                                So the better question isn't simply:
+                                <br />
+                                Which is better—Scenic or Avalon?
+                                <br />
+                                It's:
+                                <br />
+                                Which cruise line better matches the way you want to travel?
+                            </p>
+                            <p>
+                                For travelers who prioritize luxury, included experiences, personalized service, and a highly inclusive experience, Scenic can have the advantage.
+                            </p>
+                            <p>
+                                For travelers who prioritize spacious cabins, open-air balconies, flexibility, and a more relaxed river-cruise experience, Avalon can be especially appealing.
+                            </p>
+                        </>
                     )}
 
                     <div className="Scenic_readmore_wrapper">

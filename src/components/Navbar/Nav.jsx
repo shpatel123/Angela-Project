@@ -1257,7 +1257,7 @@ const Nav = () => {
                 Scenic Mekong River Cruises
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/scenic-river-cruises/scenic-vs-avalon"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1279,7 +1279,17 @@ const Nav = () => {
                 onClick={toggleMenu}
               >
                 Scenic Vs Tauck
-              </NavLink> */}
+              </NavLink>
+
+              <NavLink
+                to="/scenic-river-cruises/scenic-vs-celebrity/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Celebrity
+              </NavLink>
+
+              
 
 
 
@@ -2527,7 +2537,7 @@ const Nav = () => {
               Scenic Mekong River Cruises
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/scenic-river-cruises/scenic-vs-avalon"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2550,7 +2560,16 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Scenic Vs Tauck
-            </NavLink> */}
+            </NavLink>
+
+            <NavLink
+                to="/scenic-river-cruises/scenic-vs-celebrity/"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Scenic Vs Celebrity
+              </NavLink>
+
 
 
 
