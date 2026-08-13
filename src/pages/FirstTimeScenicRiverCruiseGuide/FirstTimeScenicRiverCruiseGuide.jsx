@@ -53,22 +53,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -76,15 +76,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/first-time-guide/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/first-time-guide/#webpage",
             name: "First-Time Scenic River Cruise Guide (2026)",
-            url: "https://tripsandships.com/scenic-river-cruises/first-time-guide",
+            url: "https://www.tripsandships.com/scenic-river-cruises/first-time-guide",
             description:
                 "Planning your first Scenic River Cruise? Learn what to expect, what's included, how to choose the right itinerary, cabins, excursions, costs, and expert tips before you book.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/first-time-guide/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/first-time-guide/#article",
             headline: "First-Time Scenic River Cruise Guide | Tips, Costs & What to Expect",
             description:
                 "A complete beginner's guide to Scenic River Cruises covering itineraries, cabins, what's included, a typical day onboard, packing tips, and common first-time mistakes to avoid.",
@@ -100,37 +100,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/first-time-guide/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/first-time-guide/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "First-Time Scenic River Cruise Guide",
-                    item: "https://tripsandships.com/scenic-river-cruises/first-time-guide",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/first-time-guide",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/first-time-guide/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/first-time-guide/#itemlist",
             name: "First-Time Scenic River Cruise Guide — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer: Is Scenic Good for First-Timers?" },
@@ -149,7 +149,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/first-time-guide/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/first-time-guide/#faq",
             mainEntity: [
                 {
                     "@type": "Question",
@@ -843,7 +843,7 @@ const FirstTimeScenicRiverCruiseGuide = () => {
                             <h2 className="rlc-lc-worth-title">Which Cabin Should <br /> First-Time Guests Book?</h2>
                             <div className="rlc-lc-worth-accent"></div>
 
-                            <h3 style={{ fontFamily: "var(--font-display)", color: "var(--navy)", fontSize: "28px", fontWeight: "500", marginBottom: "8px" }}>
+                            <h3 className="rlc-lc-ti">
                                 Balcony Suite
                             </h3>
                             <p className="rlc-lc-worth-lead" style={{ marginBottom: "20px" }}>

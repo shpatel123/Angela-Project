@@ -50,22 +50,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -73,15 +73,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/cost/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/cost/#webpage",
             name: "How Much Does a Scenic River Cruise Cost? (2026 Pricing Guide)",
-            url: "https://tripsandships.com/scenic-river-cruises/cost",
+            url: "https://www.tripsandships.com/scenic-river-cruises/cost",
             description:
                 "Wondering how much a Scenic River Cruise costs? Discover average prices by itinerary, suite type, season, and destination, plus what's included and how to save on your luxury river cruise.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/cost/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/cost/#article",
             headline: "Scenic River Cruise Cost | Prices, What's Included & Value Guide",
             description:
                 "A complete pricing guide to Scenic River Cruises covering average costs by itinerary, suite category, and season, what's included, what's not, and whether Scenic is worth the price.",
@@ -97,37 +97,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/cost/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/cost/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "How Much Does a Scenic River Cruise Cost?",
-                    item: "https://tripsandships.com/scenic-river-cruises/cost",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/cost",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/cost/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/cost/#itemlist",
             name: "How Much Does a Scenic River Cruise Cost? — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Scenic River Cruise Prices: The Quick Answer" },
@@ -145,7 +145,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/cost/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/cost/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

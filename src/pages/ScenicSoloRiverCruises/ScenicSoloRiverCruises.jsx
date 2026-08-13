@@ -54,22 +54,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -77,15 +77,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/solo-travel/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/solo-travel/#webpage",
             name: "Scenic Solo River Cruises & Single Supplement Guide (2026)",
-            url: "https://tripsandships.com/scenic-river-cruises/solo-travel",
+            url: "https://www.tripsandships.com/scenic-river-cruises/solo-travel",
             description:
                 "Thinking about taking a Scenic River Cruise alone? Learn about solo travel, single supplements, cabin options, safety, costs, and tips for booking the best Scenic solo cruise.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/solo-travel/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/solo-travel/#article",
             headline: "Scenic Solo River Cruises & Single Supplement Guide",
             description:
                 "A complete guide to solo travel on Scenic River Cruises, including single supplements, cabin recommendations, best itineraries, safety, dining, and money-saving tips.",
@@ -101,37 +101,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/solo-travel/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/solo-travel/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic Solo River Cruises & Single Supplement Guide",
-                    item: "https://tripsandships.com/scenic-river-cruises/solo-travel",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/solo-travel",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/solo-travel/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/solo-travel/#itemlist",
             name: "Scenic Solo River Cruises & Single Supplement Guide — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -151,7 +151,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/solo-travel/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/solo-travel/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

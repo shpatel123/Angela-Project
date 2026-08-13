@@ -71,22 +71,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -94,15 +94,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#webpage",
             name: "Riverside Luxury Cruises | Luxury River Cruise Guide (2026)",
-            url: "https://tripsandships.com/riverside-luxury-cruises",
+            url: "https://www.tripsandships.com/riverside-luxury-cruises",
             description:
                 "Discover Riverside Luxury Cruises with our complete guide covering ships, suites, dining, itineraries, pricing, destinations, inclusions, reviews, and expert planning advice for luxury European river cruises.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#article",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#article",
             headline: "Riverside Luxury Cruises | Complete Guide",
             description:
                 "A complete guide to Riverside Luxury Cruises, covering the fleet, suites, dining, destinations, seasonal sailings, shore excursions, inclusions, pricing, and who should sail.",
@@ -118,31 +118,31 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#touristtrip",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#touristtrip",
             name: "Riverside Luxury Cruises European River Itineraries",
             touristType: "Luxury travelers, couples, retirees, food & wine enthusiasts",
             itinerary: {
@@ -158,7 +158,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#destinations",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#destinations",
             name: "Riverside Luxury Cruises Destinations",
             itemListElement: [
                 { "@type": "Place", position: 1, name: "Danube River" },
@@ -168,7 +168,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#service",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#service",
             serviceType: "Luxury River Cruise Vacation Planning & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -180,7 +180,7 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#review",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#review",
             itemReviewed: {
                 "@type": "Product",
                 name: "Riverside Luxury Cruises",
@@ -199,7 +199,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#itemlist",
             name: "What This Riverside Luxury Cruises Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Why Choose Riverside Luxury Cruises?" },
@@ -219,7 +219,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises/#faq",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises/#faq",
             mainEntity: [
                 {
                     "@type": "Question",
@@ -1390,7 +1390,7 @@ const RiversideLuxuryCruises = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </div> 
 
                         <div className="Asc-who-card Asc-who-no">
                             <h3 className="Asc-who-title">

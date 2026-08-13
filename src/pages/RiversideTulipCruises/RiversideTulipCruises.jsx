@@ -61,22 +61,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -84,15 +84,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#webpage",
             name: "Riverside Tulip Cruises | Luxury Spring River Cruises in Holland & Belgium",
-            url: "https://tripsandships.com/riverside-tulip-cruises",
+            url: "https://www.tripsandships.com/riverside-tulip-cruises",
             description:
                 "Experience spring in the Netherlands and Belgium on a Riverside Tulip Cruise. Visit Amsterdam, Keukenhof Gardens, Kinderdijk, Antwerp, and colorful tulip fields while enjoying boutique luxury river cruising.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#article",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#article",
             headline: "Riverside Tulip Cruises | Luxury Holland & Belgium River Cruises",
             description:
                 "A complete guide to Riverside Tulip Cruises, covering destinations, accommodations, gourmet dining, included excursions, and whether a Riverside Tulip Cruise is worth booking.",
@@ -108,37 +108,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Riverside Tulip Cruises",
-                    item: "https://tripsandships.com/riverside-tulip-cruises",
+                    item: "https://www.tripsandships.com/riverside-tulip-cruises",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#touristtrip",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#touristtrip",
             name: "Riverside Tulip Cruise",
             touristType: "Spring travelers, garden lovers, couples, photographers, luxury travelers",
             itinerary: {
@@ -155,7 +155,7 @@ const schemaData = {
         },
         {
             "@type": "Cruise",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#cruise",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#cruise",
             name: "Riverside Tulip Cruise",
             provider: {
                 "@type": "Organization",
@@ -175,7 +175,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#destinations",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#destinations",
             name: "Riverside Tulip Cruise Destinations",
             itemListElement: [
                 { "@type": "Place", position: 1, name: "Amsterdam, Netherlands" },
@@ -188,7 +188,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#service",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#service",
             serviceType: "Luxury Spring Tulip River Cruise Planning & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -200,7 +200,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#itemlist",
             name: "What This Riverside Tulip Cruises Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Overview" },
@@ -219,7 +219,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-tulip-cruises/#faq",
+            "@id": "https://www.tripsandships.com/riverside-tulip-cruises/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

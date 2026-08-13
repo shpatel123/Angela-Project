@@ -60,22 +60,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -83,15 +83,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/rhone-saone/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/rhone-saone/#webpage",
             name: "Scenic Rhône & Saône River Cruises (2026) | Burgundy, Provence & Guide",
-            url: "https://tripsandships.com/scenic-river-cruises/rhone-saone/",
+            url: "https://www.tripsandships.com/scenic-river-cruises/rhone-saone/",
             description:
                 "Explore Scenic Rhône and Saône River Cruises through Burgundy and Provence. Discover Lyon, Avignon, Arles, vineyards, French cuisine, excursions, cabins, costs and the best time to sail.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/rhone-saone/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/rhone-saone/#article",
             headline: "Scenic Rhône & Saône River Cruises: Burgundy, Provence & the Complete Guide",
             description:
                 "A complete guide to Scenic Rhône & Saône River Cruises, including Lyon, Burgundy, Beaune, Avignon, Arles, Provence, French wine and cuisine, cabins, cost, and how to choose the right sailing.",
@@ -107,37 +107,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/rhone-saone/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/rhone-saone/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic Rhône & Saône River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises/rhone-saone/",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/rhone-saone/",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/rhone-saone/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/rhone-saone/#itemlist",
             name: "Scenic Rhône & Saône River Cruises — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -158,7 +158,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/rhone-saone/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/rhone-saone/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

@@ -54,22 +54,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -77,15 +77,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/airfare-transfers/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/airfare-transfers/#webpage",
             name: "Scenic River Cruise Airfare, Transfers & Arrival Guide (2026) | Flights & Transportation",
-            url: "https://tripsandships.com/scenic-river-cruises/airfare-transfers",
+            url: "https://www.tripsandships.com/scenic-river-cruises/airfare-transfers",
             description:
                 "Planning your Scenic River Cruise? Learn about airfare, airport transfers, arrival times, pre-cruise hotels, embarkation, luggage, and expert travel tips for a stress-free vacation.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/airfare-transfers/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/airfare-transfers/#article",
             headline: "Scenic River Cruise Airfare, Transfers & Arrival Guide",
             description:
                 "A complete guide to Scenic River Cruise airfare, airport transfers, embarkation, and arrival planning, including whether flights are included, when to arrive, and what to expect on embarkation and departure day.",
@@ -101,37 +101,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/airfare-transfers/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/airfare-transfers/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic River Cruise Airfare, Transfers & Arrival Guide",
-                    item: "https://tripsandships.com/scenic-river-cruises/airfare-transfers",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/airfare-transfers",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/airfare-transfers/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/airfare-transfers/#itemlist",
             name: "Scenic River Cruise Airfare, Transfers & Arrival Guide — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "60-Second Answer" },
@@ -150,7 +150,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/airfare-transfers/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/airfare-transfers/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

@@ -58,22 +58,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -81,15 +81,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#webpage",
             name: "Riverside Christmas Market Cruises | Luxury European Holiday River Cruises",
-            url: "https://tripsandships.com/riverside-christmas-market-cruises",
+            url: "https://www.tripsandships.com/riverside-christmas-market-cruises",
             description:
                 "Experience Europe's most magical Christmas markets on a Riverside Luxury Cruise. Visit Vienna, Budapest, Strasbourg, Cologne, Nuremberg, and more while enjoying boutique luxury, gourmet dining, and festive holiday traditions.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#article",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#article",
             headline: "Riverside Christmas Market Cruises | Luxury Holiday River Cruises",
             description:
                 "A complete guide to Riverside Christmas Market Cruises, covering destinations, Riverside Mozart and Riverside Ravel, accommodations, holiday dining, included excursions, and whether a Riverside Christmas Market Cruise is worth booking.",
@@ -105,37 +105,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Riverside Christmas Market Cruises",
-                    item: "https://tripsandships.com/riverside-christmas-market-cruises",
+                    item: "https://www.tripsandships.com/riverside-christmas-market-cruises",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#touristtrip",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#touristtrip",
             name: "Riverside Christmas Market Cruise",
             touristType: "Holiday travelers, couples, families, Christmas lovers, luxury travelers",
             itinerary: {
@@ -152,7 +152,7 @@ const schemaData = {
         },
         {
             "@type": "Cruise",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#cruise",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#cruise",
             name: "Riverside Christmas Market Cruise",
             provider: {
                 "@type": "Organization",
@@ -172,7 +172,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#destinations",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#destinations",
             name: "Riverside Christmas Market Cruise Destinations",
             itemListElement: [
                 { "@type": "Place", position: 1, name: "Vienna, Austria" },
@@ -185,7 +185,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#service",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#service",
             serviceType: "Luxury Christmas Market River Cruise Planning & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -197,7 +197,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#itemlist",
             name: "What This Riverside Christmas Market Cruises Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Overview" },
@@ -217,7 +217,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-christmas-market-cruises/#faq",
+            "@id": "https://www.tripsandships.com/riverside-christmas-market-cruises/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

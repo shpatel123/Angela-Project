@@ -48,22 +48,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -71,15 +71,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#webpage",
             name: "Scenic vs Celebrity River Cruises (2026): Which Is Better?",
-            url: "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/",
+            url: "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/",
             description:
                 "Compare Scenic vs Celebrity River Cruises for 2026. Explore luxury, suites, service, dining, inclusions, excursions, ships, pricing, families, and who each cruise line is best for.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#article",
             headline: "Scenic vs Celebrity: Which Luxury River Cruise Is Better?",
             description:
                 "A complete comparison of Scenic and Celebrity, including suites, balconies, dining, service, excursions, inclusions, ships, price, and who each line is best for.",
@@ -95,32 +95,32 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#breadcrumb",
             itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://tripsandships.com" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.tripsandships.com/" },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Celebrity",
-                    item: "https://tripsandships.com/celebrity-river-cruises",
+                    item: "https://www.tripsandships.com/celebrity-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic vs Celebrity",
-                    item: "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#itemlist",
             name: "Scenic vs Celebrity — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -140,7 +140,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-celebrity/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

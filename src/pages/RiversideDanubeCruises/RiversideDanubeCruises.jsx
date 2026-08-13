@@ -61,22 +61,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -84,15 +84,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#webpage",
             name: "Riverside Danube Cruises | Luxury Danube River Cruise Guide",
-            url: "https://tripsandships.com/riverside-danube-cruises",
+            url: "https://www.tripsandships.com/riverside-danube-cruises",
             description:
                 "Discover Riverside Danube Cruises featuring luxury suites, gourmet dining, and unforgettable journeys through Budapest, Vienna, Bratislava, and the Wachau Valley. Learn what to expect before you book.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#article",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#article",
             headline: "Riverside Danube Cruises | Luxury River Cruises Through Europe",
             description:
                 "A complete guide to Riverside Danube Cruises, covering destinations, the Riverside Mozart, accommodations, dining, excursions, and whether a Riverside Danube Cruise is worth booking.",
@@ -108,37 +108,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Riverside Danube Cruises",
-                    item: "https://tripsandships.com/riverside-danube-cruises",
+                    item: "https://www.tripsandships.com/riverside-danube-cruises",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#touristtrip",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#touristtrip",
             name: "Riverside Danube Cruise",
             touristType: "Couples, luxury travelers, first-time river cruisers",
             itinerary: {
@@ -155,7 +155,7 @@ const schemaData = {
         },
         {
             "@type": "Cruise",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#cruise",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#cruise",
             name: "Riverside Danube Cruise",
             provider: {
                 "@type": "Organization",
@@ -179,7 +179,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#destinations",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#destinations",
             name: "Riverside Danube Cruise Destinations",
             itemListElement: [
                 { "@type": "Place", position: 1, name: "Budapest, Hungary" },
@@ -192,7 +192,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#service",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#service",
             serviceType: "Luxury Danube River Cruise Planning & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -204,7 +204,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#itemlist",
             name: "What This Riverside Danube Cruises Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Overview" },
@@ -223,7 +223,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-danube-cruises/#faq",
+            "@id": "https://www.tripsandships.com/riverside-danube-cruises/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

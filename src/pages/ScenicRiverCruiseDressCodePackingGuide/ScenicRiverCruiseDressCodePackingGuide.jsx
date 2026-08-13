@@ -65,22 +65,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -88,15 +88,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/dress-code-packing/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/dress-code-packing/#webpage",
             name: "Scenic River Cruise Dress Code & Packing Guide (2026) | What to Wear",
-            url: "https://tripsandships.com/scenic-river-cruises/dress-code-packing",
+            url: "https://www.tripsandships.com/scenic-river-cruises/dress-code-packing",
             description:
                 "Wondering what to wear on a Scenic River Cruise? Learn the dress code for daytime, evenings, excursions, and discover the ultimate Scenic River Cruise packing list for every season.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/dress-code-packing/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/dress-code-packing/#article",
             headline: "Scenic River Cruise Dress Code & Packing Guide",
             description:
                 "A complete guide to Scenic River Cruise attire and packing, including daytime wear, dinner dress code, seasonal packing tips, and a full packing checklist.",
@@ -112,37 +112,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/dress-code-packing/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/dress-code-packing/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic River Cruise Dress Code & Packing Guide",
-                    item: "https://tripsandships.com/scenic-river-cruises/dress-code-packing",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/dress-code-packing",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/dress-code-packing/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/dress-code-packing/#itemlist",
             name: "Scenic River Cruise Dress Code & Packing Guide — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -161,7 +161,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/dress-code-packing/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/dress-code-packing/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

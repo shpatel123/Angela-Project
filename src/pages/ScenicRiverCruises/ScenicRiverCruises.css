@@ -4458,6 +4458,19 @@
     }
 }
 
+@media (max-width: 480px){
+    .sss-suites-title, .sss-choose-title, .sss-beyond-title{
+        font-size: 24px !important;
+    }
+    .sss-suites-text, .sss-beyond-intro
+{
+    font-size: 16px;
+}
+.sss-cold-title, .scenic-diff-card-title{
+    font-size: 22px !important;
+}
+}
+
 /* ── Scenic Space Ships Cold Weather Cards (Top Banners) ── */
 .sss-cold-grid {
     display: grid;
@@ -6433,6 +6446,15 @@
     opacity: 0.9;
 }
 
+@media (max-width:480px){
+   .sfe-wine-title, .sfe-lounge-title{
+    font-size: 24px !important;
+   }
+   .sfe-lounge-lead, .sfe-wine-lead{
+    font-size: 16px !important;
+   }
+}
+
 
 /* ── Premium Separate Lounge Section ──────────────────────────────── */
 .sfe-lounge-section {
@@ -6813,10 +6835,10 @@
 .adgs-grid1{
   grid-template-columns: 1fr;
 }
-.sfe-firsttime-title{
+.sfe-firsttime-title, .sfe-cost-title, .sfe-inc-title{
     font-size: 24px;
 }
-.sfe-cabins-title{
+.sfe-cabins-title, .sfe-danube-duration-card-title{
     font-size: 22px;
 }
 .sfe-cabins-text{
@@ -7994,6 +8016,20 @@
 
     .sva-highlight-item {
         padding: 12px 16px;
+    }
+}
+
+@media(max-width:480px){
+    .sva-info-card-title,
+    .adg-card-title1, .scenic-inline-cta-title-light{
+        font-size: 22px !important;
+    }
+    .sva-info-card-text,
+    .sva-info-item span,
+    .sva-ships-winner-item,
+    .sfe-dining-noimg-text,
+    .sfe-firsttime-lead{
+        font-size: 16px !important;
     }
 }
 

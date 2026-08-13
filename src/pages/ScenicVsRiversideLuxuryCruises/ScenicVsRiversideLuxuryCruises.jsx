@@ -50,22 +50,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -73,15 +73,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#webpage",
             name: "Scenic vs Riverside Luxury Cruises | Which Is Better?",
-            url: "https://tripsandships.com/scenic-river-cruises/scenic-vs-riverside/",
+            url: "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-riverside/",
             description:
                 "Scenic vs Riverside Luxury Cruises: compare suites, ships, dining, service, inclusions, excursions, itineraries, pricing, and overall luxury to find the right river cruise for you.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#article",
             headline: "Scenic vs Riverside Luxury Cruises: Which River Cruise Is Better?",
             description:
                 "A complete comparison of Scenic and Riverside Luxury Cruises, including suites, balconies, dining, service, excursions, inclusions, ships, price, and who each line is best for.",
@@ -97,32 +97,32 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#breadcrumb",
             itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://tripsandships.com" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.tripsandships.com/" },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic vs Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises/scenic-vs-riverside/",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-riverside/",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#itemlist",
             name: "Scenic vs Riverside Luxury Cruises — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -142,7 +142,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-riverside/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

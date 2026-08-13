@@ -52,22 +52,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -75,15 +75,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/ships-suites/#webpage",
             name: "Scenic River Cruise Ships & Suites Guide (2026) | Compare Every Ship & Suite",
-            url: "https://tripsandships.com/scenic-river-cruises/ships-suites",
+            url: "https://www.tripsandships.com/scenic-river-cruises/ships-suites",
             description:
                 "Explore every Scenic River Cruise ship and suite category. Compare Scenic's Space-Ships, Royal Suites, balcony suites, amenities, deck plans, and find the best cabin for your luxury river cruise.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/ships-suites/#article",
             headline: "Scenic River Cruise Ships & Suites | Complete Luxury Guide",
             description:
                 "A complete guide to the Scenic Space-Ship fleet and suite categories, covering itineraries by river, suite features, the Scenic Sun Lounge, and how to choose the right ship and cabin.",
@@ -99,37 +99,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/ships-suites/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic River Cruise Ships & Suites Guide",
-                    item: "https://tripsandships.com/scenic-river-cruises/ships-suites",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/ships-suites",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/ships-suites/#itemlist",
             name: "Scenic River Cruise Ships & Suites Guide — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Scenic Ships & Suites: The Quick Answer" },
@@ -149,7 +149,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/ships-suites/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/ships-suites/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

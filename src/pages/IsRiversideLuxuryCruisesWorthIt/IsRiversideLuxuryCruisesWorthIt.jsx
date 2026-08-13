@@ -56,22 +56,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -79,15 +79,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/is-riverside-worth-it/#webpage",
+            "@id": "https://www.tripsandships.com/is-riverside-worth-it/#webpage",
             name: "Is Riverside Luxury Cruises Worth It? | Honest Luxury River Cruise Review",
-            url: "https://tripsandships.com/is-riverside-worth-it",
+            url: "https://www.tripsandships.com/is-riverside-worth-it",
             description:
                 "Is Riverside Luxury Cruises worth the price? Discover what makes Riverside different, what's included, who should sail, pricing, pros and cons, and whether it's the right luxury river cruise for you.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/is-riverside-worth-it/#article",
+            "@id": "https://www.tripsandships.com/is-riverside-worth-it/#article",
             headline: "Is Riverside Luxury Cruises Worth It? | Riverside Luxury Cruises Review",
             description:
                 "An honest look at Riverside Luxury Cruises, covering spacious suites, gourmet dining, personalized service, European itineraries, pros and cons, and how it compares to other luxury river cruise lines.",
@@ -103,7 +103,7 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/is-riverside-worth-it/#review",
+            "@id": "https://www.tripsandships.com/is-riverside-worth-it/#review",
             itemReviewed: {
                 "@type": "TouristTrip",
                 name: "Riverside Luxury Cruises",
@@ -125,37 +125,37 @@ const schemaData = {
         {
             "@type": "BreadcrumbList",
             "@id":
-                "https://tripsandships.com/is-riverside-worth-it/#breadcrumb",
+                "https://www.tripsandships.com/is-riverside-worth-it/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises Reviews",
-                    item: "https://tripsandships.com/riverside-luxury-cruises-review",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises-reviewss",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Is Riverside Worth It?",
-                    item: "https://tripsandships.com/is-riverside-worth-it",
+                    item: "https://www.tripsandships.com/is-riverside-worth-it",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/is-riverside-worth-it/#trip",
+            "@id": "https://www.tripsandships.com/is-riverside-worth-it/#trip",
             name: "Riverside Luxury Cruises European River Cruise Experience",
             description:
                 "Boutique luxury river cruising with spacious suite accommodations, gourmet dining, personalized service, and immersive European itineraries on the Danube, Rhine, Rhône, Main, and Moselle Rivers.",
@@ -166,7 +166,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/is-riverside-worth-it/#service",
+            "@id": "https://www.tripsandships.com/is-riverside-worth-it/#service",
             serviceType: "Luxury River Cruise Vacation Planning",
             provider: {
                 "@type": "TravelAgency",
@@ -178,7 +178,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/is-riverside-worth-it/#itemlist",
+            "@id": "https://www.tripsandships.com/is-riverside-worth-it/#itemlist",
             name: "Is Riverside Luxury Cruises Worth It? — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -197,7 +197,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/is-riverside-worth-it/#faq",
+            "@id": "https://www.tripsandships.com/is-riverside-worth-it/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

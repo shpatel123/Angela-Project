@@ -51,22 +51,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -74,15 +74,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/review/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/review/#webpage",
             name: "Scenic River Cruises Review: Pros, Cons & Best Fit (2026 Guide)",
-            url: "https://tripsandships.com/scenic-river-cruises/review",
+            url: "https://www.tripsandships.com/scenic-river-cruises/review",
             description:
                 "Thinking about booking Scenic River Cruises? Read our honest review covering ships, suites, dining, service, inclusions, pricing, pros, cons, and who Scenic is best suited for.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/review/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/review/#article",
             headline: "Scenic River Cruises Review | Pros, Cons, Pricing & Is It Worth It?",
             description:
                 "Thinking about booking Scenic River Cruises? Read our honest review covering ships, suites, dining, service, inclusions, pricing, pros, cons, and who Scenic is best suited for.",
@@ -98,7 +98,7 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/scenic-river-cruises/review/#review",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/review/#review",
             itemReviewed: {
                 "@type": "Product",
                 name: "Scenic River Cruises",
@@ -119,31 +119,31 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/review/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/review/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises Reviews",
-                    item: "https://tripsandships.com/riverside-luxury-cruises-reviews",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises-reviews",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises Review",
-                    item: "https://tripsandships.com/scenic-river-cruises/review",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/review",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/review/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/review/#itemlist",
             name: "What This Scenic River Cruises Review Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "At a Glance" },
@@ -161,7 +161,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/review/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/review/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

@@ -30,7 +30,7 @@
 .rlc-compare-title {
     font-family: var(--font-display);
     color: var(--navy);
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 500;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -171,17 +171,20 @@
     .rlc-worth-title, .rlc-compare-title{
         font-size: 24px !important;
     }
-    .rlc-compare-intro{
+    .rlc-compare-intro, .rlc-rvs-footer-quote{
         font-size: 16px;
     }
     .rdd-dining-title{
         font-size: 24px !important;
     }
+    .rlc-rvs-card-title, .rlc-pricing-brand{
+        font-size: 22px !important;
+    }
 }
 
 @media (max-width: 768px) {
     .rlc-worth-title, .rlc-compare-title{
-        font-size: 28px !important;
+        font-size: 28px;
     }
     .rlc-compare-intro{
         font-size: 17px;
@@ -563,7 +566,7 @@
         font-size: 15px;
     }
     
-    .rlc-worth-conclusion-text-new {
+    .rlc-worth-conclusion-text-new, .rlc-flt-best-text {
         font-size: 16px;
     }
     
@@ -961,7 +964,7 @@
 .rlc-flt-title {
     font-family: var(--font-display);
     color: var(--navy);
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 500;
     margin-bottom: 16px;
     line-height: 1.2;
@@ -1732,7 +1735,7 @@
 }
 
 @media (max-width: 480px) {
-    .rlc-pricing-title {
+    .rlc-pricing-title, .rlc-flt-title {
         font-size: 24px;
     }
     
@@ -1746,6 +1749,9 @@
     
     .rlc-pricing-conclusion p {
         font-size: 15px;
+    }
+    .rlc-flt-brand, .rlc-prem-brand-name, .rlc-pc-brand{
+        font-size: 22px;
     }
 }
 
@@ -1925,7 +1931,7 @@
 
 /* ── GLOBAL EXPLORATIONS BENTO GALLERY ────────────────────────── */
 .rva-gallery-section {
-    padding: 90px 20px;
+    padding: 60px 20px;
     background-color: var(--bg-soft);
 }
 
@@ -2104,7 +2110,7 @@
 
 /* ── RIVERSIDE VS TAUCK GLOBAL EXPLORATIONS BENTO GALLERY ───────── */
 .rvt-gallery-section {
-    padding: 90px 20px;
+    padding: 60px 20px;
     background-color: var(--bg-soft);
 }
 
@@ -2122,7 +2128,7 @@
 .rvt-gallery-h2 {
     font-family: var(--font-display);
     color: var(--navy);
-    font-size: 38px;
+    font-size: 48px;
     font-weight: 500;
     margin: 0 0 16px 0;
 }
@@ -2419,7 +2425,7 @@
         padding: 30px 20px;
     }
 
-    .rlc-qa-title {
+    .rlc-qa-title, .rvt-gallery-h2, .rva-gallery-h2, .rrd-provence-title {
         font-size: 24px;
     }
 }
@@ -3410,9 +3416,7 @@
 
 /* Media Queries */
 @media (max-width: 991px) {
-    .rdd-dining-section {
-        padding: 70px 16px;
-    }
+
     
     .rdd-dining-split {
         grid-template-columns: 1fr;
@@ -3728,7 +3732,7 @@
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .rrd-provence-section {
         padding: 50px 16px;
     }

@@ -53,22 +53,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -76,15 +76,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/what-is-included-on-riverside/#webpage",
+            "@id": "https://www.tripsandships.com/what-is-included-on-riverside/#webpage",
             name: "What Is Included on Riverside Luxury Cruises? | Complete Guide",
-            url: "https://tripsandships.com/what-is-included-on-riverside",
+            url: "https://www.tripsandships.com/what-is-included-on-riverside",
             description:
                 "Discover what's included on Riverside Luxury Cruises, from spacious suites and gourmet dining to beverages, Wi-Fi, excursions, and personalized service. Learn exactly what to expect before you book.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/what-is-included-on-riverside/#article",
+            "@id": "https://www.tripsandships.com/what-is-included-on-riverside/#article",
             headline: "What Is Included on Riverside Luxury Cruises?",
             description:
                 "A complete guide to everything included on a Riverside Luxury Cruises vacation, covering accommodations, dining, beverages, Wi-Fi, excursions, service, amenities, and what typically costs extra.",
@@ -101,37 +101,37 @@ const schemaData = {
         {
             "@type": "BreadcrumbList",
             "@id":
-                "https://tripsandships.com/what-is-included-on-riverside/#breadcrumb",
+                "https://www.tripsandships.com/what-is-included-on-riverside/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises Reviews",
-                    item: "https://tripsandships.com/riverside-luxury-cruises-review",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises-reviewss",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "What Is Included on Riverside",
-                    item: "https://tripsandships.com/what-is-included-on-riverside",
+                    item: "https://www.tripsandships.com/what-is-included-on-riverside",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/what-is-included-on-riverside/#trip",
+            "@id": "https://www.tripsandships.com/what-is-included-on-riverside/#trip",
             name: "Riverside Luxury Cruises European River Cruise Experience",
             description:
                 "Boutique luxury river cruising with spacious suite accommodations, gourmet dining, beverages with meals, Wi-Fi, personalized service, and guided shore excursions on the Danube, Rhine, Rhône, Main, and Moselle Rivers.",
@@ -142,7 +142,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/what-is-included-on-riverside/#service",
+            "@id": "https://www.tripsandships.com/what-is-included-on-riverside/#service",
             serviceType: "Luxury River Cruise Vacation Planning",
             provider: {
                 "@type": "TravelAgency",
@@ -154,7 +154,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/what-is-included-on-riverside/#itemlist",
+            "@id": "https://www.tripsandships.com/what-is-included-on-riverside/#itemlist",
             name: "What Is Included on Riverside Luxury Cruises? — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -175,7 +175,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/what-is-included-on-riverside/#faq",
+            "@id": "https://www.tripsandships.com/what-is-included-on-riverside/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

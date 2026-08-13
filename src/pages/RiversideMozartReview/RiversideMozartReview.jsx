@@ -51,22 +51,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -74,15 +74,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#webpage",
             name: "Riverside Mozart Review | Is Europe's Largest Luxury River Ship Worth It?",
-            url: "https://tripsandships.com/riverside-mozart-review",
+            url: "https://www.tripsandships.com/riverside-mozart-review",
             description:
                 "Read our Riverside Mozart review covering suites, dining, service, itineraries, onboard experience, pricing, and who should sail this luxury Danube river ship before you book.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#article",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#article",
             headline: "Riverside Mozart Review | Luxury Danube River Cruise Guide",
             description:
                 "A complete guide to Riverside Mozart, covering spacious all-suite accommodations, gourmet dining, personalized service, Danube itineraries, shore excursions, wellness, and more.",
@@ -98,7 +98,7 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#review",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#review",
             itemReviewed: {
                 "@type": "TouristTrip",
                 name: "Riverside Mozart",
@@ -119,37 +119,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises Reviews",
-                    item: "https://tripsandships.com/riverside-luxury-cruises-review",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises-reviewss",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Riverside Mozart Review",
-                    item: "https://tripsandships.com/riverside-mozart-review",
+                    item: "https://www.tripsandships.com/riverside-mozart-review",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#trip",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#trip",
             name: "Riverside Mozart Danube River Cruise Experience",
             description:
                 "Boutique luxury river cruising aboard Riverside Mozart, one of Europe's largest luxury river ships, featuring spacious all-suite accommodations, gourmet dining, personalized service, and immersive Danube River itineraries.",
@@ -160,7 +160,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#service",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#service",
             serviceType: "Luxury River Cruise Vacation Planning",
             provider: {
                 "@type": "TravelAgency",
@@ -172,7 +172,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#itemlist",
             name: "Riverside Mozart Review — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Overview of Riverside Mozart" },
@@ -191,7 +191,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-mozart-review/#faq",
+            "@id": "https://www.tripsandships.com/riverside-mozart-review/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

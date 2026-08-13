@@ -52,22 +52,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -75,15 +75,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-cabins/#webpage",
             name: "Best Scenic River Cruise Cabins (and Cabins to Avoid) | 2026 Guide",
-            url: "https://tripsandships.com/scenic-river-cruises/best-cabins",
+            url: "https://www.tripsandships.com/scenic-river-cruises/best-cabins",
             description:
                 "Discover the best Scenic River Cruise cabins for couples, first-time cruisers, luxury travelers, and milestone trips. Learn which cabins offer the best value, which to avoid, and how to choose the perfect suite.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-cabins/#article",
             headline: "Best Scenic River Cruise Cabins (and Cabins to Avoid)",
             description:
                 "A complete comparison of every Scenic River Cruise cabin category, including which suites offer the best value, the best cabins for couples and first-timers, and which cabins to avoid.",
@@ -99,37 +99,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-cabins/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Best Scenic River Cruise Cabins",
-                    item: "https://tripsandships.com/scenic-river-cruises/best-cabins",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/best-cabins",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-cabins/#itemlist",
             name: "Best Scenic River Cruise Cabins Guide — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Best Scenic River Cruise Cabins: The Quick Answer" },
@@ -147,7 +147,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-cabins/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-cabins/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

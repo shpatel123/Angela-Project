@@ -50,22 +50,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -73,15 +73,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/who-should-sail-riverside/#webpage",
+            "@id": "https://www.tripsandships.com/who-should-sail-riverside/#webpage",
             name: "Who Should Sail Riverside? | Is Riverside Luxury Cruises Right for You?",
-            url: "https://tripsandships.com/who-should-sail-riverside",
+            url: "https://www.tripsandships.com/who-should-sail-riverside",
             description:
                 "Discover who should sail Riverside Luxury Cruises. Learn whether Riverside is the right choice for couples, first-time river cruisers, food lovers, luxury travelers, and multi-generational families.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/who-should-sail-riverside/#article",
+            "@id": "https://www.tripsandships.com/who-should-sail-riverside/#article",
             headline: "Who Should Sail Riverside? | Choosing the Right Luxury River Cruise",
             description:
                 "A complete guide to who Riverside Luxury Cruises is best suited for, covering couples, first-time river cruisers, luxury travelers, food and wine enthusiasts, cultural travelers, and multi-generational families.",
@@ -97,37 +97,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/who-should-sail-riverside/#breadcrumb",
+            "@id": "https://www.tripsandships.com/who-should-sail-riverside/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises Reviews",
-                    item: "https://tripsandships.com/riverside-luxury-cruises-review",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises-reviewss",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Who Should Sail Riverside",
-                    item: "https://tripsandships.com/who-should-sail-riverside",
+                    item: "https://www.tripsandships.com/who-should-sail-riverside",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/who-should-sail-riverside/#trip",
+            "@id": "https://www.tripsandships.com/who-should-sail-riverside/#trip",
             name: "Riverside Luxury Cruises European River Cruise Experience",
             description:
                 "Boutique luxury river cruising designed for couples, first-time river cruisers, luxury travelers, food and wine enthusiasts, cultural explorers, and multi-generational adult families sailing the Danube, Rhine, and Rhône Rivers.",
@@ -138,7 +138,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/who-should-sail-riverside/#service",
+            "@id": "https://www.tripsandships.com/who-should-sail-riverside/#service",
             serviceType: "Luxury River Cruise Vacation Planning",
             provider: {
                 "@type": "TravelAgency",
@@ -150,7 +150,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/who-should-sail-riverside/#itemlist",
+            "@id": "https://www.tripsandships.com/who-should-sail-riverside/#itemlist",
             name: "Who Should Sail Riverside? — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -168,7 +168,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/who-should-sail-riverside/#faq",
+            "@id": "https://www.tripsandships.com/who-should-sail-riverside/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

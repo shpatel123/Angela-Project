@@ -50,22 +50,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -73,15 +73,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#webpage",
             name: "Is a Scenic River Cruise Worth the Money? Honest Review (2026)",
-            url: "https://tripsandships.com/scenic-river-cruises/is-scenic-worth-it",
+            url: "https://www.tripsandships.com/scenic-river-cruises/is-scenic-worth-it",
             description:
                 "Is Scenic River Cruises worth the premium price? Discover the pros, cons, value, what's included, hidden costs, and who should (or shouldn't) book a Scenic River Cruise.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#article",
             headline: "Is Scenic River Cruises Worth It? | Honest Luxury Cruise Review",
             description:
                 "An honest review of Scenic River Cruises covering value, pros and cons, what's included, and who gets the most out of booking a Scenic river cruise.",
@@ -97,37 +97,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Is a Scenic River Cruise Worth the Money?",
-                    item: "https://tripsandships.com/scenic-river-cruises/is-scenic-worth-it",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/is-scenic-worth-it",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#itemlist",
             name: "Is a Scenic River Cruise Worth the Money? — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Is Scenic Worth the Money? The Quick Answer" },
@@ -146,7 +146,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/is-scenic-worth-it/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

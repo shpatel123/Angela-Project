@@ -60,22 +60,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -83,15 +83,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#webpage",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#webpage",
             name: "Best Riverside Cruises | Top Luxury River Cruise Itineraries in Europe",
-            url: "https://tripsandships.com/best-riverside-cruises",
+            url: "https://www.tripsandships.com/best-riverside-cruises",
             description:
                 "Discover the best Riverside Luxury Cruises on the Danube, Rhine, and Rhône Rivers. Compare itineraries, destinations, ships, and find the perfect luxury European river cruise.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#article",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#article",
             headline: "Best Riverside Cruises | Luxury European River Cruise Guide",
             description:
                 "A complete guide to the best Riverside Luxury Cruises itineraries, covering the Danube, Rhine, and Rhône Rivers, Christmas Market and Tulip season sailings, recommended ships, and which cruise is best for your travel style.",
@@ -107,37 +107,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#breadcrumb",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Best Riverside Cruises",
-                    item: "https://tripsandships.com/best-riverside-cruises",
+                    item: "https://www.tripsandships.com/best-riverside-cruises",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#touristtrip",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#touristtrip",
             name: "Best Riverside Luxury Cruises Itineraries",
             touristType: "Luxury travelers, couples, retirees, food & wine enthusiasts, first-time river cruisers",
             itinerary: {
@@ -153,7 +153,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#destinations",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#destinations",
             name: "Best Riverside Cruises Destinations",
             itemListElement: [
                 { "@type": "Place", position: 1, name: "Danube River" },
@@ -163,7 +163,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#service",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#service",
             serviceType: "Luxury River Cruise Itinerary Planning & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -175,7 +175,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#itemlist",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#itemlist",
             name: "What This Best Riverside Cruises Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Overview" },
@@ -194,7 +194,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/best-riverside-cruises/#faq",
+            "@id": "https://www.tripsandships.com/best-riverside-cruises/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

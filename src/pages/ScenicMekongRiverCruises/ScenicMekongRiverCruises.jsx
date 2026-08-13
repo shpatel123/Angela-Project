@@ -62,22 +62,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -85,15 +85,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/mekong/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/mekong/#webpage",
             name: "Scenic Mekong River Cruises (2026) | Vietnam, Cambodia & Luxury Cruise Guide",
-            url: "https://tripsandships.com/scenic-river-cruises/mekong/",
+            url: "https://www.tripsandships.com/scenic-river-cruises/mekong/",
             description:
                 "Explore Scenic Mekong River Cruises through Vietnam and Cambodia. Discover Ho Chi Minh City, Phnom Penh, the Mekong Delta, Siem Reap, temples, local culture, excursions, cabins, costs and the best time to sail.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/mekong/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/mekong/#article",
             headline: "Scenic Mekong River Cruises: The Complete Guide to Vietnam & Cambodia",
             description:
                 "A complete guide to Scenic Mekong River Cruises, including Ho Chi Minh City, the Mekong Delta, Phnom Penh, Siem Reap, Angkor, Vietnamese and Cambodian culture and cuisine, cabins, cost, and how to choose the right sailing.",
@@ -109,37 +109,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/mekong/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/mekong/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic Mekong River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises/mekong/",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/mekong/",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/mekong/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/mekong/#itemlist",
             name: "Scenic Mekong River Cruises — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -160,7 +160,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/mekong/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/mekong/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

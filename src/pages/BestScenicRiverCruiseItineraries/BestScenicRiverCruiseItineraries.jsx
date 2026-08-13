@@ -52,22 +52,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -75,15 +75,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-itineraries/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-itineraries/#webpage",
             name: "Best Scenic River Cruise Itineraries (2026) | Top Routes in Europe",
-            url: "https://tripsandships.com/scenic-river-cruises/best-itineraries",
+            url: "https://www.tripsandships.com/scenic-river-cruises/best-itineraries",
             description:
                 "Discover the best Scenic River Cruise itineraries for 2026, including the Danube, Rhine, Douro, Rhône, Seine, Christmas Markets, and Tulip cruises. Compare destinations, highlights, and find the perfect luxury river cruise.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-itineraries/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-itineraries/#article",
             headline: "Best Scenic River Cruise Itineraries",
             description:
                 "A complete comparison of Scenic's most popular river cruise itineraries, including the Rhine, Danube, Douro, Rhône, Seine, Christmas Markets, and Tulip cruises, and how to choose the right route for your travel style.",
@@ -99,37 +99,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-itineraries/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-itineraries/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Best Scenic River Cruise Itineraries",
-                    item: "https://tripsandships.com/scenic-river-cruises/best-itineraries",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/best-itineraries",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-itineraries/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-itineraries/#itemlist",
             name: "Best Scenic River Cruise Itineraries Guide — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Best Scenic River Cruise Itineraries: The Quick Answer" },
@@ -147,7 +147,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/best-itineraries/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/best-itineraries/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

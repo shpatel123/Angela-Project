@@ -48,22 +48,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -71,15 +71,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#webpage",
             name: "Scenic vs Tauck River Cruises (2026): Which Is Better?",
-            url: "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/",
+            url: "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-tauck/",
             description:
                 "Compare Scenic vs Tauck River Cruises for 2026. Explore luxury, suites, service, dining, inclusions, excursions, ships, pricing, families, and who each cruise line is best for.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#article",
             headline: "Scenic vs Tauck: Which Luxury River Cruise Is Better?",
             description:
                 "A complete comparison of Scenic and Tauck, including suites, balconies, dining, service, excursions, inclusions, ships, price, and who each line is best for.",
@@ -95,32 +95,32 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#breadcrumb",
             itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://tripsandships.com" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.tripsandships.com/" },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Tauck",
-                    item: "https://tripsandships.com/tauck-river-cruises",
+                    item: "https://www.tripsandships.com/tauck-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic vs Tauck",
-                    item: "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-tauck/",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#itemlist",
             name: "Scenic vs Tauck — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -140,7 +140,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/scenic-vs-tauck/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

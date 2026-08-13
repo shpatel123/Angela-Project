@@ -60,22 +60,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -83,15 +83,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/whats-included/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/what-is-included/#webpage",
             name: "What Is Included on a Scenic River Cruise? | Complete Guide (2026)",
-            url: "https://tripsandships.com/scenic-river-cruises/whats-included",
+            url: "https://www.tripsandships.com/scenic-river-cruises/what-is-included",
             description:
                 "Discover what's included on a Scenic River Cruise, from butler service and gourmet dining to premium drinks, excursions, airport transfers, gratuities, and luxury amenities.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/whats-included/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/what-is-included/#article",
             headline: "What Is Included on a Scenic River Cruise? | All-Inclusive Luxury Guide",
             description:
                 "A complete breakdown of everything included on a Scenic River Cruise — suites, butler service, dining, beverages, excursions, transfers, gratuities, and more.",
@@ -107,37 +107,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/whats-included/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/what-is-included/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "What Is Included on a Scenic River Cruise?",
-                    item: "https://tripsandships.com/scenic-river-cruises/whats-included",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/what-is-included",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/whats-included/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/what-is-included/#itemlist",
             name: "What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -156,7 +156,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/whats-included/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/what-is-included/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

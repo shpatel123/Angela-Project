@@ -62,22 +62,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -85,15 +85,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#webpage",
             name: "Riverside Rhône Cruises | Luxury Rhône River Cruises in France",
-            url: "https://tripsandships.com/riverside-rhone-cruises",
+            url: "https://www.tripsandships.com/riverside-rhone-cruises",
             description:
                 "Explore Riverside Rhône Cruises through Lyon, Avignon, Arles, and Provence. Discover gourmet cuisine, world-class wines, luxury suites, and boutique river cruising in southern France.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#article",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#article",
             headline: "Riverside Rhône Cruises | Luxury River Cruises Through Provence",
             description:
                 "A complete guide to Riverside Rhône Cruises, covering destinations, the Riverside Debussy, accommodations, dining, wine experiences, and whether a Riverside Rhône Cruise is worth booking.",
@@ -109,37 +109,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Riverside Rhône Cruises",
-                    item: "https://tripsandships.com/riverside-rhone-cruises",
+                    item: "https://www.tripsandships.com/riverside-rhone-cruises",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#touristtrip",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#touristtrip",
             name: "Riverside Rhône Cruise",
             touristType: "Food and wine lovers, couples, luxury travelers",
             itinerary: {
@@ -155,7 +155,7 @@ const schemaData = {
         },
         {
             "@type": "Cruise",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#cruise",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#cruise",
             name: "Riverside Rhône Cruise",
             provider: {
                 "@type": "Organization",
@@ -178,7 +178,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#destinations",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#destinations",
             name: "Riverside Rhône Cruise Destinations",
             itemListElement: [
                 { "@type": "Place", position: 1, name: "Lyon, France" },
@@ -190,7 +190,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#service",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#service",
             serviceType: "Luxury Rhône River Cruise Planning & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -202,7 +202,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#itemlist",
             name: "What This Riverside Rhône Cruises Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Overview" },
@@ -222,7 +222,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-rhone-cruises/#faq",
+            "@id": "https://www.tripsandships.com/riverside-rhone-cruises/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

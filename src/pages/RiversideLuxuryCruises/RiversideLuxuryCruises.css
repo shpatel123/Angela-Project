@@ -1,6 +1,6 @@
 /* Riverside Luxury Cruises - Is Riverside Worth It Section */
 .rlc-lc-worth-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-color: var(--bg-white);
 }
 
@@ -20,6 +20,13 @@
 .rlc-lc-worth-content {
     display: flex;
     flex-direction: column;
+}
+.rlc-lc-ti{
+    color: var(--navy);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    
 }
 
 .rlc-lc-worth-title {
@@ -174,7 +181,7 @@
     }
     
     .rlc-lc-worth-title {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .rlc-lc-worth-emphasis-grid {
@@ -185,15 +192,18 @@
 
 @media (max-width: 480px) {
     .rlc-lc-worth-title {
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .rlc-lc-worth-lead {
         font-size: 15.5px;
     }
     
-    .rlc-lc-worth-conclusion-box {
-        padding: 16px;
+    .rlc-lc-worth-conclusion-box, .dve-advantages-title {
+        padding: 16px !important;
+    }
+    .rlc-lc-ti{
+        font-size: 22px;
     }
 }
 

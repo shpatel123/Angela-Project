@@ -59,22 +59,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -82,15 +82,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#webpage",
             name: "Riverside Luxury Cruises Pros and Cons | Honest Luxury River Cruise Review",
-            url: "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons",
+            url: "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons",
             description:
                 "Explore the pros and cons of Riverside Luxury Cruises. Learn about spacious suites, gourmet dining, personalized service, potential drawbacks, and whether Riverside is the right luxury river cruise for you.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#article",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#article",
             headline: "Riverside Luxury Cruises Pros and Cons | Is Riverside Worth It?",
             description:
                 "An honest look at the biggest advantages and potential drawbacks of Riverside Luxury Cruises, covering suites, dining, service, itineraries, pricing, and who Riverside is best suited for.",
@@ -106,7 +106,7 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#review",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#review",
             itemReviewed: {
                 "@type": "Organization",
                 name: "Riverside Luxury Cruises",
@@ -124,37 +124,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Riverside Luxury Cruises Pros and Cons",
-                    item: "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons",
                 },
             ],
         },
         {
             "@type": "Cruise",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#cruise",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#cruise",
             name: "Riverside Luxury Cruises",
             provider: {
                 "@type": "Organization",
@@ -176,7 +176,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#service",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#service",
             serviceType: "Luxury River Cruise Comparison & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -188,7 +188,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#itemlist",
             name: "What This Riverside Luxury Cruises Pros and Cons Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Overview" },
@@ -203,7 +203,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-luxury-cruises-pros-and-cons/#faq",
+            "@id": "https://www.tripsandships.com/riverside-luxury-cruises-pros-and-cons/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

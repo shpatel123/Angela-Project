@@ -61,22 +61,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -84,15 +84,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/seine/#webpage",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/seine/#webpage",
             name: "Scenic Seine River Cruises (2026) | Complete Guide",
-            url: "https://tripsandships.com/scenic-river-cruises/seine/",
+            url: "https://www.tripsandships.com/scenic-river-cruises/seine/",
             description:
                 "Explore Scenic Seine River Cruises from Paris through Normandy. Discover Rouen, Monet's Giverny, D-Day sites, French cuisine, excursions, cabins, costs and the best time to sail.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/scenic-river-cruises/seine/#article",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/seine/#article",
             headline: "Scenic Seine River Cruises: Paris, Normandy & the Complete Guide",
             description:
                 "A complete guide to Scenic Seine River Cruises, including Paris, Giverny, Rouen, Normandy, D-Day history, French cuisine, cabins, cost, and how to choose the right sailing.",
@@ -108,37 +108,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/seine/#breadcrumb",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/seine/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Scenic River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises",
+                    item: "https://www.tripsandships.com/scenic-river-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Scenic Seine River Cruises",
-                    item: "https://tripsandships.com/scenic-river-cruises/seine/",
+                    item: "https://www.tripsandships.com/scenic-river-cruises/seine/",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/scenic-river-cruises/seine/#itemlist",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/seine/#itemlist",
             name: "Scenic Seine River Cruises — What This Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Answer" },
@@ -159,7 +159,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/scenic-river-cruises/seine/#faq",
+            "@id": "https://www.tripsandships.com/scenic-river-cruises/seine/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

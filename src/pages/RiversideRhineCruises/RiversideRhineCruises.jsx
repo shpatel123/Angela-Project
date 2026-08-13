@@ -61,22 +61,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -84,15 +84,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#webpage",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#webpage",
             name: "Riverside Rhine Cruises | Luxury Rhine River Cruise Guide",
-            url: "https://tripsandships.com/riverside-rhine-cruises",
+            url: "https://www.tripsandships.com/riverside-rhine-cruises",
             description:
                 "Explore Riverside Rhine Cruises through Germany, France, Switzerland, and the Netherlands. Discover castles, vineyards, charming villages, luxury suites, gourmet dining, and personalized service.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#article",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#article",
             headline: "Riverside Rhine Cruises | Luxury European River Cruises",
             description:
                 "A complete guide to Riverside Rhine Cruises, covering destinations, the Riverside Ravel, accommodations, dining, excursions, and whether a Riverside Rhine Cruise is worth booking.",
@@ -108,37 +108,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#breadcrumb",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Riverside Rhine Cruises",
-                    item: "https://tripsandships.com/riverside-rhine-cruises",
+                    item: "https://www.tripsandships.com/riverside-rhine-cruises",
                 },
             ],
         },
         {
             "@type": "TouristTrip",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#touristtrip",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#touristtrip",
             name: "Riverside Rhine Cruise",
             touristType: "Couples, luxury travelers, first-time European visitors",
             itinerary: {
@@ -155,7 +155,7 @@ const schemaData = {
         },
         {
             "@type": "Cruise",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#cruise",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#cruise",
             name: "Riverside Rhine Cruise",
             provider: {
                 "@type": "Organization",
@@ -179,7 +179,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#destinations",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#destinations",
             name: "Riverside Rhine Cruise Destinations",
             itemListElement: [
                 { "@type": "Place", position: 1, name: "Amsterdam, Netherlands" },
@@ -192,7 +192,7 @@ const schemaData = {
         },
         {
             "@type": "Service",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#service",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#service",
             serviceType: "Luxury Rhine River Cruise Planning & Booking Support",
             provider: {
                 "@type": "TravelAgency",
@@ -204,7 +204,7 @@ const schemaData = {
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#itemlist",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#itemlist",
             name: "What This Riverside Rhine Cruises Guide Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Overview" },
@@ -223,7 +223,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/riverside-rhine-cruises/#faq",
+            "@id": "https://www.tripsandships.com/riverside-rhine-cruises/#faq",
             mainEntity: [
                 {
                     "@type": "Question",

@@ -64,22 +64,22 @@ const schemaData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://tripsandships.com/#organization",
+            "@id": "https://www.tripsandships.com/#organization",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             logo: "https://www.tripsandships.com/Copy-of-TRIPSSHIPS-e1592486640831.webp",
         },
         {
             "@type": "TravelAgency",
-            "@id": "https://tripsandships.com/#travelagency",
+            "@id": "https://www.tripsandships.com/#travelagency",
             name: "Trips & Ships Luxury Travel",
-            url: "https://tripsandships.com",
+            url: "https://www.tripsandships.com/",
             description:
                 "Luxury travel agency specializing in luxury cruises, river cruises, safaris, expeditions, and premium travel experiences.",
         },
         {
             "@type": "Person",
-            "@id": "https://tripsandships.com/#person",
+            "@id": "https://www.tripsandships.com/#person",
             name: "Angela Hughes",
             jobTitle: "CEO of Trips & Ships Luxury Travel",
             description:
@@ -87,15 +87,15 @@ const schemaData = {
         },
         {
             "@type": "WebPage",
-            "@id": "https://tripsandships.com/honest-riverside-cruise-review/#webpage",
+            "@id": "https://www.tripsandships.com/honest-riverside-cruise-review/#webpage",
             name: "Honest Riverside Cruise Review | Is Riverside Luxury Cruises Worth It?",
-            url: "https://tripsandships.com/honest-riverside-cruise-review",
+            url: "https://www.tripsandships.com/honest-riverside-cruise-review",
             description:
                 "Read our honest Riverside Cruise review covering suites, dining, service, itineraries, excursions, pricing, pros and cons, and who should sail Riverside Luxury Cruises.",
         },
         {
             "@type": "Article",
-            "@id": "https://tripsandships.com/honest-riverside-cruise-review/#article",
+            "@id": "https://www.tripsandships.com/honest-riverside-cruise-review/#article",
             headline: "Honest Riverside Cruise Review | Real Look at Riverside Luxury Cruises",
             description:
                 "A complete, honest review of Riverside Luxury Cruises covering accommodations, dining, service, itineraries, excursions, pricing, pros and cons, and who should sail.",
@@ -111,7 +111,7 @@ const schemaData = {
         },
         {
             "@type": "Review",
-            "@id": "https://tripsandships.com/honest-riverside-cruise-review/#review",
+            "@id": "https://www.tripsandships.com/honest-riverside-cruise-review/#review",
             itemReviewed: {
                 "@type": "Product",
                 name: "Riverside Luxury Cruises",
@@ -132,37 +132,37 @@ const schemaData = {
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://tripsandships.com/honest-riverside-cruise-review/#breadcrumb",
+            "@id": "https://www.tripsandships.com/honest-riverside-cruise-review/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://tripsandships.com",
+                    item: "https://www.tripsandships.com/",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "River Cruise Guides",
-                    item: "https://tripsandships.com/river-cruise-guides",
+                    item: "https://www.tripsandships.com/river-cruise-guides",
                 },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: "Riverside Luxury Cruises",
-                    item: "https://tripsandships.com/riverside-luxury-cruises",
+                    item: "https://www.tripsandships.com/riverside-luxury-cruises",
                 },
                 {
                     "@type": "ListItem",
                     position: 4,
                     name: "Honest Riverside Cruise Review",
-                    item: "https://tripsandships.com/honest-riverside-cruise-review",
+                    item: "https://www.tripsandships.com/honest-riverside-cruise-review",
                 },
             ],
         },
         {
             "@type": "ItemList",
-            "@id": "https://tripsandships.com/honest-riverside-cruise-review/#itemlist",
+            "@id": "https://www.tripsandships.com/honest-riverside-cruise-review/#itemlist",
             name: "What This Honest Riverside Cruise Review Covers",
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Quick Verdict" },
@@ -180,7 +180,7 @@ const schemaData = {
         },
         {
             "@type": "FAQPage",
-            "@id": "https://tripsandships.com/honest-riverside-cruise-review/#faq",
+            "@id": "https://www.tripsandships.com/honest-riverside-cruise-review/#faq",
             mainEntity: [
                 {
                     "@type": "Question",
