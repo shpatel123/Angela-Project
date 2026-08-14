@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
 import { Helmet } from "react-helmet-async";
-import "./SeabournShips.css";
+import "./Seabournships.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
