@@ -1289,7 +1289,32 @@ const Nav = () => {
                 Scenic Vs Celebrity
               </NavLink>
 
-              
+              <NavLink
+                to="/seabourn-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Cruises
+              </NavLink>
+
+
+              <NavLink
+                to="/seabourn-cruises/whats-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn What's Included
+              </NavLink>
+{/* 
+               <NavLink
+                to="/seabourn-cruises/ships"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Ships
+              </NavLink> */}
+
+
 
 
 
@@ -2563,12 +2588,38 @@ const Nav = () => {
             </NavLink>
 
             <NavLink
-                to="/scenic-river-cruises/scenic-vs-celebrity/"
+              to="/scenic-river-cruises/scenic-vs-celebrity/"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Scenic Vs Celebrity
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Cruises
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/whats-included"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn What's Included
+            </NavLink>
+
+               {/* <NavLink
+                to="/seabourn-cruises/ships"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Scenic Vs Celebrity
-              </NavLink>
+                Seabourn Ships
+              </NavLink> */}
+
+
 
 
 

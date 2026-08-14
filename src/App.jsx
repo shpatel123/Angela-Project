@@ -157,6 +157,17 @@ import ScenicVsAvalonWaterways from "./pages/ScenicVsAvalonWaterways/ScenicVsAva
 import ScenicVsRiversideLuxuryCruises from "./pages/ScenicVsRiversideLuxuryCruises/ScenicVsRiversideLuxuryCruises";
 import ScenicVsTauckRiverCruises from "./pages/ScenicVsTauckRiverCruises/ScenicVsTauckRiverCruises";
 import Scenicvscelebrity from "./pages/Scenicvscelebrity/Scenicvscelebrity";
+import SeabournCruises from "./pages/SeabournCruises/SeabournCruises";
+import Seabournwhatsincluded  from "./pages/Seabournwhatsincluded/Seabournwhatsincluded";
+import Seabournships   from "./pages/Seabournships/Seabournships";
+
+
+
+
+
+
+
+
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 
@@ -635,6 +646,9 @@ function App() {
           <Route path="/scenic-river-cruises/scenic-vs-riverside" element={<ScenicVsRiversideLuxuryCruises />} />
           <Route path="/scenic-river-cruises/scenic-vs-tauck" element={<ScenicVsTauckRiverCruises />} />
           <Route path="/scenic-river-cruises/scenic-vs-celebrity" element={<Scenicvscelebrity  />} />
+          <Route path="/seabourn-cruises" element={<SeabournCruises  />} />
+          <Route path="/seabourn-cruises/whats-included" element={<Seabournwhatsincluded   />} />
+          <Route path="/seabourn-cruises/ships" element={<Seabournships/>} />
 
         </Routes>
       </BrowserRouter>
