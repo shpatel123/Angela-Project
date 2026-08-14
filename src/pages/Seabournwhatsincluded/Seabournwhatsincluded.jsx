@@ -240,11 +240,11 @@ const allInclusiveFormula = ["Accommodation", "dining", "premium beverages", "Wi
 const inclusionDetails = [
     { icon: Dumbbell, num: "10", title: "Fitness Facilities Are Included", text: "Guests can use the ship's fitness facilities without paying a separate daily access fee. Personal training and specialized services may carry an additional charge.", featuresTitle: "Depending on the ship, facilities can include:", features: ["Fitness center", "Exercise equipment", "Fitness classes", "Outdoor walking areas", "Wellness activities"] },
     { icon: Waves, num: "11", title: "Pools and Public Spaces Are Included", text: "Access to Seabourn's onboard public areas is included in the cruise fare. There is no separate resort-style daily access fee for these standard onboard facilities.", featuresTitle: "This includes access to spaces such as:", features: ["Pools", "Lounges", "Observation areas", "Deck spaces", "Restaurants", "Bars", "Social areas", "Libraries and relaxation spaces, where available"] },
-    { icon: Compass, num: "12", title: "Expedition Activities Can Be Included", text: "For travelers booking Seabourn Venture or Seabourn Pursuit, the inclusions become particularly interesting. The exact activities depend on the destination, weather, wildlife conditions and expedition itinerary — this is particularly important when comparing Seabourn with conventional luxury ocean cruises.", featuresTitle: "Expedition voyages can include activities such as:", features: ["Zodiac excursions", "Nature walks", "Wildlife viewing", "Expedition briefings", "Guided exploration", "Kayaking on selected voyages", "Snorkeling on selected itineraries"] },
+    { icon: Compass, num: "12", title: "Expedition Activities Can Be Included", text: "For travelers booking Seabourn Venture or Seabourn Pursuit, the inclusions become particularly interesting. ", featuresTitle: "Expedition voyages can include activities such as:", features: ["Zodiac excursions", "Nature walks", "Wildlife viewing", "Expedition briefings", "Guided exploration", "Kayaking on selected voyages", "Snorkeling on selected itineraries"] },
 ];
 
 const shoreVentureCards = [
-    { icon: Map, title: "Seabourn Shore Excursions: Are They Included?", text: "This is where travelers need to pay close attention. Not every Seabourn shore excursion is included in the cruise fare. Seabourn offers a broad portfolio of shore experiences, and some excursions are optional purchases. Some expedition activities may be included as part of the expedition program, while optional or specialized experiences can carry additional charges.", featuresTitle: "These can include:", features: ["Cultural tours", "Food and wine experiences", "Private touring", "Active adventures", "UNESCO visits", "Wildlife experiences", "Local experiences", "Exclusive destination activities"] },
+    { icon: Map, title: "Seabourn Shore Excursions: Are They Included?", text: "This is where travelers need to pay close attention. Not every Seabourn shore excursion is included in the cruise fare. Seabourn offers a broad portfolio of shore experiences, and some excursions are optional purchases. ", featuresTitle: "These can include:", features: ["Cultural tours", "Food and wine experiences", "Private touring", "Active adventures", "UNESCO visits", "Wildlife experiences", "Local experiences", "Exclusive destination activities"] },
     { icon: Compass, title: "Ventures by Seabourn: Is It Included?", text: "Ventures by Seabourn experiences may cost extra. These are specialized active and expedition-style experiences that are particularly attractive to adventurous travelers, but they should be considered separately when calculating the total cost of your trip.", featuresTitle: "These can include activities such as:", features: ["Kayaking", "Zodiac exploration", "Wildlife viewing", "Hiking", "Nature exploration"] },
 ];
 
@@ -610,7 +610,7 @@ const SeabournWhatsIncluded = () => {
                                 <div className="Wic-four-card-icon-wrapper">
                                     <Sparkles size={20} />
                                 </div>
-                                <h3 className="Wic-four-card-title">3. Welcome Champagne Is Included</h3>
+                                <h3 className="Wic-four-card-title">Welcome Champagne Is Included</h3>
                             </div>
                             <p className="Wic-four-card-text">
                                 Guests are welcomed with Champagne as part of the Seabourn experience. It is a small detail, but it reflects the line's emphasis on luxury from the moment you step onboard.
@@ -626,7 +626,7 @@ const SeabournWhatsIncluded = () => {
                                 <div className="Wic-four-card-icon-wrapper">
                                     <Coffee size={20} />
                                 </div>
-                                <h3 className="Wic-four-card-title">4. An In-Suite Bar Is Included</h3>
+                                <h3 className="Wic-four-card-title">An In-Suite Bar Is Included</h3>
                             </div>
                             <p className="Wic-four-card-text">
                                 Seabourn suites feature an in-suite bar stocked according to guest preferences. Depending on the ship and suite, travelers can request preferred beverages.
@@ -657,7 +657,7 @@ const SeabournWhatsIncluded = () => {
                                 <div className="Wic-four-card-icon-wrapper">
                                     <Gem size={20} />
                                 </div>
-                                <h3 className="Wic-four-card-title">5. Caviar Is Included</h3>
+                                <h3 className="Wic-four-card-title">Caviar Is Included</h3>
                             </div>
                             <p className="Wic-four-card-text">
                                 Caviar is one of Seabourn's signature luxury touches. Complimentary caviar is available onboard, reinforcing the brand's emphasis on elevated dining.
@@ -690,7 +690,7 @@ const SeabournWhatsIncluded = () => {
                                 <div className="Wic-four-card-icon-wrapper">
                                     <Wifi size={20} />
                                 </div>
-                                <h3 className="Wic-four-card-title">6. Wi-Fi Is Included</h3>
+                                <h3 className="Wic-four-card-title">Wi-Fi Is Included</h3>
                             </div>
                             <p className="Wic-four-card-text">
                                 Seabourn includes Wi-Fi as part of its onboard experience. The line has also expanded connectivity through Starlink-powered Wi-Fi on its ships.
@@ -940,7 +940,7 @@ const SeabournWhatsIncluded = () => {
                                             <Icon size={24} strokeWidth={1.5} className="Wic-detail-icon" />
                                         </div>
                                         <div>
-                                            <span className="Wic-card-num">{item.num}</span>
+                                         
                                             <h3 className="Wic-detail-title">{item.title}</h3>
                                         </div>
                                     </div>

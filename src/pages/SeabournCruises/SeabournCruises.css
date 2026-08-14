@@ -1991,7 +1991,7 @@
     font-family: var(--font-body);
     font-size: 18px;
     line-height: 1.65;
-    color: #4a5568;
+    color: var(--navy);
     margin: 0 0 20px;
 }
 
@@ -2042,7 +2042,7 @@
     font-family: var(--font-body);
     font-size: 18px;
     line-height: 1.65;
-    color: #4a5568;
+    color: var(--navy);
     margin: 0 0 12px;
 }
 
@@ -2426,7 +2426,7 @@
     }
 
     .Sbc-cta-text {
-        font-size: 16px;
+        font-size: 17px !important;
         margin-bottom: 24px;
     }
 }
@@ -2453,6 +2453,10 @@
     .Sbc-ship-row,
     .Sbc-proscons-card {
         padding: 24px;
+    }
+
+    .Sbc-worth-text, .Sbc-worth-value-desc{
+        font-size: 16px !important;
     }
 
     .Sbc-compare-placeholder {
@@ -2546,7 +2550,7 @@
     }
 
     .Sbc-cta-text {
-        font-size: 15px;
+        font-size: 15px !important;
         margin-bottom: 24px;
         line-height: 1.5;
     }

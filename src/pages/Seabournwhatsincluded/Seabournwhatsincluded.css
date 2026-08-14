@@ -174,6 +174,64 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
+
+    .Wic-qa-panels {
+        gap: 24px;
+    }
+
+    .Wic-qa-panel {
+        padding: 30px;
+    }
+
+    .Wic-four-grid {
+        gap: 24px;
+    }
+
+    .Wic-four-card-header {
+        padding: 24px 24px 0;
+    }
+
+    .Wic-four-card-title {
+        font-size: 22px;
+    }
+
+    .Wic-four-card-text {
+        padding: 0 24px;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .Wic-four-card-list-title {
+        padding: 0 24px;
+        margin: 4px 0 8px;
+    }
+
+    .Wic-four-card-list {
+        padding: 0 24px;
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .Wic-four-card-footnote {
+        padding: 14px 24px 18px;
+        font-size: 14px;
+    }
+
+    .Wic-qa-card {
+        padding: 20px;
+    }
+
+    .Wic-qa-card-image-placeholder {
+        height: 200px;
+    }
+
+    .Wic-qa-card-title {
+        font-size: 18px;
+    }
+
+    .Wic-qa-card-text {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -192,38 +250,82 @@
     }
 
     .Wic-four-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 20px;
     }
-    .Wic-four-card-title {
-        font-size: 17px;
+
+    .Wic-four-card-header {
+        padding: 20px 20px 0;
+        gap: 12px;
     }
+
+    .Wic-four-card-icon-wrapper {
+        width: 44px;
+        height: 44px;
+    }
+
+    .Wic-four-card-title {
+        font-size: 20px;
+    }
+
+    .Wic-four-card-text {
+        padding: 0 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .Wic-four-card-list-title {
+        padding: 0 20px;
+        margin: 4px 0 6px;
+    }
+
     .Wic-four-card-list {
+        padding: 0 20px;
         grid-template-columns: 1fr;
+    }
+
+    .Wic-four-card-footnote {
+        padding: 12px 20px 16px;
+        font-size: 13px;
     }
 
     .Wic-detail-grid {
         grid-template-columns: 1fr !important;
         gap: 20px;
     }
+
     .Wic-detail-card {
         padding: 28px;
     }
 
     .Wic-qa-panels {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 24px;
     }
+
     .Wic-qa-panel {
         padding: 32px 24px;
     }
 
     .Wic-qa-card-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 20px;
     }
+
+    .Wic-qa-card {
+        padding: 16px;
+    }
+
     .Wic-qa-card-image-placeholder {
         height: 180px;
+    }
+
+    .Wic-qa-card-title {
+        font-size: 18px;
+    }
+
+    .Wic-qa-card-text {
+        font-size: 15px;
     }
 }
 
@@ -233,6 +335,7 @@
         padding: 12px;
         font-size: 13.5px;
     }
+
 
     .Wic-compare-table-col {
         gap: 6px;
@@ -253,13 +356,62 @@
         gap: 10px;
     }
 
-    .Wic-four-card {
-        padding: 24px 20px;
-    }
-    .Wic-four-card-list {
-        grid-template-columns: 1fr;
+    .Wic-qa-panel {
+        padding: 20px;
     }
 
+    .Wic-four-card-header {
+        padding: 16px 16px 0;
+        gap: 10px;
+    }
+
+    .Wic-four-card-icon-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Wic-four-card-title {
+        font-size: 22px !important  ;
+    }
+
+    .Wic-four-card-text {
+        padding: 0 16px;
+        font-size: 16px !important;
+        margin-bottom: 8px;
+    }
+    .Wic-conv-body{
+        font-size: 16px !important;
+    }
+
+    .Wic-four-card-list-title {
+        padding: 0 16px;
+    }
+
+    .Wic-four-card-list {
+        padding: 0 16px;
+        grid-template-columns: 1fr !important;
+    }
+
+    .Wic-four-card-footnote {
+        padding: 12px 16px 14px;
+        font-size: 13px;
+    }
+
+    .Wic-qa-card {
+        padding: 14px;
+    }
+
+    .Wic-qa-card-image-placeholder {
+        height: 140px;
+    }
+
+    .Wic-qa-card-title {
+        font-size: 17px;
+    }
+
+    .Wic-qa-card-text, .Wic-vs-luxury-lead, .Wic-model-diff-body {
+        font-size: 16px !important;
+    }
 }
 
 /* ── Wic Grouped Amenities Grid (Categories 03-06) ──────────────── */
@@ -329,7 +481,7 @@
 .Wic-four-card-title {
     font-family: var(--font-display);
     color: var(--navy);
-    font-size: 28px !important;
+    font-size: 28px;
     font-weight: 500;
     margin: 0;
     line-height: 1.3;
@@ -377,7 +529,7 @@
     align-items: center;
     gap: 8px;
     font-family: var(--font-body);
-    font-size: 16x;
+    font-size: 16px;
     color: var(--navy);
     font-weight: 500;
     padding: 5px 0;
@@ -619,6 +771,13 @@
     background: var(--bg-soft);
     color: var(--navy);
     flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    .Wic-qa-panel-title {
+        font-size: 22px;
+    }
+
 }
 
 /* ── Wic More Inclusions QA Cards (Part 1 & 2) ────────────────── */
@@ -1079,7 +1238,7 @@
 .Wic-conv-lead {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--navy);
     line-height: 1.45;
     margin: 0 0 16px;
