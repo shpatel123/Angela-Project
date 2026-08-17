@@ -1,0 +1,376 @@
+
+/* ── Antarctica "Typical Day" Timeline ───────────────────────────── */
+.Sec-day-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.Sec-day-step {
+    background: var(--bg-white);
+    border: 1px solid #e3eaf1;
+    border-radius: 6px;
+    padding: 28px 22px;
+    position: relative;
+}
+
+.Sec-day-icon-wrapper {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--bg-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.Sec-day-label {
+    font-family: var(--font-body);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--navy);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.Sec-day-text {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: #3d4c5f;
+    margin: 0;
+}
+
+.Sec-day-factors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.Sec-day-factors span {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--navy);
+    background: var(--bg-soft);
+    border: 1px solid #e3eaf1;
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+
+.Sec-day-note {
+    text-align: center;
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    color: #3d4c5f;
+    max-width: 640px;
+    margin: 22px auto 0;
+    line-height: 1.7;
+}
+
+/* ── Related Content / CTA Grid ──────────────────────────────────── */
+.Sec-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.Sec-related-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-white);
+    border: 1px solid #e3eaf1;
+    border-radius: 6px;
+    padding: 28px 26px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.Sec-related-card:hover {
+    border-color: var(--navy);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(15, 30, 50, 0.08);
+}
+
+.Sec-related-eyebrow {
+    font-family: var(--font-body);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--navy);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.Sec-related-title {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+}
+
+.Sec-related-text {
+    font-family: var(--font-body);
+    color: #3d4c5f;
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0 0 18px;
+    flex-grow: 1;
+}
+
+.Sec-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--navy);
+}
+
+.Sec-related-card:hover .Sec-related-link svg {
+    transform: translateX(4px);
+}
+
+.Sec-related-link svg {
+    transition: transform 0.25s ease;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   Responsive — 1024 / 768 / 480
+   ══════════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .Sec-day-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .Sec-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .Sec-compare-table thead th,
+    .Sec-compare-table tbody td {
+        padding: 14px 16px;
+        font-size: 14.5px;
+    }
+
+    .Sec-day-timeline {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .Sec-related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .Sec-compare-table {
+        min-width: 480px;
+    }
+
+    .Sec-compare-table thead th,
+    .Sec-compare-table tbody td {
+        padding: 12px;
+        font-size: 13.5px;
+    }
+
+    .Sec-day-step {
+        padding: 22px 18px;
+    }
+
+    .Sec-related-card {
+        padding: 22px 20px;
+    }
+
+    .Sec-related-title {
+        font-size: 18px;
+    }
+}
+
+/* ── Couples & Solo Travelers Cards Section ── */
+.Sec-travelers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.Sec-traveler-card {
+    background: var(--bg-white);
+    border: 1px solid #e3eaf1;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.Sec-traveler-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(13, 23, 41, 0.06);
+    border-color: var(--navy);
+}
+
+.Sec-traveler-image-placeholder {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(135deg, #1b2e4b 0%, #0d1726 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.Sec-traveler-image-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.06), transparent 75%);
+    pointer-events: none;
+}
+
+.Sec-traveler-placeholder-icon {
+    color: rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+.Sec-traveler-placeholder-text {
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+.Sec-traveler-card:hover .Sec-traveler-placeholder-icon {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.Sec-traveler-card:hover .Sec-traveler-placeholder-text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Sec-traveler-card-content {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.Sec-traveler-card-content h3 {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.Sec-traveler-card-content p {
+    font-family: var(--font-body);
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 16px;
+}
+
+.Sec-traveler-card-content .Sec-bold-p {
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.Sec-traveler-list-title {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.Sec-traveler-list {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.Sec-traveler-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #4a5568;
+}
+
+.Sec-traveler-list svg {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.Sec-traveler-verdict {
+    margin-top: auto;
+    padding: 18px 22px;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--navy);
+    border-radius: 2px;
+}
+
+.Sec-traveler-verdict p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .Sec-travelers-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Sec-traveler-card-content {
+        padding: 24px;
+    }
+    
+    .Sec-traveler-list {
+        grid-template-columns: 1fr;
+    }
+
+    .Sec-traveler-image-placeholder {
+        height: 180px;
+    }
+}
+

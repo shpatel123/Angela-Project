@@ -1305,14 +1305,38 @@ const Nav = () => {
               >
                 Seabourn What's Included
               </NavLink>
-{/* 
-               <NavLink
+
+              <NavLink
                 to="/seabourn-cruises/ships"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Seabourn Ships
-              </NavLink> */}
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Suites
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/expeditions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Expedition
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/antarctica"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Antarctica
+              </NavLink>
 
 
 
@@ -2611,13 +2635,40 @@ const Nav = () => {
               Seabourn What's Included
             </NavLink>
 
-               {/* <NavLink
-                to="/seabourn-cruises/ships"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Seabourn Ships
-              </NavLink> */}
+            <NavLink
+              to="/seabourn-cruises/ships"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Ships
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/suites"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Suites
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/expeditions"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Expedition
+            </NavLink>
+
+
+            <NavLink
+              to="/seabourn-cruises/antarctica"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Antarctica
+            </NavLink>
+
+
 
 
 

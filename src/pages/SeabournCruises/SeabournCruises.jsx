@@ -25,11 +25,13 @@ import {
     Users,
     Award,
     AlertCircle,
+    Star,
+    MapPin,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 
 import { Helmet } from "react-helmet-async";
-import "../ScenicRiverCruises/ScenicRiverCruises.css";
 import "./SeabournCruises.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
@@ -339,7 +341,7 @@ const schemaData = {
     ],
 };
 
-/* ── FAQ Accordion (reuses existing Asc-faq classes) ─────────────── */
+/* ── FAQ Accordion (custom Sbc-faq classes) ─────────────────────── */
 function FAQ() {
     const [open, setOpen] = useState(null);
 
@@ -365,16 +367,16 @@ function FAQ() {
     ];
 
     return (
-        <div className="Asc-faq-list">
+        <div className="Sbc-faq-list">
             {faqData.map((item, i) => (
                 <div
                     key={i}
-                    className={`Asc-faq-item${open === i ? " Asc-open" : ""}`}
+                    className={`Sbc-faq-item${open === i ? " Sbc-open" : ""}`}
                     onClick={() => setOpen(open === i ? null : i)}
                 >
-                    <div className="Asc-faq-q">
+                    <div className="Sbc-faq-q">
                         <span>{item.q}</span>
-                        <span className="Asc-faq-icon">
+                        <span className="Sbc-faq-icon">
                             {open === i ? (
                                 <Minus size={18} strokeWidth={1.5} />
                             ) : (
@@ -383,8 +385,8 @@ function FAQ() {
                         </span>
                     </div>
                     {open === i && (
-                        <div className="Asc-faq-a">
-                            <div className="Asc-faq-a-inner">{item.a}</div>
+                        <div className="Sbc-faq-a">
+                            <div className="Sbc-faq-a-inner">{item.a}</div>
                         </div>
                     )}
                 </div>
@@ -575,40 +577,34 @@ const SeabournCruisesGuide = () => {
             </Helmet>
             <Nav />
 
-            {/* ── HERO (reuses existing hero classes) ──────────────────────── */}
-            <section className="Scenic_hero_section">
-                <div className="Scenic_hero_overlay"></div>
+            {/* ── HERO (custom Sbc-hero classes) ──────────────────────── */}
+            <section className="Sbc-hero-section">
+                <div className="Sbc-hero-overlay"></div>
 
-                <div className="Scenic_hero_content">
+                <div className="Sbc-hero-content">
                     <h1>Seabourn Cruises <br /> The Complete Guide</h1>
 
                     <p>
-                        Seabourn Cruises is designed for travelers who want the
-                        intimacy of a private yacht, the service of a luxury
-                        hotel, and the opportunity to explore destinations that
-                        larger ships cannot easily reach.
+                        Seabourn Cruises is designed for travelers who want the intimacy of a private yacht, the service of a luxury hotel, and the opportunity to explore destinations that larger ships cannot easily reach.
                     </p>
 
                     {readMore && (
-                        <p>
-                            The line combines all-suite accommodations,
-                            oceanfront views, personalized service, fine dining,
-                            premium beverages, curated experiences and
-                            small-ship itineraries across both ocean and
-                            expedition cruising. Seabourn currently operates
-                            five modern ships, including the purpose-built
-                            expedition vessels Seabourn Venture and Seabourn
-                            Pursuit. This guide explains what Seabourn offers,
-                            which ships to consider, where the line sails, what
-                            is included, what the suites are like, how dining
-                            works, and what makes the experience different from
-                            a traditional cruise.
-                        </p>
+                        <>
+                            <p>
+                                The line combines all-suite accommodations, oceanfront views, personalized service, fine dining, premium beverages, curated experiences and small-ship itineraries across both ocean and expedition cruising. Seabourn currently operates five modern ships, including the purpose-built expedition vessels Seabourn Venture and Seabourn Pursuit.
+                            </p>
+                            <p>
+                                For luxury travelers deciding whether Seabourn is right for their next vacation, this guide explains what Seabourn offers, which ships to consider, where the line sails, what is included, what the suites are like, how dining works, and what makes the experience different from a traditional cruise.
+                            </p>
+                            <p>
+                                The short version: Seabourn is best suited to travelers who value small ships, highly personalized service, sophisticated accommodations, destination depth and an understated luxury atmosphere.
+                            </p>
+                        </>
                     )}
 
-                    <div className="Scenic_readmore_wrapper">
+                    <div className="Sbc-hero-readmore-wrapper">
                         <button
-                            className="Scenic_readmore_btn"
+                            className="Sbc-hero-readmore-btn"
                             onClick={() => setReadMore(!readMore)}
                         >
                             {readMore ? "Read Less" : "Read More"}
@@ -1465,7 +1461,7 @@ const SeabournCruisesGuide = () => {
                                 <ul className="Sbc-qa-list">
                                     {["Single supplements", "Suite categories", "Specific departure pricing", "Dining arrangements", "Itinerary style"].map((item, idx) => (
                                         <li key={idx}>
-                                            <Check size={16} strokeWidth={2.5} style={{ color: "var(--navy)" }} />
+                                            <Check size={24} strokeWidth={2.5} style={{ color: "var(--navy)" }} />
                                             <span>{item}</span>
                                         </li>
                                     ))}
@@ -1615,17 +1611,88 @@ const SeabournCruisesGuide = () => {
                 </div>
             </section>
 
+            
+            {/* ── ANGELA HUGHES AUTHORITY BOX ────────────────────────────── */}
+            <section className="Sbc-expert-section" id="Asc-expert-insight">
+                <div className="Sbc-container">
+                    <div className="Sbc-expert-heading">
+                        <span className="Sbc-expert-eyebrow">Luxury Travel Expertise</span>
+                        <h2 className="Sbc-expert-title">Angela Hughes Luxury Authority</h2>
+                        <div className="Sbc-expert-divider"></div>
+                    </div>
+
+                    <div className="Sbc-expert-grid">
+                        <div className="Sbc-expert-image-col">
+                            <div className="Sbc-expert-portrait-wrap">
+                                <img
+                                    src={AboutImage}
+                                    alt="Angela Hughes – Luxury Travel Expert"
+                                    className="Sbc-expert-portrait"
+                                />
+                                <div className="Sbc-expert-portrait-badge">
+                                    <Star size={14} />
+                                    <span>40+ Years Experience</span>
+                                </div>
+                            </div>
+
+                            <div className="Sbc-expert-name-card">
+                                <h3 className="Sbc-expert-name">Angela Hughes</h3>
+                                <p className="Sbc-expert-role">CEO of Trips &amp; Ships Luxury Travel</p>
+                                <div className="Sbc-expert-name-divider"></div>
+                                <p className="Sbc-expert-countries">
+                                    <MapPin size={14} />
+                                    Traveled to more than 121 countries
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="Sbc-expert-content-col">
+                            <div className="Sbc-expert-credentials-box">
+                                <h4 className="Sbc-expert-credentials-title">
+                                    <Award size={16} />
+                                    Angela Hughes Authority Box
+                                </h4>
+
+                                <div className="Sbc-expert-credentials-grid">
+                                    {[
+                                        { icon: <Award size={16} />, label: "CEO of Trips & Ships Luxury Travel" },
+                                        { icon: <Star size={16} />, label: "Over 40 years in the travel industry" },
+                                        { icon: <MapPin size={16} />, label: "Traveled to more than 121 countries" },
+                                        { icon: <Award size={16} />, label: "Founder of Luxury Travel University" },
+                                        { icon: <Users size={16} />, label: "Global luxury travel speaker and trainer" },
+                                        { icon: <Users size={16} />, label: "Weekly industry columnist" },
+                                        { icon: <Users size={16} />, label: "Travel Leaders Network Advisory Board member" },
+                                        { icon: <Award size={16} />, label: "2024 Luxury Travel Influencer of the Year" },
+                                        {
+                                            icon: <Star size={16} />,
+                                            label: "Named one of the Most Influential Women in Travel in 2026 by TravelPulse",
+                                        },
+                                        { icon: <Award size={16} />, label: "Featured in major travel publications globally" },
+                                        {
+                                            icon: <Ship size={16} />,
+                                            label: "Expert in luxury cruises, safaris, expeditions, river cruising, and premium travel",
+                                        },
+                                    ].map((item, i) => (
+                                        <div className="Sbc-expert-list-item" key={i}>
+                                            <span className="Sbc-expert-list-icon">{item.icon}</span>
+                                            <span className="Sbc-expert-list-label">{item.label}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
-  
-
-            {/* ── FAQ (reuses existing Asc-faq / Asc-section classes) ──────── */}
-            <section className="Asc-section Asc-bg-soft" id="Asc-faq">
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Frequently Asked Questions</h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Asc-faq-intro">
+            {/* ── FAQ (custom Sbc-faq classes) ──────────────────────── */}
+            <section className="Sbc-section Sbc-bg-white" id="Sbc-faq">
+                <div className="Sbc-container">
+                    <div className="Sbc-section-header">
+                        <h2 className="Sbc-h2">Frequently Asked Questions</h2>
+                        <div className="Sbc-accent-line"></div>
+                        <p className="Sbc-faq-intro">
                             Everything travelers need to know before booking a
                             Seabourn cruise.
                         </p>

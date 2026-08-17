@@ -160,12 +160,9 @@ import Scenicvscelebrity from "./pages/Scenicvscelebrity/Scenicvscelebrity";
 import SeabournCruises from "./pages/SeabournCruises/SeabournCruises";
 import Seabournwhatsincluded  from "./pages/Seabournwhatsincluded/Seabournwhatsincluded";
 import Seabournships   from "./pages/Seabournships/Seabournships";
-
-
-
-
-
-
+import Seabournsuites    from "./pages/Seabournsuites/Seabournsuites";
+import Seabournexpeditioncruises     from "./pages/Seabournexpeditioncruises/Seabournexpeditioncruises";
+import Seabournantarcticacruises      from "./pages/Seabournantarcticacruises/Seabournantarcticacruises";
 
 
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -649,6 +646,9 @@ function App() {
           <Route path="/seabourn-cruises" element={<SeabournCruises  />} />
           <Route path="/seabourn-cruises/whats-included" element={<Seabournwhatsincluded   />} />
           <Route path="/seabourn-cruises/ships" element={<Seabournships/>} />
+          <Route path="/seabourn-cruises/suites" element={<Seabournsuites/>} />
+          <Route path="/seabourn-cruises/expeditions" element={<Seabournexpeditioncruises/>} />
+          <Route path="/seabourn-cruises/antarctica" element={<Seabournantarcticacruises/>} />
 
         </Routes>
       </BrowserRouter>

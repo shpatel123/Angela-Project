@@ -15,10 +15,17 @@ import {
     Utensils,
     Sun,
     Waves,
+    Star,
+    MapPin,
+    Award,
+    Users,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 import { Helmet } from "react-helmet-async";
 import "./Seabournships.css";
+import "../SeabournCruises/SeabournCruises.css";
+
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
@@ -162,43 +169,186 @@ const bestForCards = [
 const ships = [
     {
         name: "Seabourn Quest",
+        subtitle: "Classic Small-Ship Seabourn Luxury",
         meta: "Ocean · ~458 guests",
-        desc: "Seabourn Quest represents the classic evolution of Seabourn's larger small-ship design. The ship entered service in 2011 and is part of the trio of vessels that Seabourn describes as a major evolution of its small-ship concept. Seabourn highlights Quest for its dining options, including complimentary dining venues, and its intimate onboard atmosphere. Its smaller capacity creates a particularly intimate feel compared with the 600-guest Encore and Ovation.",
-        glance: ["Ocean-going luxury ship", "Approximately 458 guests", "Intimate small-ship atmosphere", "Multiple dining venues", "Spa and wellness", "Fitness center", "In-suite dining", "Seabourn Conversations", "Sky Bar", "The Club", "Casino", "Caviar & signature experiences"],
-        best: ["Classic Seabourn experience", "Intimacy over having the newest ship", "Travelers who want a private yacht-style experience"],
+        desc: [
+            "Seabourn Quest represents the classic evolution of Seabourn's larger small-ship design.",
+            "The ship entered service in 2011 and is part of the trio of vessels that Seabourn describes as a major evolution of its small-ship concept.",
+            "Seabourn highlights Quest for its dining options, including complimentary dining venues, and its intimate onboard atmosphere."
+        ],
+        glanceTitle: "Seabourn Quest at a Glance",
+        glance: [
+            "Ocean-going luxury ship",
+            "Approximately 458 guests",
+            "Intimate small-ship atmosphere",
+            "Multiple dining venues",
+            "Spa and wellness",
+            "Fitness center",
+            "In-suite dining",
+            "Seabourn Conversations",
+            "Sky Bar",
+            "The Club",
+            "Casino",
+            "Caviar and other signature Seabourn experiences"
+        ],
+        best: [
+            "Travelers who want the classic Seabourn experience.",
+            "Quest can be especially attractive if you care more about intimacy and atmosphere than having the newest ship in the fleet."
+        ],
+        differentTitle: "What makes Quest different?",
+        different: [
+            "Its smaller capacity creates a particularly intimate feel compared with the 600-guest Encore and Ovation.",
+            "For travelers who think of Seabourn as a private yacht-style experience, Quest is an important ship to consider."
+        ]
     },
     {
         name: "Seabourn Encore",
+        subtitle: "Modern Ocean Luxury With More Space",
         meta: "Ocean · 600 guests",
-        desc: "Seabourn Encore represents the next generation of Seabourn's ocean fleet. The ship entered service in 2016 and carries approximately 600 guests. Seabourn lists its length at 690 feet and width at 92 feet. Encore was designed as an evolution of the earlier Seabourn ships, adding another deck and expanded common spaces. Seabourn states that Encore has 13 categories of oceanfront suites with private verandas, with suites ranging from 251 to 1,306 square feet of interior space.",
-        glance: ["600 guests", "690 feet long / 92 feet wide", "Oceanfront suites, private verandas", "13 suite categories", "Solis, The Restaurant, Sushi", "Seabourn Square, Observation Bar", "The Retreat, Spa & Wellness, Pool", "Earth & Ocean, The Patio, The Colonnade", "Fitness Center, Sky Bar"],
-        best: ["A modern Seabourn ocean ship", "A broader selection of onboard spaces", "More suite categories to choose from"],
+        desc: [
+            "Seabourn Encore represents the next generation of Seabourn's ocean fleet.",
+            "The ship entered service in 2016 and carries approximately 600 guests. Seabourn lists its length at 690 feet and width at 92 feet.",
+            "Encore was designed as an evolution of the earlier Seabourn ships, adding another deck and expanded common spaces.",
+            "Seabourn states that Encore has 13 categories of oceanfront suites with private verandas, with suites ranging from 251 to 1,306 square feet of interior space."
+        ],
+        glanceTitle: "Seabourn Encore Highlights",
+        glance: [
+            "600 guests",
+            "690 feet long",
+            "92 feet wide",
+            "Oceanfront suites",
+            "Private verandas",
+            "13 suite categories",
+            "Solis",
+            "The Restaurant",
+            "Sushi",
+            "Seabourn Square",
+            "Observation Bar",
+            "The Retreat",
+            "Spa & Wellness",
+            "Pool",
+            "Earth & Ocean",
+            "Fitness Center",
+            "The Patio",
+            "The Colonnade",
+            "Sky Bar"
+        ],
+        best: [
+            "Travelers who want a modern Seabourn ocean ship with a broader selection of onboard spaces and suite categories."
+        ]
     },
     {
         name: "Seabourn Ovation",
+        subtitle: "Encore's Sister Ship",
         meta: "Ocean · 600 guests",
-        desc: "Seabourn Ovation is the sister ship to Seabourn Encore and entered service in 2018. Seabourn describes Ovation as another stage in the evolution of the small-ship concept pioneered by the brand. Because Encore and Ovation share the same general design lineage, they are among the easiest Seabourn ships to compare.",
-        glance: ["600 guests", "Ocean-going luxury", "Oceanfront suites, private verandas", "Solis, The Restaurant, Sushi", "Seabourn Square, Observation Bar", "The Retreat, Spa & Wellness, Pool", "Earth & Ocean, The Patio, The Colonnade", "Fitness Center, Sky Bar"],
-        best: ["Contemporary Seabourn cruising", "Luxury accommodations and dining", "Wellness-focused travelers"],
+        desc: [
+            "Seabourn Ovation is the sister ship to Seabourn Encore and entered service in 2018.",
+            "Seabourn describes Ovation as another stage in the evolution of the small-ship concept pioneered by the brand.",
+            "Because Encore and Ovation share the same general design lineage, they are among the easiest Seabourn ships to compare."
+        ],
+        glanceTitle: "Seabourn Ovation Highlights",
+        glance: [
+            "600 guests",
+            "Ocean-going luxury",
+            "Oceanfront suites",
+            "Private verandas",
+            "Solis",
+            "The Restaurant",
+            "Sushi",
+            "Seabourn Square",
+            "Observation Bar",
+            "The Retreat",
+            "Spa & Wellness",
+            "Pool",
+            "Earth & Ocean",
+            "Fitness Center",
+            "The Patio",
+            "The Colonnade",
+            "Sky Bar"
+        ],
+        best: [
+            "Travelers looking for a contemporary Seabourn experience with a strong combination of luxury accommodations, dining and wellness."
+        ]
     },
     {
         name: "Seabourn Venture",
+        subtitle: "Purpose-Built Luxury Expedition Ship",
         meta: "Expedition · 264 guests",
-        desc: "Seabourn Venture is fundamentally different from Quest, Encore and Ovation. It is a purpose-built expedition ship designed to take guests into remote environments while maintaining Seabourn's luxury service and accommodations. Venture entered service in 2022 and was built to PC6 Polar Class standards. It carries 24 Zodiacs, kayaks and a 19-person expert Expedition Team. Seabourn currently uses Venture for both traditional ocean voyages and expedition experiences, depending on the itinerary.",
-        glance: ["264 guests", "557 feet long / 78 feet wide", "PC6 Polar Class standards", "24 Zodiacs & kayaks", "19-person Expedition Team", "Expedition Lounge, Discovery Center", "Seabourn Square, Spa", "The Club, The Restaurant"],
-        best: ["Luxury adventure travelers", "Antarctica, Arctic & remote destinations", "Sophisticated accommodations without giving up exploration"],
+        desc: [
+            "Seabourn Venture is fundamentally different from Quest, Encore and Ovation.",
+            "It is a purpose-built expedition ship designed to take guests into remote environments while maintaining Seabourn's luxury service and accommodations.",
+            "Venture entered service in 2022 and was built to PC6 Polar Class standards. It carries 24 Zodiacs, kayaks and a 19-person expert Expedition Team.",
+            "Seabourn's expedition program currently uses Venture for both traditional ocean voyages and expedition experiences, depending on the itinerary."
+        ],
+        glanceTitle: "Seabourn Venture at a Glance",
+        glance: [
+            "264 guests",
+            "557 feet long",
+            "78 feet wide",
+            "Purpose-built expedition ship",
+            "PC6 Polar Class standards",
+            "24 Zodiacs",
+            "Kayaks",
+            "19-person Expedition Team",
+            "Expedition Lounge",
+            "Discovery Center",
+            "Seabourn Square",
+            "Spa",
+            "The Club",
+            "The Restaurant"
+        ],
+        destinationsTitle: "Destinations can include:",
+        destinations: [
+            "Antarctica",
+            "Arctic",
+            "Northwest Passage",
+            "Kimberley",
+            "South Pacific",
+            "Other remote expedition regions"
+        ],
+        best: [
+            "Luxury adventure travelers who want remote destinations without giving up sophisticated accommodations and service."
+        ]
     },
     {
         name: "Seabourn Pursuit",
+        subtitle: "The Newer Generation of Seabourn Expedition Cruising",
         meta: "Expedition · 264 guests",
-        desc: "Seabourn Pursuit is the second purpose-built expedition ship in the Seabourn fleet. It entered service on August 12, 2023 and was designed for remote exploration while maintaining a yacht-like luxury environment. Seabourn's current expedition deployment describes Pursuit visiting destinations across the South Pacific, Kimberley, Antarctica, South Georgia and the Falkland Islands.",
-        glance: ["264 guests", "PC6 Polar Class standards", "24 Zodiacs & kayaks", "19-person Expedition Team", "Expedition Lounge, Discovery Center", "The Restaurant, Seabourn Square", "Spa", "Remote-destination capabilities"],
-        best: ["A newer, purpose-built expedition ship", "Antarctica, South Georgia & Falkland Islands", "South Pacific & Kimberley voyages"],
-    },
+        desc: [
+            "Seabourn Pursuit is the second purpose-built expedition ship in the Seabourn fleet.",
+            "It entered service on August 12, 2023 and was designed for remote exploration while maintaining a yacht-like luxury environment.",
+            "Seabourn's current expedition deployment describes Pursuit as visiting destinations across the South Pacific, Kimberley, Antarctica, South Georgia and the Falkland Islands."
+        ],
+        glanceTitle: "Seabourn Pursuit Highlights",
+        glance: [
+            "264 guests",
+            "Purpose-built expedition ship",
+            "PC6 Polar Class standards",
+            "24 Zodiacs",
+            "Kayaks",
+            "19-person Expedition Team",
+            "Expedition Lounge",
+            "Discovery Center",
+            "The Restaurant",
+            "Seabourn Square",
+            "Spa",
+            "Remote-destination capabilities"
+        ],
+        destinationsTitle: "Destinations include:",
+        destinations: [
+            "Antarctica",
+            "South Georgia",
+            "Falkland Islands",
+            "South Pacific",
+            "Kimberley",
+            "Other remote destinations"
+        ],
+        best: [
+            "Travelers looking for a newer, purpose-built Seabourn expedition experience."
+        ]
+    }
 ];
 
-const oceanList = ["Mediterranean cruises", "Northern Europe", "Caribbean", "Alaska", "Japan", "Cultural voyages", "Longer ocean itineraries", "Relaxed luxury cruising"];
-const expeditionList = ["Antarctica", "Arctic", "Northwest Passage", "Kimberley", "South Pacific", "Remote islands", "Wildlife encounters", "Zodiac exploration", "Kayaking", "Expedition activities"];
 
 const ventureVsPursuit = [
     { label: "Ship type", venture: "Expedition", pursuit: "Expedition" },
@@ -213,11 +363,94 @@ const ventureVsPursuit = [
     { label: "Best for", venture: "Expedition pioneers", pursuit: "Newer expedition experience" },
 ];
 
-const vsRows = [
-    { name: "Seabourn Encore vs Seabourn Ovation", text: "Sister ships that share 600-guest capacity, oceanfront suites, private verandas and the same contemporary design lineage. If both offer similar itineraries, let sailing date, suite category, port schedule, price and embarkation port break the tie." },
-    { name: "Seabourn Quest vs Seabourn Encore", text: "More about ship size and style. Choose Quest for a more intimate, classic small-ship atmosphere; choose Encore for 600-guest capacity, a newer-generation design and more suite categories." },
-    { name: "Seabourn Quest vs Seabourn Ovation", text: "The same general decision applies: Quest suits travelers who prioritize classic Seabourn intimacy, while Ovation suits travelers who prefer a newer-generation ship with expanded facilities." },
-    { name: "Seabourn Venture vs Seabourn Pursuit", text: "Choose based primarily on itinerary rather than ship alone. Both share 24 Zodiacs, kayaks and a 19-person Expedition Team — for expedition cruising, destination, wildlife conditions, season and itinerary usually matter more than the small difference between the two ships." },
+const comparisonTabs = [
+    {
+        title: "Encore vs Ovation",
+        longTitle: "Seabourn Encore vs Seabourn Ovation",
+        intro: "Encore and Ovation are sister ships and are among the closest comparisons in the Seabourn fleet.",
+        bothOffer: [
+            "600 guests",
+            "Oceanfront suites",
+            "Private verandas",
+            "Contemporary design",
+            "Multiple dining venues",
+            "Spa and wellness",
+            "Fitness facilities",
+            "Seabourn Square",
+            "Luxury public spaces"
+        ],
+        extraInfo: "Seabourn specifically identifies Ovation as Encore's sister ship.",
+        whichBetterTitle: "Which is better?",
+        whichBetterIntro: "There is no universal winner. If both are offering similar itineraries, compare:",
+        compareItems: [
+            "Sailing date",
+            "Itinerary",
+            "Suite category",
+            "Port schedule",
+            "Price",
+            "Any current promotions",
+            "Your preferred embarkation port"
+        ],
+        verdict: "The itinerary should usually break the tie."
+    },
+    {
+        title: "Quest vs Encore",
+        longTitle: "Seabourn Quest vs Seabourn Encore",
+        intro: "This comparison is more about ship size and style.",
+        questPreferTitle: "Choose Quest if you prefer:",
+        questPrefer: [
+            "A more intimate atmosphere",
+            "Classic Seabourn design",
+            "Smaller guest capacity",
+            "Traditional small-ship feel"
+        ],
+        encorePreferTitle: "Choose Encore if you prefer:",
+        encorePrefer: [
+            "600-guest capacity",
+            "More modern design",
+            "Expanded common areas",
+            "More suite categories",
+            "A newer-generation ocean ship"
+        ],
+        extraInfo: "Encore represents the evolution of the earlier Seabourn design and adds an additional deck and expanded common areas."
+    },
+    {
+        title: "Quest vs Ovation",
+        longTitle: "Seabourn Quest vs Seabourn Ovation",
+        intro: "The same general decision applies.",
+        questSuitedTitle: "Quest",
+        questSuitedText: "Better suited to travelers who prioritize classic Seabourn intimacy.",
+        ovationSuitedTitle: "Ovation",
+        ovationSuitedText: "Better suited to travelers who prefer a newer-generation ship with expanded facilities.",
+        verdict: "The most important factor, however, remains the itinerary."
+    },
+    {
+        title: "Ocean vs Expedition",
+        longTitle: "Seabourn Ocean Ship vs Expedition Ship: Which Should You Choose?",
+        question: "Is the ship the destination, or is the destination the destination?",
+        oceanTitle: "If you want to spend your vacation enjoying:",
+        oceanItems: [
+            "Fine dining",
+            "Spa",
+            "Pool",
+            "Lounges",
+            "Bars",
+            "Relaxed sea days",
+            "Sophisticated onboard spaces"
+        ],
+        oceanVerdict: "an ocean ship such as Encore, Ovation or Quest may be the better fit.",
+        expeditionTitle: "If you want:",
+        expeditionItems: [
+            "Penguins",
+            "Polar landscapes",
+            "Zodiac excursions",
+            "Wildlife",
+            "Remote islands",
+            "Expedition guides",
+            "Active exploration"
+        ],
+        expeditionVerdict: "choose Venture or Pursuit."
+    }
 ];
 
 const destinationTabs = [
@@ -324,26 +557,26 @@ const relatedGuides = [
     { eyebrow: "Compare Cruise Lines", title: "Seabourn vs Silversea", desc: "See how two ultra-luxury small-ship lines compare on ships, suites and value.", to: "/seabourn-cruises/vs-silversea/" },
 ];
 
-/* ── FAQ Accordion (self-contained, new Ssf- prefix) ─────────────── */
+/* ── FAQ Accordion (custom Sbc-faq classes) ─────────────────────── */
 function ShipsFAQ() {
     const [open, setOpen] = useState(null);
     return (
-        <div className="Ssf-faq-list">
+        <div className="Sbc-faq-list">
             {faqData.map((item, i) => (
                 <div
                     key={i}
-                    className={`Ssf-faq-item${open === i ? " Ssf-open" : ""}`}
+                    className={`Sbc-faq-item${open === i ? " Sbc-open" : ""}`}
                     onClick={() => setOpen(open === i ? null : i)}
                 >
-                    <div className="Ssf-faq-q">
+                    <div className="Sbc-faq-q">
                         <span>{item.q}</span>
-                        <span className="Ssf-faq-icon">
+                        <span className="Sbc-faq-icon">
                             {open === i ? <Minus size={18} strokeWidth={1.5} /> : <Plus size={18} strokeWidth={1.5} />}
                         </span>
                     </div>
                     {open === i && (
-                        <div className="Ssf-faq-a">
-                            <div className="Ssf-faq-a-inner">{item.a}</div>
+                        <div className="Sbc-faq-a">
+                            <div className="Sbc-faq-a-inner">{item.a}</div>
                         </div>
                     )}
                 </div>
@@ -354,8 +587,10 @@ function ShipsFAQ() {
 
 /* ── Main Component ──────────────────────────────────────────────── */
 const SeabournShipsGuide = () => {
+    const [readMore, setReadMore] = useState(false);
     const [activeShipTab, setActiveShipTab] = useState(0);
     const [activeDestTab, setActiveDestTab] = useState(0);
+    const [activeCompareTab, setActiveCompareTab] = useState(0);
     const ActiveDestIcon = destinationTabs[activeDestTab].icon;
 
     return (
@@ -371,29 +606,43 @@ const SeabournShipsGuide = () => {
             </Helmet>
             <Nav />
 
-            {/* ── HERO (reuses Sbc- typography/section tokens) ─────────────── */}
-            <section className="Sbc-section Sbc-bg-dark" id="Sbc-ships-hero">
-                <div className="Sbc-container" style={{ textAlign: "center" }}>
-                    <span className="Sbc-eyebrow">The Complete Fleet Guide</span>
-                    <h1 className="Sbc-h1">Seabourn Ships <br /> Complete Fleet Guide</h1>
-                    <div className="Sbc-accent-line"></div>
-                    <p className="Sbc-intro" style={{ maxWidth: "760px", margin: "24px auto 0" }}>
-                        Choosing the right ship can be just as important as choosing the right
-                        itinerary. Seabourn Cruises is known for its intimate, yacht-like
-                        approach to luxury cruising, but the fleet is not identical — the
-                        current fleet includes five ships: Seabourn Quest, Seabourn Encore,
-                        Seabourn Ovation, Seabourn Venture and Seabourn Pursuit.
+            {/* ── HERO (custom Sbc-hero classes) ──────────────────────── */}
+            <section className="Sbc-hero-section">
+                <div className="Sbc-hero-overlay"></div>
+
+                <div className="Sbc-hero-content">
+                    <h1>Seabourn Ships <br /> Complete Fleet Guide</h1>
+                    <p>
+                        Choosing the right ship can be just as important as choosing the right itinerary.
                     </p>
-                    <p className="Sbc-intro" style={{ maxWidth: "760px", margin: "18px auto 0" }}>
-                        If you are planning a Mediterranean escape, you may prefer the
-                        atmosphere of Encore or Ovation. If your goal is Antarctica, the
-                        Arctic or the Kimberley, Venture or Pursuit are designed specifically
-                        for that style of exploration. This guide compares all five ships so
-                        you can decide which Seabourn ship is best for your travel style,
-                        destination and priorities.
-                    </p>
-                    <div className="Sbc-btn-row">
-                        <Link to="/contact" className="Sbc-btn Sbc-btn-light" style={{ textDecoration: "none" }}>
+                    {readMore && (
+                        <>
+                            <p>
+                                While Seabourn Cruises is known for its intimate, yacht-like approach to luxury cruising, the fleet is not identical. The current fleet includes five ships: Seabourn Quest, Seabourn Encore, Seabourn Ovation, Seabourn Venture and Seabourn Pursuit. The first three are ocean-going luxury ships, while Venture and Pursuit are purpose-built expedition vessels.
+                            </p>
+                            <p>
+                                That distinction matters.
+                            </p>
+                            <p>
+                                If you are planning a Mediterranean escape, you may prefer the atmosphere and amenities of Seabourn Encore or Seabourn Ovation. If your goal is Antarctica, the Arctic or the Kimberley, Seabourn Venture or Seabourn Pursuit are designed specifically for that style of exploration.
+                            </p>
+                            <p>
+                                This guide compares the five ships so you can understand which Seabourn ship is best for your travel style, destination and priorities.
+                            </p>
+                        </>
+                    )}
+
+                    <div className="Sbc-hero-readmore-wrapper">
+                        <button
+                            className="Sbc-hero-readmore-btn"
+                            onClick={() => setReadMore(!readMore)}
+                        >
+                            {readMore ? "Read Less" : "Read More"}
+                        </button>
+                    </div>
+
+                    <div className="rlc-page-cta-container" style={{ marginTop: "24px" }}>
+                        <Link to="/contact" className="rlc-page-cta-btn rlc-btn-light" style={{ textDecoration: "none" }}>
                             Start Planning Your Seabourn Voyage
                             <ArrowRight size={18} />
                         </Link>
@@ -507,121 +756,88 @@ const SeabournShipsGuide = () => {
                         </div>
                     </div>
 
-                    <div className="Sbc-ships-tabs-container">
-                        <div className="Sbc-ships-tabs-nav">
-                            {ships.map((ship, idx) => (
-                                <button
-                                    key={idx}
-                                    className={`Sbc-ship-tab-btn ${activeShipTab === idx ? "active" : ""}`}
-                                    onClick={() => setActiveShipTab(idx)}
-                                >
-                                    <span className="Sbc-tab-ship-name">{ship.name}</span>
-                                    <span className="Sbc-tab-ship-meta">{ship.meta}</span>
-                                </button>
-                            ))}
-                        </div>
+                    <div className="Sbc-fleet-tab-nav">
+                        {ships.map((ship, idx) => (
+                            <button
+                                key={idx}
+                                className={`Sbc-fleet-tab-btn ${activeShipTab === idx ? "active" : ""}`}
+                                onClick={() => setActiveShipTab(idx)}
+                            >
+                                <span className="Sbc-fleet-tab-name">{ship.name}</span>
+                                <span className="Sbc-fleet-tab-meta">{ship.meta}</span>
+                            </button>
+                        ))}
+                    </div>
 
-                        <div className="Sbc-ship-tab-content">
-                            <div className="Sbc-ship-tab-image-placeholder">
-                                <Ship size={40} className="Sbc-ship-tab-placeholder-icon" />
-                                <span className="Sbc-ship-tab-placeholder-text">{ships[activeShipTab].name} Image Placeholder</span>
-                            </div>
-                            <div className="Sbc-ship-tab-details">
-                                <span className="Sbc-ship-tab-meta-badge">{ships[activeShipTab].meta}</span>
-                                <h3 className="Sbc-ship-tab-title">{ships[activeShipTab].name}</h3>
-                                <p className="Sbc-ship-tab-desc">{ships[activeShipTab].desc}</p>
+                    <div className="Sbc-fleet-tab-panel">
+                        <div className="Sbc-fleet-tab-grid">
+                            <div className="Sbc-fleet-tab-left">
+                                <div>
+                                    <span className="Sbc-fleet-tab-badge">{ships[activeShipTab].meta}</span>
+                                    <h3 className="Sbc-fleet-tab-title">{ships[activeShipTab].name}</h3>
+                                    <div className="Sbc-fleet-tab-subtitle">{ships[activeShipTab].subtitle}</div>
+                                </div>
 
-                                <div className="Ssf-ship-glance-title">Seabourn {ships[activeShipTab].name.replace("Seabourn ", "")} at a Glance</div>
-                                <ul className="Ssf-ship-glance-list">
-                                    {ships[activeShipTab].glance.map((item, j) => (
-                                        <li key={j}>
-                                            <Check size={15} strokeWidth={2.5} />
-                                            <span>{item}</span>
-                                        </li>
+                                <div className="Sbc-fleet-tab-desc">
+                                    {ships[activeShipTab].desc.map((paragraph, pIdx) => (
+                                        <p key={pIdx}>{paragraph}</p>
                                     ))}
-                                </ul>
+                                </div>
 
-                                <div className="Sbc-ship-tab-best-title">Best For</div>
-                                <ul className="Sbc-ship-tab-tags">
-                                    {ships[activeShipTab].best.map((tag, j) => (
-                                        <li key={j}>{tag}</li>
-                                    ))}
-                                </ul>
+                                {ships[activeShipTab].different && (
+                                    <div className="Sbc-fleet-tab-diff-box">
+                                        <div className="Sbc-fleet-tab-diff-title">{ships[activeShipTab].differentTitle}</div>
+                                        {ships[activeShipTab].different.map((p, dIdx) => (
+                                            <p key={dIdx} className="Sbc-fleet-tab-diff-text">{p}</p>
+                                        ))}
+                                    </div>
+                                )}
+
+                                {ships[activeShipTab].destinations && (
+                                    <div className="Sbc-fleet-tab-dest-box">
+                                        <div className="Sbc-fleet-tab-dest-title">{ships[activeShipTab].destinationsTitle}</div>
+                                        <ul className="Sbc-fleet-tab-dest-list">
+                                            {ships[activeShipTab].destinations.map((dest, dIdx) => (
+                                                <li key={dIdx}>{dest}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                <div className="Sbc-fleet-tab-best-box">
+                                    <div className="Sbc-fleet-tab-best-title">Best for:</div>
+                                    <ul className="Sbc-fleet-tab-best-list">
+                                        {ships[activeShipTab].best.map((item, bIdx) => (
+                                            <li key={bIdx}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="Sbc-fleet-tab-right">
+                                <div className="Sbc-fleet-tab-image">
+                                    <Ship size={32} className="Sbc-fleet-tab-image-icon" />
+                                    <span className="Sbc-fleet-tab-image-text">{ships[activeShipTab].name} Image Placeholder</span>
+                                </div>
+
+                                <div className="Sbc-fleet-tab-glance-box">
+                                    <div className="Sbc-fleet-tab-glance-title">{ships[activeShipTab].glanceTitle}</div>
+                                    <ul className="Sbc-fleet-tab-glance-list">
+                                        {ships[activeShipTab].glance.map((item, gIdx) => (
+                                            <li key={gIdx}>
+                                                <Check size={14} strokeWidth={2.5} />
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            {/* ── CTA 1 (Related Content — Suites Guide) ───────────────────── */}
-            <section className="Sbc-cta-section Sbc-cta-dark">
-                <div className="Sbc-container">
-                    <span className="Sbc-cta-eyebrow">Related Guide</span>
-                    <h3 className="Sbc-cta-title">See Suite Categories Across the Fleet</h3>
-                    <p className="Sbc-cta-text">
-                        From Quest's classic staterooms to Encore's 13 suite categories,
-                        explore the full Seabourn Suites Guide to compare layouts and space.
-                    </p>
-                    <Link to="/seabourn-cruises/suites/" className="Sbc-cta-button">
-                        Explore the Suites Guide
-                        <ArrowRight size={16} />
-                    </Link>
-                </div>
-            </section>
-
-            {/* ── OCEAN SHIPS VS EXPEDITION SHIPS (reuses Sbc-compare-grid) ─── */}
-            <section className="Sbc-section Sbc-bg-soft" id="Sbc-ocean-vs-expedition-ships">
-                <div className="Sbc-container">
-                    <div className="Sbc-section-header">
-                        <span className="Sbc-eyebrow">The Most Important Distinction</span>
-                        <h2 className="Sbc-h2">Seabourn Ocean Ships vs Expedition Ships</h2>
-                        <div className="Sbc-accent-line"></div>
-                        <p className="Sbc-intro">
-                            Their focus and hardware are built around very different kinds of
-                            journeys — one designed for relaxed luxury cruising, the other for
-                            remote-area access.
-                        </p>
-                    </div>
-
-                    <div className="Sbc-compare-grid">
-                        <div className="Sbc-compare-card">
-                            <div className="Sbc-compare-placeholder">
-                                <Ship size={32} className="Sbc-compare-placeholder-icon" />
-                                <span className="Sbc-compare-placeholder-text">Quest, Encore & Ovation Image Placeholder</span>
-                            </div>
-                            <h3 className="Sbc-compare-heading">Ocean Ships — Quest, Encore & Ovation</h3>
-                            <p className="Sbc-compare-sub">Designed primarily for:</p>
-                            <ul className="Sbc-compare-list">
-                                {oceanList.map((item, i) => (
-                                    <li key={i}><Check size={16} strokeWidth={2} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div className="Sbc-compare-card Sbc-compare-alt">
-                            <div className="Sbc-compare-placeholder">
-                                <Compass size={32} className="Sbc-compare-placeholder-icon" />
-                                <span className="Sbc-compare-placeholder-text">Venture & Pursuit Image Placeholder</span>
-                            </div>
-                            <h3 className="Sbc-compare-heading">Expedition Ships — Venture & Pursuit</h3>
-                            <p className="Sbc-compare-sub">Designed around:</p>
-                            <ul className="Sbc-compare-list">
-                                {expeditionList.map((item, i) => (
-                                    <li key={i}><Check size={16} strokeWidth={2} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="Sbc-compare-key">
-                        <p><strong>Ask yourself:</strong> "Is the ship the destination, or is the destination the destination?"</p>
-                        <p>Their smaller size and expedition hardware let Venture and Pursuit access remote areas that larger cruise ships cannot easily reach.</p>
-                    </div>
-                </div>
-            </section>
-
             {/* ── VENTURE VS PURSUIT TABLE (new Ssf-table) ─────────────────── */}
-            <section className="Sbc-section Sbc-bg-white" id="Sbc-venture-vs-pursuit">
+            <section className="Sbc-section Sbc-bg-soft" id="Sbc-venture-vs-pursuit">
                 <div className="Sbc-container">
                     <div className="Sbc-section-header">
                         <span className="Sbc-eyebrow">Expedition Twins</span>
@@ -662,7 +878,23 @@ const SeabournShipsGuide = () => {
                 </div>
             </section>
 
-            {/* ── ENCORE VS OVATION / QUEST COMPARISONS (reuses Sbc-vs-list) ── */}
+            {/* ── CTA 1 (Related Content — Suites Guide) ───────────────────── */}
+            <section className="Sbc-cta-section Sbc-cta-dark">
+                <div className="Sbc-container">
+                    <span className="Sbc-cta-eyebrow">Related Guide</span>
+                    <h3 className="Sbc-cta-title">See Suite Categories Across the Fleet</h3>
+                    <p className="Sbc-cta-text">
+                        From Quest's classic staterooms to Encore's 13 suite categories,
+                        explore the full Seabourn Suites Guide to compare layouts and space.
+                    </p>
+                    <Link to="/seabourn-cruises/suites/" className="Sbc-cta-button">
+                        Explore the Suites Guide
+                        <ArrowRight size={16} />
+                    </Link>
+                </div>
+            </section>
+
+            {/* ── SHIP VS SHIP TABBED COMPARISONS ───────────────────────────── */}
             <section className="Sbc-section Sbc-bg-soft" id="Sbc-ship-vs-ship">
                 <div className="Sbc-container">
                     <div className="Sbc-section-header">
@@ -670,70 +902,140 @@ const SeabournShipsGuide = () => {
                         <h2 className="Sbc-h2">Ship vs Ship Comparisons</h2>
                         <div className="Sbc-accent-line"></div>
                         <p className="Sbc-intro">
-                            The itinerary should usually break the tie, but here's how the
-                            closest ships in the fleet compare.
+                            Compare closest matches in the Seabourn fleet to find the perfect fit for your voyage.
                         </p>
                     </div>
 
-                    <div className="Sbc-vs-list">
-                        {vsRows.map((row, i) => (
-                            <div className="Sbc-vs-row" key={i}>
-                                <div className="Sbc-vs-name">{row.name}</div>
-                                <p className="Sbc-vs-desc">{row.text}</p>
-                            </div>
+                    <div className="Sbc-compare-tab-nav">
+                        {comparisonTabs.map((tab, idx) => (
+                            <button
+                                key={idx}
+                                className={`Sbc-compare-tab-btn ${activeCompareTab === idx ? "active" : ""}`}
+                                onClick={() => setActiveCompareTab(idx)}
+                            >
+                                {tab.title}
+                            </button>
                         ))}
                     </div>
-                </div>
-            </section>
 
-            {/* ── OCEAN OR EXPEDITION: WHICH SHOULD YOU CHOOSE (Sbc-atmos-grid) */}
-            <section className="Sbc-section Sbc-bg-white" id="Sbc-ocean-or-expedition-choice">
-                <div className="Sbc-container">
-                    <div className="Sbc-section-header">
-                        <span className="Sbc-eyebrow">Decision Point</span>
-                        <h2 className="Sbc-h2">Ocean Ship or Expedition Ship?</h2>
-                        <div className="Sbc-accent-line"></div>
+                    <div className="Sbc-compare-tab-panel">
+                        <h3 className="Sbc-compare-panel-title">{comparisonTabs[activeCompareTab].longTitle}</h3>
+                        
+                        {activeCompareTab === 0 && (
+                            <div className="Sbc-compare-grid-2col">
+                                <div>
+                                    <p className="Sbc-compare-panel-intro">
+                                        {comparisonTabs[0].intro}
+                                    </p>
+                                    <div className="Sbc-compare-list-box">
+                                        <div className="Sbc-compare-list-box-title">Both offer:</div>
+                                        <ul className="Sbc-compare-panel-list">
+                                            {comparisonTabs[0].bothOffer.map((item, i) => (
+                                                <li key={i}><Check size={16} strokeWidth={2} /> <span>{item}</span></li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <p className="Sbc-compare-extra-text">
+                                        {comparisonTabs[0].extraInfo}
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="Sbc-compare-list-box">
+                                        <div className="Sbc-compare-list-box-title">{comparisonTabs[0].whichBetterTitle}</div>
+                                        <p className="Sbc-compare-suited-text" style={{ marginBottom: "16px" }}>
+                                            {comparisonTabs[0].whichBetterIntro}
+                                        </p>
+                                        <ul className="Sbc-compare-panel-list">
+                                            {comparisonTabs[0].compareItems.map((item, i) => (
+                                                <li key={i}><Check size={16} strokeWidth={2} /> <span>{item}</span></li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="Sbc-compare-verdict-box">
+                                        <strong>Verdict:</strong> {comparisonTabs[0].verdict}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
+                        {activeCompareTab === 1 && (
+                            <div className="Sbc-compare-grid-2col">
+                                <div className="Sbc-compare-prefer-col">
+                                    <div className="Sbc-compare-prefer-title">{comparisonTabs[1].questPreferTitle}</div>
+                                    <ul className="Sbc-compare-prefer-list">
+                                        {comparisonTabs[1].questPrefer.map((item, i) => (
+                                            <li key={i}><Check size={16} strokeWidth={2} /> <span>{item}</span></li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="Sbc-compare-prefer-col">
+                                    <div className="Sbc-compare-prefer-title">{comparisonTabs[1].encorePreferTitle}</div>
+                                    <ul className="Sbc-compare-prefer-list">
+                                        {comparisonTabs[1].encorePrefer.map((item, i) => (
+                                            <li key={i}><Check size={16} strokeWidth={2} /> <span>{item}</span></li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="Sbc-compare-verdict-box">
+                                    {comparisonTabs[1].extraInfo}
+                                </div>
+                            </div>
+                        )}
+
+                        {activeCompareTab === 2 && (
+                            <div className="Sbc-compare-grid-2col">
+                                <div className="Sbc-compare-suited-card">
+                                    <div className="Sbc-compare-suited-title">{comparisonTabs[2].questSuitedTitle}</div>
+                                    <p className="Sbc-compare-suited-text">{comparisonTabs[2].questSuitedText}</p>
+                                </div>
+                                <div className="Sbc-compare-suited-card">
+                                    <div className="Sbc-compare-suited-title">{comparisonTabs[2].ovationSuitedTitle}</div>
+                                    <p className="Sbc-compare-suited-text">{comparisonTabs[2].ovationSuitedText}</p>
+                                </div>
+                                <div className="Sbc-compare-verdict-box">
+                                    <strong>Verdict:</strong> {comparisonTabs[2].verdict}
+                                </div>
+                            </div>
+                        )}
+
+                        {activeCompareTab === 3 && (
+                            <div className="Sbc-compare-grid-2col">
+                                <div className="Sbc-compare-quote-box">
+                                    <div className="Sbc-compare-quote-title">Ask yourself one question:</div>
+                                    <div className="Sbc-compare-quote-text">"{comparisonTabs[3].question}"</div>
+                                </div>
+                                <div className="Sbc-compare-prefer-col">
+                                    <div className="Sbc-compare-prefer-title">{comparisonTabs[3].oceanTitle}</div>
+                                    <ul className="Sbc-compare-prefer-list" style={{ marginBottom: "16px" }}>
+                                        {comparisonTabs[3].oceanItems.map((item, i) => (
+                                            <li key={i}><Check size={16} strokeWidth={2} /> <span>{item}</span></li>
+                                        ))}
+                                    </ul>
+                                    <div className="Sbc-compare-verdict-box" style={{ marginTop: "auto" }}>
+                                        {comparisonTabs[3].oceanVerdict}
+                                    </div>
+                                </div>
+                                <div className="Sbc-compare-prefer-col">
+                                    <div className="Sbc-compare-prefer-title">{comparisonTabs[3].expeditionTitle}</div>
+                                    <ul className="Sbc-compare-prefer-list" style={{ marginBottom: "16px" }}>
+                                        {comparisonTabs[3].expeditionItems.map((item, i) => (
+                                            <li key={i}><Check size={16} strokeWidth={2} /> <span>{item}</span></li>
+                                        ))}
+                                    </ul>
+                                    <div className="Sbc-compare-verdict-box" style={{ marginTop: "auto" }}>
+                                        {comparisonTabs[3].expeditionVerdict}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
-
-                    <div className="Sbc-atmos-grid">
-                        <div className="Sbc-atmos-card">
-                            <div className="Sbc-atmos-card-title">Choose an Ocean Ship — Encore, Ovation or Quest — If You Want</div>
-                            <ul>
-                                {["Fine dining", "Spa", "Pool", "Lounges & bars", "Relaxed sea days", "Sophisticated onboard spaces"].map((item, i) => (
-                                    <li key={i}><Check size={16} strokeWidth={2} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="Sbc-atmos-card">
-                            <div className="Sbc-atmos-card-title">Choose Venture or Pursuit If You Want</div>
-                            <ul>
-                                {["Penguins", "Polar landscapes", "Zodiac excursions", "Wildlife", "Remote islands", "Expedition guides", "Active exploration"].map((item, i) => (
-                                    <li key={i}><Check size={16} strokeWidth={2} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </section>
 
-            {/* ── CTA 2 (Related Content — Expedition Guide) ───────────────── */}
-            <section className="Sbc-cta-section Sbc-cta-light">
-                <div className="Sbc-container">
-                    <span className="Sbc-cta-eyebrow">Related Guide</span>
-                    <h3 className="Sbc-cta-title">Go Further With Seabourn Expedition Cruises</h3>
-                    <p className="Sbc-cta-text">
-                        See how Venture and Pursuit bring Seabourn's luxury service to
-                        Antarctica, the Arctic, the Kimberley and the South Pacific.
-                    </p>
-                    <Link to="/seabourn-cruises/expedition/" className="Sbc-cta-button">
-                        Read the Expedition Guide
-                        <ArrowRight size={16} />
-                    </Link>
-                </div>
-            </section>
+
 
             {/* ── BEST SHIP BY DESTINATION (reuses Sbc-dest-tabs pattern) ──── */}
-            <section className="Sbc-section Sbc-bg-soft" id="Sbc-best-by-destination">
+            <section className="Sbc-section Sbc-bg-white" id="Sbc-best-by-destination">
                 <div className="Sbc-container">
                     <div className="Sbc-section-header">
                         <span className="Sbc-eyebrow">Best Ship, By Destination</span>
@@ -796,24 +1098,9 @@ const SeabournShipsGuide = () => {
                 </div>
             </section>
 
-            {/* ── CTA 3 (Related Content — Destinations Guide) ─────────────── */}
-            <section className="Sbc-cta-section Sbc-cta-dark">
-                <div className="Sbc-container">
-                    <span className="Sbc-cta-eyebrow">Related Guide</span>
-                    <h3 className="Sbc-cta-title">Explore Every Region Seabourn Sails</h3>
-                    <p className="Sbc-cta-text">
-                        From the Mediterranean to Antarctica, browse the full Seabourn
-                        Destinations guide to find your next itinerary.
-                    </p>
-                    <Link to="/seabourn-cruises/destinations/" className="Sbc-cta-button">
-                        View Seabourn Destinations
-                        <ArrowRight size={16} />
-                    </Link>
-                </div>
-            </section>
 
             {/* ── BEST SUITES (reuses Sbc-qa-split pattern) ────────────────── */}
-            <section className="Sbc-section Sbc-bg-white" id="Sbc-ships-best-suites">
+            <section className="Sbc-section Sbc-bg-soft" id="Sbc-ships-best-suites">
                 <div className="Sbc-container">
                     <div className="Sbc-qa-split">
                         <div className="Sbc-qa-image-container">
@@ -855,7 +1142,7 @@ const SeabournShipsGuide = () => {
             </section>
 
             {/* ── DINING ACROSS THE FLEET (reuses Sbc-dining-grid) ─────────── */}
-            <section className="Sbc-section Sbc-bg-soft" id="Sbc-ships-dining">
+            <section className="Sbc-section Sbc-bg-white" id="Sbc-ships-dining">
                 <div className="Sbc-container">
                     <div className="Sbc-section-header">
                         <span className="Sbc-eyebrow">Culinary Program</span>
@@ -888,19 +1175,109 @@ const SeabournShipsGuide = () => {
                 </div>
             </section>
 
-            {/* ── CTA 4 (Related Content — Dining Guide) ────────────────────── */}
-            <section className="Sbc-cta-section Sbc-cta-light">
+            {/* ── CTA 2 (Related Content — Expedition Guide) ───────────────── */}
+            <section className="Sbc-cta-section Sbc-cta-dark">
                 <div className="Sbc-container">
                     <span className="Sbc-cta-eyebrow">Related Guide</span>
-                    <h3 className="Sbc-cta-title">See the Full Seabourn Dining Guide</h3>
+                    <h3 className="Sbc-cta-title">Go Further With Seabourn Expedition Cruises</h3>
                     <p className="Sbc-cta-text">
-                        Compare Solis, The Restaurant, Sushi, The Colonnade and in-suite
-                        dining across every ship in the fleet.
+                        See how Venture and Pursuit bring Seabourn's luxury service to
+                        Antarctica, the Arctic, the Kimberley and the South Pacific.
                     </p>
-                    <Link to="/seabourn-cruises/dining/" className="Sbc-cta-button">
-                        Explore Seabourn Dining
+                    <Link to="/seabourn-cruises/expedition/" className="Sbc-cta-button">
+                        Read the Expedition Guide
                         <ArrowRight size={16} />
                     </Link>
+                </div>
+            </section>
+
+            {/* ── ONBOARD AMENITIES ────────────────────────────────────────── */}
+            <section className="Sbc-section Sbc-bg-soft" id="Sbc-ships-amenities">
+                <div className="Sbc-container">
+                    <div className="Sbc-section-header">
+                        <span className="Sbc-eyebrow">Onboard Features</span>
+                        <h2 className="Sbc-h2">Seabourn Ships and Onboard Amenities</h2>
+                        <div className="Sbc-accent-line"></div>
+                        <p className="Sbc-intro">
+                            From signature lounges and specialty dining to expedition hubs and polar gear lockers, here is what you will find onboard each ship in the fleet.
+                        </p>
+                    </div>
+
+                    <div className="Sbc-amenities-category-title">Ocean Fleet — Classic & Modern Luxury</div>
+                    <div className="Sbc-amenities-grid Sbc-cols-3">
+                        <div className="Sbc-amenities-card">
+                            <h3 className="Sbc-amenities-card-title">Seabourn Quest</h3>
+                            <p className="Sbc-amenities-card-intro">Best-known onboard features include:</p>
+                            <ul className="Sbc-amenities-list">
+                                {["The Restaurant", "The Patio", "The Club", "Sky Bar", "Casino", "Spa", "Fitness Center", "Coffee Bar", "Seabourn Conversations"].map((item, idx) => (
+                                    <li key={idx}>
+                                        <Check size={14} strokeWidth={2.5} />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="Sbc-amenities-card">
+                            <h3 className="Sbc-amenities-card-title">Seabourn Encore</h3>
+                            <p className="Sbc-amenities-card-intro">Includes:</p>
+                            <ul className="Sbc-amenities-list">
+                                {["Solis", "The Restaurant", "Sushi", "Seabourn Square", "Observation Bar", "The Retreat", "Spa", "Pool", "Earth & Ocean", "Fitness Center", "Sky Bar"].map((item, idx) => (
+                                    <li key={idx}>
+                                        <Check size={14} strokeWidth={2.5} />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="Sbc-amenities-card Sbc-amenities-sister">
+                            <h3 className="Sbc-amenities-card-title">Seabourn Ovation</h3>
+                            <div className="Sbc-amenities-sister-box">
+                                <p className="Sbc-amenities-sister-text">
+                                    Shares much of Encore's design philosophy and onboard offering.
+                                </p>
+                            </div>
+                            <p className="Sbc-amenities-card-intro" style={{ marginTop: "16px" }}>Includes same venues:</p>
+                            <ul className="Sbc-amenities-list Sbc-dimmed">
+                                {["Solis", "The Restaurant", "Sushi", "Seabourn Square", "Observation Bar", "The Retreat", "Spa", "Pool", "Earth & Ocean", "Fitness Center", "Sky Bar"].map((item, idx) => (
+                                    <li key={idx}>
+                                        <Check size={14} strokeWidth={2.5} />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="Sbc-amenities-category-title" style={{ marginTop: "50px" }}>Expedition Fleet — Ultra-Luxury Adventure</div>
+                    <div className="Sbc-amenities-grid Sbc-cols-2">
+                        <div className="Sbc-amenities-card Sbc-expedition-accent">
+                            <h3 className="Sbc-amenities-card-title">Seabourn Venture</h3>
+                            <p className="Sbc-amenities-card-intro">Focuses more heavily on:</p>
+                            <ul className="Sbc-amenities-list">
+                                {["Expedition Lounge", "Discovery Center", "Expedition operations", "Zodiacs", "Kayaks", "Expedition Team"].map((item, idx) => (
+                                    <li key={idx}>
+                                        <Check size={14} strokeWidth={2.5} />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="Sbc-amenities-card Sbc-expedition-accent">
+                            <h3 className="Sbc-amenities-card-title">Seabourn Pursuit</h3>
+                            <p className="Sbc-amenities-card-intro">Combines:</p>
+                            <ul className="Sbc-amenities-list">
+                                {["Expedition Lounge", "Discovery Center", "Spa", "The Restaurant", "Seabourn Square", "Zodiacs", "Kayaks", "Expedition Team"].map((item, idx) => (
+                                    <li key={idx}>
+                                        <Check size={14} strokeWidth={2.5} />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1014,6 +1391,79 @@ const SeabournShipsGuide = () => {
                 </div>
             </section>
 
+            {/* ── ANGELA HUGHES AUTHORITY BOX ────────────────────────────── */}
+            <section className="Sbc-expert-section" id="Asc-expert-insight">
+                <div className="Sbc-container">
+                    <div className="Sbc-expert-heading">
+                        <span className="Sbc-expert-eyebrow">Luxury Travel Expertise</span>
+                        <h2 className="Sbc-expert-title">Angela Hughes Luxury Authority</h2>
+                        <div className="Sbc-expert-divider"></div>
+                    </div>
+
+                    <div className="Sbc-expert-grid">
+                        <div className="Sbc-expert-image-col">
+                            <div className="Sbc-expert-portrait-wrap">
+                                <img
+                                    src={AboutImage}
+                                    alt="Angela Hughes – Luxury Travel Expert"
+                                    className="Sbc-expert-portrait"
+                                />
+                                <div className="Sbc-expert-portrait-badge">
+                                    <Star size={14} />
+                                    <span>40+ Years Experience</span>
+                                </div>
+                            </div>
+
+                            <div className="Sbc-expert-name-card">
+                                <h3 className="Sbc-expert-name">Angela Hughes</h3>
+                                <p className="Sbc-expert-role">CEO of Trips &amp; Ships Luxury Travel</p>
+                                <div className="Sbc-expert-name-divider"></div>
+                                <p className="Sbc-expert-countries">
+                                    <MapPin size={14} />
+                                    Traveled to more than 121 countries
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="Sbc-expert-content-col">
+                            <div className="Sbc-expert-credentials-box">
+                                <h4 className="Sbc-expert-credentials-title">
+                                    <Award size={16} />
+                                    Angela Hughes Authority Box
+                                </h4>
+
+                                <div className="Sbc-expert-credentials-grid">
+                                    {[
+                                        { icon: <Award size={16} />, label: "CEO of Trips & Ships Luxury Travel" },
+                                        { icon: <Star size={16} />, label: "Over 40 years in the travel industry" },
+                                        { icon: <MapPin size={16} />, label: "Traveled to more than 121 countries" },
+                                        { icon: <Award size={16} />, label: "Founder of Luxury Travel University" },
+                                        { icon: <Users size={16} />, label: "Global luxury travel speaker and trainer" },
+                                        { icon: <Users size={16} />, label: "Weekly industry columnist" },
+                                        { icon: <Users size={16} />, label: "Travel Leaders Network Advisory Board member" },
+                                        { icon: <Award size={16} />, label: "2024 Luxury Travel Influencer of the Year" },
+                                        {
+                                            icon: <Star size={16} />,
+                                            label: "Named one of the Most Influential Women in Travel in 2026 by TravelPulse",
+                                        },
+                                        { icon: <Award size={16} />, label: "Featured in major travel publications globally" },
+                                        {
+                                            icon: <Ship size={16} />,
+                                            label: "Expert in luxury cruises, safaris, expeditions, river cruising, and premium travel",
+                                        },
+                                    ].map((item, i) => (
+                                        <div className="Sbc-expert-list-item" key={i}>
+                                            <span className="Sbc-expert-list-icon">{item.icon}</span>
+                                            <span className="Sbc-expert-list-label">{item.label}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* ── FAQ (self-contained Ssf-faq accordion) ────────────────────── */}
             <section className="Sbc-section Sbc-bg-soft" id="Sbc-ships-faq">
                 <div className="Sbc-container">
@@ -1023,6 +1473,22 @@ const SeabournShipsGuide = () => {
                         <div className="Sbc-accent-line"></div>
                     </div>
                     <ShipsFAQ />
+                </div>
+            </section>
+
+            {/* ── CTA 3 (Related Content — Destinations Guide) ─────────────── */}
+            <section className="Sbc-cta-section Sbc-cta-dark">
+                <div className="Sbc-container">
+                    <span className="Sbc-cta-eyebrow">Related Guide</span>
+                    <h3 className="Sbc-cta-title">Explore Every Region Seabourn Sails</h3>
+                    <p className="Sbc-cta-text">
+                        From the Mediterranean to Antarctica, browse the full Seabourn
+                        Destinations guide to find your next itinerary.
+                    </p>
+                    <Link to="/seabourn-cruises/destinations/" className="Sbc-cta-button">
+                        View Seabourn Destinations
+                        <ArrowRight size={16} />
+                    </Link>
                 </div>
             </section>
 

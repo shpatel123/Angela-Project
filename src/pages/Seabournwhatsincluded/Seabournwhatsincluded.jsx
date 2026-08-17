@@ -27,8 +27,13 @@ import {
     ShoppingBag,
     Waves,
     AlertCircle,
+    Star,
+    Award,
+    Users,
+    Ship,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
 import { Helmet } from "react-helmet-async";
 import "../SeabournCruises/SeabournCruises.css";
@@ -171,7 +176,7 @@ const schemaData = {
     ],
 };
 
-/* ── FAQ Accordion (reuses existing Asc-faq classes) ─────────────── */
+/* ── FAQ Accordion (custom Sbc-faq classes) ─────────────────────── */
 function FAQ() {
     const [open, setOpen] = useState(null);
 
@@ -197,22 +202,22 @@ function FAQ() {
     ];
 
     return (
-        <div className="Asc-faq-list">
+        <div className="Sbc-faq-list">
             {faqData.map((item, i) => (
                 <div
                     key={i}
-                    className={`Asc-faq-item${open === i ? " Asc-open" : ""}`}
+                    className={`Sbc-faq-item${open === i ? " Sbc-open" : ""}`}
                     onClick={() => setOpen(open === i ? null : i)}
                 >
-                    <div className="Asc-faq-q">
+                    <div className="Sbc-faq-q">
                         <span>{item.q}</span>
-                        <span className="Asc-faq-icon">
+                        <span className="Sbc-faq-icon">
                             {open === i ? <Minus size={18} strokeWidth={1.5} /> : <Plus size={18} strokeWidth={1.5} />}
                         </span>
                     </div>
                     {open === i && (
-                        <div className="Asc-faq-a">
-                            <div className="Asc-faq-a-inner">{item.a}</div>
+                        <div className="Sbc-faq-a">
+                            <div className="Sbc-faq-a-inner">{item.a}</div>
                         </div>
                     )}
                 </div>
@@ -334,38 +339,32 @@ const SeabournWhatsIncluded = () => {
             <Nav />
 
             {/* ── HERO ──────────────────────────────────────────────────────── */}
-            <section className="Scenic_hero_section">
-                <div className="Scenic_hero_overlay"></div>
+            <section className="Sbc-hero-section">
+                <div className="Sbc-hero-overlay"></div>
 
-                <div className="Scenic_hero_content">
-                    <span className="Wic-hero-eyebrow" style={{ display: "inline-block", fontFamily: "var(--font-body)", fontSize: "12px", letterSpacing: "0.22em", textTransform: "uppercase", color: "rgba(255, 255, 255, 0.65)", fontWeight: "600", marginBottom: "18px" }}>The Complete Inclusions Guide</span>
+                <div className="Sbc-hero-content">
                     <h1>What Is Included on a Seabourn Cruise?</h1>
                     <p>
-                        One of the biggest advantages of booking a Seabourn cruise is
-                        the breadth of the included experience. Seabourn is designed
-                        around an ultra-luxury model where many expenses that can
-                        become add-ons on other cruise lines are already part of the
-                        cruise experience.
+                        One of the biggest advantages of booking a Seabourn cruise is the breadth of the included experience.
                     </p>
 
                     {readMore && (
-                        <p>
-                            Dining, premium spirits and wines, Wi-Fi, gratuities,
-                            entertainment, and a number of onboard experiences are
-                            included, while certain excursions, spa treatments,
-                            premium services and other personal expenses may cost
-                            extra. For travelers comparing Seabourn with other luxury
-                            cruise lines, understanding exactly what is included — and
-                            what is not — is essential for comparing the true value of
-                            the fare. This guide breaks down Seabourn cruise
-                            inclusions by category so you can understand what you are
-                            paying for before you book.
-                        </p>
+                        <>
+                            <p>
+                                Seabourn is designed around an ultra-luxury model where many expenses that can become add-ons on other cruise lines are already part of the cruise experience. Dining, premium spirits and wines, Wi-Fi, gratuities, entertainment, and a number of onboard experiences are included, while certain excursions, spa treatments, premium services and other personal expenses may cost extra.
+                            </p>
+                            <p>
+                                For travelers comparing Seabourn with other luxury cruise lines, understanding exactly what is included—and what is not—is essential for comparing the true value of the fare.
+                            </p>
+                            <p>
+                                This guide breaks down Seabourn cruise inclusions by category so you can understand what you are paying for before you book.
+                            </p>
+                        </>
                     )}
 
-                    <div className="Scenic_readmore_wrapper">
+                    <div className="Sbc-hero-readmore-wrapper">
                         <button
-                            className="Scenic_readmore_btn"
+                            className="Sbc-hero-readmore-btn"
                             onClick={() => setReadMore(!readMore)}
                         >
                             {readMore ? "Read Less" : "Read More"}
@@ -1442,13 +1441,86 @@ const SeabournWhatsIncluded = () => {
                 </div>
             </section>
 
+            {/* ── ANGELA HUGHES AUTHORITY BOX ────────────────────────────── */}
+            <section className="Sbc-expert-section" id="Asc-expert-insight">
+                <div className="Sbc-container">
+                    <div className="Sbc-expert-heading">
+                        <span className="Sbc-expert-eyebrow">Luxury Travel Expertise</span>
+                        <h2 className="Sbc-expert-title">Angela Hughes Luxury Authority</h2>
+                        <div className="Sbc-expert-divider"></div>
+                    </div>
+
+                    <div className="Sbc-expert-grid">
+                        <div className="Sbc-expert-image-col">
+                            <div className="Sbc-expert-portrait-wrap">
+                                <img
+                                    src={AboutImage}
+                                    alt="Angela Hughes – Luxury Travel Expert"
+                                    className="Sbc-expert-portrait"
+                                />
+                                <div className="Sbc-expert-portrait-badge">
+                                    <Star size={14} />
+                                    <span>40+ Years Experience</span>
+                                </div>
+                            </div>
+
+                            <div className="Sbc-expert-name-card">
+                                <h3 className="Sbc-expert-name">Angela Hughes</h3>
+                                <p className="Sbc-expert-role">CEO of Trips &amp; Ships Luxury Travel</p>
+                                <div className="Sbc-expert-name-divider"></div>
+                                <p className="Sbc-expert-countries">
+                                    <MapPin size={14} />
+                                    Traveled to more than 121 countries
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="Sbc-expert-content-col">
+                            <div className="Sbc-expert-credentials-box">
+                                <h4 className="Sbc-expert-credentials-title">
+                                    <Award size={16} />
+                                    Angela Hughes Authority Box
+                                </h4>
+
+                                <div className="Sbc-expert-credentials-grid">
+                                    {[
+                                        { icon: <Award size={16} />, label: "CEO of Trips & Ships Luxury Travel" },
+                                        { icon: <Star size={16} />, label: "Over 40 years in the travel industry" },
+                                        { icon: <MapPin size={16} />, label: "Traveled to more than 121 countries" },
+                                        { icon: <Award size={16} />, label: "Founder of Luxury Travel University" },
+                                        { icon: <Users size={16} />, label: "Global luxury travel speaker and trainer" },
+                                        { icon: <Users size={16} />, label: "Weekly industry columnist" },
+                                        { icon: <Users size={16} />, label: "Travel Leaders Network Advisory Board member" },
+                                        { icon: <Award size={16} />, label: "2024 Luxury Travel Influencer of the Year" },
+                                        {
+                                            icon: <Star size={16} />,
+                                            label: "Named one of the Most Influential Women in Travel in 2026 by TravelPulse",
+                                        },
+                                        { icon: <Award size={16} />, label: "Featured in major travel publications globally" },
+                                        {
+                                            icon: <Ship size={16} />,
+                                            label: "Expert in luxury cruises, safaris, expeditions, river cruising, and premium travel",
+                                        },
+                                    ].map((item, i) => (
+                                        <div className="Sbc-expert-list-item" key={i}>
+                                            <span className="Sbc-expert-list-icon">{item.icon}</span>
+                                            <span className="Sbc-expert-list-label">{item.label}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* ── FAQ ───────────────────────────────────────────────────────── */}
-            <section className="Asc-section Asc-bg-white" id="Asc-faq">
-                <div className="Asc-container">
-                    <div className="Asc-section-header">
-                        <h2 className="Asc-h2">Frequently Asked Questions</h2>
-                        <div className="Asc-accent-line"></div>
-                        <p className="Asc-faq-intro">
+            <section className="Sbc-section Sbc-bg-white" id="Sbc-faq">
+                <div className="Sbc-container">
+                    <div className="Sbc-section-header">
+                        <h2 className="Sbc-h2">Frequently Asked Questions</h2>
+                        <div className="Sbc-accent-line"></div>
+                        <p className="Sbc-faq-intro">
                             Everything travelers need to know about what is included
                             on a Seabourn cruise.
                         </p>
