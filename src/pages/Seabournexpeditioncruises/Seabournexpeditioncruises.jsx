@@ -36,11 +36,11 @@ import {
     MapPin,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela.jpeg";
+import AboutImage from "../../assets/AboutAngela3.jpeg";
 
 import { Helmet } from "react-helmet-async";
-import "../Seabourncruises/SeabournCruises.css";
-import "./SeabournExpeditionCruises.css";
+import "../SeabournCruises/SeabournCruises.css";
+import "./Seabournexpeditioncruises.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {

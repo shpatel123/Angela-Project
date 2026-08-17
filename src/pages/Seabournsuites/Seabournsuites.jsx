@@ -34,7 +34,7 @@ import AboutImage from "../../assets/AboutAngela3.jpeg";
 
 import { Helmet } from "react-helmet-async";
 import "../SeabournCruises/SeabournCruises.css";
-import "./SeabournSuites.css";
+import "./Seabournsuites.css";
 
 /* ── Schema ─────────────────────────────────────────────────────── */
 const schemaData = {
