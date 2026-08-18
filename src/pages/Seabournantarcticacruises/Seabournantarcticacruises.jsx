@@ -338,14 +338,6 @@ const whoShouldChoose = ["Luxury travelers", "Couples", "Experienced cruisers", 
 
 const whoMayPrefer = ["Lowest possible price", "Maximum expedition intensity", "A very specialized scientific program", "A more casual onboard experience", "A different ship size", "A specific itinerary Seabourn doesn't operate"];
 
-const relatedGuides = [
-    { title: "Seabourn Expedition Cruises", text: "Learn about Seabourn's expedition ships, destinations, equipment and activities.", to: "/seabourn-cruises/expedition/" },
-    { title: "Seabourn Ships: Complete Fleet Guide", text: "Compare Seabourn Venture, Pursuit and the broader Seabourn fleet.", to: "/seabourn-cruises/ships/" },
-    { title: "Seabourn Suites: Complete Guide", text: "Compare suite categories, verandas, locations and amenities.", to: "/seabourn-cruises/suites/" },
-    { title: "What Is Included on a Seabourn Cruise?", text: "Understand dining, beverages, Wi-Fi, gratuities and other inclusions.", to: "/seabourn-cruises/whats-included/" },
-    { title: "Seabourn Cruise Cost Guide", text: "Understand the factors that influence Seabourn pricing.", to: "/seabourn-cruises/cost/" },
-];
-
 /* ── Main Component ──────────────────────────────────────────────── */
 const SeabournAntarcticaCruisesGuide = () => {
     const [readMore, setReadMore] = useState(false);
@@ -1747,29 +1739,6 @@ const SeabournAntarcticaCruisesGuide = () => {
                         <p className="Sbc-faq-intro">Everything travelers need to know before booking a Seabourn Antarctica expedition.</p>
                     </div>
                     <FAQ />
-                </div>
-            </section>
-
-            {/* ── RELATED GUIDES CTA ───────────────────────────────────── */}
-            <section className="Sbc-section Sbc-bg-soft" id="Aac-related">
-                <div className="Sbc-container">
-                    <div className="Sbc-section-header">
-                        <span className="Sbc-eyebrow">Keep Exploring</span>
-                        <h2 className="Sbc-h2">Explore More Seabourn Guides</h2>
-                        <div className="Sbc-accent-line"></div>
-                    </div>
-                    <div className="Aac-related-grid">
-                        {relatedGuides.map((g, i) => (
-                            <Link to={g.to} className="Aac-related-card" key={i} style={{ textDecoration: "none" }}>
-                                <h3 className="Aac-related-title">{g.title}</h3>
-                                <p className="Aac-related-text">{g.text}</p>
-                                <span className="Aac-related-link">
-                                    Read the Guide
-                                    <ArrowRight size={14} />
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
                 </div>
             </section>
 

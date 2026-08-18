@@ -1339,6 +1339,43 @@ const Nav = () => {
               </NavLink>
 
 
+              <NavLink
+                to="/seabourn-cruises/shore-excursions"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Shore Excursions
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/seabourn-vs-silversea"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Vs Silversea
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/seabourn-vs-regent"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Vs Regent
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/faqs"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Faqs
+              </NavLink>
+
+
+
+
+
+
 
 
 
@@ -2666,6 +2703,41 @@ const Nav = () => {
               onClick={toggleMenu}
             >
               Seabourn Antarctica
+            </NavLink>
+
+
+            <NavLink
+              to="/seabourn-cruises/shore-excursions"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Shore Excursions
+            </NavLink>
+
+
+
+            <NavLink
+              to="/seabourn-cruises/seabourn-vs-silversea"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Vs Silversea
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/seabourn-vs-regent"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Vs Regent
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/faqs"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Faqs
             </NavLink>
 
 

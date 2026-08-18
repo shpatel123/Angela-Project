@@ -211,39 +211,6 @@
     margin-bottom: 8px;
 }
 
-/* ── Related guides link cards (built on Sbc-card + Sbc-card-grid) ─ */
-.Sst-related-card {
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-white);
-    border: 1px solid #e3eaf1;
-    border-radius: 4px;
-    padding: 34px 30px;
-    height: 100%;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    color: inherit;
-}
-
-.Sst-related-card:hover {
-    border-color: var(--navy);
-    transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(13, 23, 41, 0.06);
-}
-
-.Sst-related-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
-    font-family: var(--font-body);
-    font-size: 13.5px;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--navy);
-}
-
 /* ══════════════════════════════════════════════════════════════════
    RESPONSIVE — 1024 / 768 / 480 (page-specific additions)
    ══════════════════════════════════════════════════════════════════ */
@@ -316,9 +283,6 @@
     .Sst-step-card,
     .Sst-choice-card {
         padding: 22px 20px;
-    }
-    .Sst-related-card {
-        padding: 24px;
     }
     .Sst-rank-num {
         width: 26px;
@@ -1229,8 +1193,9 @@
 }
 
 .Sst-worth-lead {
-    font-size: 17px;
-    color: var(--text-muted);
+    font-size: 18px;
+    color: var(--navy);
+    font-weight: 400;
     line-height: 1.7;
     margin-top: 16px;
 }
@@ -1325,8 +1290,9 @@
 }
 
 .Sst-worth-insight-alt p {
-    font-size: 16px;
-    color: var(--text-body);
+    font-size: 18px;
+    color: var(--navy);
+    font-weight: 400;
     line-height: 1.75;
     margin: 0;
 }

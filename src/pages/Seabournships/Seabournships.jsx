@@ -21,7 +21,7 @@ import {
     Users,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela3.jpeg";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 import { Helmet } from "react-helmet-async";
 import "./Seabournships.css";
 import "../SeabournCruises/SeabournCruises.css";
@@ -549,14 +549,6 @@ const faqData = [
     { q: "How do I choose the best Seabourn ship?", a: "Start with your destination, then compare the ship's itinerary, suite category, amenities, sailing date and price. For remote destinations, prioritize Venture or Pursuit; for traditional ocean cruising, compare Quest, Encore and Ovation." },
 ];
 
-const relatedGuides = [
-    { eyebrow: "Full Overview", title: "Seabourn Cruises: The Complete Guide", desc: "Ships, suites, dining, inclusions and destinations in one complete Seabourn guide.", to: "/seabourn-cruises/" },
-    { eyebrow: "Accommodations", title: "Seabourn Suites Guide", desc: "Compare oceanfront suite categories, veranda sizes and Wintergarden Suites.", to: "/seabourn-cruises/suites/" },
-    { eyebrow: "Where Seabourn Sails", title: "Seabourn Destinations", desc: "Explore Mediterranean, Alaska, Japan, Antarctica, Arctic and Kimberley itineraries.", to: "/seabourn-cruises/destinations/" },
-    { eyebrow: "Adventure Travel", title: "Seabourn Expedition Cruises", desc: "How Seabourn Venture and Pursuit bring luxury to Antarctica and the Arctic.", to: "/seabourn-cruises/expedition/" },
-    { eyebrow: "Compare Cruise Lines", title: "Seabourn vs Silversea", desc: "See how two ultra-luxury small-ship lines compare on ships, suites and value.", to: "/seabourn-cruises/vs-silversea/" },
-];
-
 /* ── FAQ Accordion (custom Sbc-faq classes) ─────────────────────── */
 function ShipsFAQ() {
     const [open, setOpen] = useState(null);
@@ -1048,7 +1040,7 @@ const SeabournShipsGuide = () => {
                     </div>
 
                     <div className="Sbc-dest-tabs-container">
-                        <div className="Sbc-dest-tabs-nav">
+                        <div className="Sbc-dest-tabs-nav" style={{ justifyContent: "center" }}>
                             {destinationTabs.map((dest, i) => {
                                 const Icon = dest.icon;
                                 return (
@@ -1131,7 +1123,7 @@ const SeabournShipsGuide = () => {
                                 <h4 className="Sbc-qa-card-title">If suite space is your priority, compare:</h4>
                                 <ul className="Sbc-qa-list">
                                     {["Interior square footage", "Veranda size", "Separate living area", "Bathroom configuration", "Suite location", "Storage", "Suite category benefits"].map((item, idx) => (
-                                        <li key={idx}><Check size={16} strokeWidth={2.5} style={{ color: "var(--navy)" }} /><span>{item}</span></li>
+                                        <li key={idx}><Check size={24} strokeWidth={2.5} style={{ color: "var(--navy)" }} /><span>{item}</span></li>
                                     ))}
                                 </ul>
                                 <div className="Sbc-qa-card-footer">Don't choose a ship based only on its overall reputation — choose the specific suite that matches how you travel.</div>
@@ -1361,36 +1353,6 @@ const SeabournShipsGuide = () => {
                 </div>
             </section>
 
-            {/* ── RELATED CONTENT GRID (new Ssf-related, dark CTA band) ─────── */}
-            <section className="Sbc-section Sbc-bg-dark" id="Sbc-related-guides">
-                <div className="Sbc-container">
-                    <div className="Sbc-section-header">
-                        <span className="Sbc-eyebrow">Keep Exploring</span>
-                        <h2 className="Sbc-h2">Related Seabourn Guides</h2>
-                        <div className="Sbc-accent-line"></div>
-                        <p className="Sbc-intro">
-                            Ready to go deeper? These guides cover the rest of the Seabourn
-                            experience in detail.
-                        </p>
-                    </div>
-
-                    <div className="Ssf-related-grid">
-                        {relatedGuides.map((g, i) => (
-                            <Link to={g.to} className="Ssf-related-card" key={i} style={{ textDecoration: "none" }}>
-                                <div>
-                                    <span className="Ssf-related-eyebrow">{g.eyebrow}</span>
-                                    <h3 className="Ssf-related-title" style={{ marginTop: "10px" }}>{g.title}</h3>
-                                    <p className="Ssf-related-desc" style={{ marginTop: "10px" }}>{g.desc}</p>
-                                </div>
-                                <span className="Ssf-related-link-row">
-                                    Read the Guide <ArrowRight size={14} />
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* ── ANGELA HUGHES AUTHORITY BOX ────────────────────────────── */}
             <section className="Sbc-expert-section" id="Asc-expert-insight">
                 <div className="Sbc-container">
@@ -1465,7 +1427,7 @@ const SeabournShipsGuide = () => {
             </section>
 
             {/* ── FAQ (self-contained Ssf-faq accordion) ────────────────────── */}
-            <section className="Sbc-section Sbc-bg-soft" id="Sbc-ships-faq">
+            <section className="Sbc-section Sbc-bg-white" id="Sbc-ships-faq">
                 <div className="Sbc-container">
                     <div className="Sbc-section-header">
                         <span className="Sbc-eyebrow">Common Questions</span>

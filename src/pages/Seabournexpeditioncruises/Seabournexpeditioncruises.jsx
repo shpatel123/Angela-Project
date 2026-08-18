@@ -36,7 +36,7 @@ import {
     MapPin,
 } from "lucide-react";
 import Nav from "../../components/Navbar/Nav";
-import AboutImage from "../../assets/AboutAngela3.jpeg";
+import AboutImage from "../../assets/AboutAngela.jpeg";
 
 import { Helmet } from "react-helmet-async";
 import "../SeabournCruises/SeabournCruises.css";
@@ -351,14 +351,6 @@ const expVsTraditional = [
     { feature: "Fine dining", exp: true, trad: true },
     { feature: "Physical activity", exp: "Higher", trad: "Lower" },
     { feature: "Itinerary flexibility", exp: "Higher", trad: "Lower" },
-];
-
-const relatedContent = [
-    { eyebrow: "The Full Guide", title: "Seabourn Cruises: Complete Guide", text: "Ships, suites, dining, destinations and inclusions across the entire Seabourn fleet.", to: "/seabourn-cruises" },
-    { eyebrow: "Destination Deep Dive", title: "Seabourn Antarctica Cruises", text: "A closer look at sailing to Antarctica aboard Seabourn Venture and Seabourn Pursuit.", to: "/seabourn-cruises/expeditions#Sbc-exp-destinations" },
-    { eyebrow: "Comparisons", title: "Silversea vs Seabourn Expeditions", text: "How two ultra-luxury expedition lines compare on ships, suites and itineraries.", to: "/silversea-cruises" },
-    { eyebrow: "Suites & Comfort", title: "Seabourn Suites Explained", text: "What to expect from Seabourn's all-suite oceanfront accommodations.", to: "/seabourn-cruises#Sbc-suites" },
-    { eyebrow: "Plan Ahead", title: "Luxury Expedition Cruise Packing Guide", text: "A broader packing checklist for polar and remote-destination voyages.", to: "/contact" },
 ];
 
 /* ── Main Component ──────────────────────────────────────────────── */
@@ -1490,30 +1482,6 @@ const SeabournExpeditionCruisesGuide = () => {
             </section>
 
 
-
-            {/* ── RELATED CONTENT ───────────────────────────────────── */}
-            <section className="Sbc-section Sbc-bg-white" id="Sbc-exp-related">
-                <div className="Sbc-container">
-                    <div className="Sbc-section-header">
-                        <span className="Sbc-eyebrow">Keep Exploring</span>
-                        <h2 className="Sbc-h2">Related Seabourn Guides</h2>
-                        <div className="Sbc-accent-line"></div>
-                    </div>
-
-                    <div className="Sec-related-grid">
-                        {relatedContent.map((card, i) => (
-                            <Link to={card.to} className="Sec-related-card" key={i} style={{ textDecoration: "none" }}>
-                                <span className="Sec-related-eyebrow">{card.eyebrow}</span>
-                                <h3 className="Sec-related-title">{card.title}</h3>
-                                <p className="Sec-related-text">{card.text}</p>
-                                <span className="Sec-related-link">
-                                    Read More <ArrowRight size={14} />
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* ── ANGELA HUGHES AUTHORITY BOX ────────────────────────────── */}
             <section className="Sbc-expert-section" id="Asc-expert-insight">

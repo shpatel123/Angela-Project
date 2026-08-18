@@ -666,14 +666,6 @@ const worthItNot = ["You're rarely in the suite", "You spend most days ashore", 
 
 const veranda_enjoy = ["Morning coffee", "Sunset", "Coastal scenery", "Room service", "Reading", "Sailaways", "Quiet time"];
 
-const relatedGuides = [
-    { icon: Ship, title: "Seabourn Ships: Complete Fleet Guide", text: "Compare Quest, Encore, Ovation, Venture and Pursuit to choose the right ship for your suite.", to: "/seabourn-cruises/ships/" },
-    { icon: Compass, title: "Seabourn Cruises: The Complete Guide", text: "Ships, suites, destinations, dining, inclusions and what makes Seabourn different.", to: "/seabourn-cruises/" },
-    { icon: Snowflake, title: "Seabourn Expedition Cruises", text: "How Seabourn Venture and Pursuit bring luxury suites to Antarctica and the Arctic.", to: "/seabourn-cruises/" },
-    { icon: Utensils, title: "Seabourn Dining Guide", text: "The Restaurant, The Colonnade and in-suite dining across the fleet.", to: "/seabourn-cruises/" },
-    { icon: Map, title: "Seabourn Destinations", text: "Mediterranean, Alaska, Japan, Antarctica and more Seabourn itineraries.", to: "/seabourn-cruises/" },
-];
-
 /* ── Main Component ──────────────────────────────────────────────── */
 const SeabournSuitesGuide = () => {
     const [readMore, setReadMore] = useState(false);
@@ -1726,32 +1718,6 @@ const SeabournSuitesGuide = () => {
                 </div>
             </section>
 
-
-            {/* ── RELATED GUIDES CTA (reused Sbc-card-grid pattern as link cards) ── */}
-            <section className="Sbc-section Sbc-bg-white" id="Sst-related">
-                <div className="Sbc-container">
-                    <div className="Sbc-section-header">
-                        <span className="Sbc-eyebrow">Keep Exploring</span>
-                        <h2 className="Sbc-h2">Related Seabourn Guides</h2>
-                        <div className="Sbc-accent-line"></div>
-                    </div>
-
-                    <div className="Sbc-card-grid">
-                        {relatedGuides.map((g, i) => (
-                            <Link to={g.to} className="Sst-related-card" key={i} style={{ textDecoration: "none" }}>
-                                <div className="Sbc-card-icon">
-                                    <g.icon size={22} />
-                                </div>
-                                <h3 className="Sbc-card-title">{g.title}</h3>
-                                <p className="Sbc-card-text">{g.text}</p>
-                                <span className="Sst-related-link">
-                                    Read the guide <ArrowRight size={14} />
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* ── ANGELA HUGHES AUTHORITY BOX ────────────────────────────── */}
             <section className="Sbc-expert-section" id="Asc-expert-insight">

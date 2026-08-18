@@ -158,11 +158,15 @@ import ScenicVsRiversideLuxuryCruises from "./pages/ScenicVsRiversideLuxuryCruis
 import ScenicVsTauckRiverCruises from "./pages/ScenicVsTauckRiverCruises/ScenicVsTauckRiverCruises";
 import Scenicvscelebrity from "./pages/Scenicvscelebrity/Scenicvscelebrity";
 import SeabournCruises from "./pages/SeabournCruises/SeabournCruises";
-import Seabournwhatsincluded  from "./pages/Seabournwhatsincluded/Seabournwhatsincluded";
-import Seabournships   from "./pages/Seabournships/Seabournships";
-import Seabournsuites    from "./pages/Seabournsuites/Seabournsuites";
-import Seabournexpeditioncruises     from "./pages/Seabournexpeditioncruises/Seabournexpeditioncruises";
-import Seabournantarcticacruises      from "./pages/Seabournantarcticacruises/Seabournantarcticacruises";
+import Seabournwhatsincluded from "./pages/Seabournwhatsincluded/Seabournwhatsincluded";
+import Seabournships from "./pages/Seabournships/Seabournships";
+import Seabournsuites from "./pages/Seabournsuites/Seabournsuites";
+import Seabournexpeditioncruises from "./pages/Seabournexpeditioncruises/Seabournexpeditioncruises";
+import Seabournantarcticacruises from "./pages/Seabournantarcticacruises/Seabournantarcticacruises";
+import Seabournvssilversea from "./pages/Seabournvssilversea/Seabournvssilversea";
+import Seabournshoreexcursions from "./pages/Seabournshoreexcursions/Seabournshoreexcursions";
+import Seabournvsregent from "./pages/Seabournvsregent/Seabournvsregent";
+import Seabournfaqs  from "./pages/Seabournfaqs/Seabournfaqs";
 
 
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -184,7 +188,7 @@ function App() {
           <Route
             path="/azamara-vs-regent-seven-seas"
             element={<AzamaravsRegentSevenSeas />}
-          />  
+          />
 
           <Route path="/azamara-vs-seabourn" element={<AzamaraVsSeabourn />} />
 
@@ -520,7 +524,7 @@ function App() {
             path="/private-jet-concierge-travel"
             element={<PrivateJetConciergeTravel />}
           />
-          
+
           <Route
             path="/professional-athlete-bucket-list-adventures"
             element={<ProfessionalAthleteBucketListAdventures />}
@@ -642,13 +646,17 @@ function App() {
           <Route path="/scenic-river-cruises/scenic-vs-avalon" element={<ScenicVsAvalonWaterways />} />
           <Route path="/scenic-river-cruises/scenic-vs-riverside" element={<ScenicVsRiversideLuxuryCruises />} />
           <Route path="/scenic-river-cruises/scenic-vs-tauck" element={<ScenicVsTauckRiverCruises />} />
-          <Route path="/scenic-river-cruises/scenic-vs-celebrity" element={<Scenicvscelebrity  />} />
-          <Route path="/seabourn-cruises" element={<SeabournCruises  />} />
-          <Route path="/seabourn-cruises/whats-included" element={<Seabournwhatsincluded   />} />
-          <Route path="/seabourn-cruises/ships" element={<Seabournships/>} />
-          <Route path="/seabourn-cruises/suites" element={<Seabournsuites/>} />
-          <Route path="/seabourn-cruises/expeditions" element={<Seabournexpeditioncruises/>} />
-          <Route path="/seabourn-cruises/antarctica" element={<Seabournantarcticacruises/>} />
+          <Route path="/scenic-river-cruises/scenic-vs-celebrity" element={<Scenicvscelebrity />} />
+          <Route path="/seabourn-cruises" element={<SeabournCruises />} />
+          <Route path="/seabourn-cruises/whats-included" element={<Seabournwhatsincluded />} />
+          <Route path="/seabourn-cruises/ships" element={<Seabournships />} />
+          <Route path="/seabourn-cruises/suites" element={<Seabournsuites />} />
+          <Route path="/seabourn-cruises/expeditions" element={<Seabournexpeditioncruises />} />
+          <Route path="/seabourn-cruises/antarctica" element={<Seabournantarcticacruises />} />
+          <Route path="/seabourn-cruises/seabourn-vs-silversea" element={<Seabournvssilversea />} />
+          <Route path="/seabourn-cruises/shore-excursions" element={<Seabournshoreexcursions />} />
+          <Route path="/seabourn-cruises/seabourn-vs-regent" element={<Seabournvsregent />} />
+          <Route path="/seabourn-cruises/faqs" element={<Seabournfaqs />} />
 
         </Routes>
       </BrowserRouter>
