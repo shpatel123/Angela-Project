@@ -1371,6 +1371,42 @@ const Nav = () => {
                 Seabourn Faqs
               </NavLink>
 
+              <NavLink
+                to="/seabourn-cruises/why-book-with-us"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Why Book With Us
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/dining"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Dining
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/signature-experiences"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Signature Experiences
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/ships/seabourn-venture"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Venture Ship Guide
+              </NavLink>
+
+
+
+
+
 
 
 
@@ -2739,6 +2775,40 @@ const Nav = () => {
             >
               Seabourn Faqs
             </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/why-book-with-us"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Why Book With Us
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/dining"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Dining
+            </NavLink>
+
+
+            <NavLink
+              to="/seabourn-cruises/signature-experiences"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Signature Experiences
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/ships/seabourn-venture"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Venture Ship Guide
+            </NavLink>
+
 
 
 

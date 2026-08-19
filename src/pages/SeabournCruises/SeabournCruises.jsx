@@ -1091,7 +1091,7 @@ const SeabournCruisesGuide = () => {
                                     <ul className="Sbc-dest-highlights-list">
                                         {destinations[activeDestTab].listItems.map((item, j) => (
                                             <li key={j}>
-                                                <Check size={14} strokeWidth={2.5} />
+                                                <Check size={16} strokeWidth={2.5} />
                                                 <span>{item}</span>
                                             </li>
                                         ))}
@@ -1293,23 +1293,33 @@ const SeabournCruisesGuide = () => {
                     </div>
 
                     <div className="Sbc-atmos-grid">
-                        <div className="Sbc-atmos-card">
-                            <div className="Sbc-atmos-card-title">You Are Unlikely To Choose Seabourn Because You Want</div>
+                        <div className="Sbc-atmos-card Sbc-atmos-card--no">
+                            <div className="Sbc-atmos-card-header">
+                                <div className="Sbc-atmos-card-icon Sbc-atmos-icon--no">
+                                    <X size={20} strokeWidth={2.5} />
+                                </div>
+                                <div className="Sbc-atmos-card-title">You Are Unlikely To Choose Seabourn Because You Want</div>
+                            </div>
                             <ul>
                                 {["Large crowds", "Massive water parks", "Broadway-scale entertainment", "Hundreds of restaurants", "Huge nightlife venues"].map((item, i) => (
                                     <li key={i}>
-                                        <X size={16} strokeWidth={2} />
+                                        <span className="Sbc-atmos-item-dot Sbc-atmos-dot--no"></span>
                                         <span>{item}</span>
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="Sbc-atmos-card">
-                            <div className="Sbc-atmos-card-title">You Choose Seabourn Because You Want</div>
+                        <div className="Sbc-atmos-card Sbc-atmos-card--yes">
+                            <div className="Sbc-atmos-card-header">
+                                <div className="Sbc-atmos-card-icon Sbc-atmos-icon--yes">
+                                    <Check size={20} strokeWidth={2.5} />
+                                </div>
+                                <div className="Sbc-atmos-card-title">You Choose Seabourn Because You Want</div>
+                            </div>
                             <ul>
                                 {["Conversation", "Service", "Fine dining", "Space", "Privacy", "Destination access", "Sophisticated surroundings"].map((item, i) => (
                                     <li key={i}>
-                                        <Check size={16} strokeWidth={2} />
+                                        <span className="Sbc-atmos-item-dot Sbc-atmos-dot--yes"></span>
                                         <span>{item}</span>
                                     </li>
                                 ))}

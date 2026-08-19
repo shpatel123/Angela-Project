@@ -1287,8 +1287,9 @@
 .Sbc-dest-tab-desc {
     font-family: var(--font-body);
     color: var(--navy);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.75;
+    font-weight: 400;
     margin: 0 0 28px;
 }
 
@@ -1313,21 +1314,39 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 12px 16px;
 }
 
 .Sbc-dest-highlights-list li {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
     font-family: var(--font-body);
     font-size: 15px;
-    color: #4a5568;
+    font-weight: 500;
+    color: var(--navy);
+    transition: all 0.25s ease;
 }
 
-.Sbc-dest-highlights-list svg {
+.Sbc-dest-highlights-list li:hover {
+    background: #ffffff;
+    border-color: var(--navy);
+    box-shadow: 0 4px 12px rgba(13, 23, 41, 0.05);
+}
+
+.Sbc-dest-highlights-list li svg {
     color: var(--navy);
+    background: rgba(13, 23, 41, 0.08);
+    border-radius: 50%;
+    padding: 3px;
     flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
 }
 
 .Sbc-dest-best-strategy {
@@ -1342,8 +1361,9 @@
 
 .Sbc-dest-best-strategy p {
     font-family: var(--font-body);
-    font-size: 15px;
+    font-size: 18px;
     color: var(--navy);
+    font-weight: 400;
     margin: 0;
     line-height: 1.65;
 }
@@ -1637,45 +1657,116 @@
 .Sbc-atmos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 32px;
     margin-top: 48px;
 }
 
 .Sbc-atmos-card {
     background: var(--bg-white);
-    border-radius: 4px;
-    padding: 36px;
+    border-radius: 14px;
+    padding: 32px 36px;
+    box-shadow: 0 8px 28px rgba(13, 23, 41, 0.05);
+    border: 1px solid #e3eaf1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Sbc-atmos-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(13, 23, 41, 0.08);
+}
+
+.Sbc-atmos-card--no {
+    border-top: 4px solid #e2e8f0;
+}
+
+.Sbc-atmos-card--yes {
+    border-top: 4px solid var(--navy);
+}
+
+.Sbc-atmos-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.Sbc-atmos-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.Sbc-atmos-icon--no {
+    background: #f1f5f9;
+    color: #94a3b8;
+}
+
+.Sbc-atmos-icon--yes {
+    background: var(--navy);
+    color: #ffffff;
 }
 
 .Sbc-atmos-card-title {
     font-family: var(--font-body);
-    font-size: 13px;
-    letter-spacing: 0.1em;
+    font-size: 14px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--navy);
-    margin-bottom: 18px;
+    line-height: 1.4;
 }
 
 .Sbc-atmos-card ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .Sbc-atmos-card li {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-family: var(--font-body);
-    font-size: 15px;
-    color: #3d4c5f;
-    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--navy);
+    padding: 10px 14px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e9eef4;
+    transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.Sbc-atmos-card svg {
+.Sbc-atmos-card--yes li:hover {
+    background: #ffffff;
+    border-color: var(--navy);
+}
+
+.Sbc-atmos-card--no li:hover {
+    background: #ffffff;
+    border-color: #cbd5e1;
+}
+
+.Sbc-atmos-item-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
     flex-shrink: 0;
-    color: var(--navy);
+}
+
+.Sbc-atmos-dot--no {
+    background: #94a3b8;
+}
+
+.Sbc-atmos-dot--yes {
+    background: var(--navy);
 }
 
 .Sbc-atmos-words {
@@ -1688,14 +1779,20 @@
 
 .Sbc-atmos-words span {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--navy);
+    background: var(--bg-white);
+    border: 1px solid #dde5ef;
+    padding: 8px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(13, 23, 41, 0.04);
 }
 
 .Sbc-atmos-words span:not(:last-child)::after {
-    content: "·";
-    margin-left: 12px;
-    color: #b9c6d6;
+    content: none;
 }
 
 /* ── Who is it for ────────────────────────────────────────────── */
@@ -2206,8 +2303,9 @@
 
 .Sbc-vs-desc {
     font-family: var(--font-body);
-    font-size: 15px;
-    color: #556477;
+    font-size: 18px;
+    color: var(--navy);
+    font-weight: 400;
     line-height: 1.6;
     margin: 0;
 }
@@ -2454,7 +2552,7 @@
     .Sbc-h3, .Sbc-compare-heading, .Sbc-card-title{
         font-size: 22px !important;
     }
-    .Sbc-cta-title{
+    .Sbc-cta-title, .Sbc-expert-title{
         font-size: 24px !important;
     }
 
