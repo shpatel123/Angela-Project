@@ -933,7 +933,7 @@ const SeabournCruisesGuide = () => {
                     <span className="Sbc-cta-eyebrow">Luxury Accommodations</span>
                     <h3 className="Sbc-cta-title">Find Your Perfect Suite at Sea</h3>
                     <p className="Sbc-cta-text">
-                        Explore Seabourn's all-suite oceanfront configurations. Let us help you select 
+                        Explore Seabourn's all-suite oceanfront configurations. Let us help you select
                         the ideal layout, from spacious veranda suites to premium multi-room options.
                     </p>
                     <Link to="/contact" className="Sbc-cta-button">
@@ -1083,7 +1083,7 @@ const SeabournCruisesGuide = () => {
                                 <p className="Sbc-dest-tab-desc">
                                     {destinations[activeDestTab].desc}
                                 </p>
-                                
+
                                 <div className="Sbc-dest-highlights">
                                     <h4 className="Sbc-dest-highlights-title">
                                         {destinations[activeDestTab].listLabel}
@@ -1121,89 +1121,93 @@ const SeabournCruisesGuide = () => {
                         <div className="Sbc-accent-line"></div>
                     </div>
 
-                    <div className="Sbc-trio-grid">
-                        <div className="Sbc-trio-card">
-                            <div className="Sbc-trio-head">
-                                <div className="Sbc-trio-icon-wrapper">
-                                    <Map size={24} strokeWidth={1.5} className="Sbc-trio-icon" />
+                    <div className="Sbc-exp-grid">
+
+                        {/* Card 1: Shore Excursions */}
+                        <div className="Sbc-exp-card">
+                            <div className="Sbc-exp-card-header">
+                                <div className="Sbc-exp-icon-wrap">
+                                    <Map size={24} />
                                 </div>
                                 <h3 className="Sbc-h3">Seabourn Shore Excursions</h3>
                             </div>
-                            <p className="Sbc-card-text">
-                                Seabourn offers a large portfolio of curated shore experiences.
-                                Its current shore-experience program encompasses more than 450 ports of call annually and approximately 12,000 shore experiences, organized into collections based on travelers' interests.
+
+                            <p className="Sbc-exp-text">
+                                Seabourn offers a large portfolio of curated shore experiences. Its current shore-experience program encompasses more than 450 ports of call annually and approximately 12,000 shore experiences, organized into collections based on travelers' interests.
                             </p>
-                            <div className="Sbc-trio-features">
-                                <span className="Sbc-trio-features-title">Experiences can focus on:</span>
-                                <ul className="Sbc-trio-list">
+
+                            <div className="Sbc-exp-features">
+                                <span className="Sbc-exp-features-title">Experiences can focus on:</span>
+                                <div className="Sbc-exp-tags">
                                     {["Culture", "Food", "History", "Nature", "Active exploration", "Wildlife", "Local communities", "UNESCO sites"].map((item, idx) => (
-                                        <li key={idx}>
-                                            <span className="Sbc-trio-dot"></span>
-                                            <span>{item}</span>
-                                        </li>
+                                        <span key={idx} className="Sbc-exp-tag">{item}</span>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
-                            <div className="Sbc-trio-footer-note">
+
+                            <div className="Sbc-exp-footer">
                                 <strong>Why this matters:</strong> The goal isn't simply to get off the ship. It is to create meaningful experiences in each destination.
                             </div>
                         </div>
 
-                        <div className="Sbc-trio-card">
-                            <div className="Sbc-trio-head">
-                                <div className="Sbc-trio-icon-wrapper">
-                                    <Compass size={24} strokeWidth={1.5} className="Sbc-trio-icon" />
+                        {/* Card 2: Ventures */}
+                        <div className="Sbc-exp-card">
+                            <div className="Sbc-exp-card-header">
+                                <div className="Sbc-exp-icon-wrap">
+                                    <Compass size={24} />
                                 </div>
                                 <h3 className="Sbc-h3">Ventures by Seabourn</h3>
                             </div>
-                            <p className="Sbc-card-text">
-                                Ventures by Seabourn provides optional expedition-style shore experiences in selected destinations.
+
+                            <p className="Sbc-exp-text">
+                                Ventures by Seabourn provides optional expedition-style shore experiences in selected destinations. These excursions are led by members of Seabourn's expedition team.
                             </p>
-                            <div className="Sbc-trio-features">
-                                <span className="Sbc-trio-features-title">Depending on location, these may involve:</span>
-                                <ul className="Sbc-trio-list">
+
+                            <div className="Sbc-exp-features">
+                                <span className="Sbc-exp-features-title">Depending on location, these may involve:</span>
+                                <div className="Sbc-exp-tags">
                                     {["Kayaking", "Zodiac exploration", "Wildlife viewing", "Hiking", "Nature exploration"].map((item, idx) => (
-                                        <li key={idx}>
-                                            <span className="Sbc-trio-dot"></span>
-                                            <span>{item}</span>
-                                        </li>
+                                        <span key={idx} className="Sbc-exp-tag">{item}</span>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
-                            <div className="Sbc-trio-footer-note">
+
+                            <div className="Sbc-exp-footer">
                                 These experiences can be particularly attractive to active travelers who want more adventure than a conventional sightseeing excursion.
                             </div>
                         </div>
 
-                        <div className="Sbc-trio-card">
-                            <div className="Sbc-trio-head">
-                                <div className="Sbc-trio-icon-wrapper">
-                                    <MessageCircle size={24} strokeWidth={1.5} className="Sbc-trio-icon" />
+                        {/* Card 3: Conversations */}
+                        <div className="Sbc-exp-card">
+                            <div className="Sbc-exp-card-header">
+                                <div className="Sbc-exp-icon-wrap">
+                                    <MessageCircle size={24} />
                                 </div>
                                 <h3 className="Sbc-h3">Seabourn Conversations</h3>
                             </div>
-                            <p className="Sbc-card-text">
-                                Seabourn's enrichment program is another important part of the onboard experience.
-                                Seabourn Conversations connects guests with experts, speakers and thought leaders.
+
+                            <p className="Sbc-exp-text">
+                                Seabourn's enrichment program is another important part of the onboard experience. Seabourn Conversations connects guests with experts, speakers and thought leaders.
                             </p>
-                            <div className="Sbc-trio-features">
-                                <span className="Sbc-trio-features-title">Topics can include:</span>
-                                <ul className="Sbc-trio-list">
+
+                            <div className="Sbc-exp-features">
+                                <span className="Sbc-exp-features-title">Topics can include:</span>
+                                <div className="Sbc-exp-tags">
                                     {["History", "Culture", "Science", "Exploration", "Art", "Politics", "Destination history", "Literature"].map((item, idx) => (
-                                        <li key={idx}>
-                                            <span className="Sbc-trio-dot"></span>
-                                            <span>{item}</span>
-                                        </li>
+                                        <span key={idx} className="Sbc-exp-tag">{item}</span>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
-                            <div className="Sbc-trio-footer-note">
+
+                            <div className="Sbc-exp-footer">
                                 For travelers who want intellectual enrichment alongside luxury, this can be a significant advantage.
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
+
 
             {/* ── CTA 2 (Curate Shore Experiences) ─────────────────────────── */}
             <section className="Sbc-cta-section Sbc-cta-dark">
@@ -1211,7 +1215,7 @@ const SeabournCruisesGuide = () => {
                     <span className="Sbc-cta-eyebrow">Explore and Discover</span>
                     <h3 className="Sbc-cta-title">Curate Your Next Shore Experience</h3>
                     <p className="Sbc-cta-text">
-                        From cultural immersion to zodiac expeditions, Seabourn offers meaningful shore collections. 
+                        From cultural immersion to zodiac expeditions, Seabourn offers meaningful shore collections.
                         Let's design your dream adventures in over 400 ports worldwide.
                     </p>
                     <Link to="/contact" className="Sbc-cta-button">
@@ -1231,11 +1235,11 @@ const SeabournCruisesGuide = () => {
                                 <h2 className="Sbc-h2" style={{ textAlign: "left", margin: "0 0 16px" }}>Seabourn Wellness</h2>
                                 <div className="Sbc-accent-line" style={{ margin: "0 0 20px" }}></div>
                             </div>
-                            
+
                             <p className="Sbc-wellness-intro">
                                 Seabourn also places emphasis on health and wellness.
                             </p>
-                            
+
                             <div className="Sbc-wellness-features-card">
                                 <h4 className="Sbc-wellness-features-title">Depending on ship, guests can find:</h4>
                                 <ul className="Sbc-wellness-list">
@@ -1398,11 +1402,11 @@ const SeabournCruisesGuide = () => {
                                 <h2 className="Sbc-h2">Is Seabourn Good for Families?</h2>
                                 <div className="Sbc-accent-line"></div>
                             </div>
-                            
+
                             <p className="Sbc-p">
                                 Seabourn is primarily designed around an adult luxury experience rather than a family-resort model.
                             </p>
-                            
+
                             <div className="Sbc-qa-card">
                                 <h4 className="Sbc-qa-card-title">Families who appreciate:</h4>
                                 <ul className="Sbc-qa-list">
@@ -1457,15 +1461,15 @@ const SeabournCruisesGuide = () => {
                                 <h2 className="Sbc-h2">Is Seabourn Good for Solo Travelers?</h2>
                                 <div className="Sbc-accent-line"></div>
                             </div>
-                            
+
                             <p className="Sbc-p">
                                 It can be.
                             </p>
-                            
+
                             <p className="Sbc-p">
                                 The intimate ship size can make it easier to meet other travelers than on a huge ocean liner. The social nature of dining and lounges can also encourage interaction.
                             </p>
-                            
+
                             <div className="Sbc-qa-card">
                                 <h4 className="Sbc-qa-card-title">However, solo travelers should carefully compare:</h4>
                                 <ul className="Sbc-qa-list">
@@ -1493,14 +1497,14 @@ const SeabournCruisesGuide = () => {
                                 <h2 className="Sbc-h2">Is Seabourn Worth It?</h2>
                                 <div className="Sbc-accent-line"></div>
                             </div>
-                            
+
                             <p className="Sbc-worth-intro">
                                 For the right traveler, yes.
                             </p>
                             <p className="Sbc-worth-text">
                                 The value proposition is not based on finding the cheapest cruise fare. It is based on the overall experience.
                             </p>
-                            
+
                             <div className="Sbc-worth-card">
                                 <h4 className="Sbc-worth-card-title">You are paying for:</h4>
                                 <div className="Sbc-worth-formula-row">
@@ -1548,7 +1552,7 @@ const SeabournCruisesGuide = () => {
                     <span className="Sbc-cta-eyebrow">Plan With Confidence</span>
                     <h3 className="Sbc-cta-title">Is Seabourn Your Next Voyage?</h3>
                     <p className="Sbc-cta-text">
-                        Let's compare itinerary routes, suite rates, and exclusive promotions to find 
+                        Let's compare itinerary routes, suite rates, and exclusive promotions to find
                         the best value for your ultra-luxury cruise vacation.
                     </p>
                     <Link to="/contact" className="Sbc-cta-button">
@@ -1621,7 +1625,7 @@ const SeabournCruisesGuide = () => {
                 </div>
             </section>
 
-            
+
             {/* ── ANGELA HUGHES AUTHORITY BOX ────────────────────────────── */}
             <section className="Sbc-expert-section" id="Asc-expert-insight">
                 <div className="Sbc-container">
@@ -1711,7 +1715,7 @@ const SeabournCruisesGuide = () => {
                 </div>
             </section>
 
-                      {/* ── OUR VERDICT ───────────────────────────────────────────────── */}
+            {/* ── OUR VERDICT ───────────────────────────────────────────────── */}
             <section className="Sbc-section Sbc-bg-dark" id="Sbc-verdict">
                 <div className="Sbc-container">
                     <div className="Sbc-section-header">

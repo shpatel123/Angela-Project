@@ -171,6 +171,10 @@ import Seabournwhybookwithus  from "./pages/Seabournwhybookwithus/Seabournwhyboo
 import Seabourndining   from "./pages/Seabourndining/Seabourndining";
 import Seabournsignatureexperiences    from "./pages/Seabournsignatureexperiences/Seabournsignatureexperiences";
 import SeabournVentureShipGuide    from "./pages/SeabournVentureShipGuide/SeabournVentureShipGuide";
+import SeabournPursuitShipGuide    from "./pages/SeabournPursuitShipGuide/SeabournPursuitShipGuide";
+import SeabournOvationShipGuide    from "./pages/SeabournOvationShipGuide/SeabournOvationShipGuide";
+import SeabournEncoreShipGuide    from "./pages/SeabournEncoreShipGuide/SeabournEncoreShipGuide";
+import SeabournQuestShipGuide    from "./pages/SeabournQuestShipGuide/SeabournQuestShipGuide";
 
 
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -665,6 +669,10 @@ function App() {
           <Route path="/seabourn-cruises/dining" element={<Seabourndining />} />
           <Route path="/seabourn-cruises/signature-experiences" element={<Seabournsignatureexperiences />} />
           <Route path="/seabourn-cruises/ships/seabourn-venture" element={<SeabournVentureShipGuide />} />
+          <Route path="/seabourn-cruises/ships/seabourn-pursuit" element={<SeabournPursuitShipGuide />} />
+          <Route path="/seabourn-cruises/ships/seabourn-ovation" element={<SeabournOvationShipGuide />} />
+          <Route path="/seabourn-cruises/ships/seabourn-encore" element={<SeabournEncoreShipGuide />} />
+          <Route path="/seabourn-cruises/ships/seabourn-quest" element={<SeabournQuestShipGuide />} />
 
         </Routes>
       </BrowserRouter>

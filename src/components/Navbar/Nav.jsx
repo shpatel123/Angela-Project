@@ -1403,6 +1403,42 @@ const Nav = () => {
                 Seabourn Venture Ship Guide
               </NavLink>
 
+              <NavLink
+                to="/seabourn-cruises/ships/seabourn-pursuit"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Pursuit Ship Guide
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/ships/seabourn-ovation"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Ovation Ship Guide
+              </NavLink>
+
+
+              <NavLink
+                to="/seabourn-cruises/ships/seabourn-encore"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Encore Ship Guide
+              </NavLink>
+
+
+              <NavLink
+                to="/seabourn-cruises/ships/seabourn-quest"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Quest Ship Guide
+              </NavLink>
+
+
+
 
 
 
@@ -2808,6 +2844,41 @@ const Nav = () => {
             >
               Seabourn Venture Ship Guide
             </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/ships/seabourn-pursuit"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Pursuit Ship Guide
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/ships/seabourn-ovation"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Ovation Ship Guide
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/ships/seabourn-encore"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Encore Ship Guide
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/ships/seabourn-quest"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Quest Ship Guide
+            </NavLink>
+
+
+
 
 
 

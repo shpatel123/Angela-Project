@@ -378,7 +378,7 @@
 .Sbc-card-title {
     font-family: var(--font-display);
     color: var(--navy);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     margin: 0 0 10px;
 }
@@ -390,7 +390,7 @@
 .Sbc-card-text {
     font-family: var(--font-body);
     color: var(--navy);
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: 400;
     line-height: 1.65;
     margin: 0;
@@ -718,8 +718,9 @@
 
 .Sbc-ship-tab-desc {
     font-family: var(--font-body);
-    color: #3d4c5f;
-    font-size: 16px;
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 400;
     line-height: 1.7;
     margin: 0 0 24px;
 }
@@ -745,8 +746,9 @@
 
 .Sbc-ship-tab-tags li {
     font-family: var(--font-body);
-    font-size: 13px;
+    font-size: 16px;
     color: var(--navy);
+    font-weight: 500;
     background: var(--bg-soft);
     border-radius: 20px;
     padding: 6px 14px;
@@ -884,7 +886,8 @@
 
 .Sbc-suite-strategy p {
     font-family: var(--font-body);
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 400;
     color: var(--navy);
     margin: 0;
     line-height: 1.65;
@@ -1495,6 +1498,149 @@
     box-sizing: border-box;
 }
 
+/* ── Sbc-exp Section (Shore Excursions, Ventures & Conversations) ─── */
+.Sbc-exp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
+    margin-top: 52px;
+}
+
+.Sbc-exp-card {
+    background: var(--bg-white);
+    border: 1px solid var(--navy-border);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(15, 30, 55, 0.03);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.Sbc-exp-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--navy);
+    box-shadow: 0 16px 40px rgba(15, 30, 55, 0.08);
+}
+
+.Sbc-exp-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.Sbc-exp-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--bg-soft);
+    border: 1px solid var(--navy-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.Sbc-exp-card:hover .Sbc-exp-icon-wrap {
+    background: var(--navy);
+    color: var(--bg-white);
+    transform: rotate(6deg) scale(1.06);
+}
+
+.Sbc-exp-card-header .Sbc-h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.Sbc-exp-text {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.7;
+    opacity: 0.88;
+    margin: 0 0 24px;
+}
+
+.Sbc-exp-features {
+    margin-bottom: 28px;
+    flex-grow: 1;
+}
+
+.Sbc-exp-features-title {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--navy);
+    opacity: 0.6;
+    margin-bottom: 12px;
+}
+
+.Sbc-exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.Sbc-exp-tag {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--navy);
+    background: var(--bg-soft);
+    border: 1px solid var(--navy-border);
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.Sbc-exp-card:hover .Sbc-exp-tag {
+    background: var(--bg-white);
+    border-color: rgba(15, 30, 55, 0.15);
+}
+
+.Sbc-exp-footer {
+    margin-top: auto;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--navy);
+    border-radius: 12px;
+    padding: 20px 22px;
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--navy);
+}
+
+/* Responsive Sbc-exp */
+@media (max-width: 1024px) {
+    .Sbc-exp-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Sbc-exp-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .Sbc-exp-card {
+        padding: 30px;
+    }
+}
+
 /* ── Wellness ───────────────────────────────────────────────────── */
 .Sbc-wellness-layout {
     display: grid;
@@ -1817,9 +1963,9 @@
 
 .Sbc-fit-card li {
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 18px;
     color: var(--navy);
-    font-weight: 500;
+    font-weight: 400;
     padding: 5px 0;
 }
 
@@ -2001,7 +2147,7 @@
 
 .Sbc-qa-card-title {
     font-family: var(--font-body);
-    font-size: 13.5px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--navy);
     text-transform: uppercase;
@@ -2058,7 +2204,8 @@
     border-left: 3px solid #ef4444;
     border-radius: 2px;
     font-family: var(--font-body);
-    font-size: 14.5px;
+    font-size: 16px;
+    font-weight: 400;
     color: #3d4c5f;
     line-height: 1.6;
     margin-top: 20px;
@@ -2569,7 +2716,7 @@
         padding: 24px;
     }
 
-    .Sbc-worth-text, .Sbc-worth-value-desc, .Sbc-wellness-intro, .Sbc-wellness-takeaway p, .Sbc-card-text, .Sbc-compare-key p{
+    .Sbc-worth-text, .Sbc-worth-value-desc, .Sbc-wellness-intro, .Sbc-wellness-takeaway p, .Sbc-card-text, .Sbc-compare-key p, .Sbc-dest-tab-desc, .Sbc-worth-intro{
         font-size: 16px !important;
     }
 
