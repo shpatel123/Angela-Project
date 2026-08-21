@@ -175,6 +175,10 @@ import SeabournPursuitShipGuide    from "./pages/SeabournPursuitShipGuide/Seabou
 import SeabournOvationShipGuide    from "./pages/SeabournOvationShipGuide/SeabournOvationShipGuide";
 import SeabournEncoreShipGuide    from "./pages/SeabournEncoreShipGuide/SeabournEncoreShipGuide";
 import SeabournQuestShipGuide    from "./pages/SeabournQuestShipGuide/SeabournQuestShipGuide";
+import SeabournKimberleyCruises    from "./pages/SeabournKimberleyCruises/SeabournKimberleyCruises";
+import SeabournArcticandGreenlandCruises    from "./pages/SeabournArcticandGreenlandCruises/SeabournArcticandGreenlandCruises";
+import SeabournAlaskaCruises    from "./pages/SeabournAlaskaCruises/SeabournAlaskaCruises";
+import SeabournMediterraneanCruises    from "./pages/SeabournMediterraneanCruises/SeabournMediterraneanCruises";
 
 
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -673,6 +677,10 @@ function App() {
           <Route path="/seabourn-cruises/ships/seabourn-ovation" element={<SeabournOvationShipGuide />} />
           <Route path="/seabourn-cruises/ships/seabourn-encore" element={<SeabournEncoreShipGuide />} />
           <Route path="/seabourn-cruises/ships/seabourn-quest" element={<SeabournQuestShipGuide />} />
+          <Route path="/seabourn-cruises/kimberley" element={<SeabournKimberleyCruises />} />
+          <Route path="/seabourn-cruises/arctic-greenland" element={<SeabournArcticandGreenlandCruises />} />
+          <Route path="/seabourn-cruises/alaska" element={<SeabournAlaskaCruises />} />
+          <Route path="/seabourn-cruises/mediterranean" element={<SeabournMediterraneanCruises />} />
 
         </Routes>
       </BrowserRouter>

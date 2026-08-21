@@ -84,14 +84,6 @@
     margin: 0 0 24px;
 }
 
-.Sbc-wellness-takeaway p {
-    font-family: var(--font-body);
-    font-size: 16px;
-    line-height: 1.65;
-    font-weight: 400;
-    color: #4a5568;
-    margin: 0;
-}
 
 
 .Sbc-worth-value-desc {
@@ -277,10 +269,7 @@
 }
 
 @media (max-width: 480px) {
- 
-    .Sbc-h3{
-        font-size: 22px;
-    }
+
     .Sbc-cta-title{
         font-size: 24px !important;
     }
@@ -319,7 +308,7 @@
     }
 
     .Sbc-ship-tab-title {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .Sbc-suite-card {

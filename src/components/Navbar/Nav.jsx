@@ -1437,6 +1437,41 @@ const Nav = () => {
                 Seabourn Quest Ship Guide
               </NavLink>
 
+              <NavLink
+                to="/seabourn-cruises/kimberley"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Kimberley
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/arctic-greenland"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Arctic & Greenland
+              </NavLink>
+
+              <NavLink
+                to="/seabourn-cruises/alaska"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Alaska
+              </NavLink>
+
+              
+              <NavLink
+                to="/seabourn-cruises/mediterranean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Seabourn Mediterranean
+              </NavLink>
+
+
+
 
 
 
@@ -2876,6 +2911,39 @@ const Nav = () => {
             >
               Seabourn Quest Ship Guide
             </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/kimberley"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Kimberley
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/arctic-greenland"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Arctic & Greenland
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/alaska"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Seabourn Alaska
+            </NavLink>
+
+            <NavLink
+              to="/seabourn-cruises/mediterranean"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+              >
+                Seabourn Mediterranean
+              </NavLink>
+
 
 
 
